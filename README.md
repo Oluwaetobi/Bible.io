@@ -1,5 +1,6 @@
 # Bible.io
 An Online Global Christian Game, join us and play some Bible.io!!! You can play it via this link and it is also available on multiple websites online: https://omoolorun1.itch.io/bibleio
+
 <img width="696" height="531" alt="Bible (5)" src="https://github.com/user-attachments/assets/731aa597-cc14-4545-b534-8689cb33c29a" />
 <img width="1198" height="914" alt="1  Bible io Thumbnail" src="https://github.com/user-attachments/assets/d6a0188d-97d6-4637-ba59-90dccec6622e" />
 <img width="1217" height="917" alt="Screenshot 2025-10-25 173314" src="https://github.com/user-attachments/assets/829b5bc2-2990-4d28-b5af-c3aa8ffd17f8" />
