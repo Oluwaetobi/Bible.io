@@ -61,7 +61,33 @@ header {
 
 .head-right a{
     text-decoration: none;
-    padding-left: 25px;
+    /* padding-left was originally 25px but I want to increase it to space out the text more */
+    padding-left: 130px;
     color: white;
-    font-size: 15px;
+    /* font-size was originally 15px but I might increase it */
+    font-size: 30px;
 }
+
+.about-section {
+    position:relative;
+    top: 90px;
+    /* Gets my words in the middle at the origin */
+    left: 50%;
+    translate: -3%
+    /* overflow: hidden; */
+}
+
+.about-info{
+    /*z-index moves forwards or backward however many layers you want depending on whether the number is
+    positive or negative*/
+    z-index: 1;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    right: 30px;
+    /* Accounts for the x-axis in the middle of the origin by shifting it over a bit */
+    translate: -47%;
+}
+
+/* It is important to note how to you position relative and absolute, absolute sets the child element relative
+to the parent assuming the parent is position relative */
