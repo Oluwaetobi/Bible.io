@@ -79,27 +79,31 @@ header {
     font-size: 30px;
 }
 
+/* .quickfo-section h1 {
+    translate: 45%;
+} */
 .quickfo-section {
     position:relative;
     top: 90px;
     /* Gets my words in the middle at the origin */
-    left: 50%;
-    translate: -3%;
+    align-items: center;
+    /* left: 50%; */
+    /* translate: -3%; */
     /* overflow hidden makes sure the website isn't scrollable */
     /* overflow: hidden; */
     font-size: 20px;
+    text-align: center;
 }
-
 .quickfo-info{
     /*z-index moves forwards or backward however many layers you want depending on whether the number is
     positive or negative*/
     z-index: 1;
     position: absolute;
     top: 30px;
-    left: 30px;
-    right: 30px;
+    left: 60px;
+    right: 60px;
     /* Accounts for the x-axis in the middle of the origin by shifting it over a bit */
-    translate: -47%;
+    /* translate: -47%; */
 }
 
 .wrapper {
