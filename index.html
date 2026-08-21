@@ -21,6 +21,7 @@
                 <p><a href="learn.html">Learn</a></p>
                 <p><a href="play.html">Play</a></p>
                 <p><a href="account.html">Account</a></p>
+                <p><a href="login.html">Login</a></p>
                 <p><a href="about.html">About</a></p>
             </div>
         </header>
@@ -41,9 +42,9 @@
             </div>
         </section>
         
-        
+    
     <div class = "wrapper">
-        <h1>Sign Up (Under Construction)</h1>
+        <h1>Sign Up</h1>
         <p>DO NOT ACTUALLY ENTER ANY REAL PASSWORDS!! UNDER CONSTRUCTION</p>
         <form>
             <!-- Alright, so let's break this down, what does this all mean, the word type
@@ -54,20 +55,41 @@
              to know what he or she needs to enter in the box -->
              <!-- without divs, it will all be the on the same lines, div create divisions and send it
               under the first thing -->
+
+              <!-- addiing the additional require to type ensures that the user has entered this
+               section of the field, if not the form cannot be submitted -->
             <div>
-                <input type="email" name="email" id="email-input" placeholder="Email">
+                <label for="email-input">
+                    <span>@</span>
+                </label>
+                <input required type="email" name="email" id="email-input" placeholder="Email">
             </div>
             <div>
-                <input type="text" name="username" id="username-input" placeholder="Username">
+                <!-- it is however important to remember that you can edit svg with html but not png -->
+                 <label for="username-input">
+                    <img src="./images/person_24dp_1F1F1F_FILL1_wght400_GRAD0_opsz24.svg" alt="person icon" width="30" height="30">
+                 </label>
+                <input required type="text" name="username" id="username-input" placeholder="Username">
             </div>
             <div>
-                <input type="password" name="password" id="password-input" placeholder="Password">
+                <label for="password-input">
+                    <img src="images/lock_24dp_1F1F1F_FILL1_wght400_GRAD0_opsz24.svg" alt = "lock icon" width="30" height="30">
+                </label>
+                <input required type="password" name="password" id="password-input" placeholder="Password">
             </div>
             <div>
-                <input type="password" name="repeat-password" id="repeat-password-input" placeholder="Repeat Password">
+                <label for="repeat-password-input">
+                    <img src="images/lock_24dp_1F1F1F_FILL1_wght400_GRAD0_opsz24.svg" alt = "lock icon" width="30" height="30">
+                </label>
+                <input required type="password" name="repeat-password" id="repeat-password-input" placeholder="Repeat Password">
+            </div>
+            <div>
+                <button type="submit">Sign Up!</button>
             </div>
         </form>
-    </div>
+        <p>Already have an account? <a href="login.html">Login</a></p>
+
+    </div>    
 
 
 
