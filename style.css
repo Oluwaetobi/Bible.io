@@ -62,7 +62,7 @@ header {
 .head-right a{
     text-decoration: none;
     /* padding-left was originally 25px but I want to increase it to space out the text more */
-    padding-left: 130px;
+    padding-left: 100px;
     color: white;
     /* font-size was originally 15px but I might increase it */
     font-size: 30px;
@@ -73,8 +73,9 @@ header {
     top: 90px;
     /* Gets my words in the middle at the origin */
     left: 50%;
-    translate: -3%
+    translate: -3%;
     /* overflow: hidden; */
+    font-size: 20px;
 }
 
 .about-info{
