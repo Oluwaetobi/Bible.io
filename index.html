@@ -8,13 +8,14 @@
     <link rel = "stylesheet" href = "style.css"
 </head>
 <body>
+    <script type="text/javascript" src="validation.js" defer></script>
     <div class = "container">
         <header>
             <div class="head-left">
                 <img src= "./images/bibleio.png" alt = "Bible.io Thumbnail image">
                 <button>Bible.io</button>
             </div>
-
+            
             <div class = "head-right">
                 <p><a href="hall_of_fame.html">Hall of Fame</a></p>
                 <p><a href="shop.html">Shop</a></p>
@@ -25,11 +26,11 @@
                 <p><a href="about.html">About</a></p>
             </div>
         </header>
-
+        
         
         <!--<p2>This website is currently under construction, stay tuned!!!</p1> -->
             
-    </div>
+        </div>
         
         <section class ="quickfo-section">
             <h1>Quick Info</h1>
@@ -42,33 +43,35 @@
             </div>
         </section>
         
-    
-    <div class = "wrapper">
-        <h1>Sign Up</h1>
-        <p>DO NOT ACTUALLY ENTER ANY REAL PASSWORDS!! UNDER CONSTRUCTION</p>
-        <form>
-            <!-- Alright, so let's break this down, what does this all mean, the word type
-             tells us what type of data were are working with such as text, integers, booleans and etc.
-             the name data is important when extracting the data for back-end stuff, but for now we are
-             only working with the front-end so we don't have to worry about that, id is important so we
-             can identify the element later with javascript, the placeholder just is just to help the user
-             to know what he or she needs to enter in the box -->
-             <!-- without divs, it will all be the on the same lines, div create divisions and send it
-              under the first thing -->
-
-              <!-- addiing the additional require to type ensures that the user has entered this
-               section of the field, if not the form cannot be submitted -->
-            <div>
-                <label for="email-input">
-                    <span>@</span>
+        
+        <div class = "wrapper">
+            <h1>Sign Up</h1>
+            <p>DO NOT ACTUALLY ENTER ANY REAL PASSWORDS!! UNDER CONSTRUCTION</p>
+            <!-- supposed to be able to print my error message -->
+            <p id="error-message"></p>
+            <form id="form">
+                <!-- Alright, so let's break this down, what does this all mean, the word type
+                tells us what type of data were are working with such as text, integers, booleans and etc.
+                the name data is important when extracting the data for back-end stuff, but for now we are
+                only working with the front-end so we don't have to worry about that, id is important so we
+                can identify the element later with javascript, the placeholder just is just to help the user
+                to know what he or she needs to enter in the box -->
+                <!-- without divs, it will all be the on the same lines, div create divisions and send it
+                under the first thing -->
+                
+                <!-- addiing the additional require to type ensures that the user has entered this
+                section of the field, if not the form cannot be submitted -->
+                <div>
+                    <label for="email-input">
+                        <span>@</span>
                 </label>
                 <input required type="email" name="email" id="email-input" placeholder="Email">
             </div>
             <div>
                 <!-- it is however important to remember that you can edit svg with html but not png -->
-                 <label for="username-input">
+                <label for="username-input">
                     <img src="./images/person_24dp_1F1F1F_FILL1_wght400_GRAD0_opsz24.svg" alt="person icon" width="30" height="30">
-                 </label>
+                </label>
                 <input required type="text" name="username" id="username-input" placeholder="Username">
             </div>
             <div>
@@ -88,14 +91,12 @@
             </div>
         </form>
         <p>Already have an account? <a href="login.html">Login</a></p>
-
+        
     </div>    
-
-
-
-
-
-    <!--linking the script.js at the END of the BODY SECTION-->
-    <script src="script.js"></script>
+    
+    
+    
+    
+    
 </body>
 </html>
