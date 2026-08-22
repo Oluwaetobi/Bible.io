@@ -242,3 +242,40 @@ form div.incorrect input {
 
 /* It is important to note how to you position relative and absolute, absolute sets the child element relative
 to the parent assuming the parent is position relative */
+
+
+/* SLIDING LOGOS */
+.sliding-logos {
+    overflow:hidden;
+    padding: 40px 0;
+    background: rgb(215, 0, 0);
+    white-space: nowrap; 
+
+}
+
+/* if mouse is hovering over it, it will stop */
+.sliding-logos:hover .sliding-logos__track {
+    animation-play-state: paused;
+}
+
+.sliding-logos__track {
+    display: inline-block;
+    animation: rotate 12s linear infinite;
+}
+
+.logos-text {
+    font-size: 40px;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 0 20px;
+
+}
+
+@keyframes rotate {
+    0% {
+        transofmrm: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
