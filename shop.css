@@ -99,3 +99,20 @@ a:hover {
     font-weight: bolder;
     text-shadow: -7px 7px #060606;
 }
+
+.boy-or-girl {
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    top: 350px;
+    /* z index pushs it forward 1 layer */
+    z-index: 3;
+    font-size: 60px;
+    text-align: center;
+    color:#020202;
+    font-weight: bolder;
+    /* text-shadow: -7px 7px #060606; */
+}
+
+/* .bibletar-text p {
+    top: -200px;
+} */

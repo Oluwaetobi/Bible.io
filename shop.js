@@ -1,6 +1,10 @@
 const canvas = document.getElementById('myCanvas');
 const ctx = canvas.getContext('2d');
 const bibletar_title = document.getElementById('bibletar-title');
+// const bibletar_sub_section = document.getElementById('bibletar-sub-section');
+const boy_or_girl = document.getElementById('boy-or-girl');
+let mouseX = 0;
+let mouseY = 0;
 
 var box_x_pos = 1;
 var gameOn = false;
@@ -8,11 +12,18 @@ var gameOn = false;
 that's one thing I like about HTML. As well as it's the core foundation to building websites. */
 var front_page_text = [];
 
+window.addEventListener('mousemove', (event) => {
+    mouseX = event.clientX;
+    mouseY = event.clientY;
+})
+
 function wipeOutEntireScreen() {
     ctx.clearRect(0,0, canvas.width, canvas.height);
     if (gameOn != false) {
         // When I keep erasing and rewriting it, I can't copy and paste the text
         bibletar_title.innerText = '';
+        boy_or_girl.innerText = '';
+        // bibletar_sub_section.innerText = '';
     }
 }
 
@@ -35,11 +46,47 @@ function bibleMaker_background () {
 
     // black stroke
     ctx.fillStyle = 'rgb(3, 3, 3)';
-    ctx.fillRect(320, 20, 870, 120);
+    ctx.fillRect(320, 20, 870, 170);
     ctx.fillStyle = 'rgb(3, 3, 3)';
-    ctx.fillRect(327, 7, 876, 126);
-    ctx.fillStyle = 'rgb(1, 55, 146)';
-    ctx.fillRect(330, 10, 870, 120);
+    ctx.fillRect(327, 7, 876, 176);
+    ctx.fillStyle = 'rgb(49, 77, 125)';
+    ctx.fillRect(330, 10, 870, 170);
+
+    // other little dark blue rectangle
+    ctx.fillStyle = 'rgb(3, 3, 3)';
+    ctx.fillRect(438, 117, 624, 64);
+    ctx.fillStyle = 'rgb(27, 44, 75)';
+    ctx.fillRect(440, 119, 620, 60);
+
+
+
+    //background dark shadow
+    ctx.font = "50px Arial";
+    ctx.strokeStyle = 'rgb(2, 2, 2)';
+    ctx.strokeText("Click to go to your section", 457, 163);
+    ctx.fillStyle = 'rgb(0, 0, 0)';
+    ctx.fillText("Click to go to your section", 457, 163);
+
+    ctx.font = "50px Arial";
+    ctx.strokeStyle = 'rgb(228, 206, 2)';
+    ctx.strokeText("Click to go to your section", 460, 160);
+    ctx.fillStyle = 'rgb(228, 206, 2)';
+    ctx.fillText("Click to go to your section", 460, 160);
+
+
+    ctx.font = "25px Arial";
+    ctx.strokeStyle = 'rgb(250, 250, 249)';
+    ctx.strokeText("Creator | Divine | Awesome | Loving | Supreme | Jesus | Good Father | Prince of Peace | Mighty God | Holy", 180, 220);
+    ctx.fillStyle = 'rgb(252, 252, 251)';
+    ctx.fillText("Creator | Divine | Awesome | Loving | Supreme | Jesus | Good Father | Prince of Peace | Mighty God | Holy", 180, 220);
+
+
+
+    ctx.font = "15px Arial";
+    // ctx.strokeStyle = 'rgb(250, 250, 249)';
+    // ctx.strokeText("John 3:16 “For God so loved the world, that he gave his only begotten Son, that whosoever believeth in him should not perish, but have everlasting life.”", 180, 700);
+    ctx.fillStyle = 'rgb(252, 252, 251)';
+    ctx.fillText("John 3:16 “For God so loved the world, that he gave his only begotten Son, that whosoever believeth in him should not perish, but have everlasting life.”", 260, canvas.height - 20);
 
 }
 
@@ -54,10 +101,22 @@ function loadingBox () {
 
 }
 
+
+function displayMouseX_and_MouseY () {
+    ctx.font = "30px Arial";
+    ctx.strokeStyle = 'rgb(190, 36, 36)';
+    ctx.strokeText("MouseX: " + mouseX + " MouseY: " + mouseY, 100, canvas.height - 100);
+    ctx.fillStyle = 'rgb(190, 36, 36)';
+    ctx.fillText("MouseX: " + mouseX + " MouseY: " + mouseY, 100, canvas.height - 100);
+
+}
+
 function drawSomething() {
 
     bibleMaker_background();
     loadingBox();
+    displayMouseX_and_MouseY();
+    // console.log(boy_or_girl.innerText);
 
 
     if(front_page_text.length < 20) {
@@ -68,6 +127,8 @@ function drawSomething() {
     if (front_page_text[0] == 0) {
         // When I keep erasing and rewriting it, I can't copy and paste the text, that's why I'm doing this
         bibletar_title.innerText = 'Bibletar Maker';
+        boy_or_girl.innerText = 'Boy  Girl';
+        // bibletar_sub_section.innerText = 'click to go to your section';
         front_page_text[0] +=1;
     } else {
         // do nothing
