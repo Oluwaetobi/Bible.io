@@ -9,8 +9,8 @@ function wipeEntireScreen() {
 
 function drawSomething() {
     ctx.fillStyle = 'rgba(255, 26, 104, 1)';
-    ctx.fillRect(50 + box_x_pos, 50, 50, 50);
-    box_x_pos += 5;
+    ctx.fillRect(50 + box_x_pos, canvas.height - 100, 50, 50);
+    box_x_pos += 3;
     if (box_x_pos > canvas.width - 200) {
         box_x_pos = 0;
     }

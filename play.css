@@ -89,9 +89,18 @@ a:hover {
 }
 
 #myCanvas {
-    position: relative;
+    position: fixed;
     left: 0px;
     top: 86px;
     border: 1px solid #000000;
     background-color: #61bdff;
+}
+
+.big-text {
+    position: relative;
+    top: 30px;
+    /* z index pushs it forward 1 layer */
+    z-index: 1;
+    font-size: 60px;
+    text-align: center;
 }
