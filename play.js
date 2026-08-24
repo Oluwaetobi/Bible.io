@@ -1,12 +1,19 @@
 const canvas = document.getElementById('myCanvas');
 const ctx = canvas.getContext('2d');
 
-var school = 1;
+var box_x_pos = 1;
+
+function wipeEntireScreen() {
+    ctx.clearRect(0,0, canvas.width, canvas.height);
+}
 
 function drawSomething() {
     ctx.fillStyle = 'rgba(255, 26, 104, 1)';
-    ctx.fillRect(50 + school, 50, 50, 50);
-    school += 1;
+    ctx.fillRect(50 + box_x_pos, 50, 50, 50);
+    box_x_pos += 5;
+    if (box_x_pos > canvas.width - 200) {
+        box_x_pos = 0;
+    }
 }
 
 function resizeCanvas() {
@@ -20,7 +27,19 @@ function resizeCanvas() {
     drawSomething();
 }
 
+function gameLoop() {
+    /**Wiping the entire screen clear is important before drawing your next batch */
+    wipeEntireScreen();
+    drawSomething();
+    /** All that requestAnimationFrame does it create a forever loop that can help me make
+     * games or animations also, you can't control the fps it specifically hooked to match your
+     * monitor's physical refresh rate
+     */
+    requestAnimationFrame(gameLoop);
+}
+
 /** Inititalize Dimensions on load */
 resizeCanvas();
+gameLoop();
 
 console.log(ctx);
