@@ -88,6 +88,7 @@ a:hover {
 }
 
 .bibletar-text {
+    font-family: Arial, Helvetica, sans-serif;
     position: relative;
     top: 0px;
     /* z index pushs it forward 1 layer */
@@ -96,5 +97,5 @@ a:hover {
     text-align: center;
     color:#ffe600;
     font-weight: bolder;
-    text-shadow: 2px 2px #060606;
+    text-shadow: -7px 7px #060606;
 }
