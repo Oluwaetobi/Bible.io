@@ -87,3 +87,54 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
+.scrollable-table {
+    height: 370px;
+    width: 600px;
+    /* overflow-y makes only the y coordinates scrollable */
+    overflow-y: auto;
+    /* background-color: #7f2e2e; */
+    scroll-snap-type: y mandatory;
+    position: relative;
+    left: 50%;
+    translate: -50%;
+}
+
+/* Scrollable table class takes precedence over table class
+table takes up the full width of it's parent the scrollable table */
+.scrollable-table > .table {
+    width: 100%
+}
+
+.table {
+    /* border-collapse:collapse; */
+    font-size: 10px;
+    width: 400px;
+}
+/*  */
+.table th {
+    background-color: #6085fffe;
+    color: #ffffff;
+    font-size: 20px;
+    text-align: left;
+    position: sticky;
+    top: 0px;
+    /* justify-content: center;
+    align-items: center; */
+}
+
+.table th,
+.table td {
+    padding: 6px 8px;
+    font-weight: normal;
+    font-size: 15px;
+}
+
+.table tr {
+    scroll-snap-align: start;
+}
+
+/* Background color for every even row (opposite of odd rows) */
+.table tbody tr:nth-of-type(even) {
+    background-color: #a7a7a7;
+}
