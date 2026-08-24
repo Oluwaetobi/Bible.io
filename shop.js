@@ -1,46 +1,55 @@
 const canvas = document.getElementById('myCanvas');
 const ctx = canvas.getContext('2d');
-const big_text = document.getElementById('big-text');
-const top_border = 90;
-const side_border = 2;
+const bibletar_title = document.getElementById('bibletar-title');
 
 var box_x_pos = 1;
 var gameOn = false;
 /* Being able to copy and paste text by using HTML is super important, especially when the text is super long,
 that's one thing I like about HTML. As well as it's the core foundation to building websites. */
-var play_front_page_text = [];
+var front_page_text = [];
 
 function wipeOutEntireScreen() {
     ctx.clearRect(0,0, canvas.width, canvas.height);
     if (gameOn != false) {
         // When I keep erasing and rewriting it, I can't copy and paste the text
-        big_text.innerText = '';
+        bibletar_title.innerText = '';
     }
 }
 
 function drawSomething() {
     // blue background
-    ctx.fillStyle = 'rgb(26, 163, 255)';
+
+    var gradient = ctx.createLinearGradient(0, 0, 0, canvas.height);
+
+    // 3. Add color stops
+    // gradient.addColorStop(0, 'red');     // Start color (0%)
+    // gradient.addColorStop(0.5, 'yellow'); // Middle color (50%)
+    // gradient.addColorStop(1, 'blue');    // End color (100%)
+
+    gradient.addColorStop(0, 'red');     // Start color (0%)
+    gradient.addColorStop(0.5, 'yellow'); // Middle color (50%)
+    gradient.addColorStop(1, 'blue');    // End color (100%)
+
+    ctx.fillStyle = gradient;
     ctx.fillRect(0, 0, canvas.width, canvas.height);
-    
+
     // looading box
     ctx.fillStyle = 'rgba(255, 26, 104, 1)';
     ctx.fillRect(50 + box_x_pos, canvas.height - 100, 50, 50);
-
     box_x_pos += 3;
     if (box_x_pos > canvas.width - 200) {
         box_x_pos = 0;
     }
 
-    if(play_front_page_text.length < 20) {
-        play_front_page_text.push(0);
+    if(front_page_text.length < 20) {
+        front_page_text.push(0);
     }
 
     // Bible.io Live Text
-    if (play_front_page_text[0] == 0) {
+    if (front_page_text[0] == 0) {
         // When I keep erasing and rewriting it, I can't copy and paste the text, that's why I'm doing this
-        big_text.innerText = 'Bible.io Live';
-        play_front_page_text[0] +=1;
+        bibletar_title.innerText = 'Bibletar Maker';
+        front_page_text[0] +=1;
     } else {
         // do nothing
     }
@@ -72,5 +81,3 @@ function gameLoop() {
 /** Inititalize Dimensions on load */
 resizeCanvas();
 gameLoop();
-
-console.log(ctx);

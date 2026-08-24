@@ -70,16 +70,6 @@ header {
     font-size: 30px;
 }
 
-.hall-of-fame-middle {
-    position: relative;
-    top:100px;
-    text-align: center;
-}
-
-.hall-of-fame-middle h1 {
-    font-size: 40px;
-}
-
 a {
     text-decoration: none;
     /* color: var(--login-color); */
@@ -88,19 +78,23 @@ a:hover {
     text-decoration: underline;
 }
 
+
 #myCanvas {
     position: fixed;
     left: 0px;
     top: 86px;
     border: 1px solid #000000;
-    background-color: #030303;
+    background-color: #020202;
 }
 
-.big-text {
+.bibletar-text {
     position: relative;
-    top: 30px;
+    top: 0px;
     /* z index pushs it forward 1 layer */
-    z-index: 1;
+    z-index: 2;
     font-size: 60px;
     text-align: center;
+    color:#ffe600;
+    font-weight: bolder;
+    text-shadow: 2px 2px #060606;
 }
