@@ -1,0 +1,97 @@
+/* Game Best Played Via PC */
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(215, 215, 215);
+    scroll-behavior: smooth;
+    /* align-items: center; */
+}
+
+.container {
+    font-family: Arial, Helvetica, sans-serif; 
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 40px;
+    z-index: 999;
+    background-color: rgb(46, 46, 80);
+    backdrop-filter: blur(10px);
+}
+
+.head-left{
+    display: flex;
+    align-items: center;
+    
+}
+
+.head-left img{
+    width: 69px;
+    height: 53px;
+    margin-right: 10px;
+}
+
+.head-left button{
+    border: none;
+    padding: 10px 30px;
+    border-radius: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.head-left button:hover {
+    opacity: 0.7;
+    
+}
+
+.head-right {
+    display: flex;
+}
+
+.head-right a{
+    text-decoration: none;
+    /* padding-left was originally 25px but I want to increase it to space out the text more */
+    padding-left: 80px;
+    color: white;
+    /* font-size was originally 15px but I might increase it */
+    font-size: 30px;
+}
+
+.hall-of-fame-middle {
+    position: relative;
+    top:100px;
+    text-align: center;
+}
+
+.hall-of-fame-middle h1 {
+    font-size: 40px;
+}
+
+a {
+    text-decoration: none;
+    /* color: var(--login-color); */
+}
+a:hover {
+    text-decoration: underline;
+}
+
+#myCanvas {
+    position: relative;
+    left: 0px;
+    top: 86px;
+    border: 1px solid #000000;
+    background-color: #61bdff;
+}

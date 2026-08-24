@@ -247,7 +247,7 @@ to the parent assuming the parent is position relative */
 /* SLIDING LOGOS */
 .sliding-logos {
     overflow:hidden;
-    padding: 40px 0;
+    padding: 10px 0;
     background: rgb(215, 0, 0);
     white-space: nowrap; 
 
@@ -260,7 +260,8 @@ to the parent assuming the parent is position relative */
 
 .sliding-logos__track {
     display: inline-block;
-    animation: rotate 12s linear infinite;
+    /* originally 12 seconds */
+    animation: rotate 13.9s linear infinite;
 }
 
 .logos-text {
@@ -272,10 +273,12 @@ to the parent assuming the parent is position relative */
 }
 
 @keyframes rotate {
+    /* Originally at 0% */
     0% {
-        transofmrm: translateX(0);
+        transform: translateX(0);
     }
     100% {
+        /* origianlly 100% */
         transform: translateX(-100%);
     }
 }

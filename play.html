@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bible.io</title>
-    <link rel = "stylesheet" href = "style.css"
+    <link rel = "stylesheet" href = "play.css"
 </head>
 <body>
     <div class = "container">
@@ -13,7 +13,7 @@
                 <img src= "./images/bibleio.png" alt = "Bible.io Thumbnail image">
                 <button>Bible.io</button>
             </div>
-
+            
             <div class = "head-right">
                 <p><a href="hall_of_fame.html">Hall of Fame</a></p>
                 <p><a href="shop.html">Shop</a></p>
@@ -24,11 +24,16 @@
                 <p><a href="about.html">About</a></p>
             </div>
         </header>
-
+        
         
         <!--<p2>This website is currently under construction, stay tuned!!!</p1> -->
             
         </div>
+        
+        <!-- It's important to note that that javascript should run after the canvas loads otherwise
+         there will be an error -->
+        <canvas id="myCanvas"></canvas>
+        <script src="play.js"></script>
     
 </body>
 </html>
