@@ -3,11 +3,15 @@ const ctx = canvas.getContext('2d');
 const bibletar_title = document.getElementById('bibletar-title');
 // const bibletar_sub_section = document.getElementById('bibletar-sub-section');
 const boy_or_girl = document.getElementById('boy-or-girl');
+const top_border = 90;
+const side_border = 2;
 let mouseX = 0;
 let mouseY = 0;
 
 var box_x_pos = 1;
 var gameOn = false;
+var bibletar_maker_page = 1;
+
 /* Being able to copy and paste text by using HTML is super important, especially when the text is super long,
 that's one thing I like about HTML. As well as it's the core foundation to building websites. */
 var front_page_text = [];
@@ -15,19 +19,33 @@ var front_page_text = [];
 window.addEventListener('mousemove', (event) => {
     mouseX = event.clientX;
     mouseY = event.clientY;
+    // This is to counter for where the canvas is actually created on the screen
+    mouseX -= side_border;
+    mouseY -= top_border;
 })
 
 function wipeOutEntireScreen() {
     ctx.clearRect(0,0, canvas.width, canvas.height);
-    if (gameOn != false) {
-        // When I keep erasing and rewriting it, I can't copy and paste the text
-        bibletar_title.innerText = '';
-        boy_or_girl.innerText = '';
-        // bibletar_sub_section.innerText = '';
-    }
+
+    /**OLD CODE, DON'T ERASE FOR REFERENCE THERE ARE 2 WAYS TO MAKE HTML TEXT DISAPPEAR ONE IS THE METHOD DOWN
+     * HERE BY USING THE CONST AND ACCESSING IT WITH DOCUMENT.GETELEMENTBYID(''); OR BY ACCESSING THE DISPLAY
+     * FROM CSS AND CHANGING IT FROM BLOCK TO NONE
+     */
+    // if (gameOn != false) {
+    //     // When I keep erasing and rewriting it, I can't copy and paste the text
+    //     bibletar_title.innerText = '';
+    //     boy_or_girl.innerText = '';
+    //     // bibletar_sub_section.innerText = '';
+    // }
 }
 
 function bibleMaker_background () {
+    // Makes the text appear and disappear once the user clicks to go their section
+    if (bibletar_maker_page == 1) {
+        document.getElementById('bibletar_page_1_text').style.display = "block";
+    } else {
+        document.getElementById('bibletar_page_1_text').style.display = "none";
+    }
     // blue background
     
     var gradient = ctx.createLinearGradient(0, 0, 0, canvas.height);
@@ -124,15 +142,15 @@ function drawSomething() {
     }
 
     // Bible.io Live Text
-    if (front_page_text[0] == 0) {
-        // When I keep erasing and rewriting it, I can't copy and paste the text, that's why I'm doing this
-        bibletar_title.innerText = 'Bibletar Maker';
-        boy_or_girl.innerText = 'Boy  Girl';
-        // bibletar_sub_section.innerText = 'click to go to your section';
-        front_page_text[0] +=1;
-    } else {
-        // do nothing
-    }
+    // if (front_page_text[0] == 0) {
+    //     // When I keep erasing and rewriting it, I can't copy and paste the text, that's why I'm doing this
+    //     bibletar_title.innerText = 'Bibletar Maker';
+    //     boy_or_girl.innerText = 'Boy  Girl';
+    //     // bibletar_sub_section.innerText = 'click to go to your section';
+    //     front_page_text[0] +=1;
+    // } else {
+    //     // do nothing
+    // }
     // console.log(big_text.innerText);
 }
 

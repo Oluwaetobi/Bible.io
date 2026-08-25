@@ -111,7 +111,14 @@ a:hover {
     color:#020202;
     font-weight: bolder;
     /* text-shadow: -7px 7px #060606; */
+    display: no
 }
+
+
+#bibletar_page_1_text {
+    display: block;
+}
+
 
 /* .bibletar-text p {
     top: -200px;
