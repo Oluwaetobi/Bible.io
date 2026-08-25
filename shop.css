@@ -103,7 +103,7 @@ a:hover {
 .boy-or-girl {
     font-family: Arial, Helvetica, sans-serif;
     position: relative;
-    top: 350px;
+    top: 50px;
     /* z index pushs it forward 1 layer */
     z-index: 3;
     font-size: 60px;
@@ -111,7 +111,17 @@ a:hover {
     color:#020202;
     font-weight: bolder;
     /* text-shadow: -7px 7px #060606; */
-    display: no
+    /* display: none; */
+    /* display: inline-block; */
+    /* display: block; */
+    /* padding-left: 100px; */
+    /* TRBL: Top, Right, Bottom, Left */
+    /* padding: 0px 0px 0px 200px;  */
+    display: flex;
+    gap: 80px;
+    left: 400px;
+    max-width: 900px;
+    overflow-x: hidden;
 }
 
 

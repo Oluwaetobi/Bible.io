@@ -2,7 +2,7 @@ const canvas = document.getElementById('myCanvas');
 const ctx = canvas.getContext('2d');
 const bibletar_title = document.getElementById('bibletar-title');
 // const bibletar_sub_section = document.getElementById('bibletar-sub-section');
-const boy_or_girl = document.getElementById('boy-or-girl');
+// const boy_or_girl = document.getElementById('boy-or-girl');
 const top_border = 90;
 const side_border = 2;
 let mouseX = 0;
@@ -105,6 +105,36 @@ function bibleMaker_background () {
     // ctx.strokeText("John 3:16 “For God so loved the world, that he gave his only begotten Son, that whosoever believeth in him should not perish, but have everlasting life.”", 180, 700);
     ctx.fillStyle = 'rgb(252, 252, 251)';
     ctx.fillText("John 3:16 “For God so loved the world, that he gave his only begotten Son, that whosoever believeth in him should not perish, but have everlasting life.”", 260, canvas.height - 20);
+
+
+
+    // white shadow add
+    ctx.shadowColor = "white";
+    ctx.shadowBlur = 10;
+    ctx.shadowOffsetX = 0;
+    ctx.shadowOffsetY = 0;
+
+    ctx.font = "35px Arial";
+    ctx.strokeStyle = 'rgb(5, 5, 5)';
+    ctx.strokeText("Boy", 551, 581);
+    ctx.strokeStyle = 'rgb(33, 0, 153)';
+    ctx.strokeText("Boy", 552, 580);
+    ctx.fillStyle = 'rgb(33, 0, 153)';
+    ctx.fillText("Boy", 552, 580);
+
+    ctx.font = "35px Arial";
+    ctx.strokeStyle = 'rgb(13, 13, 13)';
+    ctx.strokeText("Girl", 969, 581);
+    ctx.strokeStyle = 'rgb(244, 15, 190)';
+    ctx.strokeText("Girl", 970, 580);
+    ctx.fillStyle = 'rgb(244, 15, 190)';
+    ctx.fillText("Girl", 970, 580);
+
+    // white shadow remove
+    ctx.shadowColor = "white";
+    ctx.shadowBlur = 0;
+    ctx.shadowOffsetX = 0;
+    ctx.shadowOffsetY = 0;
 
 }
 
