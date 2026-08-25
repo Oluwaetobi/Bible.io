@@ -11,6 +11,9 @@ let mouseY = 0;
 var box_x_pos = 1;
 var gameOn = false;
 var bibletar_maker_page = 1;
+var i_am_a_boy = false;
+var i_am_a_girl = false;
+
 
 /* Being able to copy and paste text by using HTML is super important, especially when the text is super long,
 that's one thing I like about HTML. As well as it's the core foundation to building websites. */
@@ -39,15 +42,19 @@ function wipeOutEntireScreen() {
     // }
 }
 
+function boy_bibletar() {
+    bibletar_maker_page = 2;
+    i_am_a_boy = true;
+}
+
+function girl_bibletar() {
+    bibletar_maker_page = 2;
+    i_am_a_girl = true;
+}
+
 function bibleMaker_background () {
-    // Makes the text appear and disappear once the user clicks to go their section
-    if (bibletar_maker_page == 1) {
-        document.getElementById('bibletar_page_1_text').style.display = "block";
-    } else {
-        document.getElementById('bibletar_page_1_text').style.display = "none";
-    }
+
     // blue background
-    
     var gradient = ctx.createLinearGradient(0, 0, 0, canvas.height);
     
     // 3. Add color stops
@@ -161,7 +168,17 @@ function displayMouseX_and_MouseY () {
 
 function drawSomething() {
 
-    bibleMaker_background();
+    // Makes the text appear and disappear once the user clicks to go their section
+    if (bibletar_maker_page == 1) {
+        bibleMaker_background();
+        document.getElementById('bibletar_girl_or_boy').style.visibility = "visible";
+    } else {
+        document.getElementById('bibletar_girl_or_boy').style.visibility = "hidden";
+    }
+    if (bibletar_maker_page ==2) {
+
+    }
+
     loadingBox();
     displayMouseX_and_MouseY();
     // console.log(boy_or_girl.innerText);

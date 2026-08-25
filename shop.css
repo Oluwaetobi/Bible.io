@@ -111,7 +111,6 @@ a:hover {
     color:#020202;
     font-weight: bolder;
     /* text-shadow: -7px 7px #060606; */
-    /* display: none; */
     /* display: inline-block; */
     /* display: block; */
     /* padding-left: 100px; */
@@ -124,9 +123,14 @@ a:hover {
     overflow-x: hidden;
 }
 
+#bibletar_girl_or_boy {
+    visibility: visible;
+}
+
 
 #bibletar_page_1_text {
     display: block;
+    /* visibility: visible; */
 }
 
 
