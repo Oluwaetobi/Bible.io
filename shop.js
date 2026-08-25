@@ -42,6 +42,37 @@ function wipeOutEntireScreen() {
     // }
 }
 
+function bibletarMakerHome() {
+
+    // bibletar maker gradient background
+    var gradient = ctx.createLinearGradient(0, 0, 0, canvas.height);
+    
+    // 3. Add color stops
+    // gradient.addColorStop(0, 'red');     // Start color (0%)
+    // gradient.addColorStop(0.5, 'yellow'); // Middle color (50%)
+    // gradient.addColorStop(1, 'blue');    // End color (100%)
+    
+    gradient.addColorStop(0, 'rgb(101, 102, 102)');     // Start color (0%)
+    // gradient.addColorStop(0.5, 'yellow'); // Middle color (50%)
+    gradient.addColorStop(1, 'rgb(1, 132, 152)');    // End color (100%)
+    
+    ctx.fillStyle = gradient;
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+
+    // back layer background for engine chooser
+    ctx.fillStyle = 'rgb(238, 255, 194)';
+    ctx.fillRect(200, 50, 1150, 650);
+    ctx.fillStyle = 'rgb(204, 202, 202)';
+    ctx.fillRect(200, 50, 1150, 40);
+
+    ctx.font = "25px Arial";
+    ctx.strokeStyle = 'rgb(3, 3, 3)';
+    ctx.strokeText("Boys Bibletar Maker", 210, 77);
+    ctx.fillStyle = 'rgb(6, 6, 6)';
+    ctx.fillText("Boys Bibletar Maker", 210, 77);
+}
+
 function boy_bibletar() {
     bibletar_maker_page = 2;
     i_am_a_boy = true;
@@ -172,11 +203,13 @@ function drawSomething() {
     if (bibletar_maker_page == 1) {
         bibleMaker_background();
         document.getElementById('bibletar_girl_or_boy').style.visibility = "visible";
+        document.getElementById('bibletar_page_1_text').style.visibility = "visible";
     } else {
         document.getElementById('bibletar_girl_or_boy').style.visibility = "hidden";
+        document.getElementById('bibletar_page_1_text').style.visibility = "hidden";
     }
     if (bibletar_maker_page ==2) {
-
+        bibletarMakerHome();
     }
 
     loadingBox();
