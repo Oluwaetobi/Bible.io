@@ -144,3 +144,62 @@ a:hover {
 /* .bibletar-text p {
     top: -200px;
 } */
+
+
+
+.scrollable-table {
+    height: 370px;
+    width: 300px;
+    /* overflow-y makes only the y coordinates scrollable */
+    overflow-y: auto;
+    /* background-color: #7f2e2e; */
+    scroll-snap-type: y mandatory;
+    position: fixed;
+    left: 200px;
+    /* translate: -50%; */
+    z-index: 1;
+    top: 200px;
+}
+
+/* Scrollable table class takes precedence over table class
+table takes up the full width of it's parent the scrollable table */
+.scrollable-table > .table {
+    width: 100%
+}
+
+.table {
+    /* border-collapse:collapse; */
+    font-size: 10px;
+    width: 200px;
+}
+/*  */
+.table th {
+    background-color: #6085fffe;
+    color: #ffffff;
+    font-size: 20px;
+    text-align: left;
+    position: sticky;
+    top: 0px;
+    /* justify-content: center;
+    align-items: center; */
+}
+
+.table th,
+.table td {
+    padding: 6px 8px;
+    font-weight: normal;
+    font-size: 15px;
+}
+
+.table tr {
+    scroll-snap-align: start;
+}
+
+/* Background color for every even row (opposite of odd rows) */
+.table tbody tr:nth-of-type(even) {
+    background-color: #a7a7a7;
+}
+
+#bibletar_designs {
+    display:none;
+}
