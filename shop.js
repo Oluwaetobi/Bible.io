@@ -89,6 +89,19 @@ function bibletarMakerHome() {
             ctx.fillText("Girls Bibletar Maker", 210, 77);
         }
     }
+
+    // Choose whether to display boys' hair logo or girls' hair logo
+    if (i_am_a_boy == true) {
+        document.getElementById('boy_hair').style.visibility = "visible";
+        document.getElementById('girl_hair').style.visibility = "hidden";
+        
+    } else {
+        if (i_am_a_girl == true) {
+            document.getElementById('girl_hair').style.visibility = "visible";
+            document.getElementById('boy_hair').style.visibility = "hidden";
+        } else {
+        }
+    }
 }
 
 function boy_bibletar() {
@@ -224,11 +237,13 @@ function drawSomething() {
         document.getElementById('bibletar_page_1_text').style.visibility = "visible";
         // none for display means hidden or invisible
         document.getElementById('bibletar_designs').style.display = "none";
+        document.getElementById('choose_bibletar_stuff').style.display = "hidden";
     } else if (bibletar_maker_page == 2) {
         document.getElementById('bibletar_girl_or_boy').style.visibility = "hidden";
         document.getElementById('bibletar_page_1_text').style.visibility = "hidden";
         // block in display means visible, in simple words, YOU CAN SEE IT!!!
         document.getElementById('bibletar_designs').style.display = "block";
+        document.getElementById('choose_bibletar_stuff').style.display = "block";
     } else {
 
     }

@@ -148,8 +148,9 @@ a:hover {
 
 
 .scrollable-table {
-    height: 370px;
-    width: 300px;
+    height: 500px;
+    width: 250px;
+    aspect-ratio: 1 / 1;  
     /* overflow-y makes only the y coordinates scrollable */
     overflow-y: auto;
     /* background-color: #7f2e2e; */
@@ -158,7 +159,10 @@ a:hover {
     left: 200px;
     /* translate: -50%; */
     z-index: 1;
-    top: 200px;
+    top: 175px;
+    background-color: #e0dada;
+    display: grid;
+    grid-template-columns: 30% 70%;
 }
 
 /* Scrollable table class takes precedence over table class
@@ -170,7 +174,7 @@ table takes up the full width of it's parent the scrollable table */
 .table {
     /* border-collapse:collapse; */
     font-size: 10px;
-    width: 200px;
+    width: 300px;
 }
 /*  */
 .table th {
@@ -184,11 +188,18 @@ table takes up the full width of it's parent the scrollable table */
     align-items: center; */
 }
 
-.table th,
-.table td {
-    padding: 6px 8px;
+.table th {
+    padding: 2px 6px;
     font-weight: normal;
     font-size: 15px;
+    border-collapse: collapse
+}
+.table td {
+    /* top right bottom left */
+    padding: 20px 20px 20px 20px;
+    font-weight: normal;
+    font-size: 15px;
+    border: 1px solid black; 
 }
 
 .table tr {
@@ -196,10 +207,83 @@ table takes up the full width of it's parent the scrollable table */
 }
 
 /* Background color for every even row (opposite of odd rows) */
-.table tbody tr:nth-of-type(even) {
+/* .table tbody tr:nth-of-type(even) {
     background-color: #a7a7a7;
-}
+} */
 
 #bibletar_designs {
     display:none;
+}
+
+#boy_hair {
+    visibility:visible;
+}
+#girl_hair {
+    visibility:visible;
+}
+
+
+#choose_bibletar_stuff {
+    display: none;
+}
+
+/* second scrollable table */
+
+.scrollable-table2 {
+    height: 500px;
+    width: 250px;
+    aspect-ratio: 1 / 1;  
+    /* overflow-y makes only the y coordinates scrollable */
+    overflow-y: auto;
+    /* background-color: #7f2e2e; */
+    scroll-snap-type: y mandatory;
+    position: fixed;
+    left: 600px;
+    /* translate: -50%; */
+    z-index: 1;
+    top: 175px;
+    background-color: #e0dada;
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+/* Scrollable table class takes precedence over table class
+table takes up the full width of it's parent the scrollable table */
+.scrollable-table2 > .table2 {
+    width: 100%
+}
+
+.table2 {
+    /* border-collapse:collapse; */
+    font-size: 10px;
+    width: 300px;
+}
+/*  */
+.table2 th {
+    background-color: #6085fffe;
+    color: #ffffff;
+    font-size: 20px;
+    text-align: left;
+    position: sticky;
+    top: 0px;
+    /* justify-content: center;
+    align-items: center; */
+}
+
+.table2 th {
+    padding: 2px 6px;
+    font-weight: normal;
+    font-size: 15px;
+    border-collapse: collapse
+}
+.table2 td {
+    /* top right bottom left */
+    padding: 20px 20px 20px 20px;
+    font-weight: normal;
+    font-size: 15px;
+    border: 1px solid black; 
+}
+
+.table2 tr {
+    scroll-snap-align: start;
 }
