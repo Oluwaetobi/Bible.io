@@ -151,16 +151,23 @@ function bibletarMakerHome() {
     ctx.fillStyle = 'rgb(8, 8, 8)';
     ctx.fillText("Unknown Player", 1010, 450);
 
+     // Player's Cash
+    ctx.font = "25px Arial";
+    ctx.fillStyle = 'rgb(8, 8, 8)';
+    ctx.fillText("CASH: $0", 1100, 485);
+
 
 
     // SHOP
-    ctx.fillStyle = 'rgb(154, 14, 6)';
+    ctx.fillStyle = 'rgb(51, 5, 3)';
+    ctx.fillRect(1081, 497, 156, 71);
+    ctx.fillStyle = 'rgb(157, 16, 8)';
     ctx.fillRect(1084, 500, 150, 65);
     ctx.font = "40px Arial";
-    ctx.strokeStyle = 'rgb(10, 9, 9)';
-    ctx.strokeText("SHOP", 1100, 550);
-    ctx.fillStyle = 'rgb(8, 8, 8)';
-    ctx.fillText("SHOP", 1100, 550);
+    ctx.strokeStyle = 'rgb(250, 249, 249)';
+    ctx.strokeText("SHOP", 1100, 545);
+    ctx.fillStyle = 'rgb(247, 243, 243)';
+    ctx.fillText("SHOP", 1100, 545);
 
 
 
