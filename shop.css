@@ -285,7 +285,7 @@ table takes up the full width of it's parent the scrollable table */
 }
 .table-background td {
     /* top right bottom left */
-    padding: 20px 20px 20px 20px;
+    /* padding: 20px 20px 20px 20px; */
     font-weight: normal;
     /* font-size: 15px;
     border: 1px solid black;  */
