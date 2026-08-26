@@ -1,4 +1,13 @@
 /* Game Best Played Via PC */
+:root {
+    --accent-color: #0e004042;
+    /* I want it to be transparent for now */
+    /* --base-color: white; */
+    --text-color: #2E2B41;
+    --input-color: #F3F0FF;
+    --icon-color: white;
+    --login-color: rgb(72, 9, 72);
+}
 
 body {
     margin: 0;
@@ -70,10 +79,206 @@ header {
     font-size: 30px;
 }
 
+
+.quickfo-section {
+    position:relative;
+    top: 90px;
+    /* Gets my words in the middle at the origin */
+    /* Aligns items in the middle, does not include header */
+    align-items: center;
+    /* left: 50%; */
+    /* translate: -3%; */
+    /* overflow hidden makes sure the website isn't scrollable */
+    /* overflow: hidden; */
+    font-size: 20px;
+    /* Aligns the text to make it look central, includes header */
+    text-align: center;
+}
+.quickfo-info{
+    /*z-index moves forwards or backward however many layers you want depending on whether the number is
+    positive or negative*/
+    z-index: 1;
+    position: absolute;
+    top: 30px;
+    left: 60px;
+    right: 60px;
+    /* Accounts for the x-axis in the middle of the origin by shifting it over a bit */
+    /* translate: -47%; */
+}
+
+.wrapper {
+    box-sizing: border-box;
+    background-color: var(--base-color);
+    height:100vh;
+    width: max(40%, 600px);
+    padding: 10px;
+    position: relative;
+    border-radius: 0 20px 20px 0;
+    top: 0px;
+    left: 50%;
+    translate: -20%;
+    translate: -35vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* overflow hidden makes sure the website isn't scrollable */
+    /* overflow: hidden; */
+
+
+
+    /* I wanted to get the Bible.io Thumbnail on the side, but I'm really struggling with that */
+}
+
+.wrapper h1{
+    font-size: 3rem;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+form {
+    width: min(400px, 100%);
+    margin-top: 20px;
+    margin-bottom: 50px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+form > div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+form label {
+    flex-shrink: 0;
+    height: 50px;
+    width: 50px;
+    background-color: var(--accent-color);
+    fill: var(--base-color);
+    color: var(--base-color);
+    border-radius: 10px 0 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+form input {
+    box-sizing: border-box;
+    flex-grow: 1;
+    min-width: 0;
+    height: 50px;
+    padding: 1em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-radius: 0 10px 10px 0;
+    border: 2px solid var(  --input-color);
+    border-left:none;
+    background-color: var(--input-color);
+    transition: 150ms ease;
+}
+form input:hover {
+    border-color: var(--accent-color);
+}
+
+form input:focus {
+    outline: none;
+    border-color: var(--text-color);
+}
+div:has(input:focus) > label {
+    background-color: var(--icon-color);
+}
+
+form input::placeholder {
+    color: var(--text-color);
+    opacity: 0.4;
+}
+
+form button {
+    margin-top: 10px;
+    border: none;
+    border-radius: 1000px;
+    padding: 0.85em 4em;
+    background-color: var(--accent-color);
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+form button:hover {
+    background-color: var(--icon-color);
+}
+
+form button:focus {
+    outline:none;
+    background-color: var(--text-color);
+}
+
 a {
     text-decoration: none;
     /* color: var(--login-color); */
 }
 a:hover {
     text-decoration: underline;
+}
+
+/* helps with resizing when on a different device, aka: phone */
+@media(max-width: 1100px) {
+    .wrapper {
+        width: min(600px, 100%);
+        border-radius: 0;
+    }
+}
+/* light red: rgba(252, 51, 51, 0.841) */
+form div.incorrect label {
+    background-color: rgb(175, 0, 0);
+}
+form div.incorrect input {
+    border: rgb(175, 0, 0);
+}
+#error-message {
+    color: rgb(175, 0, 0);
+}
+
+/* It is important to note how to you position relative and absolute, absolute sets the child element relative
+to the parent assuming the parent is position relative */
+
+
+/* SLIDING LOGOS */
+.sliding-logos {
+    overflow:hidden;
+    padding: 10px 0;
+    background: rgb(215, 0, 0);
+    white-space: nowrap; 
+
+}
+
+/* if mouse is hovering over it, it will stop */
+/* .sliding-logos:hover .sliding-logos__track {
+    animation-play-state: paused;
+} */
+
+.sliding-logos__track {
+    display: inline-block;
+    /* originally 12 seconds */
+    animation: rotate 13.9s linear infinite;
+}
+
+.logos-text {
+    font-size: 40px;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 0 20px;
+
+}
+
+@keyframes rotate {
+    /* Originally at 0% */
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        /* origianlly 100% */
+        transform: translateX(-100%);
+    }
 }

@@ -127,6 +127,13 @@ a:hover {
     visibility: visible;
 }
 
+#bibletar_girl_or_boy img {
+    border-style: groove;
+    border-color: #908f8f;
+    border-width: 10px;
+    /* border-style: */
+
+}
 
 #bibletar_page_1_text {
     display: block;

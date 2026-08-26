@@ -54,7 +54,13 @@ function bibletarMakerHome() {
     
     gradient.addColorStop(0, 'rgb(101, 102, 102)');     // Start color (0%)
     // gradient.addColorStop(0.5, 'yellow'); // Middle color (50%)
-    gradient.addColorStop(1, 'rgb(1, 132, 152)');    // End color (100%)
+    if (i_am_a_boy == true) {
+        gradient.addColorStop(1, 'rgb(1, 132, 152)');    // End color (100%)
+    } else {
+        if (i_am_a_girl == true) {
+            gradient.addColorStop(1, 'rgb(152, 1, 114)');    // End color (100%)
+        }
+    }
     
     ctx.fillStyle = gradient;
     ctx.fillRect(0, 0, canvas.width, canvas.height);
@@ -68,9 +74,21 @@ function bibletarMakerHome() {
 
     ctx.font = "25px Arial";
     ctx.strokeStyle = 'rgb(3, 3, 3)';
-    ctx.strokeText("Boys Bibletar Maker", 210, 77);
+    if (i_am_a_boy == true) {
+        ctx.strokeText("Boys Bibletar Maker", 210, 77);
+    } else {
+        if (i_am_a_girl == true) {
+            ctx.strokeText("Girls Bibletar Maker", 210, 77);
+        }
+    }
     ctx.fillStyle = 'rgb(6, 6, 6)';
-    ctx.fillText("Boys Bibletar Maker", 210, 77);
+    if (i_am_a_boy == true) {
+        ctx.fillText("Boys Bibletar Maker", 210, 77);
+    } else {
+        if (i_am_a_girl == true) {
+            ctx.fillText("Girls Bibletar Maker", 210, 77);
+        }
+    }
 }
 
 function boy_bibletar() {
@@ -154,19 +172,19 @@ function bibleMaker_background () {
 
     ctx.font = "35px Arial";
     ctx.strokeStyle = 'rgb(5, 5, 5)';
-    ctx.strokeText("Boy", 551, 581);
+    ctx.strokeText("Boy", 551 +10, 581);
     ctx.strokeStyle = 'rgb(33, 0, 153)';
-    ctx.strokeText("Boy", 552, 580);
+    ctx.strokeText("Boy", 552 +10, 580);
     ctx.fillStyle = 'rgb(33, 0, 153)';
-    ctx.fillText("Boy", 552, 580);
+    ctx.fillText("Boy", 552 +10, 580);
 
     ctx.font = "35px Arial";
     ctx.strokeStyle = 'rgb(13, 13, 13)';
-    ctx.strokeText("Girl", 969, 581);
+    ctx.strokeText("Girl", 969 +35, 581);
     ctx.strokeStyle = 'rgb(244, 15, 190)';
-    ctx.strokeText("Girl", 970, 580);
+    ctx.strokeText("Girl", 970 +35, 580);
     ctx.fillStyle = 'rgb(244, 15, 190)';
-    ctx.fillText("Girl", 970, 580);
+    ctx.fillText("Girl", 970 +35, 580);
 
     // white shadow remove
     ctx.shadowColor = "white";
@@ -212,7 +230,7 @@ function drawSomething() {
         bibletarMakerHome();
     }
 
-    loadingBox();
+    // loadingBox();
     displayMouseX_and_MouseY();
     // console.log(boy_or_girl.innerText);
 
