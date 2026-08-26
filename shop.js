@@ -99,10 +99,12 @@ function bibletarMakerHome() {
     if (mouseX > 1127 && mouseX < 1330 && mouseY < 83 && mouseY > 53) {
         bibletar_maker_page = 1;
         i_am_a_boy = false;
+        i_am_a_girl = false;
     }
     // Leave
     if (mouseX > 979 && mouseX < 1110 && mouseY < 83 && mouseY > 53) {
         bibletar_maker_page = 1;
+        i_am_a_boy = false;
         i_am_a_girl = false;
     }
 });
