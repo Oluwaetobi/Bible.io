@@ -80,15 +80,27 @@ function bibletarMakerHome() {
     }
     ctx.fillRect(200, 50, 1150, 40);
 
-    // Save and Exit
+    // Leave
     ctx.fillStyle = 'rgb(154, 14, 6)';
+    ctx.fillRect(980, 55, 130, 30);
+    ctx.font = "25px Arial";
+    ctx.fillStyle = 'rgb(252, 250, 250)';
+    ctx.fillText("Leave", 1010, 77);
+
+    // Save and Exit
+    ctx.fillStyle = 'rgb(6, 154, 8)';
     ctx.fillRect(1130, 55, 200, 30);
     ctx.font = "25px Arial";
     ctx.fillStyle = 'rgb(252, 250, 250)';
     ctx.fillText("Save and Exit", 1150, 77);
 
     document.addEventListener("click", function (event) {
+    // Save and Exit
     if (mouseX > 1127 && mouseX < 1330 && mouseY < 83 && mouseY > 53) {
+        bibletar_maker_page = 1;
+    }
+    // Leave
+    if (mouseX > 979 && mouseX < 1110 && mouseY < 83 && mouseY > 53) {
         bibletar_maker_page = 1;
     }
 });
@@ -98,18 +110,18 @@ function bibletarMakerHome() {
     ctx.font = "25px Arial";
     ctx.strokeStyle = 'rgb(255, 255, 255)';
     if (i_am_a_boy == true) {
-        ctx.strokeText("Boys Bibletar Maker", 210, 77);
+        ctx.strokeText("Boys' Bibletar Maker", 210, 77);
     } else {
         if (i_am_a_girl == true) {
-            ctx.strokeText("Girls Bibletar Maker", 210, 77);
+            ctx.strokeText("Girls' Bibletar Maker", 210, 77);
         }
     }
     ctx.fillStyle = 'rgb(252, 250, 250)';
     if (i_am_a_boy == true) {
-        ctx.fillText("Boys Bibletar Maker", 210, 77);
+        ctx.fillText("Boys' Bibletar Maker", 210, 77);
     } else {
         if (i_am_a_girl == true) {
-            ctx.fillText("Girls Bibletar Maker", 210, 77);
+            ctx.fillText("Girls' Bibletar Maker", 210, 77);
         }
     }
 
@@ -125,6 +137,33 @@ function bibletarMakerHome() {
         } else {
         }
     }
+
+    // Draw Back Box Layer for User's Bibletar
+    ctx.fillStyle = 'rgb(1, 1, 1)';
+    ctx.fillRect(987, 97, 336, 306);
+    ctx.fillStyle = 'rgb(129, 116, 115)';
+    ctx.fillRect(990, 100, 330, 300);
+
+    // WRITE PLAYER'S NAME
+    ctx.font = "40px Arial";
+    ctx.strokeStyle = 'rgb(10, 9, 9)';
+    ctx.strokeText("Unknown Player", 1010, 450);
+    ctx.fillStyle = 'rgb(8, 8, 8)';
+    ctx.fillText("Unknown Player", 1010, 450);
+
+
+
+    // SHOP
+    ctx.fillStyle = 'rgb(154, 14, 6)';
+    ctx.fillRect(1084, 500, 150, 65);
+    ctx.font = "40px Arial";
+    ctx.strokeStyle = 'rgb(10, 9, 9)';
+    ctx.strokeText("SHOP", 1100, 550);
+    ctx.fillStyle = 'rgb(8, 8, 8)';
+    ctx.fillText("SHOP", 1100, 550);
+
+
+
 }
 
 function boy_bibletar() {
