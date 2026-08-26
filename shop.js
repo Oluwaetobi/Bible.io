@@ -67,13 +67,36 @@ function bibletarMakerHome() {
 
 
     // back layer background for engine chooser
+    ctx.fillStyle = 'rgb(1, 1, 1)';
+    ctx.fillRect(195, 45, 1160, 660);
     ctx.fillStyle = 'rgb(238, 255, 194)';
     ctx.fillRect(200, 50, 1150, 650);
-    ctx.fillStyle = 'rgb(204, 202, 202)';
+    if (i_am_a_boy == true ) {
+        ctx.fillStyle = 'rgb(78, 110, 174)';
+    } else {
+        if (i_am_a_girl == true) {
+            ctx.fillStyle = 'rgb(174, 78, 158)';
+        }
+    }
     ctx.fillRect(200, 50, 1150, 40);
 
+    // Save and Exit
+    ctx.fillStyle = 'rgb(154, 14, 6)';
+    ctx.fillRect(1130, 55, 200, 30);
     ctx.font = "25px Arial";
-    ctx.strokeStyle = 'rgb(3, 3, 3)';
+    ctx.fillStyle = 'rgb(252, 250, 250)';
+    ctx.fillText("Save and Exit", 1150, 77);
+
+    document.addEventListener("click", function (event) {
+    if (mouseX > 1127 && mouseX < 1330 && mouseY < 83 && mouseY > 53) {
+        bibletar_maker_page = 1;
+    }
+});
+
+
+
+    ctx.font = "25px Arial";
+    ctx.strokeStyle = 'rgb(255, 255, 255)';
     if (i_am_a_boy == true) {
         ctx.strokeText("Boys Bibletar Maker", 210, 77);
     } else {
@@ -81,7 +104,7 @@ function bibletarMakerHome() {
             ctx.strokeText("Girls Bibletar Maker", 210, 77);
         }
     }
-    ctx.fillStyle = 'rgb(6, 6, 6)';
+    ctx.fillStyle = 'rgb(252, 250, 250)';
     if (i_am_a_boy == true) {
         ctx.fillText("Boys Bibletar Maker", 210, 77);
     } else {
@@ -237,7 +260,7 @@ function drawSomething() {
         document.getElementById('bibletar_page_1_text').style.visibility = "visible";
         // none for display means hidden or invisible
         document.getElementById('bibletar_designs').style.display = "none";
-        document.getElementById('choose_bibletar_stuff').style.display = "hidden";
+        document.getElementById('choose_bibletar_stuff').style.display = "none";
     } else if (bibletar_maker_page == 2) {
         document.getElementById('bibletar_girl_or_boy').style.visibility = "hidden";
         document.getElementById('bibletar_page_1_text').style.visibility = "hidden";
