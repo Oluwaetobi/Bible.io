@@ -359,6 +359,7 @@ table takes up the full width of it's parent the scrollable table */
     text-align: left;
     position: sticky;
     top: 0px;
+    left:0px;
     /* justify-content: center;
     align-items: center; */
 }
