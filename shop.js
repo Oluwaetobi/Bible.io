@@ -74,6 +74,26 @@ function mouseDetections() {
     });
 }
 
+function drawUsersBibletar() {
+    // Draw Back Box Layer for User's Bibletar
+    ctx.fillStyle = 'rgb(1, 1, 1)';
+    ctx.fillRect(987, 97, 336, 306);
+    ctx.fillStyle = 'rgb(129, 116, 115)';
+    ctx.fillRect(990, 100, 330, 300);
+
+    // WRITE PLAYER'S NAME
+    ctx.font = "40px Arial";
+    ctx.strokeStyle = 'rgb(10, 9, 9)';
+    ctx.strokeText(my_name, 1010, 450);
+    ctx.fillStyle = 'rgb(8, 8, 8)';
+    ctx.fillText(my_name, 1010, 450);
+
+     // Player's Cash
+    ctx.font = "25px Arial";
+    ctx.fillStyle = 'rgb(8, 8, 8)';
+    ctx.fillText("CASH: $" + my_Cash, 1100, 485);
+}
+
 function bibletarShopPage () {
      // bibletar maker gradient background
     var gradient = ctx.createLinearGradient(0, 0, 0, canvas.height);
@@ -142,6 +162,8 @@ function bibletarShopPage () {
     ctx.font = "25px Arial";
     ctx.fillStyle = 'rgb(252, 250, 250)';
     ctx.fillText("Leave Shop", 1150 -350, 77);
+
+    drawUsersBibletar();
 }
 
 function bibletarMakerHome() {
@@ -230,23 +252,7 @@ function bibletarMakerHome() {
         }
     }
 
-    // Draw Back Box Layer for User's Bibletar
-    ctx.fillStyle = 'rgb(1, 1, 1)';
-    ctx.fillRect(987, 97, 336, 306);
-    ctx.fillStyle = 'rgb(129, 116, 115)';
-    ctx.fillRect(990, 100, 330, 300);
-
-    // WRITE PLAYER'S NAME
-    ctx.font = "40px Arial";
-    ctx.strokeStyle = 'rgb(10, 9, 9)';
-    ctx.strokeText("Unknown Player", 1010, 450);
-    ctx.fillStyle = 'rgb(8, 8, 8)';
-    ctx.fillText("Unknown Player", 1010, 450);
-
-     // Player's Cash
-    ctx.font = "25px Arial";
-    ctx.fillStyle = 'rgb(8, 8, 8)';
-    ctx.fillText("CASH: $" + my_Cash, 1100, 485);
+    drawUsersBibletar();
 
 
 

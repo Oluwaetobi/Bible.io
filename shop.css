@@ -307,7 +307,7 @@ table takes up the full width of it's parent the scrollable table */
     display: none;
     z-index: 1;
     position: fixed;
-    left: 400px;
+    left: 200px;
     top: 177px;
 }
 
@@ -318,16 +318,16 @@ table takes up the full width of it's parent the scrollable table */
 
 .scrollable-table-shop {
     height: 190px;
-    width: 945px;
+    width: 1145px;
     aspect-ratio: 1 / 1;  
     /* overflow-y makes only the y coordinates scrollable */
     overflow-x: auto;
     /* background-color: #7f2e2e; */
     scroll-snap-type: x mandatory;
     position: fixed;
-    left: 400px;
+    left: 200px;
     /* translate: -50%; */
-    z-index: 3;
+    z-index: 2;
     top: 590px;
     background-color: #fbfbfb;
     display: grid;
