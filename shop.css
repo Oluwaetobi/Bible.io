@@ -317,7 +317,8 @@ table takes up the full width of it's parent the scrollable table */
 
 
 .scrollable-table-shop {
-    height: 190px;
+    /* height was originally 190px */
+    height: 220px;
     width: 1145px;
     aspect-ratio: 1 / 1;  
     /* overflow-y makes only the y coordinates scrollable */
@@ -379,4 +380,24 @@ table takes up the full width of it's parent the scrollable table */
 
 .table-shop tr {
     scroll-snap-align: start;
+}
+
+#choose_shop_stuff button{
+    border: none;
+    padding: 10px 30px;
+    border-radius: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+    background-color:#a3a3a3;
+    color: #000000;
+}
+
+#choose_shop_stuff button:hover {
+    opacity: 0.5;
+    
+}
+
+.table-shop tbody .second_layer_shop_table td:nth-of-type(even) {
+    background-color: #ffa5a5;
 }
