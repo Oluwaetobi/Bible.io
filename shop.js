@@ -13,7 +13,8 @@ var gameOn = false;
 var bibletar_maker_page = 1;
 var i_am_a_boy = false;
 var i_am_a_girl = false;
-
+var my_Cash = 0;
+var my_name = "Unknown Player";
 
 /* Being able to copy and paste text by using HTML is super important, especially when the text is super long,
 that's one thing I like about HTML. As well as it's the core foundation to building websites. */
@@ -245,7 +246,7 @@ function bibletarMakerHome() {
      // Player's Cash
     ctx.font = "25px Arial";
     ctx.fillStyle = 'rgb(8, 8, 8)';
-    ctx.fillText("CASH: $0", 1100, 485);
+    ctx.fillText("CASH: $" + my_Cash, 1100, 485);
 
 
 
@@ -382,9 +383,9 @@ function loadingBox () {
 function displayMouseX_and_MouseY () {
     ctx.font = "30px Arial";
     ctx.strokeStyle = 'rgb(190, 36, 36)';
-    ctx.strokeText("MouseX: " + mouseX + " MouseY: " + mouseY, 100, canvas.height - 100);
+    ctx.strokeText("MouseX: " + mouseX + " MouseY: " + mouseY, 10, 30);
     ctx.fillStyle = 'rgb(190, 36, 36)';
-    ctx.fillText("MouseX: " + mouseX + " MouseY: " + mouseY, 100, canvas.height - 100);
+    ctx.fillText("MouseX: " + mouseX + " MouseY: " + mouseY, 10, 30);
 
 }
 
