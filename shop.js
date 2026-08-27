@@ -42,6 +42,105 @@ function wipeOutEntireScreen() {
     // }
 }
 
+function mouseDetections() {
+    document.addEventListener("click", function (event) {
+        if (bibletar_maker_page == 2 ) {
+        // Save and Exit
+        if (mouseX > 1127 && mouseX < 1330 && mouseY < 83 && mouseY > 53) {
+            bibletar_maker_page = 1;
+            i_am_a_boy = false;
+            i_am_a_girl = false;
+        }
+        // Leave
+        if (mouseX > 979 && mouseX < 1110 && mouseY < 83 && mouseY > 53) {
+            bibletar_maker_page = 1;
+            i_am_a_boy = false;
+            i_am_a_girl = false;
+        }
+    }
+    // Open SHOP
+    if (bibletar_maker_page == 2) {
+        if (mouseX > 1080 && mouseX < 1330 && mouseY < 564 && mouseY > 496) {
+            bibletar_maker_page = 3;
+        }
+    }
+    // Leave SHOP 
+    if (bibletar_maker_page == 3) {
+        if (mouseX > 1127 -350 && mouseX < 1330 -350 && mouseY < 83 && mouseY > 53) {
+            bibletar_maker_page = 2;
+        }
+    }
+    });
+}
+
+function bibletarShopPage () {
+     // bibletar maker gradient background
+    var gradient = ctx.createLinearGradient(0, 0, 0, canvas.height);
+    
+    // 3. Add color stops
+    // gradient.addColorStop(0, 'red');     // Start color (0%)
+    // gradient.addColorStop(0.5, 'yellow'); // Middle color (50%)
+    // gradient.addColorStop(1, 'blue');    // End color (100%)
+    
+    gradient.addColorStop(0, 'rgb(101, 102, 102)');     // Start color (0%)
+    // gradient.addColorStop(0.5, 'yellow'); // Middle color (50%)
+    if (i_am_a_boy == true) {
+        gradient.addColorStop(1, 'rgb(1, 132, 152)');    // End color (100%)
+    } else {
+        if (i_am_a_girl == true) {
+            gradient.addColorStop(1, 'rgb(152, 1, 114)');    // End color (100%)
+        }
+    }
+    
+    ctx.fillStyle = gradient;
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+
+    // back layer background for engine chooser
+    ctx.fillStyle = 'rgb(1, 1, 1)';
+    ctx.fillRect(195, 45, 1160, 660);
+    ctx.fillStyle = 'rgb(238, 255, 194)';
+    ctx.fillRect(200, 50, 1150, 650);
+    if (i_am_a_boy == true ) {
+        ctx.fillStyle = 'rgb(78, 110, 174)';
+    } else {
+        if (i_am_a_girl == true) {
+            ctx.fillStyle = 'rgb(174, 78, 158)';
+        }
+    }
+    ctx.fillRect(200, 50, 1150, 40);
+
+
+    ctx.font = "25px Arial";
+    ctx.strokeStyle = 'rgb(255, 255, 255)';
+    if (i_am_a_boy == true) {
+        ctx.strokeText("Boys' Bibletar SHOP", 210, 77);
+    } else {
+        if (i_am_a_girl == true) {
+            ctx.strokeText("Girls' Bibletar SHOP", 210, 77);
+        }
+    }
+    ctx.fillStyle = 'rgb(252, 250, 250)';
+    if (i_am_a_boy == true) {
+        ctx.fillText("Boys' Bibletar SHOP", 210, 77);
+    } else {
+        if (i_am_a_girl == true) {
+            ctx.fillText("Girls' Bibletar SHOP", 210, 77);
+        }
+    }
+
+    /**I hade to change the leave shop position because apparently the mouse event listener
+     * permits double clicks, even though I don't want that, which makes it go all the way to the first
+     * page :(
+     */
+    // Leave Shop
+    ctx.fillStyle = 'rgb(147, 6, 154)';
+    ctx.fillRect(1130 -350, 55, 170, 30);
+    ctx.font = "25px Arial";
+    ctx.fillStyle = 'rgb(252, 250, 250)';
+    ctx.fillText("Leave Shop", 1150 -350, 77);
+}
+
 function bibletarMakerHome() {
 
     // bibletar maker gradient background
@@ -94,38 +193,24 @@ function bibletarMakerHome() {
     ctx.fillStyle = 'rgb(252, 250, 250)';
     ctx.fillText("Save and Exit", 1150, 77);
 
-    document.addEventListener("click", function (event) {
-    // Save and Exit
-    if (mouseX > 1127 && mouseX < 1330 && mouseY < 83 && mouseY > 53) {
-        bibletar_maker_page = 1;
-        i_am_a_boy = false;
-        i_am_a_girl = false;
-    }
-    // Leave
-    if (mouseX > 979 && mouseX < 1110 && mouseY < 83 && mouseY > 53) {
-        bibletar_maker_page = 1;
-        i_am_a_boy = false;
-        i_am_a_girl = false;
-    }
-});
 
 
 
     ctx.font = "25px Arial";
     ctx.strokeStyle = 'rgb(255, 255, 255)';
     if (i_am_a_boy == true) {
-        ctx.strokeText("Boys' Bibletar Maker", 210, 77);
+        ctx.strokeText("Boys' Bibletar Maker - My Closet", 210, 77);
     } else {
         if (i_am_a_girl == true) {
-            ctx.strokeText("Girls' Bibletar Maker", 210, 77);
+            ctx.strokeText("Girls' Bibletar Maker - My Closet", 210, 77);
         }
     }
     ctx.fillStyle = 'rgb(252, 250, 250)';
     if (i_am_a_boy == true) {
-        ctx.fillText("Boys' Bibletar Maker", 210, 77);
+        ctx.fillText("Boys' Bibletar Maker - My Closet", 210, 77);
     } else {
         if (i_am_a_girl == true) {
-            ctx.fillText("Girls' Bibletar Maker", 210, 77);
+            ctx.fillText("Girls' Bibletar Maker - My Closet", 210, 77);
         }
     }
 
@@ -302,8 +387,9 @@ function displayMouseX_and_MouseY () {
 }
 
 function drawSomething() {
-
-    // Makes the text appear and disappear once the user clicks to go their section
+    /**HIDE OR SHOW HTML ELEMENTS
+     * Makes the text appear and disappear once the user clicks to go their section
+     */ 
     if (bibletar_maker_page == 1) {
         bibleMaker_background();
         document.getElementById('bibletar_girl_or_boy').style.visibility = "visible";
@@ -317,11 +403,24 @@ function drawSomething() {
         // block in display means visible, in simple words, YOU CAN SEE IT!!!
         document.getElementById('bibletar_designs').style.display = "block";
         document.getElementById('choose_bibletar_stuff').style.display = "block";
+    } else if (bibletar_maker_page == 3 ){
+        // none for display means hidden or invisible
+        document.getElementById('bibletar_designs').style.display = "none";
+        document.getElementById('choose_bibletar_stuff').style.display = "none";
     } else {
 
     }
+
+
+    // Mouse Detections
+    mouseDetections();
+
+    /**HIDE OR SHOW JAVASCRIPT ELEMENTS */
     if (bibletar_maker_page ==2) {
         bibletarMakerHome();
+    }
+    if (bibletar_maker_page == 3) {
+        bibletarShopPage();
     }
 
     // loadingBox();
