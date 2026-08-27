@@ -16,6 +16,10 @@ var i_am_a_girl = false;
 var my_Cash = 0;
 var my_name = "Unknown Player";
 
+var img_background = new Image();
+img_background.src = "./images/background1.svg"; // Set source URL
+img_background.alt = "background image";
+
 /* Being able to copy and paste text by using HTML is super important, especially when the text is super long,
 that's one thing I like about HTML. As well as it's the core foundation to building websites. */
 var front_page_text = [];
@@ -76,10 +80,10 @@ function mouseDetections() {
 
 function drawUsersBibletar() {
     // Draw Back Box Layer for User's Bibletar
-    ctx.fillStyle = 'rgb(1, 1, 1)';
-    ctx.fillRect(987, 97, 336, 306);
-    ctx.fillStyle = 'rgb(129, 116, 115)';
-    ctx.fillRect(990, 100, 330, 300);
+    // ctx.fillStyle = 'rgb(1, 1, 1)';
+    // ctx.fillRect(987, 97, 336, 306);
+    // ctx.fillStyle = 'rgb(129, 116, 115)';
+    // ctx.fillRect(990, 100, 330, 300);
 
     // WRITE PLAYER'S NAME
     ctx.font = "40px Arial";
@@ -92,6 +96,12 @@ function drawUsersBibletar() {
     ctx.font = "25px Arial";
     ctx.fillStyle = 'rgb(8, 8, 8)';
     ctx.fillText("CASH: $" + my_Cash, 1100, 485);
+
+    
+    ctx.drawImage(img_background, 980, 100, 360, 300);
+
+    
+
 }
 
 function bibletarShopPage () {
