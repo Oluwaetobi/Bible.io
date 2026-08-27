@@ -295,9 +295,87 @@ table takes up the full width of it's parent the scrollable table */
     scroll-snap-align: start;
 }
 
-table{
+/* table{
+    border-collapse: collapse;
+    border: 2px;
+    border-color: #000000;
+    border: 1px solid black;
+} */
+
+/* SHOP PAGE */
+#shop_page_background {
+    display: none;
+    z-index: 1;
+    position: fixed;
+    left: 400px;
+    top: 177px;
+}
+
+#choose_shop_stuff {
+    display: none;
+}
+
+
+.scrollable-table-shop {
+    height: 500px;
+    width: 450px;
+    aspect-ratio: 1 / 1;  
+    /* overflow-y makes only the y coordinates scrollable */
+    overflow-y: auto;
+    /* background-color: #7f2e2e; */
+    scroll-snap-type: y mandatory;
+    position: fixed;
+    left: 510px;
+    /* translate: -50%; */
+    z-index: 1;
+    top: 175px;
+    background-color: #fbfbfb;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    border: 6px solid black;
+    border-radius: 3%;
+}
+
+/* Scrollable table class takes precedence over table class
+table takes up the full width of it's parent the scrollable table */
+.scrollable-shop > .table-shop {
+    width: 100%
+}
+
+.table-shop {
+    /* border-collapse:collapse; */
+    font-size: 10px;
+    width: 300px;
     /* border-collapse: collapse;
     border: 2px;
     border-color: #000000; */
-    /* border: 1px solid black; */
+}
+/*  */
+.table-shop th {
+    background-color: #6085fffe;
+    color: #ffffff;
+    font-size: 20px;
+    text-align: left;
+    position: sticky;
+    top: 0px;
+    /* justify-content: center;
+    align-items: center; */
+}
+
+.table-shop th {
+    padding: 2px 6px;
+    font-weight: normal;
+    font-size: 15px;
+    border-collapse: collapse
+}
+.table-shop td {
+    /* top right bottom left */
+    /* padding: 20px 20px 20px 20px; */
+    font-weight: normal;
+    /* font-size: 15px;
+    border: 1px solid black;  */
+}
+
+.table-shop tr {
+    scroll-snap-align: start;
 }

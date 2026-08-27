@@ -397,16 +397,19 @@ function drawSomething() {
         // none for display means hidden or invisible
         document.getElementById('bibletar_designs').style.display = "none";
         document.getElementById('choose_bibletar_stuff').style.display = "none";
+        document.getElementById('shop_page_background').style.display = "none";
     } else if (bibletar_maker_page == 2) {
         document.getElementById('bibletar_girl_or_boy').style.visibility = "hidden";
         document.getElementById('bibletar_page_1_text').style.visibility = "hidden";
         // block in display means visible, in simple words, YOU CAN SEE IT!!!
         document.getElementById('bibletar_designs').style.display = "block";
         document.getElementById('choose_bibletar_stuff').style.display = "block";
+        document.getElementById('shop_page_background').style.display = "none";
     } else if (bibletar_maker_page == 3 ){
         // none for display means hidden or invisible
         document.getElementById('bibletar_designs').style.display = "none";
         document.getElementById('choose_bibletar_stuff').style.display = "none";
+        document.getElementById('shop_page_background').style.display = "block";
     } else {
 
     }
