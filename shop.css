@@ -317,18 +317,18 @@ table takes up the full width of it's parent the scrollable table */
 
 
 .scrollable-table-shop {
-    height: 500px;
-    width: 450px;
+    height: 190px;
+    width: 945px;
     aspect-ratio: 1 / 1;  
     /* overflow-y makes only the y coordinates scrollable */
-    overflow-y: auto;
+    overflow-x: auto;
     /* background-color: #7f2e2e; */
-    scroll-snap-type: y mandatory;
+    scroll-snap-type: x mandatory;
     position: fixed;
-    left: 510px;
+    left: 400px;
     /* translate: -50%; */
-    z-index: 1;
-    top: 175px;
+    z-index: 3;
+    top: 590px;
     background-color: #fbfbfb;
     display: grid;
     grid-template-columns: 30% 70%;
@@ -370,10 +370,11 @@ table takes up the full width of it's parent the scrollable table */
 }
 .table-shop td {
     /* top right bottom left */
-    /* padding: 20px 20px 20px 20px; */
+    padding: 20px 20px 20px 20px;
     font-weight: normal;
     /* font-size: 15px;
     border: 1px solid black;  */
+    font-size:large;
 }
 
 .table-shop tr {
