@@ -17,6 +17,28 @@ var my_Cash = 0;
 var my_name = "Unknown Player";
 const shop_page_background_mens_or_womens = document.getElementById('shop_background');
 
+/** Remember that eyes has 2 component, eyes and eyebrows 
+ * also the first element in the array tells us whether it is a boy or a girl namely 1 or 2
+ * therefore the lenght of current_bibletar should be 11
+ * once I get my own reliable server I'll set the array for current_bibletar to the specific data
+ * set within the user's account object
+*/
+var current_bibletar = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+var bibletar_background = current_bibletar[1];
+var bibletar_face = current_bibletar[2];
+var bibletar_shirt = current_bibletar[3];
+var bibletar_glasses = current_bibletar[4];
+var bibletar_hats = current_bibletar[5];
+var bibletar_eyes = current_bibletar[6];
+var bibletar_eyebrows = current_bibletar[7];
+var bibletar_nose = current_bibletar[8];
+var bibletar_mouth = current_bibletar[9];
+var bibletar_hair = current_bibletar[10];
+/**old_bibletar stores the old one, meaning that if the users doesn't save their
+ * bibletar it will revert to the old one
+ */
+var old_bibletar = current_bibletar;
+
 var img_background = new Image();
 img_background.src = "./images/background1.svg"; // Set source URL
 img_background.alt = "background image";
@@ -56,12 +78,14 @@ function mouseDetections() {
             bibletar_maker_page = 1;
             i_am_a_boy = false;
             i_am_a_girl = false;
+            old_bibletar = current_bibletar
         }
         // Leave
         if (mouseX > 979 && mouseX < 1110 && mouseY < 83 && mouseY > 53) {
             bibletar_maker_page = 1;
             i_am_a_boy = false;
             i_am_a_girl = false;
+            current_bibletar = old_bibletar;
         }
     }
     // Open SHOP
@@ -75,8 +99,33 @@ function mouseDetections() {
         if (mouseX > 1127 -350 && mouseX < 1330 -350 && mouseY < 83 && mouseY > 53) {
             bibletar_maker_page = 2;
         }
+        /**the current bibletar will equal the old bibletar, but the new stuff you 
+         * bought will be brought into your closet
+         */
+        current_bibletar = old_bibletar;
     }
     });
+}
+
+function updateCurrentBibletarCodeNumber() {
+    if (i_am_a_boy == true) {
+        current_bibletar[0] = 1;
+    } else {
+        if (i_am_a_girl == true) {
+            current_bibletar[0] = 2;
+        }
+    }
+
+    current_bibletar[1] = bibletar_background;
+    current_bibletar[2] = bibletar_face;
+    current_bibletar[3] = bibletar_shirt;
+    current_bibletar[4] = bibletar_glasses;
+    current_bibletar[5] = bibletar_hats;
+    current_bibletar[6] = bibletar_eyes;
+    current_bibletar[7] = bibletar_eyebrows;
+    current_bibletar[8] = bibletar_nose;
+    current_bibletar[9] = bibletar_mouth;
+    current_bibletar[10] = bibletar_hair;
 }
 
 function drawUsersBibletar() {

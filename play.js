@@ -73,4 +73,4 @@ function gameLoop() {
 resizeCanvas();
 gameLoop();
 
-console.log(ctx);
+// console.log(ctx);

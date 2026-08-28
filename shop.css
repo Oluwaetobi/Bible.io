@@ -224,6 +224,10 @@ table takes up the full width of it's parent the scrollable table */
 }
 
 
+/* IMPORANT
+I WILL BE USING ONE TABLE FOR EVERYTHING IN THE USER'S CLOSET, MEANING I DON'T HAVE TO BUILT MORE TABLES FOR
+THE BACKGROUND, SHIRTS, HATS, AND ETC. BECAUSE I CAN ACTUALLY CHANGE THE IMG SRC RIGHT FROM  THE 
+JAVASCRIPT FILE*/
 #choose_bibletar_stuff {
     display: none;
 }
@@ -303,6 +307,10 @@ table takes up the full width of it's parent the scrollable table */
 } */
 
 /* SHOP PAGE */
+/* IMPORANT
+I WILL BE USING ONE TABLE FOR EVERYTHING IN THE SHOP, MEANING I DON'T HAVE TO BUILT MORE TABLES FOR
+THE BACKGROUND, SHIRTS, HATS, AND ETC. BECAUSE I CAN ACTUALLY CHANGE THE IMG SRC RIGHT FROM THE
+JAVASCRIPT FILE*/
 #shop_page_background {
     display: none;
     z-index: 1;
