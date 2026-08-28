@@ -15,6 +15,7 @@ var i_am_a_boy = false;
 var i_am_a_girl = false;
 var my_Cash = 0;
 var my_name = "Unknown Player";
+const shop_page_background_mens_or_womens = document.getElementById('shop_background');
 
 var img_background = new Image();
 img_background.src = "./images/background1.svg"; // Set source URL
@@ -157,6 +158,14 @@ function bibletarShopPage () {
     } else {
         if (i_am_a_girl == true) {
             ctx.fillText("Girls' Bibletar SHOP", 210, 77);
+        }
+    }
+
+    if(i_am_a_boy == true) {
+        shop_page_background_mens_or_womens.src = "./images/shop_page_background_mens.svg"
+    } else {
+        if (i_am_a_girl == true) {
+            shop_page_background_mens_or_womens.src = "./images/shop_page_background_womens.svg"
         }
     }
 
