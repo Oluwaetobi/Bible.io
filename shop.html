@@ -43,25 +43,31 @@
             
                         <tbody>
                             <tr>
-                                <td><img src="./images/background_logo.svg" alt="background" width="70">Backgrounds</td>
+                                <!-- It is important to put the onclick inside the td that way it does it for the entire
+                                 cell and not just the image, for instance if it was a small image like an eyebrow, this
+                                 would become very problematic, meaning you would have to click directly on the eyebrow
+                                 before the touch sensor worked -->
+                                <td onclick="updateClosetSection(1)"><img src="./images/background_logo.svg" alt="background" width="70">Backgrounds</td>
                                 <!-- face logo just means, the color of your face -->
-                                <td><img src="./images/face_logo.svg" alt="face color" width="70">Face Color</td>
+                                <td onclick="updateClosetSection(2)"><img src="./images/face_logo.svg" alt="face color" width="70">Face Color</td>
                             </tr>
                             <tr>
-                                <td><img src="./images/shirt_logo.svg" alt="shirt" width="70">Shirts</td>
-                                <td><img src="./images/glasses_logo.svg" alt="glasses" width="70">Glasses</td>
+                                <td onclick="updateClosetSection(3)"><img src="./images/shirt_logo.svg" alt="shirt" width="70">Shirts</td>
+                                <td onclick="updateClosetSection(4)"><img src="./images/glasses_logo.svg" alt="glasses" width="70">Glasses</td>
                             </tr>
                             <tr>
-                                <td><img src="./images/hat_logo.svg" alt="hat" width="70">Hats</td>
-                                <td><img src="./images/eyes_logo.svg" alt="eyes" width="70">Eyes</td>
+                                <td onclick="updateClosetSection(5)"><img src="./images/hat_logo.svg" alt="hat" width="70">Hats</td>
+                                <!-- Will determine whether it eyes or eyebrows maybe by adding an extra table underneath the
+                                 first one, or just by it's placement in the table -->
+                                <td onclick="updateClosetSection(6)"><img src="./images/eyes_logo.svg" alt="eyes" width="70">Eyes</td>
                             </tr>
                             <tr>
-                                <td><img src="./images/nose_logo.svg" alt="nose" width="70">Noses</td>
-                                <td><img src="./images/mouth_logo.svg" alt="mouth" width="70">Mouths</td>
+                                <td onclick="updateClosetSection(8)"><img src="./images/nose_logo.svg" alt="nose" width="70">Noses</td>
+                                <td onclick="updateClosetSection(9)"><img src="./images/mouth_logo.svg" alt="mouth" width="70">Mouths</td>
                             </tr>
                             <tr>
-                                <td id="boy_hair"><img src="./images/boy_hair_logo.svg" alt="boy hair" width="70">Hair</td>
-                                <td id="girl_hair"><img src="./images/girl_hair_logo.svg" alt="girl hair" width="70">Hair</td>
+                                <td id="boy_hair" onclick="updateClosetSection(10)"><img src="./images/boy_hair_logo.svg" alt="boy hair" width="70">Hair</td>
+                                <td id="girl_hair" onclick="updateClosetSection(10)"><img src="./images/girl_hair_logo.svg" alt="girl hair" width="70">Hair</td>
                             </tr>
                                                   
                             
@@ -85,9 +91,9 @@
             
                         <tbody>
                             <tr>
-                                <td><img src="./images/background1.svg" alt="background" width="100"></td>
-                                <td><img src="./images/background2.svg" alt="face color" width="100"></td>
-                                <td><img src="./images/background3.svg" alt="face color" width="100"></td>
+                                <td onclick="item_Chosen(1)"><img src="./images/background1.svg" alt="background" width="100"></td>
+                                <td onclick="item_Chosen(2)"><img src="./images/background2.svg" alt="face color" width="100"></td>
+                                <td onclick="item_Chosen(3)"><img src="./images/background3.svg" alt="face color" width="100"></td>
                             </tr>       
                             
     

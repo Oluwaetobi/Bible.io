@@ -134,9 +134,14 @@ function updateCurrentBibletarCodeNumber() {
     current_bibletar[9] = bibletar_mouth;
     current_bibletar[10] = bibletar_hair;
 }
-
-function item_Chosen(closet_section_html, item_clicked_html) {
+function updateClosetSection (closet_section_html) {
     closet_section = closet_section_html;
+}
+function updateShopSection (shop_section_html) {
+    shop_section = shop_section_html
+}
+
+function item_Chosen(item_clicked_html) {
     item_clicked = item_clicked_html;
 
     if (bibletar_maker_page == 2) {
@@ -202,6 +207,10 @@ function item_Chosen(closet_section_html, item_clicked_html) {
     }
 }
 
+function match_drawings_to_correct_bibletar() {
+    img_background.src = "./images/background" + current_bibletar[1] + ".svg";
+}
+
 function drawUsersBibletar() {
     // Draw Back Box Layer for User's Bibletar
     // ctx.fillStyle = 'rgb(1, 1, 1)';
@@ -221,7 +230,8 @@ function drawUsersBibletar() {
     ctx.fillStyle = 'rgb(8, 8, 8)';
     ctx.fillText("CASH: $" + my_Cash, 1100, 485);
 
-    
+    updateCurrentBibletarCodeNumber();
+    match_drawings_to_correct_bibletar();
     ctx.drawImage(img_background, 980, 100, 360, 300);
 
     
