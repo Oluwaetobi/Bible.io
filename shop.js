@@ -47,6 +47,13 @@ img_background.alt = "background image";
 that's one thing I like about HTML. As well as it's the core foundation to building websites. */
 var front_page_text = [];
 
+/**It is important the we do NOT use closet_section for shop_section because you can't
+ * buy skin colors in the shop_section, so they are not the same thing
+ */
+var closet_section = 1;
+var shop_section = 1;
+var item_clicked = 1;
+
 window.addEventListener('mousemove', (event) => {
     mouseX = event.clientX;
     mouseY = event.clientY;
@@ -126,6 +133,73 @@ function updateCurrentBibletarCodeNumber() {
     current_bibletar[8] = bibletar_nose;
     current_bibletar[9] = bibletar_mouth;
     current_bibletar[10] = bibletar_hair;
+}
+
+function item_Chosen(closet_section_html, item_clicked_html) {
+    closet_section = closet_section_html;
+    item_clicked = item_clicked_html;
+
+    if (bibletar_maker_page == 2) {
+        if (closet_section == 1) {
+            bibletar_background = item_clicked;
+        }
+        if (closet_section == 2) {
+            bibletar_face = item_clicked;
+        }
+        if (closet_section == 3) {
+            bibletar_shirt = item_clicked;
+        }
+        if (closet_section == 4) {
+            bibletar_glasses = item_clicked;
+        }
+        if (closet_section == 5) {
+            bibletar_hats = item_clicked;
+        }
+        if (closet_section == 6) {
+            bibletar_eyes = item_clicked;
+        }
+        if (closet_section == 7) {
+            bibletar_eyebrows = item_clicked;
+        }
+        if (closet_section == 8) {
+            bibletar_nose = item_clicked;
+        }
+        if (closet_section == 9) {
+            bibletar_mouth = item_clicked;
+        }
+        if (closet_section == 10) {
+            bibletar_hair = item_clicked;
+        }
+    }
+    if (bibletar_maker_page == 3) {
+        if (closet_section == 1) {
+            bibletar_background = item_clicked;
+        }
+        if (closet_section == 2) {
+            bibletar_shirt = item_clicked;
+        }
+        if (closet_section == 3) {
+            bibletar_glasses = item_clicked;
+        }
+        if (closet_section == 4) {
+            bibletar_hats = item_clicked;
+        }
+        if (closet_section == 5) {
+            bibletar_eyes = item_clicked;
+        }
+        if (closet_section == 6) {
+            bibletar_eyebrows = item_clicked;
+        }
+        if (closet_section == 7) {
+            bibletar_nose = item_clicked;
+        }
+        if (closet_section == 8) {
+            bibletar_mouth = item_clicked;
+        }
+        if (closet_section == 9) {
+            bibletar_hair = item_clicked;
+        }
+    }
 }
 
 function drawUsersBibletar() {
