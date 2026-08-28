@@ -266,7 +266,6 @@ function item_Chosen(item_clicked_html) {
             bibletar_hats = item_clicked;
         }
     }
-    console.log("item Clicked: " + item_clicked)
 }
 
 function match_drawings_to_correct_bibletar() {
@@ -767,11 +766,10 @@ function gameLoop() {
      * monitor's physical refresh rate
      */
     requestAnimationFrame(gameLoop);
-    console.log("Bibletar background: " + bibletar_background);
-    // bibletar_background = item_clicked;
-    console.log("Item Clicked: " + item_clicked);
-    console.log("Current Bibletar: " + current_bibletar);
-    console.log("Old Bibletar: " + old_bibletar);
+    // console.log("Bibletar background: " + bibletar_background);
+    // console.log("Item Clicked: " + item_clicked);
+    // console.log("Current Bibletar: " + current_bibletar);
+    // console.log("Old Bibletar: " + old_bibletar);
 }
 
 /** Inititalize Dimensions on load */
