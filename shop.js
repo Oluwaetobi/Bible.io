@@ -45,9 +45,41 @@ var img_background = new Image();
 img_background.src = "./images/background1.svg"; // Set source URL
 img_background.alt = "background image";
 
+var img_face = new Image();
+img_face.src = "./images/face1.svg"; // Set source URL
+img_face.alt = "face image";
+
 var img_shirt = new Image();
 img_shirt.src = "./images/shirt1.svg"; // Set source URL
 img_shirt.alt = "shirt image";
+
+var img_glasses = new Image();
+img_glasses.src = "./images/glasses1.svg"; // Set source URL
+img_glasses.alt = "glasses image";
+
+var img_hats = new Image();
+img_hats.src = "./images/hats1.svg"; // Set source URL
+img_hats.alt = "hats image";
+
+var img_eyes = new Image();
+img_eyes.src = "./images/eyes1.svg"; // Set source URL
+img_eyes.alt = "eyes image";
+
+var img_eyebrows = new Image();
+img_eyebrows.src = "./images/eyebrows1.svg"; // Set source URL
+img_eyebrows.alt = "eyebrows image";
+
+var img_noses = new Image();
+img_noses.src = "./images/noses1.svg"; // Set source URL
+img_noses.alt = "noses image";
+
+var img_mouths = new Image();
+img_mouths.src = "./images/mouths1.svg"; // Set source URL
+img_mouths.alt = "mouths image";
+
+var img_hair = new Image();
+img_hair.src = "./images/hair1.svg"; // Set source URL
+img_hair.alt = "hair image";
 
 /* Being able to copy and paste text by using HTML is super important, especially when the text is super long,
 that's one thing I like about HTML. As well as it's the core foundation to building websites. */
@@ -183,31 +215,31 @@ function item_Chosen(item_clicked_html) {
         }
     }
     if (bibletar_maker_page == 3) {
-        if (closet_section == 1) {
+        if (shop_section == 1) {
             bibletar_background = item_clicked;
         }
-        if (closet_section == 2) {
+        if (shop_section == 2) {
             bibletar_shirt = item_clicked;
         }
-        if (closet_section == 3) {
+        if (shop_section == 3) {
             bibletar_glasses = item_clicked;
         }
-        if (closet_section == 4) {
+        if (shop_section == 4) {
             bibletar_hats = item_clicked;
         }
-        if (closet_section == 5) {
+        if (shop_section == 5) {
             bibletar_eyes = item_clicked;
         }
-        if (closet_section == 6) {
+        if (shop_section == 6) {
             bibletar_eyebrows = item_clicked;
         }
-        if (closet_section == 7) {
+        if (shop_section == 7) {
             bibletar_nose = item_clicked;
         }
-        if (closet_section == 8) {
+        if (shop_section == 8) {
             bibletar_mouth = item_clicked;
         }
-        if (closet_section == 9) {
+        if (shop_section == 9) {
             bibletar_hair = item_clicked;
         }
     }
@@ -215,6 +247,15 @@ function item_Chosen(item_clicked_html) {
 
 function match_drawings_to_correct_bibletar() {
     img_background.src = "./images/background" + current_bibletar[1] + ".svg";
+    img_face.src = "./images/face" + current_bibletar[1] + ".svg";
+    img_shirt.src = "./images/shirt" + current_bibletar[1] + ".svg";
+    img_glasses.src = "./images/glasses" + current_bibletar[1] + ".svg";
+    img_hats.src = "./images/hats" + current_bibletar[1] + ".svg";
+    img_eyes.src = "./images/eyes" + current_bibletar[1] + ".svg";
+    img_eyebrows.src = "./images/eyebrows" + current_bibletar[1] + ".svg";
+    img_noses.src = "./images/noses" + current_bibletar[1] + ".svg";
+    img_hats.src = "./images/hats" + current_bibletar[1] + ".svg";
+    img_mouths.src = "./images/mouths" + current_bibletar[1] + ".svg";
 }
 
 function drawUsersBibletar() {
@@ -241,6 +282,7 @@ function drawUsersBibletar() {
 
     function resizeImageByPixels_and_draw (what_to_draw, x_pos_ribp, y_pos_ribp, pixel_size, type_of_drawing) {
         my_pixels = pixel_size;
+        // over here I resize the width based off of the given height
         if (type_of_drawing == 1) {
             my_pixels2 = my_pixels*1.2;
         }
@@ -248,7 +290,7 @@ function drawUsersBibletar() {
             my_pixels2 = my_pixels*1.2;
         }
         if (type_of_drawing == 3) {
-            my_pixels2 = my_pixels*1.6;
+            my_pixels2 = my_pixels*1.7;
         }
         if (type_of_drawing == 4) {
             my_pixels2 = my_pixels*1.2;
@@ -276,8 +318,11 @@ function drawUsersBibletar() {
          */
         ctx.drawImage(what_to_draw, x_pos_ribp, y_pos_ribp, my_pixels2, my_pixels);
     }
+    /** drawing / x_pos / y_pos / size / type, reference lines 29-38 or if that changes reference 
+     * function called item_chosen specifcally for closet_section NOT shop_section
+     */
     resizeImageByPixels_and_draw(img_background, 980, 100, 300, 1);
-    resizeImageByPixels_and_draw(img_shirt, 980, 100, 180, 3);
+    resizeImageByPixels_and_draw(img_shirt, 1045, 280, 120, 3);
 
     // ctx.drawImage(img_background, 980, 100, 360, 300);
     // ctx.drawImage(img_shirt, 980, 100, 360, 300);
