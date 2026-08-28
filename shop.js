@@ -25,7 +25,7 @@ const shop_page_background_mens_or_womens = document.getElementById('shop_backgr
  * once I get my own reliable server I'll set the array for current_bibletar to the specific data
  * set within the user's account object
 */
-var current_bibletar = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+var current_bibletar = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
 var bibletar_background = current_bibletar[1];
 var bibletar_face = current_bibletar[2];
 var bibletar_shirt = current_bibletar[3];
@@ -39,26 +39,26 @@ var bibletar_hair = current_bibletar[10];
 /**old_bibletar stores the old one, meaning that if the users doesn't save their
  * bibletar it will revert to the old one
  */
-var old_bibletar = current_bibletar;
+var old_bibletar = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
 
 var img_background = new Image();
 img_background.src = "./images/background1.svg"; // Set source URL
 img_background.alt = "background image";
 
 var img_face = new Image();
-img_face.src = "./images/face1.svg"; // Set source URL
+img_face.src = "./images/face_men1.svg"; // Set source URL
 img_face.alt = "face image";
 
 var img_shirt = new Image();
-img_shirt.src = "./images/shirt1.svg"; // Set source URL
+img_shirt.src = "./images/shirt_men1.svg"; // Set source URL
 img_shirt.alt = "shirt image";
 
 var img_glasses = new Image();
-img_glasses.src = "./images/glasses1.svg"; // Set source URL
+img_glasses.src = "./images/glasses_men1.svg"; // Set source URL
 img_glasses.alt = "glasses image";
 
 var img_hats = new Image();
-img_hats.src = "./images/hats1.svg"; // Set source URL
+img_hats.src = "./images/hats_men1.svg"; // Set source URL
 img_hats.alt = "hats image";
 
 var img_eyes = new Image();
@@ -66,7 +66,7 @@ img_eyes.src = "./images/eyes1.svg"; // Set source URL
 img_eyes.alt = "eyes image";
 
 var img_eyebrows = new Image();
-img_eyebrows.src = "./images/eyebrows1.svg"; // Set source URL
+img_eyebrows.src = "./images/eyebrows_men1.svg"; // Set source URL
 img_eyebrows.alt = "eyebrows image";
 
 var img_noses = new Image();
@@ -74,11 +74,11 @@ img_noses.src = "./images/noses1.svg"; // Set source URL
 img_noses.alt = "noses image";
 
 var img_mouths = new Image();
-img_mouths.src = "./images/mouths1.svg"; // Set source URL
+img_mouths.src = "./images/mouths_men1.svg"; // Set source URL
 img_mouths.alt = "mouths image";
 
 var img_hair = new Image();
-img_hair.src = "./images/hair1.svg"; // Set source URL
+img_hair.src = "./images/hair_men1.svg"; // Set source URL
 img_hair.alt = "hair image";
 
 /* Being able to copy and paste text by using HTML is super important, especially when the text is super long,
@@ -123,14 +123,24 @@ function mouseDetections() {
             bibletar_maker_page = 1;
             i_am_a_boy = false;
             i_am_a_girl = false;
+            /** If I do this it seems like I am creating a pointer, which is bad, because
+             * it will always update, so I have to use a for loop and update each element automatically
             old_bibletar = current_bibletar
+             */
+            for(let i = 0; i < current_bibletar.length; i++) {
+                old_bibletar[i] = current_bibletar[i];
+            }
         }
         // Leave
         if (mouseX > 979 && mouseX < 1110 && mouseY < 83 && mouseY > 53) {
             bibletar_maker_page = 1;
             i_am_a_boy = false;
             i_am_a_girl = false;
-            current_bibletar = old_bibletar;
+            updateIndividualBibletarChoosers();
+            // current_bibletar = old_bibletar;
+            for(let i = 0; i < current_bibletar.length; i++) {
+                current_bibletar[i] = old_bibletar[i];
+            }
         }
     }
     // Open SHOP
@@ -147,11 +157,35 @@ function mouseDetections() {
         /**the current bibletar will equal the old bibletar, but the new stuff you 
          * bought will be brought into your closet
          */
-        current_bibletar = old_bibletar;
+        updateIndividualBibletarChoosers();
+        // current_bibletar = old_bibletar;
+        for(let i = 0; i < current_bibletar.length; i++) {
+                current_bibletar[i] = old_bibletar[i];
+            }
+    }
+    /**This is very IMPORTANT, because usually the opposite is happening, anytime
+     * you leave the Bibletar Maker Closet or shop you must update the current_bibletar, 
+     * you must called updateIndividualBibletarChoosers();
+     * but it must happen after everything above it get set to the right data
+     */
+    if (bibletar_maker_page ==1) {
+        updateIndividualBibletarChoosers();
     }
     });
 }
 
+function updateIndividualBibletarChoosers () {
+    bibletar_background = old_bibletar[1];
+    bibletar_face = old_bibletar[2];
+    bibletar_shirt = old_bibletar[3];
+    bibletar_glasses = old_bibletar[4];
+    bibletar_hats = old_bibletar[5];
+    bibletar_eyes = old_bibletar[6];
+    bibletar_eyebrows = old_bibletar[7];
+    bibletar_nose = old_bibletar[8];
+    bibletar_mouth = old_bibletar[9];
+    bibletar_hair = old_bibletar[10];
+}
 function updateCurrentBibletarCodeNumber() {
     if (i_am_a_boy == true) {
         current_bibletar[0] = 1;
@@ -172,6 +206,7 @@ function updateCurrentBibletarCodeNumber() {
     current_bibletar[9] = bibletar_mouth;
     current_bibletar[10] = bibletar_hair;
 }
+
 function updateClosetSection (closet_section_html) {
     closet_section = closet_section_html;
 }
@@ -214,48 +249,53 @@ function item_Chosen(item_clicked_html) {
             bibletar_hair = item_clicked;
         }
     }
+    /**I'm making my life easy and keeping the numbers the same relative to the top so I don't cause
+     * problems down the line for "type_of_drawing" or anything else, and that way I don't have
+     * to make more if statements
+     */
     if (bibletar_maker_page == 3) {
         if (shop_section == 1) {
             bibletar_background = item_clicked;
         }
-        if (shop_section == 2) {
+        if (shop_section == 3) {
             bibletar_shirt = item_clicked;
         }
-        if (shop_section == 3) {
+        if (shop_section == 4) {
             bibletar_glasses = item_clicked;
         }
-        if (shop_section == 4) {
+        if (shop_section == 5) {
             bibletar_hats = item_clicked;
         }
-        if (shop_section == 5) {
-            bibletar_eyes = item_clicked;
-        }
-        if (shop_section == 6) {
-            bibletar_eyebrows = item_clicked;
-        }
-        if (shop_section == 7) {
-            bibletar_nose = item_clicked;
-        }
-        if (shop_section == 8) {
-            bibletar_mouth = item_clicked;
-        }
-        if (shop_section == 9) {
-            bibletar_hair = item_clicked;
-        }
     }
+    console.log("item Clicked: " + item_clicked)
 }
 
 function match_drawings_to_correct_bibletar() {
     img_background.src = "./images/background" + current_bibletar[1] + ".svg";
-    img_face.src = "./images/face" + current_bibletar[1] + ".svg";
-    img_shirt.src = "./images/shirt" + current_bibletar[1] + ".svg";
-    img_glasses.src = "./images/glasses" + current_bibletar[1] + ".svg";
-    img_hats.src = "./images/hats" + current_bibletar[1] + ".svg";
-    img_eyes.src = "./images/eyes" + current_bibletar[1] + ".svg";
-    img_eyebrows.src = "./images/eyebrows" + current_bibletar[1] + ".svg";
-    img_noses.src = "./images/noses" + current_bibletar[1] + ".svg";
-    img_hats.src = "./images/hats" + current_bibletar[1] + ".svg";
-    img_mouths.src = "./images/mouths" + current_bibletar[1] + ".svg";
+    img_eyes.src = "./images/eyes" + current_bibletar[6] + ".svg";
+    img_noses.src = "./images/noses" + current_bibletar[8] + ".svg";
+    if (i_am_a_boy == true ) {
+        /**You might be wondering why include face as well, because women's necks are in
+         * fact visibily thinner, and men's necks are in fact visibly thicker
+         */
+        img_face.src = "./images/face_men" + current_bibletar[2] + ".svg";
+        img_shirt.src = "./images/shirt_men" + current_bibletar[3] + ".svg";
+        img_glasses.src = "./images/glasses_men" + current_bibletar[4] + ".svg";
+        img_hats.src = "./images/hats_men" + current_bibletar[5] + ".svg";
+        img_eyebrows.src = "./images/eyebrows_men" + current_bibletar[7] + ".svg";
+        img_hats.src = "./images/hats_men" + current_bibletar[9] + ".svg";
+        img_mouths.src = "./images/mouths_men" + current_bibletar[10] + ".svg";
+    } else {
+        if (i_am_a_girl == true) {
+            img_face.src = "./images/face_women" + current_bibletar[2] + ".svg";
+            img_shirt.src = "./images/shirt_women" + current_bibletar[3] + ".svg";
+            img_glasses.src = "./images/glasses_women" + current_bibletar[4] + ".svg";
+            img_hats.src = "./images/hats_women" + current_bibletar[5] + ".svg";
+            img_eyebrows.src = "./images/eyebrows_women" + current_bibletar[7] + ".svg";
+            img_hats.src = "./images/hats_women" + current_bibletar[9] + ".svg";
+            img_mouths.src = "./images/mouths_women" + current_bibletar[10] + ".svg";
+        }
+    }
 }
 
 function drawUsersBibletar() {
@@ -312,6 +352,9 @@ function drawUsersBibletar() {
         }
         if (type_of_drawing == 10) {
             my_pixels2 = my_pixels*1.2;
+        } else {
+            // default
+            my_pixels*1.2;
         }
         /**careful not to confuse function parameters with variables, that's why I added
          * the _ribp
@@ -725,6 +768,8 @@ function gameLoop() {
      * monitor's physical refresh rate
      */
     requestAnimationFrame(gameLoop);
+    // console.log("Current Bibletar: " + current_bibletar);
+    // console.log("Old Bibletar: " + old_bibletar);
 }
 
 /** Inititalize Dimensions on load */
