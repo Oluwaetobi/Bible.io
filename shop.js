@@ -7,6 +7,8 @@ const top_border = 90;
 const side_border = 2;
 let mouseX = 0;
 let mouseY = 0;
+var my_pixels = 300;
+var my_pixels2 = my_pixels*1.2;
 
 var box_x_pos = 1;
 var gameOn = false;
@@ -42,6 +44,10 @@ var old_bibletar = current_bibletar;
 var img_background = new Image();
 img_background.src = "./images/background1.svg"; // Set source URL
 img_background.alt = "background image";
+
+var img_shirt = new Image();
+img_shirt.src = "./images/shirt1.svg"; // Set source URL
+img_shirt.alt = "shirt image";
 
 /* Being able to copy and paste text by using HTML is super important, especially when the text is super long,
 that's one thing I like about HTML. As well as it's the core foundation to building websites. */
@@ -232,7 +238,49 @@ function drawUsersBibletar() {
 
     updateCurrentBibletarCodeNumber();
     match_drawings_to_correct_bibletar();
-    ctx.drawImage(img_background, 980, 100, 360, 300);
+
+    function resizeImageByPixels_and_draw (what_to_draw, x_pos_ribp, y_pos_ribp, pixel_size, type_of_drawing) {
+        my_pixels = pixel_size;
+        if (type_of_drawing == 1) {
+            my_pixels2 = my_pixels*1.2;
+        }
+        if (type_of_drawing == 2) {
+            my_pixels2 = my_pixels*1.2;
+        }
+        if (type_of_drawing == 3) {
+            my_pixels2 = my_pixels*1.6;
+        }
+        if (type_of_drawing == 4) {
+            my_pixels2 = my_pixels*1.2;
+        }
+        if (type_of_drawing == 5) {
+            my_pixels2 = my_pixels*1.2;
+        }
+        if (type_of_drawing == 6) {
+            my_pixels2 = my_pixels*1.2;
+        }
+        if (type_of_drawing == 7) {
+            my_pixels2 = my_pixels*1.2;
+        }
+        if (type_of_drawing == 8) {
+            my_pixels2 = my_pixels*1.2;
+        }
+        if (type_of_drawing == 9) {
+            my_pixels2 = my_pixels*1.2;
+        }
+        if (type_of_drawing == 10) {
+            my_pixels2 = my_pixels*1.2;
+        }
+        /**careful not to confuse function parameters with variables, that's why I added
+         * the _ribp
+         */
+        ctx.drawImage(what_to_draw, x_pos_ribp, y_pos_ribp, my_pixels2, my_pixels);
+    }
+    resizeImageByPixels_and_draw(img_background, 980, 100, 300, 1);
+    resizeImageByPixels_and_draw(img_shirt, 980, 100, 180, 3);
+
+    // ctx.drawImage(img_background, 980, 100, 360, 300);
+    // ctx.drawImage(img_shirt, 980, 100, 360, 300);
 
     
 
