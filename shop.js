@@ -136,7 +136,6 @@ function mouseDetections() {
             bibletar_maker_page = 1;
             i_am_a_boy = false;
             i_am_a_girl = false;
-            updateIndividualBibletarChoosers();
             // current_bibletar = old_bibletar;
             for(let i = 0; i < current_bibletar.length; i++) {
                 current_bibletar[i] = old_bibletar[i];
@@ -153,11 +152,11 @@ function mouseDetections() {
     if (bibletar_maker_page == 3) {
         if (mouseX > 1127 -350 && mouseX < 1330 -350 && mouseY < 83 && mouseY > 53) {
             bibletar_maker_page = 2;
+            updateIndividualBibletarChoosers();
         }
         /**the current bibletar will equal the old bibletar, but the new stuff you 
          * bought will be brought into your closet
          */
-        updateIndividualBibletarChoosers();
         // current_bibletar = old_bibletar;
         for(let i = 0; i < current_bibletar.length; i++) {
                 current_bibletar[i] = old_bibletar[i];
@@ -168,7 +167,7 @@ function mouseDetections() {
      * you must called updateIndividualBibletarChoosers();
      * but it must happen after everything above it get set to the right data
      */
-    if (bibletar_maker_page ==1) {
+    if (bibletar_maker_page == 1) {
         updateIndividualBibletarChoosers();
     }
     });
@@ -768,8 +767,11 @@ function gameLoop() {
      * monitor's physical refresh rate
      */
     requestAnimationFrame(gameLoop);
-    // console.log("Current Bibletar: " + current_bibletar);
-    // console.log("Old Bibletar: " + old_bibletar);
+    console.log("Bibletar background: " + bibletar_background);
+    // bibletar_background = item_clicked;
+    console.log("Item Clicked: " + item_clicked);
+    console.log("Current Bibletar: " + current_bibletar);
+    console.log("Old Bibletar: " + old_bibletar);
 }
 
 /** Inititalize Dimensions on load */
