@@ -403,7 +403,7 @@ function item_Chosen(item_clicked_html) {
 
     if (bibletar_maker_page == 2) {
         images_closet.forEach((img, index)=> {
-            if (index == item_clicked_html) {
+            if ((index + acquired_stuff_closet[closet_section - 1][1]) == item_clicked_html) {
                 /**instead of just doing img.src I am doing img.src.split('/').pop() 
                  * .split splits all of the stuff into an array based of of what you are spliting it off
                  * in this case it is '/' the slash, then pop return the last element of an array, so I don't
@@ -417,7 +417,7 @@ function item_Chosen(item_clicked_html) {
     } else {
         if (bibletar_maker_page == 3) {
             images_shop.forEach((img, index)=> {
-                if (index == item_clicked_html) {
+                if ((index + not_acquired_stuff_shop[shop_section - 1][1] + 1) == item_clicked_html) {
                     if (img.src.split('/').pop() == "NaN") {
                         item_is_accessible = false;
                     }
