@@ -243,7 +243,8 @@ function updateClosetSection (closet_section_html) {
     }
 
     while (images.length < 10) {
-        newSources.push("./images/background1.svg");
+        // so we are not starting at 1 which is why I did (images.length + 1)
+        newSources.push("./images/" + bibletar_stuff_part[closet_section] + (images.length + 1) + ".svg");
     } 
 
     images.forEach((img, index)=> {
