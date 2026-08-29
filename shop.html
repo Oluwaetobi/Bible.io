@@ -33,7 +33,7 @@
                     <table class="table">
                         <thead>
                             <tr>
-                                <th>Select Body Part</th>
+                                <th>Select Bibletar Part</th>
                                 <!-- <th>Rank</th>
                                 <th>Name</th>
                                 <th>Points</th> -->
@@ -47,12 +47,12 @@
                                  cell and not just the image, for instance if it was a small image like an eyebrow, this
                                  would become very problematic, meaning you would have to click directly on the eyebrow
                                  before the touch sensor worked -->
-                                <td onclick="updateClosetSection(1)"><img src="./images/background_logo.svg" alt="background" width="70">Backgrounds</td>
+                                <td onclick="updateClosetSection(1)"><img src="./images/background_logo.svg" alt="background" width="70">Background</td>
                                 <!-- face logo just means, the color of your face -->
-                                <td onclick="updateClosetSection(2)"><img src="./images/face_logo.svg" alt="face color" width="70">Face Color</td>
+                                <td onclick="updateClosetSection(2)"><img src="./images/face_logo.svg" alt="face color" width="70">Face (Color)</td>
                             </tr>
                             <tr>
-                                <td onclick="updateClosetSection(3)"><img src="./images/shirt_logo.svg" alt="shirt" width="70">Shirts</td>
+                                <td onclick="updateClosetSection(3)"><img src="./images/shirt_logo.svg" alt="shirt" width="70">Shirt</td>
                                 <td onclick="updateClosetSection(4)"><img src="./images/glasses_logo.svg" alt="glasses" width="70">Glasses</td>
                             </tr>
                             <tr>
@@ -114,9 +114,9 @@
                         <tbody>
                             <!-- Remember eyebrows for men and women are different -->
                             <tr>
-                                <td onclick="item_Chosen(1)"><img src="./images/eyebrows_men1.svg" alt="background" width="100"></td>
-                                <td onclick="item_Chosen(2)"><img src="./images/eyebrows_men2.svg" alt="face color" width="100"></td>
-                                <td onclick="item_Chosen(3)"><img src="./images/eyebrows_men3.svg" alt="face color" width="100"></td>
+                                <td onclick="eyebrows_Chosen(1)"><img src="./images/eyebrows_men1.svg" alt="background" width="100"></td>
+                                <td onclick="eyebrows_Chosen(2)"><img src="./images/eyebrows_men2.svg" alt="face color" width="100"></td>
+                                <td onclick="eyebrows_Chosen(3)"><img src="./images/eyebrows_men3.svg" alt="face color" width="100"></td>
                             </tr>
                         </tbody>
                     </table>
@@ -134,8 +134,8 @@
             <table class="table-shop">
                         <thead>
                             <tr>
-                                <th onclick="updateShopSection(1)">Backgrounds</th>
-                                <th onclick="updateShopSection(3)">Shirts</th>
+                                <th onclick="updateShopSection(1)">Background</th>
+                                <th onclick="updateShopSection(3)">Shirt</th>
                                 <th onclick="updateShopSection(4)">Glasses</th>
                                 <th onclick="updateShopSection(5)">Hats</th>
                             </tr>

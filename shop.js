@@ -208,11 +208,61 @@ function updateCurrentBibletarCodeNumber() {
 
 function updateClosetSection (closet_section_html) {
     closet_section = closet_section_html;
+
+    const images = document.querySelectorAll('#choose_bibletar_stuff img');
+
+    var newSources = [];
+    /*NO 's' after men!!!! Also it is just background, eyes, noses, and mouths that don't differ that
+    are the same for both men and women or (boys and girls)*/
+    var bibletar_stuff_part = ['background', 'face_men', 'shirt_men', 'glasses_men', 'hats_men', 'eyes', 'noses', 'mouths_men', 'hair_men'];
+    if(i_am_a_girl == true) {
+        for (let i = 0; i < bibletar_stuff_part.length; i++) {
+            // remember the difference != is loose != is strong
+            // as long as it's not background, eyes, or nose change property for women
+            if (i != 0 || i != 5 || i!= 6) {
+                if (i == 1) {
+                    bibletar_stuff_part[i] = 'face_women';
+                }
+                if (i == 2) {
+                    bibletar_stuff_part[i] = 'shirt_women';
+                }
+                if (i == 3) {
+                    bibletar_stuff_part[i] = 'glasses_women';
+                }
+                if (i == 4) {
+                    bibletar_stuff_part[i] = 'hats_women';
+                }
+                if (i == 7) {
+                    bibletar_stuff_part[i] = 'mouth_women';
+                }
+                if (i == 8) {
+                    bibletar_stuff_part[i] = 'hair_women';
+                }
+            }
+        }
+    }
+
+    while (images.length < 10) {
+        newSources.push("./images/background1.svg");
+    } 
+
+    images.forEach((img, index)=> {
+        if(newSources[index]) {
+            img.src = newSources[index];
+        }
+    });
 }
 function updateShopSection (shop_section_html) {
     shop_section = shop_section_html
 }
 
+/**This function is an outliar, it should actually be in item_Chosen, but because the 
+ * eyebrows section and possibly extra stuff such as color as it's own distinct table, I can't
+ * put it in the function beneath
+ */
+function eyebrows_Chosen(extra_clicked_html) {
+    bibletar_eyebrows = extra_clicked_html;
+}
 function item_Chosen(item_clicked_html) {
     item_clicked = item_clicked_html;
 
@@ -274,7 +324,10 @@ function match_drawings_to_correct_bibletar() {
     img_noses.src = "./images/noses" + current_bibletar[8] + ".svg";
     if (i_am_a_boy == true ) {
         /**You might be wondering why include face as well, because women's necks are in
-         * fact visibily thinner, and men's necks are in fact visibly thicker
+         * fact visibily thinner, and men's necks are in fact visibly thicker, also
+         * women sometimes put on makeup, which means their mouths = lips will be
+         * different colors, also there are also some other differences which i will leave
+         * up to the professionals
          */
         img_face.src = "./images/face_men" + current_bibletar[2] + ".svg";
         img_shirt.src = "./images/shirt_men" + current_bibletar[3] + ".svg";
