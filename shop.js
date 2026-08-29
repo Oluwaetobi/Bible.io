@@ -39,6 +39,43 @@ var bibletar_hair = current_bibletar[10];
 /**old_bibletar stores the old one, meaning that if the users doesn't save their
  * bibletar it will revert to the old one
  */
+
+/**Each layer represents each bibletar part thing, remember to keep orders, that's important
+ * very soon, we'll be pulling this information from your account once we get a reliable server, each number
+ * is important as it represents the number inside the image eg(./images/backgrounds4.svg)
+ * there should be 10 rows, the columns depend on how much stuff you've acquired
+ */
+var acquired_stuff_closet = [
+    [1, 2, 3],
+    [1, 2, 3],
+    [1, 2, 3],
+    [1, 2, 3],
+    [1, 2, 3],
+    [1, 2, 3],
+    [1, 2, 3],
+    [1, 2, 3],
+    [1, 2, 3],
+    [1, 2, 3],
+];
+
+/**Most of the rows here won't be used because you can only buy 4 different types of things in the shop
+ * backgrounds, shirt, glasses, and hats, but we need the extra rows to align with placements because
+ * keying and numbering is essential in data reading, even if we don't use it, doesn't mean we shouldn't
+ * have the placements set
+ */
+var not_acquired_stuff_shop = [
+    [4, 5, 6],
+    [0, 0, 0],
+    [4, 5, 6],
+    [4, 5, 6],
+    [0, 0, 0],
+    [0, 0, 0],
+    [0, 0, 0],
+    [0, 0, 0],
+    [0, 0, 0],
+    [0, 0, 0],
+];
+
 var old_bibletar = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
 
 var img_background = new Image();
