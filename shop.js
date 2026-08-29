@@ -44,6 +44,16 @@ var bibletar_hair = current_bibletar[10];
  * very soon, we'll be pulling this information from your account once we get a reliable server, each number
  * is important as it represents the number inside the image eg(./images/backgrounds4.svg)
  * there should be 10 rows, the columns depend on how much stuff you've acquired
+ * 1. background
+ * 2. face
+ * 3. shirt
+ * 4. glasses
+ * 5. hats
+ * 6. eyes
+ * 7. eyebrows
+ * 8. noses
+ * 9. mouths
+ * 10. hair
  */
 var acquired_stuff_closet = [
     [1, 2, 3],
