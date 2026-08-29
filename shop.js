@@ -95,6 +95,10 @@ var not_acquired_stuff_shop = [
     [0, 0, 0],
     [0, 0, 0],
 ];
+/* this is because since our thing has some that are longer than others some aren't change and they exist at the
+end, so in order to make them go away, I have to at least replace it with something, like nothing!! LOL
+Well at least until I can figure out a more effective way of doing it*/
+var changeAll = 100;
 
 var old_bibletar = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
 
@@ -304,11 +308,12 @@ function updateClosetSection (closet_section_html) {
         }
     }
 
-    var j = 1;
-    while (newSources.length < 10) {
+    var j = 0;
+    while (newSources.length < acquired_stuff_closet[closet_section-1].length) {
         /* also I did [closet_section - 1] because the real one starts from 1 but arrays start from zero
         so I have to subtract one for it to align*/
-        newSources.push("./images/" + bibletar_stuff_part[closet_section - 1] + j + ".svg");
+        newSources.push("./images/" + bibletar_stuff_part[closet_section - 1] + acquired_stuff_closet[closet_section-1][j] + ".svg");
+        // console.log("j: " + j);
         j+= 1;
     } 
 
@@ -316,7 +321,7 @@ function updateClosetSection (closet_section_html) {
         if(newSources[index]) {
             img.src = newSources[index];
             img.alt = newSources[index];
-            console.log("newSources[index]: " +  newSources[index]);
+            // console.log("newSources[index]: " +  newSources[index]);
         }
     });
 }
@@ -361,20 +366,23 @@ function updateShopSection (shop_section_html) {
         }
     }
 
-    // starts at three because it's in the shop section
-    var j = 4;
-    while (newSources.length < 10) {
+    var j = 0;
+    while (newSources.length < not_acquired_stuff_shop[shop_section-1].length) {
         /* also I did [closet_section - 1] because the real one starts from 1 but arrays start from zero
         so I have to subtract one for it to align*/
-        newSources.push("./images/" + bibletar_stuff_part[shop_section - 1] + j + ".svg");
+        newSources.push("./images/" + bibletar_stuff_part[shop_section - 1] + not_acquired_stuff_shop[shop_section-1][j] + ".svg");
         j+= 1;
     } 
+    while (j < changeAll) {
+        newSources.push("NaN");
+        j+=1;
+    }
 
     images.forEach((img, index)=> {
         if(newSources[index]) {
             img.src = newSources[index];
             img.alt = newSources[index];
-            console.log("newSources[index]: " +  newSources[index]);
+            // console.log("newSources[index]: " +  newSources[index]);
         }
     });
 }
@@ -387,58 +395,101 @@ function eyebrows_Chosen(extra_clicked_html) {
     bibletar_eyebrows = extra_clicked_html;
 }
 function item_Chosen(item_clicked_html) {
-    item_clicked = item_clicked_html;
+
+    // First of all we need to check if the item is accessible, if it is accessible it will NOT say "NaN"
+    const images_closet = document.querySelectorAll('#choose_bibletar_stuff img');
+    const images_shop = document.querySelectorAll('#choose_shop_stuff img');
+    var item_is_accessible = true;
 
     if (bibletar_maker_page == 2) {
-        if (closet_section == 1) {
-            bibletar_background = item_clicked;
-        }
-        if (closet_section == 2) {
-            bibletar_face = item_clicked;
-        }
-        if (closet_section == 3) {
-            bibletar_shirt = item_clicked;
-        }
-        if (closet_section == 4) {
-            bibletar_glasses = item_clicked;
-        }
-        if (closet_section == 5) {
-            bibletar_hats = item_clicked;
-        }
-        if (closet_section == 6) {
-            bibletar_eyes = item_clicked;
-        }
-        if (closet_section == 7) {
-            bibletar_eyebrows = item_clicked;
-        }
-        if (closet_section == 8) {
-            bibletar_nose = item_clicked;
-        }
-        if (closet_section == 9) {
-            bibletar_mouth = item_clicked;
-        }
-        if (closet_section == 10) {
-            bibletar_hair = item_clicked;
-        }
-    }
-    /**I'm making my life easy and keeping the numbers the same relative to the top so I don't cause
-     * problems down the line for "type_of_drawing" or anything else, and that way I don't have
-     * to make more if statements
-     */
-    if (bibletar_maker_page == 3) {
-        if (shop_section == 1) {
-            bibletar_background = item_clicked;
-        }
-        if (shop_section == 3) {
-            bibletar_shirt = item_clicked;
-        }
-        if (shop_section == 4) {
-            bibletar_glasses = item_clicked;
-        }
-        if (shop_section == 5) {
-            bibletar_hats = item_clicked;
+        images_closet.forEach((img, index)=> {
+            if (index == item_clicked_html) {
+                /**instead of just doing img.src I am doing img.src.split('/').pop() 
+                 * .split splits all of the stuff into an array based of of what you are spliting it off
+                 * in this case it is '/' the slash, then pop return the last element of an array, so I don't
+                 * want the entire img.src link, I just want the last part after the slash which is NaN
+                 */
+                if (img.src.split('/').pop() == "NaN") {
+                    item_is_accessible = false;
+                }
+            }
+        });
+    } else {
+        if (bibletar_maker_page == 3) {
+            images_shop.forEach((img, index)=> {
+                if (index == item_clicked_html) {
+                    if (img.src.split('/').pop() == "NaN") {
+                        item_is_accessible = false;
+                    }
+                }
+                console.log("index: " + index);
+                console.log("img.src is: " + img.src.split('/').pop());
+                console.log("item clicked html: " + item_clicked_html);
+                if(index == item_clicked_html) {
+                    console.log("true");
+                }
+                console.log("item is accessible: " + item_is_accessible);
+                console.log("");
+            });
         }
     }
+
+    if (item_is_accessible == true) {
+        item_clicked = item_clicked_html;
+    
+        if (bibletar_maker_page == 2) {
+            if (closet_section == 1) {
+                bibletar_background = item_clicked;
+            }
+            if (closet_section == 2) {
+                bibletar_face = item_clicked;
+            }
+            if (closet_section == 3) {
+                bibletar_shirt = item_clicked;
+            }
+            if (closet_section == 4) {
+                bibletar_glasses = item_clicked;
+            }
+            if (closet_section == 5) {
+                bibletar_hats = item_clicked;
+            }
+            if (closet_section == 6) {
+                bibletar_eyes = item_clicked;
+            }
+            if (closet_section == 7) {
+                bibletar_eyebrows = item_clicked;
+            }
+            if (closet_section == 8) {
+                bibletar_nose = item_clicked;
+            }
+            if (closet_section == 9) {
+                bibletar_mouth = item_clicked;
+            }
+            if (closet_section == 10) {
+                bibletar_hair = item_clicked;
+            }
+        }
+        /**I'm making my life easy and keeping the numbers the same relative to the top so I don't cause
+         * problems down the line for "type_of_drawing" or anything else, and that way I don't have
+         * to make more if statements
+         */
+        if (bibletar_maker_page == 3) {
+            if (shop_section == 1) {
+                bibletar_background = item_clicked;
+            }
+            if (shop_section == 3) {
+                bibletar_shirt = item_clicked;
+            }
+            if (shop_section == 4) {
+                bibletar_glasses = item_clicked;
+            }
+            if (shop_section == 5) {
+                bibletar_hats = item_clicked;
+            }
+        }
+
+    }
+
 }
 
 function match_drawings_to_correct_bibletar() {
