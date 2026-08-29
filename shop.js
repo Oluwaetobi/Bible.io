@@ -266,7 +266,9 @@ function updateCurrentBibletarCodeNumber() {
     current_bibletar[9] = bibletar_mouth;
     current_bibletar[10] = bibletar_hair;
 }
-
+/* Needs to be called at least once before requestanimationframe(gameLoop); is called in order to 
+allow NaN to receive their places for images */
+updateClosetSection(1);
 function updateClosetSection (closet_section_html) {
     closet_section = closet_section_html;
 
@@ -316,6 +318,10 @@ function updateClosetSection (closet_section_html) {
         // console.log("j: " + j);
         j+= 1;
     } 
+    while (j < changeAll) {
+        newSources.push("NaN");
+        j+=1;
+    }
 
     images.forEach((img, index)=> {
         if(newSources[index]) {
@@ -325,6 +331,9 @@ function updateClosetSection (closet_section_html) {
         }
     });
 }
+/* Needs to be called at least once before requestanimationframe(gameLoop); is called in order to 
+allow NaN to receive their places for images */
+updateShopSection(1);
 function updateShopSection (shop_section_html) {
     shop_section = shop_section_html
 
@@ -413,16 +422,25 @@ function item_Chosen(item_clicked_html) {
                     item_is_accessible = false;
                 }
             }
+            if (acquired_stuff_closet[closet_section - 1][item_clicked_html] == 0) {
+                    // if it equals 0 that means nothing is there so the item should not even be accessible
+                    item_is_accessible = false;
+                }
         });
     } else {
         if (bibletar_maker_page == 3) {
+            // appranetly index for each starts at 1 unlike how arrays work where it starts at zero
             images_shop.forEach((img, index)=> {
-                if ((index + not_acquired_stuff_shop[shop_section - 1][1] + 1) == item_clicked_html) {
+                if ((index + not_acquired_stuff_shop[shop_section - 1][1] -1) == item_clicked_html) {
                     if (img.src.split('/').pop() == "NaN") {
                         item_is_accessible = false;
                     }
                 }
-                console.log("index: " + index);
+                if (not_acquired_stuff_shop[shop_section - 1][item_clicked_html] == 0) {
+                    // if it equals 0 that means nothing is there so the item should not even be accessible
+                    item_is_accessible = false;
+                }
+                console.log("index: " + (index + not_acquired_stuff_shop[shop_section - 1][1] -1));
                 console.log("img.src is: " + img.src.split('/').pop());
                 console.log("item clicked html: " + item_clicked_html);
                 if(index == item_clicked_html) {
