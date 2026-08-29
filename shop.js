@@ -692,6 +692,7 @@ function drawSomething() {
         // none for display means hidden or invisible
         document.getElementById('bibletar_designs').style.display = "none";
         document.getElementById('choose_bibletar_stuff').style.display = "none";
+        document.getElementById('choose_bibletar_extra').style.display = "none";
         document.getElementById('shop_page_background').style.display = "none";
         document.getElementById('choose_shop_stuff').style.display = "none";
     } else if (bibletar_maker_page == 2) {
@@ -700,12 +701,14 @@ function drawSomething() {
         // block in display means visible, in simple words, YOU CAN SEE IT!!!
         document.getElementById('bibletar_designs').style.display = "block";
         document.getElementById('choose_bibletar_stuff').style.display = "block";
+        document.getElementById('choose_bibletar_extra').style.display = "block";
         document.getElementById('shop_page_background').style.display = "none";
         document.getElementById('choose_shop_stuff').style.display = "none";
     } else if (bibletar_maker_page == 3 ){
         // none for display means hidden or invisible
         document.getElementById('bibletar_designs').style.display = "none";
         document.getElementById('choose_bibletar_stuff').style.display = "none";
+        document.getElementById('choose_bibletar_extra').style.display = "none";
         document.getElementById('shop_page_background').style.display = "block";
         document.getElementById('choose_shop_stuff').style.display = "block";
     } else {

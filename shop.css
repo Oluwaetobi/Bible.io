@@ -234,9 +234,9 @@ JAVASCRIPT FILE*/
 
 
 
-/* scrollable table for Background pictures */
+/* scrollable table for Background pictures, and all other closet stuff */
 .scrollable-table-background {
-    height: 500px;
+    height: 470px;
     width: 450px;
     aspect-ratio: 1 / 1;  
     /* overflow-y makes only the y coordinates scrollable */
@@ -420,4 +420,78 @@ table takes up the full width of it's parent the scrollable table */
 
 .table-shop tbody .second_layer_shop_table td:nth-of-type(even) {
     background-color: #ffa5a5;
+}
+
+
+
+
+
+
+/* Extra Bibletar stuff, such as eyebrows, and maybe color, though probably not */
+#choose_bibletar_extra {
+    display: none;
+}
+
+.scrollable-table-extra {
+    height: 120px;
+    width: 450px;
+    aspect-ratio: 1 / 1;  
+    /* overflow-y makes only the y coordinates scrollable */
+    overflow-y: auto;
+    /* background-color: #7f2e2e; */
+    scroll-snap-type: y mandatory;
+    position: fixed;
+    left: 510px;
+    /* translate: -50%; */
+    z-index: 1;
+    top: 660px;
+    background-color: #fbfbfb;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    border: 6px solid black;
+    border-radius: 3%;
+}
+
+/* Scrollable table class takes precedence over table class
+table takes up the full width of it's parent the scrollable table */
+.scrollable-background > .table-extra {
+    width: 100%
+}
+
+.table-extra {
+    /* border-collapse:collapse; */
+    font-size: 10px;
+    width: 300px;
+    /* border-collapse: collapse;
+    border: 2px;
+    border-color: #000000; */
+}
+/*  */
+.table-extra th {
+    background-color: #6085fffe;
+    color: #ffffff;
+    font-size: 20px;
+    text-align: left;
+    position: sticky;
+    top: 0px;
+    /* justify-content: center;
+    align-items: center; */
+}
+
+.table-extra th {
+    padding: 2px 6px;
+    font-weight: normal;
+    font-size: 15px;
+    border-collapse: collapse
+}
+.table-extra td {
+    /* top right bottom left */
+    /* padding: 20px 20px 20px 20px; */
+    font-weight: normal;
+    /* font-size: 15px;
+    border: 1px solid black;  */
+}
+
+.table-extra tr {
+    scroll-snap-align: start;
 }

@@ -103,6 +103,18 @@
         
                 </div>
 
+                <!-- Extra section of eyebrows and possibly colors, although I probably won't do colors -->
+                <div class="scrollable-table-extra" id="choose_bibletar_extra">
+                    <table class="table-extra">
+                        <tbody>
+                            <tr>
+                                <td onclick="item_Chosen(1)"><img src="./images/background1.svg" alt="background" width="100"></td>
+                                <td onclick="item_Chosen(2)"><img src="./images/background2.svg" alt="face color" width="100"></td>
+                                <td onclick="item_Chosen(3)"><img src="./images/background3.svg" alt="face color" width="100"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
 
         </div>
 
@@ -116,16 +128,10 @@
             <table class="table-shop">
                         <thead>
                             <tr>
-                                <!-- I don't need a header, actually I DO!! -->
-                                <th>Backgrounds</th>
-                                <!-- <th>Face Colors</th> -->
-                                <th>Shirts</th>
-                                <th>Glasses</th>
-                                <th>Hats</th>
-                                <th>Eyes</th>
-                                <th>Noses</th>
-                                <th>Mouths</th>
-                                <th>Hair</th>
+                                <th onclick="updateShopSection(1)">Backgrounds</th>
+                                <th onclick="updateShopSection(3)">Shirts</th>
+                                <th onclick="updateShopSection(4)">Glasses</th>
+                                <th onclick="updateShopSection(5)">Hats</th>
                             </tr>
                         </thead>
             
