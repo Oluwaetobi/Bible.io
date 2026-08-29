@@ -84,7 +84,7 @@ var acquired_stuff_closet = [
  * have the placements set
  */
 var not_acquired_stuff_shop = [
-    [4, 5, 6],
+    [4, 5, 6, 7, 8, 9, 10],
     [0, 0, 0],
     [4, 5, 6],
     [4, 5, 6],
@@ -266,6 +266,19 @@ function updateCurrentBibletarCodeNumber() {
     current_bibletar[9] = bibletar_mouth;
     current_bibletar[10] = bibletar_hair;
 }
+/* this important because it is only when items are clicked that this seems to happen but not when
+the player switches rooms from boy to girl */
+function updateAllImageReferences() {
+    /*starting backwards so it appears to start on the backgrounds always, I need to update it again
+    to make sure all the image references for boys and girls are correct, not just when I select
+    a bibletar part, that means switching from background, to face color, or to shirt, glasses, or 
+    something else */
+    for (let i = 10; i >= 1; i--) {
+        updateClosetSection(i);
+        updateShopSection(i);
+    }
+}
+
 /* Needs to be called at least once before requestanimationframe(gameLoop); is called in order to 
 allow NaN to receive their places for images */
 updateClosetSection(1);
@@ -319,6 +332,8 @@ function updateClosetSection (closet_section_html) {
         j+= 1;
     } 
     while (j < changeAll) {
+        /* if it is labeled NaN it just means that it should be invisible and that you haven't acquired this 
+        image yet, or it should be unavailable*/
         newSources.push("NaN");
         j+=1;
     }
@@ -805,11 +820,13 @@ function bibletarMakerHome() {
 function boy_bibletar() {
     bibletar_maker_page = 2;
     i_am_a_boy = true;
+     updateAllImageReferences();
 }
 
 function girl_bibletar() {
     bibletar_maker_page = 2;
     i_am_a_girl = true;
+     updateAllImageReferences();
 }
 
 function bibleMaker_background () {
