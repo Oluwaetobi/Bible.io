@@ -67,7 +67,7 @@ var bibletar_hair = current_bibletar[10];
  */
 var acquired_stuff_closet = [
     [1, 2, 3],
-    [1, 2, 3],
+    [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17],
     [1, 2, 3],
     [1, 2, 3],
     [1, 2, 3],
@@ -106,6 +106,8 @@ var img_background = new Image();
 img_background.src = "./images/background1.svg"; // Set source URL
 img_background.alt = "background image";
 
+/* face_men0 is for for the robot, also I am not including freckles on the face but might do that as a separte
+bibletar part later, robot necks for men and women is medium, boy large, girl small */
 var img_face = new Image();
 img_face.src = "./images/face_men1.svg"; // Set source URL
 img_face.alt = "face image";
@@ -330,6 +332,7 @@ function updateClosetSection (closet_section_html) {
         newSources.push("./images/" + bibletar_stuff_part[closet_section - 1] + acquired_stuff_closet[closet_section-1][j] + ".svg");
         // console.log("j: " + j);
         j+= 1;
+        // console.log(acquired_stuff_closet[closet_section-1].length);
     } 
     while (j < changeAll) {
         /* if it is labeled NaN it just means that it should be invisible and that you haven't acquired this 
