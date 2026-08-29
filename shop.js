@@ -247,12 +247,12 @@ function updateClosetSection (closet_section_html) {
         }
     }
 
-    var j = 0;
+    var j = 1;
     while (newSources.length < 10) {
-        j+= 1;
         /* also I did [closet_section - 1] because the real one starts from 1 but arrays start from zero
         so I have to subtract one for it to align*/
         newSources.push("./images/" + bibletar_stuff_part[closet_section - 1] + j + ".svg");
+        j+= 1;
     } 
 
     images.forEach((img, index)=> {
@@ -265,6 +265,61 @@ function updateClosetSection (closet_section_html) {
 }
 function updateShopSection (shop_section_html) {
     shop_section = shop_section_html
+
+    const images = document.querySelectorAll('#choose_shop_stuff img');
+
+    var newSources = [];
+    /*NO 's' after men!!!! Also it is just background, eyes, noses, and mouths that don't differ that
+    are the same for both men and women or (boys and girls)
+    Look I had to add EYEBROWS because if you look at the original call in the function it goes up to 10
+    so I got to account for that even if I am not going to use it*/
+    var bibletar_stuff_part = ['background', 'face_men', 'shirt_men', 'glasses_men', 'hats_men', 'eyes', 'eyebrows_men','noses', 'mouths_men', 'hair_men'];
+    if(i_am_a_girl == true) {
+        for (let i = 0; i < bibletar_stuff_part.length; i++) {
+            // remember the difference != is loose != is strong
+            // as long as it's not background, eyes, or nose change property for women
+            if (i != 0 || i != 5 || i!= 7) {
+                if (i == 1) {
+                    bibletar_stuff_part[i] = 'face_women';
+                }
+                if (i == 2) {
+                    bibletar_stuff_part[i] = 'shirt_women';
+                }
+                if (i == 3) {
+                    bibletar_stuff_part[i] = 'glasses_women';
+                }
+                if (i == 4) {
+                    bibletar_stuff_part[i] = 'hats_women';
+                }
+                if (i == 6) {
+                    bibletar_stuff_part[i] = 'eyebrows_women';
+                }
+                if (i == 8) {
+                    bibletar_stuff_part[i] = 'mouth_women';
+                }
+                if (i == 9) {
+                    bibletar_stuff_part[i] = 'hair_women';
+                }
+            }
+        }
+    }
+
+    // starts at three because it's in the shop section
+    var j = 4;
+    while (newSources.length < 10) {
+        /* also I did [closet_section - 1] because the real one starts from 1 but arrays start from zero
+        so I have to subtract one for it to align*/
+        newSources.push("./images/" + bibletar_stuff_part[shop_section - 1] + j + ".svg");
+        j+= 1;
+    } 
+
+    images.forEach((img, index)=> {
+        if(newSources[index]) {
+            img.src = newSources[index];
+            img.alt = newSources[index];
+            console.log("newSources[index]: " +  newSources[index]);
+        }
+    });
 }
 
 /**This function is an outliar, it should actually be in item_Chosen, but because the 
