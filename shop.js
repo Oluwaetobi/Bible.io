@@ -449,19 +449,24 @@ function item_Chosen(item_clicked_html) {
         if (bibletar_maker_page == 3) {
             // appranetly index for each starts at 1 unlike how arrays work where it starts at zero
             images_shop.forEach((img, index)=> {
-                if ((index + not_acquired_stuff_shop[shop_section - 1][1] -1) == item_clicked_html) {
+                /** -3 because that's the length originally seen when jumping to shop section from closet
+                 * section, because generally you get 3 basic free bibletar stuff, but then once you buy
+                 * stuff you get more, so the difference will no longer remain 3, this should only be 
+                 * happening in the shop and NOT in the closet
+                 */
+                if ((index + not_acquired_stuff_shop[shop_section - 1][1] -1) == (item_clicked_html + (acquired_stuff_closet[shop_section - 1].length - 3))) {
                     if (img.src.split('/').pop() == "NaN") {
                         item_is_accessible = false;
                     }
                 }
-                if (not_acquired_stuff_shop[shop_section - 1][item_clicked_html] == 0) {
+                if (not_acquired_stuff_shop[shop_section - 1][(item_clicked_html + (acquired_stuff_closet[shop_section - 1].length - 3))] == 0) {
                     // if it equals 0 that means nothing is there so the item should not even be accessible
                     item_is_accessible = false;
                 }
                 console.log("index: " + (index + not_acquired_stuff_shop[shop_section - 1][1] -1));
                 console.log("img.src is: " + img.src.split('/').pop());
-                console.log("item clicked html: " + item_clicked_html);
-                if(index == item_clicked_html) {
+                console.log("item clicked html: " + (item_clicked_html + (acquired_stuff_closet[shop_section - 1].length - 3)));
+                if(index == (item_clicked_html + (acquired_stuff_closet[shop_section - 1].length - 3))) {
                     console.log("true");
                 }
                 console.log("item is accessible: " + item_is_accessible);
@@ -471,7 +476,16 @@ function item_Chosen(item_clicked_html) {
     }
 
     if (item_is_accessible == true) {
-        item_clicked = item_clicked_html;
+        /** -3 because that's the length originally seen when jumping to shop section from closet
+         * section, because generally you get 3 basic free bibletar stuff, but then once you buy
+         * stuff you get more, so the difference will no longer remain 3, this should only be happening in the
+         * shop and not in the closet
+         */
+        if (bibletar_maker_page == 3) {
+            item_clicked = (item_clicked_html + (acquired_stuff_closet[shop_section - 1].length - 3));
+        } else {
+            item_clicked = item_clicked_html;
+        }
     
         if (bibletar_maker_page == 2) {
             if (closet_section == 1) {
