@@ -484,7 +484,9 @@ function item_Chosen(item_clicked_html) {
         if (bibletar_maker_page == 3) {
             item_clicked = (item_clicked_html + (acquired_stuff_closet[shop_section - 1].length - 3));
         } else {
-            item_clicked = item_clicked_html;
+            if (bibletar_maker_page == 2) {
+                item_clicked = item_clicked_html;
+            }
         }
     
         if (bibletar_maker_page == 2) {
@@ -558,8 +560,8 @@ function match_drawings_to_correct_bibletar() {
         img_glasses.src = "./images/glasses_men" + current_bibletar[4] + ".svg";
         img_hats.src = "./images/hats_men" + current_bibletar[5] + ".svg";
         img_eyebrows.src = "./images/eyebrows_men" + current_bibletar[7] + ".svg";
-        img_hats.src = "./images/hats_men" + current_bibletar[9] + ".svg";
-        img_mouths.src = "./images/mouths_men" + current_bibletar[10] + ".svg";
+        img_mouths.src = "./images/mouths_men" + current_bibletar[9] + ".svg";
+        img_hair.src = "./images/hair_men" + current_bibletar[10] + ".svg";
     } else {
         if (i_am_a_girl == true) {
             img_face.src = "./images/face_women" + current_bibletar[2] + ".svg";
@@ -567,8 +569,8 @@ function match_drawings_to_correct_bibletar() {
             img_glasses.src = "./images/glasses_women" + current_bibletar[4] + ".svg";
             img_hats.src = "./images/hats_women" + current_bibletar[5] + ".svg";
             img_eyebrows.src = "./images/eyebrows_women" + current_bibletar[7] + ".svg";
-            img_hats.src = "./images/hats_women" + current_bibletar[9] + ".svg";
-            img_mouths.src = "./images/mouths_women" + current_bibletar[10] + ".svg";
+            img_mouths.src = "./images/mouths_women" + current_bibletar[9] + ".svg";
+            img_hair.src = "./images/hair_women" + current_bibletar[10] + ".svg";
         }
     }
 }
@@ -654,11 +656,11 @@ function drawUsersBibletar() {
     resizeImageByPixels_and_draw(img_shirt, 1075, 300, 100, 3);
     resizeImageByPixels_and_draw(img_eyes, 1115, 200, 20, 6);
     resizeImageByPixels_and_draw(img_eyebrows, 1110, 180, 20, 7);
-    resizeImageByPixels_and_draw(img_hair, 1110, 130, 40, 10);
-    resizeImageByPixels_and_draw(img_noses, 1150, 230, 30, 8);
     resizeImageByPixels_and_draw(img_mouths, 1150, 260, 20, 9);
-    resizeImageByPixels_and_draw(img_hats, 1150, 140, 50, 5);
+    resizeImageByPixels_and_draw(img_noses, 1150, 230, 30, 8);
     resizeImageByPixels_and_draw(img_glasses, 1150, 230, 50, 4);
+    resizeImageByPixels_and_draw(img_hair, 1110, 130, 40, 10);
+    resizeImageByPixels_and_draw(img_hats, 1150, 140, 50, 5);
 
     // ctx.drawImage(img_background, 980, 100, 360, 300);
     // ctx.drawImage(img_shirt, 980, 100, 360, 300);
