@@ -598,35 +598,45 @@ function drawUsersBibletar() {
     function resizeImageByPixels_and_draw (what_to_draw, x_pos_ribp, y_pos_ribp, pixel_size, type_of_drawing) {
         my_pixels = pixel_size;
         // over here I resize the width based off of the given height
+        // background
         if (type_of_drawing == 1) {
             my_pixels2 = my_pixels*1.2;
         }
+        //face
         if (type_of_drawing == 2) {
             my_pixels2 = my_pixels*1.1;
         }
+        // shirt
         if (type_of_drawing == 3) {
             my_pixels2 = my_pixels*1.7;
         }
+        // glasses
         if (type_of_drawing == 4) {
-            my_pixels2 = my_pixels*1.2;
+            my_pixels2 = my_pixels*3.7;
         }
+        // hats
         if (type_of_drawing == 5) {
-            my_pixels2 = my_pixels*1.2;
+            my_pixels2 = my_pixels*2.5;
         }
+        // eyes
         if (type_of_drawing == 6) {
-            my_pixels2 = my_pixels*1.2;
+            my_pixels2 = my_pixels*4.8;
         }
+        // eyebrows
         if (type_of_drawing == 7) {
-            my_pixels2 = my_pixels*1.2;
+            my_pixels2 = my_pixels*6.8;
         }
+        // noses
         if (type_of_drawing == 8) {
-            my_pixels2 = my_pixels*1.2;
+            my_pixels2 = my_pixels*0.5;
         }
+        // mouths
         if (type_of_drawing == 9) {
-            my_pixels2 = my_pixels*1.2;
+            my_pixels2 = my_pixels*2.9;
         }
+        // hair
         if (type_of_drawing == 10) {
-            my_pixels2 = my_pixels*1.2;
+            my_pixels2 = my_pixels*3.2;
         } else {
             // default
             my_pixels*1.2;
@@ -640,8 +650,15 @@ function drawUsersBibletar() {
      * function called item_chosen specifcally for closet_section NOT shop_section
      */
     resizeImageByPixels_and_draw(img_background, 980, 100, 300, 1);
-    resizeImageByPixels_and_draw(img_face, 1080, 150, 175, 2);
-    resizeImageByPixels_and_draw(img_shirt, 1045, 280, 120, 3);
+    resizeImageByPixels_and_draw(img_face, 1067.5, 145, 175, 2);
+    resizeImageByPixels_and_draw(img_shirt, 1075, 300, 100, 3);
+    resizeImageByPixels_and_draw(img_eyes, 1115, 200, 20, 6);
+    resizeImageByPixels_and_draw(img_eyebrows, 1110, 180, 20, 7);
+    resizeImageByPixels_and_draw(img_hair, 1110, 130, 40, 10);
+    resizeImageByPixels_and_draw(img_noses, 1150, 230, 30, 8);
+    resizeImageByPixels_and_draw(img_mouths, 1150, 260, 20, 9);
+    resizeImageByPixels_and_draw(img_hats, 1150, 140, 50, 5);
+    resizeImageByPixels_and_draw(img_glasses, 1150, 230, 50, 4);
 
     // ctx.drawImage(img_background, 980, 100, 360, 300);
     // ctx.drawImage(img_shirt, 980, 100, 360, 300);
