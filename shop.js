@@ -602,7 +602,7 @@ function drawUsersBibletar() {
             my_pixels2 = my_pixels*1.2;
         }
         if (type_of_drawing == 2) {
-            my_pixels2 = my_pixels*1.2;
+            my_pixels2 = my_pixels*1.1;
         }
         if (type_of_drawing == 3) {
             my_pixels2 = my_pixels*1.7;
@@ -640,6 +640,7 @@ function drawUsersBibletar() {
      * function called item_chosen specifcally for closet_section NOT shop_section
      */
     resizeImageByPixels_and_draw(img_background, 980, 100, 300, 1);
+    resizeImageByPixels_and_draw(img_face, 1080, 150, 175, 2);
     resizeImageByPixels_and_draw(img_shirt, 1045, 280, 120, 3);
 
     // ctx.drawImage(img_background, 980, 100, 360, 300);
