@@ -75,7 +75,7 @@ var acquired_stuff_closet = [
     [1, 2, 3, 4, 5, 6, 7],
     [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13],
     [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13],
-    [1, 2, 3],
+    [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104],
 ];
 
 /**Most of the rows here won't be used because you can only buy 4 different types of things in the shop
@@ -88,7 +88,7 @@ var not_acquired_stuff_shop = [
     [0, 0, 0],
     [4, 5, 6],
     [4, 5, 6],
-    [0, 0, 0],
+    [4, 0, 0],
     [0, 0, 0],
     [0, 0, 0],
     [0, 0, 0],
@@ -597,9 +597,28 @@ function drawUsersBibletar() {
     updateCurrentBibletarCodeNumber();
     match_drawings_to_correct_bibletar();
 
+    function detect_specific_drawing (number_for_drawing) {
+        if (i_am_a_boy == true) {
+
+        } else {
+            if (i_am_a_girl == true) {
+                
+            }
+        }
+        return number_for_drawing;
+    }
+
     function resizeImageByPixels_and_draw (what_to_draw, x_pos_ribp, y_pos_ribp, pixel_size, type_of_drawing) {
         my_pixels_height = pixel_size;
         var increase_width_by = 0;
+        /* specific drawing is based to get the number that goes between the type of drawing whether
+        background, hats, shirt, and etc and between the ".svg" so for instance hats_men3.svg or
+        background25.svg, I am getting the number based between the type of drawing and the ".svg" this
+        helps me access the actual drawing, not just based off of visible placement in the closet 
+        or in the shop, but the actual number of the svg which never changes  */
+        var specific_drawing = 0;
+        specific_drawing = detect_specific_drawing(specific_drawing);
+
         // over here I resize the width based off of the given height
         // background
         if (type_of_drawing == 1) {
@@ -623,7 +642,7 @@ function drawUsersBibletar() {
                 increase_width_by = 2.5;
             } else {
                 if (i_am_a_girl == true) {
-                    if (bibletar_hats == 2) {
+                    if (bibletar_hats > 1) {
                         increase_width_by = 1.4;
                     }
                 }
