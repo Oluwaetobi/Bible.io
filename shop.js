@@ -613,7 +613,7 @@ function drawUsersBibletar() {
 
         if (bibletar_maker_page == 2) {
             // closet section
-            number_for_drawing = acquired_stuff_closet[closet_section - 1][bibletar_type_dsd[item_clicked]]
+            number_for_drawing = acquired_stuff_closet[closet_section - 1][(bibletar_type_dsd[closet_section - 1] - 1)]
         } else {
             if (bibletar_maker_page == 3) {
                 // shop section
@@ -626,7 +626,7 @@ function drawUsersBibletar() {
                  * remember, we are accessing the numbers because they exist in the array of arrays for
                  * acquired_stuff_closet and not_acquired_stuff_shop
                  */
-                number_for_drawing = not_acquired_stuff_shop[shop_section - 1][((bibletar_type_dsd[item_clicked] - 3) + acquired_stuff_closet[shop_section - 1].length)]
+                number_for_drawing = not_acquired_stuff_shop[shop_section - 1][(((bibletar_type_dsd[shop_section - 1] -1) - 3) + acquired_stuff_closet[shop_section - 1].length)]
             }
         }
         console.log();
@@ -639,14 +639,17 @@ function drawUsersBibletar() {
          * svg number is, and I can double check my checking if the svg file number is the has the same
          * image as the image shown on the screen on my character
          */
+
+        /* I also have to minus 1 once I am able to access the bibletar_type_dsd at whatever placement because 
+        arrays always start from zero and not 1 */
         var bibletar_type_dsd = [bibletar_background, bibletar_face, bibletar_shirt, bibletar_glasses, bibletar_hats, bibletar_eyes, bibletar_eyebrows, bibletar_nose, bibletar_mouth, bibletar_hair];
         var pmesfnbt = ["background", "face", "shirt", "glasses", "hats", "eyes", "eyebrows", "noses", "mouths", "hair"];
 
         if (bibletar_maker_page == 2) {
-            console.log("Bibletar Type: " + pmesfnbt[closet_section -1] + " Svg File Number: " + acquired_stuff_closet[closet_section - 1][bibletar_type_dsd[item_clicked]]);
+            console.log("Bibletar Type: " + pmesfnbt[closet_section -1] + " Svg File Number: " + acquired_stuff_closet[closet_section - 1][(bibletar_type_dsd[closet_section - 1] -1)]);
         } else {
             if (bibletar_maker_page == 3) {
-                console.log("Bibletar Type: " + pmesfnbt[shop_section -1] + "Svg File Number: " + not_acquired_stuff_shop[shop_section - 1][((bibletar_type_dsd[item_clicked] - 3) + acquired_stuff_closet[shop_section - 1].length)]);
+                console.log("Bibletar Type: " + pmesfnbt[shop_section -1] + "Svg File Number: " + not_acquired_stuff_shop[shop_section - 1][(((bibletar_type_dsd[shop_section -1] -1) - 3) + acquired_stuff_closet[shop_section - 1].length)]);
             }
         }
 
@@ -684,7 +687,10 @@ function drawUsersBibletar() {
         }
         // glasses
         if (type_of_drawing == 4) {
-            increase_width_by = 3.7;
+            my_pixels_height -= 13;
+            x_pos_ribp -= 62;
+            y_pos_ribp -= 33;
+            increase_width_by = 4.2;
         }
         // hats
        if (type_of_drawing == 5) {
@@ -718,7 +724,13 @@ function drawUsersBibletar() {
         }
         // noses
         if (type_of_drawing == 8) {
-            increase_width_by = 0.5;
+            if (specific_drawing == 1 || specific_drawing == 2) {
+                increase_width_by = 0.5;
+            }
+            if (specific_drawing == 3) {
+                my_pixels_height += 3;
+                increase_width_by = 0.4
+            }
         }
         // mouths
         if (type_of_drawing == 9) {
