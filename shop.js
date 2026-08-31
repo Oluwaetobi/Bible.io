@@ -17,8 +17,8 @@ const top_border = 90;
 const side_border = 2;
 let mouseX = 0;
 let mouseY = 0;
-var my_pixels = 300;
-var my_pixels2 = my_pixels*1.2;
+var my_pixels_height = 300;
+var my_pixels_width = my_pixels_height*1.2;
 
 var box_x_pos = 1;
 var gameOn = false;
@@ -598,68 +598,95 @@ function drawUsersBibletar() {
     match_drawings_to_correct_bibletar();
 
     function resizeImageByPixels_and_draw (what_to_draw, x_pos_ribp, y_pos_ribp, pixel_size, type_of_drawing) {
-        my_pixels = pixel_size;
+        my_pixels_height = pixel_size;
+        var increase_width_by = 0;
         // over here I resize the width based off of the given height
         // background
         if (type_of_drawing == 1) {
-            my_pixels2 = my_pixels*1.2;
+            increase_width_by = 1.2;
         }
         //face
         if (type_of_drawing == 2) {
-            my_pixels2 = my_pixels*1.1;
+            increase_width_by = 1.1;
         }
         // shirt
         if (type_of_drawing == 3) {
-            my_pixels2 = my_pixels*1.7;
+            increase_width_by = 1.7;
         }
         // glasses
         if (type_of_drawing == 4) {
-            my_pixels2 = my_pixels*3.7;
+            increase_width_by = 3.7;
         }
         // hats
         if (type_of_drawing == 5) {
-            my_pixels2 = my_pixels*2.5;
+            if (i_am_a_boy == true) {
+                increase_width_by = 2.5;
+            } else {
+                if (i_am_a_girl == true) {
+                    if (bibletar_hats == 2) {
+                        increase_width_by = 1.4;
+                    }
+                }
+            }
         }
         // eyes
         if (type_of_drawing == 6) {
-            my_pixels2 = my_pixels*4.8;
+            increase_width_by = 4.8;
         }
         // eyebrows
         if (type_of_drawing == 7) {
-            my_pixels2 = my_pixels*6.8;
+            increase_width_by = 8.3;
         }
         // noses
         if (type_of_drawing == 8) {
-            my_pixels2 = my_pixels*0.5;
+            increase_width_by = 0.5;
         }
         // mouths
         if (type_of_drawing == 9) {
-            my_pixels2 = my_pixels*2.9;
+            increase_width_by = 3.3;
         }
         // hair
         if (type_of_drawing == 10) {
-            my_pixels2 = my_pixels*3.2;
-        } else {
-            // default
-            my_pixels*1.2;
+            /* because depending on the type of hair especially girls hairs, resizing shapes will have to 
+            differ by a lot, it will be based off of 2 things, whether the player is male or female as well
+            as off of the variable bibletar_hair, it's not just resizing the width that needs to take
+            place but in some scenarios even the height as well */
+            if (i_am_a_boy == true) {
+                increase_width_by = 3.0;
+            } else {
+                if (i_am_a_girl == true) {
+                    if (bibletar_hair >  0) {
+                        /* my_pixels_height to increase size and increase_width_by is for resizing
+                         the width of the image base off of the height *BE CAREFUL!!!!! */
+                        my_pixels_height += 81;
+                        x_pos_ribp -= 33;
+                        y_pos_ribp -= 20;
+                        increase_width_by = 1.6;
+                        // console.log("Bibletar Hair: " + bibletar_hair);
+                    }
+                }
+            }
+
         }
         /**careful not to confuse function parameters with variables, that's why I added
          * the _ribp
          */
-        ctx.drawImage(what_to_draw, x_pos_ribp, y_pos_ribp, my_pixels2, my_pixels);
+
+        my_pixels_width = (my_pixels_height*increase_width_by);
+        ctx.drawImage(what_to_draw, x_pos_ribp, y_pos_ribp, my_pixels_width, my_pixels_height);
     }
     /** drawing / x_pos / y_pos / size / type, reference lines 29-38 or if that changes reference 
      * function called item_chosen specifcally for closet_section NOT shop_section
      */
     resizeImageByPixels_and_draw(img_background, 980, 100, 300, 1);
     resizeImageByPixels_and_draw(img_face, 1067.5, 145, 175, 2);
-    resizeImageByPixels_and_draw(img_shirt, 1075, 300, 100, 3);
+    resizeImageByPixels_and_draw(img_shirt, 1077, 300, 100, 3);
     resizeImageByPixels_and_draw(img_eyes, 1115, 200, 20, 6);
-    resizeImageByPixels_and_draw(img_eyebrows, 1110, 180, 20, 7);
-    resizeImageByPixels_and_draw(img_mouths, 1150, 260, 20, 9);
-    resizeImageByPixels_and_draw(img_noses, 1150, 230, 30, 8);
+    resizeImageByPixels_and_draw(img_eyebrows, 1114, 187, 12, 7);
+    resizeImageByPixels_and_draw(img_mouths, 1139, 260, 17, 9);
+    resizeImageByPixels_and_draw(img_noses, 1153, 220, 30, 8);
     resizeImageByPixels_and_draw(img_glasses, 1150, 230, 50, 4);
-    resizeImageByPixels_and_draw(img_hair, 1110, 130, 40, 10);
+    resizeImageByPixels_and_draw(img_hair, 1097, 135, 44, 10);
     resizeImageByPixels_and_draw(img_hats, 1150, 140, 50, 5);
 
     // ctx.drawImage(img_background, 980, 100, 360, 300);
