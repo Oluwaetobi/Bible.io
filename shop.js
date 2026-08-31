@@ -182,7 +182,7 @@ function mouseDetections() {
     document.addEventListener("click", function (event) {
         if (bibletar_maker_page == 2 ) {
         // Save and Exit
-        if (mouseX > 1127 && mouseX < 1330 && mouseY < 83 && mouseY > 53) {
+        if (mouseX > 1127 && mouseX < 1330 && mouseY < (83 + 610) && mouseY > (53 + 610)) {
             bibletar_maker_page = 1;
             i_am_a_boy = false;
             i_am_a_girl = false;
@@ -195,7 +195,7 @@ function mouseDetections() {
             }
         }
         // Leave
-        if (mouseX > 979 && mouseX < 1110 && mouseY < 83 && mouseY > 53) {
+        if (mouseX > 979 && mouseX < 1110 && mouseY < (83 + 610) && mouseY > (53 + 610)) {
             bibletar_maker_page = 1;
             i_am_a_boy = false;
             i_am_a_girl = false;
@@ -816,17 +816,20 @@ function bibletarMakerHome() {
 
     // Leave
     ctx.fillStyle = 'rgb(154, 14, 6)';
-    ctx.fillRect(980, 55, 130, 30);
+    ctx.fillRect(980, 55 + 610, 130, 30);
     ctx.font = "25px Arial";
     ctx.fillStyle = 'rgb(252, 250, 250)';
-    ctx.fillText("Leave", 1010, 77);
+    /**I had to move leave and save and exit down because once you get a really big hat, it is going to cover
+     * these button, meaning the user will not be able to leave or save their bibletar
+     */
+    ctx.fillText("Leave", 1010, 687);
 
     // Save and Exit
     ctx.fillStyle = 'rgb(6, 154, 8)';
-    ctx.fillRect(1130, 55, 200, 30);
+    ctx.fillRect(1130, 55 + 610, 200, 30);
     ctx.font = "25px Arial";
     ctx.fillStyle = 'rgb(252, 250, 250)';
-    ctx.fillText("Save and Exit", 1150, 77);
+    ctx.fillText("Save and Exit", 1150, 687);
 
 
 
