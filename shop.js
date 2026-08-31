@@ -598,11 +598,25 @@ function drawUsersBibletar() {
     match_drawings_to_correct_bibletar();
 
     function detect_specific_drawing (number_for_drawing) {
-        if (i_am_a_boy == true) {
+        var bibletar_type_dsd = [bibletar_background, bibletar_face, bibletar_shirt, bibletar_glasses, bibletar_hats, bibletar_eyes, bibletar_eyebrows, bibletar_nose, bibletar_mouth, bibletar_hair];
 
+
+        if (bibletar_maker_page == 2) {
+            // closet section
+            number_for_drawing = acquired_stuff_closet[closet_section - 1][bibletar_type_dsd[item_clicked]]
         } else {
-            if (i_am_a_girl == true) {
-                
+            if (bibletar_maker_page == 3) {
+                // shop section
+                /** I'm doing minus three because generally speaking I give 3 basic clothes at the start,
+                 * once we get to the shop section it's a difference of 3 generally speaking, assuming you don't
+                 * have an account and you haven't bought anything from the shop (store), but we're countering
+                 * that with length of the stuff you've acquired which at the start would be three but if you've
+                 * bought stuff then it would be 4 - 3, or 5-3 dpending on how much stuff you've bought, this 
+                 * counter is important to figure out what number between the type of drawing and ".svg" says,
+                 * remember, we are accessing the numbers because they exist in the tables of tables for
+                 * acquired_stuff_closet and not_acquired_stuff_shop
+                 */
+                number_for_drawing = not_acquired_stuff_shop[shop_section - 1][((bibletar_type_dsd[item_clicked] - 3) + acquired_stuff_closet[shop_section - 1].length)]
             }
         }
         return number_for_drawing;
@@ -642,7 +656,11 @@ function drawUsersBibletar() {
                 increase_width_by = 2.5;
             } else {
                 if (i_am_a_girl == true) {
-                    if (bibletar_hats > 1) {
+                    /** replace bibletar_hats with specific_drawing, I upgraded detection skills, this
+                     * variable is more accurate and yes, it knows whether it is for hats, glasses or 
+                     * shirt, and etc
+                     */
+                    if (specific_drawing > 1) {
                         increase_width_by = 1.4;
                     }
                 }
@@ -669,12 +687,14 @@ function drawUsersBibletar() {
             /* because depending on the type of hair especially girls hairs, resizing shapes will have to 
             differ by a lot, it will be based off of 2 things, whether the player is male or female as well
             as off of the variable bibletar_hair, it's not just resizing the width that needs to take
-            place but in some scenarios even the height as well */
+            place but in some scenarios even the height as well,
+            as of the UPGRADE that took place on August 31, 2026, I will no longer be using the variable bibletar_hair, 
+            I will be using the variable specific_drawing */
             if (i_am_a_boy == true) {
                 increase_width_by = 3.0;
             } else {
                 if (i_am_a_girl == true) {
-                    if (bibletar_hair >  0) {
+                    if (specific_drawing >  0) {
                         /* my_pixels_height to increase size and increase_width_by is for resizing
                          the width of the image base off of the height *BE CAREFUL!!!!! */
                         my_pixels_height += 81;

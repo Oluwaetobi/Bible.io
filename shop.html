@@ -46,7 +46,12 @@
                                 <!-- It is important to put the onclick inside the td that way it does it for the entire
                                  cell and not just the image, for instance if it was a small image like an eyebrow, this
                                  would become very problematic, meaning you would have to click directly on the eyebrow
-                                 before the touch sensor worked -->
+                                 before the touch sensor worked
+                                 
+                                 also please don't change the description from plural to singular or singular to plural
+                                 it is set specifically in plural or singular to help me remember whether the src
+                                 link should have an "s" or no s, if it is missing an s when I create in javascript
+                                 then the code won't work, and it will be displayed as missing-->
                                 <td onclick="updateClosetSection(1)"><img src="./images/background_logo.svg" alt="background" width="70">Background</td>
                                 <!-- face logo just means, the color of your face -->
                                 <td onclick="updateClosetSection(2)"><img src="./images/face_logo.svg" alt="face color" width="70">Face (Color)</td>
@@ -321,6 +326,11 @@
             <table class="table-shop">
                         <thead>
                             <tr>
+
+                                <!-- also please don't change the description from plural to singular or singular to plural
+                                 it is set specifically in plural or singular to help me remember whether the src
+                                 link should have an "s" or no s, if it is missing an s when I create in javascript
+                                 then the code won't work, and it will be displayed as missing -->
                                 <th onclick="updateShopSection(1)">Background</th>
                                 <th onclick="updateShopSection(3)">Shirt</th>
                                 <th onclick="updateShopSection(4)">Glasses</th>
