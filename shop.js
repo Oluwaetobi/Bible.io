@@ -724,6 +724,12 @@ function drawUsersBibletar() {
         }
         // noses
         if (type_of_drawing == 8) {
+            /**sometimes need to add a default so that other coders are developers don't think the nose
+             * has disappeared or some of my other code isn't working
+             */
+            // default
+            increase_width_by = 0.5;
+
             if (specific_drawing == 1 || specific_drawing == 2) {
                 increase_width_by = 0.5;
             }
