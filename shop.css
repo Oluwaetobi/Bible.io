@@ -380,7 +380,7 @@ table takes up the full width of it's parent the scrollable table */
 }
 .table-shop td {
     /* top right bottom left */
-    padding: 20px 20px 20px 20px;
+    padding: 10px 10px 10px 10px;
     font-weight: normal;
     /* font-size: 15px;
     border: 1px solid black;  */
@@ -419,7 +419,7 @@ table takes up the full width of it's parent the scrollable table */
 }
 
 .table-shop tbody .second_layer_shop_table td:nth-of-type(even) {
-    background-color: #ffa5a5;
+    background-color: #d0d0d0;
 }
 
 
