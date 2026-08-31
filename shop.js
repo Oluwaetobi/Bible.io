@@ -729,7 +729,6 @@ function drawUsersBibletar() {
              */
             // default
             increase_width_by = 0.5;
-
             if (specific_drawing == 1 || specific_drawing == 2) {
                 increase_width_by = 0.5;
             }
