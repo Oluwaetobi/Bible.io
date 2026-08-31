@@ -31,7 +31,7 @@ const shop_page_background_mens_or_womens = document.getElementById('shop_backgr
 
 /** Remember that eyes has 2 component, eyes and eyebrows 
  * also the first element in the array tells us whether it is a boy or a girl namely 1 or 2
- * therefore the lenght of current_bibletar should be 11
+ * therefore the length of current_bibletar should be 11
  * once I get my own reliable server I'll set the array for current_bibletar to the specific data
  * set within the user's account object
 */
@@ -66,6 +66,12 @@ var bibletar_hair = current_bibletar[10];
  * 10. hair
  */
 var acquired_stuff_closet = [
+    /**I hope you are aware, that these numbers aren't always going to be consecutive, these numbers represent
+     * the number before ".svg" in reference to the name of the file for the image eg. "background5.svg" or
+     * "hats_men46.svg" or "mouths_women6.svg" these numbers are crucial to helping us know what image
+     * we are working with, and each row has important data sets for each image, look ABOVE for REFERENCE!!
+     * row 1 is for the backgrounds, row 2 is for the face colors, row 3 is for the shirts...
+     */
     [1, 2, 3],
     [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17],
     [1, 2, 3],
@@ -619,7 +625,26 @@ function drawUsersBibletar() {
                 number_for_drawing = not_acquired_stuff_shop[shop_section - 1][((bibletar_type_dsd[item_clicked] - 3) + acquired_stuff_closet[shop_section - 1].length)]
             }
         }
+        console.log();
         return number_for_drawing;
+    }
+
+    function printMeOutSvgFileNumber () {
+        /** I use this file just to double check the the detect_specific_drawing function is actually
+         * working, if it's not working then I can use this function to print out what it thinks the
+         * svg number is, and I can double check my checking if the svg file number is the has the same
+         * image as the image shown on the screen on my character
+         */
+        var bibletar_type_dsd = [bibletar_background, bibletar_face, bibletar_shirt, bibletar_glasses, bibletar_hats, bibletar_eyes, bibletar_eyebrows, bibletar_nose, bibletar_mouth, bibletar_hair];
+        var pmesfnbt = ["background", "face", "shirt", "glasses", "hats", "eyes", "eyebrows", "noses", "mouths", "hair"];
+
+        if (bibletar_maker_page == 2) {
+            console.log("Bibletar Type: " + pmesfnbt[closet_section -1] + "Svg File Number: " + acquired_stuff_closet[closet_section - 1][bibletar_type_dsd[item_clicked]]);
+        } else {
+            if (bibletar_maker_page == 3) {
+                console.log("Bibletar Type: " + pmesfnbt[shop_section -1] + "Svg File Number: " + not_acquired_stuff_shop[shop_section - 1][((bibletar_type_dsd[item_clicked] - 3) + acquired_stuff_closet[shop_section - 1].length)]);
+            }
+        }
     }
 
     function resizeImageByPixels_and_draw (what_to_draw, x_pos_ribp, y_pos_ribp, pixel_size, type_of_drawing) {
@@ -712,6 +737,7 @@ function drawUsersBibletar() {
          */
 
         my_pixels_width = (my_pixels_height*increase_width_by);
+        // printMeOutSvgFileNumber();
         ctx.drawImage(what_to_draw, x_pos_ribp, y_pos_ribp, my_pixels_width, my_pixels_height);
     }
     /** drawing / x_pos / y_pos / size / type, reference lines 29-38 or if that changes reference 
