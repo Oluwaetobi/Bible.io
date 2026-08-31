@@ -639,12 +639,19 @@ function drawUsersBibletar() {
         var pmesfnbt = ["background", "face", "shirt", "glasses", "hats", "eyes", "eyebrows", "noses", "mouths", "hair"];
 
         if (bibletar_maker_page == 2) {
-            console.log("Bibletar Type: " + pmesfnbt[closet_section -1] + "Svg File Number: " + acquired_stuff_closet[closet_section - 1][bibletar_type_dsd[item_clicked]]);
+            console.log("Bibletar Type: " + pmesfnbt[closet_section -1] + " Svg File Number: " + acquired_stuff_closet[closet_section - 1][bibletar_type_dsd[item_clicked]]);
         } else {
             if (bibletar_maker_page == 3) {
                 console.log("Bibletar Type: " + pmesfnbt[shop_section -1] + "Svg File Number: " + not_acquired_stuff_shop[shop_section - 1][((bibletar_type_dsd[item_clicked] - 3) + acquired_stuff_closet[shop_section - 1].length)]);
             }
         }
+
+        /**How do we know that we can access a variable's number even if it is accessed from an array, we know it
+         * works by testing it with this console.log like so below
+        console.log("Bibletar_background variable: " + bibletar_type_dsd[0]);
+        this means out function will work, well the bare minimums
+
+         */
     }
 
     function resizeImageByPixels_and_draw (what_to_draw, x_pos_ribp, y_pos_ribp, pixel_size, type_of_drawing) {
@@ -737,8 +744,10 @@ function drawUsersBibletar() {
          */
 
         my_pixels_width = (my_pixels_height*increase_width_by);
-        // printMeOutSvgFileNumber();
         ctx.drawImage(what_to_draw, x_pos_ribp, y_pos_ribp, my_pixels_width, my_pixels_height);
+        /**Don't run the printMeOutSvgFileNumber function for to long, or else it will crash your computer
+         */
+        // printMeOutSvgFileNumber();
     }
     /** drawing / x_pos / y_pos / size / type, reference lines 29-38 or if that changes reference 
      * function called item_chosen specifcally for closet_section NOT shop_section
