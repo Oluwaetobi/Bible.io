@@ -114,8 +114,10 @@ var img_background = new Image();
 img_background.src = "./images/background1.svg"; // Set source URL
 img_background.alt = "background image";
 
-/* face_men0 is for for the robot, also I am not including freckles on the face but might do that as a separte
-bibletar part later, robot necks for men and women is medium, boy large, girl small */
+/* face_men0 is for for the male robot and face_women0 is for the female robot, also I am not 
+including freckles on the face but might do that as a separate bibletar part later, 
+male robot necks for men is larger than the female robot necks, because in real life, males necks
+are always slighter thicker then female necks, boy thicker, girl neck thinner, but just by a bit */
 var img_face = new Image();
 img_face.src = "./images/face_men1.svg"; // Set source URL
 img_face.alt = "face image";
@@ -621,7 +623,7 @@ function drawUsersBibletar() {
                  * that with length of the stuff you've acquired which at the start would be three but if you've
                  * bought stuff then it would be 4 - 3, or 5-3 dpending on how much stuff you've bought, this 
                  * counter is important to figure out what number between the type of drawing and ".svg" says,
-                 * remember, we are accessing the numbers because they exist in the tables of tables for
+                 * remember, we are accessing the numbers because they exist in the array of arrays for
                  * acquired_stuff_closet and not_acquired_stuff_shop
                  */
                 number_for_drawing = not_acquired_stuff_shop[shop_section - 1][((bibletar_type_dsd[item_clicked] - 3) + acquired_stuff_closet[shop_section - 1].length)]
