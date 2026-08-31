@@ -101,10 +101,11 @@ var not_acquired_stuff_shop = [
     [0, 0, 0],
     [0, 0, 0],
 ];
-/* this is because since our thing has some that are longer than others some aren't change and they exist at the
-end, so in order to make them go away, I have to at least replace it with something, like nothing!! LOL
-Well at least until I can figure out a more effective way of doing it*/
-var changeAll = 100;
+/* this is because since our maker has some section off bibletar stuff that are more than others some aren't 
+changed at all and they still exist at the end, so in order to make them go away, I have to at least replace 
+it with something, like nothing!! Nothing can sometimes mean NaN, well at least in my website
+LOL Well at least until I can figure out a more effective way of doing it*/
+var changeAll = 500;
 
 var old_bibletar = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
 
