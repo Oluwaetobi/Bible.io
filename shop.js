@@ -684,13 +684,13 @@ function drawUsersBibletar() {
     updateCurrentBibletarCodeNumber();
     match_drawings_to_correct_bibletar();
 
-    function detect_specific_drawing (number_for_drawing) {
+    function detect_specific_drawing (number_for_drawing, section_shop_or_closest) {
         var bibletar_type_dsd = [bibletar_background, bibletar_face, bibletar_shirt, bibletar_glasses, bibletar_hats, bibletar_eyes, bibletar_eyebrows, bibletar_nose, bibletar_mouth, bibletar_hair];
 
 
         if (bibletar_maker_page == 2) {
             // closet section
-            number_for_drawing = acquired_stuff_closet[closet_section - 1][(bibletar_type_dsd[closet_section - 1] - 1)]
+            number_for_drawing = acquired_stuff_closet[section_shop_or_closest - 1][(bibletar_type_dsd[section_shop_or_closest - 1] - 1)]
         } else {
             if (bibletar_maker_page == 3) {
                 // shop section
@@ -703,7 +703,7 @@ function drawUsersBibletar() {
                  * remember, we are accessing the numbers because they exist in the array of arrays for
                  * acquired_stuff_closet and not_acquired_stuff_shop
                  */
-                number_for_drawing = not_acquired_stuff_shop[shop_section - 1][(((bibletar_type_dsd[shop_section - 1] -1) - 3) + acquired_stuff_closet[shop_section - 1].length)]
+                number_for_drawing = not_acquired_stuff_shop[section_shop_or_closest - 1][(((bibletar_type_dsd[section_shop_or_closest - 1] -1) - 3) + acquired_stuff_closet[section_shop_or_closest - 1].length)]
             }
         }
         console.log();
@@ -747,7 +747,7 @@ function drawUsersBibletar() {
         helps me access the actual drawing, not just based off of visible placement in the closet 
         or in the shop, but the actual number of the svg which never changes  */
         var specific_drawing = 0;
-        specific_drawing = detect_specific_drawing(specific_drawing);
+        specific_drawing = detect_specific_drawing(specific_drawing, type_of_drawing);
 
         // over here I resize the width based off of the given height
         // background
