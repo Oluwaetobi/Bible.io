@@ -281,6 +281,7 @@ function updateCurrentBibletarCodeNumber() {
 /* this important because it is only when items are clicked that this seems to happen but not when
 the player switches rooms from boy to girl */
 function updateAllImageReferences() {
+    // delete_and_add_images_and_sometimes_cells();
     /*starting backwards so it appears to start on the backgrounds always, I need to update it again
     to make sure all the image references for boys and girls are correct, not just when I select
     a bibletar part, that means switching from background, to face color, or to shirt, glasses, or 
@@ -289,6 +290,67 @@ function updateAllImageReferences() {
         updateClosetSection(i);
         updateShopSection(i);
     }
+}
+
+function delete_and_add_images_and_sometimes_cells () {
+    /** WELL LET'S BE HONEST WITH OURSELVES, MOST OF THE CODE SHOULD WORK, BUT THE PART WEAR I
+     * ADD THE ONCLICK FUNCTION CALL DOESN'T WORK, THAT'S WHY I AM ABANDONNING THIS FOR NOW, IT ISN'T WORKING
+     * I LOOKED ONLINE, AND EVERYTHING EVERYONE SAID WAS A BUNCH OF LIES, BECAUSE NONE OF IT WORKS
+     */
+
+
+    /**before, I had extra spots such as NaN displays and etc. Those things
+     * don't need to be displayed to the user, so in order to counter for the extra images and cells
+     * made in the shop.html files, I am going to delete everything and only add things based on the actual
+     * lengths of the acquired and not acquired stuff
+     */
+
+    /** this is for the closet section */
+    // first of all I have to delete everything except for the header
+    // const closet_table = document.getElementById("choose_bibletar_stuff");
+
+    // 1. Select the specific table using its ID
+    const closet_table = document.getElementById("choose_bibletar_stuff");
+    // 2. Find all 'td' and 'th' elements inside that table and remove them
+    closet_table.querySelectorAll("td").forEach(cell => cell.remove());
+
+    let image_count = 1;
+
+    // const closet_section_body 
+    const top_closet_tr = document.createElement('tr');
+
+    for (let i = 0; i < 4; i++) {
+        const top_closet_td = document.createElement('td');
+        const top_closet_img = document.createElement('img');
+    
+        // top_closet_td.onclick = item_Chosen(image_count);
+        // top_closet_td.addEventListener("click", item_Chosen(image_count));
+        // top_closet_td.setAttribute("onclick", "item_Chosen(1);");
+
+        // top_closet_td.onclick = function() {
+        //     item_Chosen(image_count);
+        // };
+    
+        top_closet_img.src = 'https://example.com'; // Replace with your image URL
+        top_closet_img.alt = 'Description of image';
+        top_closet_img.width = 100; // Optional layout sizing
+    
+        // 4. Nest the elements in reverse order
+        top_closet_td.appendChild(top_closet_img); // Put the image inside the <td>
+        top_closet_tr.appendChild(top_closet_td);  // Put the <td> inside the <tr>
+        image_count += 1;
+    }
+
+    // 5. Append the completed row to your existing HTML table body
+    document.querySelector('#choose_bibletar_stuff tbody').appendChild(top_closet_tr);
+
+    /** this is for the eyebrows section, it was originally eyebrows, that might change, in case you get
+     * confused, it's inside the closet section, but it is the 2nd table at the bottom middle, under our
+     * main table
+     */
+
+
+    /** this is for the shop section */
 }
 
 /* Needs to be called at least once before requestanimationframe(gameLoop); is called in order to 
@@ -432,6 +494,7 @@ function eyebrows_Chosen(extra_clicked_html) {
     bibletar_eyebrows = extra_clicked_html;
 }
 function item_Chosen(item_clicked_html) {
+    // delete_and_add_images_and_sometimes_cells();
 
     // First of all we need to check if the item is accessible, if it is accessible it will NOT say "NaN"
     const images_closet = document.querySelectorAll('#choose_bibletar_stuff img');
