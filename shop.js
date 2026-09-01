@@ -440,7 +440,7 @@ function item_Chosen(item_clicked_html) {
 
     if (bibletar_maker_page == 2) {
         images_closet.forEach((img, index)=> {
-            if ((index + acquired_stuff_closet[closet_section - 1][1]) == item_clicked_html) {
+            if (((index -1) + acquired_stuff_closet[closet_section - 1][1]) == item_clicked_html) {
                 /**instead of just doing img.src I am doing img.src.split('/').pop() 
                  * .split splits all of the stuff into an array based of of what you are spliting it off
                  * in this case it is '/' the slash, then pop return the last element of an array, so I don't
@@ -473,14 +473,14 @@ function item_Chosen(item_clicked_html) {
                     // if it equals 0 that means nothing is there so the item should not even be accessible
                     item_is_accessible = false;
                 }
-                console.log("index: " + (index + not_acquired_stuff_shop[shop_section - 1][1] -1));
-                console.log("img.src is: " + img.src.split('/').pop());
-                console.log("item clicked html: " + (item_clicked_html + (acquired_stuff_closet[shop_section - 1].length - 3)));
-                if(index == (item_clicked_html + (acquired_stuff_closet[shop_section - 1].length - 3))) {
-                    console.log("true");
-                }
-                console.log("item is accessible: " + item_is_accessible);
-                console.log("");
+                // console.log("index: " + (index + not_acquired_stuff_shop[shop_section - 1][1] -1));
+                // console.log("img.src is: " + img.src.split('/').pop());
+                // console.log("item clicked html: " + (item_clicked_html + (acquired_stuff_closet[shop_section - 1].length - 3)));
+                // if(index == (item_clicked_html + (acquired_stuff_closet[shop_section - 1].length - 3))) {
+                //     console.log("true");
+                // }
+                // console.log("item is accessible: " + item_is_accessible);
+                // console.log("");
             });
         }
     }
@@ -555,9 +555,23 @@ function item_Chosen(item_clicked_html) {
 }
 
 function match_drawings_to_correct_bibletar() {
-    img_background.src = "./images/background" + current_bibletar[1] + ".svg";
-    img_eyes.src = "./images/eyes" + current_bibletar[6] + ".svg";
-    img_noses.src = "./images/noses" + current_bibletar[8] + ".svg";
+    /**current_bibletar at a specific element in the array does not give you the correct svg
+     * file number for the image, it is more of a placement number, that helps you detect which
+     * image on the screen was clicked, works more of consecutively if you get what I mean, once
+     * I combined the acquired stuff array of arrays and the not acuired stuff array of arrays
+     * I can use combined_array_of_arrays and current_bibletar to detect the actual svg
+     * file number
+     */
+    var combined_array_of_arrays = [];
+
+    for (let i = 0; i < 10; i++) {
+        combined_array_of_arrays.push(acquired_stuff_closet[i].concat(not_acquired_stuff_shop[i]));
+        // console.log(acquired_stuff_closet[i].concat(not_acquired_stuff_shop[i]));
+    }
+
+    img_background.src = "./images/background" + combined_array_of_arrays[0][(current_bibletar[1] - 1)] + ".svg";
+    img_eyes.src = "./images/eyes" + combined_array_of_arrays[5][(current_bibletar[6] - 1)] + ".svg";
+    img_noses.src = "./images/noses" + combined_array_of_arrays[7][(current_bibletar[8] - 1)] + ".svg";
     if (i_am_a_boy == true ) {
         /**You might be wondering why include face as well, because women's necks are in
          * fact visibily thinner, and men's necks are in fact visibly thicker, also
@@ -565,22 +579,22 @@ function match_drawings_to_correct_bibletar() {
          * different colors, also there are also some other differences which i will leave
          * up to the professionals
          */
-        img_face.src = "./images/face_men" + current_bibletar[2] + ".svg";
-        img_shirt.src = "./images/shirt_men" + current_bibletar[3] + ".svg";
-        img_glasses.src = "./images/glasses_men" + current_bibletar[4] + ".svg";
-        img_hats.src = "./images/hats_men" + current_bibletar[5] + ".svg";
-        img_eyebrows.src = "./images/eyebrows_men" + current_bibletar[7] + ".svg";
-        img_mouths.src = "./images/mouths_men" + current_bibletar[9] + ".svg";
-        img_hair.src = "./images/hair_men" + current_bibletar[10] + ".svg";
+        img_face.src = "./images/face_men" + combined_array_of_arrays[1][(current_bibletar[2] - 1)] + ".svg";
+        img_shirt.src = "./images/shirt_men" + combined_array_of_arrays[2][(current_bibletar[3] - 1)] + ".svg";
+        img_glasses.src = "./images/glasses_men" + combined_array_of_arrays[3][(current_bibletar[4] - 1)] + ".svg";
+        img_hats.src = "./images/hats_men" + combined_array_of_arrays[4][(current_bibletar[5] - 1)] + ".svg";
+        img_eyebrows.src = "./images/eyebrows_men" + combined_array_of_arrays[6][(current_bibletar[7] - 1)] + ".svg";
+        img_mouths.src = "./images/mouths_men" + combined_array_of_arrays[8][(current_bibletar[9] - 1)] + ".svg";
+        img_hair.src = "./images/hair_men" + combined_array_of_arrays[9][(current_bibletar[10] - 1)] + ".svg";
     } else {
         if (i_am_a_girl == true) {
-            img_face.src = "./images/face_women" + current_bibletar[2] + ".svg";
-            img_shirt.src = "./images/shirt_women" + current_bibletar[3] + ".svg";
-            img_glasses.src = "./images/glasses_women" + current_bibletar[4] + ".svg";
-            img_hats.src = "./images/hats_women" + current_bibletar[5] + ".svg";
-            img_eyebrows.src = "./images/eyebrows_women" + current_bibletar[7] + ".svg";
-            img_mouths.src = "./images/mouths_women" + current_bibletar[9] + ".svg";
-            img_hair.src = "./images/hair_women" + current_bibletar[10] + ".svg";
+            img_face.src = "./images/face_women" + combined_array_of_arrays[1][(current_bibletar[2] - 1)] + ".svg";
+            img_shirt.src = "./images/shirt_women" + combined_array_of_arrays[2][(current_bibletar[3] - 11)] + ".svg";
+            img_glasses.src = "./images/glasses_women" + combined_array_of_arrays[3][(current_bibletar[4] - 1)] + ".svg";
+            img_hats.src = "./images/hats_women" + combined_array_of_arrays[4][(current_bibletar[5] - 1)] + ".svg";
+            img_eyebrows.src = "./images/eyebrows_women" + combined_array_of_arrays[6][(current_bibletar[7] - 1)] + ".svg";
+            img_mouths.src = "./images/mouths_women" + combined_array_of_arrays[8][(current_bibletar[9] - 1)] + ".svg";
+            img_hair.src = "./images/hair_women" + combined_array_of_arrays[9][(current_bibletar[10] - 1)] + ".svg";
         }
     }
 }
