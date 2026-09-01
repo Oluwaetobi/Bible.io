@@ -739,13 +739,18 @@ function drawUsersBibletar() {
     }
 
     function resizeImageByPixels_and_draw (what_to_draw, x_pos_ribp, y_pos_ribp, pixel_size, type_of_drawing) {
+        /** be careful there is a different between "=" and "+=" using the other the wrong can be CATASTROPHIC
+         * for players, with the current code design, increase_width_by is the only thing that should
+         * use "=" and not "-=" or "+=" !!!
+         */
         my_pixels_height = pixel_size;
         var increase_width_by = 0;
         /* specific drawing is based to get the number that goes between the type of drawing whether
         background, hats, shirt, and etc and between the ".svg" so for instance hats_men3.svg or
         background25.svg, I am getting the number based between the type of drawing and the ".svg" this
         helps me access the actual drawing, not just based off of visible placement in the closet 
-        or in the shop, but the actual number of the svg which never changes  */
+        or in the shop, but the actual number of the svg which never changes  
+        */
         var specific_drawing = 0;
         specific_drawing = detect_specific_drawing(specific_drawing, type_of_drawing);
 
@@ -760,7 +765,21 @@ function drawUsersBibletar() {
         }
         // shirt
         if (type_of_drawing == 3) {
+            // default
             increase_width_by = 1.7;
+
+            if (i_am_a_boy == true) {
+                if(specific_drawing > 14) {
+                    my_pixels_height += 0;
+                    x_pos_ribp -= 7;
+                    y_pos_ribp += 0;
+                    increase_width_by = 1.85
+                }
+            } else {
+                if (i_am_a_girl == true ) {
+
+                }
+            }
         }
         // glasses
         if (type_of_drawing == 4) {
