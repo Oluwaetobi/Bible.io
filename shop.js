@@ -652,7 +652,7 @@ function match_drawings_to_correct_bibletar() {
     } else {
         if (i_am_a_girl == true) {
             img_face.src = "./images/face_women" + combined_array_of_arrays[1][(current_bibletar[2] - 1)] + ".svg";
-            img_shirt.src = "./images/shirt_women" + combined_array_of_arrays[2][(current_bibletar[3] - 11)] + ".svg";
+            img_shirt.src = "./images/shirt_women" + combined_array_of_arrays[2][(current_bibletar[3] - 1)] + ".svg";
             img_glasses.src = "./images/glasses_women" + combined_array_of_arrays[3][(current_bibletar[4] - 1)] + ".svg";
             img_hats.src = "./images/hats_women" + combined_array_of_arrays[4][(current_bibletar[5] - 1)] + ".svg";
             img_eyebrows.src = "./images/eyebrows_women" + combined_array_of_arrays[6][(current_bibletar[7] - 1)] + ".svg";
@@ -771,6 +771,7 @@ function drawUsersBibletar() {
         }
         // hats
        if (type_of_drawing == 5) {
+            increase_width_by += 2.0;
             if (i_am_a_boy == true) {
                 if (specific_drawing > 0 && specific_drawing < 9) {
                     // caps
