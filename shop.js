@@ -831,7 +831,43 @@ function drawUsersBibletar() {
             }
             if (specific_drawing == 3) {
                 my_pixels_height += 3;
-                increase_width_by = 0.4
+                increase_width_by = 0.4;
+            }
+            if (specific_drawing == 4) {
+                my_pixels_height -= 18;
+                x_pos_ribp += 0;
+                y_pos_ribp += 10;
+                increase_width_by = 2.0;
+            }
+            if (specific_drawing == 6) {
+                my_pixels_height -= 4;
+                x_pos_ribp -= 5;
+                y_pos_ribp += 0;
+                increase_width_by = 1.0;
+            }
+            if (specific_drawing == 8) {
+                my_pixels_height += 0;
+                x_pos_ribp -= 3;
+                y_pos_ribp += 0;
+                increase_width_by = 1.0;
+            }
+            if (specific_drawing == 9) {
+                my_pixels_height -= 10;
+                x_pos_ribp -= 0;
+                y_pos_ribp += 7;
+                increase_width_by = 0.7;
+            }
+            if (specific_drawing == 10) {
+                my_pixels_height += 0;
+                x_pos_ribp += 0;
+                y_pos_ribp += 0;
+                increase_width_by = 0.44;
+            }
+            if (specific_drawing == 11 || specific_drawing == 12) {
+                my_pixels_height -= 15;
+                x_pos_ribp -= 0;
+                y_pos_ribp += 13;
+                increase_width_by = 1.7;
             }
         }
         // mouths
