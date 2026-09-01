@@ -92,6 +92,14 @@ header {
     top:250px;
 }
 
+.bottom {
+    position: absolute;
+    top: 700px;
+    text-align: center;
+    left: 5%;
+    right: 5%;
+}
+
 a {
     text-decoration: none;
     /* color: var(--login-color); */
