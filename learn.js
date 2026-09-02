@@ -12,16 +12,16 @@
 window.addEventListener("load", () => {
     /**And YES this actually detect when the page has finished loading */
     // first of all get access to the loader class
-    const loader = document.querySelector(".loader");
+    const loader_for_learn = document.querySelector(".loader");
 
-    loader.classList.add("loader-hidden");
+    loader_for_learn.classList.add("loader-hidden");
 
     /* we don't want to just remove it from the screen but also remove it from our code too,
     we might not obe able to currently see it, but it is in fact still there hiding in the back, 
     so let's deal with that like so */
-    loader.addEventListener("transitionend", () => {
+    loader_for_learn.addEventListener("transitionend", () => {
         // once the transition has ended we will do
-        document.body.removeChild(loader);
+        document.body.removeChild(loader_for_learn);
         // we removed the loader class, yay!
     })
 })
@@ -54,7 +54,7 @@ function titleText() {
     // Bible.io Live Text
     if (play_front_page_text[0] == 0) {
         // When I keep erasing and rewriting it, I can't copy and paste the text, that's why I'm doing this
-        big_text.innerText = 'Bible.io Live';
+        big_text.innerText = 'Learn';
         play_front_page_text[0] +=1;
     } else {
         // do nothing
