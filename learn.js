@@ -192,6 +192,7 @@ function all_Text_Database () {
 }
 
 function Bible_DataBase () {
+    /**I am not going to store the entire Bible on here, I need to fetch that fromo a server */
     if (book_clicked == 1) {
         
     }
