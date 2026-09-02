@@ -375,3 +375,85 @@ table takes up the full width of it's parent the scrollable table */
 .table-articles tr {
     scroll-snap-align: start;
 }
+
+
+
+
+
+
+/* Section for READING MODE */
+
+#books_reading_mode {
+    display: none;
+}
+
+.scrollable-table-reading {
+    height: 640px;
+    width: 900px;
+    /* aspect-ratio: 1 / 1;   */
+    /* overflow-y makes only the y coordinates scrollable */
+    overflow-y: auto;
+    /* overflow-x: auto; */
+    /* background-color: #7f2e2e; */
+    scroll-snap-type: y mandatory;
+    position: fixed;
+    left: 100px;
+    /* translate: -50%; */
+    z-index: 1;
+    top: 150px;
+    background-color: #fbfbfb;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    border: 6px solid black;
+    border-radius: 2%;
+}
+
+/* Scrollable table class takes precedence over table class
+table takes up the full width of it's parent the scrollable table */
+.scrollable-table-reading > .table-reading {
+    width: 100%
+}
+
+.table-reading {
+    /* border-collapse:collapse; */
+    font-size: 10px;
+    width: 300px;
+    /* border-collapse: collapse;
+    border: 2px;
+    border-color: #000000; */
+}
+/*  */
+.table-reading th {
+    background-color: #6085fffe;
+    color: #ffffff;
+    font-size: 20px;
+    text-align: left;
+    position: sticky;
+    top: 0px;
+    /* justify-content: center;
+    align-items: center; */
+}
+
+.table-reading th {
+    padding: 2px 6px;
+    font-weight: normal;
+    font-size: 15px;
+    border-collapse: collapse
+}
+.table-reading td {
+    /* top right bottom left */
+    padding: 0px 20px 0px 20px;
+    /* font-weight: normal; */
+    /* font-size: 15px;
+    border: 1px solid black;  */
+}
+
+.table-reading tr {
+    scroll-snap-align: start;
+}
+
+
+/* This is for the reading mose, I can edit it as much as I want */
+#text-to-read {
+    font-size: 20px;
+}

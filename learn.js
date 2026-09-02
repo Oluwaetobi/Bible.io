@@ -29,41 +29,107 @@ window.addEventListener("load", () => {
 const canvas = document.getElementById('myCanvas');
 const ctx = canvas.getContext('2d');
 const big_text = document.getElementById('big-text');
+const text_to_read = document.getElementById('text-to-read');
 const top_border = 90;
 const side_border = 2;
+var mouseX = 0;
+var mouseY = 0;
+var table_clicked = 0;
+var book_clicked = 0;
 
 var box_x_pos = 1;
 var gameOn = false;
 /* Being able to copy and paste text by using HTML is super important, especially when the text is super long,
 that's one thing I like about HTML. As well as it's the core foundation to building websites. */
-var play_front_page_text = [];
+var show_or_hide_text = [];
+var learn_page = 1;
 
-function book_Chosen() {
-    
+window.addEventListener('mousemove', (event) => {
+    mouseX = event.clientX;
+    mouseY = event.clientY;
+    // This is to counter for where the canvas is actually created on the screen
+    mouseX -= side_border;
+    mouseY -= top_border;
+})
+
+function mouseDetections () {
+    document.addEventListener("click", function (event) {
+        if (learn_page == 2) {
+            if (mouseX > 1075 && mouseX < 1221 && mouseY > 51 && mouseY < 83) {
+                learn_page = 1;
+                show_or_hide_text[1] = 0;
+            }
+        }
+    });
+}
+
+function displayMouseX_and_MouseY () {
+    ctx.font = "30px Arial";
+    ctx.strokeStyle = 'rgb(190, 36, 36)';
+    ctx.strokeText("MouseX: " + mouseX + " MouseY: " + mouseY, 10, 30);
+    ctx.fillStyle = 'rgb(190, 36, 36)';
+    ctx.fillText("MouseX: " + mouseX + " MouseY: " + mouseY, 10, 30);
+
+}
+
+function book_Chosen(table_clicked_html, book_clicked_html) {
+    learn_page = 2;
+    table_clicked = table_clicked_html;
+    book_clicked = book_clicked_html;
+
+}
+
+function show_table_or_hide_table() {
+    if (learn_page == 1) {
+        document.getElementById('choose_bible_books').style.display = "block";
+        document.getElementById('choose_christians_books').style.display = "block";
+        document.getElementById('choose_articles_books').style.display = "block";
+        document.getElementById('books_reading_mode').style.display = "none";
+    }
+    if (learn_page == 2) {
+        document.getElementById('choose_bible_books').style.display = "none";
+        document.getElementById('choose_christians_books').style.display = "none";
+        document.getElementById('choose_articles_books').style.display = "none";
+        document.getElementById('books_reading_mode').style.display = "block";
+    }
 }
 
 function wipeOutEntireScreen() {
     ctx.clearRect(0,0, canvas.width, canvas.height);
-    if (gameOn != false) {
+    if (learn_page != 1) {
         // When I keep erasing and rewriting it, I can't copy and paste the text
         big_text.innerText = '';
+    }
+    if (learn_page != 2) {
+        text_to_read.innerText = '';
     }
 }
 
 function titleText() {
-    if(play_front_page_text.length < 20) {
-        play_front_page_text.push(0);
+    if(show_or_hide_text.length < 20) {
+        show_or_hide_text.push(0);
     }
 
     // Bible.io Live Text
-    if (play_front_page_text[0] == 0) {
+    if (show_or_hide_text[0] == 0) {
         // When I keep erasing and rewriting it, I can't copy and paste the text, that's why I'm doing this
         big_text.innerText = 'Learn';
-        play_front_page_text[0] +=1;
+        stop_re_adding_text(0);
     } else {
         // do nothing
     }
-    // console.log(big_text.innerText);
+}
+
+function goBackSign () {
+    if (learn_page == 2) {
+        ctx.fillStyle = 'rgb(12, 12, 12)';
+        ctx.fillRect(1130 -53, 52, 146, 36);
+        ctx.fillStyle = 'rgb(154, 82, 6)';
+        ctx.fillRect(1130 -50, 55, 140, 30);
+        ctx.font = "25px Arial";
+        ctx.fillStyle = 'rgb(252, 250, 250)';
+        ctx.fillText("Go Back", 1150 -50, 77);
+    }
 }
 
 function loadingBox() {
@@ -78,13 +144,88 @@ function loadingBox() {
 
 }
 
+
 function drawGame() {
     // blue background
     ctx.fillStyle = 'rgb(176, 223, 255)';
     ctx.fillRect(0, 0, canvas.width, canvas.height);
     
+    mouseDetections();
+    displayMouseX_and_MouseY();
     loadingBox();
     titleText();
+    show_table_or_hide_table();
+    goBackSign();
+    takeCareOfText();
+
+}
+
+function takeCareOfText () {
+    if (learn_page == 2) {
+        if (show_or_hide_text[1] == 0) {
+            all_Text_Database();
+            show_or_hide_text[0] +=1;
+        } else {
+            // do nothing
+        }
+    }
+
+
+}
+
+function all_Text_Database () {
+    if (show_or_hide_text[1] == 0) {
+        if (table_clicked = 1) {
+            // for bible books
+            Bible_DataBase();
+        }
+        if (table_clicked = 2) {
+            // Amazing Christians From History
+            Christians_From_History_DataBase();
+        }
+        if (table_clicked = 3) {
+            // Christian Articles to Read
+            Christian_Articles_DataBase();
+        }
+    } 
+}
+
+function Bible_DataBase () {
+    if (book_clicked == 1) {
+        
+    }
+}
+
+function stop_re_adding_text (type_of_text) {
+    /* we add one to the specificed element of the array, and before we write text, we check if that element
+    is equal to 0 or not, if it is not equal to zero, we know that we've already written it, this allows
+    give our text the capability of being copied and pasted, as well as prevents unnecessary text changes or
+    addtions */
+    show_or_hide_text[type_of_text] += 1;
+}
+
+function Christians_From_History_DataBase () {
+    // backticks are life savers "`"  ```````
+    if (book_clicked == 1) {
+        text_to_read.innerText = `Billy Graham: (1918-2018) is undoubtedly one of America’s greatest preachers. He grew up in North Carolina to a middle class family. And one day a preacher came to town, and Billy’s parents told him about it and he attended. That day Billy Graham decided to surrender his life to Jesus. Graham married his beautiful wife Ruth Bell in 1943, her father was a missionary and she was fresh from China. Ruth Bell was born to American parents who were missionaries in China. Billy Graham slowly rose to fame in America, although he did not preach for fame but solely because of his love for God, while many pastors were slowly cherry picked and faced tarnishes on their reputation, Billy Graham seemed to fly above it all and hardly was their ever a question as to whether he pure and righteous. Billy Graham had moral discipline unlike some American Pastors. Billy Graham preached to millions, in fact billions of people all across the world. His messages were translated into many languages, and many people, crowds in fact, would throng to his sermons. He was no doubt America’s greatest preacher. Once a man named “George Palmer” who feared neither young nor old, he became the leader of a gang, at age 17, and tried to kill him. In his young years, he hated Christians, despised them greatly in fact, and had a plot to kill Billy Graham. George made small zip guns for his 10 friends, who were in his gang and attended Billy Graham’s speech. And amidst a large crowd of people, amidst Billy Graham’s sermon. The altar call was almost there, Billy Graham called people to surrender their lives to Christ if they had not yet. But shortly before this, George looked around and he wondered “why in the living world are all these stupid people here!”, and out of nowhere a voice called to him saying, “why are you here.” He looked around but could not see or find the person who talked to him. He knew it was God. The truth was George did not know why he was here except but to kill Graham. He was angry because God took his father. And he asked “God why did you do it, why did you take my father.” He was about 6 or 9 when his father died. His father had cancer and passed away. He told God that he hurt him so much. And God told him he wasn’t trying to hurt him. That`;
+        text_to_read.innerText += ` he would never hurt him. George hadn’t cried since he was 7 and a half years old. And that day he cried, and wept like a baby. The altar call came, he put his zip gun down and ran to the front and surrendered his life to Jesus Christ. And miraculously 9 of his 10 friends did the exact same thing.  Billy Graham traveled the world, preaching to many, saving souls, and reminded us of God’s love for us and how he wanted to save us all. Citation: https://www.youtube.com/watch?v=6GeGqm4ocg8`;
+        stop_re_adding_text(1);
+    }
+    if (book_clicked == 1) {
+        
+    }
+    if (book_clicked == 1) {
+        
+    }
+    if (book_clicked == 1) {
+        
+    }
+    if (book_clicked == 1) {
+        
+    }
+}
+
+function Christian_Articles_DataBase () {
 
 }
 
