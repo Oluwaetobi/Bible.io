@@ -317,8 +317,9 @@ table takes up the full width of it's parent the scrollable table */
     /* aspect-ratio: 1 / 1;   */
     /* overflow-y makes only the y coordinates scrollable */
     overflow-y: auto;
+    overflow-x: auto;
     /* background-color: #7f2e2e; */
-    scroll-snap-type: y mandatory;
+    scroll-snap-type: x y mandatory;
     position: fixed;
     left: 100px;
     /* translate: -50%; */
