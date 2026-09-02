@@ -73,9 +73,9 @@ function displayMouseX_and_MouseY () {
 }
 
 function book_Chosen(table_clicked_html, book_clicked_html) {
-    learn_page = 2;
     table_clicked = table_clicked_html;
     book_clicked = book_clicked_html;
+    learn_page = 2;
 
 }
 
@@ -175,15 +175,15 @@ function takeCareOfText () {
 
 function all_Text_Database () {
     if (show_or_hide_text[1] == 0) {
-        if (table_clicked = 1) {
+        if (table_clicked == 1) {
             // for bible books
             Bible_DataBase();
         }
-        if (table_clicked = 2) {
+        if (table_clicked == 2) {
             // Amazing Christians From History
             Christians_From_History_DataBase();
         }
-        if (table_clicked = 3) {
+        if (table_clicked == 3) {
             // Christian Articles to Read
             Christian_Articles_DataBase();
         }
@@ -306,9 +306,91 @@ Another modern example would be Bill Wiese who wrote the New York Times best-sel
     }
     if (book_clicked == 4) {
         // The Most Important Thing
+        text_to_read.innerText = `The Most Important thing: Many people on Earth spend their time chasing: wealth, money, fame, power and many other worldly superficial things so much that they forget to help the poor, preach the gospel, live a righteous life, and ascribe glory to their creator. Proverbs 23:5 says  “Wilt thou set thine eyes upon that which is not? for riches certainly make themselves wings; they fly away as an eagle toward heaven. ”
+
+Many millionaires and billionaires in today’s modern world think that, “they don’t need God” but what happens when they lose all their money?
+
+And in Mark 8:36-37, Jesus says “
+For what shall it profit a man, if he shall gain the whole world, and lose his own soul?  Or what shall a man give in exchange for his soul? ”
+
+The loss of one’s soul is when one ends up in hell. In the fire which burneth forever. Lots of people spend their lives cheating, robbing, hurting, sinning, smoking, drinking, killing, backbiting, and committing many horrible sins and vices. They sweep their sins under the carpet while pursuing: fame, influence, money, and power. And they think “it don’t matter!” Well, God’s a just God, and everything you do matters to him.
+
+Adolf Hitler killed millions all in the name of war, power, prosperity and influence. He was an evil man and killed many innocent Jews. But 2 wrongs don’t make a right! For some people it is as simple as withholding good things from people, even when they know someone’s in need, they refuse to help them. Not because they don’t have, but because they don’t care.
+
+No matter how much money you have, even if you were the King of the World. You could not pay off your soul. It’s costly, it costs more than all the treasure you could find in 1000 gold mines, it is priceless.
+
+The soul is costly and not many people invest in theirs, or the souls of others. I believe that if mankind had wisdom they would be able to live better lives. 
+Proverbs 8:11 says “For wisdom is better than rubies; and all the things that may be desired are not to be compared to it. ” Wisdom is a principal thing (Proverbs 4:7). With wisdom you’ll know the best way to go about everything including: money, fame, wealth, power, preaching, helping the needy, life, church, marriage, and etc. Wisdom will guide you every step of the way.
+
+Proverbs 8 15-16 says “
+By me kings reign, and princes decree justice. By me princes rule, and nobles, even all the judges of the earth.”
+
+Proverbs 8:22-23 even tells us how God used wisdom to create the universe “The LORD possessed me in the beginning of his way, before his works of old.
+23 I was set up from everlasting, from the beginning, or ever the earth was.”
+Wisdom is important, and without it, mankind is doomed to foolishness and failure. 
+
+Hosea 4:6 says “My people are destroyed for lack of knowledge ”
+
+So, whatever you get in life, make sure you get wisdom. (Proverbs 4:7)
+
+Lots of people spend their time chasing things that don’t matter. Once you have wisdom, you’ll know what to chase, when to chase, and how to chase. 
+
+Proverbs 1: 20-33 says “
+20
+Wisdom crieth without; she uttereth her voice in the streets:
+21
+She crieth in the chief place of concourse, in the openings of the gates: in the city she uttereth her words, saying,
+22
+How long, ye simple ones, will ye love simplicity? and the scorners delight in their scorning, and fools hate knowledge?
+23
+Turn you at my reproof: behold, I will pour out my spirit unto you, I will make known my words unto you.
+24
+Because I have called, and ye refused; I have stretched out my hand, and no man regarded;
+25
+But ye have set at nought all my counsel, and would none of my reproof:
+26
+I also will laugh at your calamity; I will mock when your fear cometh;
+27
+When your fear cometh as desolation, and your destruction cometh as a whirlwind; when distress and anguish cometh upon you.
+28
+Then shall they call upon me, but I will not answer; they shall seek me early, but they shall not find me:
+29
+For that they hated knowledge, and did not choose the fear of the LORD:
+30
+They would none of my counsel: they despised all my reproof.
+31
+Therefore shall they eat of the fruit of their own way, and be filled with their own devices.
+32
+For the turning away of the simple shall slay them, and the prosperity of fools shall destroy them.
+33
+But whoso hearkeneth unto me shall dwell safely, and shall be quiet from fear of evil.”
+
+
+The world seeks after treasure but the greatest treasure of all is wisdom.
+
+`
     }
     if (book_clicked == 5) {
         // The Abomination of Desolation
+        text_to_read.innerHTML = `The Abomination of Desolation:
+
+The Tribulation will last for 7 years, but the Great Tribulation will be during the last 2nd half of the 7 years. In Daniel 9:27 each day represents 1 year. So when it says 1 week, there are 7 days in a week, meaning 7 years. We know that this time is true because in the middle of the week, the covenant is broken and instead the abomination of desolation is set on the altar, according to Daniel 9:27, Daniel 11:31 and Daniel 12:11.
+
+Daniel 12:11 is a very important scripture because it helps us remember and understand how the one week reference in Daniel 9:27 equals 7 years. Remember, the covenant is broken in the middle of the week." And Daniel 9:11 says "From the time that the daily sacrifice is taken away (this means according to Daniel 9:27 the promise/covenant is broken, he betrays them) and the abomination of desolation is set up. there shall be 1290 days. From half of the week to the end is 1,290 days which is 3.5 years and remember this is half of the week, multiply this by 2 and you get the full week. 3.5 times 2 equals 7, and this is where the 7 years comes from. This is known as Israel's missing week. Everything In Daniel 9:24-27 has happened except for verse 27. Every day equals 1 year. It's a coded message . And God often speaks in codes. Only the wise shall understand (Daniel 12:10) The Jews in Israel will think that they are being helped. But once the Evil One breaks the covenant he made with the Jews after allowing them to worship Yahweh, the true God. The God of Abraham, Isaac, and Jacob on their altar, once the Evil One puts the Abomination of Desolation on the altar. The Jews will be angry, it will be so disgusting and revolting to them but they will also realize that something is terribly wrong. And they should remember what Messiah the Prince said in Matthew 24:15-22 (KJV):
+15. When ye therefore shall see the abomination of desolation, spoken of by Daniel the prophet, stand in the holy place, (whoso readeth, let him understand:) 16. Then let them which be in Judaea flee into the mountains:
+17. Let him which is on the housetop not come down to take any thing out of his house:
+18. Neither let him which is in the field return back to take his clothes.
+19. And woe unto them that are with child, and to them that give suck in those days!
+20. But pray ye that your flight be not in the winter, neither on the sabbath day:
+21. For then shall be great tribulation, such as was not since the beginning of the world to this time, no, nor ever shall be.
+22. And except those days should be shortened, there should no flesh be saved: but for the elect's sake those days shall be shortened.
+
+There are many events that shall happen in the Great Tribulation which will last for 3.5 years, including: the mark of the beast “666”, the seven plagues, the seven woes, the two witnesses, it will be such a horrible time. But there is a way to escape, we must come to Jesus, repent of our sins, and by this we can escape the wrath to come. Jesus' arms are wide open to you today! Please do not ignore this call!
+
+I used to be a firm believer that nuclear bombs would never be used on Earth, but after decoding some of the messages in the book of Revelation, I’m starting to realize that they will be used. This has scared me, but thank God I won’t be there to witness it. There is a way to escape all this trouble, run to Jesus!
+
+Revelation 9:6 says “And in those days shall men seek death, and shall not find it; and shall desire to die, and death shall flee from them. ”
+`
     }
 
 }
