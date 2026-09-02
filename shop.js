@@ -8,6 +8,24 @@
  * how good your memory is, you always forget it at some point so START WRITING COMMENTS WHEN YOU CODE!!
  */
 
+/**First of all lets take care of the loading page */
+window.addEventListener("load", () => {
+    /**And YES this actually detect when the page has finished loading */
+    // first of all get access to the loader class
+    const loader = document.querySelector(".loader");
+
+    loader.classList.add("loader-hidden");
+
+    /* we don't want to just remove it from the screen but also remove it from our code too,
+    we might not obe able to currently see it, but it is in fact still there hiding in the back, 
+    so let's deal with that like so */
+    loader.addEventListener("transitionend", () => {
+        // once the transition has ended we will do
+        document.body.removeChild(loader);
+        // we removed the loader class, yay!
+    })
+})
+
 const canvas = document.getElementById('myCanvas');
 const ctx = canvas.getContext('2d');
 const bibletar_title = document.getElementById('bibletar-title');

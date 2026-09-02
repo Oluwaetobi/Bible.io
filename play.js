@@ -28,20 +28,7 @@ function wipeOutEntireScreen() {
     }
 }
 
-function drawSomething() {
-    // blue background
-    ctx.fillStyle = 'rgb(26, 163, 255)';
-    ctx.fillRect(0, 0, canvas.width, canvas.height);
-    
-    // looading box
-    ctx.fillStyle = 'rgba(255, 26, 104, 1)';
-    ctx.fillRect(50 + box_x_pos, canvas.height - 100, 50, 50);
-
-    box_x_pos += 3;
-    if (box_x_pos > canvas.width - 200) {
-        box_x_pos = 0;
-    }
-
+function titleText() {
     if(play_front_page_text.length < 20) {
         play_front_page_text.push(0);
     }
@@ -57,6 +44,28 @@ function drawSomething() {
     // console.log(big_text.innerText);
 }
 
+function loadingBox() {
+    // looading box
+    ctx.fillStyle = 'rgba(255, 26, 104, 1)';
+    ctx.fillRect(50 + box_x_pos, canvas.height - 100, 50, 50);
+    
+    box_x_pos += 3;
+    if (box_x_pos > canvas.width - 200) {
+        box_x_pos = 0;
+    }
+
+}
+
+function drawGame() {
+    // blue background
+    ctx.fillStyle = 'rgb(176, 223, 255)';
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+    
+    loadingBox();
+    titleText();
+
+}
+
 function resizeCanvas() {
     // Sets the internal drawing resolution to the exact window bounds
     canvas.width = window.innerWidth -2;
@@ -65,13 +74,13 @@ function resizeCanvas() {
     /* Note: Changing the canvas size clears the context state. 
     Redraw or call your render function here*/
 
-    drawSomething();
+    drawGame();
 }
 
 function gameLoop() {
     /**Wiping the entire screen clear is important before drawing your next batch */
     wipeOutEntireScreen();
-    drawSomething();
+    drawGame();
     /** All that requestAnimationFrame does it create a forever loop that can help me make
      * games or animations also, you can't control the fps it specifically hooked to match your
      * monitor's physical refresh rate
