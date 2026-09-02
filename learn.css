@@ -144,3 +144,233 @@ a:hover {
     font-size: 20px;
     text-align: center;
 }
+
+.container2 {
+    font-family: Arial, Helvetica, sans-serif; 
+    color: black;
+    display: grid;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+
+/* Section for Books from the Bible */
+#choose_bible_books {
+    display: block;
+}
+
+.scrollable-table-bible {
+    height: 120px;
+    width: 700px;
+    aspect-ratio: 1 / 1;  
+    /* overflow-y makes only the y coordinates scrollable */
+    overflow-y: auto;
+    /* background-color: #7f2e2e; */
+    scroll-snap-type: y mandatory;
+    position: fixed;
+    left: 100px;
+    /* translate: -50%; */
+    z-index: 1;
+    top: 200px;
+    background-color: #fbfbfb;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    border: 6px solid black;
+    border-radius: 2%;
+}
+
+/* Scrollable table class takes precedence over table class
+table takes up the full width of it's parent the scrollable table */
+.scrollable-table-bible > .table-bible {
+    width: 100%
+}
+
+.table-bible {
+    /* border-collapse:collapse; */
+    font-size: 10px;
+    width: 300px;
+    /* border-collapse: collapse;
+    border: 2px;
+    border-color: #000000; */
+}
+/*  */
+.table-bible th {
+    background-color: #6085fffe;
+    color: #ffffff;
+    font-size: 20px;
+    text-align: left;
+    position: sticky;
+    top: 0px;
+    /* justify-content: center;
+    align-items: center; */
+}
+
+.table-bible th {
+    padding: 2px 6px;
+    font-weight: normal;
+    font-size: 15px;
+    border-collapse: collapse
+}
+.table-bible td {
+    /* top right bottom left */
+    /* padding: 20px 20px 20px 20px; */
+    font-weight: normal;
+    /* font-size: 15px;
+    border: 1px solid black;  */
+}
+
+.table-bible tr {
+    scroll-snap-align: start;
+}
+
+
+
+
+/* Section for Amazing Christians From History */
+
+#choose_christians_books {
+    display: block;
+}
+
+.scrollable-table-christians {
+    height: 200px;
+    width: 700px;
+    aspect-ratio: 1 / 1;  
+    /* overflow-y makes only the y coordinates scrollable */
+    overflow-y: auto;
+    /* background-color: #7f2e2e; */
+    scroll-snap-type: y mandatory;
+    position: fixed;
+    left: 100px;
+    /* translate: -50%; */
+    z-index: 1;
+    top: 350px;
+    background-color: #fbfbfb;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    border: 6px solid black;
+    border-radius: 2%;
+}
+
+/* Scrollable table class takes precedence over table class
+table takes up the full width of it's parent the scrollable table */
+.scrollable-table-christians > .table-christians {
+    width: 100%
+}
+
+.table-christians {
+    /* border-collapse:collapse; */
+    font-size: 10px;
+    width: 300px;
+    /* border-collapse: collapse;
+    border: 2px;
+    border-color: #000000; */
+}
+/*  */
+.table-christians th {
+    background-color: #6085fffe;
+    color: #ffffff;
+    font-size: 20px;
+    text-align: left;
+    position: sticky;
+    top: 0px;
+    /* justify-content: center;
+    align-items: center; */
+}
+
+.table-christians th {
+    padding: 2px 6px;
+    font-weight: normal;
+    font-size: 15px;
+    border-collapse: collapse
+}
+.table-christians td {
+    /* top right bottom left */
+    padding: 0px 20px 0px 20px;
+    /* font-weight: normal; */
+    /* font-size: 15px;
+    border: 1px solid black;  */
+}
+
+.table-christians tr {
+    scroll-snap-align: start;
+}
+
+
+
+
+
+
+
+
+
+/* Section for Christian Articles */
+
+#choose_articles_books {
+    display: block;
+}
+
+.scrollable-table-articles {
+    height: 200px;
+    width: 700px;
+    /* aspect-ratio: 1 / 1;   */
+    /* overflow-y makes only the y coordinates scrollable */
+    overflow-y: auto;
+    /* background-color: #7f2e2e; */
+    scroll-snap-type: y mandatory;
+    position: fixed;
+    left: 100px;
+    /* translate: -50%; */
+    z-index: 1;
+    top: 580px;
+    background-color: #fbfbfb;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    border: 6px solid black;
+    border-radius: 2%;
+}
+
+/* Scrollable table class takes precedence over table class
+table takes up the full width of it's parent the scrollable table */
+.scrollable-table-articles > .table-articles {
+    width: 100%
+}
+
+.table-articles {
+    /* border-collapse:collapse; */
+    font-size: 10px;
+    width: 300px;
+    /* border-collapse: collapse;
+    border: 2px;
+    border-color: #000000; */
+}
+/*  */
+.table-articles th {
+    background-color: #6085fffe;
+    color: #ffffff;
+    font-size: 20px;
+    text-align: left;
+    position: sticky;
+    top: 0px;
+    /* justify-content: center;
+    align-items: center; */
+}
+
+.table-articles th {
+    padding: 2px 6px;
+    font-weight: normal;
+    font-size: 15px;
+    border-collapse: collapse
+}
+.table-articles td {
+    /* top right bottom left */
+    padding: 0px 20px 0px 20px;
+    /* font-weight: normal; */
+    /* font-size: 15px;
+    border: 1px solid black;  */
+}
+
+.table-articles tr {
+    scroll-snap-align: start;
+}

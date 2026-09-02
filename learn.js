@@ -38,6 +38,10 @@ var gameOn = false;
 that's one thing I like about HTML. As well as it's the core foundation to building websites. */
 var play_front_page_text = [];
 
+function book_Chosen() {
+    
+}
+
 function wipeOutEntireScreen() {
     ctx.clearRect(0,0, canvas.width, canvas.height);
     if (gameOn != false) {
