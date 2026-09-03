@@ -58,6 +58,7 @@ function mouseDetections () {
             if (mouseX > 1075 && mouseX < 1221 && mouseY > 51 && mouseY < 83) {
                 learn_page = 1;
                 show_or_hide_text[1] = 0;
+                show_or_hide_text[0] = 0;
             }
         }
     });
