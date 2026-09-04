@@ -38,6 +38,14 @@ var gameOn = false;
 that's one thing I like about HTML. As well as it's the core foundation to building websites. */
 var play_front_page_text = [];
 
+var img_world_challenge = new Image();
+img_world_challenge.src = "./images/challenge_world.svg"; // Set source URL
+img_world_challenge.alt = "Go global!";
+
+var img_friend_challenge = new Image();
+img_friend_challenge.src = "./images/challenge_friend.svg";
+img_friend_challenge.alt = "Verse Friends!";
+
 function wipeOutEntireScreen() {
     ctx.clearRect(0,0, canvas.width, canvas.height);
     if (gameOn != false) {
@@ -74,6 +82,41 @@ function loadingBox() {
 
 }
 
+function drawPagesForGame() {
+    /**I won't use the parameter type_of_drawing now, but it will come in handy later, maybe when I start
+     * drawing the bar graph to represent points in the game, I will probably use a separate function, 
+     * like probably the exact same one found in shop.js to draw the user's bibletar as well as 
+     * opponents' bibletars as well.
+     */
+    function resizeGameAssets (what_to_draw, x_pos_ribp, y_pos_ribp, pixel_size_width, pixel_size_height, type_of_drawing) {
+            if (type_of_drawing == 1) {
+                ctx.drawImage(what_to_draw, x_pos_ribp, y_pos_ribp, pixel_size_width, pixel_size_height);
+            }
+            if (type_of_drawing == 2) {
+                ctx.beginPath();
+                // x_pos, y_pos, size, shape filler, and I don't know, something for radius I think
+                ctx.arc(x_pos_ribp, y_pos_ribp, pixel_size_width, 0, 2 * Math.PI);
+                ctx.fillStyle = 'rgb(79, 178, 50)';
+                ctx.fill();
+                ctx.font = "75px Arial";
+                ctx.fillStyle = 'rgb(252, 250, 250)';
+                ctx.fillText("Go", x_pos_ribp - pixel_size_width/1.7, y_pos_ribp + pixel_size_width/3.5);
+            }
+    }
+    resizeGameAssets(img_world_challenge, 300, 300, 280, 200, 1);
+    resizeGameAssets(img_friend_challenge, 700, 300, 200, 200, 1);
+    resizeGameAssets("Go button", 1000, 400, 80, 80, 2);
+
+
+    // ctx.beginPath();
+    // ctx.arc(95, 50, 40, 0, 2 * Math.PI);
+    // ctx.fillStyle = "red";
+    // ctx.fill();
+    // ctx.lineWidth = 4;
+    // ctx.strokeStyle = "blue";
+    // ctx.stroke();
+}
+
 function drawGame() {
     // blue background
     ctx.fillStyle = 'rgb(176, 223, 255)';
@@ -81,6 +124,7 @@ function drawGame() {
     
     loadingBox();
     titleText();
+    drawPagesForGame();
 
 }
 
