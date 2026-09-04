@@ -44,6 +44,10 @@ that's one thing I like about HTML. As well as it's the core foundation to build
 var show_or_hide_text = [];
 var learn_page = 1;
 
+var img_sunday_school_teacher = new Image();
+img_sunday_school_teacher.src = "./images/sunday_school_teacher.svg"; // Set source URL
+img_sunday_school_teacher.alt = "Sunday School Teacher";
+
 window.addEventListener('mousemove', (event) => {
     mouseX = event.clientX;
     mouseY = event.clientY;
@@ -145,6 +149,14 @@ function loadingBox() {
 
 }
 
+function drawGameAssets () {
+    function resizeGameAssets (what_to_draw, x_pos_ribp, y_pos_ribp, pixel_size_width, pixel_size_height, type_of_drawing) {
+        if (type_of_drawing == 1) {
+            ctx.drawImage(what_to_draw, x_pos_ribp, y_pos_ribp, pixel_size_width, pixel_size_height);
+        }
+    }
+    resizeGameAssets(img_sunday_school_teacher, 1100, 100, 200, 350, 1);
+}
 
 function drawGame() {
     // blue background
@@ -158,6 +170,7 @@ function drawGame() {
     show_table_or_hide_table();
     goBackSign();
     takeCareOfText();
+    drawGameAssets();
 
 }
 
