@@ -41,6 +41,7 @@
  * for the servers, where will that money come from. Or we supposed to hook Ads up on our website, just
  * so that we can pay for the servers. Ads can be super annoying websites. Or we will we fundraise
  * just through website traffic, which probably we won't be making even enough money to pay for all
- * the online functions. It's one thing to code, it's another thing to have the money and the cash.
+ * the online functions. Donations could definitely help, but it would have to be optional. 
+ * It's one thing to code, it's another thing to have the money and the cash.
  * Because let's be honest with ourselves. Nothing goes for nothing. And there ain't NOTHIN' that's free!!
  */
