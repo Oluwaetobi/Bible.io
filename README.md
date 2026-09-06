@@ -8,11 +8,11 @@
 
 <h2>Journey</h2>
 <p>Bible.io was originally built with a website called Scratch, and then after that we switched to Turbowarp
-meaning it was run with only JavaScript. Now we're moving forward and developing our own website write from
+meaning it was run with only JavaScript. Now we're moving forward and developing our own website right from
 the basics, with languages that drive not only the Web, but the Internet itself. Languages like HTML/CSS, 
 JavaScript, and maybe more. Since We might be working with Full-Stack JavaScript will be able to use
 JavaScript not only for Front-End Development but as well as Back-End Development with frameworks such
-as Node.js</p>
+as Node.js | Development will take years but every step of the way is an oppurtunity to learn. If you would like to be a contributor to this project please state so in the discussions.</p>
 
 <h2>How Bible.io Works</h2>
 <p>Bible.io works by connecting people from around the globe and making use of online competition. Where
@@ -22,28 +22,30 @@ dimensions will be wider, larger, and higher image quality, there will also be d
 will be timed and last 60 seconds. Speed matters, but accuracy is important. If you get 5 questions
 wrong, you become a spectator and can no longer ansquer questions until the game finishes. A bar graph
 will be used to display people's points, and the type of input to answer questions is currently being
-rethought as the game will be experiencing new updates, and changes.</p>
+rethought as the game will be experiencing new updates, and changes. You will also be able to see 
+players' bibletars as well as their countries</p>
 
 <p>In the learn section people will have access to the Bible.io's personal library which includes: Videos,
 Christian Articles, the Bible, writings on different Amazing Christian From History, a practice station
 where you can answer questions, such as questions related to the Bible, real-life scenarios, books, and more
-while at the end of the day tying back to Biblical Beliefs and Christian Principles</p>
+while at the end of the day tying it back to Biblical Beliefs and Christian Principles</p>
 
 <p>The Bible.io Hall of Fame is an automatic leaderboard which will display top highscores on the
 different Bible.io Levels for the day and reset every 24 hours, this leaderboard will not just include
 the top highscores for different levels, but also the most points racked in 24 hours as well. We will
-also be featuring the leaderboard for the World's Bible Day Conteset which takes place every year
+also be featuring the leaderboard for the World's Bible Day Contest which takes place every year
 from July 1st to July 31st. The Hall of Fame will also be clickable allowing you to see the bibletars
-of these top players. Keep in minde, that this all just for fun and is supposed to engage younger people
-such as kids and perhaps evens teens and whoever is interested. If you are an older person such as a
+of the top players on the Bible.io Hall of Fame. 
+Keep in mind, that this all just for fun and is supposed to engage younger people
+such as kids and perhaps evens teens and whoever else is interested. If you are an older person such as a
 teenager or an adult, such things may not be at all interesting to you, which is why we will have diverse
 things for diverse age groups and people.</p>
 
 <p>The Shop section is where people can style their bibletar. There is a section for boys, and a section
 for girls. There are free basic shirts, hats, clothes, and etc that are provided to each user, player,
 or guest player in their closet. And there is a shop where you can buy stuff with the money you've
-earned from the game. Some might be very cheap, and other expensive. Reminder: Money is earned
-through the GAME, not real money from real life. </p>
+earned from the game. Some of the clothes, and accessories might be very cheap, and other expensive. 
+Reminder: Money is earned through the GAME, not real money from real life. </p>
 
 <h2>Account information, Login, and Sign Ups</h2>
 <p>Well there's is obviously a problem with storing everyone's account information on Bible.io Servers, such
@@ -51,8 +53,18 @@ as usernames, passwords, and emails that you use to save your progress and other
 Storing information on servers costs money, and storing tons of information depending on how many people
 play Bible.io costs even more money. So once the website gets released initially. You may not actually be
 able to even create acccounts or login. Yes the page will be available, but it will not function or
-redirect once you sign up or login. The issue of paying for servers will be dealt with later.</p>
+redirect you once you sign up or login. The issue of paying for servers will be dealt with later.</p>
 
 <h2>HTML/CSS and JavaScript reference via developer.mozilla</h2>
 <p>Need a reference guid to double check or learn more for HTML/CSS and JavaScript check it out here: 
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide </p>
+
+<h1>For Developers</h1>
+<h2>What IDE's do we recommend</h2>
+<p>For me personally I do recommend using Visual Studio Code for this, but if you have a preference
+then go for it. But I strongly do recommend setting up Git on your computer, so you can push, pull,
+and commit changes to Github.</p>
+
+<h2>Bugs in Bible.io Code</h2>
+<p>Please don't report bugs on HackerOne, LOL. If you find any bugs, please just report them on "issues"
+https://github.com/Oluwaetobi/Bible.io/issues</p>
