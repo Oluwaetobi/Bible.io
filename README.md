@@ -10,7 +10,7 @@
 <p>Bible.io was originally built with a website called Scratch, and then after that we switched to Turbowarp
 meaning it was run with only JavaScript. Now we're moving forward and developing our own website right from
 the basics, with languages that drive not only the Web, but the Internet itself. Languages like HTML/CSS, 
-JavaScript, and maybe more. Since We might be working with Full-Stack JavaScript will be able to use
+Full-Stack JavaScript, (Node.js) and maybe more. Since We will be working with Full-Stack JavaScript will be able to use
 JavaScript not only for Front-End Development but as well as Back-End Development with frameworks such
 as Node.js | Development will take years but every step of the way is an oppurtunity to learn. If you would like to be a contributor to this project please state so in the discussions.</p>
 
