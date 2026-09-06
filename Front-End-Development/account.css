@@ -1,4 +1,44 @@
 /* Game Best Played Via PC */
+.loader {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    /* want it to take up the entire screen */
+    width: 100vw;
+    height: 100vh;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    background-color: #5c5f5d;
+    transition: opacity 0.75s, visibility 0.75s;
+    z-index: 4;
+}
+
+.loader-hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.loader::after {
+    content: "";
+    width: 75px;
+    height: 75px;
+    border: 10px solid #a3a3a3;
+    border-top-color: #a50dd3;
+    /* turns it into a circle */
+    border-radius: 50%;
+    animation: loading 0.75s ease infinite;
+}
+
+@keyframes loading {
+    from {
+        /* starting at zero */
+        transform: rotate(0turn);
+    } to {
+        /* ending after 1 turn */
+        transform: rotate(1turn);
+    }
+}
 
 body {
     margin: 0;
@@ -76,4 +116,12 @@ a {
 }
 a:hover {
     text-decoration: underline;
+}
+
+#myCanvas {
+    position: fixed;
+    left: 0px;
+    top: 86px;
+    border: 1px solid #000000;
+    background-color: #030303;
 }

@@ -36,6 +36,7 @@ var mouseX = 0;
 var mouseY = 0;
 var table_clicked = 0;
 var book_clicked = 0;
+var my_name = "Unknown Player"
 
 var box_x_pos = 1;
 var gameOn = false;
@@ -158,6 +159,18 @@ function drawGameAssets () {
     resizeGameAssets(img_sunday_school_teacher, 1100, 100, 200, 350, 1);
 }
 
+function myBibletar () {
+    ctx.fillStyle = 'rgb(66, 66, 66)';
+    ctx.fillRect(1250, 475, 250, 200);
+
+    // WRITE Player Clicked's NAME
+    ctx.font = "40px Arial";
+    ctx.strokeStyle = 'rgb(10, 9, 9)';
+    ctx.strokeText(my_name, 1210, 710);
+    ctx.fillStyle = 'rgb(8, 8, 8)';
+    ctx.fillText(my_name, 1210, 710);
+}
+
 function drawGame() {
     // blue background
     ctx.fillStyle = 'rgb(176, 223, 255)';
@@ -171,6 +184,7 @@ function drawGame() {
     goBackSign();
     takeCareOfText();
     drawGameAssets();
+    myBibletar();
 
 }
 
