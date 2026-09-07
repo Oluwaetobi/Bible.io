@@ -78,6 +78,55 @@ function wipeOutEntireScreen() {
     }
 }
 
+function saveName() {
+    // get the input value
+    const nameInputValue = document.getElementById('username-input').value;
+
+    // save the input value to local Storage
+    // the first item is the name of the variable for the local Storage
+    localStorage.setItem('my_name', nameInputValue)
+
+
+
+    /**Extra information on local Storage
+     * How to clear the local storage for the particular website: localStorage.clear();
+     * 
+     * localStorage is a property that allows JavaScript sites and apps to save key-value pairs in a
+     *  web browser with no expiration date. This means the data stored persists even after the
+     *  user closes the browser or restarts the computer.
+     * 
+     * To retrieve data, pass the key name. If the key doesn't exist, it returns null.
+     * 
+     * To remove a specific key-value pair, pass the exact key name. 
+     * javascript
+     * localStorage.removeItem('theme');
+
+
+    localStorage can only store data as strings. If you attempt to save a number, boolean, array, or
+     object directly, JavaScript will automatically force it into a string format. For an object, this results
+      in the broken string "[object Object]". [1] (https://www.youtube.com/watch?v=AUOzvFzdIk4), 
+      [2] (https://www.youtube.com/watch?v=-ZRDZyUjEEI&t=12),
+       [3] (https://blog.logrocket.com/localstorage-javascript-complete-guide/)To store complex data like 
+       arrays or objects, you must convert them into a JSON string when saving, and parse them back 
+       into JavaScript when reading: [1] (https://rxdb.info/articles/localstorage.html), 
+       [2] (https://www.youtube.com/watch?v=-ZRDZyUjEEI&t=12)
+
+
+       const user = { name: 'Alice', score: 42 };
+
+// ❌ WRONG: localStorage.setItem('userData', user); -> stores "[object Object]"
+
+//  RIGHT: Convert to a string first
+localStorage.setItem('userData', JSON.stringify(user));
+
+//  RIGHT: Read and convert back to an object
+const savedUser = JSON.parse(localStorage.getItem('userData'));
+console.log(savedUser.name); // Outputs: "Alice"
+
+
+     */
+}
+
 function loadingBox() {
     // looading box
     ctx.fillStyle = 'rgba(255, 26, 104, 1)';
@@ -93,6 +142,14 @@ function loadingBox() {
 function myBibletar () {
     ctx.fillStyle = 'rgb(66, 66, 66)';
     ctx.fillRect(50, 50, 300, 250);
+
+    const savedName = localStorage.getItem('my_name');
+    if (savedName) {
+        my_name = savedName;
+    } else {
+        // The user has not created a name yet
+        my_name = "Guest Player"
+    }
 
     // WRITE Player Clicked's NAME
     ctx.font = "40px Arial";
