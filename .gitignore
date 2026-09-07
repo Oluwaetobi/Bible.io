@@ -1,0 +1,4 @@
+# Here in gitignore, I can tell git to ignore all of these files, files that contain perhaps passwords, or sensitive
+# dependencies such as node_modules, and etc. Also PS, node_modules updates on it's own when running npm
+# no need to create it yourself
+node_modules/

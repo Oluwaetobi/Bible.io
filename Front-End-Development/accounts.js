@@ -26,6 +26,37 @@ window.addEventListener("load", () => {
     })
 })
 
+
+const username_input = document.getElementById('username-input');
+const error_message = document.getElementById('error-message');
+
+
+form.addEventListener('submit', (e) => {
+
+    let errors = [];
+    errors = getCreateNameFormErrors(username_input.value)
+    
+    if (errors.length > 0) {
+        // If there are any errors, prevent the form from being submitted
+        e.preventDefault()
+        error_message.innerText = errors.join(". ")
+    }
+    
+})
+
+function getCreateNameFormErrors (username) {
+    let errors = []
+    if(username === '' || username == null) {
+        errors.push('Username is required!')
+        username_input.parentElement.classList.add(`You didn't enter anything`);
+    }
+    if(username.length < 2) {
+        errors.push('Your name is too short!')
+        username_input.parentElement.classList.add(`Your name is too short`);
+    }
+    return errors;
+}
+
 const canvas = document.getElementById('myCanvas');
 const ctx = canvas.getContext('2d');
 const top_border = 90;
