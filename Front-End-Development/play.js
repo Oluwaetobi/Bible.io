@@ -171,7 +171,7 @@ function myBibletar () {
 function onlineDisplay() {
     ctx.font = "30px Arial";
     ctx.fillStyle = 'rgb(8, 8, 8)';
-    ctx.fillText("Online: " + online, 700, 100);
+    ctx.fillText("Online: " + online, ((canvas.width)/2) - 60, 100);
 }
 
 function drawGame() {

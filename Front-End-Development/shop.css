@@ -367,7 +367,7 @@ JAVASCRIPT FILE*/
 
 .scrollable-table-shop {
     /* height was originally 190px */
-    height: 220px;
+    height: 190px;
     width: 1145px;
     aspect-ratio: 1 / 1;  
     /* overflow-y makes only the y coordinates scrollable */
@@ -421,7 +421,7 @@ table takes up the full width of it's parent the scrollable table */
 }
 .table-shop td {
     /* top right bottom left */
-    padding: 10px 10px 10px 10px;
+    padding: 0px 10px 0px 10px;
     font-weight: normal;
     /* font-size: 15px;
     border: 1px solid black;  */
