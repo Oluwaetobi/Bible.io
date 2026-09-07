@@ -1176,13 +1176,20 @@ function bibleMaker_background () {
     ctx.fillStyle = gradient;
     ctx.fillRect(0, 0, canvas.width, canvas.height);
 
+    /**Goes to right place, regardless of web browser used, or how small or big the user's
+     * laptop, or PC is
+     */
+    var x_shift = 440;
     // black stroke
     ctx.fillStyle = 'rgb(3, 3, 3)';
-    ctx.fillRect(320, 20, 870, 170);
+    // ctx.fillRect(320, 20, 870, 170);
+    ctx.fillRect(((canvas.width)/2) - x_shift, 20, 870, 170);
     ctx.fillStyle = 'rgb(3, 3, 3)';
-    ctx.fillRect(327, 7, 876, 176);
+    // ctx.fillRect(327, 7, 876, 176);
+    ctx.fillRect(((canvas.width)/2) - x_shift + 7, 7, 876, 176);
     ctx.fillStyle = 'rgb(49, 77, 125)';
-    ctx.fillRect(330, 10, 870, 170);
+    // ctx.fillRect(330, 10, 870, 170);
+    ctx.fillRect(((canvas.width)/2) - x_shift + 10, 10, 870, 170);
 
     // other little dark blue rectangle
     ctx.fillStyle = 'rgb(3, 3, 3)';
