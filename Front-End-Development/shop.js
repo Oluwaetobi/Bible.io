@@ -206,14 +206,44 @@ function wipeOutEntireScreen() {
     // }
 }
 
+function save_Data_to_Local_or_Session_Storage() {
+    localStorage.setItem('old_bibletar', JSON.stringify(old_bibletar));
+    localStorage.setItem('acquired_stuff_closet', JSON.stringify(acquired_stuff_closet));
+    localStorage.setItem('not_acquired_stuff_shop', JSON.stringify(not_acquired_stuff_shop));
+
+}
+
 function localStorageAndSessionStorageData () {
     /** I use this function to read out my local and Session Storage Data */
     const savedName = localStorage.getItem('my_name');
+    const saved_bibletar = JSON.parse(localStorage.getItem('old_bibletar'));
+    const saved_acquired = JSON.parse(localStorage.getItem('acquired_stuff_closet'));
+    const saved_not_acquired = JSON.parse(localStorage.getItem('acquired_stuff_closet'));
+
+
     if (savedName) {
         my_name = savedName;
     } else {
         // The user has not created a name yet
         my_name = "Guest Player"
+    }
+
+    if(saved_bibletar) {
+        old_bibletar = saved_bibletar;
+    } else {
+        // do nothing, has already been created to default
+    }
+
+    if(saved_acquired) {
+        acquired_stuff_closet = saved_acquired;
+    } else {
+        // do nothing, has already been created to default
+    }
+
+    if(saved_not_acquired) {
+        not_acquired_stuff_shop = saved_not_acquired;
+    } else {
+        // do nothing, has already been created to default
     }
 }
 
@@ -232,6 +262,7 @@ function mouseDetections() {
             for(let i = 0; i < current_bibletar.length; i++) {
                 old_bibletar[i] = current_bibletar[i];
             }
+            save_Data_to_Local_or_Session_Storage();
         }
         // Leave
         if (mouseX > 979 && mouseX < 1110 && mouseY < (83 + 610) && mouseY > (53 + 610)) {
