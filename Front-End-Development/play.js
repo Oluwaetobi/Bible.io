@@ -37,7 +37,12 @@ var gameOn = false;
 /* Being able to copy and paste text by using HTML is super important, especially when the text is super long,
 that's one thing I like about HTML. As well as it's the core foundation to building websites. */
 var play_front_page_text = [];
-var my_name = "Unknown Player"
+
+var my_name = "Unknown Player";
+var my_points = 0;
+var my_highscores = [0, 0, 0];
+var level = 1;
+
 var online = 1;
 
 const friends = {
@@ -61,15 +66,53 @@ function wipeOutEntireScreen() {
     }
 }
 
+function save_Data_to_Local_or_Session_Storage() {
+    /**IMPORTANT!!!!! Only call this function when there is new data that needs to be saved */
+
+    /**Since my_points and my_highscore are not strings, we must first of all convert them to
+     * strings because local storage and session storage can only store data as strings
+     * 
+     * To store arrays, objects, or integers as strings, we must first of all convert
+     * them into a JSON string, when we want to read them we must convert them back (parse).
+     */
+
+    /**An another important note:
+     * Why are we not storing points or highscores locally, well because then they'll never 
+     * reset, unless we actually clear the local storage like so
+     * localStorage.removeItem('my_name'); or localStorage.removeItem('my_points')
+     * but we won't want to do that. Local Storage stores indefinitely, sessionStorage however
+     * only stores it while the tab is still open, so if you close the tab, then points for the day
+     * should reset. I just realized wait a second, my highscore should also be stored indefinitely,
+     * but well change it to local storage once, the levels work properly
+     */
+    sessionStorage.setItem('my_points', JSON.stringify(my_points));
+    sessionStorage.setItem('my_highscores', JSON.stringify(my_highscores));
+}
+
 function localStorageAndSessionStorageData () {
     /** I use this function to read out my local and Session Storage Data */
     const savedName = localStorage.getItem('my_name');
+    const savedHighscores = JSON.parse(sessionStorage.getItem('my_highscores'));
+    const savedPoints = JSON.parse(sessionStorage.getItem('my_points'));
     if (savedName) {
         my_name = savedName;
     } else {
         // The user has not created a name yet
         my_name = "Guest Player"
     }
+
+    if (savedHighscores) {
+        my_highscores = savedHighscores;
+    } else {
+        // do nothing, because the array has already been created at the top
+    }
+
+    if (savedPoints) {
+        my_points = savedPoints;
+    } else {
+        // do nothing, because the variable has already been created and set to zero at the top
+    }
+
 }
 
 function titleText() {
@@ -170,8 +213,18 @@ function myBibletar () {
 
 function onlineDisplay() {
     ctx.font = "30px Arial";
-    ctx.fillStyle = 'rgb(8, 8, 8)';
+    ctx.fillStyle = 'rgb(4, 4, 4)';
     ctx.fillText("Online: " + online, ((canvas.width)/2) - 60, 100);
+}
+
+function myScoresDisplay () {
+    var x_shift = -50;
+    ctx.font = "20px Arial";
+    ctx.fillStyle = 'rgb(6, 6, 6)';
+    ctx.fillText("Points: " + my_points, (((canvas.width)/2) + x_shift) - 150, 130);
+
+    ctx.fillStyle = 'rgb(6, 6, 6)';
+    ctx.fillText("Highscore: " + my_highscores[level - 1], (((canvas.width)/2) + x_shift) + 150, 130);
 }
 
 function drawGame() {
@@ -186,6 +239,7 @@ function drawGame() {
     friendsBoard();
     myBibletar();
     onlineDisplay();
+    myScoresDisplay();
 
 }
 
