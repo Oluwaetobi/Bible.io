@@ -206,6 +206,17 @@ function wipeOutEntireScreen() {
     // }
 }
 
+function localStorageAndSessionStorageData () {
+    /** I use this function to read out my local and Session Storage Data */
+    const savedName = localStorage.getItem('my_name');
+    if (savedName) {
+        my_name = savedName;
+    } else {
+        // The user has not created a name yet
+        my_name = "Guest Player"
+    }
+}
+
 function mouseDetections() {
     document.addEventListener("click", function (event) {
         if (bibletar_maker_page == 2 ) {
@@ -1299,6 +1310,7 @@ function drawSomething() {
 
     // Mouse Detections
     mouseDetections();
+    localStorageAndSessionStorageData();
 
     /**HIDE OR SHOW JAVASCRIPT ELEMENTS */
     if (bibletar_maker_page ==2) {

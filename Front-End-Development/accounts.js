@@ -78,6 +78,17 @@ function wipeOutEntireScreen() {
     }
 }
 
+function localStorageAndSessionStorageData () {
+    /** I use this function to read out my local and Session Storage Data */
+    const savedName = localStorage.getItem('my_name');
+    if (savedName) {
+        my_name = savedName;
+    } else {
+        // The user has not created a name yet
+        my_name = "Guest Player"
+    }
+}
+
 function saveName() {
     // get the input value
     const nameInputValue = document.getElementById('username-input').value;
@@ -143,14 +154,6 @@ function myBibletar () {
     ctx.fillStyle = 'rgb(66, 66, 66)';
     ctx.fillRect(50, 50, 300, 250);
 
-    const savedName = localStorage.getItem('my_name');
-    if (savedName) {
-        my_name = savedName;
-    } else {
-        // The user has not created a name yet
-        my_name = "Guest Player"
-    }
-
     // WRITE Player Clicked's NAME
     ctx.font = "40px Arial";
     ctx.strokeStyle = 'rgb(10, 9, 9)';
@@ -165,6 +168,7 @@ function drawGame() {
     ctx.fillStyle = 'rgb(189, 189, 190)';
     ctx.fillRect(0, 0, canvas.width, canvas.height);
     
+    localStorageAndSessionStorageData();
     loadingBox();
     myBibletar();
 

@@ -78,6 +78,17 @@ function displayMouseX_and_MouseY () {
 
 }
 
+function localStorageAndSessionStorageData () {
+    /** I use this function to read out my local and Session Storage Data */
+    const savedName = localStorage.getItem('my_name');
+    if (savedName) {
+        my_name = savedName;
+    } else {
+        // The user has not created a name yet
+        my_name = "Guest Player"
+    }
+}
+
 function book_Chosen(table_clicked_html, book_clicked_html) {
     table_clicked = table_clicked_html;
     book_clicked = book_clicked_html;
@@ -164,11 +175,11 @@ function myBibletar () {
     ctx.fillRect(1250, 455, 250, 200);
 
     // WRITE Player Clicked's NAME
-    ctx.font = "40px Arial";
+    ctx.font = "30px Arial";
     ctx.strokeStyle = 'rgb(10, 9, 9)';
-    ctx.strokeText(my_name, 1210, 690);
+    ctx.strokeText(my_name, 1250, 680);
     ctx.fillStyle = 'rgb(8, 8, 8)';
-    ctx.fillText(my_name, 1210, 690);
+    ctx.fillText(my_name, 1250, 680);
 }
 
 function drawGame() {
@@ -438,6 +449,7 @@ function resizeCanvas() {
 function gameLoop() {
     /**Wiping the entire screen clear is important before drawing your next batch */
     wipeOutEntireScreen();
+    localStorageAndSessionStorageData();
     drawGame();
     /** All that requestAnimationFrame does it create a forever loop that can help me make
      * games or animations also, you can't control the fps it specifically hooked to match your

@@ -61,6 +61,17 @@ function wipeOutEntireScreen() {
     }
 }
 
+function localStorageAndSessionStorageData () {
+    /** I use this function to read out my local and Session Storage Data */
+    const savedName = localStorage.getItem('my_name');
+    if (savedName) {
+        my_name = savedName;
+    } else {
+        // The user has not created a name yet
+        my_name = "Guest Player"
+    }
+}
+
 function titleText() {
     if(play_front_page_text.length < 20) {
         play_front_page_text.push(0);
@@ -168,6 +179,7 @@ function drawGame() {
     ctx.fillStyle = 'rgb(176, 223, 255)';
     ctx.fillRect(0, 0, canvas.width, canvas.height);
     
+    localStorageAndSessionStorageData();
     loadingBox();
     titleText();
     drawPagesForGame();

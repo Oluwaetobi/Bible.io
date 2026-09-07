@@ -69,6 +69,10 @@ function playerClickedBibletar () {
     ctx.strokeText(player_Clicked_Name, 1150, 500);
     ctx.fillStyle = 'rgb(8, 8, 8)';
     ctx.fillText(player_Clicked_Name, 1150, 500);
+
+    ctx.font = "20px Arial";
+    ctx.fillStyle = 'rgb(8, 8, 8)';
+    ctx.fillText("Top player on Leaderboard", 1160, 535);
 }
 
 
