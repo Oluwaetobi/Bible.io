@@ -161,14 +161,14 @@ function drawGameAssets () {
 
 function myBibletar () {
     ctx.fillStyle = 'rgb(66, 66, 66)';
-    ctx.fillRect(1250, 475, 250, 200);
+    ctx.fillRect(1250, 455, 250, 200);
 
     // WRITE Player Clicked's NAME
     ctx.font = "40px Arial";
     ctx.strokeStyle = 'rgb(10, 9, 9)';
-    ctx.strokeText(my_name, 1210, 710);
+    ctx.strokeText(my_name, 1210, 690);
     ctx.fillStyle = 'rgb(8, 8, 8)';
-    ctx.fillText(my_name, 1210, 710);
+    ctx.fillText(my_name, 1210, 690);
 }
 
 function drawGame() {

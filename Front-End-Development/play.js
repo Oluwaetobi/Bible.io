@@ -37,6 +37,13 @@ var gameOn = false;
 /* Being able to copy and paste text by using HTML is super important, especially when the text is super long,
 that's one thing I like about HTML. As well as it's the core foundation to building websites. */
 var play_front_page_text = [];
+var my_name = "Unknown Player"
+var online = 1;
+
+const friends = {
+    name: ["No Name", "No Name", "No Name", "No Name"],
+    bibletar: [],
+};
 
 var img_world_challenge = new Image();
 img_world_challenge.src = "./images/challenge_world.svg"; // Set source URL
@@ -71,13 +78,16 @@ function titleText() {
 }
 
 function loadingBox() {
+    /**I plan to use this loading box on the page that shows when connecting players with other players
+     * when the player or user is trying to get the game started
+     */
     // looading box
     ctx.fillStyle = 'rgba(255, 26, 104, 1)';
     ctx.fillRect(50 + box_x_pos, canvas.height - 100, 50, 50);
     
     box_x_pos += 3;
-    if (box_x_pos > canvas.width - 200) {
-        box_x_pos = 0;
+    if (box_x_pos > canvas.width) {
+        box_x_pos = -50;
     }
 
 }
@@ -103,9 +113,9 @@ function drawPagesForGame() {
                 ctx.fillText("Go", x_pos_ribp - pixel_size_width/1.7, y_pos_ribp + pixel_size_width/3.5);
             }
     }
-    resizeGameAssets(img_world_challenge, 300, 300, 280, 200, 1);
-    resizeGameAssets(img_friend_challenge, 700, 300, 200, 200, 1);
-    resizeGameAssets("Go button", 1000, 400, 80, 80, 2);
+    resizeGameAssets(img_world_challenge, 350, 280, 280, 200, 1);
+    resizeGameAssets(img_friend_challenge, 1000, 280, 200, 200, 1);
+    resizeGameAssets("Go button", 800, 380, 80, 80, 2);
 
 
     // ctx.beginPath();
@@ -117,6 +127,42 @@ function drawPagesForGame() {
     // ctx.stroke();
 }
 
+function friendsBoard() {
+    /**Shows my friends */
+    ctx.font = "25px Arial";
+    ctx.fillStyle = 'rgb(0, 0, 0)';
+    ctx.fillText("Friends: ", 50, 50);
+
+    ctx.fillStyle = 'rgb(250, 251, 252)';
+    ctx.fillRect(0, 60, 230, 800);
+
+
+    for (let i = 0; i < friends.name.length; i++) {
+        ctx.font = "18px Arial";
+        ctx.fillStyle = 'rgb(0, 0, 0)';
+        ctx.fillText(friends.name[i], 20, (i*120) + 90);
+        // console.log(i);
+    }
+}
+
+function myBibletar () {
+    ctx.fillStyle = 'rgb(66, 66, 66)';
+    ctx.fillRect(1250, 455, 250, 200);
+
+    // WRITE Player Clicked's NAME
+    ctx.font = "30px Arial";
+    ctx.strokeStyle = 'rgb(10, 9, 9)';
+    ctx.strokeText(my_name, 1260, 680);
+    ctx.fillStyle = 'rgb(8, 8, 8)';
+    ctx.fillText(my_name, 1260, 680);
+}
+
+function onlineDisplay() {
+    ctx.font = "30px Arial";
+    ctx.fillStyle = 'rgb(8, 8, 8)';
+    ctx.fillText("Online: " + online, 700, 100);
+}
+
 function drawGame() {
     // blue background
     ctx.fillStyle = 'rgb(176, 223, 255)';
@@ -125,6 +171,9 @@ function drawGame() {
     loadingBox();
     titleText();
     drawPagesForGame();
+    friendsBoard();
+    myBibletar();
+    onlineDisplay();
 
 }
 
