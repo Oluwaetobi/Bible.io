@@ -42,12 +42,16 @@ var my_name = "Unknown Player";
 var my_points = 0;
 var my_highscores = [0, 0, 0];
 var level = 1;
+var mouseX = 0;
+var mouseY = 0;
 
 var online = 1;
 
 const friends = {
     name: ["No Name", "No Name", "No Name", "No Name"],
     bibletar: [],
+    scroll_y: 0,
+    online: ["Offline", "Offline", "Offline", "Offline"]
 };
 
 var img_world_challenge = new Image();
@@ -57,6 +61,29 @@ img_world_challenge.alt = "Go global!";
 var img_friend_challenge = new Image();
 img_friend_challenge.src = "./images/challenge_friend.svg";
 img_friend_challenge.alt = "Verse Friends!";
+
+window.addEventListener('mousemove', (event) => {
+    mouseX = event.clientX;
+    mouseY = event.clientY;
+    // This is to counter for where the canvas is actually created on the screen
+    mouseX -= side_border;
+    mouseY -= top_border;
+})
+
+window.addEventListener('wheel', (event) => {
+    if (mouseX < 260) {
+        friends.scroll_y += event.deltaY;
+    }
+
+    /**
+    if (event.deltaY > 0) {
+         Down
+     } else if (event.deltaY < 0) {
+         UP
+     }
+     */
+})
+
 
 function wipeOutEntireScreen() {
     ctx.clearRect(0,0, canvas.width, canvas.height);
@@ -112,6 +139,13 @@ function localStorageAndSessionStorageData () {
     } else {
         // do nothing, because the variable has already been created and set to zero at the top
     }
+
+}
+
+function displayMouseX_and_MouseY () {
+    ctx.font = "25px Arial";
+    ctx.fillStyle = 'rgb(190, 36, 36)';
+    ctx.fillText("MouseX: " + mouseX + " MouseY: " + mouseY, 10, 20);
 
 }
 
@@ -194,8 +228,20 @@ function friendsBoard() {
     for (let i = 0; i < friends.name.length; i++) {
         ctx.font = "18px Arial";
         ctx.fillStyle = 'rgb(0, 0, 0)';
-        ctx.fillText(friends.name[i], 20, (i*120) + 90);
+        ctx.fillText(friends.name[i], 20, (i*120) + 90 + friends.scroll_y);
         // console.log(i);
+
+        ctx.fillStyle = 'rgb(100, 102, 103)';
+        ctx.fillRect(10, (i*120) + 95, 100, 90);
+
+        ctx.font = "18px Arial";
+        ctx.fillStyle = 'rgb(0, 0, 0)';
+        ctx.fillText(friends.online[i], 120, (i*120) + 140 + friends.scroll_y);
+
+    }
+
+    if (friends.scroll_y > 0) {
+        friends.scroll_y += -2;
     }
 }
 
@@ -240,6 +286,7 @@ function drawGame() {
     myBibletar();
     onlineDisplay();
     myScoresDisplay();
+    displayMouseX_and_MouseY();
 
 }
 
