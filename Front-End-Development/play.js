@@ -48,10 +48,10 @@ var mouseY = 0;
 var online = 1;
 
 const friends = {
-    name: ["No Name", "No Name", "No Name", "No Name"],
+    name: ["No Name", "No Name", "No Name", "No Name", "No Name", "No Name", "No Name", "No Name", "No Name", "No Name", "No Name"],
     bibletar: [],
     scroll_y: 0,
-    online: ["Offline", "Offline", "Offline", "Offline"]
+    online: ["Offline", "Offline", "Offline", "Offline", "Offline", "Offline", "Offline", "Offline", "Offline", "Offline", "Offline"],
 };
 
 var img_world_challenge = new Image();
@@ -221,22 +221,37 @@ function friendsBoard() {
     ctx.fillRect(0, 60, 230, 800);
     
     for (let i = 0; i < friends.name.length; i++) {
+        // name of friends
         ctx.font = "18px Arial";
         ctx.fillStyle = 'rgb(0, 0, 0)';
         ctx.fillText(friends.name[i], 20, (i*120) + 90 + friends.scroll_y);
         // console.log(i);
 
+        // friends' bibletar background border box display
         ctx.fillStyle = 'rgb(100, 102, 103)';
         ctx.fillRect(10, (i*120) + 95 + friends.scroll_y, 100, 90);
+
+        if (friends.online[i] == "Online") {
+            ctx.fillStyle = 'rgb(78, 244, 97)'
+        } else {
+            ctx.fillStyle = 'rgb(244, 68, 68)'
+        }
+        ctx.fillRect(120, (i*120) + 115 + friends.scroll_y, 100, 50)
         
+        // online or offline text display
         ctx.font = "18px Arial";
         ctx.fillStyle = 'rgb(0, 0, 0)';
-        ctx.fillText(friends.online[i], 120, (i*120) + 140 + friends.scroll_y);
+        ctx.fillText(friends.online[i], 140, (i*120) + 145 + friends.scroll_y);
 
     }
     
-    if (friends.scroll_y > 0) {
-        friends.scroll_y += -2;
+    // if the friends scroll down to low, it brings it up
+    for (let i = 0; i < 100; i++) {
+        if (friends.scroll_y > 20) {
+            friends.scroll_y += -1;
+        } else {
+            break;
+        }
     }
 
 
@@ -244,10 +259,13 @@ function friendsBoard() {
      * this helps to block display for friends holder when the scroll happens
     */
     ctx.fillStyle = 'rgb(120, 201, 241)';
-    ctx.fillRect(0, 0, 250, 60);
-    ctx.font = "25px Arial";
+    ctx.fillRect(0, 0, 230, 70);
+
+    ctx.font = "40px Arial";
+    ctx.strokeStyle = 'rgb(2, 2, 2)';
+    ctx.strokeText("Friends:", 50, 60);
     ctx.fillStyle = 'rgb(0, 0, 0)';
-    ctx.fillText("Friends: ", 50, 50);
+    ctx.fillText("Friends:", 50, 60);
     
 
 }
