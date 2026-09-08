@@ -216,15 +216,10 @@ function drawPagesForGame() {
 }
 
 function friendsBoard() {
-    /**Shows my friends */
-    ctx.font = "25px Arial";
-    ctx.fillStyle = 'rgb(0, 0, 0)';
-    ctx.fillText("Friends: ", 50, 50);
-
+    
     ctx.fillStyle = 'rgb(250, 251, 252)';
     ctx.fillRect(0, 60, 230, 800);
-
-
+    
     for (let i = 0; i < friends.name.length; i++) {
         ctx.font = "18px Arial";
         ctx.fillStyle = 'rgb(0, 0, 0)';
@@ -232,17 +227,29 @@ function friendsBoard() {
         // console.log(i);
 
         ctx.fillStyle = 'rgb(100, 102, 103)';
-        ctx.fillRect(10, (i*120) + 95, 100, 90);
-
+        ctx.fillRect(10, (i*120) + 95 + friends.scroll_y, 100, 90);
+        
         ctx.font = "18px Arial";
         ctx.fillStyle = 'rgb(0, 0, 0)';
         ctx.fillText(friends.online[i], 120, (i*120) + 140 + friends.scroll_y);
 
     }
-
+    
     if (friends.scroll_y > 0) {
         friends.scroll_y += -2;
     }
+
+
+    /**Shows my friends, should be at the bottom
+     * this helps to block display for friends holder when the scroll happens
+    */
+    ctx.fillStyle = 'rgb(120, 201, 241)';
+    ctx.fillRect(0, 0, 250, 60);
+    ctx.font = "25px Arial";
+    ctx.fillStyle = 'rgb(0, 0, 0)';
+    ctx.fillText("Friends: ", 50, 50);
+    
+
 }
 
 function myBibletar () {
