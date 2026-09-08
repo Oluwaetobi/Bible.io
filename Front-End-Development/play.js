@@ -300,7 +300,20 @@ function myScoresDisplay () {
 
 function drawGame() {
     // blue background
-    ctx.fillStyle = 'rgb(176, 223, 255)';
+    // ctx.fillStyle = 'rgb(176, 223, 255)';
+    // ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+
+    // gradient.addColorStop(0, 'red');     // Start color (0%)
+    // gradient.addColorStop(0.5, 'yellow'); // Middle color (50%)
+    // gradient.addColorStop(1, 'blue');    // End color (100%)
+    var gradient = ctx.createLinearGradient(0, 0, 0, canvas.height);
+    gradient.addColorStop(0, 'rgb(219, 237, 249)');     // Start color (0%)
+    gradient.addColorStop(0.5, 'rgb(31, 223, 223)');
+    gradient.addColorStop(1, 'rgb(45, 134, 250)');    // End color (100%)
+
+    
+    ctx.fillStyle = gradient;
     ctx.fillRect(0, 0, canvas.width, canvas.height);
     
     localStorageAndSessionStorageData();
