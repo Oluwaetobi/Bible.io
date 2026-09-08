@@ -231,7 +231,7 @@ function friendsBoard() {
         ctx.fillStyle = 'rgb(100, 102, 103)';
         ctx.fillRect(10, (i*120) + 95 + friends.scroll_y, 100, 90);
 
-        if (friends.online[i] == "Online") {
+        if (friends.online[i] == "Online" || friends.online[i] == "online") {
             ctx.fillStyle = 'rgb(78, 244, 97)'
         } else {
             ctx.fillStyle = 'rgb(244, 68, 68)'
