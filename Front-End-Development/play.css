@@ -162,7 +162,3 @@ a:hover {
 .modes_assets img:hover {
     filter: brightness(120%);
 }
-
-.modes_assets #choice3 {
-    /* left: 150px; */
-}

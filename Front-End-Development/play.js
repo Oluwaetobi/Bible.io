@@ -84,6 +84,17 @@ window.addEventListener('wheel', (event) => {
      */
 })
 
+window.addEventListener('click', (event) => {
+    if (mouseX > 1278 && mouseX < 1458) {
+        for (let i = 0; i < 3; i++) {
+            var spacing_between_level_boxes = 59.5
+            if (mouseY > (116 + (i * spacing_between_level_boxes)) && mouseY < (159 + (i*spacing_between_level_boxes))) {
+                level = (i+1);
+            }
+        }
+    }
+})
+
 
 function wipeOutEntireScreen() {
     ctx.clearRect(0,0, canvas.width, canvas.height);
@@ -180,40 +191,6 @@ function loadingBox() {
 
 }
 
-function drawPagesForGame() {
-    /**I won't use the parameter type_of_drawing now, but it will come in handy later, maybe when I start
-     * drawing the bar graph to represent points in the game, I will probably use a separate function, 
-     * like probably the exact same one found in shop.js to draw the user's bibletar as well as 
-     * opponents' bibletars as well.
-     */
-    function resizeGameAssets (what_to_draw, x_pos_ribp, y_pos_ribp, pixel_size_width, pixel_size_height, type_of_drawing) {
-            if (type_of_drawing == 1) {
-                ctx.drawImage(what_to_draw, x_pos_ribp, y_pos_ribp, pixel_size_width, pixel_size_height);
-            }
-            if (type_of_drawing == 2) {
-                ctx.beginPath();
-                // x_pos, y_pos, size, shape filler, and I don't know, something for radius I think
-                ctx.arc(x_pos_ribp, y_pos_ribp, pixel_size_width, 0, 2 * Math.PI);
-                ctx.fillStyle = 'rgb(79, 178, 50)';
-                ctx.fill();
-                ctx.font = "75px Arial";
-                ctx.fillStyle = 'rgb(252, 250, 250)';
-                ctx.fillText("Go", x_pos_ribp - pixel_size_width/1.7, y_pos_ribp + pixel_size_width/3.5);
-            }
-    }
-    resizeGameAssets(img_world_challenge, 350, 280, 280, 200, 1);
-    resizeGameAssets(img_friend_challenge, 1000, 280, 200, 200, 1);
-    resizeGameAssets("Go button", 800, 380, 80, 80, 2);
-
-
-    // ctx.beginPath();
-    // ctx.arc(95, 50, 40, 0, 2 * Math.PI);
-    // ctx.fillStyle = "red";
-    // ctx.fill();
-    // ctx.lineWidth = 4;
-    // ctx.strokeStyle = "blue";
-    // ctx.stroke();
-}
 
 function friendsBoard() {
     
@@ -308,10 +285,20 @@ function displayLevels() {
     for (let i = 0; i < 3; i++) {
         var spacing_x = 60;
         ctx.font = "20px Arial";
-        ctx.fillStyle = 'rgb(239, 245, 77)';
+        if ((i+1) == level) {
+            ctx.fillStyle = 'rgb(245, 186, 77)';
+        } else {
+            ctx.fillStyle = 'rgb(239, 245, 77)';
+        }
+        if (mouseX > 1278 && mouseX < 1458) {
+            var spacing_between_level_boxes = 59.5
+            if (mouseY > (116 + (i * spacing_between_level_boxes)) && mouseY < (159 + (i*spacing_between_level_boxes))) {
+                ctx.fillStyle = 'rgb(170, 112, 4)';
+            }
+        }
         ctx.fillRect(1280, 120 + (i * spacing_x), 180, 40);
         ctx.fillStyle = 'rgb(6, 6, 6)';
-        ctx.fillText("Level " + level, 1330, 145 + (i * spacing_x));
+        ctx.fillText("Level " + (i + 1), 1330, 145 + (i * spacing_x));
     }
 }
 
@@ -336,7 +323,6 @@ function drawGame() {
     localStorageAndSessionStorageData();
     loadingBox();
     titleText();
-    // drawPagesForGame();
     friendsBoard();
     myBibletar();
     onlineDisplay();
