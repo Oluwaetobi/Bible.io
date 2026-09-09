@@ -33,7 +33,6 @@ const top_border = 90;
 const side_border = 2;
 
 var box_x_pos = 1;
-var gameOn = false;
 /* Being able to copy and paste text by using HTML is super important, especially when the text is super long,
 that's one thing I like about HTML. As well as it's the core foundation to building websites. */
 var play_front_page_text = [];
@@ -48,6 +47,12 @@ var mouseY = 0;
 var type_of_challenge = 1;
 var challenge_box_x = 740;
 var online = 1;
+
+/** Home page is important, because it tells us whether, we are in the main page of play, or the searching for opponents
+ * page, or the game page, or the last page for showing correct answers, scores, and etc. And then we go back all the 
+ * way to page 1, if they choose to go back, or page 2, if they choose to play again
+ */
+var home_page = 1;
 
 const friends = {
     name: ["No Name", "No Name", "No Name", "No Name", "No Name", "No Name", "No Name", "No Name", "No Name", "No Name", "No Name"],
@@ -101,9 +106,18 @@ function change_type_of_challenge(type_of_challenge_html) {
     type_of_challenge = type_of_challenge_html;
 }
 
+function prepare_the_game () {
+    home_page = 2;
+    play_front_page_text[0] = 0;
+}
+
+function startGame() {
+    home_page = 3;
+}
+
 function wipeOutEntireScreen() {
     ctx.clearRect(0,0, canvas.width, canvas.height);
-    if (gameOn != false) {
+    if (home_page != 1) {
         // When I keep erasing and rewriting it, I can't copy and paste the text
         big_text.innerText = '';
     }
@@ -334,35 +348,61 @@ function otherTextDisplay() {
     ctx.fillText("Verse Friends", 945, baseline_y);
 }
 
+function show_or_hide_html_elements () {
+
+}
+
+function draw_Background () {
+
+    if (home_page == 1) {
+        // blue background
+        // ctx.fillStyle = 'rgb(176, 223, 255)';
+        // ctx.fillRect(0, 0, canvas.width, canvas.height);
+        
+        
+        // gradient.addColorStop(0, 'red');     // Start color (0%)
+        // gradient.addColorStop(0.5, 'yellow'); // Middle color (50%)
+        // gradient.addColorStop(1, 'blue');    // End color (100%)
+        var gradient = ctx.createLinearGradient(0, 0, 0, canvas.height);
+        gradient.addColorStop(0, 'rgb(219, 237, 249)');     // Start color (0%)
+        gradient.addColorStop(0.5, 'rgb(31, 223, 223)');
+        gradient.addColorStop(1, 'rgb(45, 134, 250)');    // End color (100%)
+        ctx.fillStyle = gradient;
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+    } else if (home_page == 2) {
+        ctx.fillStyle = 'rgb(123, 130, 132)';
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+    } else {
+        ctx.fillStyle = 'rgb(129, 130, 132)';
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+    }
+
+}
+
 function drawGame() {
-    // blue background
-    // ctx.fillStyle = 'rgb(176, 223, 255)';
-    // ctx.fillRect(0, 0, canvas.width, canvas.height);
-
-
-    // gradient.addColorStop(0, 'red');     // Start color (0%)
-    // gradient.addColorStop(0.5, 'yellow'); // Middle color (50%)
-    // gradient.addColorStop(1, 'blue');    // End color (100%)
-    var gradient = ctx.createLinearGradient(0, 0, 0, canvas.height);
-    gradient.addColorStop(0, 'rgb(219, 237, 249)');     // Start color (0%)
-    gradient.addColorStop(0.5, 'rgb(31, 223, 223)');
-    gradient.addColorStop(1, 'rgb(45, 134, 250)');    // End color (100%)
 
     
-    ctx.fillStyle = gradient;
-    ctx.fillRect(0, 0, canvas.width, canvas.height);
-    
+    draw_Background();
     localStorageAndSessionStorageData();
-    loadingBox();
-    titleText();
-    friendsBoard();
+
+    if (home_page == 1) {
+        titleText();
+        friendsBoard();
+        onlineDisplay();
+        myScoresDisplay();
+        displayLevels();
+        otherTextDisplay();
+        challenge_box_display();
+    } else if (home_page == 2) {
+        loadingBox();
+    } else if (home_page == 3) {
+
+    } else {
+
+    }
     myBibletar();
-    onlineDisplay();
-    myScoresDisplay();
     displayMouseX_and_MouseY();
-    displayLevels();
-    challenge_box_display();
-    otherTextDisplay();
+    show_or_hide_html_elements();
 
 }
 
