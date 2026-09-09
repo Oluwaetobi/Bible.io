@@ -52,6 +52,10 @@ header {
     margin-right: 10px;
 }
 
+.head-left img:hover {
+    filter: brightness(120%);
+}
+
 .head-left button{
     border: none;
     padding: 10px 30px;
@@ -90,6 +94,10 @@ header {
 .head-down {
     position: absolute;
     top:250px;
+    display: flex;
+    text-align: center;
+    left: 5%;
+    right: 5%;
 }
 
 .bottom {
@@ -106,4 +114,6 @@ a {
 }
 a:hover {
     text-decoration: underline;
+    /* text-decoration-color: #ff9500cc; */
+    color: #ffb700;
 }

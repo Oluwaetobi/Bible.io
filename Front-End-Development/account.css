@@ -94,6 +94,10 @@ header {
     margin-right: 10px;
 }
 
+.head-left img:hover {
+    filter: brightness(120%);
+}
+
 .head-left button{
     border: none;
     padding: 10px 30px;
@@ -256,6 +260,7 @@ a {
 }
 a:hover {
     text-decoration: underline;
+    color: #ffb700;
 }
 
 /* helps with resizing when on a different device, aka: phone */
