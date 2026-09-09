@@ -164,6 +164,10 @@ a:hover {
     overflow-x: hidden;
 }
 
+.boy-or-girl img:hover {
+    filter: brightness(120%);
+}
+
 #bibletar_girl_or_boy {
     visibility: visible;
 }
