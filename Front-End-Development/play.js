@@ -61,13 +61,10 @@ const friends = {
     online: ["Offline", "Offline", "Offline", "Offline", "Offline", "Offline", "Offline", "Offline", "Offline", "Offline", "Offline"],
 };
 
-// var img_world_challenge = new Image();
-// img_world_challenge.src = "./images/challenge_world.svg"; // Set source URL
-// img_world_challenge.alt = "Go global!";
+var img_world_map = new Image();
+img_world_map.src = "./images/world_map.svg"; // Set source URL
+img_world_map.alt = "world map image";
 
-// var img_friend_challenge = new Image();
-// img_friend_challenge.src = "./images/challenge_friend.svg";
-// img_friend_challenge.alt = "Verse Friends!";
 
 window.addEventListener('mousemove', (event) => {
     mouseX = event.clientX;
@@ -387,14 +384,23 @@ function connectPlayers () {
     /** This will contain all the logic that is used to display images and whatever for connect players, whether
      * through world challenge or friend challenge
      */
-    var baseline_y = 570;
-    var baseline_x = 520;
-    ctx.fillStyle = 'rgb(243, 244, 245)';
-    ctx.fillRect(baseline_x, baseline_y, 400, 50);
+    function write_Out_Text_And_Boxes() {
+        var baseline_y = 570;
+        var baseline_x = 520;
+        ctx.fillStyle = 'rgb(243, 244, 245)';
+        ctx.fillRect(baseline_x, baseline_y, 400, 50);
+    
+        ctx.font = "30px Arial";
+        ctx.fillStyle = 'rgb(6, 6, 6)';
+        ctx.fillText("Connecting Players...", baseline_x + 50, baseline_y + 30);
+    }
 
-    ctx.font = "30px Arial";
-    ctx.fillStyle = 'rgb(6, 6, 6)';
-    ctx.fillText("Connecting Players...", baseline_x + 50, baseline_y + 30);
+    function draw_World_Map () {
+        img_world_map
+        ctx.drawImage(img_world_map, 270, 0, 1000, 600);
+    }
+    draw_World_Map();
+    write_Out_Text_And_Boxes();
 
 
 }
