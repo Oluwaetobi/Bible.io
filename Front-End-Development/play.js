@@ -383,6 +383,10 @@ function draw_Background () {
 function connectPlayers () {
     /** This will contain all the logic that is used to display images and whatever for connect players, whether
      * through world challenge or friend challenge
+     * 
+     * Also some important notes, when I am eventually able to connect with a player online, I will draw his or her
+     * bibletar on the left hand side on the screen in top to down format, so boxes lined up vertically on the left
+     * side of the screen, and my bibletar will be on the bottom right side of the screen.
      */
     function write_Out_Text_And_Boxes() {
         var baseline_y = 570;
@@ -397,7 +401,7 @@ function connectPlayers () {
 
     function draw_World_Map () {
         img_world_map
-        ctx.drawImage(img_world_map, 270, 0, 1000, 600);
+        ctx.drawImage(img_world_map, 218, 0, 1000, 600);
     }
     draw_World_Map();
     write_Out_Text_And_Boxes();
