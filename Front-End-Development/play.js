@@ -54,13 +54,13 @@ const friends = {
     online: ["Offline", "Offline", "Offline", "Offline", "Offline", "Offline", "Offline", "Offline", "Offline", "Offline", "Offline"],
 };
 
-var img_world_challenge = new Image();
-img_world_challenge.src = "./images/challenge_world.svg"; // Set source URL
-img_world_challenge.alt = "Go global!";
+// var img_world_challenge = new Image();
+// img_world_challenge.src = "./images/challenge_world.svg"; // Set source URL
+// img_world_challenge.alt = "Go global!";
 
-var img_friend_challenge = new Image();
-img_friend_challenge.src = "./images/challenge_friend.svg";
-img_friend_challenge.alt = "Verse Friends!";
+// var img_friend_challenge = new Image();
+// img_friend_challenge.src = "./images/challenge_friend.svg";
+// img_friend_challenge.alt = "Verse Friends!";
 
 window.addEventListener('mousemove', (event) => {
     mouseX = event.clientX;
@@ -336,7 +336,7 @@ function drawGame() {
     localStorageAndSessionStorageData();
     loadingBox();
     titleText();
-    drawPagesForGame();
+    // drawPagesForGame();
     friendsBoard();
     myBibletar();
     onlineDisplay();
