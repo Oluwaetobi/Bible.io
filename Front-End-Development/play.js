@@ -343,23 +343,27 @@ function challenge_box_display () {
 
 function otherTextDisplay() {
     var baseline_y = 310
+    ctx.font = "20px Arial";
     ctx.fillStyle = 'rgb(6, 6, 6)';
     ctx.fillText("Go Global", 405, baseline_y);
     ctx.fillText("Verse Friends", 945, baseline_y);
 }
 
 function show_or_hide_html_elements () {
-
+    if (home_page == 1) {
+        document.getElementById('choice1').style.display = "flex";
+        document.getElementById('choice2').style.display = "flex";
+        document.getElementById('choice3').style.display = "flex";
+    } else if (home_page == 2) {
+        document.getElementById('choice1').style.display = "none";
+        document.getElementById('choice2').style.display = "none";
+        document.getElementById('choice3').style.display = "none";
+    }
 }
 
 function draw_Background () {
-
+    /** Logic used to change backgrounds for different home pages within the play section of Bible.io */
     if (home_page == 1) {
-        // blue background
-        // ctx.fillStyle = 'rgb(176, 223, 255)';
-        // ctx.fillRect(0, 0, canvas.width, canvas.height);
-        
-        
         // gradient.addColorStop(0, 'red');     // Start color (0%)
         // gradient.addColorStop(0.5, 'yellow'); // Middle color (50%)
         // gradient.addColorStop(1, 'blue');    // End color (100%)
@@ -370,12 +374,28 @@ function draw_Background () {
         ctx.fillStyle = gradient;
         ctx.fillRect(0, 0, canvas.width, canvas.height);
     } else if (home_page == 2) {
-        ctx.fillStyle = 'rgb(123, 130, 132)';
+        ctx.fillStyle = 'rgb(144, 175, 184)';
         ctx.fillRect(0, 0, canvas.width, canvas.height);
     } else {
         ctx.fillStyle = 'rgb(129, 130, 132)';
         ctx.fillRect(0, 0, canvas.width, canvas.height);
     }
+
+}
+
+function connectPlayers () {
+    /** This will contain all the logic that is used to display images and whatever for connect players, whether
+     * through world challenge or friend challenge
+     */
+    var baseline_y = 570;
+    var baseline_x = 520;
+    ctx.fillStyle = 'rgb(243, 244, 245)';
+    ctx.fillRect(baseline_x, baseline_y, 400, 50);
+
+    ctx.font = "30px Arial";
+    ctx.fillStyle = 'rgb(6, 6, 6)';
+    ctx.fillText("Connecting Players...", baseline_x + 50, baseline_y + 30);
+
 
 }
 
@@ -394,9 +414,9 @@ function drawGame() {
         otherTextDisplay();
         challenge_box_display();
     } else if (home_page == 2) {
+        connectPlayers();
         loadingBox();
     } else if (home_page == 3) {
-
     } else {
 
     }
