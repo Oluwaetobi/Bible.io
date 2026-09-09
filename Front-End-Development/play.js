@@ -298,6 +298,23 @@ function myScoresDisplay () {
     ctx.fillText("Highscore: " + my_highscores[level - 1], (((canvas.width)/2) + x_shift) + 150, 130);
 }
 
+function displayLevels() {
+    // background box for levels
+    ctx.fillStyle = 'rgb(124, 116, 119)';
+    ctx.fillRect(1250, 100, 240, 300);
+
+    // levels display
+    
+    for (let i = 0; i < 3; i++) {
+        var spacing_x = 60;
+        ctx.font = "20px Arial";
+        ctx.fillStyle = 'rgb(239, 245, 77)';
+        ctx.fillRect(1280, 120 + (i * spacing_x), 180, 40);
+        ctx.fillStyle = 'rgb(6, 6, 6)';
+        ctx.fillText("Level " + level, 1330, 145 + (i * spacing_x));
+    }
+}
+
 function drawGame() {
     // blue background
     // ctx.fillStyle = 'rgb(176, 223, 255)';
@@ -325,6 +342,7 @@ function drawGame() {
     onlineDisplay();
     myScoresDisplay();
     displayMouseX_and_MouseY();
+    displayLevels();
 
 }
 
