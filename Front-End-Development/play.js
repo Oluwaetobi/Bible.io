@@ -45,6 +45,8 @@ var level = 1;
 var mouseX = 0;
 var mouseY = 0;
 
+var type_of_challenge = 1;
+var challenge_box_x = 740;
 var online = 1;
 
 const friends = {
@@ -95,6 +97,9 @@ window.addEventListener('click', (event) => {
     }
 })
 
+function change_type_of_challenge(type_of_challenge_html) {
+    type_of_challenge = type_of_challenge_html;
+}
 
 function wipeOutEntireScreen() {
     ctx.clearRect(0,0, canvas.width, canvas.height);
@@ -302,6 +307,26 @@ function displayLevels() {
     }
 }
 
+function challenge_box_display () {
+    ctx.fillStyle = 'rgb(15, 15, 15)';
+    ctx.fillRect(challenge_box_x -2, 527, 74, 24);
+    ctx.fillStyle = 'rgb(25, 203, 79)';
+    ctx.fillRect(challenge_box_x, 529, 70, 20);
+
+    var speed_x = 10;
+
+    if (type_of_challenge == 1) {
+        if (challenge_box_x > 417) {
+            challenge_box_x -= speed_x;
+        }
+    }
+    if (type_of_challenge == 2){
+        if (challenge_box_x < 965) {
+            challenge_box_x += speed_x;
+        }
+    }
+}
+
 function drawGame() {
     // blue background
     // ctx.fillStyle = 'rgb(176, 223, 255)';
@@ -329,6 +354,7 @@ function drawGame() {
     myScoresDisplay();
     displayMouseX_and_MouseY();
     displayLevels();
+    challenge_box_display();
 
 }
 
