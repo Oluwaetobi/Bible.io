@@ -327,6 +327,13 @@ function challenge_box_display () {
     }
 }
 
+function otherTextDisplay() {
+    var baseline_y = 310
+    ctx.fillStyle = 'rgb(6, 6, 6)';
+    ctx.fillText("Go Global", 405, baseline_y);
+    ctx.fillText("Verse Friends", 945, baseline_y);
+}
+
 function drawGame() {
     // blue background
     // ctx.fillStyle = 'rgb(176, 223, 255)';
@@ -355,6 +362,7 @@ function drawGame() {
     displayMouseX_and_MouseY();
     displayLevels();
     challenge_box_display();
+    otherTextDisplay();
 
 }
 
