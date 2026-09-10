@@ -215,6 +215,15 @@ a:hover {
     grid-template-columns: 30% 70%;
 }
 
+.scrollable-table caption {
+    background-color: #000000;
+    color:#d0d0d0;
+    position: sticky;
+    top: 0px;
+    font-weight: bold;
+    font-size: large;
+}
+
 /* Scrollable table class takes precedence over table class
 table takes up the full width of it's parent the scrollable table */
 .scrollable-table > .table {
@@ -253,9 +262,9 @@ table takes up the full width of it's parent the scrollable table */
     text-align: center;
 }
 
-.table tr {
+/* .table tr {
     scroll-snap-align: start;
-}
+} */
 
 /* Background color for every even row (opposite of odd rows) */
 /* .table tbody tr:nth-of-type(even) {
@@ -305,6 +314,17 @@ JAVASCRIPT FILE*/
     border-radius: 3%;
 }
 
+.scrollable-table-background caption {
+    font-size: large;
+    font-weight: bold;
+    color: #d0d0d0;
+    background-color: #000000;
+    position: sticky;
+    top: 0px;
+    padding-bottom: 5px;;
+    /* border-collapse: collapse; */
+}
+
 /* Scrollable table class takes precedence over table class
 table takes up the full width of it's parent the scrollable table */
 .scrollable-background > .table-background {
@@ -345,9 +365,9 @@ table takes up the full width of it's parent the scrollable table */
     border: 1px solid black;  */
 }
 
-.table-background tr {
+/* .table-background tr {
     scroll-snap-align: start;
-}
+} */
 
 /* table{
     border-collapse: collapse;
