@@ -90,6 +90,9 @@ var not_acquired_stuff_shop = [
     [0, 0, 0],
 ];
 
+var timer = 0;
+var different_second = 0;
+
 var img_world_map = new Image();
 img_world_map.src = "./images/world_map.svg"; // Set source URL
 img_world_map.alt = "world map image";
@@ -133,6 +136,7 @@ function change_type_of_challenge(type_of_challenge_html) {
 }
 
 function prepare_the_game () {
+    timer = 0;
     home_page = 2;
     play_front_page_text[0] = 0;
 }
@@ -475,6 +479,25 @@ function connectPlayers () {
 
 }
 
+function start_timer() {
+    const date = new Date();
+    const hours = date.getHours();
+    const minutes = date.getMinutes();
+    const seconds = date.getSeconds();
+    // console.log(seconds);
+    if (seconds != different_second) {
+        different_second = seconds;
+        timer += 1;
+    }
+
+    if (home_page == 2) {
+        if (timer >= 2) {
+            home_page = 3;
+            timer = 0;
+        }
+    }
+}
+
 function drawGame() {
 
     
@@ -499,6 +522,7 @@ function drawGame() {
     myBibletar();
     displayMouseX_and_MouseY();
     show_or_hide_html_elements();
+    start_timer();
 
 }
 
