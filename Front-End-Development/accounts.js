@@ -69,23 +69,43 @@ var gameOn = false;
 that's one thing I like about HTML. As well as it's the core foundation to building websites. */
 var play_front_page_text = [];
 
+var my_points = 0;
+var my_highscores = [0, 0, 0];
+var my_cash = 0;
+var old_bibletar = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
+
+var acquired_stuff_closet = [
+    [1, 2, 3],
+    [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17],
+    [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14],
+    [1, 2, 3],
+    [1, 2, 3],
+    [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32],
+    [1, 2, 3, 4, 5, 6, 7],
+    [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13],
+    [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13],
+    [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104],
+];
+
+var not_acquired_stuff_shop = [
+    [4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60],
+    [0, 0, 0],
+    [15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130],
+    [4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63],
+    [4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38 , 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207],
+    [0, 0, 0],
+    [0, 0, 0],
+    [0, 0, 0],
+    [0, 0, 0],
+    [0, 0, 0],
+];
+
 
 function wipeOutEntireScreen() {
     ctx.clearRect(0,0, canvas.width, canvas.height);
     if (gameOn != false) {
         // When I keep erasing and rewriting it, I can't copy and paste the text
         big_text.innerText = '';
-    }
-}
-
-function localStorageAndSessionStorageData () {
-    /** I use this function to read out my local and Session Storage Data */
-    const savedName = localStorage.getItem('my_name');
-    if (savedName) {
-        my_name = savedName;
-    } else {
-        // The user has not created a name yet
-        my_name = "Guest Player"
     }
 }
 
@@ -136,6 +156,60 @@ console.log(savedUser.name); // Outputs: "Alice"
 
 
      */
+}
+
+function localStorageAndSessionStorageData () {
+    /** I use this function to read out my local and Session Storage Data */
+    const savedName = localStorage.getItem('my_name');
+    const savedHighscores = JSON.parse(sessionStorage.getItem('my_highscores'));
+    const savedPoints = JSON.parse(sessionStorage.getItem('my_points'));
+    const saved_bibletar = JSON.parse(localStorage.getItem('old_bibletar'));
+    const saved_acquired = JSON.parse(localStorage.getItem('acquired_stuff_closet'));
+    const saved_not_acquired = JSON.parse(localStorage.getItem('not_acquired_stuff_closet'));
+    const saved_cash = JSON.parse(localStorage.getItem('my_cash'));
+
+    if (savedName) {
+        my_name = savedName;
+    } else {
+        // The user has not created a name yet
+        my_name = "Guest Player"
+    }
+
+    if (savedHighscores) {
+        my_highscores = savedHighscores;
+    } else {
+        // do nothing, because the array has already been created at the top
+    }
+
+    if (savedPoints) {
+        my_points = savedPoints;
+    } else {
+        // do nothing, because the variable has already been created and set to zero at the top
+    }
+
+    if(saved_bibletar) {
+        old_bibletar = saved_bibletar;
+    } else {
+        // do nothing, has already been created to default
+    }
+
+    if(saved_acquired) {
+        acquired_stuff_closet = saved_acquired;
+    } else {
+        // do nothing, has already been created to default
+    }
+
+    if(saved_not_acquired) {
+        not_acquired_stuff_shop = saved_not_acquired;
+    } else {
+        // do nothing, has already been created to default
+    }
+
+    if (saved_cash) {
+        my_cash = saved_cash;
+    } else {
+        // do nothing, has already been created and set to default
+    }
 }
 
 function loadingBox() {

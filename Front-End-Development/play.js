@@ -168,11 +168,15 @@ function save_Data_to_Local_or_Session_Storage() {
      * should reset. I just realized wait a second, my highscore should also be stored indefinitely,
      * but well change it to local storage once, the levels work properly
      */
+
+    /**Don't save stuff that don't need to be saved in this section, for example, I don't
+     * edit my bibletar in the play section of Bible.io, so why would I need to save that here,
+     */
     sessionStorage.setItem('my_points', JSON.stringify(my_points));
     sessionStorage.setItem('my_highscores', JSON.stringify(my_highscores));
-    localStorage.setItem('old_bibletar', JSON.stringify(old_bibletar));
-    localStorage.setItem('acquired_stuff_closet', JSON.stringify(acquired_stuff_closet));
-    localStorage.setItem('not_acquired_stuff_shop', JSON.stringify(not_acquired_stuff_shop));
+    // localStorage.setItem('old_bibletar', JSON.stringify(old_bibletar));
+    // localStorage.setItem('acquired_stuff_closet', JSON.stringify(acquired_stuff_closet));
+    // localStorage.setItem('not_acquired_stuff_shop', JSON.stringify(not_acquired_stuff_shop));
     localStorage.setItem('my_cash', JSON.stringify(my_cash));
 }
 
