@@ -43,7 +43,7 @@ var gameOn = false;
 var bibletar_maker_page = 1;
 var i_am_a_boy = false;
 var i_am_a_girl = false;
-var my_Cash = 0;
+var my_cash = 0;
 var my_name = "Unknown Player";
 const shop_page_background_mens_or_womens = document.getElementById('shop_background');
 
@@ -218,6 +218,7 @@ function save_Data_to_Local_or_Session_Storage() {
     localStorage.setItem('old_bibletar', JSON.stringify(old_bibletar));
     localStorage.setItem('acquired_stuff_closet', JSON.stringify(acquired_stuff_closet));
     localStorage.setItem('not_acquired_stuff_shop', JSON.stringify(not_acquired_stuff_shop));
+    localStorage.setItem('my_cash', JSON.stringify(my_cash));
 
 }
 
@@ -227,6 +228,7 @@ function localStorageAndSessionStorageData () {
     const saved_bibletar = JSON.parse(localStorage.getItem('old_bibletar'));
     const saved_acquired = JSON.parse(localStorage.getItem('acquired_stuff_closet'));
     const saved_not_acquired = JSON.parse(localStorage.getItem('not_acquired_stuff_closet'));
+    const saved_cash = JSON.parse(localStorage.getItem('my_cash'));
 
 
     if (savedName) {
@@ -252,6 +254,12 @@ function localStorageAndSessionStorageData () {
         not_acquired_stuff_shop = saved_not_acquired;
     } else {
         // do nothing, has already been created to default
+    }
+
+    if (saved_cash) {
+        my_cash = saved_cash;
+    } else {
+        // do nothing, has already been created and set to default
     }
 }
 
@@ -747,7 +755,7 @@ function drawUsersBibletar() {
      // Player's Cash
     ctx.font = "25px Arial";
     ctx.fillStyle = 'rgb(8, 8, 8)';
-    ctx.fillText("CASH: $" + my_Cash, 1100, 485);
+    ctx.fillText("CASH: $" + my_cash, 1100, 485);
 
     updateCurrentBibletarCodeNumber();
     match_drawings_to_correct_bibletar();
