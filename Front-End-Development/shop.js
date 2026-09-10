@@ -1226,53 +1226,61 @@ function bibleMaker_background () {
     /**Goes to right place, regardless of web browser used, or how small or big the user's
      * laptop, or PC is
      */
-    var x_shift = 440;
+    var x_shift_big_box = 440;
     // black stroke
     ctx.fillStyle = 'rgb(3, 3, 3)';
     // ctx.fillRect(320, 20, 870, 170);
-    ctx.fillRect(((canvas.width)/2) - x_shift, 20, 870, 170);
+    ctx.fillRect(((canvas.width)/2) - x_shift_big_box, 20, 870, 170);
     ctx.fillStyle = 'rgb(3, 3, 3)';
     // ctx.fillRect(327, 7, 876, 176);
-    ctx.fillRect(((canvas.width)/2) - x_shift + 7, 7, 876, 176);
+    ctx.fillRect(((canvas.width)/2) - x_shift_big_box + 7, 7, 876, 176);
     ctx.fillStyle = 'rgb(49, 77, 125)';
     // ctx.fillRect(330, 10, 870, 170);
-    ctx.fillRect(((canvas.width)/2) - x_shift + 10, 10, 870, 170);
+    ctx.fillRect(((canvas.width)/2) - x_shift_big_box + 10, 10, 870, 170);
 
     // other little dark blue rectangle
+    var x_shift_small_box = 325;
     ctx.fillStyle = 'rgb(3, 3, 3)';
-    ctx.fillRect(438, 117, 624, 64);
+    ctx.fillRect(((canvas.width)/2) - (x_shift_small_box + 2), 117, 624, 64);
     ctx.fillStyle = 'rgb(27, 44, 75)';
-    ctx.fillRect(440, 119, 620, 60);
+    ctx.fillRect(((canvas.width)/2) - (x_shift_small_box), 119, 620, 60);
 
 
-
+    var x_shift_text = 305;
+    var x_backdrop_increment = -3;
+    var y_baseline = 167;
     //background dark shadow
     ctx.font = "50px Arial";
     ctx.strokeStyle = 'rgb(2, 2, 2)';
-    ctx.strokeText("Click to go to your section", 457, 163);
+    // ctx.strokeText("Click to go to your section", 457, 163);
+    ctx.strokeText("Click to go to your section", (((canvas.width)/2) - (x_shift_text - x_backdrop_increment)), y_baseline);
     ctx.fillStyle = 'rgb(0, 0, 0)';
-    ctx.fillText("Click to go to your section", 457, 163);
+    // ctx.fillText("Click to go to your section", 457, 163);
+    ctx.fillText("Click to go to your section", (((canvas.width)/2) - (x_shift_text - x_backdrop_increment)), y_baseline);
 
     ctx.font = "50px Arial";
     ctx.strokeStyle = 'rgb(228, 206, 2)';
-    ctx.strokeText("Click to go to your section", 460, 160);
+    // ctx.strokeText("Click to go to your section", 460, 160);
+    ctx.strokeText("Click to go to your section", (((canvas.width)/2) - x_shift_text), (y_baseline - 3));
     ctx.fillStyle = 'rgb(228, 206, 2)';
-    ctx.fillText("Click to go to your section", 460, 160);
+    // ctx.fillText("Click to go to your section", 460, 160);
+    ctx.fillText("Click to go to your section", (((canvas.width)/2) - x_shift_text), (y_baseline - 3));
 
 
+    var x_shift_glory_to_God_text = 605;
     ctx.font = "25px Arial";
     ctx.strokeStyle = 'rgb(250, 250, 249)';
-    ctx.strokeText("Creator | Divine | Awesome | Loving | Supreme | Jesus | Good Father | Prince of Peace | Mighty God | Holy", 180, 220);
+    ctx.strokeText("Creator | Divine | Awesome | Loving | Supreme | Jesus | Good Father | Prince of Peace | Mighty God | Holy", (((canvas.width)/2) - x_shift_glory_to_God_text), 220);
     ctx.fillStyle = 'rgb(252, 252, 251)';
-    ctx.fillText("Creator | Divine | Awesome | Loving | Supreme | Jesus | Good Father | Prince of Peace | Mighty God | Holy", 180, 220);
+    ctx.fillText("Creator | Divine | Awesome | Loving | Supreme | Jesus | Good Father | Prince of Peace | Mighty God | Holy", (((canvas.width)/2) - x_shift_glory_to_God_text), 220);
 
 
-
+    var x_shift_john_3_16_verse = 490;
     ctx.font = "15px Arial";
     // ctx.strokeStyle = 'rgb(250, 250, 249)';
     // ctx.strokeText("John 3:16 “For God so loved the world, that he gave his only begotten Son, that whosoever believeth in him should not perish, but have everlasting life.”", 180, 700);
     ctx.fillStyle = 'rgb(252, 252, 251)';
-    ctx.fillText("John 3:16 “For God so loved the world, that he gave his only begotten Son, that whosoever believeth in him should not perish, but have everlasting life.”", 260, canvas.height - 20);
+    ctx.fillText("John 3:16 “For God so loved the world, that he gave his only begotten Son, that whosoever believeth in him should not perish, but have everlasting life.”", (((canvas.width)/2) - x_shift_john_3_16_verse), canvas.height - 20);
 
 
 
@@ -1282,21 +1290,24 @@ function bibleMaker_background () {
     ctx.shadowOffsetX = 0;
     ctx.shadowOffsetY = 0;
 
+
+    var center_gender_section_text_x = 220;
+
     ctx.font = "35px Arial";
     ctx.strokeStyle = 'rgb(5, 5, 5)';
-    ctx.strokeText("Boy", 551 +10, 581);
+    ctx.strokeText("Boy", (((canvas.width)/2) - center_gender_section_text_x) + 1 +10, 581);
     ctx.strokeStyle = 'rgb(33, 0, 153)';
-    ctx.strokeText("Boy", 552 +10, 580);
+    ctx.strokeText("Boy", (((canvas.width)/2) - center_gender_section_text_x) + 2 +10, 580);
     ctx.fillStyle = 'rgb(33, 0, 153)';
-    ctx.fillText("Boy", 552 +10, 580);
+    ctx.fillText("Boy", (((canvas.width)/2) - center_gender_section_text_x) + 2 +10, 580);
 
     ctx.font = "35px Arial";
     ctx.strokeStyle = 'rgb(13, 13, 13)';
-    ctx.strokeText("Girl", 969 +35, 581);
+    ctx.strokeText("Girl", (((canvas.width)/2) - center_gender_section_text_x) + 418 +35, 581);
     ctx.strokeStyle = 'rgb(244, 15, 190)';
-    ctx.strokeText("Girl", 970 +35, 580);
+    ctx.strokeText("Girl", (((canvas.width)/2) - center_gender_section_text_x) + 419 +35, 580);
     ctx.fillStyle = 'rgb(244, 15, 190)';
-    ctx.fillText("Girl", 970 +35, 580);
+    ctx.fillText("Girl",  (((canvas.width)/2) - center_gender_section_text_x) + 419 +35, 580);
 
     // white shadow remove
     ctx.shadowColor = "white";

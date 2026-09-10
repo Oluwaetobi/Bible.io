@@ -164,9 +164,15 @@ a:hover {
     /* padding: 0px 0px 0px 200px;  */
     display: flex;
     gap: 80px;
-    left: 400px;
+    left: 50%;
+    translate: -40%;
+    /* right: 20%; */
     max-width: 900px;
     overflow-x: hidden;
+}
+
+.boy-or-girl img {
+    justify-content: center;
 }
 
 .boy-or-girl img:hover {
