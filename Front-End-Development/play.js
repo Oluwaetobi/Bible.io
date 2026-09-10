@@ -498,6 +498,32 @@ function start_timer() {
     }
 }
 
+function display_Game_Time (time_alloted_for_each_game) {
+    var game_time = (time_alloted_for_each_game-timer);
+
+    var x_baseline = 1000;
+    var y_baseline = 100;
+    ctx.font = "30px Arial";
+
+    // drop shadow behind timer
+    ctx.fillStyle = 'rgb(0, 0, 0)';
+    ctx.fillText(game_time, (x_baseline - 3), (y_baseline + 3));
+
+    if (game_time > 20) {
+        ctx.fillStyle = 'rgb(7, 239, 11)';
+    } else if (game_time > 10) {
+        ctx.fillStyle = 'rgb(255, 251, 0)';
+    } else if (game_time > 5) {
+        ctx.fillStyle = 'rgb(255, 157, 0)';
+    } else {
+        ctx.fillStyle = 'rgb(255, 0, 0)';
+    }
+    /* real time color, based off of how much time is left, starts green, then
+     yellow, orange, then red */
+    ctx.fillText(game_time, (x_baseline - 3), (y_baseline + 3));
+
+}
+
 function drawGame() {
 
     
@@ -516,6 +542,7 @@ function drawGame() {
         connectPlayers();
         loadingBox();
     } else if (home_page == 3) {
+        display_Game_Time(60);
     } else {
 
     }
