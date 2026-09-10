@@ -277,7 +277,7 @@ function loadingBox() {
 function friendsBoard() {
     
     ctx.fillStyle = 'rgb(250, 251, 252)';
-    ctx.fillRect(0, 60, 230, 800);
+    ctx.fillRect(0, 60, 230, canvas.height);
     
     for (let i = 0; i < friends.name.length; i++) {
         // name of friends
