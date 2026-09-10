@@ -54,6 +54,14 @@ const shop_page_background_mens_or_womens = document.getElementById('shop_backgr
  * set within the user's account object
 */
 var current_bibletar = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
+
+var test_array_of_arrays = [
+    [1, 2, 3],
+    [1, 2, 3],
+    [1, 2, 3]
+
+];
+
 var bibletar_background = current_bibletar[1];
 var bibletar_face = current_bibletar[2];
 var bibletar_shirt = current_bibletar[3];
@@ -205,7 +213,7 @@ function wipeOutEntireScreen() {
     //     // bibletar_sub_section.innerText = '';
     // }
 }
-
+// save_Data_to_Local_or_Session_Storage();
 function save_Data_to_Local_or_Session_Storage() {
     localStorage.setItem('old_bibletar', JSON.stringify(old_bibletar));
     localStorage.setItem('acquired_stuff_closet', JSON.stringify(acquired_stuff_closet));
@@ -218,7 +226,7 @@ function localStorageAndSessionStorageData () {
     const savedName = localStorage.getItem('my_name');
     const saved_bibletar = JSON.parse(localStorage.getItem('old_bibletar'));
     const saved_acquired = JSON.parse(localStorage.getItem('acquired_stuff_closet'));
-    const saved_not_acquired = JSON.parse(localStorage.getItem('acquired_stuff_closet'));
+    const saved_not_acquired = JSON.parse(localStorage.getItem('not_acquired_stuff_closet'));
 
 
     if (savedName) {
