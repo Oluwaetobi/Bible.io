@@ -600,6 +600,20 @@ function display_Game_Time (time_alloted_for_each_game) {
 
 }
 
+function draw_game_grid () {
+    // grid background
+    ctx.fillStyle = 'rgb(10, 132, 193)';
+    ctx.fillRect(0, 0, canvas.width, 450);
+
+    // grid line ticks
+    var grid_size = 2.5;
+    for (let i = 0; i < 10; i++) {
+        var x_baseline = 341;
+        ctx.fillStyle = 'rgb(253, 252, 252)';
+        ctx.fillRect(x_baseline + ((i * 500)/x_bar_divider), 0, grid_size, 450);
+    }
+}
+
 function draw_points_as_bar_graph(y_bibletars_box_spacing, y_baseline) {
     everyones_points[0] = this_game_points;
     var bar_speed_x = 200;
@@ -643,6 +657,7 @@ function draw_All_Players () {
      */
     var y_bibletars_box_spacing = 110
     var y_baseline = 20;
+    draw_game_grid();
     draw_points_as_bar_graph(y_bibletars_box_spacing, y_baseline + 7);
 
 
@@ -762,9 +777,9 @@ function drawGame() {
         loadingBox();
         myBibletar();
     } else if (home_page == 3) {
-        display_Game_Time(60);
         draw_All_Players();
         questions_Display();
+        display_Game_Time(60);
     } else if (home_page == 4) {
 
     }
