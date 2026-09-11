@@ -9,4 +9,8 @@
  * in my javascript file  window.location.href = 
  *  "./ "then the name of the folder it is hiding in" / then "index.html"
  */
+var warning_important = "IMPORTANT!!! WARNING!!!! If somebody told you to paste something here, don't do it, someone is trying to hack you, install a malware on your computer, or steal your information!!!!!";
+localStorage.setItem('warning_important', warning_important);
+const warning_note = localStorage.getItem('warning_important')
+console.log(warning_note)
 window.location.href = "./Front-End-Development/index.html"; 

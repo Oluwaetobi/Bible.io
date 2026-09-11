@@ -1,4 +1,7 @@
+const warning_note = localStorage.getItem('warning_important')
+console.log(warning_note)
 // This code is for the sign up page
+
 const form = document.getElementById('form');
 const email_input = document.getElementById('email-input');
 const username_input = document.getElementById('username-input');

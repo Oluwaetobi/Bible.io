@@ -1,3 +1,5 @@
+const warning_note = localStorage.getItem('warning_important')
+console.log(warning_note)
 /**First of all if you think I write comments for fun, you are making a huge mistake, these comments are not
  * just for me but I write comments so that if anyone looks at the code in this game, they can understand
  * things that won't come to mind initially, PLEASE READ THE COMMENTS, they explain some of the methods
