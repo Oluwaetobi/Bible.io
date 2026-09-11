@@ -61,6 +61,7 @@ const friends = {
     online: ["Offline", "Offline", "Offline", "Offline", "Offline", "Offline", "Offline", "Offline", "Offline", "Offline", "Offline"],
 };
 
+var players_in_my_game = 4;
 var my_cash = 0;
 var old_bibletar = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
 
@@ -104,6 +105,7 @@ const form = document.getElementById('form');
 var my_answer = 0;
 var correct_answer = 0;
 var this_game_points = 0;
+var x_bar_divider = 1;
 
 const sound = new Audio();
 sound.src = "./sounds/sound_incorrect.mp3";
@@ -164,6 +166,7 @@ function change_type_of_challenge(type_of_challenge_html) {
 function prepare_the_game () {
     timer = 0;
     this_game_points = 0;
+    x_bar_divider = 1;
     home_page = 2;
     play_front_page_text[0] = 0;
 }
@@ -558,14 +561,61 @@ function display_Game_Time (time_alloted_for_each_game) {
 
 }
 
+function draw_points_as_bar_graph(y_bibletars_box_spacing, y_baseline) {
+    var bar_speed_x = 200;
+    var bar_x_starting_point = 340;
+    var my_points_for_this_game = this_game_points;
+
+    for (let i = 0; i < players_in_my_game; i++) {
+        if (i == 0) {
+            my_points_for_this_game = this_game_points;
+        } else {
+            my_points_for_this_game = 0;
+        }
+
+        if (i == 0) {
+            ctx.fillStyle = 'rgb(197, 11, 11)';
+        } else if (i == 1) {
+            ctx.fillStyle = 'rgb(135, 11, 197)';
+        } else if (i == 2) {
+            ctx.fillStyle = 'rgb(224, 249, 2)';
+        } else if (i == 3) {
+            ctx.fillStyle = 'rgb(11, 197, 36)';
+        }
+        // Displays bar graph
+        ctx.fillRect(bar_x_starting_point , y_baseline + 10 + (i * y_bibletars_box_spacing), ((my_points_for_this_game * bar_speed_x) / x_bar_divider) , 60);
+        
+        // Display Numbers
+        ctx.font = "50px Arial";
+        ctx.fillStyle = 'rgb(8, 8, 8)';
+        // Math.abs ensure the negative signs are ignored
+        var lengthOfPointsNum = Math.abs(my_points_for_this_game).toString().length
+        /* moving the numbers back based off of it's length, or else, the end of the
+         number will slide off the bar graph (lengthOfPointsNum), the number it is being multiplied
+         by is based off of the size of the text in px */
+        ctx.fillText(my_points_for_this_game, (bar_x_starting_point -10) + (-1 * (lengthOfPointsNum * 50)) + ((my_points_for_this_game * bar_speed_x) / x_bar_divider), y_baseline + 55 + (i * y_bibletars_box_spacing));
+
+        var size_of_bar = ((my_points_for_this_game * bar_speed_x) / x_bar_divider);
+        if (size_of_bar > 800) {
+            // send bar graph back to half it's size when it passes the end of game screen land mark
+            x_bar_divider += 1;
+        }
+    }
+}
+
 function draw_All_Players () {
     /** Draws all players, including your, robot players if there are any, and the people
      * you are versing
      */
     var y_bibletars_box_spacing = 110
     var y_baseline = 20;
+    draw_points_as_bar_graph(y_bibletars_box_spacing, y_baseline + 7);
 
-    for (let i = 0; i < 4; i++) {
+
+    for (let i = 0; i < players_in_my_game; i++) {
+        ctx.fillStyle = 'rgb(197, 11, 11)';
+        ctx.fillRect(45, y_baseline - 2 + (i * y_bibletars_box_spacing), 300, 104);
+
         ctx.fillStyle = 'rgb(66, 66, 66)';
         ctx.fillRect(50, y_baseline + (i * y_bibletars_box_spacing), 100, 100);
 
@@ -581,6 +631,10 @@ function draw_All_Players () {
         }
         ctx.fillText(players_name, 170, y_baseline + 20 + (i * y_bibletars_box_spacing));
     }
+
+
+
+
 }
 
 function check_if_answer_is_correct(my_answer_html) {
@@ -677,7 +731,7 @@ function drawGame() {
         display_Game_Time(60);
         draw_All_Players();
         questions_Display();
-    } else {
+    } else if (home_page == 4) {
 
     }
     displayMouseX_and_MouseY();
