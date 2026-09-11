@@ -168,9 +168,19 @@ function change_type_of_challenge(type_of_challenge_html) {
 }
 
 function randomRobotModes() {
-    robot_modes[0] = ((Math.floor(Math.random() * 5) + 1)/10);
-    robot_modes[1] = ((Math.floor(Math.random() * 5) + 1)/10);
-    robot_modes[2] = ((Math.floor(Math.random() * 5) + 1)/10);
+    if (level == 1) {
+        robot_modes[0] = ((Math.floor(Math.random() * 5) + 1)/10);
+        robot_modes[1] = ((Math.floor(Math.random() * 5) + 1)/10);
+        robot_modes[2] = ((Math.floor(Math.random() * 5) + 1)/10);
+    } else if (level == 2) {
+        robot_modes[0] = ((Math.floor(Math.random() * 5) + 1)/20);
+        robot_modes[1] = ((Math.floor(Math.random() * 5) + 1)/20);
+        robot_modes[2] = ((Math.floor(Math.random() * 5) + 1)/20);
+    } else if (level == 3) {
+        robot_modes[0] = ((Math.floor(Math.random() * 5) + 1)/30);
+        robot_modes[1] = ((Math.floor(Math.random() * 5) + 1)/30);
+        robot_modes[2] = ((Math.floor(Math.random() * 5) + 1)/30);
+    }
 }
 
 
@@ -614,10 +624,10 @@ function draw_points_as_bar_graph(y_bibletars_box_spacing, y_baseline) {
         ctx.font = "50px Arial";
         ctx.fillStyle = 'rgb(8, 8, 8)';
         // Math.abs ensure the negative signs are ignored
-        var lengthOfPointsNum = Math.abs(each_players_points).toString().length
+        var lengthOfPointsNum = Math.abs(each_players_points).toString().length;
         /* moving the numbers back based off of it's length, or else, the end of the
          number will slide off the bar graph (lengthOfPointsNum) */
-        ctx.fillText(each_players_points, (bar_x_starting_point -10) + (-1 * (lengthOfPointsNum * 20)) + ((each_players_points * bar_speed_x) / x_bar_divider), y_baseline + 55 + (i * y_bibletars_box_spacing));
+        ctx.fillText(each_players_points, (bar_x_starting_point -10) + (-1 * (lengthOfPointsNum * 30)) + ((each_players_points * bar_speed_x) / x_bar_divider), y_baseline + 55 + (i * y_bibletars_box_spacing));
 
         var size_of_bar = ((each_players_points * bar_speed_x) / x_bar_divider);
         if (size_of_bar > 800) {
