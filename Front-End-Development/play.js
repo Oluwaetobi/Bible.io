@@ -93,6 +93,15 @@ var not_acquired_stuff_shop = [
 var timer = 0;
 var different_second = 0;
 
+var randomQuestion = 1;
+const question = document.getElementById('question');
+const answer1 = document.getElementById('answer1');
+const answer2 = document.getElementById('answer2');
+const answer3 = document.getElementById('answer3');
+const answer4 = document.getElementById('answer4');
+
+const form = document.getElementById('form');
+
 var img_world_map = new Image();
 img_world_map.src = "./images/world_map.svg"; // Set source URL
 img_world_map.alt = "world map image";
@@ -421,10 +430,16 @@ function show_or_hide_html_elements () {
         document.getElementById('choice1').style.display = "flex";
         document.getElementById('choice2').style.display = "flex";
         document.getElementById('choice3').style.display = "flex";
+        form.style.display = "none";
     } else if (home_page == 2) {
         document.getElementById('choice1').style.display = "none";
         document.getElementById('choice2').style.display = "none";
         document.getElementById('choice3').style.display = "none";
+        form.style.display = "none";
+    } else if (home_page == 3) {
+        form.style.display = "block";
+    } else if (home_page == 4) {
+        form.style.display = "none";
     }
 }
 
@@ -492,6 +507,7 @@ function start_timer() {
 
     if (home_page == 2) {
         if (timer >= 10) {
+            choose_Random_Question();
             home_page = 3;
             timer = 0;
         }
@@ -528,7 +544,7 @@ function draw_All_Players () {
     /** Draws all players, including your, robot players if there are any, and the people
      * you are versing
      */
-    var y_bibletars_box_spacing = 140
+    var y_bibletars_box_spacing = 110
     var y_baseline = 20;
 
     for (let i = 0; i < 4; i++) {
@@ -545,22 +561,29 @@ function draw_All_Players () {
         } else {
             players_name = "robot player";
         }
-        ctx.fillText(players_name, 50, y_baseline + 120 + (i * y_bibletars_box_spacing));
+        ctx.fillText(players_name, 170, y_baseline + 20 + (i * y_bibletars_box_spacing));
     }
 }
 
-function questions_Display() {
-    const question = document.getElementById('question');
-    const answer1 = document.getElementById('answer1');
-    const answer2 = document.getElementById('answer2');
-    const answer3 = document.getElementById('answer3');
-    const answer4 = document.getElementById('answer4');
+function choose_Random_Question () {
+    randomQuestion = 1;
+}
 
-    question.innerText = `What was the name of Jesus' mother`;
-    answer1.innerText = ``;
-    answer2.innerText = ``;
-    answer3.innerText = ``;
-    answer4.innerText = ``;
+function questions_Display() {
+    // Default
+    answer1.innerText = `answer1: `;
+    answer2.innerText = `answer2: `;
+    answer3.innerText = `answer3: `;
+    answer4.innerText = `answer4: `;
+
+    // Questions
+    if (randomQuestion == 1) {
+        question.innerText = `What was the name of Jesus' mother? `;
+        answer1.innerText += `Mary `;
+        answer2.innerText += `Ruth `;
+        answer3.innerText += `Delilah `;
+        answer4.innerText += `Jezebel `;
+    }
 }
 
 function drawGame() {

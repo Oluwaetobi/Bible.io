@@ -1,4 +1,15 @@
 /* Game Best Played Via PC */
+
+:root {
+    --accent-color: #0e004042;
+    /* I want it to be transparent for now */
+    /* --base-color: white; */
+    --text-color: #0b0b0b;
+    --input-color: #f9f8f9;
+    --icon-color: white;
+    --login-color: rgb(255, 255, 255);
+}
+
 .loader {
     position: fixed;
     top: 0px;
@@ -171,6 +182,65 @@ a:hover {
 .questions {
     z-index: 1;
     position: absolute;
-    top: 650px;
+    top: 520px;
     left: 50px;
+}
+
+.side-to-side {
+    display: flex;
+}
+
+form {
+    display: none;
+    /* width: min(400px, 100%); */
+    left: 500px;
+    top: 500px;
+    /* margin-bottom: 50px; */
+    position: absolute;
+    z-index: 1;
+}
+form > div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+form label {
+    flex-shrink: 0;
+    height: 50px;
+    width: 50px;
+    background-color: var(--accent-color);
+    fill: var(--base-color);
+    color: var(--base-color);
+    border-radius: 10px 0 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+form input {
+    box-sizing: border-box;
+    flex-grow: 1;
+    min-width: 0;
+    height: 50px;
+    padding: 1em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-radius: 0 10px 10px 0;
+    border: 2px solid var(  --input-color);
+    border-left:none;
+    background-color: var(--input-color);
+    transition: 150ms ease;
+}
+form input:hover {
+    border-color: var(--accent-color);
+}
+
+form input:focus {
+    outline: none;
+    border-color: var(--text-color);
+}
+
+form input::placeholder {
+    color: var(--text-color);
+    opacity: 0.4;
 }

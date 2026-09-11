@@ -49,12 +49,22 @@
             <img id="choice3" src="./images/challenge_friend.svg" width="200px" alt="friend challenge" onclick="change_type_of_challenge(2)">
         </div>
 
-        <div class="questions">
-            <h3 id="question"></h3>
-            <p id="answer1"></p>
-            <p id="answer2"></p>
-            <p id="answer3"></p>
-            <p id="answer4"></p>
+        <div side-to-side>
+            <div class="questions">
+                <h3 id="question"></h3>
+                <!-- The difference between pre and p is that, if I put 2 spaces in p, it will ignore the extra
+                 spaces, but pre doesn't do the, it formats the text just as it is written -->
+                <pre id="answer1"></pre>
+                <pre id="answer2"></pre>
+                <pre id="answer3"></pre>
+                <pre id="answer4"></pre>
+            </div>
+
+            <div>
+                <form id="form">
+                    <input required type="text" name="questions" id="my-answer" placeholder="Your Answer">
+                </form>
+            </div>
         </div>
         
 
