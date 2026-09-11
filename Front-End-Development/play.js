@@ -101,11 +101,25 @@ const answer3 = document.getElementById('answer3');
 const answer4 = document.getElementById('answer4');
 
 const form = document.getElementById('form');
+var my_answer = 0;
+var correct_answer = 0;
+var this_game_points = 0;
 
 var img_world_map = new Image();
 img_world_map.src = "./images/world_map.svg"; // Set source URL
 img_world_map.alt = "world map image";
 
+
+form.addEventListener('submit', async (e) => {
+    // don't let the form submit otherwise the page will reload
+    e.preventDefault();
+    const my_answer_input = document.getElementById('my-answer').value; 
+    my_answer = my_answer_input;
+    form.reset(); 
+    check_if_answer_is_correct(my_answer_input);
+    choose_Random_Question();
+
+})
 
 window.addEventListener('mousemove', (event) => {
     mouseX = event.clientX;
@@ -146,6 +160,7 @@ function change_type_of_challenge(type_of_challenge_html) {
 
 function prepare_the_game () {
     timer = 0;
+    this_game_points = 0;
     home_page = 2;
     play_front_page_text[0] = 0;
 }
@@ -565,25 +580,74 @@ function draw_All_Players () {
     }
 }
 
+function check_if_answer_is_correct(my_answer_html) {
+    if (my_answer_html == correct_answer) {
+        this_game_points += 1;
+    } else {
+        // play incorrect sound
+    }
+}
+
 function choose_Random_Question () {
-    randomQuestion = 1;
+    /** Choose a random question from our database */
+
+    // Return a random integer between 1 and 10 (both included): Math.floor(Math.random() * 10) + 1;
+    if (level == 1) {
+        randomQuestion = Math.floor(Math.random() * 2) + 1;
+    } else if (level == 2) {
+        randomQuestion = Math.floor(Math.random() * 2) + 1;
+    } else if (level == 3) {
+        randomQuestion = Math.floor(Math.random() * 2) + 1;
+    }
 }
 
 function questions_Display() {
-    // Default
+    ctx.font = "20px Arial";
+    ctx.fillStyle = 'rgb(8, 8, 8)';
+    ctx.fillText("Your Points: " + this_game_points, 1100, 650);
+    // Default, DON'T TOUCH!!!
     answer1.innerText = `answer1: `;
     answer2.innerText = `answer2: `;
     answer3.innerText = `answer3: `;
     answer4.innerText = `answer4: `;
 
     // Questions
+    if (level == 1) {
+        level_1_Questions();
+    } else if (level == 2) {
+        level_2_Questions();
+    } else if (level == 3) {
+        level_3_Questions();
+    }
+
+}
+
+function level_1_Questions () {
     if (randomQuestion == 1) {
         question.innerText = `What was the name of Jesus' mother? `;
         answer1.innerText += `Mary `;
         answer2.innerText += `Ruth `;
         answer3.innerText += `Delilah `;
         answer4.innerText += `Jezebel `;
+        correct_answer = 1;
     }
+
+    if (randomQuestion == 2) {
+        question.innerText = `Who was the first man on Earth? `;
+        answer1.innerText += `Jesus `;
+        answer2.innerText += `Methuselah `;
+        answer3.innerText += `Enoch `;
+        answer4.innerText += `Adam `;
+        correct_answer = 1;
+    }
+}
+
+function level_2_Questions () {
+    
+}
+
+function level_3_Questions () {
+    
 }
 
 function drawGame() {

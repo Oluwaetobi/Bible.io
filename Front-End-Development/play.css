@@ -193,25 +193,20 @@ a:hover {
 form {
     display: none;
     /* width: min(400px, 100%); */
-    left: 500px;
-    top: 500px;
+    left: 1100px;
+    top: 600px;
     /* margin-bottom: 50px; */
     position: absolute;
     z-index: 1;
 }
-form > div {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
 form label {
     flex-shrink: 0;
     height: 50px;
-    width: 50px;
+    width: 30px;
     background-color: var(--accent-color);
     fill: var(--base-color);
     color: var(--base-color);
-    border-radius: 10px 0 0 10px;
+    border-radius: 10px 10 10 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -225,7 +220,7 @@ form input {
     height: 50px;
     padding: 1em;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    border-radius: 0 10px 10px 0;
+    border-radius: 10 10px 10px 10;
     border: 2px solid var(  --input-color);
     border-left:none;
     background-color: var(--input-color);
