@@ -94,6 +94,7 @@ var not_acquired_stuff_shop = [
 var timer = 0;
 var different_second = 0;
 
+var question_I_got_wrong = [];
 var randomQuestion = 1;
 const question = document.getElementById('question');
 const answer1 = document.getElementById('answer1');
@@ -704,6 +705,14 @@ function check_if_answer_is_correct(my_answer_html) {
     } else {
         // play incorrect sound
         sound.play();
+        /**Push questions into array, I don't think I need to JSON.stringify it because
+         * it is already text and should be a string. But once home_page = 4, which means the game is
+         * over I'll be able to display the questions the player got wrong and they
+         * can go figure the answers themselves, this forces users to go study the Bible
+         * instead of me just giving the answers straight up to them
+         */
+        question_I_got_wrong.push(question.innerText);
+
     }
 }
 
@@ -711,12 +720,18 @@ function choose_Random_Question () {
     /** Choose a random question from our database */
 
     // Return a random integer between 1 and 10 (both included): Math.floor(Math.random() * 10) + 1;
+
+    var amount_of_question_in_level_1 = 2;
+    var amount_of_question_in_level_2 = 0;
+    var amount_of_question_in_level_3 = 0;
+
+
     if (level == 1) {
-        randomQuestion = Math.floor(Math.random() * 2) + 1;
+        randomQuestion = Math.floor(Math.random() * amount_of_question_in_level_1) + 1;
     } else if (level == 2) {
-        randomQuestion = Math.floor(Math.random() * 2) + 1;
+        randomQuestion = Math.floor(Math.random() * amount_of_question_in_level_2) + 1;
     } else if (level == 3) {
-        randomQuestion = Math.floor(Math.random() * 2) + 1;
+        randomQuestion = Math.floor(Math.random() * amount_of_question_in_level_3) + 1;
     }
 }
 
