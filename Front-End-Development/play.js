@@ -118,6 +118,10 @@ var img_world_map = new Image();
 img_world_map.src = "./images/world_map.svg"; // Set source URL
 img_world_map.alt = "world map image";
 
+var clock = new Image();
+clock.src = "./images/clock.svg"
+clock.alt = "clock"
+
 
 form.addEventListener('submit', async (e) => {
     // don't let the form submit otherwise the page will reload
@@ -577,8 +581,16 @@ function robotPlayers() {
 function display_Game_Time (time_alloted_for_each_game) {
     var game_time = (time_alloted_for_each_game-timer);
 
+    
     var x_baseline = 1250;
     var y_baseline = 100;
+
+    // clock background also edge of the game screen
+    ctx.fillStyle = 'rgb(6, 134, 119)';
+    ctx.fillRect(x_baseline - 50, 0, 400, 460);
+    
+    ctx.drawImage(clock, x_baseline - 25, y_baseline -75, 115, 115);
+
     ctx.font = "60px Arial";
 
     // drop shadow behind timer
