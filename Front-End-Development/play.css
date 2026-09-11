@@ -167,3 +167,10 @@ a:hover {
 .modes_assets img:hover {
     filter: brightness(120%);
 }
+
+.questions {
+    z-index: 1;
+    position: absolute;
+    top: 650px;
+    left: 50px;
+}

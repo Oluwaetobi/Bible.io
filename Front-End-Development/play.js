@@ -491,7 +491,7 @@ function start_timer() {
     }
 
     if (home_page == 2) {
-        if (timer >= 2) {
+        if (timer >= 10) {
             home_page = 3;
             timer = 0;
         }
@@ -501,9 +501,9 @@ function start_timer() {
 function display_Game_Time (time_alloted_for_each_game) {
     var game_time = (time_alloted_for_each_game-timer);
 
-    var x_baseline = 1000;
+    var x_baseline = 1250;
     var y_baseline = 100;
-    ctx.font = "30px Arial";
+    ctx.font = "60px Arial";
 
     // drop shadow behind timer
     ctx.fillStyle = 'rgb(0, 0, 0)';
@@ -520,8 +520,47 @@ function display_Game_Time (time_alloted_for_each_game) {
     }
     /* real time color, based off of how much time is left, starts green, then
      yellow, orange, then red */
-    ctx.fillText(game_time, (x_baseline - 3), (y_baseline + 3));
+    ctx.fillText(game_time, x_baseline, y_baseline + 3);
 
+}
+
+function draw_All_Players () {
+    /** Draws all players, including your, robot players if there are any, and the people
+     * you are versing
+     */
+    var y_bibletars_box_spacing = 140
+    var y_baseline = 20;
+
+    for (let i = 0; i < 4; i++) {
+        ctx.fillStyle = 'rgb(66, 66, 66)';
+        ctx.fillRect(50, y_baseline + (i * y_bibletars_box_spacing), 100, 100);
+
+        ctx.font = "20px Arial";
+        ctx.fillStyle = 'rgb(8, 8, 8)';
+
+        // set player's name
+        var players_name = my_name;
+        if (i == 0) {
+            players_name = my_name;
+        } else {
+            players_name = "robot player";
+        }
+        ctx.fillText(players_name, 50, y_baseline + 120 + (i * y_bibletars_box_spacing));
+    }
+}
+
+function questions_Display() {
+    const question = document.getElementById('question');
+    const answer1 = document.getElementById('answer1');
+    const answer2 = document.getElementById('answer2');
+    const answer3 = document.getElementById('answer3');
+    const answer4 = document.getElementById('answer4');
+
+    question.innerText = `What was the name of Jesus' mother`;
+    answer1.innerText = ``;
+    answer2.innerText = ``;
+    answer3.innerText = ``;
+    answer4.innerText = ``;
 }
 
 function drawGame() {
@@ -538,15 +577,18 @@ function drawGame() {
         displayLevels();
         otherTextDisplay();
         challenge_box_display();
+        myBibletar();
     } else if (home_page == 2) {
         connectPlayers();
         loadingBox();
+        myBibletar();
     } else if (home_page == 3) {
         display_Game_Time(60);
+        draw_All_Players();
+        questions_Display();
     } else {
 
     }
-    myBibletar();
     displayMouseX_and_MouseY();
     show_or_hide_html_elements();
     start_timer();
