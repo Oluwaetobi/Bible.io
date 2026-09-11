@@ -192,6 +192,8 @@ function randomRobotModes() {
 function prepare_the_game () {
     timer = 0;
     this_game_points = 0;
+    // resets it each game
+    question_I_got_wrong = [];
 
     for (let i = 0; i < everyones_points.length; i++) {
         // reset everyone's points
