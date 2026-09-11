@@ -104,8 +104,12 @@ const answer4 = document.getElementById('answer4');
 const form = document.getElementById('form');
 var my_answer = 0;
 var correct_answer = 0;
+// this_game_points refers to the points I earned a this a specific game
 var this_game_points = 0;
+var everyones_points = [0, 0, 0, 0];
 var x_bar_divider = 1;
+
+var robot_modes = [0, 0, 0]
 
 const sound = new Audio();
 sound.src = "./sounds/sound_incorrect.mp3";
@@ -163,9 +167,24 @@ function change_type_of_challenge(type_of_challenge_html) {
     type_of_challenge = type_of_challenge_html;
 }
 
+function randomRobotModes() {
+    robot_modes[0] = ((Math.floor(Math.random() * 5) + 1)/10);
+    robot_modes[1] = ((Math.floor(Math.random() * 5) + 1)/10);
+    robot_modes[2] = ((Math.floor(Math.random() * 5) + 1)/10);
+}
+
+
 function prepare_the_game () {
     timer = 0;
     this_game_points = 0;
+
+    for (let i = 0; i < everyones_points.length; i++) {
+        // reset everyone's points
+        everyones_points[i] = 0;
+    }
+
+    randomRobotModes();
+
     x_bar_divider = 1;
     home_page = 2;
     play_front_page_text[0] = 0;
@@ -272,7 +291,7 @@ function localStorageAndSessionStorageData () {
 function displayMouseX_and_MouseY () {
     ctx.font = "25px Arial";
     ctx.fillStyle = 'rgb(190, 36, 36)';
-    ctx.fillText("MouseX: " + mouseX + " MouseY: " + mouseY, 10, 20);
+    ctx.fillText("MouseX: " + mouseX + " MouseY: " + mouseY, 10, canvas.height - 20);
 
 }
 
@@ -524,6 +543,10 @@ function start_timer() {
     if (seconds != different_second) {
         different_second = seconds;
         timer += 1;
+
+        if (home_page == 3) {
+            robotPlayers();
+        }
     }
 
     if (home_page == 2) {
@@ -532,6 +555,12 @@ function start_timer() {
             home_page = 3;
             timer = 0;
         }
+    }
+}
+
+function robotPlayers() {
+    for (let i = 1; i < everyones_points.length; i++) {
+        everyones_points[i] += robot_modes[i-1];
     }
 }
 
@@ -562,16 +591,12 @@ function display_Game_Time (time_alloted_for_each_game) {
 }
 
 function draw_points_as_bar_graph(y_bibletars_box_spacing, y_baseline) {
+    everyones_points[0] = this_game_points;
     var bar_speed_x = 200;
     var bar_x_starting_point = 340;
-    var my_points_for_this_game = this_game_points;
 
     for (let i = 0; i < players_in_my_game; i++) {
-        if (i == 0) {
-            my_points_for_this_game = this_game_points;
-        } else {
-            my_points_for_this_game = 0;
-        }
+        var each_players_points = Math.round(everyones_points[i]);
 
         if (i == 0) {
             ctx.fillStyle = 'rgb(197, 11, 11)';
@@ -583,19 +608,18 @@ function draw_points_as_bar_graph(y_bibletars_box_spacing, y_baseline) {
             ctx.fillStyle = 'rgb(11, 197, 36)';
         }
         // Displays bar graph
-        ctx.fillRect(bar_x_starting_point , y_baseline + 10 + (i * y_bibletars_box_spacing), ((my_points_for_this_game * bar_speed_x) / x_bar_divider) , 60);
+        ctx.fillRect(bar_x_starting_point , y_baseline + 10 + (i * y_bibletars_box_spacing), ((each_players_points * bar_speed_x) / x_bar_divider) , 60);
         
         // Display Numbers
         ctx.font = "50px Arial";
         ctx.fillStyle = 'rgb(8, 8, 8)';
         // Math.abs ensure the negative signs are ignored
-        var lengthOfPointsNum = Math.abs(my_points_for_this_game).toString().length
+        var lengthOfPointsNum = Math.abs(each_players_points).toString().length
         /* moving the numbers back based off of it's length, or else, the end of the
-         number will slide off the bar graph (lengthOfPointsNum), the number it is being multiplied
-         by is based off of the size of the text in px */
-        ctx.fillText(my_points_for_this_game, (bar_x_starting_point -10) + (-1 * (lengthOfPointsNum * 50)) + ((my_points_for_this_game * bar_speed_x) / x_bar_divider), y_baseline + 55 + (i * y_bibletars_box_spacing));
+         number will slide off the bar graph (lengthOfPointsNum) */
+        ctx.fillText(each_players_points, (bar_x_starting_point -10) + (-1 * (lengthOfPointsNum * 20)) + ((each_players_points * bar_speed_x) / x_bar_divider), y_baseline + 55 + (i * y_bibletars_box_spacing));
 
-        var size_of_bar = ((my_points_for_this_game * bar_speed_x) / x_bar_divider);
+        var size_of_bar = ((each_players_points * bar_speed_x) / x_bar_divider);
         if (size_of_bar > 800) {
             // send bar graph back to half it's size when it passes the end of game screen land mark
             x_bar_divider += 1;
