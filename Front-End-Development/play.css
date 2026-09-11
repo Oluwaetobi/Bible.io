@@ -208,8 +208,6 @@ form label {
     color: var(--base-color);
     border-radius: 10px 10 10 10px;
     display: flex;
-    justify-content: center;
-    align-items: center;
     font-size: 1.5rem;
     font-weight: 500;
 }

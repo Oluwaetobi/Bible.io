@@ -674,7 +674,7 @@ function draw_All_Players () {
 
 
     for (let i = 0; i < players_in_my_game; i++) {
-        ctx.fillStyle = 'rgb(197, 11, 11)';
+        ctx.fillStyle = 'rgb(157, 147, 124)';
         ctx.fillRect(45, y_baseline - 2 + (i * y_bibletars_box_spacing), 300, 104);
 
         ctx.fillStyle = 'rgb(66, 66, 66)';
