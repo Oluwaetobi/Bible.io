@@ -696,7 +696,7 @@ function level_1_Questions () {
         answer2.innerText += `Methuselah `;
         answer3.innerText += `Enoch `;
         answer4.innerText += `Adam `;
-        correct_answer = 1;
+        correct_answer = 4;
     }
 }
 
