@@ -105,6 +105,9 @@ var my_answer = 0;
 var correct_answer = 0;
 var this_game_points = 0;
 
+const sound = new Audio();
+sound.src = "./sounds/sound_incorrect.mp3";
+
 var img_world_map = new Image();
 img_world_map.src = "./images/world_map.svg"; // Set source URL
 img_world_map.alt = "world map image";
@@ -585,6 +588,7 @@ function check_if_answer_is_correct(my_answer_html) {
         this_game_points += 1;
     } else {
         // play incorrect sound
+        sound.play();
     }
 }
 
