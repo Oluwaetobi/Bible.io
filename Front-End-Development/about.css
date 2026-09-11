@@ -95,14 +95,30 @@ header {
     /* font-size was originally 15px but I might increase it */
     font-size: 30px;
 }
-.head-middle,
-.head-down,
-.head-down2,
-.bottom {
+.head-middle {
+    position: static;
+    width: min(100%, 80rem);
+    margin: 0;
+    text-align: center;
+}
+
+.head-down {
   position: static;
-  width: min(100%, 70rem);
+  width: min(100%, 80rem);
   margin: 0;
-  text-align: center;
+  text-align: left;
+  text-indent: 40px;
+}
+
+.head-down img {
+    /* Helps text flow around the image */
+    float: right;
+}
+.head-down2, .bottom {
+    position: static;
+    width: min(100%, 80rem);
+    margin: 0;
+    text-align: center;
 }
 
 a {
