@@ -182,8 +182,9 @@ a:hover {
 .questions {
     z-index: 1;
     position: absolute;
-    top: 520px;
+    top: 530px;
     left: 50px;
+    max-width: 1000px;
 }
 
 .side-to-side {

@@ -724,8 +724,8 @@ function choose_Random_Question () {
     // Return a random integer between 1 and 10 (both included): Math.floor(Math.random() * 10) + 1;
 
     var amount_of_question_in_level_1 = 2;
-    var amount_of_question_in_level_2 = 0;
-    var amount_of_question_in_level_3 = 0;
+    var amount_of_question_in_level_2 = 1;
+    var amount_of_question_in_level_3 = 1;
 
 
     if (level == 1) {
@@ -737,15 +737,22 @@ function choose_Random_Question () {
     }
 }
 
+function questions_background() {
+    ctx.fillStyle = 'rgb(186, 182, 182)';
+    ctx.fillRect(0, 0, canvas.width, canvas.height)
+}
+
 function questions_Display() {
+    questions_background();
+
     ctx.font = "20px Arial";
     ctx.fillStyle = 'rgb(8, 8, 8)';
     ctx.fillText("Your Points: " + this_game_points, 1100, 650);
     // Default, DON'T TOUCH!!!
-    answer1.innerText = `answer1: `;
-    answer2.innerText = `answer2: `;
-    answer3.innerText = `answer3: `;
-    answer4.innerText = `answer4: `;
+    answer1.innerText = `Answer 1: `;
+    answer2.innerText = `Answer 2: `;
+    answer3.innerText = `Answer 3: `;
+    answer4.innerText = `Answer 4: `;
 
     // Questions
     if (level == 1) {
@@ -759,6 +766,7 @@ function questions_Display() {
 }
 
 function level_1_Questions () {
+    /**Composed of basic bible questions */
     if (randomQuestion == 1) {
         question.innerText = `What was the name of Jesus' mother? `;
         answer1.innerText += `Mary `;
@@ -776,13 +784,40 @@ function level_1_Questions () {
         answer4.innerText += `Adam `;
         correct_answer = 4;
     }
+    if (randomQuestion == 3) {
+        question.innerText = `Who was the first woman on Earth? `;
+        answer1.innerText += `Isabelle `;
+        answer2.innerText += `Naomi `;
+        answer3.innerText += `Eve `;
+        answer4.innerText += `Deborah `;
+        correct_answer = 4;
+    }
 }
 
 function level_2_Questions () {
-    
+    /** Difficult Bible Questions */
+    if (randomQuestion == 1) {
+        question.innerText = `“Who was the tallest man in the Bible? `;
+        answer1.innerText += `Goliath `;
+        answer2.innerText += `Og King of Bashan `;
+        answer3.innerText += `King Saul `;
+        answer4.innerText += `Lahmi `;
+        correct_answer = 2;
+    }
 }
 
 function level_3_Questions () {
+    /** The reason why level 3 is hard, is because it will just be verses from the Bible, and the player will have
+     * to answer exactly where it is located in the Bible
+     */
+    if (randomQuestion == 1) {
+        question.innerText = `“For, brethren, ye have been called unto liberty; only use not liberty for an occasion to the flesh, but by love serve one another.” `;
+        answer1.innerText += `John 3:16 `;
+        answer2.innerText += `Galtians 5:13 `;
+        answer3.innerText += `Romans 5:4 `;
+        answer4.innerText += `Romans 11:9 `;
+        correct_answer = 2;
+    }
     
 }
 
@@ -806,8 +841,8 @@ function drawGame() {
         loadingBox();
         myBibletar();
     } else if (home_page == 3) {
-        draw_All_Players();
         questions_Display();
+        draw_All_Players();
         display_Game_Time(60);
     } else if (home_page == 4) {
 
