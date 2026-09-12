@@ -112,6 +112,7 @@ var correct_answer = 0;
 // this_game_points refers to the points I earned a this a specific game
 var this_game_points = 0;
 var kicked_out = false;
+var game_finished = false;
 
 // var players_in_my_game = 4;
 
@@ -220,6 +221,7 @@ function prepare_the_game () {
     this_game_points = 0;
     my_game.countries[0] = my_country;
     kicked_out = false;
+    game_finished = false;
     // resets it each game
     question_I_got_wrong = [];
     my_game.questions_wrong[0] = 0;
@@ -540,11 +542,11 @@ function show_or_hide_html_elements () {
         document.getElementById('choice3').style.display = "none";
         form.style.display = "none";
     } else if (home_page == 3) {
-        if (my_game.questions_wrong[0] < 5) {
+        if (my_game.questions_wrong[0] > 5 || game_finished == true) {
             // only if I haven't gotten more than 5 questions wrong then allow me to keep submitting answers
-            form.style.display = "block";
-        } else {
             form.style.display = "none";
+        } else {
+            form.style.display = "block";
         }
     } else if (home_page == 4) {
         form.style.display = "none";
@@ -613,7 +615,7 @@ function start_timer() {
         timer += 1;
 
         if (home_page == 3) {
-            robotPlayers();
+            robotPlayers(60);
         }
     }
 
@@ -626,14 +628,23 @@ function start_timer() {
     }
 }
 
-function robotPlayers() {
-    for (let i = 1; i < my_game.everyones_points.length; i++) {
-        my_game.everyones_points[i] += robot_modes[i-1];
+function robotPlayers(time_alloted_for_each_game) {
+    var game_time = (time_alloted_for_each_game - timer)
+    if (game_time > 0) {
+        for (let i = 1; i < my_game.everyones_points.length; i++) {
+            my_game.everyones_points[i] += robot_modes[i-1];
+        }
+    } else {
+
     }
 }
 
 function display_Game_Time (time_alloted_for_each_game) {
     var game_time = (time_alloted_for_each_game-timer);
+
+    if (game_time <= 0) {
+        game_finished = true;
+    }
 
     
     var x_baseline = 1250;
@@ -830,8 +841,11 @@ function spectatorMode() {
     answer3.innerText = ``;
     answer4.innerText = ``;
 
-    ctx.font = "20px Arial"
+
+
+    ctx.font = "30px Arial"
     ctx.fillStyle = 'rgb(244, 8, 8)';
+    ctx.fillText("You got 5 question WRONG!", 100, 550);
     ctx.fillText("You have been kicked out of the game, you are now a SPECTATOR", 100, 600);
 
 }
@@ -939,6 +953,9 @@ function drawGame() {
             spectatorMode();
         } else {
             questions_Display();
+            if (game_finished == true) {
+                broadcast_game_is_over();
+            }
         }
         draw_All_Players();
         display_Game_Time(60);
