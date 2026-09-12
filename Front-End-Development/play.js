@@ -63,7 +63,7 @@ const friends = {
     online: ["Offline", "Offline", "Offline", "Offline", "Offline", "Offline", "Offline", "Offline", "Offline", "Offline", "Offline"],
 };
 
-var players_in_my_game = 4;
+
 var my_cash = 0;
 var old_bibletar = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
 
@@ -109,7 +109,20 @@ var my_answer = 0;
 var correct_answer = 0;
 // this_game_points refers to the points I earned a this a specific game
 var this_game_points = 0;
-var everyones_points = [0, 0, 0, 0];
+
+// var players_in_my_game = 4;
+
+const my_game = {
+    online: 4,
+    everyones_points: [0, 0, 0, 0],
+    /** questions_wrong, let's us know how many questions each player in the game has gotten wrong
+     * if you get 5 questions wrong, you automatically become a spectator, and it will show on your
+     * box as well
+     */
+    questions_wrong: [0, 0, 0, 0],
+    countries: [0, 0, 0, 0],
+};
+
 var x_bar_divider = 1;
 
 var robot_modes = [0, 0, 0]
@@ -196,10 +209,11 @@ function prepare_the_game () {
     this_game_points = 0;
     // resets it each game
     question_I_got_wrong = [];
+    my_game.questions_wrong[0] = 0;
 
-    for (let i = 0; i < everyones_points.length; i++) {
+    for (let i = 0; i < my_game.everyones_points.length; i++) {
         // reset everyone's points
-        everyones_points[i] = 0;
+        my_game.everyones_points[i] = 0;
     }
 
     randomRobotModes();
@@ -578,8 +592,8 @@ function start_timer() {
 }
 
 function robotPlayers() {
-    for (let i = 1; i < everyones_points.length; i++) {
-        everyones_points[i] += robot_modes[i-1];
+    for (let i = 1; i < my_game.everyones_points.length; i++) {
+        my_game.everyones_points[i] += robot_modes[i-1];
     }
 }
 
@@ -632,12 +646,12 @@ function draw_game_grid () {
 }
 
 function draw_points_as_bar_graph(y_bibletars_box_spacing, y_baseline) {
-    everyones_points[0] = this_game_points;
+    my_game.everyones_points[0] = this_game_points;
     var bar_speed_x = 200;
     var bar_x_starting_point = 340;
 
-    for (let i = 0; i < players_in_my_game; i++) {
-        var each_players_points = Math.round(everyones_points[i]);
+    for (let i = 0; i < my_game.online; i++) {
+        var each_players_points = Math.round(my_game.everyones_points[i]);
 
         if (i == 0) {
             ctx.fillStyle = 'rgb(197, 11, 11)';
@@ -678,7 +692,7 @@ function draw_All_Players () {
     draw_points_as_bar_graph(y_bibletars_box_spacing, y_baseline + 7);
 
 
-    for (let i = 0; i < players_in_my_game; i++) {
+    for (let i = 0; i < my_game.online; i++) {
         ctx.fillStyle = 'rgb(157, 147, 124)';
         ctx.fillRect(45, y_baseline - 2 + (i * y_bibletars_box_spacing), 300, 104);
 
@@ -716,6 +730,7 @@ function check_if_answer_is_correct(my_answer_html) {
          * instead of me just giving the answers straight up to them
          */
         question_I_got_wrong.push(question.innerText);
+        my_game.questions_wrong[0] += 1;
 
     }
 }
