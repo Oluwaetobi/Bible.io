@@ -61,6 +61,7 @@ const friends = {
     bibletar: [],
     scroll_y: 0,
     online: ["Offline", "Offline", "Offline", "Offline", "Offline", "Offline", "Offline", "Offline", "Offline", "Offline", "Offline"],
+    countries: ["America", "America"]
 };
 
 
@@ -120,7 +121,7 @@ const my_game = {
      * box as well
      */
     questions_wrong: [0, 0, 0, 0],
-    countries: [0, 0, 0, 0],
+    countries: ["America", "America", "America", "America"],
 };
 
 var x_bar_divider = 1;
@@ -627,7 +628,11 @@ function display_Game_Time (time_alloted_for_each_game) {
     }
     /* real time color, based off of how much time is left, starts green, then
      yellow, orange, then red */
-    ctx.fillText(game_time, x_baseline, y_baseline + 3);
+    var x_over = 0;
+    if (game_time >= 0 && game_time < 10) {
+        x_over += 10;
+    }
+    ctx.fillText(game_time, x_baseline + x_over, y_baseline + 3);
 
 }
 
@@ -636,9 +641,11 @@ function draw_game_grid () {
     ctx.fillStyle = 'rgb(10, 132, 193)';
     ctx.fillRect(0, 0, canvas.width, 450);
 
+    var amount_of_ticks = 100;
+
     // grid line ticks
     var grid_size = 2.5;
-    for (let i = 0; i < 10; i++) {
+    for (let i = 0; i < amount_of_ticks; i++) {
         var x_baseline = 341;
         ctx.fillStyle = 'rgb(253, 252, 252)';
         ctx.fillRect(x_baseline + ((i * 500)/x_bar_divider), 0, grid_size, 450);

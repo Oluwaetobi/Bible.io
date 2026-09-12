@@ -71,6 +71,7 @@ var gameOn = false;
 that's one thing I like about HTML. As well as it's the core foundation to building websites. */
 var play_front_page_text = [];
 
+var my_country = "America";
 var my_points = 0;
 var my_highscores = [0, 0, 0];
 var my_cash = 0;
@@ -103,6 +104,10 @@ var not_acquired_stuff_shop = [
 ];
 
 
+var img_my_country = new Image();
+img_my_country.src = "./images/country_america.svg"; // Set source URL
+img_my_country.alt = "my country";
+
 function wipeOutEntireScreen() {
     ctx.clearRect(0,0, canvas.width, canvas.height);
     if (gameOn != false) {
@@ -111,13 +116,19 @@ function wipeOutEntireScreen() {
     }
 }
 
+function saveCountry() {
+    const countryInputValue = document.getElementById('country-input').value;
+    console.log(countryInputValue);
+    localStorage.setItem('my_country', countryInputValue);
+}
+
 function saveName() {
     // get the input value
     const nameInputValue = document.getElementById('username-input').value;
 
     // save the input value to local Storage
     // the first item is the name of the variable for the local Storage
-    localStorage.setItem('my_name', nameInputValue)
+    localStorage.setItem('my_name', nameInputValue);
 
 
 
@@ -169,6 +180,7 @@ function localStorageAndSessionStorageData () {
     const saved_acquired = JSON.parse(localStorage.getItem('acquired_stuff_closet'));
     const saved_not_acquired = JSON.parse(localStorage.getItem('not_acquired_stuff_closet'));
     const saved_cash = JSON.parse(localStorage.getItem('my_cash'));
+    const saved_country = localStorage.getItem('my_country');
 
     if (savedName) {
         my_name = savedName;
@@ -212,6 +224,12 @@ function localStorageAndSessionStorageData () {
     } else {
         // do nothing, has already been created and set to default
     }
+
+    if (saved_country) {
+        my_country = saved_country;
+    } else {
+        // do nothing, has already been created and set to default
+    }
 }
 
 function loadingBox() {
@@ -238,6 +256,19 @@ function myBibletar () {
     ctx.fillText(my_name, 50, 350);
 }
 
+function show_my_country() {
+    var country_svg = my_country;
+
+    /**Since country is a string I don't need to edit it, unless the name
+     * of the country has two words such as South Korea, I will have to set it
+     * from "South Korea" to "South_Korea"
+     */
+
+    // Don't touch this
+    img_my_country.src = "./images/country_" + country_svg + ".svg";
+    ctx.drawImage(img_my_country, 50, 400, 100, 50);
+}
+
 
 function drawGame() {
     // blue background
@@ -247,6 +278,7 @@ function drawGame() {
     localStorageAndSessionStorageData();
     loadingBox();
     myBibletar();
+    show_my_country();
 
 }
 
