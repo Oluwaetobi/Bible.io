@@ -238,3 +238,23 @@ form input::placeholder {
     color: var(--text-color);
     opacity: 0.4;
 }
+
+
+#questions-i-got-wrong {
+    display: none;
+}
+.questions-wrong-rectangle {
+    top: 450px;
+    left: 100px;
+    background-color: aliceblue;
+    overflow-x: hidden;
+}
+
+.questions-wrong-rectangle caption {
+    background-color: #000000;
+    color:#d0d0d0;
+    position: sticky;
+    top: 0px;
+    font-weight: bold;
+    font-size: large;
+}

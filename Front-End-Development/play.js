@@ -31,6 +31,7 @@ window.addEventListener("load", () => {
 const canvas = document.getElementById('myCanvas');
 const ctx = canvas.getContext('2d');
 const big_text = document.getElementById('big-text');
+const questions_wrong_text = document.getElementById('wrong-text');
 const top_border = 90;
 const side_border = 2;
 
@@ -222,6 +223,7 @@ function prepare_the_game () {
     my_game.countries[0] = my_country;
     kicked_out = false;
     game_finished = false;
+    questions_wrong_text.innerText = ``;
     // resets it each game
     question_I_got_wrong = [];
     my_game.questions_wrong[0] = 0;
@@ -542,17 +544,22 @@ function show_or_hide_html_elements () {
         answer2.style.display = "none";
         answer3.style.display = "none";
         answer4.style.display = "none";
+
+        document.getElementById('questions-i-got-wrong').style.display = "none";
     } else if (home_page == 2) {
         document.getElementById('choice1').style.display = "none";
         document.getElementById('choice2').style.display = "none";
         document.getElementById('choice3').style.display = "none";
+
+        form.style.display = "none";
         question.style.display = "none";
         answer1.style.display = "none";
         answer2.style.display = "none";
         answer3.style.display = "none";
         answer4.style.display = "none";
 
-        form.style.display = "none";
+        document.getElementById('questions-i-got-wrong').style.display = "none";
+
     } else if (home_page == 3) {
         if (my_game.questions_wrong[0] > 5 || game_finished == true) {
             // only if I haven't gotten more than 5 questions wrong then allow me to keep submitting answers
@@ -570,6 +577,8 @@ function show_or_hide_html_elements () {
             answer3.style.display = "block";
             answer4.style.display = "block";
         }
+
+        document.getElementById('questions-i-got-wrong').style.display = "none";
     } else if (home_page == 4) {
         form.style.display = "none";
         question.style.display = "none";
@@ -577,6 +586,8 @@ function show_or_hide_html_elements () {
         answer2.style.display = "none";
         answer3.style.display = "none";
         answer4.style.display = "none";
+
+        document.getElementById('questions-i-got-wrong').style.display = "block";
     }
 }
 
@@ -825,6 +836,26 @@ function broadcast_game_is_over (time_alloted_for_each_game) {
     if (game_time < -3) {
         home_page = 4;
     }
+
+}
+
+function show_results() {
+    /**Shows who won and places, questions I got wrong, as well as gives me the option to play
+     * again or go back to the main page in the play section of Bible.io
+     */
+
+    // draws players bibletar in order of ranking 1st to last place
+
+    var places_order = ["1st place", "2nd place", "3rd place", "4th place"];
+
+    for (let i = 0; i < my_game.online; i++) {
+        ctx.fillStyle = 'rgb(0, 0, 0)'
+        ctx.fillRect(100 + i * 300, 50, 200, 200);
+
+        ctx.font = "20px Arial";
+        ctx.fillStyle = 'rgb(0, 0, 0)';
+        ctx.fillText(places_order[i], 100 + (i*300), 300);
+    }
 }
 
 
@@ -841,6 +872,8 @@ function check_if_answer_is_correct(my_answer_html) {
          * instead of me just giving the answers straight up to them
          */
         question_I_got_wrong.push(question.innerText);
+        questions_wrong_text.innerText += (question_I_got_wrong.length + ". " + question.innerText);
+        question_I_got_wrong.innerText += "  -  "
         my_game.questions_wrong[0] += 1;
         if (my_game.questions_wrong[0] >= 5) {
             kick_me_out_of_the_game();
@@ -1000,7 +1033,7 @@ function drawGame() {
         draw_All_Players();
         display_Game_Time(60);
     } else if (home_page == 4) {
-
+        show_results();
     }
     displayMouseX_and_MouseY();
     show_or_hide_html_elements();
