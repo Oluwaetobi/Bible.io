@@ -462,6 +462,9 @@ function myScoresDisplay () {
 
     ctx.fillStyle = 'rgb(6, 6, 6)';
     ctx.fillText("Highscore: " + my_highscores[level - 1], (((canvas.width)/2) + x_shift) + 150, 130);
+
+    ctx.fillStyle = 'rgb(114, 4, 4)';
+    ctx.fillText("Under Construction - Not Online Yet!", (((canvas.width)/2) + x_shift - 280) + 150, 160);
 }
 
 function displayLevels() {
@@ -720,6 +723,7 @@ function draw_All_Players () {
 
 
     for (let i = 0; i < my_game.online; i++) {
+        // back box
         ctx.fillStyle = 'rgb(157, 147, 124)';
         ctx.fillRect(45, y_baseline - 2 + (i * y_bibletars_box_spacing), 300, 104);
 
@@ -737,6 +741,11 @@ function draw_All_Players () {
             players_name = "robot player";
         }
         ctx.fillText(players_name, 170, y_baseline + 20 + (i * y_bibletars_box_spacing));
+
+        // countries display
+        var players_country_svg = "./images/country_" + my_game.countries[i] + ".svg";
+        img_countries.src = players_country_svg;
+        ctx.drawImage(img_countries, 170, y_baseline + 65 + (i * y_bibletars_box_spacing), 60, 30);
     }
 
 
