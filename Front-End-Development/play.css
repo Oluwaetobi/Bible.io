@@ -245,8 +245,13 @@ form input::placeholder {
     top: 450px;
     left: 100px;
     background-color: aliceblue;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
+    position: relative;
     z-index: 1;
+    width: 500px;
+    height: 200px;
+    overflow-y: auto;
+    overflow-x: auto;
 }
 
 .questions-wrong-rectangle caption {

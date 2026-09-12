@@ -873,7 +873,8 @@ function check_if_answer_is_correct(my_answer_html) {
          */
         question_I_got_wrong.push(question.innerText);
         questions_wrong_text.innerText += (question_I_got_wrong.length + ". " + question.innerText);
-        question_I_got_wrong.innerText += "  -  "
+        // I'm trying to get it to go onto a new line, but it's not working
+        questions_wrong_text.innerText += "  -  \n"
         my_game.questions_wrong[0] += 1;
         if (my_game.questions_wrong[0] >= 5) {
             kick_me_out_of_the_game();
