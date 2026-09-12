@@ -111,6 +111,7 @@ var my_answer = 0;
 var correct_answer = 0;
 // this_game_points refers to the points I earned a this a specific game
 var this_game_points = 0;
+var kicked_out = false;
 
 // var players_in_my_game = 4;
 
@@ -143,6 +144,10 @@ clock.alt = "clock"
 var img_countries = new Image();
 img_countries.src = "./images/country_America.svg"; // Sets default source url
 img_countries.alt = "country";
+
+var img_wrong = new Image();
+img_wrong.src = "./images/wrong.svg";
+img_wrong.alt = "wrong";
 
 
 form.addEventListener('submit', async (e) => {
@@ -214,6 +219,7 @@ function prepare_the_game () {
     timer = 0;
     this_game_points = 0;
     my_game.countries[0] = my_country;
+    kicked_out = false;
     // resets it each game
     question_I_got_wrong = [];
     my_game.questions_wrong[0] = 0;
@@ -534,7 +540,12 @@ function show_or_hide_html_elements () {
         document.getElementById('choice3').style.display = "none";
         form.style.display = "none";
     } else if (home_page == 3) {
-        form.style.display = "block";
+        if (my_game.questions_wrong[0] < 5) {
+            // only if I haven't gotten more than 5 questions wrong then allow me to keep submitting answers
+            form.style.display = "block";
+        } else {
+            form.style.display = "none";
+        }
     } else if (home_page == 4) {
         form.style.display = "none";
     }
@@ -635,10 +646,15 @@ function display_Game_Time (time_alloted_for_each_game) {
     ctx.drawImage(clock, x_baseline - 25, y_baseline -75, 115, 115);
 
     ctx.font = "60px Arial";
+    
+    var x_over = 0;
+    if (game_time >= 0 && game_time < 10) {
+        x_over += 15;
+    }
 
     // drop shadow behind timer
     ctx.fillStyle = 'rgb(0, 0, 0)';
-    ctx.fillText(game_time, (x_baseline - 3), (y_baseline + 3));
+    ctx.fillText(game_time, (x_baseline - 3) + x_over, (y_baseline + 3));
 
     if (game_time > 20) {
         ctx.fillStyle = 'rgb(7, 239, 11)';
@@ -651,10 +667,6 @@ function display_Game_Time (time_alloted_for_each_game) {
     }
     /* real time color, based off of how much time is left, starts green, then
      yellow, orange, then red */
-    var x_over = 0;
-    if (game_time >= 0 && game_time < 10) {
-        x_over += 10;
-    }
     ctx.fillText(game_time, x_baseline + x_over, y_baseline + 3);
 
 }
@@ -746,12 +758,24 @@ function draw_All_Players () {
         var players_country_svg = "./images/country_" + my_game.countries[i] + ".svg";
         img_countries.src = players_country_svg;
         ctx.drawImage(img_countries, 170, y_baseline + 65 + (i * y_bibletars_box_spacing), 60, 30);
+
+        // wrong display
+        var wrong_x_spacing = 25;
+        for (let j = 0; j < my_game.questions_wrong[i]; j++) {
+            ctx.drawImage(img_wrong, 170 + (j * wrong_x_spacing), y_baseline + 35 + (i * y_bibletars_box_spacing), 20, 20);
+        }
     }
 
 
 
 
 }
+
+function kick_me_out_of_the_game () {
+    /** Once I get kicked out, I become a spectator in the game */
+    kicked_out = true;
+}
+
 
 function check_if_answer_is_correct(my_answer_html) {
     if (my_answer_html == correct_answer) {
@@ -767,6 +791,9 @@ function check_if_answer_is_correct(my_answer_html) {
          */
         question_I_got_wrong.push(question.innerText);
         my_game.questions_wrong[0] += 1;
+        if (my_game.questions_wrong[0] >= 5) {
+            kick_me_out_of_the_game();
+        }
 
     }
 }
@@ -793,6 +820,20 @@ function choose_Random_Question () {
 function questions_background() {
     ctx.fillStyle = 'rgb(186, 182, 182)';
     ctx.fillRect(0, 0, canvas.width, canvas.height)
+}
+
+function spectatorMode() {
+    questions_background();
+    question.innerText = ``;
+    answer1.innerText = ``;
+    answer2.innerText = ``;
+    answer3.innerText = ``;
+    answer4.innerText = ``;
+
+    ctx.font = "20px Arial"
+    ctx.fillStyle = 'rgb(244, 8, 8)';
+    ctx.fillText("You have been kicked out of the game, you are now a SPECTATOR", 100, 600);
+
 }
 
 function questions_Display() {
@@ -894,7 +935,11 @@ function drawGame() {
         loadingBox();
         myBibletar();
     } else if (home_page == 3) {
-        questions_Display();
+        if (kicked_out == true) {
+            spectatorMode();
+        } else {
+            questions_Display();
+        }
         draw_All_Players();
         display_Game_Time(60);
     } else if (home_page == 4) {
