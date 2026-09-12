@@ -40,6 +40,7 @@ that's one thing I like about HTML. As well as it's the core foundation to build
 var play_front_page_text = [];
 
 var my_name = "Unknown Player";
+var my_country = "America";
 var my_points = 0;
 var my_highscores = [0, 0, 0];
 var level = 1;
@@ -61,7 +62,7 @@ const friends = {
     bibletar: [],
     scroll_y: 0,
     online: ["Offline", "Offline", "Offline", "Offline", "Offline", "Offline", "Offline", "Offline", "Offline", "Offline", "Offline"],
-    countries: ["America", "America"]
+    countries: ["America", "America", "America", "America", "America", "America", "America", "America", "America", "America", "America", "America", "America"]
 };
 
 
@@ -139,6 +140,10 @@ var clock = new Image();
 clock.src = "./images/clock.svg"
 clock.alt = "clock"
 
+var img_countries = new Image();
+img_countries.src = "./images/country_America.svg"; // Sets default source url
+img_countries.alt = "country";
+
 
 form.addEventListener('submit', async (e) => {
     // don't let the form submit otherwise the page will reload
@@ -208,6 +213,7 @@ function randomRobotModes() {
 function prepare_the_game () {
     timer = 0;
     this_game_points = 0;
+    my_game.countries[0] = my_country;
     // resets it each game
     question_I_got_wrong = [];
     my_game.questions_wrong[0] = 0;
@@ -268,7 +274,7 @@ function save_Data_to_Local_or_Session_Storage() {
 }
 
 function localStorageAndSessionStorageData () {
-    /** I use this function to read out my local and Session Storage Data */
+    /** I use this function to read out my local and Session Storage Data, (get it) */
     const savedName = localStorage.getItem('my_name');
     const savedHighscores = JSON.parse(sessionStorage.getItem('my_highscores'));
     const savedPoints = JSON.parse(sessionStorage.getItem('my_points'));
@@ -276,6 +282,7 @@ function localStorageAndSessionStorageData () {
     const saved_acquired = JSON.parse(localStorage.getItem('acquired_stuff_closet'));
     const saved_not_acquired = JSON.parse(localStorage.getItem('not_acquired_stuff_closet'));
     const saved_cash = JSON.parse(localStorage.getItem('my_cash'));
+    const saved_country = localStorage.getItem('my_country');
 
     if (savedName) {
         my_name = savedName;
@@ -316,6 +323,12 @@ function localStorageAndSessionStorageData () {
 
     if (saved_cash) {
         my_cash = saved_cash;
+    } else {
+        // do nothing, has already been created and set to default
+    }
+
+    if (saved_country) {
+        my_country = saved_country;
     } else {
         // do nothing, has already been created and set to default
     }
@@ -377,17 +390,24 @@ function friendsBoard() {
         ctx.fillStyle = 'rgb(100, 102, 103)';
         ctx.fillRect(10, (i*120) + 95 + friends.scroll_y, 100, 90);
 
+        var online_y_baseline = -20;
         if (friends.online[i] == "Online" || friends.online[i] == "online") {
             ctx.fillStyle = 'rgb(78, 244, 97)'
         } else {
             ctx.fillStyle = 'rgb(244, 68, 68)'
         }
-        ctx.fillRect(120, (i*120) + 115 + friends.scroll_y, 100, 50)
+        ctx.fillRect(120, (i*120) + 115 + friends.scroll_y + online_y_baseline, 100, 50)
         
         // online or offline text display
         ctx.font = "18px Arial";
         ctx.fillStyle = 'rgb(0, 0, 0)';
-        ctx.fillText(friends.online[i], 140, (i*120) + 145 + friends.scroll_y);
+        ctx.fillText(friends.online[i], 140, (i*120) + 145 + friends.scroll_y + online_y_baseline);
+
+        // friends countries display
+        var friends_country_svg = "./images/country_" + friends.countries[i] + ".svg";
+        img_countries.src = friends_country_svg;
+        ctx.drawImage(img_countries, 120, (i*120) + 155 + friends.scroll_y, 60, 30);
+        // ctx.drawImage(img_countries, 130, 100, 100, 50);
 
     }
     

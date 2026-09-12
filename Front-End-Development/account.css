@@ -152,7 +152,7 @@ a:hover {
     padding: 10px;
     position: relative;
     border-radius: 0 20px 20px 0;
-    top: -120px;
+    top: 0px;
     left: 50%;
     translate: -20%;
     translate: -35vh;
