@@ -240,14 +240,13 @@ form input::placeholder {
 }
 
 
-#questions-i-got-wrong {
-    display: none;
-}
 .questions-wrong-rectangle {
+    display: none;
     top: 450px;
     left: 100px;
     background-color: aliceblue;
     overflow-x: hidden;
+    z-index: 1;
 }
 
 .questions-wrong-rectangle caption {
