@@ -535,21 +535,48 @@ function show_or_hide_html_elements () {
         document.getElementById('choice1').style.display = "flex";
         document.getElementById('choice2').style.display = "flex";
         document.getElementById('choice3').style.display = "flex";
+
         form.style.display = "none";
+        question.style.display = "none";
+        answer1.style.display = "none";
+        answer2.style.display = "none";
+        answer3.style.display = "none";
+        answer4.style.display = "none";
     } else if (home_page == 2) {
         document.getElementById('choice1').style.display = "none";
         document.getElementById('choice2').style.display = "none";
         document.getElementById('choice3').style.display = "none";
+        question.style.display = "none";
+        answer1.style.display = "none";
+        answer2.style.display = "none";
+        answer3.style.display = "none";
+        answer4.style.display = "none";
+
         form.style.display = "none";
     } else if (home_page == 3) {
         if (my_game.questions_wrong[0] > 5 || game_finished == true) {
             // only if I haven't gotten more than 5 questions wrong then allow me to keep submitting answers
             form.style.display = "none";
+            question.style.display = "none";
+            answer1.style.display = "none";
+            answer2.style.display = "none";
+            answer3.style.display = "none";
+            answer4.style.display = "none";
         } else {
             form.style.display = "block";
+            question.style.display = "block";
+            answer1.style.display = "block";
+            answer2.style.display = "block";
+            answer3.style.display = "block";
+            answer4.style.display = "block";
         }
     } else if (home_page == 4) {
         form.style.display = "none";
+        question.style.display = "none";
+        answer1.style.display = "none";
+        answer2.style.display = "none";
+        answer3.style.display = "none";
+        answer4.style.display = "none";
     }
 }
 
@@ -787,6 +814,19 @@ function kick_me_out_of_the_game () {
     kicked_out = true;
 }
 
+function broadcast_game_is_over (time_alloted_for_each_game) {
+    var game_time = (time_alloted_for_each_game - timer)
+
+    /** I'll have the game is over pop up */
+    ctx.font = "60px Arial"
+    ctx.fillStyle = 'rgb(244, 8, 8)';
+    ctx.fillText("Time's Up, Game Over!!", 100, 520);
+
+    if (game_time < -3) {
+        home_page = 4;
+    }
+}
+
 
 function check_if_answer_is_correct(my_answer_html) {
     if (my_answer_html == correct_answer) {
@@ -954,7 +994,7 @@ function drawGame() {
         } else {
             questions_Display();
             if (game_finished == true) {
-                broadcast_game_is_over();
+                broadcast_game_is_over(60);
             }
         }
         draw_All_Players();
