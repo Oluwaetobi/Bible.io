@@ -260,8 +260,6 @@ function loadingBox() {
 }
 
 function myBibletar () {
-    ctx.fillStyle = 'rgb(66, 66, 66)';
-    ctx.fillRect(50, 50, 300, 250);
 
     // WRITE Player Clicked's NAME
     ctx.font = "40px Arial";
@@ -272,7 +270,7 @@ function myBibletar () {
 
 
 
-    // console.log(my_bibletar_svg);
+    /** Have to recalculate the src link based off of my_bibletar_svg */
     img_background.src = "./images/background" + my_bibletar_svg[1] + ".svg";
     img_eyes.src = "./images/eyes" + my_bibletar_svg[6] + ".svg";
     img_noses.src = "./images/noses" + my_bibletar_svg[7] + ".svg";
@@ -487,16 +485,20 @@ function myBibletar () {
     /** drawing / x_pos / y_pos / size / type, reference lines 29-38 or if that changes reference 
      * function called item_chosen specifcally for closet_section NOT shop_section
      */
-    resizeImageByPixels_and_draw(img_background, 980, 100, 300, 1);
-    resizeImageByPixels_and_draw(img_face, 1067.5, 145, 175, 2);
-    resizeImageByPixels_and_draw(img_shirt, 1077, 300, 100, 3);
-    resizeImageByPixels_and_draw(img_eyes, 1115, 200, 20, 6);
-    resizeImageByPixels_and_draw(img_eyebrows, 1114, 187, 12, 7);
-    resizeImageByPixels_and_draw(img_mouths, 1139, 260, 17, 9);
-    resizeImageByPixels_and_draw(img_noses, 1153, 220, 30, 8);
-    resizeImageByPixels_and_draw(img_glasses, 1150, 230, 50, 4);
-    resizeImageByPixels_and_draw(img_hair, 1097, 135, 44, 10);
-    resizeImageByPixels_and_draw(img_hats, 1150, 140, 50, 5);
+
+    var shift_bibletar_x_over = -950;
+    var shift_bibletar_y_over = 0;
+
+    resizeImageByPixels_and_draw(img_background, 980 + shift_bibletar_x_over, 100 + shift_bibletar_y_over, 300, 1);
+    resizeImageByPixels_and_draw(img_face, 1067.5 + shift_bibletar_x_over, 145 + shift_bibletar_y_over, 175, 2);
+    resizeImageByPixels_and_draw(img_shirt, 1077 + shift_bibletar_x_over, 300 + shift_bibletar_y_over, 100, 3);
+    resizeImageByPixels_and_draw(img_eyes, 1115 + shift_bibletar_x_over, 200 + shift_bibletar_y_over, 20, 6);
+    resizeImageByPixels_and_draw(img_eyebrows, 1114 + shift_bibletar_x_over, 187 + shift_bibletar_y_over, 12, 7);
+    resizeImageByPixels_and_draw(img_mouths, 1139 + shift_bibletar_x_over, 260 + shift_bibletar_y_over, 17, 9);
+    resizeImageByPixels_and_draw(img_noses, 1153 + shift_bibletar_x_over, 220 + shift_bibletar_y_over, 30, 8);
+    resizeImageByPixels_and_draw(img_glasses, 1150 + shift_bibletar_x_over, 230 + shift_bibletar_y_over, 50, 4);
+    resizeImageByPixels_and_draw(img_hair, 1097 + shift_bibletar_x_over, 135 + shift_bibletar_y_over, 44, 10);
+    resizeImageByPixels_and_draw(img_hats, 1150 + shift_bibletar_x_over, 140 + shift_bibletar_y_over, 50, 5);
 
 }
 
