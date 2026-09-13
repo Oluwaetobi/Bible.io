@@ -152,6 +152,11 @@ it with something, like nothing!! Nothing can sometimes mean NaN, well at least 
 LOL Well at least until I can figure out a more effective way of doing it*/
 var changeAll = 500;
 
+/** I'm changing protocols here, my_bibletar_svg is used for other sections of Bible.io apart for
+ * in the shop, instead of keep tracking of three different variables outside of the shop such as
+ * acquired_stuff_closet and not_acquired_stuff_shop and old_bibletar
+ */
+var my_bibletar_svg = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
 var old_bibletar = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
 
 var img_background = new Image();
@@ -232,7 +237,6 @@ function wipeOutEntireScreen() {
     //     // bibletar_sub_section.innerText = '';
     // }
 }
-// save_Data_to_Local_or_Session_Storage();
 function save_Data_to_Local_or_Session_Storage() {
     localStorage.setItem('old_bibletar', JSON.stringify(old_bibletar));
     localStorage.setItem('acquired_stuff_closet', JSON.stringify(acquired_stuff_closet));
@@ -244,6 +248,9 @@ function save_Data_to_Local_or_Session_Storage() {
 function localStorageAndSessionStorageData () {
     /** I use this function to read out my local and Session Storage Data */
     const savedName = localStorage.getItem('my_name');
+    /**Important Note, saved_bibletar, saved_acuired, and saved_not_acquried are still USEFUL and NEEDED
+     * in the SHOP, just not outside of the shop
+     */
     const saved_bibletar = JSON.parse(localStorage.getItem('old_bibletar'));
     const saved_acquired = JSON.parse(localStorage.getItem('acquired_stuff_closet'));
     const saved_not_acquired = JSON.parse(localStorage.getItem('not_acquired_stuff_closet'));
@@ -280,6 +287,40 @@ function localStorageAndSessionStorageData () {
     } else {
         // do nothing, has already been created and set to default
     }
+}
+
+function update_bibletar_svg_numbers() {
+    /** I don't want to store 3 separate variables to keep track of anyone's or even my
+     * own bibletar make up OUTSIDE OF THE SHOP, NOTE, it is still important for me to
+     * keep track of these thre variables in the SHOP, but not outside of the SHOP,
+     *  it's way to stressful, when I can just do that with one variable.
+     * Before I used to keep track of acquired_stuff_closet and not_acquired_stuff_shop as
+     * well as old_bibletar in other sections of Bible.io when it is actually only needed in the
+     * shop, before I leave the shop, that should be saved locally that way I can just use one
+     * variable to know what the make up for the bibletar is
+     */
+
+    var combined_array_of_arrays = [];
+
+    for (let i = 0; i < 10; i++) {
+        combined_array_of_arrays.push(acquired_stuff_closet[i].concat(not_acquired_stuff_shop[i]));
+        // console.log(acquired_stuff_closet[i].concat(not_acquired_stuff_shop[i]));
+    }
+
+    for (let i = 0; i < 11; i++) {
+        if (i == 0) {
+            // tells me whether the player is a boy or girl
+            my_bibletar_svg[i] = old_bibletar[i];
+        } else {
+            // gives me the svg number files
+            my_bibletar_svg[i] = combined_array_of_arrays[i][old_bibletar[i]]
+
+        }
+    }
+
+    // once I update it, I must save it
+    localStorage.setItem('my_bibletar_svg', JSON.stringify(my_bibletar_svg));
+
 }
 
 function mouseDetections() {
@@ -1395,6 +1436,10 @@ function drawSomething() {
     // Mouse Detections
     mouseDetections();
     localStorageAndSessionStorageData();
+
+    if (bibletar_maker_page == 1) {
+        update_bibletar_svg_numbers();
+    }
 
     /**HIDE OR SHOW JAVASCRIPT ELEMENTS */
     if (bibletar_maker_page ==2) {
