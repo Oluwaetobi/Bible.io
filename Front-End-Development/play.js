@@ -979,6 +979,14 @@ function level_1_Questions () {
         answer4.innerText += `Deborah `;
         correct_answer = 4;
     }
+    if (randomQuestion == 4) {
+        question.innerText = `Who betrayed Jesus? `;
+        answer1.innerText += `Peter `;
+        answer2.innerText += `Judas `;
+        answer3.innerText += `John `;
+        answer4.innerText += `The Pharisees `;
+        correct_answer = 2;
+    }
 }
 
 function level_2_Questions () {
