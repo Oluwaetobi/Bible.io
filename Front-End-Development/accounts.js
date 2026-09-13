@@ -224,6 +224,22 @@ function show_my_country() {
      * from "South Korea" to "South_Korea"
      */
 
+    if (my_country == "South Africa") {
+        country_svg == "South_Africa"
+    }
+    if (my_country == "United Arab Emirates") {
+        country_svg == "United_Arab_Emirates"
+    }
+    if (my_country == "South Korea") {
+        country_svg == "South_Korea"
+    }
+    if (my_country == "United Kingdom") {
+        country_svg == "United_Kingdom"
+    }
+    if (my_country == "New Zealand") {
+        country_svg == "New_Zealand"
+    }
+
     // Don't touch this
     img_my_country.src = "./images/country_" + country_svg + ".svg";
     ctx.drawImage(img_my_country, 50, 400, 100, 50);
