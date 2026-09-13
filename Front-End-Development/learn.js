@@ -265,8 +265,6 @@ function drawGameAssets () {
 }
 
 function myBibletar () {
-    ctx.fillStyle = 'rgb(66, 66, 66)';
-    ctx.fillRect(1250, 455, 250, 200);
 
     // WRITE Player Clicked's NAME
     ctx.font = "30px Arial";
