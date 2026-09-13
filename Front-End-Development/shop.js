@@ -55,7 +55,23 @@ const shop_page_background_mens_or_womens = document.getElementById('shop_backgr
  * once I get my own reliable server I'll set the array for current_bibletar to the specific data
  * set within the user's account object
 */
+
+
+/**I call this the saved_bibletar_hack, because initially I had so many work arounds, there was a glitch
+ * where it only showed my saved bibletar after I left the shop and went back in again, instead of it 
+ * appearing on the first go. Now I call it the saved_bibletar_hack, because I fixed that glitch, it's
+ * only a problem here in the shop since I have two types, the current_bibletar and the old_bibletar, but
+ * it won't be a problem anywhere else since I just used old_bibletar in other places, the current_bibletar
+ * kind of helps me keep track of whether the player is just testing things out, but in case they don't want
+ * to save what they've done they can always revert to the old_bibletar
+ */
 var current_bibletar = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
+const saved_bibletar_hack = JSON.parse(localStorage.getItem('old_bibletar'));
+if(saved_bibletar_hack) {
+        current_bibletar = saved_bibletar_hack;
+    } else {
+        current_bibletar = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
+    }
 
 var test_array_of_arrays = [
     [1, 2, 3],
@@ -181,6 +197,7 @@ img_mouths.alt = "mouths image";
 var img_hair = new Image();
 img_hair.src = "./images/hair_men1.svg"; // Set source URL
 img_hair.alt = "hair image";
+
 
 /* Being able to copy and paste text by using HTML is super important, especially when the text is super long,
 that's one thing I like about HTML. As well as it's the core foundation to building websites. */
@@ -1202,7 +1219,7 @@ function boy_bibletar() {
      updateAllImageReferences();
 }
 
-function girl_bibletar() {
+function girl_bibletar() {    
     bibletar_maker_page = 2;
     i_am_a_girl = true;
      updateAllImageReferences();
