@@ -59,6 +59,9 @@ function getCreateNameFormErrors (username) {
     return errors;
 }
 
+var i_am_a_boy = true;
+var i_am_a_girl = false;
+
 const canvas = document.getElementById('myCanvas');
 const ctx = canvas.getContext('2d');
 const top_border = 90;
@@ -77,6 +80,11 @@ var my_highscores = [0, 0, 0];
 var my_cash = 0;
 var my_bibletar_svg = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
 
+
+
+var img_background = new Image();
+img_background.src = "./images/background1.svg"; // Set source URL
+img_background.alt = "background image";
 
 var img_my_country = new Image();
 img_my_country.src = "./images/country_america.svg"; // Set source URL
@@ -228,6 +236,17 @@ function localStorageAndSessionStorageData () {
     }
 }
 
+figure_out_whether_i_am_a_boy_or_a_girl();
+function figure_out_whether_i_am_a_boy_or_a_girl () {
+    if (my_bibletar_svg[0]  == 1) {
+        i_am_a_boy = true;
+        i_am_a_girl = false;
+    } else {
+        i_am_a_girl = true;
+        i_am_a_boy = false;
+    }
+}
+
 function loadingBox() {
     // looading box
     ctx.fillStyle = 'rgba(255, 26, 104, 1)';
@@ -253,10 +272,11 @@ function myBibletar () {
 
 
 
+    // console.log(my_bibletar_svg);
     img_background.src = "./images/background" + my_bibletar_svg[1] + ".svg";
     img_eyes.src = "./images/eyes" + my_bibletar_svg[6] + ".svg";
     img_noses.src = "./images/noses" + my_bibletar_svg[7] + ".svg";
-    if (my_bibletar_svg[0] == 1 ) {
+    if (i_am_a_boy == true) {
         /**You might be wondering why include face as well, because women's necks are in
          * fact visibily thinner, and men's necks are in fact visibly thicker, also
          * women sometimes put on makeup, which means their mouths = lips will be
@@ -271,7 +291,7 @@ function myBibletar () {
         img_mouths.src = "./images/mouths_men" + my_bibletar_svg[9] + ".svg";
         img_hair.src = "./images/hair_men" + my_bibletar_svg[10] + ".svg";
     } else {
-        if (my_bibletar_svg[0] == 2) {
+        if (i_am_a_girl == true) {
             img_face.src = "./images/face_women" + my_bibletar_svg[2] + ".svg";
             img_shirt.src = "./images/shirt_women" + my_bibletar_svg[3] + ".svg";
             img_glasses.src = "./images/glasses_women" + my_bibletar_svg[4] + ".svg";

@@ -320,7 +320,10 @@ function update_bibletar_svg_numbers() {
             my_bibletar_svg[i] = old_bibletar[i];
         } else {
             // gives me the svg number files
-            my_bibletar_svg[i] = combined_array_of_arrays[i-1][old_bibletar[i]]
+            /** There is supposed to be a minus 1 behind old_bibletar[i], the reason being, which
+             * I forgot, was because indexes start at 0, not 1, I always keep making that mistakes
+             */
+            my_bibletar_svg[i] = combined_array_of_arrays[i-1][old_bibletar[i] - 1]
 
         }
     }
