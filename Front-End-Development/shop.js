@@ -252,6 +252,7 @@ function localStorageAndSessionStorageData () {
      * in the SHOP, just not outside of the shop
      */
     const saved_bibletar = JSON.parse(localStorage.getItem('old_bibletar'));
+    const saved_bibletar_svg = JSON.parse(localStorage.getItem('my_bibletar_svg'));
     const saved_acquired = JSON.parse(localStorage.getItem('acquired_stuff_closet'));
     const saved_not_acquired = JSON.parse(localStorage.getItem('not_acquired_stuff_closet'));
     const saved_cash = JSON.parse(localStorage.getItem('my_cash'));
@@ -266,6 +267,12 @@ function localStorageAndSessionStorageData () {
 
     if(saved_bibletar) {
         old_bibletar = saved_bibletar;
+    } else {
+        // do nothing, has already been created to default
+    }
+
+    if(saved_bibletar_svg) {
+        my_bibletar_svg = saved_bibletar_svg;
     } else {
         // do nothing, has already been created to default
     }
