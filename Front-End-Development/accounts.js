@@ -87,7 +87,7 @@ img_background.src = "./images/background1.svg"; // Set source URL
 img_background.alt = "background image";
 
 var img_my_country = new Image();
-img_my_country.src = "./images/country_america.svg"; // Set source URL
+img_my_country.src = "./images/country_America.svg"; // Set source URL
 img_my_country.alt = "my country";
 
 var img_face = new Image();
