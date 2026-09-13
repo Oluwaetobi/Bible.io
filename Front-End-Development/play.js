@@ -1210,7 +1210,7 @@ function choose_Random_Question () {
 
     var amount_of_question_in_level_1 = 4;
     var amount_of_question_in_level_2 = 1;
-    var amount_of_question_in_level_3 = 2;
+    var amount_of_question_in_level_3 = 7;
 
 
     if (level == 1) {
@@ -1280,6 +1280,22 @@ function level_1_Questions () {
         answer4.innerText += `The Pharisees `;
         correct_answer = 2;
     }
+    if (randomQuestion == 5) {
+        question.innerText = `How many years old was Moses when he died? `;
+        answer1.innerText += `100 `;
+        answer2.innerText += `110 `;
+        answer3.innerText += `120 `;
+        answer4.innerText += `130 `;
+        correct_answer = 3;
+    }
+    if (randomQuestion == 6) {
+        question.innerText = `How many days did it take God to create the heavens and the earth? `;
+        answer1.innerText += `5 days `;
+        answer2.innerText += `6 days `;
+        answer3.innerText += `7 days `;
+        answer4.innerText += `8 days `;
+        correct_answer = 2;
+    }
 }
 
 function level_2_Questions () {
@@ -1291,6 +1307,22 @@ function level_2_Questions () {
         answer3.innerText += `King Saul `;
         answer4.innerText += `Lahmi `;
         correct_answer = 2;
+    }
+    if (randomQuestion == 2) {
+        question.innerText = `What was the name of the man who was an instructor of every craftsman in bronze and iron `;
+        answer1.innerText += `Ethan `;
+        answer2.innerText += `Jubal `;
+        answer3.innerText += `Tubal-Cain `;
+        answer4.innerText += `Seth `;
+        correct_answer = 3;
+    }
+    if (randomQuestion == 3) {
+        question.innerText = `In which land did God bury Moses when he died? `;
+        answer1.innerText += `Aram `;
+        answer2.innerText += `Kush `;
+        answer3.innerText += `Egypt `;
+        answer4.innerText += `Moab `;
+        correct_answer = 4;
     }
 }
 
@@ -1320,6 +1352,38 @@ function level_3_Questions () {
         answer2.innerText += `Isaiah 64:6 `;
         answer3.innerText += `Isaiah 10:11 `;
         answer4.innerText += `Jeremiah 9:2 `;
+        correct_answer = 2;
+    }
+    if (randomQuestion == 4) {
+        question.innerText = `Blessed is the man that walketh not in the counsel of the ungodly, nor standeth in the way of sinners, nor sitteth in the seat of the scornful.`;
+        answer1.innerText += `Proverbs 10:9 `;
+        answer2.innerText += `Psalms 10:11 `;
+        answer3.innerText += `Psalms 25:6 `;
+        answer4.innerText += `Psalms 1:1 `;
+        correct_answer = 4;
+    }
+    if (randomQuestion == 5) {
+        question.innerText = `More to be desired are they than gold, yea, than much fine gold: sweeter also than honey and the honeycomb.`;
+        answer1.innerText += `Psalms 19:10  `;
+        answer2.innerText += `Proverbs 30:29 `;
+        answer3.innerText += `Lamentations 3:2 `;
+        answer4.innerText += `Leviticus 5:8 `;
+        correct_answer = 1;
+    }
+    if (randomQuestion == 6) {
+        question.innerText = `We give thee thanks, O Lord God Almighty, which art, and wast, and art to come; because thou hast taken to thee thy great power, and hast reigned.`;
+        answer1.innerText += `Romans 9:1  `;
+        answer2.innerText += `Numbers 7:12 `;
+        answer3.innerText += `Revelation 11:17 `;
+        answer4.innerText += `Deuteronomy 3:7 `;
+        correct_answer = 1;
+    }
+    if (randomQuestion == 7) {
+        question.innerText = `For wrath killeth the foolish man, and envy slayeth the silly one.`;
+        answer1.innerText += `Ezekiel 6:9 `;
+        answer2.innerText += `Job 30:9 `;
+        answer3.innerText += `Job 6:40 `;
+        answer4.innerText += `Job 5:2 `;
         correct_answer = 4;
     }
     
