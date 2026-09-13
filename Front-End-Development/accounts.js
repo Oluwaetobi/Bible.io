@@ -284,6 +284,200 @@ function myBibletar () {
 
 
 
+    function resizeImageByPixels_and_draw (what_to_draw, x_pos_ribp, y_pos_ribp, pixel_size, type_of_drawing) {
+        /** be careful there is a different between "=" and "+=" using the other the wrong can be CATASTROPHIC
+         * for players, with the current code design, increase_width_by is the only thing that should
+         * use "=" and not "-=" or "+=" !!!
+         */
+        my_pixels_height = pixel_size;
+        var increase_width_by = 0;
+        /* specific drawing is based to get the number that goes between the type of drawing whether
+        background, hats, shirt, and etc and between the ".svg" so for instance hats_men3.svg or
+        background25.svg, I am getting the number based between the type of drawing and the ".svg" this
+        helps me access the actual drawing, not just based off of visible placement in the closet 
+        or in the shop, but the actual number of the svg which never changes  
+        */
+
+        /** It is important to note that the way specific_drawing in accounts.js and shop.js is
+         * exactly the same, it gets the correct svg number, but the detection method is different
+         * in shop.js it calls the function detect_specific_drawing(specific_drawing, type_of_drawing);
+         *  and goes through some complex math structure using different variables and searching through
+         * an array of arrays, but here, it's all made simple, with the creation of my_bibletar_svg which
+         * is based off of a complex math engine I designed in shop.js, I am easily able to detect the
+         * svg number and get the specific drawing.
+         * 
+         */
+        var specific_drawing = my_bibletar_svg[type_of_drawing];
+
+        // over here I resize the width based off of the given height
+        // background
+        if (type_of_drawing == 1) {
+            increase_width_by = 1.2;
+        }
+        //face
+        if (type_of_drawing == 2) {
+            increase_width_by = 1.1;
+        }
+        // shirt
+        if (type_of_drawing == 3) {
+            // default
+            increase_width_by = 1.7;
+
+            if (i_am_a_boy == true) {
+                if(specific_drawing > 14) {
+                    my_pixels_height += 0;
+                    x_pos_ribp -= 7;
+                    y_pos_ribp += 0;
+                    increase_width_by = 1.85
+                }
+            } else {
+                if (i_am_a_girl == true ) {
+
+                }
+            }
+        }
+        // glasses
+        if (type_of_drawing == 4) {
+            my_pixels_height -= 13;
+            x_pos_ribp -= 62;
+            y_pos_ribp -= 33;
+            increase_width_by = 4.2;
+        }
+        // hats
+       if (type_of_drawing == 5) {
+            increase_width_by += 2.0;
+            if (i_am_a_boy == true) {
+                if (specific_drawing > 0 && specific_drawing < 9) {
+                    // caps
+                    my_pixels_height += 11;
+                    x_pos_ribp -= 93;
+                    y_pos_ribp -= 10;
+                    increase_width_by = 3.0;
+                }
+            } else {
+                if (i_am_a_girl == true) {
+                    /** replace bibletar_hats with specific_drawing, I upgraded detection skills, this
+                     * variable is more accurate and yes, it knows whether it is for hats, glasses or 
+                     * shirt, and etc
+                     */
+                    if (specific_drawing > 1) {
+                        increase_width_by = 1.4;
+                    }
+                }
+            }
+        }
+        // eyes
+        if (type_of_drawing == 6) {
+            increase_width_by = 4.8;
+        }
+        // eyebrows
+        if (type_of_drawing == 7) {
+            increase_width_by = 8.3;
+        }
+        // noses
+        if (type_of_drawing == 8) {
+            /**sometimes need to add a default so that other coders are developers don't think the nose
+             * has disappeared or some of my other code isn't working
+             */
+            // default
+            increase_width_by = 0.5;
+            if (specific_drawing == 1 || specific_drawing == 2) {
+                increase_width_by = 0.5;
+            }
+            if (specific_drawing == 3) {
+                my_pixels_height += 3;
+                increase_width_by = 0.4;
+            }
+            if (specific_drawing == 4) {
+                my_pixels_height -= 18;
+                x_pos_ribp += 0;
+                y_pos_ribp += 10;
+                increase_width_by = 2.0;
+            }
+            if (specific_drawing == 6) {
+                my_pixels_height -= 4;
+                x_pos_ribp -= 5;
+                y_pos_ribp += 0;
+                increase_width_by = 1.0;
+            }
+            if (specific_drawing == 8) {
+                my_pixels_height += 0;
+                x_pos_ribp -= 3;
+                y_pos_ribp += 0;
+                increase_width_by = 1.0;
+            }
+            if (specific_drawing == 9) {
+                my_pixels_height -= 10;
+                x_pos_ribp -= 0;
+                y_pos_ribp += 7;
+                increase_width_by = 0.7;
+            }
+            if (specific_drawing == 10) {
+                my_pixels_height += 0;
+                x_pos_ribp += 0;
+                y_pos_ribp += 0;
+                increase_width_by = 0.44;
+            }
+            if (specific_drawing == 11 || specific_drawing == 12) {
+                my_pixels_height -= 15;
+                x_pos_ribp -= 0;
+                y_pos_ribp += 13;
+                increase_width_by = 1.7;
+            }
+        }
+        // mouths
+        if (type_of_drawing == 9) {
+            increase_width_by = 3.3;
+        }
+        // hair
+        if (type_of_drawing == 10) {
+            /* because depending on the type of hair especially girls hairs, resizing shapes will have to 
+            differ by a lot, it will be based off of 2 things, whether the player is male or female as well
+            as off of the variable bibletar_hair, it's not just resizing the width that needs to take
+            place but in some scenarios even the height as well,
+            as of the UPGRADE that took place on August 31, 2026, I will no longer be using the variable bibletar_hair, 
+            I will be using the variable specific_drawing */
+            if (i_am_a_boy == true) {
+                increase_width_by = 3.0;
+            } else {
+                if (i_am_a_girl == true) {
+                    if (specific_drawing >  0) {
+                        /* my_pixels_height to increase size and increase_width_by is for resizing
+                         the width of the image base off of the height *BE CAREFUL!!!!! */
+                        my_pixels_height += 81;
+                        x_pos_ribp -= 33;
+                        y_pos_ribp -= 20;
+                        increase_width_by = 1.6;
+                        // console.log("Bibletar Hair: " + bibletar_hair);
+                    }
+                }
+            }
+
+        }
+        /**careful not to confuse function parameters with variables, that's why I added
+         * the _ribp
+         */
+
+        my_pixels_width = (my_pixels_height*increase_width_by);
+        ctx.drawImage(what_to_draw, x_pos_ribp, y_pos_ribp, my_pixels_width, my_pixels_height);
+        /**Don't run the printMeOutSvgFileNumber function for to long, or else it will crash your computer
+         */
+        // printMeOutSvgFileNumber();
+    }
+    /** drawing / x_pos / y_pos / size / type, reference lines 29-38 or if that changes reference 
+     * function called item_chosen specifcally for closet_section NOT shop_section
+     */
+    resizeImageByPixels_and_draw(img_background, 980, 100, 300, 1);
+    resizeImageByPixels_and_draw(img_face, 1067.5, 145, 175, 2);
+    resizeImageByPixels_and_draw(img_shirt, 1077, 300, 100, 3);
+    resizeImageByPixels_and_draw(img_eyes, 1115, 200, 20, 6);
+    resizeImageByPixels_and_draw(img_eyebrows, 1114, 187, 12, 7);
+    resizeImageByPixels_and_draw(img_mouths, 1139, 260, 17, 9);
+    resizeImageByPixels_and_draw(img_noses, 1153, 220, 30, 8);
+    resizeImageByPixels_and_draw(img_glasses, 1150, 230, 50, 4);
+    resizeImageByPixels_and_draw(img_hair, 1097, 135, 44, 10);
+    resizeImageByPixels_and_draw(img_hats, 1150, 140, 50, 5);
+
 }
 
 function show_my_country() {
