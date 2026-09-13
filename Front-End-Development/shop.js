@@ -320,7 +320,7 @@ function update_bibletar_svg_numbers() {
             my_bibletar_svg[i] = old_bibletar[i];
         } else {
             // gives me the svg number files
-            my_bibletar_svg[i] = combined_array_of_arrays[i][old_bibletar[i]]
+            my_bibletar_svg[i] = combined_array_of_arrays[i-1][old_bibletar[i]]
 
         }
     }
