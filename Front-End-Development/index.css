@@ -98,6 +98,12 @@ header {
     /* Aligns the text to make it look central, includes header */
     text-align: center;
 }
+
+.quickfo-section #under-construction {
+    color:#9d0505;
+    font-weight: bold;
+}
+
 .quickfo-info{
     /*z-index moves forwards or backward however many layers you want depending on whether the number is
     positive or negative*/

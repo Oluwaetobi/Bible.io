@@ -134,6 +134,12 @@ header {
     /* I wanted to get the Bible.io Thumbnail on the side, but I'm really struggling with that */
 }
 
+.wrapper #under-construction {
+    color:#9d0505;
+    font-weight: bold;
+    text-align: center;
+}
+
 .wrapper h1{
     font-size: 3rem;
     font-weight: 900;
