@@ -82,6 +82,42 @@ var img_my_country = new Image();
 img_my_country.src = "./images/country_america.svg"; // Set source URL
 img_my_country.alt = "my country";
 
+var img_face = new Image();
+img_face.src = "./images/face_men1.svg"; // Set source URL
+img_face.alt = "face image";
+
+var img_shirt = new Image();
+img_shirt.src = "./images/shirt_men1.svg"; // Set source URL
+img_shirt.alt = "shirt image";
+
+var img_glasses = new Image();
+img_glasses.src = "./images/glasses_men1.svg"; // Set source URL
+img_glasses.alt = "glasses image";
+
+var img_hats = new Image();
+img_hats.src = "./images/hats_men1.svg"; // Set source URL
+img_hats.alt = "hats image";
+
+var img_eyes = new Image();
+img_eyes.src = "./images/eyes1.svg"; // Set source URL
+img_eyes.alt = "eyes image";
+
+var img_eyebrows = new Image();
+img_eyebrows.src = "./images/eyebrows_men1.svg"; // Set source URL
+img_eyebrows.alt = "eyebrows image";
+
+var img_noses = new Image();
+img_noses.src = "./images/noses1.svg"; // Set source URL
+img_noses.alt = "noses image";
+
+var img_mouths = new Image();
+img_mouths.src = "./images/mouths_men1.svg"; // Set source URL
+img_mouths.alt = "mouths image";
+
+var img_hair = new Image();
+img_hair.src = "./images/hair_men1.svg"; // Set source URL
+img_hair.alt = "hair image";
+
 function wipeOutEntireScreen() {
     ctx.clearRect(0,0, canvas.width, canvas.height);
     if (gameOn != false) {
@@ -211,9 +247,43 @@ function myBibletar () {
     // WRITE Player Clicked's NAME
     ctx.font = "40px Arial";
     ctx.strokeStyle = 'rgb(10, 9, 9)';
-    ctx.strokeText(my_name, 50, 350);
+    ctx.strokeText(my_name, 50, 490);
     ctx.fillStyle = 'rgb(8, 8, 8)';
-    ctx.fillText(my_name, 50, 350);
+    ctx.fillText(my_name, 50, 490);
+
+
+
+    img_background.src = "./images/background" + my_bibletar_svg[1] + ".svg";
+    img_eyes.src = "./images/eyes" + my_bibletar_svg[6] + ".svg";
+    img_noses.src = "./images/noses" + my_bibletar_svg[7] + ".svg";
+    if (my_bibletar_svg[0] == 1 ) {
+        /**You might be wondering why include face as well, because women's necks are in
+         * fact visibily thinner, and men's necks are in fact visibly thicker, also
+         * women sometimes put on makeup, which means their mouths = lips will be
+         * different colors, also there are also some other differences which i will leave
+         * up to the professionals
+         */
+        img_face.src = "./images/face_men" + my_bibletar_svg[2] + ".svg";
+        img_shirt.src = "./images/shirt_men" + my_bibletar_svg[3] + ".svg";
+        img_glasses.src = "./images/glasses_men" + my_bibletar_svg[4] + ".svg";
+        img_hats.src = "./images/hats_men" + my_bibletar_svg[5] + ".svg";
+        img_eyebrows.src = "./images/eyebrows_men" + my_bibletar_svg[7] + ".svg";
+        img_mouths.src = "./images/mouths_men" + my_bibletar_svg[9] + ".svg";
+        img_hair.src = "./images/hair_men" + my_bibletar_svg[10] + ".svg";
+    } else {
+        if (my_bibletar_svg[0] == 2) {
+            img_face.src = "./images/face_women" + my_bibletar_svg[2] + ".svg";
+            img_shirt.src = "./images/shirt_women" + my_bibletar_svg[3] + ".svg";
+            img_glasses.src = "./images/glasses_women" + my_bibletar_svg[4] + ".svg";
+            img_hats.src = "./images/hats_women" + my_bibletar_svg[5] + ".svg";
+            img_eyebrows.src = "./images/eyebrows_women" + my_bibletar_svg[7] + ".svg";
+            img_mouths.src = "./images/mouths_women" + my_bibletar_svg[9] + ".svg";
+            img_hair.src = "./images/hair_women" + my_bibletar_svg[10] + ".svg";
+        }
+    }
+
+
+
 }
 
 function show_my_country() {
@@ -242,7 +312,7 @@ function show_my_country() {
 
     // Don't touch this
     img_my_country.src = "./images/country_" + country_svg + ".svg";
-    ctx.drawImage(img_my_country, 50, 400, 100, 50);
+    ctx.drawImage(img_my_country, 50, 520, 100, 50);
 }
 
 
