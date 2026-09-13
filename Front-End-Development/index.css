@@ -104,6 +104,12 @@ header {
     font-weight: bold;
 }
 
+.quickfo-section #legacy-version {
+    font-size: medium;
+        /* right or left, down or up, blur radius, color, you can also add more than one shadow */
+    text-shadow: 2px 2px 20px rgb(243, 232, 18);
+}
+
 .quickfo-info{
     /*z-index moves forwards or backward however many layers you want depending on whether the number is
     positive or negative*/

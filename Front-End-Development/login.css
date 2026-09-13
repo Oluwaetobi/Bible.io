@@ -140,6 +140,12 @@ header {
     text-align: center;
 }
 
+.wrapper #legacy-version {
+    text-align: center;
+    /* right or left, down or up, blur radius, color, you can also add more than one shadow */
+    text-shadow: 2px 2px 20px rgb(243, 232, 18);
+}
+
 .wrapper h1{
     font-size: 3rem;
     font-weight: 900;
