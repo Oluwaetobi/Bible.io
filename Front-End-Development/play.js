@@ -200,6 +200,27 @@ function change_type_of_challenge(type_of_challenge_html) {
     type_of_challenge = type_of_challenge_html;
 }
 
+function update_Data_And_Continue_Game() {
+    // update my highscore for the level
+    if (this_game_points > my_highscores[level - 1]) {
+        // if I beat my highscore then don't forget to give me extra cash
+        my_highscores[level - 1] = this_game_points;
+        my_cash += 5;
+    } else {
+        my_cash += 1;
+    }
+
+    // updates my total points
+    my_points += this_game_points;
+
+    // save all data to local storage
+    save_Data_to_Local_or_Session_Storage();
+
+
+    // set home page back to main screen
+    home_page = 1;
+}
+
 function randomRobotModes() {
     if (level == 1) {
         robot_modes[0] = ((Math.floor(Math.random() * 5) + 1)/10);
@@ -546,6 +567,7 @@ function show_or_hide_html_elements () {
         answer4.style.display = "none";
 
         document.getElementById('questions-i-got-wrong').style.display = "none";
+        document.getElementById('continue-button').style.display = "none";
     } else if (home_page == 2) {
         document.getElementById('choice1').style.display = "none";
         document.getElementById('choice2').style.display = "none";
@@ -559,6 +581,7 @@ function show_or_hide_html_elements () {
         answer4.style.display = "none";
 
         document.getElementById('questions-i-got-wrong').style.display = "none";
+        document.getElementById('continue-button').style.display = "none";
 
     } else if (home_page == 3) {
         if (my_game.questions_wrong[0] > 5 || game_finished == true) {
@@ -579,6 +602,7 @@ function show_or_hide_html_elements () {
         }
 
         document.getElementById('questions-i-got-wrong').style.display = "none";
+        document.getElementById('continue-button').style.display = "none";
     } else if (home_page == 4) {
         form.style.display = "none";
         question.style.display = "none";
@@ -588,6 +612,7 @@ function show_or_hide_html_elements () {
         answer4.style.display = "none";
 
         document.getElementById('questions-i-got-wrong').style.display = "block";
+        document.getElementById('continue-button').style.display = "block";
     }
 }
 
@@ -698,12 +723,17 @@ function display_Game_Time (time_alloted_for_each_game) {
     
     var x_over = 0;
     if (game_time >= 0 && game_time < 10) {
-        x_over += 15;
+        x_over += 17;
     }
 
     // drop shadow behind timer
     ctx.fillStyle = 'rgb(0, 0, 0)';
-    ctx.fillText(game_time, (x_baseline - 3) + x_over, (y_baseline + 3));
+    if (game_time >= 0) {
+        ctx.fillText(game_time, (x_baseline - 3) + x_over, (y_baseline + 3));
+    } else {
+        /* there's no point of displaying negative times, just let it be zero, negative numbers should be hidden */
+        ctx.fillText(0, (x_baseline - 3) + x_over, (y_baseline + 3));
+    }
 
     if (game_time > 20) {
         ctx.fillStyle = 'rgb(7, 239, 11)';
@@ -716,7 +746,13 @@ function display_Game_Time (time_alloted_for_each_game) {
     }
     /* real time color, based off of how much time is left, starts green, then
      yellow, orange, then red */
-    ctx.fillText(game_time, x_baseline + x_over, y_baseline + 3);
+
+    if (game_time >= 0) {
+        ctx.fillText(game_time, x_baseline + x_over, y_baseline + 3);
+    } else {
+        /* there's no point of displaying negative times, just let it be zero, negative numbers should be hidden */
+        ctx.fillText(0, x_baseline + x_over, y_baseline + 3);
+    }
 
 }
 
@@ -736,10 +772,19 @@ function draw_game_grid () {
     }
 }
 
+function draw_beat_highscore_bar (start_x, move_x) {
+    var size_of_bar = 6;
+
+    ctx.fillStyle = 'rgb(119, 255, 0)';
+    ctx.fillRect(start_x + move_x, 0, size_of_bar, 450);
+}
+
 function draw_points_as_bar_graph(y_bibletars_box_spacing, y_baseline) {
     my_game.everyones_points[0] = this_game_points;
     var bar_speed_x = 200;
     var bar_x_starting_point = 340;
+
+    draw_beat_highscore_bar( bar_x_starting_point , ((my_highscores[level - 1] * bar_speed_x) / x_bar_divider));
 
     for (let i = 0; i < my_game.online; i++) {
         var each_players_points = Math.round(my_game.everyones_points[i]);
@@ -764,6 +809,9 @@ function draw_points_as_bar_graph(y_bibletars_box_spacing, y_baseline) {
         /* moving the numbers back based off of it's length, or else, the end of the
          number will slide off the bar graph (lengthOfPointsNum) */
         ctx.fillText(each_players_points, (bar_x_starting_point -10) + (-1 * (lengthOfPointsNum * 30)) + ((each_players_points * bar_speed_x) / x_bar_divider), y_baseline + 55 + (i * y_bibletars_box_spacing));
+        ctx.fillStyle = 'rgb(255, 255, 255)';
+        ctx.fillText(each_players_points, (bar_x_starting_point -10) + (-1 * (lengthOfPointsNum * 30)) + ((each_players_points * bar_speed_x) / x_bar_divider) + 3, y_baseline + 55 + (i * y_bibletars_box_spacing) -1);
+
 
         var size_of_bar = ((each_players_points * bar_speed_x) / x_bar_divider);
         if (size_of_bar > 800) {
@@ -874,7 +922,7 @@ function check_if_answer_is_correct(my_answer_html) {
         question_I_got_wrong.push(question.innerText);
         questions_wrong_text.innerText += (question_I_got_wrong.length + ". " + question.innerText);
         // I'm trying to get it to go onto a new line, but it's not working
-        questions_wrong_text.innerText += "  -  \n"
+        questions_wrong_text.innerText += "  -  \n";
         my_game.questions_wrong[0] += 1;
         if (my_game.questions_wrong[0] >= 5) {
             kick_me_out_of_the_game();

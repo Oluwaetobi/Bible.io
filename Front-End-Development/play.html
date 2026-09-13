@@ -72,10 +72,13 @@
         <!-- Questions I got wrong display -->
          <div class="questions-wrong-rectangle" id="questions-i-got-wrong">
             <caption>Questions You Got Wrong: </caption>
-            <pre id="wrong-text"></pre>
+            <p id="wrong-text"></p>
          </div>
         
 
+         <div class="end-of-game-continue-button" id="continue-button">
+            <button onclick="update_Data_And_Continue_Game()">Continue</button>
+         </div>
 
         <!-- It's important to note that that javascript should run after the canvas loads otherwise
          there will be an error -->
