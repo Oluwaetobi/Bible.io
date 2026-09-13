@@ -51,6 +51,9 @@ that's one thing I like about HTML. As well as it's the core foundation to build
 var show_or_hide_text = [];
 var learn_page = 1;
 
+var timer = 0;
+var different_second = 0;
+
 var my_points = 0;
 var my_cash = 0;
 var my_bibletar_svg = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
@@ -262,6 +265,28 @@ function drawGameAssets () {
         }
     }
     resizeGameAssets(img_sunday_school_teacher, 950, 150, 200, 350, 1);
+}
+
+function start_timer() {
+    const date = new Date();
+    const hours = date.getHours();
+    const minutes = date.getMinutes();
+    const seconds = date.getSeconds();
+    // console.log(seconds);
+    if (seconds != different_second) {
+        different_second = seconds;
+        timer += 1;
+
+        if (seconds == 0 || seconds == 20 || seconds == 40) {
+            /**Every twenty seconds you get 1 point for learning, and anytime I change data, I need
+             * to save it
+             */
+            my_points += 1;
+            save_Data_to_Local_or_Session_Storage();
+        }
+
+    }
+
 }
 
 function myBibletar () {
