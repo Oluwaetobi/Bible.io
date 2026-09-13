@@ -1180,24 +1180,6 @@ function check_if_answer_is_correct(my_answer_html) {
     }
 }
 
-function choose_Random_Question () {
-    /** Choose a random question from our database */
-
-    // Return a random integer between 1 and 10 (both included): Math.floor(Math.random() * 10) + 1;
-
-    var amount_of_question_in_level_1 = 2;
-    var amount_of_question_in_level_2 = 1;
-    var amount_of_question_in_level_3 = 1;
-
-
-    if (level == 1) {
-        randomQuestion = Math.floor(Math.random() * amount_of_question_in_level_1) + 1;
-    } else if (level == 2) {
-        randomQuestion = Math.floor(Math.random() * amount_of_question_in_level_2) + 1;
-    } else if (level == 3) {
-        randomQuestion = Math.floor(Math.random() * amount_of_question_in_level_3) + 1;
-    }
-}
 
 function questions_background() {
     ctx.fillStyle = 'rgb(72, 99, 108)';
@@ -1211,14 +1193,33 @@ function spectatorMode() {
     answer2.innerText = ``;
     answer3.innerText = ``;
     answer4.innerText = ``;
-
-
-
+    
+    
+    
     ctx.font = "30px Arial"
     ctx.fillStyle = 'rgb(244, 8, 8)';
     ctx.fillText("You got 5 question WRONG!", 100, 550);
     ctx.fillText("You have been kicked out of the game, you are now a SPECTATOR", 100, 600);
+    
+}
 
+function choose_Random_Question () {
+    /** Choose a random question from our database */
+
+    // Return a random integer between 1 and 10 (both included): Math.floor(Math.random() * 10) + 1;
+
+    var amount_of_question_in_level_1 = 4;
+    var amount_of_question_in_level_2 = 1;
+    var amount_of_question_in_level_3 = 2;
+
+
+    if (level == 1) {
+        randomQuestion = Math.floor(Math.random() * amount_of_question_in_level_1) + 1;
+    } else if (level == 2) {
+        randomQuestion = Math.floor(Math.random() * amount_of_question_in_level_2) + 1;
+    } else if (level == 3) {
+        randomQuestion = Math.floor(Math.random() * amount_of_question_in_level_3) + 1;
+    }
 }
 
 function questions_Display() {
@@ -1300,10 +1301,26 @@ function level_3_Questions () {
     if (randomQuestion == 1) {
         question.innerText = `“For, brethren, ye have been called unto liberty; only use not liberty for an occasion to the flesh, but by love serve one another.” `;
         answer1.innerText += `John 3:16 `;
-        answer2.innerText += `Galtians 5:13 `;
+        answer2.innerText += `Galatians 5:13 `;
         answer3.innerText += `Romans 5:4 `;
         answer4.innerText += `Romans 11:9 `;
         correct_answer = 2;
+    }
+    if (randomQuestion == 2) {
+        question.innerText = `Let your light so shine before men, that they may see your good works, and glorify your Father which is in heaven.`;
+        answer1.innerText += `Mark 8:3 `;
+        answer2.innerText += `Mark 16:4 `;
+        answer3.innerText += `Mark 6:9 `;
+        answer4.innerText += `Matthew 5:16 `;
+        correct_answer = 4;
+    }
+    if (randomQuestion == 3) {
+        question.innerText = `But we are all as an unclean thing, and all our righteousnesses are as filthy rags; and we all do fade as a leaf; and our iniquities, like the wind, have taken us away.`;
+        answer1.innerText += `Jeremiah 25:11 `;
+        answer2.innerText += `Isaiah 64:6 `;
+        answer3.innerText += `Isaiah 10:11 `;
+        answer4.innerText += `Jeremiah 9:2 `;
+        correct_answer = 4;
     }
     
 }
