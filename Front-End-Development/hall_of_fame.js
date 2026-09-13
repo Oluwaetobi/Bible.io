@@ -41,6 +41,52 @@ that's one thing I like about HTML. As well as it's the core foundation to build
 var play_front_page_text = [];
 
 
+var img_background = new Image();
+img_background.src = "./images/background1.svg"; // Set source URL
+img_background.alt = "background image";
+
+var img_my_country = new Image();
+img_my_country.src = "./images/country_america.svg"; // Set source URL
+img_my_country.alt = "my country";
+
+var img_face = new Image();
+img_face.src = "./images/face_men1.svg"; // Set source URL
+img_face.alt = "face image";
+
+var img_shirt = new Image();
+img_shirt.src = "./images/shirt_men1.svg"; // Set source URL
+img_shirt.alt = "shirt image";
+
+var img_glasses = new Image();
+img_glasses.src = "./images/glasses_men1.svg"; // Set source URL
+img_glasses.alt = "glasses image";
+
+var img_hats = new Image();
+img_hats.src = "./images/hats_men1.svg"; // Set source URL
+img_hats.alt = "hats image";
+
+var img_eyes = new Image();
+img_eyes.src = "./images/eyes1.svg"; // Set source URL
+img_eyes.alt = "eyes image";
+
+var img_eyebrows = new Image();
+img_eyebrows.src = "./images/eyebrows_men1.svg"; // Set source URL
+img_eyebrows.alt = "eyebrows image";
+
+var img_noses = new Image();
+img_noses.src = "./images/noses1.svg"; // Set source URL
+img_noses.alt = "noses image";
+
+var img_mouths = new Image();
+img_mouths.src = "./images/mouths_men1.svg"; // Set source URL
+img_mouths.alt = "mouths image";
+
+var img_hair = new Image();
+img_hair.src = "./images/hair_men1.svg"; // Set source URL
+img_hair.alt = "hair image";
+
+
+
 function wipeOutEntireScreen() {
     ctx.clearRect(0,0, canvas.width, canvas.height);
     if (gameOn != false) {

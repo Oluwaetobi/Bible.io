@@ -402,7 +402,7 @@ table takes up the full width of it's parent the scrollable table */
     /* background-color: #7f2e2e; */
     scroll-snap-type: y mandatory;
     position: fixed;
-    left: 100px;
+    left: 50px;
     /* translate: -50%; */
     z-index: 1;
     top: 150px;
