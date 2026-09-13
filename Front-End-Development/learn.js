@@ -547,6 +547,7 @@ function drawGame() {
     takeCareOfText();
     drawGameAssets();
     myBibletar();
+    start_timer();
 
 }
 

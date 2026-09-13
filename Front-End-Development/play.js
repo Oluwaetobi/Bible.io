@@ -963,8 +963,8 @@ function display_Game_Time (time_alloted_for_each_game) {
     var y_baseline = 100;
 
     // clock background also edge of the game screen
-    ctx.fillStyle = 'rgb(6, 134, 119)';
-    ctx.fillRect(x_baseline - 50, 0, 400, 460);
+    ctx.fillStyle = 'rgb(247, 250, 250)';
+    ctx.fillRect(x_baseline - 50, 0, 400, 450);
     
     ctx.drawImage(clock, x_baseline - 25, y_baseline -75, 115, 115);
 
@@ -1200,7 +1200,7 @@ function choose_Random_Question () {
 }
 
 function questions_background() {
-    ctx.fillStyle = 'rgb(186, 182, 182)';
+    ctx.fillStyle = 'rgb(72, 99, 108)';
     ctx.fillRect(0, 0, canvas.width, canvas.height)
 }
 

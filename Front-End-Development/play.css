@@ -185,6 +185,11 @@ a:hover {
     top: 530px;
     left: 50px;
     max-width: 1000px;
+    color:#f8f8f8;
+    font-size: large;
+
+    /* right or left, down or up, blur radius, color, you can also add more than one shadow */
+    text-shadow: 2px 2px 2px rgb(6, 6, 6);
 }
 
 .side-to-side {
