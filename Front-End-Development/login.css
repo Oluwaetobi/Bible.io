@@ -12,7 +12,12 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: rgb(215, 215, 215);
+    /* background-color: rgb(215, 215, 215); */
+    background-image: url(./images/cool_christian_games.png);
+    background-size:cover;
+    background-size: 80rem;
+    background-position-y: 5rem;
+
     scroll-behavior: smooth;
     /* align-items: center; */
 }
@@ -109,20 +114,19 @@ header {
 
 .wrapper {
     box-sizing: border-box;
+    border-radius: 30px 30px 30px 30px;
     background-color: var(--base-color);
     width: max(40%, 600px);
     padding: 10px;
     position: static;
-    border-radius: 0 20px 20px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     place-self: center;
 
+    background-color: rgba(252, 251, 251, 0.9);
 
-
-    /* I wanted to get the Bible.io Thumbnail on the side, but I'm really struggling with that */
 }
 
 .wrapper #under-construction {
