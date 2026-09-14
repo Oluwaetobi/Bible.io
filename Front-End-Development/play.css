@@ -120,10 +120,24 @@ header {
 .head-right a{
     text-decoration: none;
     /* padding-left was originally 25px but I want to increase it to space out the text more */
-    padding-left: 80px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     color: white;
     /* font-size was originally 15px but I might increase it */
     font-size: 30px;
+}
+
+.head-right a:hover {
+    /* Make the rounded box appear behind */
+    box-sizing: border-box;
+    border-radius: 30px 30px 30px 30px;
+    border-inline-width: 60px;
+    border-color: #776fac;
+    width: max(60%, 20px);
+    background-color: #776fac;
+    background-position-x: 50px;
 }
 
 .hall-of-fame-middle {
