@@ -23,19 +23,20 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: relative;
+    position: static;
+    overflow-x: hidden;
 }
 
 header {
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
+    position: static;
+    width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
     padding: 10px 40px;
-    z-index: 999;
+    z-index: 2;
     background-color: rgb(46, 46, 80);
     backdrop-filter: blur(10px);
 }
@@ -85,15 +86,11 @@ header {
 
 
 .quickfo-section {
-    position:relative;
+    position: static;
     top: 90px;
     /* Gets my words in the middle at the origin */
     /* Aligns items in the middle, does not include header */
     align-items: center;
-    /* left: 50%; */
-    /* translate: -3%; */
-    /* overflow hidden makes sure the website isn't scrollable */
-    /* overflow: hidden; */
     font-size: 20px;
     /* Aligns the text to make it look central, includes header */
     text-align: center;
@@ -102,7 +99,7 @@ header {
     /*z-index moves forwards or backward however many layers you want depending on whether the number is
     positive or negative*/
     z-index: 1;
-    position: absolute;
+    position: static;
     top: 30px;
     left: 60px;
     right: 60px;
@@ -113,21 +110,15 @@ header {
 .wrapper {
     box-sizing: border-box;
     background-color: var(--base-color);
-    height:100vh;
     width: max(40%, 600px);
     padding: 10px;
-    position: relative;
+    position: static;
     border-radius: 0 20px 20px 0;
-    top: 0px;
-    left: 50%;
-    translate: -20%;
-    translate: -35vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* overflow hidden makes sure the website isn't scrollable */
-    /* overflow: hidden; */
+    place-self: center;
 
 
 
@@ -263,7 +254,7 @@ to the parent assuming the parent is position relative */
 
 /* SLIDING LOGOS */
 .sliding-logos {
-    overflow:hidden;
+    overflow: hidden;
     padding: 10px 0;
     background: rgb(215, 0, 0);
     white-space: nowrap; 

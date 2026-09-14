@@ -147,8 +147,6 @@ header {
     /* The last number, which is the fourth number helps makes the background color
     transparent */
     background-color: rgba(252, 251, 251, 0.9);
-    /* overflow hidden makes sure the website isn't scrollable */
-    /* overflow: hidden; */
 
 
 
@@ -280,9 +278,9 @@ to the parent assuming the parent is position relative */
 }
 
 /* if mouse is hovering over it, it will stop */
-.sliding-logos:hover .sliding-logos__track {
+/* .sliding-logos:hover .sliding-logos__track {
     animation-play-state: paused;
-}
+} */
 
 .sliding-logos__track {
     display: inline-block;

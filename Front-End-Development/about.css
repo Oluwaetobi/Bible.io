@@ -12,7 +12,12 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: rgb(215, 215, 215);
+    /* background-color: rgb(215, 215, 215); */
+    background-image: url(./images/bibleio_nostalgia.png);
+    background-size:cover;
+    background-size: 80rem;
+    background-position-y: 5rem;
+    
     scroll-behavior: smooth;
     /* align-items: center; */
 }
@@ -27,6 +32,7 @@ body {
   /* gap: 2rem; */
   /* padding: 1rem; */
   overflow-x: hidden;
+  background-color: rgba(252, 251, 251, 0.95);
 }
 
 .container div p {
