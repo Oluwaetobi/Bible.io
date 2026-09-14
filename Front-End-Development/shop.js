@@ -329,6 +329,7 @@ function update_bibletar_svg_numbers() {
     }
 
     // once I update it, I must save it
+    // console.log(my_bibletar_svg[8]);
     localStorage.setItem('my_bibletar_svg', JSON.stringify(my_bibletar_svg));
 
 }

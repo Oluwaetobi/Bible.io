@@ -140,7 +140,7 @@ function playerClickedBibletar () {
     /** Have to recalculate the src link based off of hall_of_fame_bibletar_svg */
     img_background.src = "./images/background" + hall_of_fame_bibletar_svg[1] + ".svg";
     img_eyes.src = "./images/eyes" + hall_of_fame_bibletar_svg[6] + ".svg";
-    img_noses.src = "./images/noses" + hall_of_fame_bibletar_svg[7] + ".svg";
+    img_noses.src = "./images/noses" + hall_of_fame_bibletar_svg[8] + ".svg";
     if (hall_of_fame_clicked_is_a_boy == true) {
         /**You might be wondering why include face as well, because women's necks are in
          * fact visibily thinner, and men's necks are in fact visibly thicker, also
