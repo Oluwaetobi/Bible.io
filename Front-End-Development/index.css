@@ -95,6 +95,9 @@ header {
 
 
 .quickfo-section {
+    box-sizing: border-box;
+    border-radius: 30px 30px 30px 30px;
+    width: max(60%, 600px);
     position: static;
     /* Gets my words in the middle at the origin */
     /* Aligns items in the middle, does not include header */
@@ -102,6 +105,10 @@ header {
     font-size: 20px;
     /* Aligns the text to make it look central, includes header */
     text-align: center;
+    justify-content: center;
+    place-self: center;
+
+    background-color: rgba(252, 251, 251, 0.9);
 }
 
 .quickfo-section #under-construction {
