@@ -141,6 +141,9 @@ header {
 
     background-color: rgba(252, 251, 251, 0.9);
 
+    /* Pushes stuff at the bottom of the wrapper dive 40 pixels down */
+    margin-bottom: 40px;
+
 }
 
 .wrapper #under-construction {
