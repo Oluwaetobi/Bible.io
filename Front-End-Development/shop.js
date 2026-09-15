@@ -579,6 +579,7 @@ function updateShopSection (shop_section_html) {
     shop_section = shop_section_html
 
     const images = document.querySelectorAll('#choose_shop_stuff img');
+    const costs_display = document.querySelectorAll('#costs_of_items td');
 
     var newSources = [];
     /*NO 's' after men!!!! Also it is just background, eyes, noses, and mouths that don't differ that
@@ -635,6 +636,17 @@ function updateShopSection (shop_section_html) {
             // console.log("newSources[index]: " +  newSources[index]);
         }
     });
+
+    costs_display.forEach((td, index)=> {
+        if(!(index % 2 == 0)) {
+            /** index divided by 2, since it's every second td cell, the first cell is for 
+             * the image display, the second cell is for the cost display
+             * and Math.ceil because index should be a whole number, and it should always
+             * be rounded up
+             */
+            td.textContent = "Cost: $" + ((cost_of_item_html * Math.ceil(index/2)) + (acquired_stuff_closet[shop_section - 1].length * 10));
+        }
+    })
 }
 
 /**This function is an outliar, it should actually be in item_Chosen, but because the 
@@ -644,8 +656,12 @@ function updateShopSection (shop_section_html) {
 function eyebrows_Chosen(extra_clicked_html) {
     bibletar_eyebrows = extra_clicked_html;
 }
-
-function item_Purchased(item_bought_html, cost_of_item_html) {
+/**Instead of individually placing it everytime, I can have it here, so I can change the cost
+ * increment for an item anytime I want, the cost_of_item_html, represents the increment
+ * cost for each new item
+ */
+var cost_of_item_html = 10;
+function item_Purchased(item_bought_html) {
     i_have_enough_money = false;
     cost_of_item = 0;
     // item_clicked = (item_clicked_html + (acquired_stuff_closet[shop_section - 1].length - 3));
