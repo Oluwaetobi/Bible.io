@@ -664,7 +664,7 @@ function item_Purchased(item_bought_html, cost_of_item_html) {
         // Get the index_spliced
         index_spliced = (item_clicked - (acquired_stuff_closet[shop_section - 1].length));
         // Get the svg number of the image file that was spliced
-        svg_of_index_spliced = acquired_stuff_closet[shop_section - 1][index_spliced - 1];
+        svg_of_index_spliced = not_acquired_stuff_shop[shop_section - 1][index_spliced - 1];
         // remove it from the shop because it has been bought
         not_acquired_stuff_shop[shop_section - 1].splice((index_spliced - 1), 1);
         // add it to my closet
@@ -676,19 +676,32 @@ function item_Purchased(item_bought_html, cost_of_item_html) {
         alert("Sorry, this item costs: $" + cost_of_item + " and you don't have enough cash to purchase it!! Please try again later");
     }
 
-    /** Sets bibletar part to correct item_clicked so that it can be displayed properly on the canvas */
-    if (shop_section == 1) {
-        bibletar_background = item_clicked;
+    /**Because the item no longer exists in the shop, and now exists in the closet, I have
+     * to get it to display the last item that was bought from your closet, the one you bought
+     * and since it is always pushed to the end of the array, it will be at the end of the array
+     */
+    if (i_have_enough_money == true) {
+        item_clicked = acquired_stuff_closet[shop_section - 1][(acquired_stuff_closet[shop_section - 1].length)]
+    
+        /** Sets bibletar part to correct item_clicked so that it can be displayed properly on the canvas */
+        if (shop_section == 1) {
+            bibletar_background = item_clicked;
+        }
+        if (shop_section == 3) {
+            bibletar_shirt = item_clicked;
+        }
+        if (shop_section == 4) {
+            bibletar_glasses = item_clicked;
+        }
+        if (shop_section == 5) {
+            bibletar_hats = item_clicked;
+        }
     }
-    if (shop_section == 3) {
-        bibletar_shirt = item_clicked;
-    }
-    if (shop_section == 4) {
-        bibletar_glasses = item_clicked;
-    }
-    if (shop_section == 5) {
-        bibletar_hats = item_clicked;
-    }
+
+    /** Must update all image references, or it will still show the same image in the same place
+     * even after they are bought
+     */
+    updateAllImageReferences();
 }
 
 function item_Chosen(item_clicked_html) {
