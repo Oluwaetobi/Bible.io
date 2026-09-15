@@ -142,6 +142,7 @@ function save_Data_to_Local_or_Session_Storage() {
     localStorage.setItem('my_cash', JSON.stringify(my_cash));
 }
 
+localStorageAndSessionStorageData();
 function localStorageAndSessionStorageData () {
     /** I use this function to read out my local and Session Storage Data */
     const savedName = localStorage.getItem('my_name');
@@ -801,7 +802,6 @@ function resizeCanvas() {
 function gameLoop() {
     /**Wiping the entire screen clear is important before drawing your next batch */
     wipeOutEntireScreen();
-    localStorageAndSessionStorageData();
     drawGame();
     /** All that requestAnimationFrame does it create a forever loop that can help me make
      * games or animations also, you can't control the fps it specifically hooked to match your

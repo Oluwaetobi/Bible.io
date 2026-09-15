@@ -324,6 +324,7 @@ function save_Data_to_Local_or_Session_Storage() {
     localStorage.setItem('my_cash', JSON.stringify(my_cash));
 }
 
+localStorageAndSessionStorageData();
 function localStorageAndSessionStorageData () {
     /** I use this function to read out my local and Session Storage Data, (get it) */
     const savedName = localStorage.getItem('my_name');
@@ -1393,7 +1394,6 @@ function drawGame() {
 
     
     draw_Background();
-    localStorageAndSessionStorageData();
 
     if (home_page == 1) {
         titleText();

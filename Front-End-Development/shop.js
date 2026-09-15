@@ -247,6 +247,7 @@ function save_Data_to_Local_or_Session_Storage() {
 
 }
 
+localStorageAndSessionStorageData();
 function localStorageAndSessionStorageData () {
     /** I use this function to read out my local and Session Storage Data */
     const savedName = localStorage.getItem('my_name');
@@ -1510,7 +1511,6 @@ function drawSomething() {
 
     // Mouse Detections
     mouseDetections();
-    localStorageAndSessionStorageData();
 
     if (bibletar_maker_page == 1) {
         update_bibletar_svg_numbers();

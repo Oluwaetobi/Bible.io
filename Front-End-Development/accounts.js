@@ -189,6 +189,7 @@ console.log(savedUser.name); // Outputs: "Alice"
      */
 }
 
+localStorageAndSessionStorageData();
 function localStorageAndSessionStorageData () {
     /** I use this function to read out my local and Session Storage Data */
     const savedName = localStorage.getItem('my_name');
@@ -537,7 +538,6 @@ function drawGame() {
     ctx.fillStyle = 'rgb(189, 189, 190)';
     ctx.fillRect(0, 0, canvas.width, canvas.height);
     
-    localStorageAndSessionStorageData();
     loadingBox();
     myBibletar();
     show_my_country();
