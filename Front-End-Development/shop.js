@@ -701,10 +701,16 @@ function item_Purchased(item_bought_html, cost_of_item_html) {
         }
     }
 
-    /** Must update all image references, or it will still show the same image in the same place
+    /** Must update all image references, but not everything, just the specific section we are looking
+     * at, that way instead of displaying shirts still it doesn't start displaying background
+     * and make that switch when I didn't want it to switch or press on the switch
+     * , or it will still show the same image in the same place
      * even after they are bought
+    * updateAllImageReferences();
      */
-    updateAllImageReferences();
+    updateClosetSection(closet_section);
+    updateShopSection(shop_section);
+
 }
 
 function item_Chosen(item_clicked_html) {
