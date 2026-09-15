@@ -675,6 +675,20 @@ function item_Purchased(item_bought_html, cost_of_item_html) {
     } else {
         alert("Sorry, this item costs: $" + cost_of_item + " and you don't have enough cash to purchase it!! Please try again later");
     }
+
+    /** Sets bibletar part to correct item_clicked so that it can be displayed properly on the canvas */
+    if (shop_section == 1) {
+        bibletar_background = item_clicked;
+    }
+    if (shop_section == 3) {
+        bibletar_shirt = item_clicked;
+    }
+    if (shop_section == 4) {
+        bibletar_glasses = item_clicked;
+    }
+    if (shop_section == 5) {
+        bibletar_hats = item_clicked;
+    }
 }
 
 function item_Chosen(item_clicked_html) {
