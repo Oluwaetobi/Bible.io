@@ -45,6 +45,7 @@ var gameOn = false;
 var bibletar_maker_page = 1;
 var i_am_a_boy = false;
 var i_am_a_girl = false;
+var i_have_enough_money = false;
 var my_cash = 0;
 var my_name = "Unknown Player";
 const shop_page_background_mens_or_womens = document.getElementById('shop_background');
@@ -257,7 +258,7 @@ function localStorageAndSessionStorageData () {
     const saved_bibletar = JSON.parse(localStorage.getItem('old_bibletar'));
     const saved_bibletar_svg = JSON.parse(localStorage.getItem('my_bibletar_svg'));
     const saved_acquired = JSON.parse(localStorage.getItem('acquired_stuff_closet'));
-    const saved_not_acquired = JSON.parse(localStorage.getItem('not_acquired_stuff_closet'));
+    const saved_not_acquired = JSON.parse(localStorage.getItem('not_acquired_stuff_shop'));
     const saved_cash = JSON.parse(localStorage.getItem('my_cash'));
 
 
@@ -658,7 +659,7 @@ function item_Purchased(item_bought_html, cost_of_item_html) {
     if (my_cash >= cost_of_item) {
         i_have_enough_money = true;
     }
-
+    
     if (i_have_enough_money == true) {
         // Figure out the item clicked, so I can draw it on the canvas
         item_clicked = (item_bought_html + (acquired_stuff_closet[shop_section - 1].length - 3));
@@ -676,13 +677,14 @@ function item_Purchased(item_bought_html, cost_of_item_html) {
     } else {
         alert("Sorry, this item costs: $" + cost_of_item + " and you don't have enough cash to purchase it!! Please try again later");
     }
-
+    
     /**Because the item no longer exists in the shop, and now exists in the closet, I have
      * to get it to display the last item that was bought from your closet, the one you bought
      * and since it is always pushed to the end of the array, it will be at the end of the array
      */
     if (i_have_enough_money == true) {
-        item_clicked = acquired_stuff_closet[shop_section - 1][(acquired_stuff_closet[shop_section - 1].length)]
+        // item_clicked = acquired_stuff_closet[shop_section - 1][(acquired_stuff_closet[shop_section - 1].length)]
+        item_clicked = (acquired_stuff_closet[shop_section - 1].length);
     
         /** Sets bibletar part to correct item_clicked so that it can be displayed properly on the canvas */
         if (shop_section == 1) {
@@ -706,6 +708,7 @@ function item_Purchased(item_bought_html, cost_of_item_html) {
 }
 
 function item_Chosen(item_clicked_html) {
+    i_have_enough_money = false;
     // delete_and_add_images_and_sometimes_cells();
 
     // First of all we need to check if the item is accessible, if it is accessible it will NOT say "NaN"
@@ -902,7 +905,7 @@ function drawUsersBibletar() {
 
         if (bibletar_maker_page == 2) {
             // closet section
-            number_for_drawing = acquired_stuff_closet[section_shop_or_closest - 1][(bibletar_type_dsd[section_shop_or_closest - 1] - 1)]
+            number_for_drawing = acquired_stuff_closet[section_shop_or_closest - 1][(bibletar_type_dsd[section_shop_or_closest - 1] - 1)];
         } else {
             if (bibletar_maker_page == 3) {
                 // shop section
@@ -915,7 +918,14 @@ function drawUsersBibletar() {
                  * remember, we are accessing the numbers because they exist in the array of arrays for
                  * acquired_stuff_closet and not_acquired_stuff_shop
                  */
-                number_for_drawing = not_acquired_stuff_shop[section_shop_or_closest - 1][(((bibletar_type_dsd[section_shop_or_closest - 1] -1) - 3) + acquired_stuff_closet[section_shop_or_closest - 1].length)]
+                if (i_have_enough_money == false) {
+                    // from shop section
+                    number_for_drawing = not_acquired_stuff_shop[section_shop_or_closest - 1][(((bibletar_type_dsd[section_shop_or_closest - 1] -1) - 3) + acquired_stuff_closet[section_shop_or_closest - 1].length)]
+                } else {
+                    /* from closet section, because item will no longer exist in the shop and it will be
+                    in your closet */
+                    number_for_drawing = acquired_stuff_closet[section_shop_or_closest - 1][(bibletar_type_dsd[section_shop_or_closest - 1] - 1)];
+                }
             }
         }
         console.log();
