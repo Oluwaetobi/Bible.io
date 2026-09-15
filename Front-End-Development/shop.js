@@ -215,6 +215,8 @@ var closet_section = 1;
 var shop_section = 1;
 var item_clicked = 1;
 
+var item_bought = 0;
+
 window.addEventListener('mousemove', (event) => {
     mouseX = event.clientX;
     mouseY = event.clientY;
@@ -640,6 +642,41 @@ function updateShopSection (shop_section_html) {
 function eyebrows_Chosen(extra_clicked_html) {
     bibletar_eyebrows = extra_clicked_html;
 }
+
+function item_Purchased(item_bought_html, cost_of_item_html) {
+    i_have_enough_money = false;
+    cost_of_item = 0;
+    // item_clicked = (item_clicked_html + (acquired_stuff_closet[shop_section - 1].length - 3));
+    
+    // figure out cost of item
+    /** num_item_down_list is always consecutive */
+    var num_item_down_list = (item_bought_html + (acquired_stuff_closet[shop_section - 1].length - 3));
+    cost_of_item = (cost_of_item_html * num_item_down_list);
+
+    /** cost_of_item_html is always 10 dollars, the real cost will be cost_of_item */
+    if (my_cash >= cost_of_item) {
+        i_have_enough_money = true;
+    }
+
+    if (i_have_enough_money == true) {
+        // Figure out the item clicked, so I can draw it on the canvas
+        item_clicked = (item_bought_html + (acquired_stuff_closet[shop_section - 1].length - 3));
+        // Get the index_spliced
+        index_spliced = (item_clicked - (acquired_stuff_closet[shop_section - 1].length));
+        // Get the svg number of the image file that was spliced
+        svg_of_index_spliced = acquired_stuff_closet[shop_section - 1][index_spliced - 1];
+        // remove it from the shop because it has been bought
+        not_acquired_stuff_shop[shop_section - 1].splice((index_spliced - 1), 1);
+        // add it to my closet
+        acquired_stuff_closet[shop_section - 1].push(svg_of_index_spliced);
+
+        my_cash -= cost_of_item;
+        save_Data_to_Local_or_Session_Storage();
+    } else {
+        alert("Sorry, this item costs: $" + cost_of_item + " and you don't have enough cash to purchase it!! Please try again later");
+    }
+}
+
 function item_Chosen(item_clicked_html) {
     // delete_and_add_images_and_sometimes_cells();
 
