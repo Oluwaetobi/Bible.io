@@ -1261,7 +1261,11 @@ function bibletarShopPage () {
     // Leave Shop
     ctx.fillStyle = 'rgb(12, 12, 12)';
     ctx.fillRect(1130 -353, 52, 176, 36);
-    ctx.fillStyle = 'rgb(147, 6, 154)';
+    if (mouseX > 774 && mouseX < 948 && mouseY > 50 && mouseY < 83) {
+        ctx.fillStyle = 'rgb(236, 16, 247)';
+    } else {
+        ctx.fillStyle = 'rgb(147, 6, 154)';
+    }
     ctx.fillRect(1130 -350, 55, 170, 30);
     ctx.font = "25px Arial";
     ctx.fillStyle = 'rgb(252, 250, 250)';
@@ -1309,7 +1313,11 @@ function bibletarMakerHome() {
     ctx.fillRect(200, 50, 1150, 40);
 
     // Leave
-    ctx.fillStyle = 'rgb(154, 14, 6)';
+    if (mouseX > 980 && mouseX < 1106 && mouseY > 662 && mouseY < 691) {
+        ctx.fillStyle = 'rgb(246, 23, 11)';
+    } else {
+        ctx.fillStyle = 'rgb(154, 14, 6)';
+    }
     ctx.fillRect(980, 55 + 610, 130, 30);
     ctx.font = "25px Arial";
     ctx.fillStyle = 'rgb(252, 250, 250)';
@@ -1319,7 +1327,11 @@ function bibletarMakerHome() {
     ctx.fillText("Leave", 1010, 687);
 
     // Save and Exit
-    ctx.fillStyle = 'rgb(6, 154, 8)';
+    if (mouseX > 1127 && mouseX < 1326 && mouseY > 663 && mouseY < 691) {
+        ctx.fillStyle = 'rgb(13, 250, 17)';
+    } else {
+        ctx.fillStyle = 'rgb(6, 154, 8)';
+    }
     ctx.fillRect(1130, 55 + 610, 200, 30);
     ctx.font = "25px Arial";
     ctx.fillStyle = 'rgb(252, 250, 250)';
@@ -1366,7 +1378,11 @@ function bibletarMakerHome() {
     // SHOP
     ctx.fillStyle = 'rgb(51, 5, 3)';
     ctx.fillRect(1081, 497, 156, 71);
-    ctx.fillStyle = 'rgb(157, 16, 8)';
+    if (mouseX < 1236 && mouseX > 1080 && mouseY < 565 && mouseY > 495) {
+        ctx.fillStyle = 'rgb(254, 29, 17)';
+    } else {
+        ctx.fillStyle = 'rgb(157, 16, 8)';
+    }
     ctx.fillRect(1084, 500, 150, 65);
     ctx.font = "40px Arial";
     ctx.strokeStyle = 'rgb(250, 249, 249)';
