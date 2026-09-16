@@ -41,6 +41,8 @@ var hall_of_fame_bibletar_svg = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
 
 var box_x_pos = 1;
 var gameOn = false;
+var online = 1;
+var members = 1000;
 /* Being able to copy and paste text by using HTML is super important, especially when the text is super long,
 that's one thing I like about HTML. As well as it's the core foundation to building websites. */
 var play_front_page_text = [];
@@ -118,6 +120,15 @@ function backgroundColorScreen () {
     gradient.addColorStop(1, 'rgb(90, 102, 118)');    // End color (100%)
     ctx.fillStyle = gradient;
     ctx.fillRect(0, 0, canvas.width, canvas.height);
+}
+
+function update_HTML_Text_And_Data_Information () {
+    const members_display = document.getElementById('members-display');
+    const online_display = document.getElementById('online-display');
+    members_display.innerText = "Members: " + members + "+";
+    online_display.innerText = "Online: " + online;
+
+
 }
 
 function loadingBox() {
@@ -385,6 +396,7 @@ function drawGame() {
     ctx.fillRect(0, 0, canvas.width, canvas.height);
     
     backgroundColorScreen();
+    update_HTML_Text_And_Data_Information();
     loadingBox();
     playerClickedBibletar();
 
