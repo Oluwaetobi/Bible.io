@@ -146,6 +146,11 @@ function live_Display_Slider () {
         ctx.fillStyle = 'rgb(252, 250, 250)';
         ctx.fillText(liveDisplayText[0], liveDisplayPositions[i], 20);
         liveDisplayPositions[i] -= speed_drift;
+
+        if (liveDisplayPositions[i] < -50) {
+            /* if the text has slidden of the screen place it about 20 pixels behind the last text in our array */
+            liveDisplayPositions[i] = liveDisplayPositions[(liveDisplayPositions.length - 1)] + 20;
+        }
     }
 
 }
