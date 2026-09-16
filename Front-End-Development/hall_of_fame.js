@@ -111,6 +111,15 @@ function wipeOutEntireScreen() {
     }
 }
 
+function backgroundColorScreen () {
+    var gradient = ctx.createLinearGradient(0, 0, 0, canvas.height);
+    gradient.addColorStop(0, 'rgb(88, 119, 139)');     // Start color (0%)
+    gradient.addColorStop(0.5, 'rgb(107, 140, 140)');
+    gradient.addColorStop(1, 'rgb(90, 102, 118)');    // End color (100%)
+    ctx.fillStyle = gradient;
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+}
+
 function loadingBox() {
     // looading box
     ctx.fillStyle = 'rgba(255, 26, 104, 1)';
@@ -375,6 +384,7 @@ function drawGame() {
     ctx.fillStyle = 'rgb(189, 189, 190)';
     ctx.fillRect(0, 0, canvas.width, canvas.height);
     
+    backgroundColorScreen();
     loadingBox();
     playerClickedBibletar();
 

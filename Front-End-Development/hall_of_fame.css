@@ -134,10 +134,22 @@ header {
     position: relative;
     top:100px;
     text-align: center;
+    background-color: rgba(252, 251, 251, 0.9);
+    width: 700px;
+    place-items: center;
+    box-sizing: border-box;
+    border-radius: 30px 30px;
+    left: 360px;
+    /* width: 500px; */
 }
 
 .hall-of-fame-middle h1 {
     font-size: 40px;
+}
+
+.hall-of-fame-middle p {
+    color: #d31e0d;
+    font-weight: bold;
 }
 
 a {
@@ -157,8 +169,7 @@ a:hover {
     /* background-color: #7f2e2e; */
     scroll-snap-type: y mandatory;
     position: relative;
-    left: 50%;
-    translate: -50%;
+    /* left: 450px; */
 
     z-index: 1;
 }
@@ -200,6 +211,10 @@ table takes up the full width of it's parent the scrollable table */
 /* Background color for every even row (opposite of odd rows) */
 .table tbody tr:nth-of-type(even) {
     background-color: #a7a7a7;
+}
+
+.table tbody tr:nth-of-type(odd) {
+    background-color: #f8faf9;
 }
 
 #myCanvas {
