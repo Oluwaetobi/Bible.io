@@ -132,7 +132,7 @@ header {
 .hall-of-fame-middle {
     z-index: 1;
     position: relative;
-    top:100px;
+    top:130px;
     text-align: center;
     background-color: rgba(252, 251, 251, 0.9);
     width: 700px;
@@ -140,6 +140,7 @@ header {
     box-sizing: border-box;
     border-radius: 30px 30px;
     left: 360px;
+    padding: 20px 20px;
     /* width: 500px; */
 }
 
@@ -257,6 +258,22 @@ table takes up the full width of it's parent the scrollable table */
     filter: brightness(120%);
 }
 
+
+.bottom-right {
+    z-index: 2;
+    position: fixed;
+    left: 1100px;
+    background-color: rgba(252, 251, 251, 0.9);
+    box-sizing: border-box;
+    border-radius: 20px 20px;
+    /* top right bottom left */
+    padding: 20px 20px 20px 20px;
+    max-width: 400px;
+    top: 550px;
+    place-items: center;
+    align-items: center;
+    justify-content: center;
+}
 
 #myCanvas {
     position: fixed;

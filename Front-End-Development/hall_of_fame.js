@@ -149,7 +149,7 @@ function live_Display_Slider () {
 
         if (liveDisplayPositions[i] < -50) {
             /* if the text has slidden of the screen place it about 20 pixels behind the last text in our array */
-            liveDisplayPositions[i] = liveDisplayPositions[(liveDisplayPositions.length - 1)] + 20;
+            liveDisplayPositions[i] = liveDisplayPositions[(liveDisplayPositions.length - 1)] + liveDisplay_Text_Spacing;
         }
 
         /**This is a weird scenario, a case where everything has gone off the screen then push it all back onto the
@@ -167,11 +167,11 @@ function live_Display_Slider () {
 function loadingBox() {
     // looading box
     ctx.fillStyle = 'rgba(255, 26, 104, 1)';
-    ctx.fillRect(50 + box_x_pos, canvas.height - 100, 50, 50);
+    ctx.fillRect(50 + box_x_pos, canvas.height -50, 50, 50);
     
     box_x_pos += 3;
-    if (box_x_pos > canvas.width - 200) {
-        box_x_pos = 0;
+    if (box_x_pos > canvas.width + 100) {
+        box_x_pos = -50;
     }
 
 }
@@ -179,15 +179,17 @@ function loadingBox() {
 function playerClickedBibletar () {
 
     // WRITE Player Clicked's NAME
+    var shift_name_y_over = -100;
+
     ctx.font = "40px Arial";
     ctx.strokeStyle = 'rgb(10, 9, 9)';
-    ctx.strokeText(player_Clicked_Name, 1150, 500);
+    ctx.strokeText(player_Clicked_Name, 1150, 500 + shift_name_y_over);
     ctx.fillStyle = 'rgb(8, 8, 8)';
-    ctx.fillText(player_Clicked_Name, 1150, 500);
+    ctx.fillText(player_Clicked_Name, 1150, 500 + shift_name_y_over);
 
     ctx.font = "20px Arial";
     ctx.fillStyle = 'rgb(8, 8, 8)';
-    ctx.fillText("Top player on Leaderboard", 1160, 535);
+    ctx.fillText("Top player on Leaderboard", 1160, 535 + shift_name_y_over);
 
     
     /** Have to recalculate the src link based off of hall_of_fame_bibletar_svg */
@@ -407,7 +409,7 @@ function playerClickedBibletar () {
      */
 
     var shift_bibletar_x_over = 130;
-    var shift_bibletar_y_over = 50;
+    var shift_bibletar_y_over = -50;
 
     resizeImageByPixels_and_draw(img_background, 980 + shift_bibletar_x_over, 100 + shift_bibletar_y_over, 300, 1);
     resizeImageByPixels_and_draw(img_face, 1067.5 + shift_bibletar_x_over, 145 + shift_bibletar_y_over, 175, 2);
