@@ -227,13 +227,18 @@ table takes up the full width of it's parent the scrollable table */
     box-sizing: border-box;
     border-radius: 20px 20px;
     /* top right bottom left */
-    padding: 20px 20px 40px 20px;
-    max-width: 340px;
+    padding: 20px 20px 20px 20px;
+    max-width: 320px;
     top: 130px;
+}
+
+.top-left img:hover {
+    filter: brightness(120%);
 }
 
 .side-to-side {
     display: flex;
+    gap: 10px;
 }
 
 
