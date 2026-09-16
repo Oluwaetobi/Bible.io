@@ -195,6 +195,8 @@ table takes up the full width of it's parent the scrollable table */
     top: 0px;
     /* justify-content: center;
     align-items: center; */
+    box-sizing: border-box;
+    border-radius: 2px 2px;
 }
 
 .table th,
@@ -216,6 +218,25 @@ table takes up the full width of it's parent the scrollable table */
 .table tbody tr:nth-of-type(odd) {
     background-color: #f8faf9;
 }
+
+.top-left {
+    z-index: 2;
+    position: fixed;
+    left: 20px;
+    background-color: rgba(252, 251, 251, 0.9);
+    box-sizing: border-box;
+    border-radius: 20px 20px;
+    /* top right bottom left */
+    padding: 20px 20px 40px 20px;
+    max-width: 340px;
+    top: 130px;
+}
+
+.side-to-side {
+    display: flex;
+}
+
+
 
 #myCanvas {
     position: fixed;
