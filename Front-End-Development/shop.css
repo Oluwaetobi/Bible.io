@@ -282,6 +282,10 @@ table takes up the full width of it's parent the scrollable table */
     text-align: center;
 }
 
+.table td:hover {
+    filter: brightness(150%);
+}
+
 /* .table tr {
     scroll-snap-align: start;
 } */
@@ -385,6 +389,11 @@ table takes up the full width of it's parent the scrollable table */
     border: 1px solid black;  */
 }
 
+.table-background td:hover {
+    filter: brightness(150%);
+    /* padding: 2px 2px; */
+}
+
 /* .table-background tr {
     scroll-snap-align: start;
 } */
@@ -458,16 +467,23 @@ table takes up the full width of it's parent the scrollable table */
     position: sticky;
     top: 0px;
     left:0px;
+    box-sizing: border-box;
+    border-radius: 30px 30px 30px 30px;
     /* justify-content: center;
     align-items: center; */
-}
-
-.table-shop th {
-    padding: 2px 6px;
+    /* top right bottom left */
+    padding: 6px 6px;
     font-weight: normal;
     font-size: 15px;
-    border-collapse: collapse
+    border-collapse: collapse;
 }
+
+.table-shop th:hover {
+    padding: 10px 10px 10px 10px;
+    filter: brightness(150%);
+
+}
+
 .table-shop td {
     /* top right bottom left */
     padding: 0px 10px 0px 10px;
@@ -492,6 +508,7 @@ table takes up the full width of it's parent the scrollable table */
     color: #000000;
 }
 
+
 #choose_shop_stuff #buy_bibletar_stuff button{
     border: none;
     padding: 10px 30px;
@@ -504,7 +521,10 @@ table takes up the full width of it's parent the scrollable table */
 }
 
 #choose_shop_stuff button:hover {
-    opacity: 0.5;
+    /* opacity: 0.5; */
+    filter: brightness(150%);
+    /* padding: 15px 45px; */
+    
     
 }
 
@@ -540,6 +560,17 @@ table takes up the full width of it's parent the scrollable table */
     grid-template-columns: 30% 70%;
     border: 6px solid black;
     border-radius: 2%;
+}
+
+.scrollable-table-extra caption {
+    /* top right bottom left */
+    padding: 10px;
+    background-color: #1e9bc9;
+    color:#fbf9f9;
+    position: sticky;
+    top: 0px;
+    font-weight: bold;
+    font-size: large;
 }
 
 /* Scrollable table class takes precedence over table class
