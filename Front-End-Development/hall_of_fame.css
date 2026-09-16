@@ -230,6 +230,9 @@ table takes up the full width of it's parent the scrollable table */
     padding: 20px 20px 20px 20px;
     max-width: 320px;
     top: 130px;
+    place-items: center;
+    align-items: center;
+    justify-content: center;
 }
 
 .top-left img:hover {
@@ -239,8 +242,20 @@ table takes up the full width of it's parent the scrollable table */
 .side-to-side {
     display: flex;
     gap: 10px;
+    background-color: rgba(71, 96, 125, 0.9);
+    box-sizing: border-box;
+    border-radius: 20px 20px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
+.side-to-side h3 {
+    color:#f8faf9;
+}
+
+.side-to-side:hover {
+    filter: brightness(120%);
+}
 
 
 #myCanvas {

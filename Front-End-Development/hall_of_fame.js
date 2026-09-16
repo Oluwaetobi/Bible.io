@@ -151,6 +151,15 @@ function live_Display_Slider () {
             /* if the text has slidden of the screen place it about 20 pixels behind the last text in our array */
             liveDisplayPositions[i] = liveDisplayPositions[(liveDisplayPositions.length - 1)] + 20;
         }
+
+        /**This is a weird scenario, a case where everything has gone off the screen then push it all back onto the
+         * screen 
+         */
+        if (liveDisplayPositions[(liveDisplayPositions.length -1)] < - 100) {
+            for(let j = 0; j < liveDisplayPositions.length; j++) {
+                liveDisplayPositions[j] += 1000;
+            }
+        }
     }
 
 }
