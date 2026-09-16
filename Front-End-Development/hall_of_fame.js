@@ -127,7 +127,26 @@ function update_HTML_Text_And_Data_Information () {
     const online_display = document.getElementById('online-display');
     members_display.innerText = "Members: " + members + "+";
     online_display.innerText = "Online: " + online;
+}
 
+var liveDisplayText = [];
+var liveDisplayPositions = [];
+liveDisplayText.push("LIVE");
+var liveDisplay_Text_Spacing = 60;
+for (let i = 0; i < 100; i++) {
+    liveDisplayPositions.push(i * liveDisplay_Text_Spacing);
+}
+function live_Display_Slider () {
+    ctx.fillStyle = 'rgb(214, 6, 6)';
+    ctx.fillRect(0, 0, canvas.width, 30);
+    var speed_drift = 1;
+
+    for (let i = 0; i < liveDisplayPositions.length; i++) {
+        ctx.font = "20px Arial";
+        ctx.fillStyle = 'rgb(252, 250, 250)';
+        ctx.fillText(liveDisplayText[0], liveDisplayPositions[i], 20);
+        liveDisplayPositions[i] -= speed_drift;
+    }
 
 }
 
@@ -397,6 +416,7 @@ function drawGame() {
     
     backgroundColorScreen();
     update_HTML_Text_And_Data_Information();
+    live_Display_Slider();
     loadingBox();
     playerClickedBibletar();
 
