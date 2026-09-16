@@ -125,8 +125,13 @@ function backgroundColorScreen () {
 function update_HTML_Text_And_Data_Information () {
     const members_display = document.getElementById('members-display');
     const online_display = document.getElementById('online-display');
+    const iframe = document.querySelector('iframe');
     members_display.innerText = "Members: " + members + "+";
     online_display.innerText = "Online: " + online;
+
+    /**changing youtube video width and height here to correct aspect ratio and to the desired width and height */
+    iframe.width = "340";
+    iframe.height = "191";
 }
 
 var liveDisplayText = [];
