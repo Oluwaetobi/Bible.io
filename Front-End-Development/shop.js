@@ -656,6 +656,22 @@ function updateShopSection (shop_section_html) {
 function eyebrows_Chosen(extra_clicked_html) {
     bibletar_eyebrows = extra_clicked_html;
 }
+
+const alertBox = document.getElementById('custom-alert')
+const alertButton = document.getElementById('custom-alert-button');
+
+window.alert = function(message) {
+    const alertBox_Text = document.getElementById('alert-box-text');
+
+    alertBox_Text.innerText = message;
+    alertBox.style.display = 'flex';
+    alertButton.style.fontSize = "12px";
+
+}
+alertButton.addEventListener("click", function() {
+    alertBox.style.display = "none";
+})
+
 /**Instead of individually placing it everytime, I can have it here, so I can change the cost
  * increment for an item anytime I want, the cost_of_item_html, represents the increment
  * cost for each new item

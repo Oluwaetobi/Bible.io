@@ -585,3 +585,43 @@ table takes up the full width of it's parent the scrollable table */
 .table-extra tr {
     scroll-snap-align: start;
 }
+
+/* Custom Aler Box */
+.custom-alert-box {
+    position: fixed;
+    z-index: 2;
+    display: none;
+    background-color: rgba(252, 251, 251, 0.9);
+    box-sizing: border-box;
+    border-radius: 20px 20px 20px 20px;
+    max-width: 300px;
+    place-self: center;
+    top:45%;
+    /* top right bottom left */
+    padding: 20px 20px 40px 20px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.custom-alert-box p {
+    font-size: 18px;
+}
+
+.custom-alert-box button {
+    border: none;
+    padding: 10px 30px;
+    border-radius: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+    background-color:#c72209;
+    color: #000000;
+    right: 50%;
+    /* margin: 0 auto; */
+}
+
+.custom-alert-box button:hover {
+    filter: brightness(120%);
+}
