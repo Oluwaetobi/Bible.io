@@ -141,7 +141,7 @@ var liveDisplay_Text_Spacing = 9700;
 
 /**The loop should be as many times as needed */
 for (let i = 0; i < 5; i++) {
-    liveDisplayPositions.push(i * liveDisplay_Text_Spacing);
+    liveDisplayPositions.push((i * liveDisplay_Text_Spacing) + 500);
 }
 var end_of_screen_benchmark  = (liveDisplay_Text_Spacing * -1);
 
