@@ -136,11 +136,13 @@ function update_HTML_Text_And_Data_Information () {
 
 var liveDisplayText = [];
 var liveDisplayPositions = [];
-liveDisplayText.push("LIVE");
-var liveDisplay_Text_Spacing = 60;
-for (let i = 0; i < 100; i++) {
+liveDisplayText.push("At Bible.io, we make the Bible fun. We don't just provide christian and biblical learning material, we give you a chance to connect and compete with friends in a biblical format and layout. It's not just a chance to show case your biblical knowledge but learn more about God and learn teachings and skills that will help you for life. Such as loving thy neighbor, treating others the way you would like to be treated. And much more, some of the things we teach go very much into depth and detail. We also have a vast library where you can learn all things biblical. Bible.io is a fun and awesome place for people of all ages to learn. It's online, it's massive, it's global, it's fun, it's Bible.io! And best of all, it's completely FREE and Educational!!! LIVE  LIVE  LIVE  LIVE  LIVE  LIVE  LIVE  LIVE  LIVE  LIVE  LIVE  LIVE  LIVE  LIVE  LIVE  LIVE  LIVE  LIVE  LIVE  LIVE  LIVE  LIVE  LIVE  LIVE  LIVE  LIVE  LIVE  LIVE  LIVE  LIVE  LIVE  LIVE  LIVE  LIVE  LIVE  LIVE  LIVE  LIVE  LIVE  LIVE  LIVE  LIVE  LIVE  LIVE  LIVE  LIVE  LIVE");
+var liveDisplay_Text_Spacing = 9700;
+for (let i = 0; i < 30; i++) {
     liveDisplayPositions.push(i * liveDisplay_Text_Spacing);
 }
+var end_of_screen_benchmark  = (liveDisplay_Text_Spacing * -1);
+
 function live_Display_Slider () {
     ctx.fillStyle = 'rgb(214, 6, 6)';
     ctx.fillRect(0, 0, canvas.width, 30);
@@ -152,19 +154,18 @@ function live_Display_Slider () {
         ctx.fillText(liveDisplayText[0], liveDisplayPositions[i], 20);
         liveDisplayPositions[i] -= speed_drift;
 
-        if (liveDisplayPositions[i] < -50) {
+        if (liveDisplayPositions[i] < end_of_screen_benchmark) {
             /* if the text has slidden of the screen place it about 20 pixels behind the last text in our array */
-            liveDisplayPositions[i] = liveDisplayPositions[(liveDisplayPositions.length - 1)] + liveDisplay_Text_Spacing;
+            var highest_x = 0;
+            for (let j = 0; j < liveDisplayPositions.length; j++) {
+                // looking for the element that is furthest right
+                if (liveDisplayPositions[j] > highest_x) {
+                    highest_x = liveDisplayPositions[j];
+                }
+            }
+            liveDisplayPositions[i] = (highest_x + liveDisplay_Text_Spacing);
         }
 
-        /**This is a weird scenario, a case where everything has gone off the screen then push it all back onto the
-         * screen 
-         */
-        if (liveDisplayPositions[(liveDisplayPositions.length -1)] < - 100) {
-            for(let j = 0; j < liveDisplayPositions.length; j++) {
-                liveDisplayPositions[j] += 1000;
-            }
-        }
     }
 
 }
