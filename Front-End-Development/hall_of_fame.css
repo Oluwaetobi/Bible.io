@@ -145,7 +145,19 @@ header {
 }
 
 .hall-of-fame-middle h1 {
+    /* background-color: rgba(28, 226, 244, 0.9); */
+    /* background: linear-gradient(135deg, #11998e, #38ef7d); */
+    /* background: linear-gradient(0deg, #11998e, #38ef7d); */
+    /* gradient color for hall of fame title */
+    background: linear-gradient(0deg, #fcf803, #38ef7d);
+    /* text-shadow: 2px 2px 20px rgb(243, 232, 18); */
+    text-shadow: 2px 2px 3px rgb(10, 10, 10);
+    color: #ffffff;
     font-size: 40px;
+    box-sizing: border-box;
+    border-radius: 10px 10px;
+    padding: 5px 50px;
+    font-weight: bold;
 }
 
 .hall-of-fame-middle p {
