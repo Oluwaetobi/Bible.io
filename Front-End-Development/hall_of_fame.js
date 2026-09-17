@@ -138,7 +138,9 @@ var liveDisplayText = [];
 var liveDisplayPositions = [];
 liveDisplayText.push("At Bible.io, we make the Bible fun. We don't just provide christian and biblical learning material, we give you a chance to connect and compete with friends in a biblical format and layout. It's not just a chance to show case your biblical knowledge but learn more about God and learn teachings and skills that will help you for life. Such as loving thy neighbor, treating others the way you would like to be treated. And much more, some of the things we teach go very much into depth and detail. We also have a vast library where you can learn all things biblical. Bible.io is a fun and awesome place for people of all ages to learn. It's online, it's massive, it's global, it's fun, it's Bible.io! And best of all, it's completely FREE and Educational!!! LIVE  LIVE  LIVE  LIVE  LIVE  LIVE  LIVE  LIVE  LIVE  LIVE  LIVE  LIVE  LIVE  LIVE  LIVE  LIVE  LIVE  LIVE  LIVE  LIVE  LIVE  LIVE  LIVE  LIVE  LIVE  LIVE  LIVE  LIVE  LIVE  LIVE  LIVE  LIVE  LIVE  LIVE  LIVE  LIVE  LIVE  LIVE  LIVE  LIVE  LIVE  LIVE  LIVE  LIVE  LIVE  LIVE  LIVE");
 var liveDisplay_Text_Spacing = 9700;
-for (let i = 0; i < 30; i++) {
+
+/**The loop should be as many times as needed */
+for (let i = 0; i < 5; i++) {
     liveDisplayPositions.push(i * liveDisplay_Text_Spacing);
 }
 var end_of_screen_benchmark  = (liveDisplay_Text_Spacing * -1);
