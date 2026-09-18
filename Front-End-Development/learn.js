@@ -253,8 +253,8 @@ function loadingBox() {
     ctx.fillRect(50 + box_x_pos, canvas.height - 100, 50, 50);
     
     box_x_pos += 3;
-    if (box_x_pos > canvas.width - 200) {
-        box_x_pos = 0;
+    if (box_x_pos > canvas.width + 50) {
+        box_x_pos = -100;
     }
 
 }
