@@ -142,6 +142,31 @@ header {
     text-align: center;
 }
 
+.bibletar-short-story {
+    position: static;
+    max-width: 1000px;
+    text-indent: 40px;
+    white-space: pre-wrap;
+    overflow-y: auto;
+    max-height: 500px;
+    box-sizing: border-box;
+    border-radius: 20px 20px;
+    background-color: rgba(252, 251, 251, 1);
+    border: 2px solid #000000;
+    padding: 0px 20px;
+}
+.bibletar-short-story h1 {
+    text-align: center;
+}
+
+.bibletar-short-story h3 {
+    text-align: center;
+}
+
+.bibletar-short-story img {
+    float: right;
+}
+
 a {
     text-decoration: none;
     /* color: var(--login-color); */
