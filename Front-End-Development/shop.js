@@ -1202,10 +1202,16 @@ function drawUsersBibletar() {
                         increase_width_by = 1.2;
                     }
                     if (specific_drawing >= 48 && specific_drawing <= 53) {
-                        my_pixels_height += 129;
+                        my_pixels_height += 126;
                         x_pos_ribp -= 17;
-                        y_pos_ribp -= 25;
-                        increase_width_by = 0.98;
+                        y_pos_ribp -= 22;
+                        increase_width_by = 1.00;
+                    }
+                    if (specific_drawing >= 54 && specific_drawing <= 60) {
+                        my_pixels_height += 180;
+                        x_pos_ribp -= 55;
+                        y_pos_ribp -= 12;
+                        increase_width_by = 1.10;
                     }
                 }
             }
