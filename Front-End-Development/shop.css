@@ -242,6 +242,7 @@ a:hover {
     top: 0px;
     font-weight: bold;
     font-size: large;
+    z-index: 4;
 }
 
 /* Scrollable table class takes precedence over table class
@@ -347,6 +348,7 @@ JAVASCRIPT FILE*/
     top: 0px;
     padding-bottom: 5px;;
     /* border-collapse: collapse; */
+    z-index: 4;
 }
 
 /* Scrollable table class takes precedence over table class
@@ -571,6 +573,7 @@ table takes up the full width of it's parent the scrollable table */
     top: 0px;
     font-weight: bold;
     font-size: large;
+    z-index: 4;
 }
 
 /* Scrollable table class takes precedence over table class
