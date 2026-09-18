@@ -1151,14 +1151,19 @@ function drawUsersBibletar() {
                 increase_width_by = 3.0;
             } else {
                 if (i_am_a_girl == true) {
-                    if (specific_drawing >  0) {
+                    if (specific_drawing >  0 && specific_drawing < 6) {
                         /* my_pixels_height to increase size and increase_width_by is for resizing
                          the width of the image base off of the height *BE CAREFUL!!!!! */
                         my_pixels_height += 81;
                         x_pos_ribp -= 33;
-                        y_pos_ribp -= 20;
+                        y_pos_ribp -= 25;
                         increase_width_by = 1.6;
-                        // console.log("Bibletar Hair: " + bibletar_hair);
+                    }
+                    if (specific_drawing >= 6 && specific_drawing <= 11) {
+                        my_pixels_height += 121;
+                        x_pos_ribp -= 14;
+                        y_pos_ribp -= 60;
+                        increase_width_by = 1.0;
                     }
                 }
             }
