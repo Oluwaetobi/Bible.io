@@ -425,7 +425,7 @@ table takes up the full width of it's parent the scrollable table */
     overflow-y: auto;
     /* overflow-x: auto; */
     /* background-color: #7f2e2e; */
-    scroll-snap-type: y mandatory;
+    /* scroll-snap-type: y mandatory; */
     position: fixed;
     left: 50px;
     /* translate: -50%; */
@@ -436,6 +436,18 @@ table takes up the full width of it's parent the scrollable table */
     grid-template-columns: 30% 70%;
     border: 6px solid black;
     border-radius: 2%;
+}
+
+.scrollable-table-reading caption {
+    background-color: #0cc4dd;
+    color:#fcfcfc;
+    position: sticky;
+    top: 0px;
+    font-weight: bold;
+    font-size: large;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /* font-size: large; */
 }
 
 /* Scrollable table class takes precedence over table class
