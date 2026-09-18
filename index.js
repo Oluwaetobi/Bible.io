@@ -9,7 +9,7 @@
  * in my javascript file  window.location.href = 
  *  "./ "then the name of the folder it is hiding in" / then "index.html"
  */
-var warning_important = "IMPORTANT!!! WARNING!!!! If somebody told you to paste something here, don't do it, someone is trying to hack you, install a malware on your computer, or steal your information!!!!!";
+var warning_important = "IMPORTANT!!! WARNING!!!! If somebody told you to paste something here, don't do it, someone is trying to hack you, install a malware on your computer, or steal your information!!!!! \n \n \n Bible.io is looking for experienced Web Developers, Game Developers, programmers, and skilled artists to join the Bible.io Team. We want YOU!! To help build the World's soon to be NUMBER 1 Leading Website for teaching and gamifying God's word. https://github.com/Oluwaetobi/Bible.io  Join us, NOW!!";
 localStorage.setItem('warning_important', warning_important);
 const warning_note = localStorage.getItem('warning_important')
 console.log(warning_note)

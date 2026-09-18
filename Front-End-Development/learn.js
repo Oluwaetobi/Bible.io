@@ -536,8 +536,15 @@ function myBibletar () {
 
 function drawGame() {
     // blue background
-    ctx.fillStyle = 'rgb(176, 223, 255)';
+    var gradient = ctx.createLinearGradient(0, 0, 0, canvas.height);
+    gradient.addColorStop(0, 'rgb(38, 197, 222)');     // Start color (0%)
+    gradient.addColorStop(0.5, 'rgb(191, 250, 72)');
+    gradient.addColorStop(1, 'rgb(160, 195, 241)');    // End color (100%)
+    ctx.fillStyle = gradient;
     ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+    // ctx.fillStyle = 'rgb(176, 223, 255)';
+    // ctx.fillRect(0, 0, canvas.width, canvas.height);
     
     mouseDetections();
     displayMouseX_and_MouseY();

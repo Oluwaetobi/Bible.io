@@ -233,6 +233,19 @@ function update_Data_And_Continue_Game() {
         my_cash += 1;
     }
 
+    // check if I got first place in the game
+    var i_got_first_place = true;
+    for (let i = 1; i < my_game.online.length; i++) {
+        if (this_game_points <= my_game.everyones_points[i]) {
+            i_got_first_place = false;
+        }
+    }
+
+    // if I got first place in the game, I get extra cash
+    if (i_got_first_place == true) {
+        my_cash += 10;
+    }
+
     // updates my total points
     my_points += this_game_points;
 
