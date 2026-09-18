@@ -1038,7 +1038,7 @@ function display_Game_Time (time_alloted_for_each_game) {
     var y_baseline = 100;
 
     // clock background also edge of the game screen
-    ctx.fillStyle = 'rgb(247, 250, 250)';
+    ctx.fillStyle = 'rgb(10, 122, 144)';
     ctx.fillRect(x_baseline - 50, 0, 400, 450);
     
     ctx.drawImage(clock, x_baseline - 25, y_baseline -75, 115, 115);
@@ -1283,9 +1283,9 @@ function choose_Random_Question () {
 
     // Return a random integer between 1 and 10 (both included): Math.floor(Math.random() * 10) + 1;
 
-    var amount_of_question_in_level_1 = 4;
-    var amount_of_question_in_level_2 = 1;
-    var amount_of_question_in_level_3 = 7;
+    var amount_of_question_in_level_1 = 8;
+    var amount_of_question_in_level_2 = 4;
+    var amount_of_question_in_level_3 = 9;
 
 
     if (level == 1) {
@@ -1371,6 +1371,22 @@ function level_1_Questions () {
         answer4.innerText += `8 days `;
         correct_answer = 2;
     }
+    if (randomQuestion == 7) {
+        question.innerText = `How many disciples did Jesus have? `;
+        answer1.innerText += `12  `;
+        answer2.innerText += `20  `;
+        answer3.innerText += `100 `;
+        answer4.innerText += `144 `;
+        correct_answer = 1;
+    }
+    if (randomQuestion == 8) {
+        question.innerText = `What was the name of Elisha's master `;
+        answer1.innerText += `Ahab  `;
+        answer2.innerText += `Balaam  `;
+        answer3.innerText += `Elijah `;
+        answer4.innerText += `Gehazi `;
+        correct_answer = 3;
+    }
 }
 
 function level_2_Questions () {
@@ -1398,6 +1414,14 @@ function level_2_Questions () {
         answer3.innerText += `Egypt `;
         answer4.innerText += `Moab `;
         correct_answer = 4;
+    }
+    if (randomQuestion == 4) {
+        question.innerText = `How old was Adam when he died? `;
+        answer1.innerText += `830 years old `;
+        answer2.innerText += `888 years old `;
+        answer3.innerText += `930 years old `;
+        answer4.innerText += `956 years old `;
+        correct_answer = 3;
     }
 }
 
@@ -1460,6 +1484,22 @@ function level_3_Questions () {
         answer3.innerText += `Job 6:40 `;
         answer4.innerText += `Job 5:2 `;
         correct_answer = 4;
+    }
+    if (randomQuestion == 8) {
+        question.innerText = `And so it is written, The first man Adam was made a living soul; the last Adam was made a quickening spirit. `;
+        answer1.innerText += `Romans 9:8 `;
+        answer2.innerText += `Genesis 15:3 `;
+        answer3.innerText += `2 Corinthians 6:9 `;
+        answer4.innerText += `1 Corinthians 15:45 `;
+        correct_answer = 3;
+    }
+    if (randomQuestion == 9) {
+        question.innerText = `So teach us to number our days, that we may apply our hearts unto wisdom. `;
+        answer1.innerText += `Psalms 90:12 `;
+        answer2.innerText += `Psalms 56:3 `;
+        answer3.innerText += `Ecclesiastes 3:26 `;
+        answer4.innerText += `Ecclesiastes 11:9 `;
+        correct_answer = 1;
     }
     
 }

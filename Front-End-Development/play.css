@@ -235,7 +235,8 @@ form input {
     box-sizing: border-box;
     flex-grow: 1;
     min-width: 0;
-    height: 50px;
+    height: 100px;
+    width: 200px;
     padding: 1em;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     border-radius: 10 10px 10px 10;
@@ -243,6 +244,7 @@ form input {
     border-left:none;
     background-color: var(--input-color);
     transition: 150ms ease;
+    font-size: 30px;
 }
 form input:hover {
     border-color: var(--accent-color);
@@ -256,6 +258,11 @@ form input:focus {
 form input::placeholder {
     color: var(--text-color);
     opacity: 0.4;
+    font-size: 20px;
+    white-space: pre-line;
+    /* max-width: 200px; */
+    /* Makes the placeholder text for my form go slightly up */
+    transform: translateY(-13px);
 }
 
 
