@@ -380,6 +380,8 @@ function localStorageAndSessionStorageData () {
 
     if (saved_country) {
         my_country = saved_country;
+        // console.log("my_country: " + (typeof my_country));
+        // console.log("my_country: " + my_country);
     } else {
         // do nothing, has already been created and set to default
     }
@@ -1041,14 +1043,15 @@ function display_Game_Time (time_alloted_for_each_game) {
     ctx.fillStyle = 'rgb(10, 122, 144)';
     ctx.fillRect(x_baseline - 50, 0, 400, 450);
     
+    var x_over = 0;
+    if (game_time < 10) {
+        x_over += 17.5;
+    }
+
     ctx.drawImage(clock, x_baseline - 25, y_baseline -75, 115, 115);
 
     ctx.font = "60px Arial";
     
-    var x_over = 0;
-    if (game_time >= 0 && game_time < 10) {
-        x_over += 17;
-    }
 
     // drop shadow behind timer
     ctx.fillStyle = 'rgb(0, 0, 0)';
@@ -1177,8 +1180,19 @@ function draw_All_Players () {
 
         // countries display
         var players_country_svg = "./images/country_" + my_game.countries[i] + ".svg";
+        // var players_country_svg = "./images/country_" + "Canada" + ".svg";
         img_countries.src = players_country_svg;
-        ctx.drawImage(img_countries, 170, y_baseline + 65 + (i * y_bibletars_box_spacing), 60, 30);
+        /**Alright, so we have a very serious problem here, assuming that the images are different
+         * the foor loop for drawImages, specifically when we only have one drawImage statement,
+         * won't work. This is why my country, which is Canada, is missing when I play the game.
+         * And if you go into the object for "friends" or "my_game" and you make each country different
+         * or a few of them different, some of them won't show, this is a very serious problem,
+         * which I don't know how to fix without making more than one drawImage statement, but at the
+         * end of the if I did that I would be wasting my time, because I will never know how many 
+         * times the statement needs to be called, and plus for loop are more efficient.
+         */
+        ctx.drawImage(img_countries, 170, y_baseline + 60 + (i * y_bibletars_box_spacing), 60, 30);
+
 
         // wrong display
         var wrong_x_spacing = 25;
