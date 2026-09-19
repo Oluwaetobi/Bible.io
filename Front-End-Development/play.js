@@ -140,6 +140,18 @@ img_countries.alt = "country";
 var img_countries_sources_game = [];
 var img_countries_sources_friends = [];
 
+var img_background_sources = [];
+var img_face_sources = [];
+var img_shirt_sources = [];
+var img_glasses_sources = [];
+var img_hats_sources = [];
+var img_eyes_sources = [];
+var img_eyebrows_sources = [];
+var img_noses_sources = [];
+var img_mouths_sources = [];
+var img_hair_sources = [];
+
+
 
 var img_wrong = new Image();
 img_wrong.src = "./images/wrong.svg";
@@ -150,10 +162,6 @@ img_wrong.alt = "wrong";
 var img_background = new Image();
 img_background.src = "./images/background1.svg"; // Set source URL
 img_background.alt = "background image";
-
-var img_my_country = new Image();
-img_my_country.src = "./images/country_america.svg"; // Set source URL
-img_my_country.alt = "my country";
 
 var img_face = new Image();
 img_face.src = "./images/face_men1.svg"; // Set source URL
@@ -316,6 +324,17 @@ function prepare_the_game () {
     // sets the array to a length of zero
     img_countries_sources_game.length = 0;
     img_countries_sources_friends.length = 0;
+
+    img_background_sources.length = 0;
+    img_face_sources.length = 0;
+    img_shirt_sources.length = 0;
+    img_glasses_sources.length = 0;
+    img_hats_sources.length = 0;
+    img_eyes_sources.length = 0;
+    img_eyebrows_sources.length = 0;
+    img_noses_sources.length = 0;
+    img_mouths_sources.length = 0;
+    img_hair_sources.length = 0;
 
     // sets bibletar for my_game object to my_bibletar_svg
     for (let i = 0; i < my_game.bibletar[0].length; i++) {
@@ -1181,6 +1200,395 @@ function draw_points_as_bar_graph(y_bibletars_box_spacing, y_baseline) {
     }
 }
 
+function draw_players_bibletars(index_loop) {
+    /** This function draws the background, face, shirt, eyes, and etc for each player that playing
+     * in my game
+     */
+
+    // my_game.bibletar[index_loop]
+
+    function load_bibletar_data(type_of_bibletar) {
+        /** load new data into an array */
+        img_background = new Image();
+        img_face = new Image();
+        img_shirt = new Image();
+        img_glasses = new Image();
+        img_hats = new Image();
+        img_eyes = new Image();
+        img_eyebrows = new Image();
+        img_noses = new Image();
+        img_mouths = new Image();
+        img_hair = new Image();
+
+        /** Have to recalculate the src link based off of their bibletar which is 
+         * their bibletar svg
+         */
+        img_background.src = "./images/background" + my_game.bibletar[index_loop][1] + ".svg";
+        img_eyes.src = "./images/eyes" + my_game.bibletar[index_loop][6] + ".svg";
+        img_noses.src = "./images/noses" + my_game.bibletar[index_loop][8] + ".svg";
+        if (my_game.bibletar[index_loop][0] == 1) {
+            /** it is a boy */
+            img_face.src = "./images/face_men" + my_game.bibletar[index_loop][2] + ".svg";
+            img_shirt.src = "./images/shirt_men" + my_game.bibletar[index_loop][3] + ".svg";
+            img_glasses.src = "./images/glasses_men" + my_game.bibletar[index_loop][4] + ".svg";
+            img_hats.src = "./images/hats_men" + my_game.bibletar[index_loop][5] + ".svg";
+            img_eyebrows.src = "./images/eyebrows_men" + my_game.bibletar[index_loop][7] + ".svg";
+            img_mouths.src = "./images/mouths_men" + my_game.bibletar[index_loop][9] + ".svg";
+            img_hair.src = "./images/hair_men" + my_game.bibletar[index_loop][10] + ".svg";
+        } else {
+            if (my_game.bibletar[index_loop][0] == 2) {
+                /** it is a girl */
+                img_face.src = "./images/face_women" + my_game.bibletar[index_loop][2] + ".svg";
+                img_shirt.src = "./images/shirt_women" + my_game.bibletar[index_loop][3] + ".svg";
+                img_glasses.src = "./images/glasses_women" + my_game.bibletar[index_loop][4] + ".svg";
+                img_hats.src = "./images/hats_women" + my_game.bibletar[index_loop][5] + ".svg";
+                img_eyebrows.src = "./images/eyebrows_women" + my_game.bibletar[index_loop][7] + ".svg";
+                img_mouths.src = "./images/mouths_women" + my_game.bibletar[index_loop][9] + ".svg";
+                img_hair.src = "./images/hair_women" + my_game.bibletar[index_loop][10] + ".svg";
+            }
+        }
+
+        if (type_of_bibletar == 1) {
+            return img_background;
+        }
+        if (type_of_bibletar == 2) {
+            return img_face;
+        }
+        if (type_of_bibletar == 3) {
+            return img_shirt;
+        }
+        if (type_of_bibletar == 4) {
+            return img_glasses;
+        }
+        if (type_of_bibletar == 5) {
+            return img_hats;
+        }
+        if (type_of_bibletar == 6) {
+            return img_eyes;
+        }
+        if (type_of_bibletar == 7) {
+            return img_eyebrows;
+        }
+        if (type_of_bibletar == 8) {
+            return img_noses;
+        }
+        if (type_of_bibletar == 9) {
+            return img_mouths;
+        }
+        if (type_of_bibletar == 10) {
+            return img_hair;
+        }
+
+    }
+    // end of load_bibletar_data function
+
+    /** put data into the right index in the array */
+    if(img_background_sources[index_loop] == null) {
+            img_background_sources[index_loop] = load_bibletar_data(1);
+    }
+    if(img_face_sources[index_loop] == null) {
+            img_face_sources[index_loop] = load_bibletar_data(2);
+    }
+    if(img_shirt_sources[index_loop] == null) {
+            img_shirt_sources[index_loop] = load_bibletar_data(3);
+    }
+    if(img_glasses_sources[index_loop] == null) {
+            img_glasses_sources[index_loop] = load_bibletar_data(4);
+    }
+    if(img_hats_sources[index_loop] == null) {
+            img_hats_sources[index_loop] = load_bibletar_data(5);
+    }
+    if(img_eyes_sources[index_loop] == null) {
+            img_eyes_sources[index_loop] = load_bibletar_data(6);
+    }
+    if(img_eyebrows_sources[index_loop] == null) {
+            img_eyebrows_sources[index_loop] = load_bibletar_data(7);
+    }
+    if(img_noses_sources[index_loop] == null) {
+            img_noses_sources[index_loop] = load_bibletar_data(8);
+    }
+    if(img_mouths_sources[index_loop] == null) {
+            img_mouths_sources[index_loop] = load_bibletar_data(9);
+    }
+    if(img_hair_sources[index_loop] == null) {
+            img_hair_sources[index_loop] = load_bibletar_data(10);
+    }
+    
+
+    var he_is_a_boy = false;
+    var he_is_a_girl = false;
+    if (my_game.bibletar[index_loop][0] == 1) {
+        he_is_a_boy = true;
+    } else {
+        if (my_game.bibletar[index_loop][0] == 1) {
+            he_is_a_girl = true;
+        }
+    }
+
+    /**The data has been stored now you can start using it */
+    function resizeImageByPixels_and_draw (what_to_draw, x_pos_ribp, y_pos_ribp, pixel_size, type_of_drawing) {
+        /** be careful there is a different between "=" and "+=" using the other the wrong can be CATASTROPHIC
+         * for players, with the current code design, increase_width_by is the only thing that should
+         * use "=" and not "-=" or "+=" !!!
+         */
+        my_pixels_height = pixel_size;
+        var increase_width_by = 0;
+        /* specific drawing is based to get the number that goes between the type of drawing whether
+        background, hats, shirt, and etc and between the ".svg" so for instance hats_men3.svg or
+        background25.svg, I am getting the number based between the type of drawing and the ".svg" this
+        helps me access the actual drawing, not just based off of visible placement in the closet 
+        or in the shop, but the actual number of the svg which never changes  
+        */
+
+        /** It is important to note that the way specific_drawing in accounts.js and shop.js is
+         * exactly the same, it gets the correct svg number, but the detection method is different
+         * in shop.js it calls the function detect_specific_drawing(specific_drawing, type_of_drawing);
+         *  and goes through some complex math structure using different variables and searching through
+         * an array of arrays, but here, it's all made simple, with the creation of my_bibletar_svg which
+         * is based off of a complex math engine I designed in shop.js, I am easily able to detect the
+         * svg number and get the specific drawing.
+         * 
+         */
+        var specific_drawing = my_game.bibletar[index_loop][type_of_drawing];
+
+        // over here I resize the width based off of the given height
+        // background
+        if (type_of_drawing == 1) {
+            increase_width_by = 1.2;
+        }
+        //face
+        if (type_of_drawing == 2) {
+            increase_width_by = 1.1;
+        }
+        // shirt
+        if (type_of_drawing == 3) {
+            // default
+            increase_width_by = 1.7;
+
+            if (he_is_a_boy == true) {
+                if(specific_drawing > 14) {
+                    my_pixels_height += 0;
+                    x_pos_ribp -= 7;
+                    y_pos_ribp += 0;
+                    increase_width_by = 1.85
+                }
+            } else {
+                if (he_is_a_girl == true ) {
+                    if (specific_drawing >  0 && specific_drawing < 6) {
+                        /* my_pixels_height to increase size and increase_width_by is for resizing
+                         the width of the image base off of the height *BE CAREFUL!!!!! */
+                        my_pixels_height += 81;
+                        x_pos_ribp -= 33;
+                        y_pos_ribp -= 25;
+                        increase_width_by = 1.6;
+                    }
+                    if (specific_drawing >= 6 && specific_drawing <= 11) {
+                        my_pixels_height += 121;
+                        x_pos_ribp -= 14;
+                        y_pos_ribp -= 60;
+                        increase_width_by = 1.0;
+                    }
+                    if (specific_drawing >= 12 && specific_drawing <= 17) {
+                        my_pixels_height += 175;
+                        x_pos_ribp -= 17;
+                        y_pos_ribp -= 35;
+                        increase_width_by = 0.8;
+                    }
+                    if (specific_drawing >= 18 && specific_drawing <= 23) {
+                        my_pixels_height += 133;
+                        x_pos_ribp -= 18;
+                        y_pos_ribp -= 15;
+                        increase_width_by = 1.13;
+                    }
+                    if (specific_drawing >= 24 && specific_drawing <= 29) {
+                        my_pixels_height += 183;
+                        x_pos_ribp -= 21;
+                        y_pos_ribp -= 0;
+                        increase_width_by = 0.83;
+                    }
+                    if (specific_drawing >= 30 && specific_drawing <= 35) {
+                        my_pixels_height += 234;
+                        x_pos_ribp -= 25;
+                        y_pos_ribp -= 10;
+                        increase_width_by = 0.70;
+                    }
+                    if (specific_drawing >= 36 && specific_drawing <= 41) {
+                        my_pixels_height += 204;
+                        x_pos_ribp -= 23;
+                        y_pos_ribp -= 24;
+                        increase_width_by = 0.73;
+                    }
+                    if (specific_drawing >= 42 && specific_drawing <= 47) {
+                        my_pixels_height += 154;
+                        x_pos_ribp -= 50;
+                        y_pos_ribp -= 15;
+                        increase_width_by = 1.2;
+                    }
+                    if (specific_drawing >= 48 && specific_drawing <= 53) {
+                        my_pixels_height += 126;
+                        x_pos_ribp -= 17;
+                        y_pos_ribp -= 22;
+                        increase_width_by = 1.00;
+                    }
+                    if (specific_drawing >= 54 && specific_drawing <= 60) {
+                        my_pixels_height += 180;
+                        x_pos_ribp -= 55;
+                        y_pos_ribp -= 12;
+                        increase_width_by = 1.10;
+                    }
+                }
+            }
+        }
+        // glasses
+        if (type_of_drawing == 4) {
+            my_pixels_height -= 13;
+            x_pos_ribp -= 62;
+            y_pos_ribp -= 33;
+            increase_width_by = 4.2;
+        }
+        // hats
+       if (type_of_drawing == 5) {
+            increase_width_by += 2.0;
+            if (he_is_a_boy == true) {
+                if (specific_drawing > 0 && specific_drawing < 9) {
+                    // caps
+                    my_pixels_height += 11;
+                    x_pos_ribp -= 93;
+                    y_pos_ribp -= 10;
+                    increase_width_by = 3.0;
+                }
+            } else {
+                if (he_is_a_girl == true) {
+                    /** replace bibletar_hats with specific_drawing, I upgraded detection skills, this
+                     * variable is more accurate and yes, it knows whether it is for hats, glasses or 
+                     * shirt, and etc
+                     */
+                    if (specific_drawing > 1) {
+                        increase_width_by = 1.4;
+                    }
+                }
+            }
+        }
+        // eyes
+        if (type_of_drawing == 6) {
+            increase_width_by = 4.8;
+        }
+        // eyebrows
+        if (type_of_drawing == 7) {
+            increase_width_by = 8.3;
+        }
+        // noses
+        if (type_of_drawing == 8) {
+            /**sometimes need to add a default so that other coders are developers don't think the nose
+             * has disappeared or some of my other code isn't working
+             */
+            // default
+            increase_width_by = 0.5;
+            if (specific_drawing == 1 || specific_drawing == 2) {
+                increase_width_by = 0.5;
+            }
+            if (specific_drawing == 3) {
+                my_pixels_height += 3;
+                increase_width_by = 0.4;
+            }
+            if (specific_drawing == 4) {
+                my_pixels_height -= 18;
+                x_pos_ribp += 0;
+                y_pos_ribp += 10;
+                increase_width_by = 2.0;
+            }
+            if (specific_drawing == 6) {
+                my_pixels_height -= 4;
+                x_pos_ribp -= 5;
+                y_pos_ribp += 0;
+                increase_width_by = 1.0;
+            }
+            if (specific_drawing == 8) {
+                my_pixels_height += 0;
+                x_pos_ribp -= 3;
+                y_pos_ribp += 0;
+                increase_width_by = 1.0;
+            }
+            if (specific_drawing == 9) {
+                my_pixels_height -= 10;
+                x_pos_ribp -= 0;
+                y_pos_ribp += 7;
+                increase_width_by = 0.7;
+            }
+            if (specific_drawing == 10) {
+                my_pixels_height += 0;
+                x_pos_ribp += 0;
+                y_pos_ribp += 0;
+                increase_width_by = 0.44;
+            }
+            if (specific_drawing == 11 || specific_drawing == 12) {
+                my_pixels_height -= 15;
+                x_pos_ribp -= 0;
+                y_pos_ribp += 13;
+                increase_width_by = 1.7;
+            }
+        }
+        // mouths
+        if (type_of_drawing == 9) {
+            increase_width_by = 3.3;
+        }
+        // hair
+        if (type_of_drawing == 10) {
+            /* because depending on the type of hair especially girls hairs, resizing shapes will have to 
+            differ by a lot, it will be based off of 2 things, whether the player is male or female as well
+            as off of the variable bibletar_hair, it's not just resizing the width that needs to take
+            place but in some scenarios even the height as well,
+            as of the UPGRADE that took place on August 31, 2026, I will no longer be using the variable bibletar_hair, 
+            I will be using the variable specific_drawing */
+            if (he_is_a_boy == true) {
+                increase_width_by = 3.0;
+            } else {
+                if (he_is_a_girl == true) {
+                    if (specific_drawing >  0) {
+                        /* my_pixels_height to increase size and increase_width_by is for resizing
+                         the width of the image base off of the height *BE CAREFUL!!!!! */
+                        my_pixels_height += 81;
+                        x_pos_ribp -= 33;
+                        y_pos_ribp -= 20;
+                        increase_width_by = 1.6;
+                        // console.log("Bibletar Hair: " + bibletar_hair);
+                    }
+                }
+            }
+
+        }
+        /**careful not to confuse function parameters with variables, that's why I added
+         * the _ribp
+         */
+
+        my_pixels_width = (my_pixels_height*increase_width_by);
+        ctx.drawImage(what_to_draw, x_pos_ribp, y_pos_ribp, my_pixels_width, my_pixels_height);
+        /**Don't run the printMeOutSvgFileNumber function for to long, or else it will crash your computer
+         */
+        // printMeOutSvgFileNumber();
+    }
+    /** drawing / x_pos / y_pos / size / type, reference lines 29-38 or if that changes reference 
+     * function called item_chosen specifcally for closet_section NOT shop_section
+     */
+
+    var shift_bibletar_x_over = -600;
+    var shift_bibletar_y_over = -200 + (index_loop * 200);
+
+    resizeImageByPixels_and_draw(img_background_sources[index_loop], 980 + shift_bibletar_x_over, 100 + shift_bibletar_y_over, 300, 1);
+    resizeImageByPixels_and_draw(img_face_sources[index_loop], 1067.5 + shift_bibletar_x_over, 145 + shift_bibletar_y_over, 175, 2);
+    resizeImageByPixels_and_draw(img_shirt_sources[index_loop], 1077 + shift_bibletar_x_over, 300 + shift_bibletar_y_over, 100, 3);
+    resizeImageByPixels_and_draw(img_eyes_sources[index_loop], 1115 + shift_bibletar_x_over, 200 + shift_bibletar_y_over, 20, 6);
+    resizeImageByPixels_and_draw(img_eyebrows_sources[index_loop], 1114 + shift_bibletar_x_over, 187 + shift_bibletar_y_over, 12, 7);
+    resizeImageByPixels_and_draw(img_mouths_sources[index_loop], 1139 + shift_bibletar_x_over, 260 + shift_bibletar_y_over, 17, 9);
+    resizeImageByPixels_and_draw(img_noses_sources[index_loop], 1153 + shift_bibletar_x_over, 220 + shift_bibletar_y_over, 30, 8);
+    resizeImageByPixels_and_draw(img_glasses_sources[index_loop], 1150 + shift_bibletar_x_over, 230 + shift_bibletar_y_over, 50, 4);
+    resizeImageByPixels_and_draw(img_hair_sources[index_loop], 1097 + shift_bibletar_x_over, 135 + shift_bibletar_y_over, 44, 10);
+    resizeImageByPixels_and_draw(img_hats_sources[index_loop], 1150 + shift_bibletar_x_over, 140 + shift_bibletar_y_over, 50, 5);
+
+
+
+}
+
 function draw_All_Players () {
     /** Draws all players, including your, robot players if there are any, and the people
      * you are versing
@@ -1198,6 +1606,9 @@ function draw_All_Players () {
 
         ctx.fillStyle = 'rgb(66, 66, 66)';
         ctx.fillRect(50, y_baseline + (i * y_bibletars_box_spacing), 100, 100);
+
+
+        draw_players_bibletars(i);
 
         ctx.font = "20px Arial";
         ctx.fillStyle = 'rgb(8, 8, 8)';
