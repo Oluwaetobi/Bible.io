@@ -1585,17 +1585,17 @@ function draw_players_bibletars(index_loop) {
         }
         // glasses
         if (type_of_drawing == 4) {
-            x_pos_ribp -= 31;
-            y_pos_ribp -= 20;
+            x_pos_ribp -= 71;
+            y_pos_ribp -= 65;
         }
         // hats
         if (type_of_drawing == 5) {
-            x_pos_ribp -= 31;
-            y_pos_ribp -= 30;
+            x_pos_ribp -= 51;
+            y_pos_ribp -= 20;
         }
         // eyes
         if (type_of_drawing == 6) {
-            x_pos_ribp -= 90;
+            x_pos_ribp -= 89.5;
             y_pos_ribp -= 66;
         }
         // eyebrows
@@ -1606,7 +1606,7 @@ function draw_players_bibletars(index_loop) {
         // noses
         if (type_of_drawing == 8) {
             x_pos_ribp -= 115;
-            y_pos_ribp -= 80;
+            y_pos_ribp -= 79;
         }
         // mouths
         if (type_of_drawing == 9) {
@@ -1685,12 +1685,12 @@ function draw_All_Players () {
         if(img_countries_sources_game[i] == null) {
             img_countries_sources_game[i] = loadCountryData();
         }
-        ctx.drawImage(img_countries_sources_game[i], 170, y_baseline + 60 + (i * y_bibletars_box_spacing), 60, 30);
+        ctx.drawImage(img_countries_sources_game[i], 175, y_baseline + 60 + (i * y_bibletars_box_spacing), 60, 30);
 
         // wrong display
         var wrong_x_spacing = 25;
         for (let j = 0; j < my_game.questions_wrong[i]; j++) {
-            ctx.drawImage(img_wrong, 170 + (j * wrong_x_spacing), y_baseline + 35 + (i * y_bibletars_box_spacing), 20, 20);
+            ctx.drawImage(img_wrong, 175 + (j * wrong_x_spacing), y_baseline + 35 + (i * y_bibletars_box_spacing), 20, 20);
         }
 
 
@@ -1728,17 +1728,54 @@ function show_results() {
      * again or go back to the main page in the play section of Bible.io
      */
 
-    // draws players bibletar in order of ranking 1st to last place
 
-    var places_order = ["1st place", "2nd place", "3rd place", "4th place"];
+    var y_bibletars_box_spacing = 110
+    var y_baseline = 20;
+
 
     for (let i = 0; i < my_game.online; i++) {
-        ctx.fillStyle = 'rgb(0, 0, 0)'
-        ctx.fillRect(100 + i * 300, 50, 200, 200);
+        // back box
+        ctx.fillStyle = 'rgb(157, 147, 124)';
+        ctx.fillRect(45, y_baseline - 2 + (i * y_bibletars_box_spacing), 300, 104);
+
+        ctx.fillStyle = 'rgb(66, 66, 66)';
+        ctx.fillRect(50, y_baseline + (i * y_bibletars_box_spacing), 100, 100);
 
         ctx.font = "20px Arial";
-        ctx.fillStyle = 'rgb(0, 0, 0)';
-        ctx.fillText(places_order[i], 100 + (i*300), 300);
+        ctx.fillStyle = 'rgb(8, 8, 8)';
+
+        // set player's name
+        var players_name = my_name;
+        if (i == 0) {
+            players_name = my_name;
+        } else {
+            players_name = "robot player";
+        }
+        ctx.fillText(players_name, 173, y_baseline + 20 + (i * y_bibletars_box_spacing));
+        ctx.font + "15px Arial"
+        ctx.fillText("Points: " + my_game.everyones_points[i], 173, y_baseline + 40 + (i * y_bibletars_box_spacing));
+
+       function loadCountryData() {
+            img_countries = new Image();
+           var players_country_svg = "./images/country_" + my_game.countries[i] + ".svg";
+           img_countries.src = players_country_svg;
+           return img_countries;
+        }
+        if(img_countries_sources_game[i] == null) {
+            img_countries_sources_game[i] = loadCountryData();
+        }
+        ctx.drawImage(img_countries_sources_game[i], 175, y_baseline + 60 + (i * y_bibletars_box_spacing), 60, 30);
+
+        // wrong display
+        var wrong_x_spacing = 25;
+        for (let j = 0; j < my_game.questions_wrong[i]; j++) {
+            ctx.drawImage(img_wrong, 175 + (j * wrong_x_spacing), y_baseline + 40 + (i * y_bibletars_box_spacing), 15, 15);
+        }
+
+
+
+        /**Draw everyone's bibletars on top of the box displays */
+        draw_players_bibletars(i);
     }
 }
 

@@ -268,8 +268,8 @@ form input::placeholder {
 
 .questions-wrong-rectangle {
     display: none;
-    top: 370px;
-    left: 100px;
+    top: 100px;
+    left: 500px;
     background-color: aliceblue;
     /* overflow-x: hidden; */
     position: relative;
