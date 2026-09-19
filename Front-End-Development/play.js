@@ -124,6 +124,9 @@ var img_countries = new Image();
 img_countries.src = "./images/country_America.svg"; // Sets default source url
 img_countries.alt = "country";
 
+var img_countries_sources = [];
+
+
 var img_wrong = new Image();
 img_wrong.src = "./images/wrong.svg";
 img_wrong.alt = "wrong";
@@ -295,6 +298,7 @@ function prepare_the_game () {
     x_bar_divider = 1;
     home_page = 2;
     play_front_page_text[0] = 0;
+    img_countries_sources.length = 0;
 }
 
 function startGame() {
@@ -1179,9 +1183,7 @@ function draw_All_Players () {
         ctx.fillText(players_name, 170, y_baseline + 20 + (i * y_bibletars_box_spacing));
 
         // countries display
-        var players_country_svg = "./images/country_" + my_game.countries[i] + ".svg";
         // var players_country_svg = "./images/country_" + "Canada" + ".svg";
-        img_countries.src = players_country_svg;
         /**Alright, so we have a very serious problem here, assuming that the images are different
          * the foor loop for drawImages, specifically when we only have one drawImage statement,
          * won't work. This is why my country, which is Canada, is missing when I play the game.
@@ -1190,9 +1192,18 @@ function draw_All_Players () {
          * which I don't know how to fix without making more than one drawImage statement, but at the
          * end of the if I did that I would be wasting my time, because I will never know how many 
          * times the statement needs to be called, and plus for loop are more efficient.
-         */
-        ctx.drawImage(img_countries, 170, y_baseline + 60 + (i * y_bibletars_box_spacing), 60, 30);
-
+        */
+       function loadCountryData() {
+            img_countries = new Image();
+           var players_country_svg = "./images/country_" + my_game.countries[i] + ".svg";
+           img_countries.src = players_country_svg;
+           return img_countries;
+        }
+        if(img_countries_sources[i] == null) {
+            // console.log("Empty");
+            img_countries_sources[i] = loadCountryData();
+        }
+        ctx.drawImage(img_countries_sources[i], 170, y_baseline + 60 + (i * y_bibletars_box_spacing), 60, 30);
 
         // wrong display
         var wrong_x_spacing = 25;
