@@ -1575,48 +1575,48 @@ function draw_players_bibletars(index_loop) {
         }
         // face
         if (type_of_drawing == 2) {
-            x_pos_ribp -= 40;
-            y_pos_ribp -= 35;
+            x_pos_ribp -= 58;
+            y_pos_ribp -= 29.5;
         }
         // shirt
         if (type_of_drawing == 3) {
-            x_pos_ribp -= 60;
-            y_pos_ribp -= 135;
+            x_pos_ribp -= 64;
+            y_pos_ribp -= 133;
         }
         // glasses
         if (type_of_drawing == 4) {
-            x_pos_ribp -= 30;
+            x_pos_ribp -= 31;
             y_pos_ribp -= 20;
         }
         // hats
         if (type_of_drawing == 5) {
-            x_pos_ribp -= 30;
+            x_pos_ribp -= 31;
             y_pos_ribp -= 30;
         }
         // eyes
         if (type_of_drawing == 6) {
-            x_pos_ribp -= 65;
-            y_pos_ribp -= 45;
+            x_pos_ribp -= 90;
+            y_pos_ribp -= 66;
         }
         // eyebrows
         if (type_of_drawing == 7) {
-            x_pos_ribp -= 65;
-            y_pos_ribp -= 55;
+            x_pos_ribp -= 89;
+            y_pos_ribp -= 58;
         }
         // noses
         if (type_of_drawing == 8) {
-            x_pos_ribp -= 65;
-            y_pos_ribp -= 50;
+            x_pos_ribp -= 115;
+            y_pos_ribp -= 80;
         }
         // mouths
         if (type_of_drawing == 9) {
-            x_pos_ribp -= 60;
-            y_pos_ribp -= 50;
+            x_pos_ribp -= 106;
+            y_pos_ribp -= 105;
         }
         // hair
         if (type_of_drawing == 10) {
-            x_pos_ribp -= 50;
-            y_pos_ribp -= 20;
+            x_pos_ribp -= 78;
+            y_pos_ribp -= 23;
         }
 
         ctx.drawImage(what_to_draw, x_pos_ribp, y_pos_ribp, my_pixels_width, my_pixels_height);
@@ -1674,7 +1674,7 @@ function draw_All_Players () {
         } else {
             players_name = "robot player";
         }
-        ctx.fillText(players_name, 170, y_baseline + 20 + (i * y_bibletars_box_spacing));
+        ctx.fillText(players_name, 173, y_baseline + 20 + (i * y_bibletars_box_spacing));
 
        function loadCountryData() {
             img_countries = new Image();
