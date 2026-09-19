@@ -124,7 +124,15 @@ var img_countries = new Image();
 img_countries.src = "./images/country_America.svg"; // Sets default source url
 img_countries.alt = "country";
 
-var img_countries_sources = [];
+/**It is very important to understand the purpose of these arrays. On September 18, 2026. I discovered that
+ * you could only use ctx.DrawImage to drop multiple of the same images in a for loop, but once you changed
+ * the src link for one of the image, that image would not show up. After rigorous trial and error, I
+ * figured out a work around method for it by redeclaring a new object in a function. Changing the src
+ * link, and then returning the object and storing it inside an array. That way, all the images would
+ * have already loaded and I would be able to draw them onto the canvas. Problem solved!!! Glory be to God!!
+ */
+var img_countries_sources_game = [];
+var img_countries_sources_friends = [];
 
 
 var img_wrong = new Image();
@@ -298,7 +306,9 @@ function prepare_the_game () {
     x_bar_divider = 1;
     home_page = 2;
     play_front_page_text[0] = 0;
-    img_countries_sources.length = 0;
+    // sets the array to a length of zero
+    img_countries_sources_game.length = 0;
+    img_countries_sources_friends.length = 0;
 }
 
 function startGame() {
@@ -472,9 +482,16 @@ function friendsBoard() {
         ctx.fillText(friends.online[i], 140, (i*120) + 145 + friends.scroll_y + online_y_baseline);
 
         // friends countries display
-        var friends_country_svg = "./images/country_" + friends.countries[i] + ".svg";
-        img_countries.src = friends_country_svg;
-        ctx.drawImage(img_countries, 120, (i*120) + 155 + friends.scroll_y, 60, 30);
+        function loadCountryData() {
+            img_countries = new Image();
+            var friends_country_svg = "./images/country_" + friends.countries[i] + ".svg";
+            img_countries.src = friends_country_svg;
+           return img_countries;
+        }
+        if(img_countries_sources_friends[i] == null) {
+            img_countries_sources_friends[i] = loadCountryData();
+        }
+        ctx.drawImage(img_countries_sources_friends[i], 120, (i*120) + 155 + friends.scroll_y, 60, 30);
         // ctx.drawImage(img_countries, 130, 100, 100, 50);
 
     }
@@ -1182,28 +1199,16 @@ function draw_All_Players () {
         }
         ctx.fillText(players_name, 170, y_baseline + 20 + (i * y_bibletars_box_spacing));
 
-        // countries display
-        // var players_country_svg = "./images/country_" + "Canada" + ".svg";
-        /**Alright, so we have a very serious problem here, assuming that the images are different
-         * the foor loop for drawImages, specifically when we only have one drawImage statement,
-         * won't work. This is why my country, which is Canada, is missing when I play the game.
-         * And if you go into the object for "friends" or "my_game" and you make each country different
-         * or a few of them different, some of them won't show, this is a very serious problem,
-         * which I don't know how to fix without making more than one drawImage statement, but at the
-         * end of the if I did that I would be wasting my time, because I will never know how many 
-         * times the statement needs to be called, and plus for loop are more efficient.
-        */
        function loadCountryData() {
             img_countries = new Image();
            var players_country_svg = "./images/country_" + my_game.countries[i] + ".svg";
            img_countries.src = players_country_svg;
            return img_countries;
         }
-        if(img_countries_sources[i] == null) {
-            // console.log("Empty");
-            img_countries_sources[i] = loadCountryData();
+        if(img_countries_sources_game[i] == null) {
+            img_countries_sources_game[i] = loadCountryData();
         }
-        ctx.drawImage(img_countries_sources[i], 170, y_baseline + 60 + (i * y_bibletars_box_spacing), 60, 30);
+        ctx.drawImage(img_countries_sources_game[i], 170, y_baseline + 60 + (i * y_bibletars_box_spacing), 60, 30);
 
         // wrong display
         var wrong_x_spacing = 25;
