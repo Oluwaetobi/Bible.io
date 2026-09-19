@@ -1207,7 +1207,7 @@ function draw_players_bibletars(index_loop) {
 
     // my_game.bibletar[index_loop]
 
-    function load_bibletar_data(type_of_bibletar) {
+    function load_bibletar_data(bibletar_part) {
         /** load new data into an array */
         img_background = new Image();
         img_face = new Image();
@@ -1248,34 +1248,34 @@ function draw_players_bibletars(index_loop) {
             }
         }
 
-        if (type_of_bibletar == 1) {
+        if (bibletar_part == 1) {
             return img_background;
         }
-        if (type_of_bibletar == 2) {
+        if (bibletar_part == 2) {
             return img_face;
         }
-        if (type_of_bibletar == 3) {
+        if (bibletar_part == 3) {
             return img_shirt;
         }
-        if (type_of_bibletar == 4) {
+        if (bibletar_part == 4) {
             return img_glasses;
         }
-        if (type_of_bibletar == 5) {
+        if (bibletar_part == 5) {
             return img_hats;
         }
-        if (type_of_bibletar == 6) {
+        if (bibletar_part == 6) {
             return img_eyes;
         }
-        if (type_of_bibletar == 7) {
+        if (bibletar_part == 7) {
             return img_eyebrows;
         }
-        if (type_of_bibletar == 8) {
+        if (bibletar_part == 8) {
             return img_noses;
         }
-        if (type_of_bibletar == 9) {
+        if (bibletar_part == 9) {
             return img_mouths;
         }
-        if (type_of_bibletar == 10) {
+        if (bibletar_part == 10) {
             return img_hair;
         }
 
@@ -1562,6 +1562,14 @@ function draw_players_bibletars(index_loop) {
          */
 
         my_pixels_width = (my_pixels_height*increase_width_by);
+        /**Because this is being drawn in the actual match, the size of these bibletars should be incredibly
+         * smaller
+         */
+
+        // final instructions before last draw
+        my_pixels_height = (my_pixels_height/3);
+        my_pixels_width = (my_pixels_width/3);
+
         ctx.drawImage(what_to_draw, x_pos_ribp, y_pos_ribp, my_pixels_width, my_pixels_height);
         /**Don't run the printMeOutSvgFileNumber function for to long, or else it will crash your computer
          */
@@ -1571,8 +1579,8 @@ function draw_players_bibletars(index_loop) {
      * function called item_chosen specifcally for closet_section NOT shop_section
      */
 
-    var shift_bibletar_x_over = -600;
-    var shift_bibletar_y_over = -200 + (index_loop * 200);
+    var shift_bibletar_x_over = -930;
+    var shift_bibletar_y_over = -80 + (index_loop * 110);
 
     resizeImageByPixels_and_draw(img_background_sources[index_loop], 980 + shift_bibletar_x_over, 100 + shift_bibletar_y_over, 300, 1);
     resizeImageByPixels_and_draw(img_face_sources[index_loop], 1067.5 + shift_bibletar_x_over, 145 + shift_bibletar_y_over, 175, 2);
@@ -1607,9 +1615,6 @@ function draw_All_Players () {
         ctx.fillStyle = 'rgb(66, 66, 66)';
         ctx.fillRect(50, y_baseline + (i * y_bibletars_box_spacing), 100, 100);
 
-
-        draw_players_bibletars(i);
-
         ctx.font = "20px Arial";
         ctx.fillStyle = 'rgb(8, 8, 8)';
 
@@ -1638,6 +1643,11 @@ function draw_All_Players () {
         for (let j = 0; j < my_game.questions_wrong[i]; j++) {
             ctx.drawImage(img_wrong, 170 + (j * wrong_x_spacing), y_baseline + 35 + (i * y_bibletars_box_spacing), 20, 20);
         }
+
+
+
+        /**Draw everyone's bibletars on top of the box displays */
+        draw_players_bibletars(i);
     }
 
 
