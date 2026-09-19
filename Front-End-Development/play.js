@@ -1566,9 +1566,58 @@ function draw_players_bibletars(index_loop) {
          * smaller
          */
 
-        // final instructions before last draw
+        // final instructions before last draw, shift bibletar parts over
         my_pixels_height = (my_pixels_height/3);
         my_pixels_width = (my_pixels_width/3);
+        // background
+        if (type_of_drawing == 1) {
+            // nothing, already in the right place
+        }
+        // face
+        if (type_of_drawing == 2) {
+            x_pos_ribp -= 40;
+            y_pos_ribp -= 35;
+        }
+        // shirt
+        if (type_of_drawing == 3) {
+            x_pos_ribp -= 60;
+            y_pos_ribp -= 135;
+        }
+        // glasses
+        if (type_of_drawing == 4) {
+            x_pos_ribp -= 30;
+            y_pos_ribp -= 20;
+        }
+        // hats
+        if (type_of_drawing == 5) {
+            x_pos_ribp -= 30;
+            y_pos_ribp -= 30;
+        }
+        // eyes
+        if (type_of_drawing == 6) {
+            x_pos_ribp -= 65;
+            y_pos_ribp -= 45;
+        }
+        // eyebrows
+        if (type_of_drawing == 7) {
+            x_pos_ribp -= 65;
+            y_pos_ribp -= 55;
+        }
+        // noses
+        if (type_of_drawing == 8) {
+            x_pos_ribp -= 65;
+            y_pos_ribp -= 50;
+        }
+        // mouths
+        if (type_of_drawing == 9) {
+            x_pos_ribp -= 60;
+            y_pos_ribp -= 50;
+        }
+        // hair
+        if (type_of_drawing == 10) {
+            x_pos_ribp -= 50;
+            y_pos_ribp -= 20;
+        }
 
         ctx.drawImage(what_to_draw, x_pos_ribp, y_pos_ribp, my_pixels_width, my_pixels_height);
         /**Don't run the printMeOutSvgFileNumber function for to long, or else it will crash your computer
