@@ -103,6 +103,12 @@ const my_game = {
      */
     questions_wrong: [0, 0, 0, 0],
     countries: ["America", "America", "America", "America"],
+    bibletar: [
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+    ],
 };
 
 var x_bar_divider = 1;
@@ -306,9 +312,15 @@ function prepare_the_game () {
     x_bar_divider = 1;
     home_page = 2;
     play_front_page_text[0] = 0;
+
     // sets the array to a length of zero
     img_countries_sources_game.length = 0;
     img_countries_sources_friends.length = 0;
+
+    // sets bibletar for my_game object to my_bibletar_svg
+    for (let i = 0; i < my_game.bibletar[0].length; i++) {
+        my_game.bibletar[0][i] = my_bibletar_svg[i];
+    }
 }
 
 function startGame() {
