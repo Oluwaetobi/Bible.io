@@ -1123,6 +1123,17 @@ function connectPlayers () {
      * bibletar on the left hand side on the screen in top to down format, so boxes lined up vertically on the left
      * side of the screen, and my bibletar will be on the bottom right side of the screen.
      */
+
+    // draw world background
+    
+    var gradient = ctx.createLinearGradient(0, 0, 0, canvas.height);
+    gradient.addColorStop(0, 'rgb(6, 66, 86)');     // Start color (0%)
+    gradient.addColorStop(0.5, 'rgb(6, 117, 148)');
+    gradient.addColorStop(1, 'rgb(11, 46, 76)');    // End color (100%)
+    ctx.fillStyle = gradient;
+    // ctx.fillStyle = 'rgb(144, 175, 184)';
+    ctx.fillRect(0, 0, canvas.width, canvas.height)
+
     function write_Out_Text_And_Boxes() {
         var baseline_y = 570;
         var baseline_x = 520;
