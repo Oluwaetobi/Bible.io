@@ -1356,7 +1356,7 @@ function draw_points_as_bar_graph(y_bibletars_box_spacing, y_baseline) {
         /** the decimal things isn't working so I have to add an extra protocol called bar_graph_rendered_loop */
         x_bar_divider += 0.01;
         bar_graph_rendered_loop += 1;
-        console.log(x_bar_divider);
+        // console.log(x_bar_divider);
         if (bar_graph_rendered_loop % loop_bar_graph_back === 0) {
             x_bar_divider = Math.round(x_bar_divider);
         }
@@ -1909,7 +1909,7 @@ function draw_All_Players () {
         var players_name = my_name;
         players_name = my_game.everyones_names[i];
 
-        ctx.fillText(players_name, 173, y_baseline + 20 + (i * y_bibletars_box_spacing));
+        ctx.fillText(players_name, 173 + 5, y_baseline + 20 + (i * y_bibletars_box_spacing));
 
        function loadCountryData() {
             img_countries = new Image();
@@ -1920,7 +1920,22 @@ function draw_All_Players () {
         if(img_countries_sources_game[i] == null) {
             img_countries_sources_game[i] = loadCountryData();
         }
-        ctx.drawImage(img_countries_sources_game[i], 175, y_baseline + 60 + (i * y_bibletars_box_spacing), 60, 30);
+
+        // black shadow add
+        ctx.shadowColor = "black";
+        ctx.shadowBlur = 3;
+        ctx.shadowOffsetX = 0;
+        ctx.shadowOffsetY = 0;
+
+        // draws countries
+        ctx.drawImage(img_countries_sources_game[i], 175, y_baseline + 60 + (i * y_bibletars_box_spacing) + 5, 60, 30);
+
+        // black shadow remove
+        ctx.shadowColor = "white";
+        ctx.shadowBlur = 0;
+        ctx.shadowOffsetX = 0;
+        ctx.shadowOffsetY = 0;
+
 
         // wrong display | black shadow add
         ctx.shadowColor = "black";
@@ -2000,14 +2015,11 @@ function show_results() {
 
         // set player's name
         var players_name = my_name;
-        if (i == 0) {
-            players_name = my_name;
-        } else {
-            players_name = "robot player";
-        }
-        ctx.fillText(players_name, 173, y_baseline + 20 + (i * y_bibletars_box_spacing));
+        players_name = my_game.everyones_names[i];
+
+        ctx.fillText(players_name, 173 + 5, y_baseline + 20 + (i * y_bibletars_box_spacing));
         ctx.font = "15px Arial";
-        ctx.fillText("Points: " + Math.round(my_game.everyones_points[i]), 173, y_baseline + 40 + (i * y_bibletars_box_spacing));
+        ctx.fillText("Points: " + Math.round(my_game.everyones_points[i]), 173 + 5, y_baseline + 40 + (i * y_bibletars_box_spacing));
 
        function loadCountryData() {
             img_countries = new Image();
