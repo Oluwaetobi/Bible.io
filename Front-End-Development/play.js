@@ -1351,6 +1351,7 @@ function draw_points_as_bar_graph(y_bibletars_box_spacing, y_baseline) {
     /* IMPORTANT NOTE:
      should be outside the for loop, and loop_bar_graph_back must be a multiple of 100 */
     var loop_bar_graph_back = 100;
+    
     if (Number.isInteger(x_bar_divider) == false) {
         /** the decimal things isn't working so I have to add an extra protocol called bar_graph_rendered_loop */
         x_bar_divider += 0.01;
@@ -1880,12 +1881,26 @@ function draw_All_Players () {
 
 
     for (let i = 0; i < my_game.online; i++) {
+
+        // black shadow add
+        ctx.shadowColor = "black";
+        ctx.shadowBlur = 3;
+        ctx.shadowOffsetX = 0;
+        ctx.shadowOffsetY = 0;
+
+        
         // back box
         ctx.fillStyle = 'rgb(157, 147, 124)';
         ctx.fillRect(45, y_baseline - 2 + (i * y_bibletars_box_spacing), 300, 104);
-
+        
         ctx.fillStyle = 'rgb(66, 66, 66)';
         ctx.fillRect(50, y_baseline + (i * y_bibletars_box_spacing), 100, 100);
+        
+        // black shadow remove
+        ctx.shadowColor = "white";
+        ctx.shadowBlur = 0;
+        ctx.shadowOffsetX = 0;
+        ctx.shadowOffsetY = 0;
 
         ctx.font = "20px Arial";
         ctx.fillStyle = 'rgb(8, 8, 8)';
