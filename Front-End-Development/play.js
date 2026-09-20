@@ -105,9 +105,9 @@ const my_game = {
     countries: ["America", "America", "America", "America"],
     bibletar: [
         [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
-        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
-        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
-        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+        [1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1],
+        [1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1],
+        [1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1],
     ],
 };
 
@@ -296,6 +296,60 @@ function randomRobotModes() {
         robot_modes[1] = ((Math.floor(Math.random() * 5) + 1)/30);
         robot_modes[2] = ((Math.floor(Math.random() * 5) + 1)/30);
     }
+
+    
+    function randomRobotBibletars() {
+        // console.log("hello")
+        for (let i = 1; i < my_game.online; i++) {
+            for (let j = 1; j < my_game.bibletar[i].length; j++) {
+                if (j == 0) {
+                    // male or female
+                    my_game.bibletar[i][j] = (Math.floor(Math.random() *2) + 1);
+                }
+                if (j == 1) {
+                    // bakcground
+                    my_game.bibletar[i][j] = (Math.floor(Math.random() *3) + 1);
+                }
+                if (j == 2) {
+                    // face
+                    my_game.bibletar[i][j] = 0;
+                }
+                if (j == 3) {
+                    // shirt 
+                    my_game.bibletar[i][j] = (Math.floor(Math.random() *7) + 1);
+                }
+                if (j == 4) {
+                    // glasses
+                    my_game.bibletar[i][j] = (Math.floor(Math.random() *3) + 1);
+                }
+                if (j == 5) {
+                    // hats
+                    my_game.bibletar[i][j] = (Math.floor(Math.random() *3) + 1);
+                }
+                if (j == 6) {
+                    // eyes
+                    my_game.bibletar[i][j] = (Math.floor(Math.random() *20) + 1);
+                }
+                if (j == 7) {
+                    // eyebrows
+                    my_game.bibletar[i][j] = (Math.floor(Math.random() *5) + 1);
+                }
+                if (j == 8) {
+                    // noses
+                    my_game.bibletar[i][j] = (Math.floor(Math.random() *12) + 1);
+                }
+                if (j == 9) {
+                    // mouths
+                    my_game.bibletar[i][j] = (Math.floor(Math.random() *12) + 1);
+                }
+                if (j == 10) {
+                    // hair
+                    my_game.bibletar[i][j] = (Math.floor(Math.random() *20) + 1);
+                }
+            }
+        }
+    }
+    randomRobotBibletars();
 }
 
 
@@ -620,6 +674,9 @@ function myBibletar () {
          * 
          */
         var specific_drawing = my_bibletar_svg[type_of_drawing];
+        if (type_of_drawing == 3) {
+            // console.log(specific_drawing);
+        }
 
         // over here I resize the width based off of the given height
         // background
@@ -644,67 +701,11 @@ function myBibletar () {
                 }
             } else {
                 if (i_am_a_girl == true ) {
-                    if (specific_drawing >  0 && specific_drawing < 6) {
-                        /* my_pixels_height to increase size and increase_width_by is for resizing
-                         the width of the image base off of the height *BE CAREFUL!!!!! */
-                        my_pixels_height += 81;
-                        x_pos_ribp -= 33;
-                        y_pos_ribp -= 25;
-                        increase_width_by = 1.6;
-                    }
-                    if (specific_drawing >= 6 && specific_drawing <= 11) {
-                        my_pixels_height += 121;
-                        x_pos_ribp -= 14;
-                        y_pos_ribp -= 60;
-                        increase_width_by = 1.0;
-                    }
-                    if (specific_drawing >= 12 && specific_drawing <= 17) {
-                        my_pixels_height += 175;
-                        x_pos_ribp -= 17;
-                        y_pos_ribp -= 35;
-                        increase_width_by = 0.8;
-                    }
-                    if (specific_drawing >= 18 && specific_drawing <= 23) {
-                        my_pixels_height += 133;
-                        x_pos_ribp -= 18;
-                        y_pos_ribp -= 15;
-                        increase_width_by = 1.13;
-                    }
-                    if (specific_drawing >= 24 && specific_drawing <= 29) {
-                        my_pixels_height += 183;
-                        x_pos_ribp -= 21;
-                        y_pos_ribp -= 0;
-                        increase_width_by = 0.83;
-                    }
-                    if (specific_drawing >= 30 && specific_drawing <= 35) {
-                        my_pixels_height += 234;
-                        x_pos_ribp -= 25;
-                        y_pos_ribp -= 10;
-                        increase_width_by = 0.70;
-                    }
-                    if (specific_drawing >= 36 && specific_drawing <= 41) {
-                        my_pixels_height += 204;
-                        x_pos_ribp -= 23;
-                        y_pos_ribp -= 24;
-                        increase_width_by = 0.73;
-                    }
-                    if (specific_drawing >= 42 && specific_drawing <= 47) {
-                        my_pixels_height += 154;
-                        x_pos_ribp -= 50;
-                        y_pos_ribp -= 15;
-                        increase_width_by = 1.2;
-                    }
-                    if (specific_drawing >= 48 && specific_drawing <= 53) {
-                        my_pixels_height += 126;
-                        x_pos_ribp -= 17;
-                        y_pos_ribp -= 22;
-                        increase_width_by = 1.00;
-                    }
-                    if (specific_drawing >= 54 && specific_drawing <= 60) {
-                        my_pixels_height += 180;
-                        x_pos_ribp -= 55;
-                        y_pos_ribp -= 12;
-                        increase_width_by = 1.10;
+                    if (specific_drawing == 2) {
+                        my_pixels_height += 5;
+                        x_pos_ribp -= 8.5;
+                        y_pos_ribp -= 5;
+                        increase_width_by = 1.75;
                     }
                 }
             }
@@ -814,14 +815,67 @@ function myBibletar () {
                 increase_width_by = 3.0;
             } else {
                 if (i_am_a_girl == true) {
-                    if (specific_drawing >  0) {
+                    if (specific_drawing >  0 && specific_drawing < 6) {
                         /* my_pixels_height to increase size and increase_width_by is for resizing
                          the width of the image base off of the height *BE CAREFUL!!!!! */
                         my_pixels_height += 81;
                         x_pos_ribp -= 33;
-                        y_pos_ribp -= 20;
+                        y_pos_ribp -= 25;
                         increase_width_by = 1.6;
-                        // console.log("Bibletar Hair: " + bibletar_hair);
+                    }
+                    if (specific_drawing >= 6 && specific_drawing <= 11) {
+                        my_pixels_height += 121;
+                        x_pos_ribp -= 14;
+                        y_pos_ribp -= 60;
+                        increase_width_by = 1.0;
+                    }
+                    if (specific_drawing >= 12 && specific_drawing <= 17) {
+                        my_pixels_height += 175;
+                        x_pos_ribp -= 17;
+                        y_pos_ribp -= 35;
+                        increase_width_by = 0.8;
+                    }
+                    if (specific_drawing >= 18 && specific_drawing <= 23) {
+                        my_pixels_height += 133;
+                        x_pos_ribp -= 18;
+                        y_pos_ribp -= 15;
+                        increase_width_by = 1.13;
+                    }
+                    if (specific_drawing >= 24 && specific_drawing <= 29) {
+                        my_pixels_height += 183;
+                        x_pos_ribp -= 21;
+                        y_pos_ribp -= 0;
+                        increase_width_by = 0.83;
+                    }
+                    if (specific_drawing >= 30 && specific_drawing <= 35) {
+                        my_pixels_height += 234;
+                        x_pos_ribp -= 25;
+                        y_pos_ribp -= 10;
+                        increase_width_by = 0.70;
+                    }
+                    if (specific_drawing >= 36 && specific_drawing <= 41) {
+                        my_pixels_height += 204;
+                        x_pos_ribp -= 23;
+                        y_pos_ribp -= 24;
+                        increase_width_by = 0.73;
+                    }
+                    if (specific_drawing >= 42 && specific_drawing <= 47) {
+                        my_pixels_height += 154;
+                        x_pos_ribp -= 50;
+                        y_pos_ribp -= 15;
+                        increase_width_by = 1.2;
+                    }
+                    if (specific_drawing >= 48 && specific_drawing <= 53) {
+                        my_pixels_height += 126;
+                        x_pos_ribp -= 17;
+                        y_pos_ribp -= 22;
+                        increase_width_by = 1.00;
+                    }
+                    if (specific_drawing >= 54 && specific_drawing <= 60) {
+                        my_pixels_height += 180;
+                        x_pos_ribp -= 55;
+                        y_pos_ribp -= 12;
+                        increase_width_by = 1.10;
                     }
                 }
             }
@@ -1569,52 +1623,67 @@ function draw_players_bibletars(index_loop) {
         // final instructions before last draw, shift bibletar parts over
         my_pixels_height = (my_pixels_height/3);
         my_pixels_width = (my_pixels_width/3);
+
+        /** So I got the defaults down, which work in the most general cases, but it has now come to my 
+         * attention that it doesn't work for everything, so I now have even more work to do, and have to
+         * NOT resize, but adjust the x and y coordinates for some other stuff too. Man, this work is so
+         * much! But it's worth it in the end.
+         */
         // background
         if (type_of_drawing == 1) {
             // nothing, already in the right place
         }
         // face
         if (type_of_drawing == 2) {
+            // default
             x_pos_ribp -= 58;
             y_pos_ribp -= 29.5;
         }
         // shirt
         if (type_of_drawing == 3) {
+            // default
             x_pos_ribp -= 64;
             y_pos_ribp -= 133;
         }
         // glasses
         if (type_of_drawing == 4) {
+            // default
             x_pos_ribp -= 71;
             y_pos_ribp -= 65;
         }
         // hats
         if (type_of_drawing == 5) {
+            // default
             x_pos_ribp -= 51;
             y_pos_ribp -= 20;
         }
         // eyes
         if (type_of_drawing == 6) {
+            // default
             x_pos_ribp -= 89.5;
             y_pos_ribp -= 66;
         }
         // eyebrows
         if (type_of_drawing == 7) {
+            // default
             x_pos_ribp -= 89;
             y_pos_ribp -= 58;
         }
         // noses
         if (type_of_drawing == 8) {
+            // default
             x_pos_ribp -= 115;
             y_pos_ribp -= 79;
         }
         // mouths
         if (type_of_drawing == 9) {
+            // default
             x_pos_ribp -= 106;
             y_pos_ribp -= 105;
         }
         // hair
         if (type_of_drawing == 10) {
+            // default
             x_pos_ribp -= 78;
             y_pos_ribp -= 23;
         }
@@ -1753,7 +1822,7 @@ function show_results() {
         }
         ctx.fillText(players_name, 173, y_baseline + 20 + (i * y_bibletars_box_spacing));
         ctx.font + "15px Arial"
-        ctx.fillText("Points: " + my_game.everyones_points[i], 173, y_baseline + 40 + (i * y_bibletars_box_spacing));
+        ctx.fillText("Points: " + Math.round(my_game.everyones_points[i]), 173, y_baseline + 40 + (i * y_bibletars_box_spacing));
 
        function loadCountryData() {
             img_countries = new Image();

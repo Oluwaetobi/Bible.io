@@ -280,67 +280,11 @@ function playerClickedBibletar () {
                 }
             } else {
                 if (hall_of_fame_clicked_is_a_girl == true ) {
-                    if (specific_drawing >  0 && specific_drawing < 6) {
-                        /* my_pixels_height to increase size and increase_width_by is for resizing
-                         the width of the image base off of the height *BE CAREFUL!!!!! */
-                        my_pixels_height += 81;
-                        x_pos_ribp -= 33;
-                        y_pos_ribp -= 25;
-                        increase_width_by = 1.6;
-                    }
-                    if (specific_drawing >= 6 && specific_drawing <= 11) {
-                        my_pixels_height += 121;
-                        x_pos_ribp -= 14;
-                        y_pos_ribp -= 60;
-                        increase_width_by = 1.0;
-                    }
-                    if (specific_drawing >= 12 && specific_drawing <= 17) {
-                        my_pixels_height += 175;
-                        x_pos_ribp -= 17;
-                        y_pos_ribp -= 35;
-                        increase_width_by = 0.8;
-                    }
-                    if (specific_drawing >= 18 && specific_drawing <= 23) {
-                        my_pixels_height += 133;
-                        x_pos_ribp -= 18;
-                        y_pos_ribp -= 15;
-                        increase_width_by = 1.13;
-                    }
-                    if (specific_drawing >= 24 && specific_drawing <= 29) {
-                        my_pixels_height += 183;
-                        x_pos_ribp -= 21;
-                        y_pos_ribp -= 0;
-                        increase_width_by = 0.83;
-                    }
-                    if (specific_drawing >= 30 && specific_drawing <= 35) {
-                        my_pixels_height += 234;
-                        x_pos_ribp -= 25;
-                        y_pos_ribp -= 10;
-                        increase_width_by = 0.70;
-                    }
-                    if (specific_drawing >= 36 && specific_drawing <= 41) {
-                        my_pixels_height += 204;
-                        x_pos_ribp -= 23;
-                        y_pos_ribp -= 24;
-                        increase_width_by = 0.73;
-                    }
-                    if (specific_drawing >= 42 && specific_drawing <= 47) {
-                        my_pixels_height += 154;
-                        x_pos_ribp -= 50;
-                        y_pos_ribp -= 15;
-                        increase_width_by = 1.2;
-                    }
-                    if (specific_drawing >= 48 && specific_drawing <= 53) {
-                        my_pixels_height += 126;
-                        x_pos_ribp -= 17;
-                        y_pos_ribp -= 22;
-                        increase_width_by = 1.00;
-                    }
-                    if (specific_drawing >= 54 && specific_drawing <= 60) {
-                        my_pixels_height += 180;
-                        x_pos_ribp -= 55;
-                        y_pos_ribp -= 12;
-                        increase_width_by = 1.10;
+                    if (specific_drawing == 2) {
+                        my_pixels_height += 5;
+                        x_pos_ribp -= 8.5;
+                        y_pos_ribp -= 5;
+                        increase_width_by = 1.75;
                     }
                 }
             }
@@ -450,14 +394,67 @@ function playerClickedBibletar () {
                 increase_width_by = 3.0;
             } else {
                 if (hall_of_fame_clicked_is_a_girl == true) {
-                    if (specific_drawing >  0) {
+                    if (specific_drawing >  0 && specific_drawing < 6) {
                         /* my_pixels_height to increase size and increase_width_by is for resizing
                          the width of the image base off of the height *BE CAREFUL!!!!! */
                         my_pixels_height += 81;
                         x_pos_ribp -= 33;
-                        y_pos_ribp -= 20;
+                        y_pos_ribp -= 25;
                         increase_width_by = 1.6;
-                        // console.log("Bibletar Hair: " + bibletar_hair);
+                    }
+                    if (specific_drawing >= 6 && specific_drawing <= 11) {
+                        my_pixels_height += 121;
+                        x_pos_ribp -= 14;
+                        y_pos_ribp -= 60;
+                        increase_width_by = 1.0;
+                    }
+                    if (specific_drawing >= 12 && specific_drawing <= 17) {
+                        my_pixels_height += 175;
+                        x_pos_ribp -= 17;
+                        y_pos_ribp -= 35;
+                        increase_width_by = 0.8;
+                    }
+                    if (specific_drawing >= 18 && specific_drawing <= 23) {
+                        my_pixels_height += 133;
+                        x_pos_ribp -= 18;
+                        y_pos_ribp -= 15;
+                        increase_width_by = 1.13;
+                    }
+                    if (specific_drawing >= 24 && specific_drawing <= 29) {
+                        my_pixels_height += 183;
+                        x_pos_ribp -= 21;
+                        y_pos_ribp -= 0;
+                        increase_width_by = 0.83;
+                    }
+                    if (specific_drawing >= 30 && specific_drawing <= 35) {
+                        my_pixels_height += 234;
+                        x_pos_ribp -= 25;
+                        y_pos_ribp -= 10;
+                        increase_width_by = 0.70;
+                    }
+                    if (specific_drawing >= 36 && specific_drawing <= 41) {
+                        my_pixels_height += 204;
+                        x_pos_ribp -= 23;
+                        y_pos_ribp -= 24;
+                        increase_width_by = 0.73;
+                    }
+                    if (specific_drawing >= 42 && specific_drawing <= 47) {
+                        my_pixels_height += 154;
+                        x_pos_ribp -= 50;
+                        y_pos_ribp -= 15;
+                        increase_width_by = 1.2;
+                    }
+                    if (specific_drawing >= 48 && specific_drawing <= 53) {
+                        my_pixels_height += 126;
+                        x_pos_ribp -= 17;
+                        y_pos_ribp -= 22;
+                        increase_width_by = 1.00;
+                    }
+                    if (specific_drawing >= 54 && specific_drawing <= 60) {
+                        my_pixels_height += 180;
+                        x_pos_ribp -= 55;
+                        y_pos_ribp -= 12;
+                        increase_width_by = 1.10;
                     }
                 }
             }
