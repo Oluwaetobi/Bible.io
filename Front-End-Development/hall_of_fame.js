@@ -189,16 +189,29 @@ function playerClickedBibletar () {
     // WRITE Player Clicked's NAME
     var shift_name_y_over = -100;
 
+    // black shadow add
+    ctx.shadowColor = "black";
+    ctx.shadowBlur = 3;
+    ctx.shadowOffsetX = 2;
+    ctx.shadowOffsetY = 2;
+
+
+    
     ctx.font = "40px Arial";
-    ctx.strokeStyle = 'rgb(10, 9, 9)';
+    ctx.strokeStyle = 'rgb(251, 250, 250)';
     ctx.strokeText(player_Clicked_Name, 1150, 500 + shift_name_y_over);
-    ctx.fillStyle = 'rgb(8, 8, 8)';
+    ctx.fillStyle = 'rgb(252, 248, 248)';
     ctx.fillText(player_Clicked_Name, 1150, 500 + shift_name_y_over);
-
+    
     ctx.font = "20px Arial";
-    ctx.fillStyle = 'rgb(8, 8, 8)';
+    ctx.fillStyle = 'rgb(246, 242, 242)';
     ctx.fillText("Top player on Leaderboard", 1160, 535 + shift_name_y_over);
-
+    
+    // black shadow remove
+    ctx.shadowColor = "white";
+    ctx.shadowBlur = 0;
+    ctx.shadowOffsetX = 0;
+    ctx.shadowOffsetY = 0;
     
     /** Have to recalculate the src link based off of hall_of_fame_bibletar_svg */
     img_background.src = "./images/background" + hall_of_fame_bibletar_svg[1] + ".svg";

@@ -268,7 +268,7 @@ form input::placeholder {
 
 .questions-wrong-rectangle {
     display: none;
-    top: 100px;
+    top: 60px;
     left: 500px;
     background-color: aliceblue;
     /* overflow-x: hidden; */
@@ -278,6 +278,10 @@ form input::placeholder {
     height: 200px;
     /* makes it scrollable on the y */
     overflow-y: auto;
+    padding: 10px 10px;
+    box-sizing: border-box;
+    border-radius: 30px 30px;
+    border: 2px #000000 solid;
 }
 
 .questions-wrong-rectangle caption {
@@ -287,6 +291,7 @@ form input::placeholder {
     top: 0px;
     font-weight: bold;
     font-size: large;
+    text-align: center;
 }
 
 .end-of-game-continue-button {

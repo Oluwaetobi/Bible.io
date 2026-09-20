@@ -103,6 +103,7 @@ const my_game = {
      */
     questions_wrong: [0, 0, 0, 0],
     countries: ["America", "America", "America", "America"],
+    everyones_names: ["Guest Player", "Robot Player", "Robot Player", "Robot Player"],
     bibletar: [
         [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
         [1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1],
@@ -301,7 +302,7 @@ function randomRobotModes() {
     function randomRobotBibletars() {
         // console.log("hello")
         for (let i = 1; i < my_game.online; i++) {
-            for (let j = 1; j < my_game.bibletar[i].length; j++) {
+            for (let j = 0; j < my_game.bibletar[i].length; j++) {
                 if (j == 0) {
                     // male or female
                     my_game.bibletar[i][j] = (Math.floor(Math.random() *2) + 1);
@@ -344,7 +345,7 @@ function randomRobotModes() {
                 }
                 if (j == 10) {
                     // hair
-                    my_game.bibletar[i][j] = (Math.floor(Math.random() *20) + 1);
+                    my_game.bibletar[i][j] = (Math.floor(Math.random() *5) + 1);
                 }
             }
         }
@@ -357,6 +358,7 @@ function prepare_the_game () {
     timer = 0;
     this_game_points = 0;
     my_game.countries[0] = my_country;
+    my_game.everyones_names[0] = my_name;
     kicked_out = false;
     game_finished = false;
     questions_wrong_text.innerText = ``;
@@ -608,13 +610,27 @@ function friendsBoard() {
 
 function myBibletar () {
 
-    // WRITE Player Clicked's NAME
-    ctx.font = "30px Arial";
-    ctx.strokeStyle = 'rgb(10, 9, 9)';
-    ctx.strokeText(my_name, 1260, 680);
-    ctx.fillStyle = 'rgb(8, 8, 8)';
-    ctx.fillText(my_name, 1260, 680);
+    // WRITE Player's NAME
 
+    // black shadow add
+    ctx.shadowColor = "black";
+    ctx.shadowBlur = 3;
+    ctx.shadowOffsetX = 2;
+    ctx.shadowOffsetY = 2;
+
+    
+    ctx.font = "30px Arial";
+    ctx.strokeStyle = 'rgb(253, 250, 250)';
+    ctx.strokeText(my_name, 1260, 680);
+    ctx.fillStyle = 'rgb(250, 249, 249)';
+    ctx.fillText(my_name, 1260, 680);
+    
+    
+        // black shadow remove
+        ctx.shadowColor = "white";
+        ctx.shadowBlur = 0;
+        ctx.shadowOffsetX = 0;
+        ctx.shadowOffsetY = 0;
 
     
 
@@ -1191,7 +1207,12 @@ function display_Game_Time (time_alloted_for_each_game) {
 
 function draw_game_grid () {
     // grid background
-    ctx.fillStyle = 'rgb(10, 132, 193)';
+    var gradient = ctx.createLinearGradient(0, 0, 0, canvas.height);
+    gradient.addColorStop(0, 'rgb(10, 132, 250)');     // Start color (0%)
+    gradient.addColorStop(0.5, 'rgb(45, 244, 244)');
+    gradient.addColorStop(1, 'rgb(9, 174, 240)');    // End color (100%)
+    ctx.fillStyle = gradient;
+    // ctx.fillStyle = 'rgb(10, 132, 193)';
     ctx.fillRect(0, 0, canvas.width, 450);
 
     var amount_of_ticks = 100;
@@ -1682,6 +1703,22 @@ function draw_players_bibletars(index_loop) {
             // default
             x_pos_ribp -= 115;
             y_pos_ribp -= 79;
+            if(specific_drawing == 4 || specific_drawing == 11 || specific_drawing == 12) {
+                x_pos_ribp -= 0;
+                y_pos_ribp -= 7;
+            }
+            if(specific_drawing == 6) {
+                x_pos_ribp -= -3;
+                y_pos_ribp -= 0;
+            }
+            if(specific_drawing == 9) {
+                x_pos_ribp -= 0;
+                y_pos_ribp -= 4;
+            }
+            if(specific_drawing == 9) {
+                x_pos_ribp -= -3;
+                y_pos_ribp -= 0;
+            }
         }
         // mouths
         if (type_of_drawing == 9) {
@@ -1757,11 +1794,8 @@ function draw_All_Players () {
 
         // set player's name
         var players_name = my_name;
-        if (i == 0) {
-            players_name = my_name;
-        } else {
-            players_name = "robot player";
-        }
+        players_name = my_game.everyones_names[i];
+
         ctx.fillText(players_name, 173, y_baseline + 20 + (i * y_bibletars_box_spacing));
 
        function loadCountryData() {
@@ -1816,6 +1850,16 @@ function show_results() {
      * again or go back to the main page in the play section of Bible.io
      */
 
+    // background
+    var gradient = ctx.createLinearGradient(0, 0, 0, canvas.height);
+    gradient.addColorStop(0, 'rgb(68, 76, 79)');     // Start color (0%)
+    gradient.addColorStop(0.5, 'rgb(163, 168, 168)');
+    gradient.addColorStop(1, 'rgb(223, 226, 228)');    // End color (100%)
+    ctx.fillStyle = gradient;
+    // ctx.fillStyle = 'rgb(72, 99, 108)';
+    ctx.fillRect(0, 0, canvas.width, canvas.height)
+    
+
 
     var y_bibletars_box_spacing = 110
     var y_baseline = 20;
@@ -1840,7 +1884,7 @@ function show_results() {
             players_name = "robot player";
         }
         ctx.fillText(players_name, 173, y_baseline + 20 + (i * y_bibletars_box_spacing));
-        ctx.font + "15px Arial"
+        ctx.font = "15px Arial";
         ctx.fillText("Points: " + Math.round(my_game.everyones_points[i]), 173, y_baseline + 40 + (i * y_bibletars_box_spacing));
 
        function loadCountryData() {
@@ -1894,7 +1938,12 @@ function check_if_answer_is_correct(my_answer_html) {
 
 
 function questions_background() {
-    ctx.fillStyle = 'rgb(72, 99, 108)';
+    var gradient = ctx.createLinearGradient(0, 0, 0, canvas.height);
+    gradient.addColorStop(0, 'rgb(72, 99, 108)');     // Start color (0%)
+    gradient.addColorStop(0.5, 'rgb(26, 101, 101)');
+    gradient.addColorStop(1, 'rgb(141, 146, 150)');    // End color (100%)
+    ctx.fillStyle = gradient;
+    // ctx.fillStyle = 'rgb(72, 99, 108)';
     ctx.fillRect(0, 0, canvas.width, canvas.height)
 }
 
@@ -1920,7 +1969,7 @@ function choose_Random_Question () {
 
     // Return a random integer between 1 and 10 (both included): Math.floor(Math.random() * 10) + 1;
 
-    var amount_of_question_in_level_1 = 8;
+    var amount_of_question_in_level_1 = 10;
     var amount_of_question_in_level_2 = 4;
     var amount_of_question_in_level_3 = 9;
 
@@ -1937,9 +1986,24 @@ function choose_Random_Question () {
 function questions_Display() {
     questions_background();
 
+
+    // black shadow add
+    ctx.shadowColor = "black";
+    ctx.shadowBlur = 3;
+    ctx.shadowOffsetX = 2;
+    ctx.shadowOffsetY = 2;
+
     ctx.font = "20px Arial";
-    ctx.fillStyle = 'rgb(8, 8, 8)';
+    ctx.fillStyle = 'rgb(255, 255, 255)';
     ctx.fillText("Your Points: " + this_game_points, 1100, 650);
+
+    // black shadow remove
+    ctx.shadowColor = "white";
+    ctx.shadowBlur = 0;
+    ctx.shadowOffsetX = 0;
+    ctx.shadowOffsetY = 0;
+
+
     // Default, DON'T TOUCH!!!
     answer1.innerText = `Answer 1: `;
     answer2.innerText = `Answer 2: `;
@@ -2017,12 +2081,28 @@ function level_1_Questions () {
         correct_answer = 1;
     }
     if (randomQuestion == 8) {
-        question.innerText = `What was the name of Elisha's master `;
+        question.innerText = `What was the name of Elisha's master? `;
         answer1.innerText += `Ahab  `;
         answer2.innerText += `Balaam  `;
         answer3.innerText += `Elijah `;
         answer4.innerText += `Gehazi `;
         correct_answer = 3;
+    }
+    if (randomQuestion == 9) {
+        question.innerText = `What was the name of Abraham's father? `;
+        answer1.innerText += `Yonatan  `;
+        answer2.innerText += `Terah  `;
+        answer3.innerText += `Isaac `;
+        answer4.innerText += `Melchizedek `;
+        correct_answer = 2;
+    }
+    if (randomQuestion == 10) {
+        question.innerText = `What was the name of Abraham's son? `;
+        answer1.innerText += `Isaac  `;
+        answer2.innerText += `Jacob  `;
+        answer3.innerText += `Joseph `;
+        answer4.innerText += `Samson `;
+        correct_answer = 1;
     }
 }
 

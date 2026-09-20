@@ -292,13 +292,26 @@ function start_timer() {
 
 function myBibletar () {
 
-    // WRITE Player Clicked's NAME
-    ctx.font = "30px Arial";
-    ctx.strokeStyle = 'rgb(10, 9, 9)';
-    ctx.strokeText(my_name, 1250, 680);
-    ctx.fillStyle = 'rgb(8, 8, 8)';
-    ctx.fillText(my_name, 1250, 680);
+    // WRITE Player's NAME
 
+    // black shadow add
+    ctx.shadowColor = "black";
+    ctx.shadowBlur = 3;
+    ctx.shadowOffsetX = 2;
+    ctx.shadowOffsetY = 2;
+
+    
+    ctx.font = "30px Arial";
+    ctx.strokeStyle = 'rgb(253, 253, 253)';
+    ctx.strokeText(my_name, 1250, 680);
+    ctx.fillStyle = 'rgb(251, 249, 249)';
+    ctx.fillText(my_name, 1250, 680);
+    
+    // black shadow remove
+    ctx.shadowColor = "white";
+    ctx.shadowBlur = 0;
+    ctx.shadowOffsetX = 0;
+    ctx.shadowOffsetY = 0;
     
     
 
