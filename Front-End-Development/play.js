@@ -949,13 +949,32 @@ function myScoresDisplay () {
 }
 
 function displayLevels() {
+    // black shadow add
+    ctx.shadowColor = "black";
+    ctx.shadowBlur = 3;
+    ctx.shadowOffsetX = 2;
+    ctx.shadowOffsetY = 2;
+
     // background box for levels
     ctx.fillStyle = 'rgb(124, 116, 119)';
     ctx.fillRect(1250, 100, 240, 300);
 
+    // black shadow remove
+    ctx.shadowColor = "white";
+    ctx.shadowBlur = 0;
+    ctx.shadowOffsetX = 0;
+    ctx.shadowOffsetY = 0;
+
     // levels display
     
     for (let i = 0; i < 3; i++) {
+        // black shadow add
+        ctx.shadowColor = "black";
+        ctx.shadowBlur = 3;
+        ctx.shadowOffsetX = 2;
+        ctx.shadowOffsetY = 2;
+
+
         var spacing_x = 60;
         ctx.font = "20px Arial";
         if ((i+1) == level) {
@@ -970,6 +989,14 @@ function displayLevels() {
             }
         }
         ctx.fillRect(1280, 120 + (i * spacing_x), 180, 40);
+
+        // black shadow remove
+        ctx.shadowColor = "white";
+        ctx.shadowBlur = 0;
+        ctx.shadowOffsetX = 0;
+        ctx.shadowOffsetY = 0;
+
+        // Levels text display
         ctx.fillStyle = 'rgb(6, 6, 6)';
         ctx.fillText("Level " + (i + 1), 1330, 145 + (i * spacing_x));
     }
