@@ -1152,6 +1152,32 @@ function robotPlayers(time_alloted_for_each_game) {
     }
 }
 
+function display_other_game_information () {
+    var y_space_over = 70;
+    // black shadow add
+    ctx.shadowColor = "black";
+    ctx.shadowBlur = 3;
+    ctx.shadowOffsetX = 2;
+    ctx.shadowOffsetY = 2;
+
+    ctx.font = "30px Arial";
+    ctx.fillStyle = 'rgb(255, 255, 255)';
+    ctx.fillText("My Stats ", 1225, 110 + y_space_over);
+    ctx.font = "20px Arial";
+    ctx.fillStyle = 'rgb(255, 255, 255)';
+    ctx.fillText("Level: " + level, 1225, 150 + y_space_over);
+    ctx.fillText("Online: " + online, 1225, 180 + y_space_over);
+    /** remember arrays start at zero so minus 1 for level */
+    ctx.fillText("Highscore: " + my_highscores[level - 1], 1225, 210 + y_space_over);
+    ctx.fillText("Total Points: " + my_points, 1225, 240 + y_space_over);
+
+    // black shadow remove
+    ctx.shadowColor = "white";
+    ctx.shadowBlur = 0;
+    ctx.shadowOffsetX = 0;
+    ctx.shadowOffsetY = 0;
+}
+
 function display_Game_Time (time_alloted_for_each_game) {
     var game_time = (time_alloted_for_each_game-timer);
 
@@ -1163,8 +1189,17 @@ function display_Game_Time (time_alloted_for_each_game) {
     var x_baseline = 1250;
     var y_baseline = 100;
 
+    // dark black background back layer
+    ctx.fillStyle = 'rgb(0,0,0)';
+    ctx.fillRect(x_baseline - 53, 0, 400, 450);
+
     // clock background also edge of the game screen
-    ctx.fillStyle = 'rgb(10, 122, 144)';
+    var gradient = ctx.createLinearGradient(x_baseline - 50, 0, canvas.width, 0);
+    gradient.addColorStop(0, 'rgb(10, 132, 250)');     // Start color (0%)
+    // gradient.addColorStop(0.5, 'rgb(45, 244, 244)');
+    gradient.addColorStop(1, 'rgb(10, 122, 144)');    // End color (100%)
+    ctx.fillStyle = gradient;
+    // ctx.fillStyle = 'rgb(10, 122, 144)';
     ctx.fillRect(x_baseline - 50, 0, 400, 450);
     
     var x_over = 0;
@@ -1204,6 +1239,8 @@ function display_Game_Time (time_alloted_for_each_game) {
         /* there's no point of displaying negative times, just let it be zero, negative numbers should be hidden */
         ctx.fillText(0, x_baseline + x_over, y_baseline + 3);
     }
+
+    display_other_game_information();
 
 }
 
@@ -1685,6 +1722,17 @@ function draw_players_bibletars(index_loop) {
             // default
             x_pos_ribp -= 64;
             y_pos_ribp -= 133;
+
+            if (he_is_a_boy == true) {
+
+            } else {
+                if (he_is_a_girl == true) {
+                    if (specific_drawing == 2) {
+                        x_pos_ribp -= -4;
+                        y_pos_ribp -= -3;
+                    }
+                }
+            }
         }
         // glasses
         if (type_of_drawing == 4) {
@@ -1832,12 +1880,21 @@ function draw_All_Players () {
         }
         ctx.drawImage(img_countries_sources_game[i], 175, y_baseline + 60 + (i * y_bibletars_box_spacing), 60, 30);
 
-        // wrong display
+        // wrong display | black shadow add
+        ctx.shadowColor = "black";
+        ctx.shadowBlur = 3;
+        ctx.shadowOffsetX = 2;
+        ctx.shadowOffsetY = 2;
         var wrong_x_spacing = 25;
         for (let j = 0; j < my_game.questions_wrong[i]; j++) {
             ctx.drawImage(img_wrong, 175 + (j * wrong_x_spacing), y_baseline + 35 + (i * y_bibletars_box_spacing), 20, 20);
         }
-
+        // black shadow remove
+        ctx.shadowColor = "white";
+        ctx.shadowBlur = 0;
+        ctx.shadowOffsetX = 0;
+        ctx.shadowOffsetY = 0;
+        
 
 
         /**Draw everyone's bibletars on top of the box displays */
@@ -1875,7 +1932,7 @@ function show_results() {
 
     // background
     var gradient = ctx.createLinearGradient(0, 0, 0, canvas.height);
-    gradient.addColorStop(0, 'rgb(68, 76, 79)');     // Start color (0%)
+    gradient.addColorStop(0, 'rgb(104, 109, 110)');     // Start color (0%)
     gradient.addColorStop(0.5, 'rgb(163, 168, 168)');
     gradient.addColorStop(1, 'rgb(223, 226, 228)');    // End color (100%)
     ctx.fillStyle = gradient;
