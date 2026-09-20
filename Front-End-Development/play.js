@@ -113,6 +113,7 @@ const my_game = {
 };
 
 var x_bar_divider = 1;
+var bar_graph_rendered_loop = 0;
 
 var robot_modes = [0, 0, 0]
 
@@ -365,15 +366,16 @@ function prepare_the_game () {
     // resets it each game
     question_I_got_wrong = [];
     my_game.questions_wrong[0] = 0;
-
+    
     for (let i = 0; i < my_game.everyones_points.length; i++) {
         // reset everyone's points
         my_game.everyones_points[i] = 0;
     }
-
+    
     randomRobotModes();
-
+    
     x_bar_divider = 1;
+    bar_graph_rendered_loop = 0;
     home_page = 2;
     play_front_page_text[0] = 0;
 
@@ -1243,6 +1245,11 @@ function draw_points_as_bar_graph(y_bibletars_box_spacing, y_baseline) {
     for (let i = 0; i < my_game.online; i++) {
         var each_players_points = Math.round(my_game.everyones_points[i]);
 
+        // bar graph color back layer
+        ctx.fillStyle = 'rgb(0,0,0)';
+        ctx.fillRect(bar_x_starting_point , y_baseline + 10 + (i * y_bibletars_box_spacing) -1, ((each_players_points * bar_speed_x) / x_bar_divider) + 1 , 60 + 2);
+       
+        // real bar graph color
         if (i == 0) {
             ctx.fillStyle = 'rgb(197, 11, 11)';
         } else if (i == 1) {
@@ -1268,9 +1275,25 @@ function draw_points_as_bar_graph(y_bibletars_box_spacing, y_baseline) {
 
 
         var size_of_bar = ((each_players_points * bar_speed_x) / x_bar_divider);
-        if (size_of_bar > 800) {
-            // send bar graph back to half it's size when it passes the end of game screen land mark
-            x_bar_divider += 1;
+        if (size_of_bar > 837) {
+            /* send bar graph back to half it's size when it passes the end of game screen land mark 
+            it's 0.01 divided by amount of people in the game, to make it as close to 0.01 after the for
+            loop since there is a for loop*/
+            x_bar_divider += ((0.01)/my_game.online);
+        }
+
+        // makes smooth camera bar graph go back
+    }
+    /* IMPORTANT NOTE:
+     should be outside the for loop, and loop_bar_graph_back must be a multiple of 100 */
+    var loop_bar_graph_back = 100;
+    if (Number.isInteger(x_bar_divider) == false) {
+        /** the decimal things isn't working so I have to add an extra protocol called bar_graph_rendered_loop */
+        x_bar_divider += 0.01;
+        bar_graph_rendered_loop += 1;
+        console.log(x_bar_divider);
+        if (bar_graph_rendered_loop % loop_bar_graph_back === 0) {
+            x_bar_divider = Math.round(x_bar_divider);
         }
     }
 }
