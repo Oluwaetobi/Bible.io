@@ -1271,12 +1271,26 @@ function display_Game_Time (time_alloted_for_each_game) {
     /* real time color, based off of how much time is left, starts green, then
      yellow, orange, then red */
 
-    if (game_time >= 0) {
-        ctx.fillText(game_time, x_baseline + x_over, y_baseline + 3);
-    } else {
-        /* there's no point of displaying negative times, just let it be zero, negative numbers should be hidden */
-        ctx.fillText(0, x_baseline + x_over, y_baseline + 3);
-    }
+
+        // black shadow add
+        ctx.shadowColor = "black";
+        ctx.shadowBlur = 3;
+        ctx.shadowOffsetX = 0;
+        ctx.shadowOffsetY = 0;
+
+        if (game_time >= 0) {
+            ctx.fillText(game_time, x_baseline + x_over, y_baseline + 3);
+        } else {
+            /* there's no point of displaying negative times, just let it be zero, negative numbers should be hidden */
+            ctx.fillText(0, x_baseline + x_over, y_baseline + 3);
+        }
+        
+        
+        // black shadow remove
+        ctx.shadowColor = "white";
+        ctx.shadowBlur = 0;
+        ctx.shadowOffsetX = 0;
+        ctx.shadowOffsetY = 0;
 
     display_other_game_information();
 
@@ -1821,13 +1835,13 @@ function draw_players_bibletars(index_loop) {
                 x_pos_ribp -= -3;
                 y_pos_ribp -= 0;
             }
-            if(specific_drawing == 9) {
-                x_pos_ribp -= 0;
-                y_pos_ribp -= 4;
+            if(specific_drawing == 8) {
+                x_pos_ribp += 2;
+                y_pos_ribp -= 0;
             }
             if(specific_drawing == 9) {
-                x_pos_ribp -= -3;
-                y_pos_ribp -= 0;
+                x_pos_ribp -= -1;
+                y_pos_ribp -= 4;
             }
         }
         // mouths
@@ -1983,9 +1997,31 @@ function broadcast_game_is_over (time_alloted_for_each_game) {
     var game_time = (time_alloted_for_each_game - timer)
 
     /** I'll have the game is over pop up */
-    ctx.font = "60px Arial"
+    
+    // black shadow add
+    ctx.shadowColor = "black";
+    ctx.shadowBlur = 3;
+    ctx.shadowOffsetX = 0;
+    ctx.shadowOffsetY = 0;
+    
+
+    var end_game_message = "Time's Up, Game Over!!!";
+
+    ctx.font = "60px Arial";
+    ctx.strokeStyle = 'rgb(250, 248, 248)';
+    ctx.strokeText(end_game_message, 100, 520);
+    ctx.fillStyle = 'rgb(252, 251, 251)';
+    ctx.fillText(end_game_message, 100, 520);
+
+    ctx.font = "20px Arial";
     ctx.fillStyle = 'rgb(244, 8, 8)';
-    ctx.fillText("Time's Up, Game Over!!", 100, 520);
+    ctx.fillText("Your results will soon be displayed on the next page", 100, 570);
+        
+    // black shadow remove
+    ctx.shadowColor = "white";
+    ctx.shadowBlur = 0;
+    ctx.shadowOffsetX = 0;
+    ctx.shadowOffsetY = 0;
 
     if (game_time < -3) {
         home_page = 4;
@@ -2041,7 +2077,20 @@ function show_results() {
         if(img_countries_sources_game[i] == null) {
             img_countries_sources_game[i] = loadCountryData();
         }
+
+        // black shadow add
+        ctx.shadowColor = "black";
+        ctx.shadowBlur = 3;
+        ctx.shadowOffsetX = 0;
+        ctx.shadowOffsetY = 0;
+
         ctx.drawImage(img_countries_sources_game[i], 175, y_baseline + 60 + (i * y_bibletars_box_spacing), 60, 30);
+
+        // black shadow remove
+        ctx.shadowColor = "white";
+        ctx.shadowBlur = 0;
+        ctx.shadowOffsetX = 0;
+        ctx.shadowOffsetY = 0;
 
         // wrong display | black shadow add
         ctx.shadowColor = "black";
