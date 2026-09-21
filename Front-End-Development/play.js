@@ -2125,7 +2125,7 @@ function show_results() {
     /** Accomplishment display */
     ctx.font = "20px Arial";
     ctx.fillStyle = 'rgb(0,0,0)';
-    ctx.fillText("Congrats, you got 1st place and you earned a bonus of $ " + bonus_money + " dollars", 212, 605);
+    ctx.fillText("Congrats, you got 1st place and you earned a bonus of $ " + bonus_money + " dollars", 212, 602);
 
 
 }
@@ -2188,7 +2188,7 @@ function choose_Random_Question () {
 
     // Return a random integer between 1 and 10 (both included): Math.floor(Math.random() * 10) + 1;
 
-    var amount_of_question_in_level_1 = 10;
+    var amount_of_question_in_level_1 = 15;
     var amount_of_question_in_level_2 = 4;
     var amount_of_question_in_level_3 = 9;
 
@@ -2345,6 +2345,30 @@ function level_1_Questions () {
         answer2.innerText += `96 years old  `;
         answer3.innerText += `101 years old `;
         answer4.innerText += `He never died `;
+        correct_answer = 4;
+    }
+    if (randomQuestion == 13) {
+        question.innerText = `What's the last book in the Bible? `;
+        answer1.innerText += `Revelation  `;
+        answer2.innerText += `Jude `;
+        answer3.innerText += `3rd John `;
+        answer4.innerText += `2 Peter `;
+        correct_answer = 1;
+    }
+    if (randomQuestion == 14) {
+        question.innerText = `Who was the first person to see Jesus after his resurrection? `;
+        answer1.innerText += `James  `;
+        answer2.innerText += `Peter `;
+        answer3.innerText += `John `;
+        answer4.innerText += `Mary `;
+        correct_answer = 4;
+    }
+    if (randomQuestion == 15) {
+        question.innerText = `How many women in the Bible are named Mary? `;
+        answer1.innerText += `Only 1  `;
+        answer2.innerText += `2 women `;
+        answer3.innerText += `3 women `;
+        answer4.innerText += `at least 4 women `;
         correct_answer = 4;
     }
 }
