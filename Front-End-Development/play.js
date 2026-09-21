@@ -2043,11 +2043,20 @@ function show_results() {
         }
         ctx.drawImage(img_countries_sources_game[i], 175, y_baseline + 60 + (i * y_bibletars_box_spacing), 60, 30);
 
-        // wrong display
+        // wrong display | black shadow add
+        ctx.shadowColor = "black";
+        ctx.shadowBlur = 3;
+        ctx.shadowOffsetX = 2;
+        ctx.shadowOffsetY = 2;
         var wrong_x_spacing = 25;
         for (let j = 0; j < my_game.questions_wrong[i]; j++) {
             ctx.drawImage(img_wrong, 175 + (j * wrong_x_spacing), y_baseline + 40 + (i * y_bibletars_box_spacing), 15, 15);
         }
+        // black shadow remove
+        ctx.shadowColor = "white";
+        ctx.shadowBlur = 0;
+        ctx.shadowOffsetX = 0;
+        ctx.shadowOffsetY = 0;
 
 
 
