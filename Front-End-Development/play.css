@@ -202,7 +202,7 @@ a:hover {
     color:#f8f8f8;
     font-size: large;
 
-    /* right or left, down or up, blur radius, color, you can also add more than one shadow */
+    /* right or left, down or up, blur radius, color, - shadow */
     text-shadow: 2px 2px 2px rgb(6, 6, 6);
 }
 

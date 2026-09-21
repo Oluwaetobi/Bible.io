@@ -256,6 +256,10 @@ function update_Data_And_Continue_Game() {
         // if I beat my highscore then don't forget to give me extra cash
         my_highscores[level - 1] = this_game_points;
         my_cash += 5;
+        /** I don't think I want to tell the user that they got 5 dollars for beating their highscore
+         * or else they'll start abusing the game
+         */
+        bonus_money = 5;
     } else {
         my_cash += 1;
     }
@@ -271,6 +275,7 @@ function update_Data_And_Continue_Game() {
     // if I got first place in the game, I get extra cash
     if (i_got_first_place == true) {
         my_cash += 10;
+        bonus_money = 10;
     }
 
     // updates my total points
@@ -356,6 +361,7 @@ function randomRobotModes() {
 
 
 function prepare_the_game () {
+    bonus_money = 0;
     timer = 0;
     this_game_points = 0;
     my_game.countries[0] = my_country;
@@ -1953,7 +1959,7 @@ function draw_All_Players () {
         ctx.shadowOffsetY = 0;
 
         // draws countries
-        ctx.drawImage(img_countries_sources_game[i], 175, y_baseline + 60 + (i * y_bibletars_box_spacing) + 5, 60, 30);
+        ctx.drawImage(img_countries_sources_game[i], 175 + 5, y_baseline + 60 + (i * y_bibletars_box_spacing) + 5, 60, 30);
 
         // black shadow remove
         ctx.shadowColor = "white";
@@ -2007,15 +2013,15 @@ function broadcast_game_is_over (time_alloted_for_each_game) {
 
     var end_game_message = "Time's Up, Game Over!!!";
 
-    ctx.font = "60px Arial";
+    ctx.font = "80px Arial";
     ctx.strokeStyle = 'rgb(250, 248, 248)';
-    ctx.strokeText(end_game_message, 100, 520);
+    ctx.strokeText(end_game_message, 100, 540);
     ctx.fillStyle = 'rgb(252, 251, 251)';
-    ctx.fillText(end_game_message, 100, 520);
+    ctx.fillText(end_game_message, 100, 540);
 
-    ctx.font = "20px Arial";
+    ctx.font = "30px Arial";
     ctx.fillStyle = 'rgb(244, 8, 8)';
-    ctx.fillText("Your results will soon be displayed on the next page", 100, 570);
+    ctx.fillText("Your results will soon be displayed on the next page", 100, 580);
         
     // black shadow remove
     ctx.shadowColor = "white";
@@ -2028,6 +2034,9 @@ function broadcast_game_is_over (time_alloted_for_each_game) {
     }
 
 }
+
+
+var bonus_money = 0;
 
 function show_results() {
     /**Shows who won and places, questions I got wrong, as well as gives me the option to play
@@ -2084,7 +2093,7 @@ function show_results() {
         ctx.shadowOffsetX = 0;
         ctx.shadowOffsetY = 0;
 
-        ctx.drawImage(img_countries_sources_game[i], 175, y_baseline + 60 + (i * y_bibletars_box_spacing), 60, 30);
+        ctx.drawImage(img_countries_sources_game[i], 175 + 5, y_baseline + 60 + (i * y_bibletars_box_spacing), 60, 30);
 
         // black shadow remove
         ctx.shadowColor = "white";
@@ -2107,11 +2116,18 @@ function show_results() {
         ctx.shadowOffsetX = 0;
         ctx.shadowOffsetY = 0;
 
-
-
+        
         /**Draw everyone's bibletars on top of the box displays */
         draw_players_bibletars(i);
     }
+
+
+    /** Accomplishment display */
+    ctx.font = "20px Arial";
+    ctx.fillStyle = 'rgb(0,0,0)';
+    ctx.fillText("Congrats, you got 1st place and you earned a bonus of $ " + bonus_money + " dollars", 212, 605);
+
+
 }
 
 
@@ -2314,6 +2330,22 @@ function level_1_Questions () {
         answer3.innerText += `Both of them `;
         answer4.innerText += `None of them `;
         correct_answer = 2;
+    }
+    if (randomQuestion == 12) {
+        question.innerText = `On which day did Jesus rise from the dead? `;
+        answer1.innerText += `The first day  `;
+        answer2.innerText += `The second day  `;
+        answer3.innerText += `The third day `;
+        answer4.innerText += `He never rose from the dead `;
+        correct_answer = 3;
+    }
+    if (randomQuestion == 12) {
+        question.innerText = `At what age did prophet Elijah die? `;
+        answer1.innerText += `70 years old  `;
+        answer2.innerText += `96 years old  `;
+        answer3.innerText += `101 years old `;
+        answer4.innerText += `He never died `;
+        correct_answer = 4;
     }
 }
 
