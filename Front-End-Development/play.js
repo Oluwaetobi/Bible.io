@@ -2249,6 +2249,14 @@ function level_1_Questions () {
         answer4.innerText += `Samson `;
         correct_answer = 1;
     }
+    if (randomQuestion == 11) {
+        question.innerText = `When Cain and Abel came to make sacrifices to God, whose sacrifice did God accept? `;
+        answer1.innerText += `Cain  `;
+        answer2.innerText += `Abel  `;
+        answer3.innerText += `Both of them `;
+        answer4.innerText += `None of them `;
+        correct_answer = 2;
+    }
 }
 
 function level_2_Questions () {
