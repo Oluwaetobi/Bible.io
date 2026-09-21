@@ -642,9 +642,11 @@ function updateShopSection (shop_section_html) {
             /** index divided by 2, since it's every second td cell, the first cell is for 
              * the image display, the second cell is for the cost display
              * and Math.ceil because index should be a whole number, and it should always
-             * be rounded up
+             * be rounded up, I changed it from being completely consecutive to keeping the original
+             * consecutivep place of the svg file. The higher the svg number of the image or (bibletar part) the
+             * more it costs
              */
-            td.textContent = "Cost: $" + ((cost_of_item_html * Math.ceil(index/2)) + (acquired_stuff_closet[shop_section - 1].length * 10));
+            td.textContent = "Cost: $" + ((cost_of_item_html * not_acquired_stuff_shop[shop_section - 1][(Math.ceil((index/2) - 1))]));
         }
     })
 }
@@ -685,7 +687,11 @@ function item_Purchased(item_bought_html) {
     // figure out cost of item
     /** num_item_down_list is always consecutive */
     var num_item_down_list = (item_bought_html + (acquired_stuff_closet[shop_section - 1].length - 3));
-    cost_of_item = (cost_of_item_html * num_item_down_list);
+    /** Had to change up the protcols slightly, just to ensure that numbers for cost weren't completely 
+     * consecutive but calculate the cost based off of the svg number for the image file, it looks
+     * a bit messy but hey Glory be to God we finally did it.
+     */
+    cost_of_item = (cost_of_item_html * (not_acquired_stuff_shop[shop_section - 1][num_item_down_list - (acquired_stuff_closet[shop_section - 1].length + 1)]));
 
     /** cost_of_item_html is always 10 dollars, the real cost will be cost_of_item */
     if (my_cash >= cost_of_item) {
