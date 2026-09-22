@@ -261,6 +261,10 @@ function check_if_I_got_first_place () {
     }
 
     if (i_got_first_place == true) {
+        /** I have to reset it again here to 10, because the other declaration only does it once
+         * the button continue has been pressed, and I need it to show the correct bonus money
+         * for the alert, which happens before the continue button is pressed
+         */
         bonus_money = 10;
     }
 }
@@ -2060,7 +2064,7 @@ function broadcast_game_is_over (time_alloted_for_each_game) {
     questions_background();
 
     if(question_I_got_wrong.length == 0 && add_you_got_nothing_wrong == true) {
-        questions_wrong_text.innerText += "Congrats! You got nothing wrong!";
+        questions_wrong_text.innerText += `Congrats! You got nothing wrong! Psalms 107:20 says, "He sent his word, and healed them, and delivered them from their destructions." `;
         add_you_got_nothing_wrong = false;
     }
 
