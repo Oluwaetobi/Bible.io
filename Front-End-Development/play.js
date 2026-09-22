@@ -252,6 +252,15 @@ function change_type_of_challenge(type_of_challenge_html) {
     type_of_challenge = type_of_challenge_html;
 }
 
+function check_if_I_got_first_place () {
+    // check if I got first place in the game
+    for (let i = 1; i < my_game.online.length; i++) {
+        if (this_game_points <= my_game.everyones_points[i]) {
+            i_got_first_place = false;
+        }
+    }
+}
+
 function update_Data_And_Continue_Game() {
     // update my highscore for the level
     if (this_game_points > my_highscores[level - 1]) {
@@ -264,13 +273,6 @@ function update_Data_And_Continue_Game() {
         bonus_money = 5;
     } else {
         my_cash += 1;
-    }
-
-    // check if I got first place in the game
-    for (let i = 1; i < my_game.online.length; i++) {
-        if (this_game_points <= my_game.everyones_points[i]) {
-            i_got_first_place = false;
-        }
     }
 
     // if I got first place in the game, I get extra cash
@@ -362,6 +364,7 @@ function randomRobotModes() {
 
 
 function prepare_the_game () {
+    i_got_first_place = true;
     bonus_money = 0;
     show_accomplishment = true;
     timer = 0;
@@ -2047,6 +2050,8 @@ function kick_me_out_of_the_game () {
 }
 
 function broadcast_game_is_over (time_alloted_for_each_game) {
+    questions_background();
+    
     var game_time = (time_alloted_for_each_game - timer)
 
     /** I'll have the game is over pop up */
@@ -2076,9 +2081,12 @@ function broadcast_game_is_over (time_alloted_for_each_game) {
     ctx.shadowOffsetX = 0;
     ctx.shadowOffsetY = 0;
 
+    check_if_I_got_first_place();
+    
     if (game_time < -3) {
         home_page = 4;
     }
+
 
 }
 
@@ -2599,7 +2607,9 @@ function drawGame() {
         myBibletar();
     } else if (home_page == 3) {
         if (kicked_out == true) {
-            spectatorMode();
+            if (game_finished == false) {
+                spectatorMode();
+            }
         } else {
             questions_Display();
         }
