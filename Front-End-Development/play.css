@@ -292,8 +292,8 @@ form input::placeholder {
     font-size: large;
     text-align: center;
     place-self: center;
-    padding: 10px 100px;
-    font-size: 30px;
+    padding: 10px 40px;
+    font-size: 24px;
 }
 
 .questions-wrong-rectangle td {
