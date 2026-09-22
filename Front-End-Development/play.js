@@ -1373,7 +1373,7 @@ function draw_points_as_bar_graph(y_bibletars_box_spacing, y_baseline) {
         var each_players_points = Math.round(my_game.everyones_points[i]);
         var animate_each_point = my_game.everyone_animate_bar_x[i];
 
-        var animate_bar_x_speed = 0.02;
+        var animate_bar_x_speed = 0.035;
 
         /** This deals with the bar number animation stuff */
         if (my_game.everyone_animate_bar_x[i] < each_players_points) {
@@ -1392,26 +1392,30 @@ function draw_points_as_bar_graph(y_bibletars_box_spacing, y_baseline) {
         // real bar graph color
         if (i == 0) {
             var gradient = ctx.createLinearGradient(0, y_starting_point, 0, y_ending_point);
-            gradient.addColorStop(0, 'rgb(197, 11, 11)');
-            gradient.addColorStop(1, 'rgb(252, 31, 31)');
+            gradient.addColorStop(0, 'rgb(109, 0, 0)');
+            gradient.addColorStop(0.5, 'rgb(255, 0, 0)');
+            gradient.addColorStop(1, 'rgb(255, 86, 86)');
             ctx.fillStyle = gradient;
             // ctx.fillStyle = 'rgb(197, 11, 11)';
         } else if (i == 1) {
             var gradient = ctx.createLinearGradient(0, y_starting_point, 0, y_ending_point);
-            gradient.addColorStop(0, 'rgb(135, 11, 197)');
-            gradient.addColorStop(1, 'rgb(183, 46, 252)');
+            gradient.addColorStop(0, 'rgb(78, 0, 117)');
+            gradient.addColorStop(0.5, 'rgb(170, 0, 255)');
+            gradient.addColorStop(1, 'rgb(201, 94, 255)');
             ctx.fillStyle = gradient;
             // ctx.fillStyle = 'rgb(135, 11, 197)';
         } else if (i == 2) {
             var gradient = ctx.createLinearGradient(0, y_starting_point, 0, y_ending_point);
-            gradient.addColorStop(0, 'rgb(224, 249, 2)');
-            gradient.addColorStop(1, 'rgb(232, 250, 74)');
+            gradient.addColorStop(0, 'rgb(125, 127, 0)');
+            gradient.addColorStop(0.5, 'rgb(251, 255, 0)');
+            gradient.addColorStop(1, 'rgb(253, 255, 146)');
             ctx.fillStyle = gradient;
             // ctx.fillStyle = 'rgb(224, 249, 2)';
         } else if (i == 3) {
             var gradient = ctx.createLinearGradient(0, y_starting_point, 0, y_ending_point);
-            gradient.addColorStop(0, 'rgb(11, 197, 36)');
-            gradient.addColorStop(1, 'rgb(77, 252, 101)');
+            gradient.addColorStop(0, 'rgb(0, 102, 14)');
+            gradient.addColorStop(0.5, 'rgb(0, 255, 34)');
+            gradient.addColorStop(1, 'rgb(126, 255, 143)');
             ctx.fillStyle = gradient;
             // ctx.fillStyle = 'rgb(11, 197, 36)';
         }
@@ -2185,7 +2189,7 @@ function show_results() {
 
         ctx.fillText(players_name, 173 + 5, y_baseline + 20 + (i * y_bibletars_box_spacing));
         ctx.font = "15px Arial";
-        ctx.fillText("Points: " + Math.round(my_game.everyones_points[i]), 173 + 5, y_baseline + 40 + (i * y_bibletars_box_spacing));
+        ctx.fillText("Points: " + Math.round(my_game.everyones_points[i]), 173 + 3, y_baseline + 40 + (i * y_bibletars_box_spacing));
 
        function loadCountryData() {
             img_countries = new Image();
@@ -2203,7 +2207,7 @@ function show_results() {
         ctx.shadowOffsetX = 0;
         ctx.shadowOffsetY = 0;
 
-        ctx.drawImage(img_countries_sources_game[i], 175 + 5, y_baseline + 60 + (i * y_bibletars_box_spacing), 60, 30);
+        ctx.drawImage(img_countries_sources_game[i], 175 + 5, y_baseline + 60 + 8 + (i * y_bibletars_box_spacing), 60, 30);
 
         // black shadow remove
         ctx.shadowColor = "white";
@@ -2218,7 +2222,7 @@ function show_results() {
         ctx.shadowOffsetY = 2;
         var wrong_x_spacing = 25;
         for (let j = 0; j < my_game.questions_wrong[i]; j++) {
-            ctx.drawImage(img_wrong, 175 + (j * wrong_x_spacing), y_baseline + 40 + (i * y_bibletars_box_spacing), 20, 20);
+            ctx.drawImage(img_wrong, 175 + (j * wrong_x_spacing), y_baseline + 40 + 2 + (i * y_bibletars_box_spacing), 20, 20);
         }
         // black shadow remove
         ctx.shadowColor = "white";
