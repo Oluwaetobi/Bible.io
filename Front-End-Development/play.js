@@ -390,6 +390,7 @@ function randomRobotModes() {
     randomRobotBibletars();
 }
 
+/** Needs to happen at the start, key to helping with display of friends */
 erase_bibletar_objects_from_my_array();
 function erase_bibletar_objects_from_my_array () {
     /** It is important to note that in JavaScript, once you have erased all ways to access a specific
