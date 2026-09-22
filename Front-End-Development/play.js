@@ -589,18 +589,21 @@ function loadingBox() {
 function friendsBoard() {
     
     ctx.fillStyle = 'rgb(250, 251, 252)';
-    ctx.fillRect(0, 60, 230, canvas.height);
+    ctx.fillRect(0, 60, 260, canvas.height);
+
+    var friends_y_spacing = 130;
+    var friends_info_x_alignment = 20;
     
     for (let i = 0; i < friends.name.length; i++) {
         // name of friends
         ctx.font = "18px Arial";
         ctx.fillStyle = 'rgb(0, 0, 0)';
-        ctx.fillText(friends.name[i], 20, (i*120) + 90 + friends.scroll_y);
+        ctx.fillText(friends.name[i], 20, (i*friends_y_spacing) + 90 + friends.scroll_y);
         // console.log(i);
 
         // friends' bibletar background border box display
         ctx.fillStyle = 'rgb(100, 102, 103)';
-        ctx.fillRect(10, (i*120) + 95 + friends.scroll_y, 100, 90);
+        ctx.fillRect(10, (i*friends_y_spacing) + 95 + friends.scroll_y, 100, 90);
 
         var online_y_baseline = -20;
         if (friends.online[i] == "Online" || friends.online[i] == "online") {
@@ -608,12 +611,12 @@ function friendsBoard() {
         } else {
             ctx.fillStyle = 'rgb(244, 68, 68)'
         }
-        ctx.fillRect(120, (i*120) + 115 + friends.scroll_y + online_y_baseline, 100, 50)
+        ctx.fillRect(120 + friends_info_x_alignment, (i*friends_y_spacing) + 115 + friends.scroll_y + online_y_baseline, 100, 50)
         
         // online or offline text display
         ctx.font = "18px Arial";
         ctx.fillStyle = 'rgb(0, 0, 0)';
-        ctx.fillText(friends.online[i], 140, (i*120) + 145 + friends.scroll_y + online_y_baseline);
+        ctx.fillText(friends.online[i], 140 + friends_info_x_alignment, (i*friends_y_spacing) + 145 + friends.scroll_y + online_y_baseline);
 
         // friends countries display
         function loadCountryData() {
@@ -625,7 +628,7 @@ function friendsBoard() {
         if(img_countries_sources_friends[i] == null) {
             img_countries_sources_friends[i] = loadCountryData();
         }
-        ctx.drawImage(img_countries_sources_friends[i], 120, (i*120) + 155 + friends.scroll_y, 60, 30);
+        ctx.drawImage(img_countries_sources_friends[i], 120 + friends_info_x_alignment, (i*friends_y_spacing) + 155 + friends.scroll_y, 60, 30);
         // ctx.drawImage(img_countries, 130, 100, 100, 50);
 
         draw_players_bibletars(i);
@@ -646,7 +649,7 @@ function friendsBoard() {
      * this helps to block display for friends holder when the scroll happens
     */
     ctx.fillStyle = 'rgb(120, 201, 241)';
-    ctx.fillRect(0, 0, 230, 70);
+    ctx.fillRect(0, 0, 260, 70);
 
     ctx.font = "40px Arial";
     ctx.strokeStyle = 'rgb(2, 2, 2)';
@@ -2016,7 +2019,7 @@ function draw_players_bibletars(index_loop) {
 
    if (home_page == 1) {
     shift_bibletar_x_over = -970;
-    shift_bibletar_y_over = -5 + (index_loop * 110);
+    shift_bibletar_y_over = -5 + (index_loop * 130) + friends.scroll_y;
    }
    
     resizeImageByPixels_and_draw(img_background_sources[index_loop], 980 + shift_bibletar_x_over, 100 + shift_bibletar_y_over, 300, 1);
