@@ -62,6 +62,10 @@ var online = 1;
 var home_page = 1;
 
 const friends = {
+    /** It is kind of cool to think that most game data can be managed just from the object, just waiting
+     * till the day that I get my own servers and we can start pulling that information into here. A real
+     * connected, online, massive, multiplayer, Christian video game!!!
+     */
     name: ["No Name", "No Name", "No Name", "No Name", "No Name", "No Name", "No Name", "No Name", "No Name", "No Name", "No Name"],
     bibletar: [
         [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
@@ -311,6 +315,7 @@ function update_Data_And_Continue_Game() {
     save_Data_to_Local_or_Session_Storage();
 
 
+    erase_bibletar_objects_from_my_array();
     // set home page back to main screen
     home_page = 1;
 }
@@ -2143,7 +2148,6 @@ var add_you_got_nothing_wrong = true;
 
 function broadcast_game_is_over (time_alloted_for_each_game) {
     questions_background();
-    erase_bibletar_objects_from_my_array();
 
     if(question_I_got_wrong.length == 0 && add_you_got_nothing_wrong == true) {
         questions_wrong_text.innerText += `Congrats! You got nothing wrong! Psalms 107:20 says, "He sent his word, and healed them, and delivered them from their destructions." `;
