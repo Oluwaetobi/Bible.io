@@ -63,7 +63,20 @@ var home_page = 1;
 
 const friends = {
     name: ["No Name", "No Name", "No Name", "No Name", "No Name", "No Name", "No Name", "No Name", "No Name", "No Name", "No Name"],
-    bibletar: [],
+    bibletar: [
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+        [1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1],
+        [1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1],
+        [1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1],
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+        [1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1],
+        [1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1],
+        [1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1],
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+        [1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1],
+        [1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1],
+        [1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1],
+    ],
     scroll_y: 0,
     online: ["Offline", "Offline", "Offline", "Offline", "Offline", "Offline", "Offline", "Offline", "Offline", "Offline", "Offline"],
     countries: ["America", "America", "America", "America", "America", "America", "America", "America", "America", "America", "America", "America", "America"]
@@ -372,6 +385,24 @@ function randomRobotModes() {
     randomRobotBibletars();
 }
 
+erase_bibletar_objects_from_my_array();
+function erase_bibletar_objects_from_my_array () {
+    /** It is important to note that in JavaScript, once you have erased all ways to access a specific
+     * object, the object itself gets deleted. And that is the only way to delete the object itself.
+     * If you try to use the declaration delete on an object, it will only delete the specific reference,
+     * not the object itself
+     */
+    img_background_sources.length = 0;
+    img_face_sources.length = 0;
+    img_shirt_sources.length = 0;
+    img_glasses_sources.length = 0;
+    img_hats_sources.length = 0;
+    img_eyes_sources.length = 0;
+    img_eyebrows_sources.length = 0;
+    img_noses_sources.length = 0;
+    img_mouths_sources.length = 0;
+    img_hair_sources.length = 0;
+}
 
 function prepare_the_game () {
     add_you_got_nothing_wrong = true;
@@ -406,16 +437,7 @@ function prepare_the_game () {
     img_countries_sources_game.length = 0;
     img_countries_sources_friends.length = 0;
 
-    img_background_sources.length = 0;
-    img_face_sources.length = 0;
-    img_shirt_sources.length = 0;
-    img_glasses_sources.length = 0;
-    img_hats_sources.length = 0;
-    img_eyes_sources.length = 0;
-    img_eyebrows_sources.length = 0;
-    img_noses_sources.length = 0;
-    img_mouths_sources.length = 0;
-    img_hair_sources.length = 0;
+    erase_bibletar_objects_from_my_array();
 
     // sets bibletar for my_game object to my_bibletar_svg
     for (let i = 0; i < my_game.bibletar[0].length; i++) {
@@ -605,6 +627,8 @@ function friendsBoard() {
         }
         ctx.drawImage(img_countries_sources_friends[i], 120, (i*120) + 155 + friends.scroll_y, 60, 30);
         // ctx.drawImage(img_countries, 130, 100, 100, 50);
+
+        draw_players_bibletars(i);
 
     }
     
@@ -1173,6 +1197,7 @@ function connectPlayers () {
         ctx.drawImage(img_world_map, 218, 0, 1000, 600);
     }
     draw_World_Map();
+    loadingBox();
     write_Out_Text_And_Boxes();
 
 
@@ -1472,6 +1497,8 @@ function draw_points_as_bar_graph(y_bibletars_box_spacing, y_baseline) {
     }
 }
 
+var object_to_use = my_game;
+
 function draw_players_bibletars(index_loop) {
     /** This function draws the background, face, shirt, eyes, and etc for each player that playing
      * in my game
@@ -1495,28 +1522,34 @@ function draw_players_bibletars(index_loop) {
         /** Have to recalculate the src link based off of their bibletar which is 
          * their bibletar svg
          */
-        img_background.src = "./images/background" + my_game.bibletar[index_loop][1] + ".svg";
-        img_eyes.src = "./images/eyes" + my_game.bibletar[index_loop][6] + ".svg";
-        img_noses.src = "./images/noses" + my_game.bibletar[index_loop][8] + ".svg";
-        if (my_game.bibletar[index_loop][0] == 1) {
-            /** it is a boy */
-            img_face.src = "./images/face_men" + my_game.bibletar[index_loop][2] + ".svg";
-            img_shirt.src = "./images/shirt_men" + my_game.bibletar[index_loop][3] + ".svg";
-            img_glasses.src = "./images/glasses_men" + my_game.bibletar[index_loop][4] + ".svg";
-            img_hats.src = "./images/hats_men" + my_game.bibletar[index_loop][5] + ".svg";
-            img_eyebrows.src = "./images/eyebrows_men" + my_game.bibletar[index_loop][7] + ".svg";
-            img_mouths.src = "./images/mouths_men" + my_game.bibletar[index_loop][9] + ".svg";
-            img_hair.src = "./images/hair_men" + my_game.bibletar[index_loop][10] + ".svg";
+        if (home_page == 1) {
+            object_to_use = friends;
         } else {
-            if (my_game.bibletar[index_loop][0] == 2) {
+            object_to_use = my_game;
+        }
+
+        img_background.src = "./images/background" + object_to_use.bibletar[index_loop][1] + ".svg";
+        img_eyes.src = "./images/eyes" + object_to_use.bibletar[index_loop][6] + ".svg";
+        img_noses.src = "./images/noses" + object_to_use.bibletar[index_loop][8] + ".svg";
+        if (object_to_use.bibletar[index_loop][0] == 1) {
+            /** it is a boy */
+            img_face.src = "./images/face_men" + object_to_use.bibletar[index_loop][2] + ".svg";
+            img_shirt.src = "./images/shirt_men" + object_to_use.bibletar[index_loop][3] + ".svg";
+            img_glasses.src = "./images/glasses_men" + object_to_use.bibletar[index_loop][4] + ".svg";
+            img_hats.src = "./images/hats_men" + object_to_use.bibletar[index_loop][5] + ".svg";
+            img_eyebrows.src = "./images/eyebrows_men" + object_to_use.bibletar[index_loop][7] + ".svg";
+            img_mouths.src = "./images/mouths_men" + object_to_use.bibletar[index_loop][9] + ".svg";
+            img_hair.src = "./images/hair_men" + object_to_use.bibletar[index_loop][10] + ".svg";
+        } else {
+            if (object_to_use.bibletar[index_loop][0] == 2) {
                 /** it is a girl */
-                img_face.src = "./images/face_women" + my_game.bibletar[index_loop][2] + ".svg";
-                img_shirt.src = "./images/shirt_women" + my_game.bibletar[index_loop][3] + ".svg";
-                img_glasses.src = "./images/glasses_women" + my_game.bibletar[index_loop][4] + ".svg";
-                img_hats.src = "./images/hats_women" + my_game.bibletar[index_loop][5] + ".svg";
-                img_eyebrows.src = "./images/eyebrows_women" + my_game.bibletar[index_loop][7] + ".svg";
-                img_mouths.src = "./images/mouths_women" + my_game.bibletar[index_loop][9] + ".svg";
-                img_hair.src = "./images/hair_women" + my_game.bibletar[index_loop][10] + ".svg";
+                img_face.src = "./images/face_women" + object_to_use.bibletar[index_loop][2] + ".svg";
+                img_shirt.src = "./images/shirt_women" + object_to_use.bibletar[index_loop][3] + ".svg";
+                img_glasses.src = "./images/glasses_women" + object_to_use.bibletar[index_loop][4] + ".svg";
+                img_hats.src = "./images/hats_women" + object_to_use.bibletar[index_loop][5] + ".svg";
+                img_eyebrows.src = "./images/eyebrows_women" + object_to_use.bibletar[index_loop][7] + ".svg";
+                img_mouths.src = "./images/mouths_women" + object_to_use.bibletar[index_loop][9] + ".svg";
+                img_hair.src = "./images/hair_women" + object_to_use.bibletar[index_loop][10] + ".svg";
             }
         }
 
@@ -1589,10 +1622,10 @@ function draw_players_bibletars(index_loop) {
 
     var he_is_a_boy = false;
     var he_is_a_girl = false;
-    if (my_game.bibletar[index_loop][0] == 1) {
+    if (object_to_use.bibletar[index_loop][0] == 1) {
         he_is_a_boy = true;
     } else {
-        if (my_game.bibletar[index_loop][0] == 2) {
+        if (object_to_use.bibletar[index_loop][0] == 2) {
             he_is_a_girl = true;
         }
     }
@@ -1621,7 +1654,7 @@ function draw_players_bibletars(index_loop) {
          * svg number and get the specific drawing.
          * 
          */
-        var specific_drawing = my_game.bibletar[index_loop][type_of_drawing];
+        var specific_drawing = object_to_use.bibletar[index_loop][type_of_drawing];
 
         // over here I resize the width based off of the given height
         // background
@@ -1956,13 +1989,18 @@ function draw_players_bibletars(index_loop) {
                         x_pos_ribp -= -11;
                         y_pos_ribp -= -23;
                     }
-                    if (specific_drawing >= 18 && specific_drawing <= 23) {
-                        x_pos_ribp -= -11;
-                        y_pos_ribp -= -8;
+                    if (specific_drawing >= 24 && specific_drawing <= 29) {
+                        x_pos_ribp -= -14.5;
+                        y_pos_ribp -= 2;
+                    }
+                    if (specific_drawing >= 30 && specific_drawing <= 35) {
+                        x_pos_ribp -= -17;
+                        y_pos_ribp -= -12;
                     }
                 }
             }
         }
+
 
         ctx.drawImage(what_to_draw, x_pos_ribp, y_pos_ribp, my_pixels_width, my_pixels_height);
         /**Don't run the printMeOutSvgFileNumber function for to long, or else it will crash your computer
@@ -1971,11 +2009,16 @@ function draw_players_bibletars(index_loop) {
     }
     /** drawing / x_pos / y_pos / size / type, reference lines 29-38 or if that changes reference 
      * function called item_chosen specifcally for closet_section NOT shop_section
-     */
+    */
+   
+   var shift_bibletar_x_over = -930;
+   var shift_bibletar_y_over = -80 + (index_loop * 110);
 
-    var shift_bibletar_x_over = -930;
-    var shift_bibletar_y_over = -80 + (index_loop * 110);
-
+   if (home_page == 1) {
+    shift_bibletar_x_over = -970;
+    shift_bibletar_y_over = -5 + (index_loop * 110);
+   }
+   
     resizeImageByPixels_and_draw(img_background_sources[index_loop], 980 + shift_bibletar_x_over, 100 + shift_bibletar_y_over, 300, 1);
     resizeImageByPixels_and_draw(img_face_sources[index_loop], 1067.5 + shift_bibletar_x_over, 145 + shift_bibletar_y_over, 175, 2);
     resizeImageByPixels_and_draw(img_shirt_sources[index_loop], 1077 + shift_bibletar_x_over, 300 + shift_bibletar_y_over, 100, 3);
@@ -2097,6 +2140,7 @@ var add_you_got_nothing_wrong = true;
 
 function broadcast_game_is_over (time_alloted_for_each_game) {
     questions_background();
+    erase_bibletar_objects_from_my_array();
 
     if(question_I_got_wrong.length == 0 && add_you_got_nothing_wrong == true) {
         questions_wrong_text.innerText += `Congrats! You got nothing wrong! Psalms 107:20 says, "He sent his word, and healed them, and delivered them from their destructions." `;
@@ -2654,7 +2698,10 @@ function drawGame() {
         myBibletar();
     } else if (home_page == 2) {
         connectPlayers();
-        loadingBox();
+        /** declared loadingbox inside connectPlayers() function, that way it doesn't go on top
+         * of the box that says connect players on computers with smaller screen dimensions
+         */
+        // loadingBox();
         myBibletar();
     } else if (home_page == 3) {
         if (kicked_out == true) {
