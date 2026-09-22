@@ -254,10 +254,14 @@ function change_type_of_challenge(type_of_challenge_html) {
 
 function check_if_I_got_first_place () {
     // check if I got first place in the game
-    for (let i = 1; i < my_game.online.length; i++) {
+    for (let i = 1; i < my_game.online; i++) {
         if (this_game_points <= my_game.everyones_points[i]) {
             i_got_first_place = false;
         }
+    }
+
+    if (i_got_first_place == true) {
+        bonus_money = 10;
     }
 }
 
@@ -364,6 +368,7 @@ function randomRobotModes() {
 
 
 function prepare_the_game () {
+    add_you_got_nothing_wrong = true;
     i_got_first_place = true;
     bonus_money = 0;
     show_accomplishment = true;
@@ -2049,9 +2054,16 @@ function kick_me_out_of_the_game () {
     kicked_out = true;
 }
 
+var add_you_got_nothing_wrong = true;
+
 function broadcast_game_is_over (time_alloted_for_each_game) {
     questions_background();
-    
+
+    if(question_I_got_wrong.length == 0 && add_you_got_nothing_wrong == true) {
+        questions_wrong_text.innerText += "Congrats! You got nothing wrong!";
+        add_you_got_nothing_wrong = false;
+    }
+
     var game_time = (time_alloted_for_each_game - timer)
 
     /** I'll have the game is over pop up */
