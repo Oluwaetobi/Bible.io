@@ -1392,9 +1392,22 @@ function draw_points_as_bar_graph(y_bibletars_box_spacing, y_baseline) {
         var lengthOfPointsNum = Math.abs(each_players_points).toString().length;
         /* moving the numbers back based off of it's length, or else, the end of the
          number will slide off the bar graph (lengthOfPointsNum) */
+         // black shadow add
+        ctx.shadowColor = "black";
+        ctx.shadowBlur = 3;
+        ctx.shadowOffsetX = 0;
+        ctx.shadowOffsetY = 0;
+
         ctx.fillText(each_players_points, (bar_x_starting_point -10) + (-1 * (lengthOfPointsNum * 30)) + ((each_players_points * bar_speed_x) / x_bar_divider), y_baseline + 55 + (i * y_bibletars_box_spacing));
         ctx.fillStyle = 'rgb(255, 255, 255)';
         ctx.fillText(each_players_points, (bar_x_starting_point -10) + (-1 * (lengthOfPointsNum * 30)) + ((each_players_points * bar_speed_x) / x_bar_divider) + 3, y_baseline + 55 + (i * y_bibletars_box_spacing) -1);
+        
+        // black shadow remove
+        ctx.shadowColor = "white";
+        ctx.shadowBlur = 0;
+        ctx.shadowOffsetX = 0;
+        ctx.shadowOffsetY = 0;
+
 
 
         var size_of_bar = ((each_players_points * bar_speed_x) / x_bar_divider);
@@ -1947,7 +1960,8 @@ function draw_All_Players () {
         ctx.shadowOffsetX = 0;
         ctx.shadowOffsetY = 0;
 
-        
+        ctx.fillStyle = 'rgb(0,0,0)';
+        ctx.fillRect(44, y_baseline - 2 + (i * y_bibletars_box_spacing), 302, 106);
         // back box
         var gradient = ctx.createLinearGradient(0, 0, 0, canvas.height);
         gradient.addColorStop(0, 'rgb(157, 147, 124)');     // Start color (0%)
@@ -2090,6 +2104,8 @@ function show_results() {
 
 
     for (let i = 0; i < my_game.online; i++) {
+        ctx.fillStyle = 'rgb(0,0,0)';
+        ctx.fillRect(44, y_baseline - 2 + (i * y_bibletars_box_spacing), 302, 106);
         // back box
         var gradient = ctx.createLinearGradient(0, 0, 0, canvas.height);
         gradient.addColorStop(0, 'rgb(157, 147, 124)');     // Start color (0%)
@@ -2284,7 +2300,6 @@ function level_1_Questions () {
         answer4.innerText += `Jezebel `;
         correct_answer = 1;
     }
-
     if (randomQuestion == 2) {
         question.innerText = `Who was the first man on Earth? `;
         answer1.innerText += `Jesus `;
@@ -2373,7 +2388,7 @@ function level_1_Questions () {
         answer4.innerText += `He never rose from the dead `;
         correct_answer = 3;
     }
-    if (randomQuestion == 12) {
+    if (randomQuestion == 13) {
         question.innerText = `At what age did prophet Elijah die? `;
         answer1.innerText += `70 years old  `;
         answer2.innerText += `96 years old  `;
@@ -2381,7 +2396,7 @@ function level_1_Questions () {
         answer4.innerText += `He never died `;
         correct_answer = 4;
     }
-    if (randomQuestion == 13) {
+    if (randomQuestion == 14) {
         question.innerText = `What's the last book in the Bible? `;
         answer1.innerText += `Revelation  `;
         answer2.innerText += `Jude `;
@@ -2389,7 +2404,7 @@ function level_1_Questions () {
         answer4.innerText += `2 Peter `;
         correct_answer = 1;
     }
-    if (randomQuestion == 14) {
+    if (randomQuestion == 15) {
         question.innerText = `Who was the first person to see Jesus after his resurrection? `;
         answer1.innerText += `James  `;
         answer2.innerText += `Peter `;
@@ -2397,7 +2412,7 @@ function level_1_Questions () {
         answer4.innerText += `Mary `;
         correct_answer = 4;
     }
-    if (randomQuestion == 15) {
+    if (randomQuestion == 16) {
         question.innerText = `How many women in the Bible are named Mary? `;
         answer1.innerText += `Only 1  `;
         answer2.innerText += `2 women `;
