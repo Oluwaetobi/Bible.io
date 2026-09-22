@@ -97,6 +97,8 @@ var game_finished = false;
 const my_game = {
     online: 4,
     everyones_points: [0, 0, 0, 0],
+    /** makes the bar graph move, makes it less choppy and more lively (animation wise) */
+    everyone_animate_bar_x: [0, 0, 0, 0],
     /** questions_wrong, let's us know how many questions each player in the game has gotten wrong
      * if you get 5 questions wrong, you automatically become a spectator, and it will show on your
      * box as well
@@ -390,6 +392,7 @@ function prepare_the_game () {
     for (let i = 0; i < my_game.everyones_points.length; i++) {
         // reset everyone's points
         my_game.everyones_points[i] = 0;
+        my_game.everyone_animate_bar_x[i] = 0;
     }
     
     randomRobotModes();
@@ -1081,7 +1084,7 @@ function show_or_hide_html_elements () {
         document.getElementById('continue-button').style.display = "none";
 
     } else if (home_page == 3) {
-        if (my_game.questions_wrong[0] > 5 || game_finished == true) {
+        if (my_game.questions_wrong[0] >= 5 || game_finished == true) {
             // only if I haven't gotten more than 5 questions wrong then allow me to keep submitting answers
             form.style.display = "none";
             question.style.display = "none";
@@ -1343,8 +1346,20 @@ function draw_game_grid () {
 function draw_beat_highscore_bar (start_x, move_x) {
     var size_of_bar = 6;
 
+     // black shadow add
+    ctx.shadowColor = "black";
+    ctx.shadowBlur = 3;
+    ctx.shadowOffsetX = 0;
+    ctx.shadowOffsetY = 0;
+    
     ctx.fillStyle = 'rgb(119, 255, 0)';
     ctx.fillRect(start_x + move_x, 0, size_of_bar, 450);
+
+    // black shadow remove
+    ctx.shadowColor = "white";
+    ctx.shadowBlur = 0;
+    ctx.shadowOffsetX = 0;
+    ctx.shadowOffsetY = 0;
 }
 
 function draw_points_as_bar_graph(y_bibletars_box_spacing, y_baseline) {
@@ -1356,15 +1371,19 @@ function draw_points_as_bar_graph(y_bibletars_box_spacing, y_baseline) {
 
     for (let i = 0; i < my_game.online; i++) {
         var each_players_points = Math.round(my_game.everyones_points[i]);
+        var animate_each_point = my_game.everyone_animate_bar_x[i];
 
-        // bar graph color back layer
+        var animate_bar_x_speed = 0.02;
+
+        /** This deals with the bar number animation stuff */
+        if (my_game.everyone_animate_bar_x[i] < each_players_points) {
+            my_game.everyone_animate_bar_x[i] += animate_bar_x_speed;
+        }
+
+        // bar graph black color back layer
         ctx.fillStyle = 'rgb(0,0,0)';
-        ctx.fillRect(bar_x_starting_point , y_baseline + 10 + (i * y_bibletars_box_spacing) -1, ((each_players_points * bar_speed_x) / x_bar_divider) + 1 , 60 + 2);
-       
-        // var gradient = ctx.createLinearGradient(0, 0, 0, canvas.height);
-        // gradient.addColorStop(0, 'rgb(157, 147, 124)');     // Start color (0%)
-        // gradient.addColorStop(1, 'rgb(223, 226, 228)');    // End color (100%)
-        // ctx.fillStyle = gradient;
+        ctx.fillRect(bar_x_starting_point , y_baseline + 10 + (i * y_bibletars_box_spacing) -1, ((animate_each_point * bar_speed_x) / x_bar_divider) + 1 , 60 + 2);
+
 
         var height_of_bar = 60;
         var y_starting_point = y_baseline + 10 + (i * y_bibletars_box_spacing);
@@ -1397,7 +1416,7 @@ function draw_points_as_bar_graph(y_bibletars_box_spacing, y_baseline) {
             // ctx.fillStyle = 'rgb(11, 197, 36)';
         }
         // Displays bar graph
-        ctx.fillRect(bar_x_starting_point , y_starting_point, ((each_players_points * bar_speed_x) / x_bar_divider) , height_of_bar);
+        ctx.fillRect(bar_x_starting_point , y_starting_point, ((animate_each_point * bar_speed_x) / x_bar_divider) , height_of_bar);
         
         // Display Numbers
         ctx.font = "50px Arial";
@@ -1412,9 +1431,9 @@ function draw_points_as_bar_graph(y_bibletars_box_spacing, y_baseline) {
         ctx.shadowOffsetX = 0;
         ctx.shadowOffsetY = 0;
 
-        ctx.fillText(each_players_points, (bar_x_starting_point -10) + (-1 * (lengthOfPointsNum * 30)) + ((each_players_points * bar_speed_x) / x_bar_divider), y_baseline + 55 + (i * y_bibletars_box_spacing));
+        ctx.fillText(each_players_points, (bar_x_starting_point -10) + (-1 * (lengthOfPointsNum * 30)) + ((animate_each_point * bar_speed_x) / x_bar_divider), y_baseline + 55 + (i * y_bibletars_box_spacing));
         ctx.fillStyle = 'rgb(255, 255, 255)';
-        ctx.fillText(each_players_points, (bar_x_starting_point -10) + (-1 * (lengthOfPointsNum * 30)) + ((each_players_points * bar_speed_x) / x_bar_divider) + 3, y_baseline + 55 + (i * y_bibletars_box_spacing) -1);
+        ctx.fillText(each_players_points, (bar_x_starting_point -10) + (-1 * (lengthOfPointsNum * 30)) + ((animate_each_point * bar_speed_x) / x_bar_divider) + 3, y_baseline + 55 + (i * y_bibletars_box_spacing) -1);
         
         // black shadow remove
         ctx.shadowColor = "white";
@@ -1424,7 +1443,7 @@ function draw_points_as_bar_graph(y_bibletars_box_spacing, y_baseline) {
 
 
 
-        var size_of_bar = ((each_players_points * bar_speed_x) / x_bar_divider);
+        var size_of_bar = ((animate_each_point * bar_speed_x) / x_bar_divider);
         if (size_of_bar > 837) {
             /* send bar graph back to half it's size when it passes the end of game screen land mark 
             it's 0.01 divided by amount of people in the game, to make it as close to 0.01 after the for
@@ -2199,7 +2218,7 @@ function show_results() {
         ctx.shadowOffsetY = 2;
         var wrong_x_spacing = 25;
         for (let j = 0; j < my_game.questions_wrong[i]; j++) {
-            ctx.drawImage(img_wrong, 175 + (j * wrong_x_spacing), y_baseline + 40 + (i * y_bibletars_box_spacing), 15, 15);
+            ctx.drawImage(img_wrong, 175 + (j * wrong_x_spacing), y_baseline + 40 + (i * y_bibletars_box_spacing), 20, 20);
         }
         // black shadow remove
         ctx.shadowColor = "white";
