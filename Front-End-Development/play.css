@@ -285,7 +285,7 @@ form input::placeholder {
 
 .questions-wrong-rectangle caption {
     background-color: #013782;
-    color:#d0d0d0;
+    color:#f9f8f8;
     position: sticky;
     top: 0px;
     font-weight: bold;
