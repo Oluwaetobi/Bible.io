@@ -1312,7 +1312,10 @@ function draw_game_grid () {
     // ctx.fillStyle = 'rgb(10, 132, 193)';
     ctx.fillRect(0, 0, canvas.width, 450);
 
-    var amount_of_ticks = 100;
+    /**Let's not pretend that hackers don't exist, if they somehow do manage to hack the game
+     * I still want it to look pretty, right? That's why I set amount_of_ticks to 1000!
+     */
+    var amount_of_ticks = 1000;
 
     // grid line ticks
     var grid_size = 2.5;
@@ -1344,18 +1347,43 @@ function draw_points_as_bar_graph(y_bibletars_box_spacing, y_baseline) {
         ctx.fillStyle = 'rgb(0,0,0)';
         ctx.fillRect(bar_x_starting_point , y_baseline + 10 + (i * y_bibletars_box_spacing) -1, ((each_players_points * bar_speed_x) / x_bar_divider) + 1 , 60 + 2);
        
+        // var gradient = ctx.createLinearGradient(0, 0, 0, canvas.height);
+        // gradient.addColorStop(0, 'rgb(157, 147, 124)');     // Start color (0%)
+        // gradient.addColorStop(1, 'rgb(223, 226, 228)');    // End color (100%)
+        // ctx.fillStyle = gradient;
+
+        var height_of_bar = 60;
+        var y_starting_point = y_baseline + 10 + (i * y_bibletars_box_spacing);
+        var y_ending_point = (y_starting_point + height_of_bar);
+
         // real bar graph color
         if (i == 0) {
-            ctx.fillStyle = 'rgb(197, 11, 11)';
+            var gradient = ctx.createLinearGradient(0, y_starting_point, 0, y_ending_point);
+            gradient.addColorStop(0, 'rgb(197, 11, 11)');
+            gradient.addColorStop(1, 'rgb(252, 31, 31)');
+            ctx.fillStyle = gradient;
+            // ctx.fillStyle = 'rgb(197, 11, 11)';
         } else if (i == 1) {
-            ctx.fillStyle = 'rgb(135, 11, 197)';
+            var gradient = ctx.createLinearGradient(0, y_starting_point, 0, y_ending_point);
+            gradient.addColorStop(0, 'rgb(135, 11, 197)');
+            gradient.addColorStop(1, 'rgb(183, 46, 252)');
+            ctx.fillStyle = gradient;
+            // ctx.fillStyle = 'rgb(135, 11, 197)';
         } else if (i == 2) {
-            ctx.fillStyle = 'rgb(224, 249, 2)';
+            var gradient = ctx.createLinearGradient(0, y_starting_point, 0, y_ending_point);
+            gradient.addColorStop(0, 'rgb(224, 249, 2)');
+            gradient.addColorStop(1, 'rgb(232, 250, 74)');
+            ctx.fillStyle = gradient;
+            // ctx.fillStyle = 'rgb(224, 249, 2)';
         } else if (i == 3) {
-            ctx.fillStyle = 'rgb(11, 197, 36)';
+            var gradient = ctx.createLinearGradient(0, y_starting_point, 0, y_ending_point);
+            gradient.addColorStop(0, 'rgb(11, 197, 36)');
+            gradient.addColorStop(1, 'rgb(77, 252, 101)');
+            ctx.fillStyle = gradient;
+            // ctx.fillStyle = 'rgb(11, 197, 36)';
         }
         // Displays bar graph
-        ctx.fillRect(bar_x_starting_point , y_baseline + 10 + (i * y_bibletars_box_spacing), ((each_players_points * bar_speed_x) / x_bar_divider) , 60);
+        ctx.fillRect(bar_x_starting_point , y_starting_point, ((each_players_points * bar_speed_x) / x_bar_divider) , height_of_bar);
         
         // Display Numbers
         ctx.font = "50px Arial";
@@ -1921,7 +1949,10 @@ function draw_All_Players () {
 
         
         // back box
-        ctx.fillStyle = 'rgb(157, 147, 124)';
+        var gradient = ctx.createLinearGradient(0, 0, 0, canvas.height);
+        gradient.addColorStop(0, 'rgb(157, 147, 124)');     // Start color (0%)
+        gradient.addColorStop(1, 'rgb(223, 226, 228)');    // End color (100%)
+        ctx.fillStyle = gradient;
         ctx.fillRect(45, y_baseline - 2 + (i * y_bibletars_box_spacing), 300, 104);
         
         ctx.fillStyle = 'rgb(66, 66, 66)';
@@ -2060,7 +2091,10 @@ function show_results() {
 
     for (let i = 0; i < my_game.online; i++) {
         // back box
-        ctx.fillStyle = 'rgb(157, 147, 124)';
+        var gradient = ctx.createLinearGradient(0, 0, 0, canvas.height);
+        gradient.addColorStop(0, 'rgb(157, 147, 124)');     // Start color (0%)
+        gradient.addColorStop(1, 'rgb(223, 226, 228)');    // End color (100%)
+        ctx.fillStyle = gradient;
         ctx.fillRect(45, y_baseline - 2 + (i * y_bibletars_box_spacing), 300, 104);
 
         ctx.fillStyle = 'rgb(66, 66, 66)';
