@@ -1948,6 +1948,14 @@ function draw_players_bibletars(index_loop) {
                         x_pos_ribp -= -22;
                         y_pos_ribp -= -17;
                     }
+                    if (specific_drawing >= 6 && specific_drawing <= 11) {
+                        x_pos_ribp -= -9.5;
+                        y_pos_ribp -= -41;
+                    }
+                    if (specific_drawing >= 12 && specific_drawing <= 17) {
+                        x_pos_ribp -= -9.5;
+                        y_pos_ribp -= -41;
+                    }
                 }
             }
         }

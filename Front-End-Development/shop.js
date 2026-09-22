@@ -964,7 +964,11 @@ function drawUsersBibletar() {
                  */
                 if (i_have_enough_money == false) {
                     // from shop section
+                    /* This was the old code I was using
                     number_for_drawing = not_acquired_stuff_shop[section_shop_or_closest - 1][(((bibletar_type_dsd[section_shop_or_closest - 1] -1) - 3) + acquired_stuff_closet[section_shop_or_closest - 1].length)]
+                    and come to think of it I don't know why I was using that because it is blatantly wrong!! 
+                    Thank you God for helping me fix this and find this mistake */
+                    number_for_drawing = acquired_stuff_closet[section_shop_or_closest - 1][((bibletar_type_dsd[section_shop_or_closest - 1] -1))]
                 } else {
                     /* from closet section, because item will no longer exist in the shop and it will be
                     in your closet */
@@ -1154,6 +1158,7 @@ function drawUsersBibletar() {
             as of the UPGRADE that took place on August 31, 2026, I will no longer be using the variable bibletar_hair, 
             I will be using the variable specific_drawing */
             if (i_am_a_boy == true) {
+                // default
                 increase_width_by = 3.0;
             } else {
                 if (i_am_a_girl == true) {
