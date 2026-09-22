@@ -2193,7 +2193,7 @@ function show_results() {
     ctx.font = "20px Arial";
     ctx.fillStyle = 'rgb(0,0,0)';
 
-    if (i_got_first_place == true) {
+    if (i_got_first_place == true && show_accomplishment == true) {
         alert("Congrats, you got 1st place and you earned a bonus of $ " + bonus_money + " dollars");
         show_accomplishment = false;
         // ctx.fillText("Congrats, you got 1st place and you earned a bonus of $ " + bonus_money + " dollars", 212, 602);
@@ -2247,11 +2247,31 @@ function spectatorMode() {
     answer4.innerText = ``;
     
     
-    
+    var kicked_out_message_1 = "You got 5 question WRONG!";
+    var kicked_out_message_2 = "You have been kicked out of the game, you are now a SPECTATOR";
+    var kicked_out_message_x = 100;
+    var kicked_out_message_y = 550;
+
+    // black shadow add
+    ctx.shadowColor = "black";
+    ctx.shadowBlur = 3;
+    ctx.shadowOffsetX = 2;
+    ctx.shadowOffsetY = 2;
+
     ctx.font = "30px Arial"
-    ctx.fillStyle = 'rgb(244, 8, 8)';
-    ctx.fillText("You got 5 question WRONG!", 100, 550);
-    ctx.fillText("You have been kicked out of the game, you are now a SPECTATOR", 100, 600);
+    ctx.strokeStyle = 'rgb(254, 253, 253)';
+    ctx.strokeText(kicked_out_message_1, kicked_out_message_x, kicked_out_message_y);
+    ctx.fillStyle = 'rgb(251, 249, 249)';
+    ctx.fillText(kicked_out_message_1, kicked_out_message_x, kicked_out_message_y);
+    ctx.strokeStyle = 'rgb(254, 253, 253)';
+    ctx.strokeText(kicked_out_message_2, kicked_out_message_x, kicked_out_message_y + 50);
+    ctx.fillText(kicked_out_message_2, kicked_out_message_x, kicked_out_message_y + 50);
+    
+    // black shadow remove
+    ctx.shadowColor = "white";
+    ctx.shadowBlur = 0;
+    ctx.shadowOffsetX = 0;
+    ctx.shadowOffsetY = 0;
     
 }
 
@@ -2582,9 +2602,9 @@ function drawGame() {
             spectatorMode();
         } else {
             questions_Display();
-            if (game_finished == true) {
-                broadcast_game_is_over(60);
-            }
+        }
+        if (game_finished == true) {
+            broadcast_game_is_over(60);
         }
         draw_All_Players();
         display_Game_Time(60);
