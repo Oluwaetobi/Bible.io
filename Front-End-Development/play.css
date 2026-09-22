@@ -318,3 +318,49 @@ form input::placeholder {
     filter: brightness(120%);
     padding: 5px 5px 5px 5px;
 }
+
+/* Custom Aler Box */
+.custom-alert-box {
+    position: fixed;
+    z-index: 2;
+    display: none;
+    background-color: rgba(252, 251, 251, 0.9);
+    box-sizing: border-box;
+    border-radius: 40px 40px 40px 40px;
+    max-width: 500px;
+    place-self: center;
+    top:30%;
+    /* top right bottom left */
+    padding: 40px 40px 60px 40px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 6px solid #090909;
+}
+
+.custom-alert-box p {
+    font-size: 30px;
+    font-weight:bold;
+}
+
+.custom-alert-box button {
+    border: none;
+    padding: 20px 60px;
+    border-radius: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+    background-color:#0991c7;
+    color: #fcfafa;
+    /* right or left, down or up, blur radius, color, - shadow */
+    text-shadow: 2px 2px 2px rgb(6, 6, 6);
+    right: 50%;
+    font-size: 30px;
+    /* margin: 0 auto; */
+}
+
+
+.custom-alert-box button:hover {
+    filter: brightness(150%);
+}

@@ -112,6 +112,8 @@ const my_game = {
     ],
 };
 
+var i_got_first_place = true;
+
 var x_bar_divider = 1;
 var bar_graph_rendered_loop = 0;
 
@@ -265,7 +267,6 @@ function update_Data_And_Continue_Game() {
     }
 
     // check if I got first place in the game
-    var i_got_first_place = true;
     for (let i = 1; i < my_game.online.length; i++) {
         if (this_game_points <= my_game.everyones_points[i]) {
             i_got_first_place = false;
@@ -362,6 +363,7 @@ function randomRobotModes() {
 
 function prepare_the_game () {
     bonus_money = 0;
+    show_accomplishment = true;
     timer = 0;
     this_game_points = 0;
     my_game.countries[0] = my_country;
@@ -2080,7 +2082,22 @@ function broadcast_game_is_over (time_alloted_for_each_game) {
 
 }
 
+const alertBox = document.getElementById('custom-alert')
+const alertButton = document.getElementById('custom-alert-button');
 
+window.alert = function(message) {
+    const alertBox_Text = document.getElementById('alert-box-text');
+
+    alertBox_Text.innerText = message;
+    alertBox.style.display = 'flex';
+    alertButton.style.fontSize = "12px";
+
+}
+alertButton.addEventListener("click", function() {
+    alertBox.style.display = "none";
+})
+
+var show_accomplishment = true;
 var bonus_money = 0;
 
 function show_results() {
@@ -2175,7 +2192,12 @@ function show_results() {
     /** Accomplishment display */
     ctx.font = "20px Arial";
     ctx.fillStyle = 'rgb(0,0,0)';
-    ctx.fillText("Congrats, you got 1st place and you earned a bonus of $ " + bonus_money + " dollars", 212, 602);
+
+    if (i_got_first_place == true) {
+        alert("Congrats, you got 1st place and you earned a bonus of $ " + bonus_money + " dollars");
+        show_accomplishment = false;
+        // ctx.fillText("Congrats, you got 1st place and you earned a bonus of $ " + bonus_money + " dollars", 212, 602);
+    }
 
 
 }
