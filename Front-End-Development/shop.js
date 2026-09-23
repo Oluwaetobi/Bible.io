@@ -1257,10 +1257,10 @@ function drawUsersBibletar() {
                     increase_width_by = 0.8;
                 }
                 if (specific_drawing >= 99 && specific_drawing <= 104) {
-                    my_pixels_height += 133;
+                    my_pixels_height += 233;
                     x_pos_ribp -= 5;
-                    y_pos_ribp -= 3;
-                    increase_width_by = 0.8;
+                    y_pos_ribp -= 10;
+                    increase_width_by = 0.5;
                 }
             } else {
                 if (i_am_a_girl == true) {
