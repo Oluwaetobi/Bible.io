@@ -1398,7 +1398,7 @@ function display_Game_Time (time_alloted_for_each_game) {
     gradient.addColorStop(1, 'rgb(10, 122, 144)');    // End color (100%)
     ctx.fillStyle = gradient;
     // ctx.fillStyle = 'rgb(10, 122, 144)';
-    ctx.fillRect(x_baseline - 50, 0, 400, 450);
+    ctx.fillRect(x_baseline - 50, 0, canvas.width, 450);
     
     var x_over = 0;
     if (game_time < 10) {
