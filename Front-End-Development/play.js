@@ -2426,9 +2426,9 @@ function choose_Random_Question () {
 
     // Return a random integer between 1 and 10 (both included): Math.floor(Math.random() * 10) + 1;
 
-    var amount_of_question_in_level_1 = 15;
-    var amount_of_question_in_level_2 = 4;
-    var amount_of_question_in_level_3 = 9;
+    var amount_of_question_in_level_1 = 17;
+    var amount_of_question_in_level_2 = 12;
+    var amount_of_question_in_level_3 = 10;
 
 
     if (level == 1) {
@@ -2608,6 +2608,14 @@ function level_1_Questions () {
         answer4.innerText += `at least 4 women `;
         correct_answer = 4;
     }
+    if (randomQuestion == 17) {
+        question.innerText = `Why did Jesus Christ die on the cross? `;
+        answer1.innerText += `To save us from sin  `;
+        answer2.innerText += `To help us get rich `;
+        answer3.innerText += `To save the Israelites from the Romans `;
+        answer4.innerText += `Because he was a criminal `;
+        correct_answer = 1;
+    }
 }
 
 function level_2_Questions () {
@@ -2643,6 +2651,70 @@ function level_2_Questions () {
         answer3.innerText += `930 years old `;
         answer4.innerText += `956 years old `;
         correct_answer = 3;
+    }
+    if (randomQuestion == 5) {
+        question.innerText = `What did the Amonites call the giants? `;
+        answer1.innerText += `Emims `;
+        answer2.innerText += `Zamzummims `;
+        answer3.innerText += `Nephilim `;
+        answer4.innerText += `Rephaim `;
+        correct_answer = 2;
+    }
+    if (randomQuestion == 6) {
+        question.innerText = `What did the Moabites call the giants? `;
+        answer1.innerText += `Emims `;
+        answer2.innerText += `Zamzummims `;
+        answer3.innerText += `Nephilim `;
+        answer4.innerText += `Rephaim `;
+        correct_answer = 1;
+    }
+    if (randomQuestion == 7) {
+        question.innerText = `Where did Apostle Paul send Tychicus? `;
+        answer1.innerText += `Ephesus `;
+        answer2.innerText += `Galatia `;
+        answer3.innerText += `Corinth `;
+        answer4.innerText += `Rome `;
+        correct_answer = 1;
+    }
+    if (randomQuestion == 8) {
+        question.innerText = `With whom did Apostle Paul leave his cloak with? `;
+        answer1.innerText += `Tychicus `;
+        answer2.innerText += `Timothy `;
+        answer3.innerText += `Carpus `;
+        answer4.innerText += `Demas `;
+        correct_answer = 3;
+    }
+    if (randomQuestion == 9) {
+        question.innerText = `After Paul the apostle and others on the ship had landed at Syracuse, how many days did they stay? `;
+        answer1.innerText += `1 day `;
+        answer2.innerText += `2 days `;
+        answer3.innerText += `3 days `;
+        answer4.innerText += `4 days `;
+        correct_answer = 3;
+    }
+    if (randomQuestion == 10) {
+        question.innerText = `Which ship did Apostle sail on that had the figurehead of the Twin Brothers? `;
+        answer1.innerText += `Ship of Antioch `;
+        answer2.innerText += `Ship of Constantinople `;
+        answer3.innerText += `Ship of Tarshish `;
+        answer4.innerText += `Ship of Alexandria `;
+        correct_answer = 4;
+    }
+    if (randomQuestion == 11) {
+        question.innerText = `What was the name of the Twin Brothers on the ship which Apostle Paul saild? `;
+        answer1.innerText += `Georgios and Alexandra `;
+        answer2.innerText += `Castor and Pollux `;
+        answer3.innerText += `Nikolaos and Dimitrios `;
+        answer4.innerText += `Calypso and Leonidas `;
+        correct_answer = 2;
+    }
+    if (randomQuestion == 12) {
+        question.innerText = `What was the name of the man Apostle Paul healed in Melita `;
+        answer1.innerText += `Augusta `;
+        answer2.innerText += `Tiberius `;
+        answer3.innerText += `Gaius `;
+        answer4.innerText += `Publius `;
+        correct_answer = 4;
     }
 }
 
@@ -2720,6 +2792,14 @@ function level_3_Questions () {
         answer2.innerText += `Psalms 56:3 `;
         answer3.innerText += `Ecclesiastes 3:26 `;
         answer4.innerText += `Ecclesiastes 11:9 `;
+        correct_answer = 1;
+    }
+    if (randomQuestion == 10) {
+        question.innerText = `What shall we say then? Shall we continue in sin, that grace may abound? `;
+        answer1.innerText += `Romans 6:1 `;
+        answer2.innerText += `Romans 6:6 `;
+        answer3.innerText += `Romans 6:12 `;
+        answer4.innerText += `Romans 6:18 `;
         correct_answer = 1;
     }
     
