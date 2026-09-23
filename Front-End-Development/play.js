@@ -2007,6 +2007,22 @@ function draw_players_bibletars(index_loop) {
                         x_pos_ribp -= -17;
                         y_pos_ribp -= -8;
                     }
+                    if (specific_drawing >= 36 && specific_drawing <= 41) {
+                        x_pos_ribp -= -15;
+                        y_pos_ribp -= -16;
+                    }
+                    if (specific_drawing >= 42 && specific_drawing <= 47) {
+                        x_pos_ribp -= -33.5;
+                        y_pos_ribp -= -10;
+                    }
+                    if (specific_drawing >= 48 && specific_drawing <= 53) {
+                        x_pos_ribp -= -12;
+                        y_pos_ribp -= -14.5;
+                    }
+                    if (specific_drawing >= 54 && specific_drawing <= 60) {
+                        x_pos_ribp -= -37;
+                        y_pos_ribp -= -6.9;
+                    }
                 }
             }
         }
