@@ -1178,6 +1178,90 @@ function drawUsersBibletar() {
                     y_pos_ribp -= 0;
                     increase_width_by = 2.6;
                 }
+                if (specific_drawing >= 36 && specific_drawing <= 42) {
+                    my_pixels_height += 27;
+                    x_pos_ribp -= 4.5;
+                    y_pos_ribp -= 20;
+                    increase_width_by = 2.0;
+                }
+                if (specific_drawing >= 43 && specific_drawing <= 49) {
+                    my_pixels_height += 13;
+                    x_pos_ribp -= 13.5;
+                    y_pos_ribp -= -8;
+                    increase_width_by = 2.8;
+                }
+                if (specific_drawing >= 50 && specific_drawing <= 56) {
+                    my_pixels_height += 35;
+                    x_pos_ribp -= 48.5;
+                    y_pos_ribp -= 5;
+                    increase_width_by = 2.5;
+                }
+                if (specific_drawing == 57) {
+                    my_pixels_height += 63;
+                    x_pos_ribp -= 15.5;
+                    y_pos_ribp -= 25;
+                    increase_width_by = 1.53;
+                }
+                if (specific_drawing >= 58 && specific_drawing <= 63) {
+                    my_pixels_height += 63;
+                    x_pos_ribp -= 11.5;
+                    y_pos_ribp -= 25;
+                    increase_width_by = 1.5;
+                }
+                if (specific_drawing == 64) {
+                    my_pixels_height += 33;
+                    x_pos_ribp -= 25.5;
+                    y_pos_ribp -= 5;
+                    increase_width_by = 2.2;
+                }
+                if (specific_drawing >= 65 && specific_drawing <= 70) {
+                    my_pixels_height += 43;
+                    x_pos_ribp -= 25.5;
+                    y_pos_ribp -= 5;
+                    increase_width_by = 2.0;
+                }
+                if (specific_drawing == 71 || specific_drawing == 72 || specific_drawing == 74 || specific_drawing == 76) {
+                    my_pixels_height += -20;
+                    x_pos_ribp -= -13;
+                    y_pos_ribp -= -115;
+                    increase_width_by = 4.9;
+                }
+                if (specific_drawing == 73 || specific_drawing == 75 || specific_drawing == 77) {
+                    my_pixels_height += 90;
+                    x_pos_ribp -= 8;
+                    y_pos_ribp -= 0;
+                    increase_width_by = 1.1;
+                }
+                if (specific_drawing == 78 || specific_drawing == 80 || specific_drawing == 82 || specific_drawing == 84 || specific_drawing == 86) {
+                    my_pixels_height += -3;
+                    x_pos_ribp -= -3;
+                    y_pos_ribp -= -100;
+                    increase_width_by = 3.1;
+                }
+                if (specific_drawing == 79 || specific_drawing == 81 || specific_drawing == 83 || specific_drawing == 85 || specific_drawing == 87) {
+                    my_pixels_height += 100;
+                    x_pos_ribp -= 5;
+                    y_pos_ribp -= 0;
+                    increase_width_by = 1.0;
+                }
+                if (specific_drawing >= 88 && specific_drawing <= 92) {
+                    my_pixels_height += 100;
+                    x_pos_ribp -= 5;
+                    y_pos_ribp -= 0;
+                    increase_width_by = 1.0;
+                }
+                if (specific_drawing >= 93 && specific_drawing <= 98) {
+                    my_pixels_height += 133;
+                    x_pos_ribp -= 5;
+                    y_pos_ribp -= 3;
+                    increase_width_by = 0.8;
+                }
+                if (specific_drawing >= 99 && specific_drawing <= 104) {
+                    my_pixels_height += 133;
+                    x_pos_ribp -= 5;
+                    y_pos_ribp -= 3;
+                    increase_width_by = 0.8;
+                }
             } else {
                 if (i_am_a_girl == true) {
                     if (specific_drawing >  0 && specific_drawing < 6) {
