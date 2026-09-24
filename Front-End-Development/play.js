@@ -3053,12 +3053,92 @@ function level_3_Questions () {
         correct_answer = 4;
     }
     if (randomQuestion == 15) {
-        question.innerText = `The people that walked in darkness have seen a great light: they that dwell in the land of the shadow of death, upon them hath the light shined. `;
-        answer1.innerText += `Matthew 22:5 `;
-        answer2.innerText += `Isaiah 6:5 `;
-        answer3.innerText += `Matthew 11:14 `;
-        answer4.innerText += `Isaiah 9:2 `;
+        question.innerText = `Whoso loveth instruction loveth knowledge: but he that hateth reproof is brutish. `;
+        answer1.innerText += `Proverbs 6:5 `;
+        answer2.innerText += `Proverbs 12:1 `;
+        answer3.innerText += `Proverbs 24:6 `;
+        answer4.innerText += `Proverbs 30:9 `;
+        correct_answer = 2;
+    }
+    if (randomQuestion == 16) {
+        question.innerText = `By me princes rule, and nobles, even all the judges of the earth.  I love them that love me; and those that seek me early shall find me. `;
+        answer1.innerText += `Proverbs 2:5 `;
+        answer2.innerText += `Proverbs 3:12 `;
+        answer3.innerText += `Proverbs 5:16 `;
+        answer4.innerText += `Proverbs 8:27 `;
+        correct_answer = 3;
+    }
+    if (randomQuestion == 17) {
+        question.innerText = `Surely I am more brutish than any man, and have not the understanding of a man.  neither learned wisdom, nor have the knowledge of the holy. `;
+        answer1.innerText += `Proverbs 10:5-6 `;
+        answer2.innerText += `Proverbs 20:16-18 `;
+        answer3.innerText += `Proverbs 25:4-5 `;
+        answer4.innerText += `Proverbs 30:2-3 `;
         correct_answer = 4;
+    }
+    if (randomQuestion == 18) {
+        question.innerText = `For the living know that they shall die: but the dead know not any thing, neither have they any more a reward; for the memory of them is forgotten. `;
+        answer1.innerText += `Ecclesiastes 3:14 `;
+        answer2.innerText += `Ecclesiastes 9:5 `;
+        answer3.innerText += `Psalms 46: 11 `;
+        answer4.innerText += `Psalms 50:34 `;
+        correct_answer = 2;
+    }
+    if (randomQuestion == 19) {
+        question.innerText = `Cast thy bread upon the waters: for thou shalt find it after many days. `;
+        answer1.innerText += `Proverbs 15:3 `;
+        answer2.innerText += `Proverbs 20:19 `;
+        answer3.innerText += `Ecclesiastes 11:1 `;
+        answer4.innerText += `Ecclesiastes 5:13 `;
+        correct_answer = 3;
+    }
+    if (randomQuestion == 20) {
+        question.innerText = `Hast thou commanded the morning since thy days; and caused the dayspring to know his place; `;
+        answer1.innerText += `Job 29:13 `;
+        answer2.innerText += `Job 41:3 `;
+        answer3.innerText += `Job 25:6 `;
+        answer4.innerText += `Job 38:12 `;
+        correct_answer = 4;
+    }
+    if (randomQuestion == 21) {
+        question.innerText = `Doth the wild ass bray when he hath grass? or loweth the ox over his fodder? Can that which is unsavoury be eaten without salt? or is there any taste in the white of an egg? `;
+        answer1.innerText += `Job 6:5-6 `;
+        answer2.innerText += `Job 3:9-10 `;
+        answer3.innerText += `Job 12:20-21 `;
+        answer4.innerText += `Job 16:11-12 `;
+        correct_answer = 1;
+    }
+    if (randomQuestion == 22) {
+        question.innerText = `For vain man would be wise, though man be born like a wild ass's colt. `;
+        answer1.innerText += `Job 19:21 `;
+        answer2.innerText += `Job 11:12 `;
+        answer3.innerText += `Job 10:6 `;
+        answer4.innerText += `Job Job 4:15 `;
+        correct_answer = 2;
+    }
+    if (randomQuestion == 23) {
+        question.innerText = `But the eyes of the wicked shall fail, and they shall not escape, and their hope shall be as the giving up of the ghost. `;
+        answer1.innerText += `Job 10:18 `;
+        answer2.innerText += `Job 10:19 `;
+        answer3.innerText += `Job 11:20 `;
+        answer4.innerText += `Job 11:21 `;
+        correct_answer = 3;
+    }
+    if (randomQuestion == 24) {
+        question.innerText = `Man that is born of a woman is of few days, and full of trouble.  He cometh forth like a flower, and is cut down: he fleeth also as a shadow, and continueth not. `;
+        answer1.innerText += `Job 30:29-30 `;
+        answer2.innerText += `Job 25:16-17 `;
+        answer3.innerText += `Job 19:28-29 `;
+        answer4.innerText += `Job 14:1-2 `;
+        correct_answer = 4;
+    }
+    if (randomQuestion == 25) {
+        question.innerText = `And that no man might buy or sell, save he that had the mark, or the name of the beast, or the number of his name. `;
+        answer1.innerText += `Revelation 10:19 `;
+        answer2.innerText += `Revelation 13:17 `;
+        answer3.innerText += `Revelation 16:18 `;
+        answer4.innerText += `Revelation 16:19 `;
+        correct_answer = 2;
     }
     
 }
