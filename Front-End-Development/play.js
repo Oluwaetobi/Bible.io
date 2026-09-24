@@ -2613,8 +2613,8 @@ function choose_Random_Question () {
     // Return a random integer between 1 and 10 (both included): Math.floor(Math.random() * 10) + 1;
 
     var amount_of_question_in_level_1 = 19;
-    var amount_of_question_in_level_2 = 12;
-    var amount_of_question_in_level_3 = 10;
+    var amount_of_question_in_level_2 = 14;
+    var amount_of_question_in_level_3 = 27;
 
 
     if (level == 1) {
@@ -3139,6 +3139,22 @@ function level_3_Questions () {
         answer3.innerText += `Revelation 16:18 `;
         answer4.innerText += `Revelation 16:19 `;
         correct_answer = 2;
+    }
+    if (randomQuestion == 26) {
+        question.innerText = `Wisdom crieth without; she uttereth her voice in the streets:  She crieth in the chief place of concourse, in the openings of the gates: in the city she uttereth her words, saying,  How long, ye simple ones, will ye love simplicity? and the scorners delight in their scorning, and fools hate knowledge? `;
+        answer1.innerText += `Proverbs 1:18-19 `;
+        answer2.innerText += `Proverbs 1:20-21 `;
+        answer3.innerText += `Proverbs 1:22-23 `;
+        answer4.innerText += `Proverbs 1:24-25 `;
+        correct_answer = 2;
+    }
+    if (randomQuestion == 27) {
+        question.innerText = `Thou coveredst it with the deep as with a garment: the waters stood above the mountains.  7At thy rebuke they fled; at the voice of thy thunder they hasted away. `;
+        answer1.innerText += `Job 28:8-9 `;
+        answer2.innerText += `Job 40:25-26 `;
+        answer3.innerText += `Psalm 80:19-20 `;
+        answer4.innerText += `Psalm 104:6-7 `;
+        correct_answer = 4;
     }
     
 }
