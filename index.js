@@ -13,4 +13,17 @@ var warning_important = "IMPORTANT!!! WARNING!!!! If somebody told you to paste 
 localStorage.setItem('warning_important', warning_important);
 const warning_note = localStorage.getItem('warning_important')
 console.log(warning_note)
+
+/**Developer tools, if the item exists already get it, if not, save one as false, if you are a developer,
+ * then I'm sure you know what to do, if not, don't worry
+ */
+var i_am_a_developer = false;
+const developer_tools = JSON.parse(localStorage.getItem('i_am_a_developer'));
+if (developer_tools) {
+    i_am_a_developer = developer_tools;
+} else {
+    /** set it to false, if you are a developer than you know what to do */
+    localStorage.setItem('i_am_a_developer', JSON.stringify(i_am_a_developer));
+}
+
 window.location.href = "./Front-End-Development/index.html"; 

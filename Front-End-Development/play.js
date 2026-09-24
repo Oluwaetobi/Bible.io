@@ -33,6 +33,7 @@ var i_am_a_girl = false;
 
 const canvas = document.getElementById('myCanvas');
 const ctx = canvas.getContext('2d');
+var i_am_a_developer = false;
 const big_text = document.getElementById('big-text');
 const questions_wrong_text = document.getElementById('wrong-text');
 const top_border = 90;
@@ -501,6 +502,11 @@ function localStorageAndSessionStorageData () {
     const saved_bibletar_svg = JSON.parse(localStorage.getItem('my_bibletar_svg'));
     const saved_cash = JSON.parse(localStorage.getItem('my_cash'));
     const saved_country = localStorage.getItem('my_country');
+    const developer_tools = JSON.parse(localStorage.getItem('i_am_a_developer'));
+
+    if (developer_tools) {
+        i_am_a_developer = developer_tools;
+    }
 
     if (savedName) {
         my_name = savedName;
@@ -555,9 +561,11 @@ function figure_out_whether_i_am_a_boy_or_a_girl () {
 }
 
 function displayMouseX_and_MouseY () {
-    ctx.font = "25px Arial";
-    ctx.fillStyle = 'rgb(190, 36, 36)';
-    ctx.fillText("MouseX: " + mouseX + " MouseY: " + mouseY, 10, canvas.height - 20);
+    if (i_am_a_developer == true) {
+        ctx.font = "25px Arial";
+        ctx.fillStyle = 'rgb(190, 36, 36)';
+        ctx.fillText("MouseX: " + mouseX + " MouseY: " + mouseY, 10, canvas.height - 20);
+    }
 
 }
 

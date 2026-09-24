@@ -30,6 +30,7 @@ window.addEventListener("load", () => {
 
 const canvas = document.getElementById('myCanvas');
 const ctx = canvas.getContext('2d');
+var i_am_a_developer = false;
 const bibletar_title = document.getElementById('bibletar-title');
 // const bibletar_sub_section = document.getElementById('bibletar-sub-section');
 // const boy_or_girl = document.getElementById('boy-or-girl');
@@ -260,7 +261,11 @@ function localStorageAndSessionStorageData () {
     const saved_acquired = JSON.parse(localStorage.getItem('acquired_stuff_closet'));
     const saved_not_acquired = JSON.parse(localStorage.getItem('not_acquired_stuff_shop'));
     const saved_cash = JSON.parse(localStorage.getItem('my_cash'));
+    const developer_tools = JSON.parse(localStorage.getItem('i_am_a_developer'));
 
+    if (developer_tools) {
+        i_am_a_developer = developer_tools;
+    }
 
     if (savedName) {
         my_name = savedName;
@@ -1701,11 +1706,13 @@ function loadingBox () {
 
 
 function displayMouseX_and_MouseY () {
-    ctx.font = "30px Arial";
-    ctx.strokeStyle = 'rgb(190, 36, 36)';
-    ctx.strokeText("MouseX: " + mouseX + " MouseY: " + mouseY, 10, 30);
-    ctx.fillStyle = 'rgb(190, 36, 36)';
-    ctx.fillText("MouseX: " + mouseX + " MouseY: " + mouseY, 10, 30);
+    if (i_am_a_developer == true) {
+        ctx.font = "30px Arial";
+        ctx.strokeStyle = 'rgb(190, 36, 36)';
+        ctx.strokeText("MouseX: " + mouseX + " MouseY: " + mouseY, 10, 30);
+        ctx.fillStyle = 'rgb(190, 36, 36)';
+        ctx.fillText("MouseX: " + mouseX + " MouseY: " + mouseY, 10, 30);
+    }
 
 }
 

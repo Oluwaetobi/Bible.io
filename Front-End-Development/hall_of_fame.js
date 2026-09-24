@@ -33,6 +33,11 @@ var hall_of_fame_clicked_is_a_girl = false;
 
 const canvas = document.getElementById('myCanvas');
 const ctx = canvas.getContext('2d');
+var i_am_a_developer = false;
+const developer_tools = JSON.parse(localStorage.getItem('i_am_a_developer'));
+if (developer_tools) {
+    i_am_a_developer = developer_tools;
+}
 const top_border = 90;
 const side_border = 2;
 var player_Clicked_Name = "Unknown Player"
