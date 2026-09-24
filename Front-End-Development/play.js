@@ -2612,7 +2612,7 @@ function choose_Random_Question () {
 
     // Return a random integer between 1 and 10 (both included): Math.floor(Math.random() * 10) + 1;
 
-    var amount_of_question_in_level_1 = 17;
+    var amount_of_question_in_level_1 = 19;
     var amount_of_question_in_level_2 = 12;
     var amount_of_question_in_level_3 = 10;
 
@@ -2802,6 +2802,22 @@ function level_1_Questions () {
         answer4.innerText += `Because he was a criminal `;
         correct_answer = 1;
     }
+    if (randomQuestion == 18) {
+        question.innerText = `How many children did Isaac have? `;
+        answer1.innerText += `one child `;
+        answer2.innerText += `two children `;
+        answer3.innerText += `three children `;
+        answer4.innerText += `four children `;
+        correct_answer = 2;
+    }
+    if (randomQuestion == 19) {
+        question.innerText = `In the garden of Eden, who was the first person to eat the forbidden fruit? `;
+        answer1.innerText += `Adam `;
+        answer2.innerText += `Eve `;
+        answer3.innerText += `The Serpent `;
+        answer4.innerText += `Cain `;
+        correct_answer = 2;
+    }
 }
 
 function level_2_Questions () {
@@ -2902,6 +2918,22 @@ function level_2_Questions () {
         answer4.innerText += `Publius `;
         correct_answer = 4;
     }
+    if (randomQuestion == 13) {
+        question.innerText = `Out of all the people Job debated, who was the youngest of them all? `;
+        answer1.innerText += `Eliphaz `;
+        answer2.innerText += `Bildad `;
+        answer3.innerText += `Zophar `;
+        answer4.innerText += `Elihu `;
+        correct_answer = 4;
+    }
+    if (randomQuestion == 14) {
+        question.innerText = `Job's friend Eliphaz was a... `;
+        answer1.innerText += `Temanite `;
+        answer2.innerText += `Shuhite `;
+        answer3.innerText += `Naamathite `;
+        answer4.innerText += `Gazite `;
+        correct_answer = 1;
+    }
 }
 
 function level_3_Questions () {
@@ -2987,6 +3019,46 @@ function level_3_Questions () {
         answer3.innerText += `Romans 6:12 `;
         answer4.innerText += `Romans 6:18 `;
         correct_answer = 1;
+    }
+    if (randomQuestion == 11) {
+        question.innerText = `I would seek unto God, and unto God would I commit my cause:  Which doeth great things and unsearchable; marvellous things without number: `;
+        answer1.innerText += `Job 5:8-9 `;
+        answer2.innerText += `Job 23:6-7 `;
+        answer3.innerText += `Job 13: 3-5 `;
+        answer4.innerText += `Judges 24:6 `;
+        correct_answer = 1;
+    }
+    if (randomQuestion == 12) {
+        question.innerText = `He disappointeth the devices of the crafty, so that their hands cannot perform their enterprise. He taketh the wise in their own craftiness: and the counsel of the froward is carried headlong. `;
+        answer1.innerText += `1 Corinthians 1:20 `;
+        answer2.innerText += `1 Corinthians 3:5 `;
+        answer3.innerText += `Job 5: 12-13 `;
+        answer4.innerText += `Job 11: 7-8 `;
+        correct_answer = 3;
+    }
+    if (randomQuestion == 13) {
+        question.innerText = `Where is the wise? where is the scribe? where is the disputer of this world? hath not God made foolish the wisdom of this world? `;
+        answer1.innerText += `1 Corinthians 3:8 `;
+        answer2.innerText += `1 Corinthians 1:20 `;
+        answer3.innerText += `Romans 5:8 `;
+        answer4.innerText += `Romans 6:13 `;
+        correct_answer = 2;
+    }
+    if (randomQuestion == 14) {
+        question.innerText = `The people that walked in darkness have seen a great light: they that dwell in the land of the shadow of death, upon them hath the light shined. `;
+        answer1.innerText += `Matthew 22:5 `;
+        answer2.innerText += `Isaiah 6:5 `;
+        answer3.innerText += `Matthew 11:14 `;
+        answer4.innerText += `Isaiah 9:2 `;
+        correct_answer = 4;
+    }
+    if (randomQuestion == 15) {
+        question.innerText = `The people that walked in darkness have seen a great light: they that dwell in the land of the shadow of death, upon them hath the light shined. `;
+        answer1.innerText += `Matthew 22:5 `;
+        answer2.innerText += `Isaiah 6:5 `;
+        answer3.innerText += `Matthew 11:14 `;
+        answer4.innerText += `Isaiah 9:2 `;
+        correct_answer = 4;
     }
     
 }
