@@ -2196,7 +2196,10 @@ function draw_players_bibletars(index_loop) {
             y_pos_ribp -= 23;
 
             if (he_is_a_boy == true) {
-
+                if (specific_drawing >= 10 && specific_drawing <= 14) {
+                    x_pos_ribp -= -13.3;
+                    y_pos_ribp -= 5.0;
+                }
             } else {
                 if (he_is_a_girl == true) {
                     if (specific_drawing >= 1 && specific_drawing <= 5) {
