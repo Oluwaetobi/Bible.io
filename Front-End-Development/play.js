@@ -236,6 +236,14 @@ form.addEventListener('submit', async (e) => {
 
 })
 
+function form_input_answer_by_clicking (answer_entered_html) {
+    /** Another way to enter answers instead of using the keyboard but by clicking */
+    my_answer = answer_entered_html;
+    form.reset(); 
+    check_if_answer_is_correct(answer_entered_html);
+    choose_Random_Question();
+}
+
 window.addEventListener('mousemove', (event) => {
     mouseX = event.clientX;
     mouseY = event.clientY;
@@ -2665,6 +2673,10 @@ function questions_Display() {
     ctx.font = "20px Arial";
     ctx.fillStyle = 'rgb(255, 255, 255)';
     ctx.fillText("Your Points: " + this_game_points, 1100, 650);
+
+    ctx.font = "18px Arial";
+    ctx.fillStyle = 'rgb(255, 255, 255)';
+    ctx.fillText("You can click the answer or enter the answer with your keyboard", canvas.width - 550, canvas.height - 20);
 
     // black shadow remove
     ctx.shadowColor = "white";
