@@ -332,15 +332,9 @@ function playerClickedBibletar () {
                         increase_width_by = 1.75;
                     }
                     if (specific_drawing == 28) {
-                        my_pixels_height += 15;
-                        x_pos_ribp += 2;
-                        y_pos_ribp -= 10;
-                        increase_width_by = 1.60;
-                    }
-                    if (specific_drawing == 28) {
-                        my_pixels_height -= 10;
+                        my_pixels_height += 5;
                         x_pos_ribp += -2;
-                        y_pos_ribp += 6;
+                        y_pos_ribp -= 4;
                         increase_width_by = 1.7;
                     }
                 }
