@@ -296,6 +296,27 @@ function playerClickedBibletar () {
                     y_pos_ribp += 0;
                     increase_width_by = 1.85
                 }
+                if (specific_drawing >= 38 && specific_drawing <= 62 || specific_drawing == 30) {
+                     my_pixels_height += 15;
+                     x_pos_ribp += 1;
+                     y_pos_ribp -= 10;
+                     increase_width_by = 1.60;
+                     if (specific_drawing >= 58 && specific_drawing <= 62) {
+                        x_pos_ribp += 3;
+                     }
+                }
+                if (specific_drawing >= 58 && specific_drawing <= 62) {
+                     my_pixels_height -= 10;
+                     x_pos_ribp += -1;
+                     y_pos_ribp += 6;
+                     increase_width_by = 1.7;
+                }
+                if (specific_drawing >= 69 && specific_drawing <= 74) {
+                    my_pixels_height += 15;
+                    x_pos_ribp += -3;
+                    y_pos_ribp -= 10;
+                    increase_width_by = 1.65;
+                }
             } else {
                 if (hall_of_fame_clicked_is_a_girl == true ) {
                     if (specific_drawing == 2) {
@@ -303,6 +324,24 @@ function playerClickedBibletar () {
                         x_pos_ribp -= 8.5;
                         y_pos_ribp -= 5;
                         increase_width_by = 1.75;
+                    }
+                    if (specific_drawing == 27) {
+                        my_pixels_height += 5;
+                        x_pos_ribp -= 8.5;
+                        y_pos_ribp -= 5;
+                        increase_width_by = 1.75;
+                    }
+                    if (specific_drawing == 28) {
+                        my_pixels_height += 15;
+                        x_pos_ribp += 2;
+                        y_pos_ribp -= 10;
+                        increase_width_by = 1.60;
+                    }
+                    if (specific_drawing == 28) {
+                        my_pixels_height -= 10;
+                        x_pos_ribp += -2;
+                        y_pos_ribp += 6;
+                        increase_width_by = 1.7;
                     }
                 }
             }
@@ -314,7 +353,7 @@ function playerClickedBibletar () {
             x_pos_ribp -= 62;
             y_pos_ribp -= 37;
             increase_width_by = 4.0;
-            if (i_am_a_boy == true ) {
+            if (hall_of_fame_clicked_is_a_boy == true ) {
                 if (specific_drawing == 45 || specific_drawing == 46) {
                     my_pixels_height += 34;
                     increase_width_by = 2.1;
@@ -327,7 +366,7 @@ function playerClickedBibletar () {
                     increase_width_by = 0.9;
                 }
             } else {
-                if (i_am_a_girl == true) {
+                if (hall_of_fame_clicked_is_a_girl == true) {
                     if (specific_drawing == 22) {
                         my_pixels_height += 140;
                         x_pos_ribp -= 18;
