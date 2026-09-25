@@ -1532,6 +1532,7 @@ function draw_points_as_bar_graph(y_bibletars_box_spacing, y_baseline) {
         var each_players_points = Math.round(my_game.everyones_points[i]);
         var animate_each_point = my_game.everyone_animate_bar_x[i];
 
+        /** 0.035, is the ORIGINAL and sweet spot for the animate_bar_x_speed variable */
         var animate_bar_x_speed = 0.035;
 
         /** This deals with the bar number animation stuff */
