@@ -323,18 +323,31 @@ function update_Data_And_Continue_Game() {
 }
 
 function randomRobotModes() {
+    /** I scrapped rounding points, that's done in the final display of the text. This upgrade actually
+     * benefits the game and increases a gives a higher probability of different possibilities
+     * and outcomes, yay!!!
+     */
     if (level == 1) {
-        robot_modes[0] = ((Math.floor(Math.random() * 5) + 1)/10);
-        robot_modes[1] = ((Math.floor(Math.random() * 5) + 1)/10);
-        robot_modes[2] = ((Math.floor(Math.random() * 5) + 1)/10);
+        // robot_modes[0] = ((Math.floor(Math.random() * 5) + 1)/10);
+        // robot_modes[1] = ((Math.floor(Math.random() * 5) + 1)/10);
+        // robot_modes[2] = ((Math.floor(Math.random() * 5) + 1)/10);
+        robot_modes[0] = (((Math.random() * 5) + 1)/10);
+        robot_modes[1] = (((Math.random() * 5) + 1)/10);
+        robot_modes[2] = (((Math.random() * 5) + 1)/10);
     } else if (level == 2) {
-        robot_modes[0] = ((Math.floor(Math.random() * 5) + 1)/20);
-        robot_modes[1] = ((Math.floor(Math.random() * 5) + 1)/20);
-        robot_modes[2] = ((Math.floor(Math.random() * 5) + 1)/20);
+        // robot_modes[0] = ((Math.floor(Math.random() * 5) + 1)/20);
+        // robot_modes[1] = ((Math.floor(Math.random() * 5) + 1)/20);
+        // robot_modes[2] = ((Math.floor(Math.random() * 5) + 1)/20);
+        robot_modes[0] = (((Math.random() * 5) + 1)/20);
+        robot_modes[1] = (((Math.random() * 5) + 1)/20);
+        robot_modes[2] = (((Math.random() * 5) + 1)/20);
     } else if (level == 3) {
-        robot_modes[0] = ((Math.floor(Math.random() * 5) + 1)/30);
-        robot_modes[1] = ((Math.floor(Math.random() * 5) + 1)/30);
-        robot_modes[2] = ((Math.floor(Math.random() * 5) + 1)/30);
+        // robot_modes[0] = ((Math.floor(Math.random() * 5) + 1)/30);
+        // robot_modes[1] = ((Math.floor(Math.random() * 5) + 1)/30);
+        // robot_modes[2] = ((Math.floor(Math.random() * 5) + 1)/30);
+        robot_modes[0] = (((Math.random() * 5) + 1)/30);
+        robot_modes[1] = (((Math.random() * 5) + 1)/30);
+        robot_modes[2] = (((Math.random() * 5) + 1)/30);
     }
 
     
@@ -1333,6 +1346,7 @@ function start_timer() {
         different_second = seconds;
         timer += 1;
 
+        /** Only called once every second, so when the timer increments by 1 */
         if (home_page == 3) {
             robotPlayers(60);
         }
