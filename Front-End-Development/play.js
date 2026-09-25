@@ -1560,30 +1560,54 @@ function draw_points_as_bar_graph(y_bibletars_box_spacing, y_baseline) {
         // real bar graph color
         if (i == 0) {
             var gradient = ctx.createLinearGradient(0, y_starting_point, 0, y_ending_point);
-            gradient.addColorStop(0, 'rgb(109, 0, 0)');
-            gradient.addColorStop(0.5, 'rgb(255, 0, 0)');
-            gradient.addColorStop(1, 'rgb(255, 86, 86)');
+            if (my_game.questions_wrong[i] < 5) {
+                gradient.addColorStop(0, 'rgb(109, 0, 0)');
+                gradient.addColorStop(0.5, 'rgb(255, 0, 0)');
+                gradient.addColorStop(1, 'rgb(255, 86, 86)');
+            } else {
+                gradient.addColorStop(0, 'rgb(102, 100, 100)');
+                gradient.addColorStop(0.5, 'rgb(252, 249, 249)');
+                gradient.addColorStop(1, 'rgb(195, 193, 193)');
+            }
             ctx.fillStyle = gradient;
             // ctx.fillStyle = 'rgb(197, 11, 11)';
         } else if (i == 1) {
             var gradient = ctx.createLinearGradient(0, y_starting_point, 0, y_ending_point);
-            gradient.addColorStop(0, 'rgb(78, 0, 117)');
-            gradient.addColorStop(0.5, 'rgb(170, 0, 255)');
-            gradient.addColorStop(1, 'rgb(201, 94, 255)');
+            if (my_game.questions_wrong[i] < 5) {
+                gradient.addColorStop(0, 'rgb(78, 0, 117)');
+                gradient.addColorStop(0.5, 'rgb(170, 0, 255)');
+                gradient.addColorStop(1, 'rgb(201, 94, 255)');
+            } else {
+                gradient.addColorStop(0, 'rgb(102, 100, 100)');
+                gradient.addColorStop(0.5, 'rgb(252, 249, 249)');
+                gradient.addColorStop(1, 'rgb(195, 193, 193)');
+            }
             ctx.fillStyle = gradient;
             // ctx.fillStyle = 'rgb(135, 11, 197)';
         } else if (i == 2) {
             var gradient = ctx.createLinearGradient(0, y_starting_point, 0, y_ending_point);
-            gradient.addColorStop(0, 'rgb(125, 127, 0)');
-            gradient.addColorStop(0.5, 'rgb(251, 255, 0)');
-            gradient.addColorStop(1, 'rgb(253, 255, 146)');
+            if (my_game.questions_wrong[i] < 5) {
+                gradient.addColorStop(0, 'rgb(125, 127, 0)');
+                gradient.addColorStop(0.5, 'rgb(251, 255, 0)');
+                gradient.addColorStop(1, 'rgb(253, 255, 146)');
+            } else {
+                gradient.addColorStop(0, 'rgb(102, 100, 100)');
+                gradient.addColorStop(0.5, 'rgb(252, 249, 249)');
+                gradient.addColorStop(1, 'rgb(195, 193, 193)');
+            }
             ctx.fillStyle = gradient;
             // ctx.fillStyle = 'rgb(224, 249, 2)';
         } else if (i == 3) {
             var gradient = ctx.createLinearGradient(0, y_starting_point, 0, y_ending_point);
-            gradient.addColorStop(0, 'rgb(0, 102, 14)');
-            gradient.addColorStop(0.5, 'rgb(0, 255, 34)');
-            gradient.addColorStop(1, 'rgb(126, 255, 143)');
+            if (my_game.questions_wrong[i] < 5) {
+                gradient.addColorStop(0, 'rgb(0, 102, 14)');
+                gradient.addColorStop(0.5, 'rgb(0, 255, 34)');
+                gradient.addColorStop(1, 'rgb(126, 255, 143)');
+            } else {
+                gradient.addColorStop(0, 'rgb(102, 100, 100)');
+                gradient.addColorStop(0.5, 'rgb(252, 249, 249)');
+                gradient.addColorStop(1, 'rgb(195, 193, 193)');
+            }
             ctx.fillStyle = gradient;
             // ctx.fillStyle = 'rgb(11, 197, 36)';
         }
