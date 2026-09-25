@@ -973,7 +973,22 @@ function drawUsersBibletar() {
                     number_for_drawing = not_acquired_stuff_shop[section_shop_or_closest - 1][(((bibletar_type_dsd[section_shop_or_closest - 1] -1) - 3) + acquired_stuff_closet[section_shop_or_closest - 1].length)]
                     and come to think of it I don't know why I was using that because it is blatantly wrong!! 
                     Thank you God for helping me fix this and find this mistake */
-                    number_for_drawing = acquired_stuff_closet[section_shop_or_closest - 1][((bibletar_type_dsd[section_shop_or_closest - 1] -1))]
+                    if (section_shop_or_closest == 1 || section_shop_or_closest == 3 || section_shop_or_closest == 4 || section_shop_or_closest == 5) {
+                        /** We have to do this because, the references to acquired_stuff_closet, won't work properly 
+                         * for backgrounds, glasses, shirts, and hats since some of the stuff exists in not_acquired_stuff_closet,
+                         * honestly, I think I have forgotten things, and confusing things up, all I know is that,
+                         * I need to combine the arrays so that specific_drawing or in this function which returns it
+                         * as specific drawing but which in this function is actually number_for_drawing, so that
+                         * it doesn't return and undefined value. Honestly, it's kind of complicated and 
+                         * I don't really know how to explain it anymore.
+                         */
+                        var combine_the_array = []
+                        combine_the_array.push(acquired_stuff_closet[section_shop_or_closest - 1].concat(not_acquired_stuff_shop[section_shop_or_closest - 1]));
+                        /**For some reason when you push, it is still an array of arrays, so I have to access the right one at zero */
+                        number_for_drawing = combine_the_array[0][bibletar_type_dsd[section_shop_or_closest - 1] - 1];
+                    } else {
+                        number_for_drawing = acquired_stuff_closet[section_shop_or_closest - 1][((bibletar_type_dsd[section_shop_or_closest - 1] -1))]
+                    }
                 } else {
                     /* from closet section, because item will no longer exist in the shop and it will be
                     in your closet */
@@ -1063,10 +1078,21 @@ function drawUsersBibletar() {
         }
         // glasses
         if (type_of_drawing == 4) {
-            my_pixels_height -= 13;
+            // default
+            my_pixels_height -= 11.9;
             x_pos_ribp -= 62;
-            y_pos_ribp -= 33;
-            increase_width_by = 4.2;
+            y_pos_ribp -= 37;
+            increase_width_by = 4.0;
+            if (i_am_a_boy == true ) {
+                if (specific_drawing == 45 || specific_drawing == 46) {
+                    my_pixels_height += 20;
+                    increase_width_by = 2.5;
+                }
+            } else {
+                if (i_am_a_girl == true) {
+
+                }
+            }
         }
         // hats
        if (type_of_drawing == 5) {
@@ -1094,6 +1120,7 @@ function drawUsersBibletar() {
         // eyes
         if (type_of_drawing == 6) {
             increase_width_by = 4.8;
+            x_pos_ribp += 2;
         }
         // eyebrows
         if (type_of_drawing == 7) {
