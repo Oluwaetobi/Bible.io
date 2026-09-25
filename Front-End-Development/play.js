@@ -709,9 +709,9 @@ function myBibletar () {
     
     ctx.font = "30px Arial";
     ctx.strokeStyle = 'rgb(253, 250, 250)';
-    ctx.strokeText(my_name, 1260, 680);
+    ctx.strokeText(my_name, 1190, 680);
     ctx.fillStyle = 'rgb(250, 249, 249)';
-    ctx.fillText(my_name, 1260, 680);
+    ctx.fillText(my_name, 1190, 680);
     
     
         // black shadow remove
@@ -1259,6 +1259,8 @@ function show_or_hide_html_elements () {
             answer4.style.display = "none";
         } else {
             form.style.display = "block";
+            /** makes the form typable without the user having to click on it first */
+            document.getElementById('my-answer').focus();
             question.style.display = "block";
             answer1.style.display = "block";
             answer2.style.display = "block";
@@ -1557,6 +1559,18 @@ function draw_points_as_bar_graph(y_bibletars_box_spacing, y_baseline) {
         var y_starting_point = y_baseline + 10 + (i * y_bibletars_box_spacing);
         var y_ending_point = (y_starting_point + height_of_bar);
 
+        function i_lost_bar_graph_colors () {
+            /** Once a player gets 5 questions wrong and they become a spectator, their
+             * bar graph which displays their points become grey, it kind of looks like 
+             * the life has been sucked out of their bar. As well as it also helps other players
+             * or onlookers to know that this player or another player has lost with just a 
+             * quick glance.
+             */
+            gradient.addColorStop(0, 'rgb(51, 51, 51)');
+            gradient.addColorStop(0.5, 'rgb(252, 249, 249)');
+            gradient.addColorStop(1, 'rgb(152, 150, 150)');
+        }
+
         // real bar graph color
         if (i == 0) {
             var gradient = ctx.createLinearGradient(0, y_starting_point, 0, y_ending_point);
@@ -1565,9 +1579,7 @@ function draw_points_as_bar_graph(y_bibletars_box_spacing, y_baseline) {
                 gradient.addColorStop(0.5, 'rgb(255, 0, 0)');
                 gradient.addColorStop(1, 'rgb(255, 86, 86)');
             } else {
-                gradient.addColorStop(0, 'rgb(102, 100, 100)');
-                gradient.addColorStop(0.5, 'rgb(252, 249, 249)');
-                gradient.addColorStop(1, 'rgb(195, 193, 193)');
+                i_lost_bar_graph_colors();
             }
             ctx.fillStyle = gradient;
             // ctx.fillStyle = 'rgb(197, 11, 11)';
@@ -1578,9 +1590,7 @@ function draw_points_as_bar_graph(y_bibletars_box_spacing, y_baseline) {
                 gradient.addColorStop(0.5, 'rgb(170, 0, 255)');
                 gradient.addColorStop(1, 'rgb(201, 94, 255)');
             } else {
-                gradient.addColorStop(0, 'rgb(102, 100, 100)');
-                gradient.addColorStop(0.5, 'rgb(252, 249, 249)');
-                gradient.addColorStop(1, 'rgb(195, 193, 193)');
+                i_lost_bar_graph_colors();
             }
             ctx.fillStyle = gradient;
             // ctx.fillStyle = 'rgb(135, 11, 197)';
@@ -1591,9 +1601,7 @@ function draw_points_as_bar_graph(y_bibletars_box_spacing, y_baseline) {
                 gradient.addColorStop(0.5, 'rgb(251, 255, 0)');
                 gradient.addColorStop(1, 'rgb(253, 255, 146)');
             } else {
-                gradient.addColorStop(0, 'rgb(102, 100, 100)');
-                gradient.addColorStop(0.5, 'rgb(252, 249, 249)');
-                gradient.addColorStop(1, 'rgb(195, 193, 193)');
+                i_lost_bar_graph_colors();
             }
             ctx.fillStyle = gradient;
             // ctx.fillStyle = 'rgb(224, 249, 2)';
@@ -1604,9 +1612,7 @@ function draw_points_as_bar_graph(y_bibletars_box_spacing, y_baseline) {
                 gradient.addColorStop(0.5, 'rgb(0, 255, 34)');
                 gradient.addColorStop(1, 'rgb(126, 255, 143)');
             } else {
-                gradient.addColorStop(0, 'rgb(102, 100, 100)');
-                gradient.addColorStop(0.5, 'rgb(252, 249, 249)');
-                gradient.addColorStop(1, 'rgb(195, 193, 193)');
+                i_lost_bar_graph_colors();
             }
             ctx.fillStyle = gradient;
             // ctx.fillStyle = 'rgb(11, 197, 36)';

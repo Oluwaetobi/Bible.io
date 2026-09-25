@@ -311,9 +311,9 @@ function myBibletar () {
     
     ctx.font = "30px Arial";
     ctx.strokeStyle = 'rgb(253, 253, 253)';
-    ctx.strokeText(my_name, 1250, 680);
+    ctx.strokeText(my_name, 1190, 680);
     ctx.fillStyle = 'rgb(251, 249, 249)';
-    ctx.fillText(my_name, 1250, 680);
+    ctx.fillText(my_name, 1190, 680);
     
     // black shadow remove
     ctx.shadowColor = "white";

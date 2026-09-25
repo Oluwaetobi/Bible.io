@@ -64,7 +64,10 @@
 
             <div>
                 <form id="form">
-                    <input required type="text" name="questions" id="my-answer" placeholder="Enter a number (here)">
+                    <!-- autofocus makes the input for the form typable without the user having to click on it first
+                     but that only happens when the page initially loads, after that it has know effect. So I have
+                     use JavaScript for it as well .focus(); -->
+                    <input required type="text" name="questions" id="my-answer" placeholder="Enter a number (here)" autofocus>
                 </form>
             </div>
         </div>
