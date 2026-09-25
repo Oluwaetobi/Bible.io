@@ -2269,16 +2269,13 @@ function draw_players_bibletars(index_loop) {
             y_pos_ribp -= 133;
 
             if (he_is_a_boy == true) {
-                if (specific_drawing >= 38 && specific_drawing <= 62 || specific_drawing == 30) {
+                if (specific_drawing >= 38 && specific_drawing <= 57 || specific_drawing == 30) {
                      x_pos_ribp += 3.5;
                      y_pos_ribp -= -6;
-                     if (specific_drawing >= 58 && specific_drawing <= 62) {
-                        x_pos_ribp += 3;
-                     }
                 }
                 if (specific_drawing >= 58 && specific_drawing <= 62) {
-                     x_pos_ribp += -3.5;
-                     y_pos_ribp += -3;
+                     x_pos_ribp += 2.5;
+                     y_pos_ribp += 3;
                 }
                 if (specific_drawing >= 69 && specific_drawing <= 74) {
                     x_pos_ribp += 6;
@@ -2288,6 +2285,14 @@ function draw_players_bibletars(index_loop) {
                 if (he_is_a_girl == true) {
                     if (specific_drawing == 2) {
                         x_pos_ribp -= -4;
+                        y_pos_ribp -= -3;
+                    }
+                    if (specific_drawing == 27) {
+                        x_pos_ribp += 5.5;
+                        y_pos_ribp += 3;
+                    }
+                    if (specific_drawing == 28) {
+                        x_pos_ribp += 0.7;
                         y_pos_ribp -= -3;
                     }
                 }
