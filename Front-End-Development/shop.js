@@ -360,7 +360,7 @@ function mouseDetections() {
             }
             save_Data_to_Local_or_Session_Storage();
         }
-        // Leave
+        // Leave or Cancel
         if (mouseX > 979 && mouseX < 1110 && mouseY < (83 + 610) && mouseY > (53 + 610)) {
             bibletar_maker_page = 1;
             i_am_a_boy = false;
@@ -377,7 +377,7 @@ function mouseDetections() {
             bibletar_maker_page = 3;
         }
     }
-    // Leave SHOP 
+    // Leave SHOP
     if (bibletar_maker_page == 3) {
         if (mouseX > 1127 -350 && mouseX < 1330 -350 && mouseY < 83 && mouseY > 53) {
             bibletar_maker_page = 2;
@@ -1434,7 +1434,7 @@ function bibletarShopPage () {
      * permits double clicks, even though I don't want that, which makes it go all the way to the first
      * page :(
      */
-    // Leave Shop
+    // Leave Shop 
     ctx.fillStyle = 'rgb(12, 12, 12)';
     ctx.fillRect(1130 -353, 52, 176, 36);
     if (mouseX > 774 && mouseX < 948 && mouseY > 50 && mouseY < 83) {
@@ -1488,7 +1488,7 @@ function bibletarMakerHome() {
     }
     ctx.fillRect(200, 50, 1150, 40);
 
-    // Leave
+    // Leave / Cancel
     if (mouseX > 980 && mouseX < 1106 && mouseY > 662 && mouseY < 691) {
         ctx.fillStyle = 'rgb(246, 23, 11)';
     } else {
@@ -1500,7 +1500,7 @@ function bibletarMakerHome() {
     /**I had to move leave and save and exit down because once you get a really big hat, it is going to cover
      * these button, meaning the user will not be able to leave or save their bibletar
      */
-    ctx.fillText("Leave", 1010, 687);
+    ctx.fillText("Cancel", 1005, 687);
 
     // Save and Exit
     if (mouseX > 1127 && mouseX < 1326 && mouseY > 663 && mouseY < 691) {
