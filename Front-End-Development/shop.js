@@ -1085,12 +1085,24 @@ function drawUsersBibletar() {
             increase_width_by = 4.0;
             if (i_am_a_boy == true ) {
                 if (specific_drawing == 45 || specific_drawing == 46) {
-                    my_pixels_height += 20;
-                    increase_width_by = 2.5;
+                    my_pixels_height += 34;
+                    increase_width_by = 2.1;
+                    y_pos_ribp -= 4;
+                }
+                if (specific_drawing == 60 || specific_drawing == 61) {
+                    my_pixels_height += 140;
+                    x_pos_ribp -= 18;
+                    y_pos_ribp -= 53;
+                    increase_width_by = 0.9;
                 }
             } else {
                 if (i_am_a_girl == true) {
-
+                    if (specific_drawing == 22) {
+                        my_pixels_height += 140;
+                        x_pos_ribp -= 18;
+                        y_pos_ribp -= 53;
+                        increase_width_by = 0.9;
+                }
                 }
             }
         }

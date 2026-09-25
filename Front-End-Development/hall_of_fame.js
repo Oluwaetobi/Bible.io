@@ -309,10 +309,33 @@ function playerClickedBibletar () {
         }
         // glasses
         if (type_of_drawing == 4) {
-            my_pixels_height -= 13;
+            // default
+            my_pixels_height -= 11.9;
             x_pos_ribp -= 62;
-            y_pos_ribp -= 33;
-            increase_width_by = 4.2;
+            y_pos_ribp -= 37;
+            increase_width_by = 4.0;
+            if (i_am_a_boy == true ) {
+                if (specific_drawing == 45 || specific_drawing == 46) {
+                    my_pixels_height += 34;
+                    increase_width_by = 2.1;
+                    y_pos_ribp -= 4;
+                }
+                if (specific_drawing == 60 || specific_drawing == 61) {
+                    my_pixels_height += 140;
+                    x_pos_ribp -= 18;
+                    y_pos_ribp -= 53;
+                    increase_width_by = 0.9;
+                }
+            } else {
+                if (i_am_a_girl == true) {
+                    if (specific_drawing == 22) {
+                        my_pixels_height += 140;
+                        x_pos_ribp -= 18;
+                        y_pos_ribp -= 53;
+                        increase_width_by = 0.9;
+                }
+                }
+            }
         }
         // hats
        if (type_of_drawing == 5) {
@@ -340,6 +363,7 @@ function playerClickedBibletar () {
         // eyes
         if (type_of_drawing == 6) {
             increase_width_by = 4.8;
+            x_pos_ribp += 2;
         }
         // eyebrows
         if (type_of_drawing == 7) {
