@@ -1559,7 +1559,7 @@ function draw_points_as_bar_graph(y_bibletars_box_spacing, y_baseline) {
         var y_starting_point = y_baseline + 10 + (i * y_bibletars_box_spacing);
         var y_ending_point = (y_starting_point + height_of_bar);
 
-        function i_lost_bar_graph_colors () {
+        function dead_bar_graph () {
             /** Once a player gets 5 questions wrong and they become a spectator, their
              * bar graph which displays their points become grey, it kind of looks like 
              * the life has been sucked out of their bar. As well as it also helps other players
@@ -1579,7 +1579,7 @@ function draw_points_as_bar_graph(y_bibletars_box_spacing, y_baseline) {
                 gradient.addColorStop(0.5, 'rgb(255, 0, 0)');
                 gradient.addColorStop(1, 'rgb(255, 86, 86)');
             } else {
-                i_lost_bar_graph_colors();
+                dead_bar_graph();
             }
             ctx.fillStyle = gradient;
             // ctx.fillStyle = 'rgb(197, 11, 11)';
@@ -1590,7 +1590,7 @@ function draw_points_as_bar_graph(y_bibletars_box_spacing, y_baseline) {
                 gradient.addColorStop(0.5, 'rgb(170, 0, 255)');
                 gradient.addColorStop(1, 'rgb(201, 94, 255)');
             } else {
-                i_lost_bar_graph_colors();
+                dead_bar_graph();
             }
             ctx.fillStyle = gradient;
             // ctx.fillStyle = 'rgb(135, 11, 197)';
@@ -1601,7 +1601,7 @@ function draw_points_as_bar_graph(y_bibletars_box_spacing, y_baseline) {
                 gradient.addColorStop(0.5, 'rgb(251, 255, 0)');
                 gradient.addColorStop(1, 'rgb(253, 255, 146)');
             } else {
-                i_lost_bar_graph_colors();
+                dead_bar_graph();
             }
             ctx.fillStyle = gradient;
             // ctx.fillStyle = 'rgb(224, 249, 2)';
@@ -1612,7 +1612,7 @@ function draw_points_as_bar_graph(y_bibletars_box_spacing, y_baseline) {
                 gradient.addColorStop(0.5, 'rgb(0, 255, 34)');
                 gradient.addColorStop(1, 'rgb(126, 255, 143)');
             } else {
-                i_lost_bar_graph_colors();
+                dead_bar_graph();
             }
             ctx.fillStyle = gradient;
             // ctx.fillStyle = 'rgb(11, 197, 36)';
@@ -1634,7 +1634,11 @@ function draw_points_as_bar_graph(y_bibletars_box_spacing, y_baseline) {
         ctx.shadowOffsetY = 0;
 
         ctx.fillText(each_players_points, (bar_x_starting_point -10) + (-1 * (lengthOfPointsNum * 30)) + ((animate_each_point * bar_speed_x) / x_bar_divider), y_baseline + 55 + (i * y_bibletars_box_spacing));
-        ctx.fillStyle = 'rgb(255, 255, 255)';
+        if (my_game.questions_wrong[i] < 5) {
+            ctx.fillStyle = 'rgb(255, 255, 255)';
+        } else {
+            ctx.fillStyle = 'rgb(251, 5, 5)';
+        }
         ctx.fillText(each_players_points, (bar_x_starting_point -10) + (-1 * (lengthOfPointsNum * 30)) + ((animate_each_point * bar_speed_x) / x_bar_divider) + 3, y_baseline + 55 + (i * y_bibletars_box_spacing) -1);
         
         // black shadow remove
