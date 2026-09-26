@@ -2731,6 +2731,22 @@ function draw_players_bibletars(index_loop) {
                         x_pos_ribp -= 19;
                         y_pos_ribp += 66.5;
                     }
+                    if (specific_drawing >= 19 && specific_drawing <= 20) {
+                        x_pos_ribp -= 10;
+                        y_pos_ribp += 20;
+                    }
+                    if (specific_drawing >= 21 && specific_drawing <= 22) {
+                        x_pos_ribp += 3.5;
+                        y_pos_ribp += 3.5;
+                    }
+                    if (specific_drawing == 23) {
+                        x_pos_ribp += 12.5;
+                        y_pos_ribp += 4.5;
+                    }
+                    if (specific_drawing == 24) {
+                        x_pos_ribp += 11.5;
+                        y_pos_ribp += 6.5;
+                    }
                 }
             }
         }
