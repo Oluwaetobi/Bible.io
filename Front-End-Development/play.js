@@ -405,7 +405,7 @@ function randomRobotModes() {
                 }
                 if (j == 10) {
                     // hair
-                    my_game.bibletar[i][j] = (Math.floor(Math.random() *5) + 1);
+                    my_game.bibletar[i][j] = (Math.floor(Math.random() *60) + 1);
                 }
             }
         }
