@@ -140,6 +140,16 @@ var bar_graph_rendered_loop = 0;
 
 var robot_modes = [0, 0, 0]
 
+/** I initiated the use of static_width because I don't want to work on making
+ * the text go directly in the middle of the screen, depending on computer size, because
+ * I've realized that if someone's screen is too small and everything is anchored on that
+ * everything will smush together and I don't want to dedicated too much of my time to figuring
+ * out the min-width, it's too many calculations. I'm just going to set everything to a 
+ * standard size based off of the size of the laptop I had when I first began construction which is 1533px
+ * but for the sake of how the screen elements work I'll do 1511 pixels wide
+ */
+var static_width = 1511;
+
 const sound = new Audio();
 sound.src = "./sounds/sound_incorrect.mp3";
 
@@ -1322,20 +1332,21 @@ function myBibletar () {
 function onlineDisplay() {
     ctx.font = "30px Arial";
     ctx.fillStyle = 'rgb(4, 4, 4)';
-    ctx.fillText("Online: " + online, ((canvas.width)/2) - 60, 100);
+    // ctx.fillText("Online: " + online, ((canvas.width)/2) - 60, 100);
+    ctx.fillText("Online: " + online, (static_width/2) - 60, 100);
 }
 
 function myScoresDisplay () {
     var x_shift = -50;
     ctx.font = "20px Arial";
     ctx.fillStyle = 'rgb(6, 6, 6)';
-    ctx.fillText("Points: " + my_points, (((canvas.width)/2) + x_shift) - 150, 130);
+    ctx.fillText("Points: " + my_points, (((static_width)/2) + x_shift) - 150, 130);
 
     ctx.fillStyle = 'rgb(6, 6, 6)';
-    ctx.fillText("Highscore: " + my_highscores[level - 1], (((canvas.width)/2) + x_shift) + 150, 130);
+    ctx.fillText("Highscore: " + my_highscores[level - 1], (((static_width)/2) + x_shift) + 150, 130);
 
     ctx.fillStyle = 'rgb(114, 4, 4)';
-    ctx.fillText("Under Construction - Not Online Yet!", (((canvas.width)/2) + x_shift - 280) + 150, 160);
+    ctx.fillText("Under Construction - Not Online Yet!", (((static_width)/2) + x_shift - 280) + 150, 160);
 }
 
 function displayLevels() {

@@ -173,7 +173,7 @@ a:hover {
     /* z index pushs it forward 1 layer */
     z-index: 1;
     font-size: 60px;
-    text-align: center;
+    left: 600px;
 }
 
 .modes_assets {
