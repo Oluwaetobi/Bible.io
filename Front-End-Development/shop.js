@@ -1190,6 +1190,48 @@ function drawUsersBibletar() {
                         y_pos_ribp -= 32;
                         increase_width_by = 3.0;
                     }
+                    if (specific_drawing >= 15 && specific_drawing <= 16) {
+                        my_pixels_height += 10;
+                        x_pos_ribp -= 70;
+                        y_pos_ribp -= 22;
+                        increase_width_by = 2.7;
+                    }
+                    if (specific_drawing == 17) {
+                        my_pixels_height += 50;
+                        x_pos_ribp -= 70;
+                        y_pos_ribp -= 62;
+                        increase_width_by = 1.6;
+                    }
+                    if (specific_drawing == 18) {
+                        my_pixels_height += 100;
+                        x_pos_ribp -= 63;
+                        y_pos_ribp -= 112;
+                        increase_width_by = 1.0;
+                    }
+                    if (specific_drawing >= 19 && specific_drawing <= 20) {
+                        my_pixels_height += 120;
+                        x_pos_ribp -= 78;
+                        y_pos_ribp -= 40;
+                        increase_width_by = 1.1;
+                    }
+                    if (specific_drawing >= 21 && specific_drawing <= 22) {
+                        my_pixels_height += 120;
+                        x_pos_ribp -= 98;
+                        y_pos_ribp -= 15;
+                        increase_width_by = 1.3;
+                    }
+                    if (specific_drawing == 23) {
+                        my_pixels_height += 140;
+                        x_pos_ribp -= 111;
+                        y_pos_ribp -= 15;
+                        increase_width_by = 1.3;
+                    }
+                    if (specific_drawing == 24) {
+                        my_pixels_height += 140;
+                        x_pos_ribp -= 111;
+                        y_pos_ribp -= 15;
+                        increase_width_by = 1.3;
+                    }
                 }
             }
         }
