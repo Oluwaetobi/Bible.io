@@ -1147,8 +1147,26 @@ function drawUsersBibletar() {
                      * variable is more accurate and yes, it knows whether it is for hats, glasses or 
                      * shirt, and etc
                      */
-                    if (specific_drawing > 1) {
+                    // default 
+                    increase_width_by = 1.4;
+                    if (specific_drawing > 1 && specific_drawing <= 3) {
+                        my_pixels_height += 0;
+                        x_pos_ribp += 0;
+                        y_pos_ribp += 0;
                         increase_width_by = 1.4;
+                    }
+                    if (specific_drawing == 4) {
+                        my_pixels_height += 76;
+                        x_pos_ribp -= 62.5;
+                        y_pos_ribp -= 83;
+                        increase_width_by = 1.2;
+                    }
+                    if (specific_drawing >= 5 && specific_drawing <= 7) {
+                        // caps
+                        my_pixels_height += 11;
+                        x_pos_ribp -= 93;
+                        y_pos_ribp -= 10;
+                        increase_width_by = 3.0;
                     }
                 }
             }

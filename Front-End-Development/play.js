@@ -2880,8 +2880,8 @@ function choose_Random_Question () {
 
     // Return a random integer between 1 and 10 (both included): Math.floor(Math.random() * 10) + 1;
 
-    var amount_of_question_in_level_1 = 19;
-    var amount_of_question_in_level_2 = 14;
+    var amount_of_question_in_level_1 = 23;
+    var amount_of_question_in_level_2 = 15;
     var amount_of_question_in_level_3 = 27;
 
 
@@ -3090,6 +3090,38 @@ function level_1_Questions () {
         answer4.innerText += `Cain `;
         correct_answer = 2;
     }
+    if (randomQuestion == 20) {
+        question.innerText = `Who was the first King of Israel? `;
+        answer1.innerText += `Saul `;
+        answer2.innerText += `David `;
+        answer3.innerText += `Solomon `;
+        answer4.innerText += `Rehoboam `;
+        correct_answer = 2;
+    }
+    if (randomQuestion == 21) {
+        question.innerText = `Who betrayed Samson? `;
+        answer1.innerText += `Manoah `;
+        answer2.innerText += `His mother `;
+        answer3.innerText += `Delilah `;
+        answer4.innerText += `The woman of Timnath `;
+        correct_answer = 3;
+    }
+    if (randomQuestion == 22) {
+        question.innerText = `Who is arguably the strongest man in the Bible? `;
+        answer1.innerText += `Goliath `;
+        answer2.innerText += `Samson `;
+        answer3.innerText += `Benaiah `;
+        answer4.innerText += `Shammah `;
+        correct_answer = 2;
+    }
+    if (randomQuestion == 23) {
+        question.innerText = `How old was Jesus when he started his ministry? `;
+        answer1.innerText += `12 years old `;
+        answer2.innerText += `29 years old `;
+        answer3.innerText += `30 years old `;
+        answer4.innerText += `33 years old `;
+        correct_answer = 3;
+    }
 }
 
 function level_2_Questions () {
@@ -3204,6 +3236,14 @@ function level_2_Questions () {
         answer2.innerText += `Shuhite `;
         answer3.innerText += `Naamathite `;
         answer4.innerText += `Gazite `;
+        correct_answer = 1;
+    }
+    if (randomQuestion == 15) {
+        question.innerText = `Abishai slew how many men with his spear on a given day? `;
+        answer1.innerText += `300 men `;
+        answer2.innerText += `600 men `;
+        answer3.innerText += `1,000 men `;
+        answer4.innerText += `10,000 men `;
         correct_answer = 1;
     }
 }
