@@ -146,7 +146,8 @@ var robot_modes = [0, 0, 0]
  * everything will smush together and I don't want to dedicated too much of my time to figuring
  * out the min-width, it's too many calculations. I'm just going to set everything to a 
  * standard size based off of the size of the laptop I had when I first began construction which is 1533px
- * but for the sake of how the screen elements work I'll do 1511 pixels wide
+ * but for the sake of how the screen elements work I'll do 1511 pixels wide. Although this is not
+ * to say that this is what I'm implementing on all pages of Bible.io, Developer's discretion is advised!
  */
 var static_width = 1511;
 
@@ -2701,6 +2702,34 @@ function draw_players_bibletars(index_loop) {
                     if (specific_drawing == 4) {
                         x_pos_ribp -= 21;
                         y_pos_ribp += 48;
+                    }
+                    if (specific_drawing >= 8 && specific_drawing <= 9) {
+                        x_pos_ribp -= 20;
+                        y_pos_ribp += 17;
+                    }
+                    if (specific_drawing == 10) {
+                        x_pos_ribp -= 24;
+                        y_pos_ribp += 35;
+                    }
+                    if (specific_drawing >= 11 && specific_drawing <= 13) {
+                        x_pos_ribp += 18;
+                        y_pos_ribp += 15;
+                    }
+                    if (specific_drawing == 14) {
+                        x_pos_ribp += 1;
+                        y_pos_ribp += 15;
+                    }
+                    if (specific_drawing >= 15 && specific_drawing <= 16) {
+                        x_pos_ribp -= 14.5;
+                        y_pos_ribp += 8;
+                    }
+                    if (specific_drawing == 17) {
+                        x_pos_ribp -= 14.5;
+                        y_pos_ribp += 34;
+                    }
+                    if (specific_drawing == 18) {
+                        x_pos_ribp -= 19;
+                        y_pos_ribp += 66.5;
                     }
                 }
             }
