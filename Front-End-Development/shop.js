@@ -1133,11 +1133,17 @@ function drawUsersBibletar() {
        if (type_of_drawing == 5) {
             increase_width_by = 2.0;
             if (i_am_a_boy == true) {
-                if (specific_drawing > 0 && specific_drawing < 9) {
+                if (specific_drawing >= 1 && specific_drawing <= 8) {
                     // caps
                     my_pixels_height += 11;
                     x_pos_ribp -= 93;
                     y_pos_ribp -= 10;
+                    increase_width_by = 3.0;
+                }
+                if (specific_drawing >= 9 && specific_drawing <= 17) {
+                    my_pixels_height += 21;
+                    x_pos_ribp -= 96.5;
+                    y_pos_ribp -= 40;
                     increase_width_by = 3.0;
                 }
             } else {
