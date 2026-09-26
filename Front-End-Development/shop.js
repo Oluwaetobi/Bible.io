@@ -1131,7 +1131,7 @@ function drawUsersBibletar() {
         }
         // hats
        if (type_of_drawing == 5) {
-            increase_width_by += 2.0;
+            increase_width_by = 2.0;
             if (i_am_a_boy == true) {
                 if (specific_drawing > 0 && specific_drawing < 9) {
                     // caps
@@ -1161,17 +1161,33 @@ function drawUsersBibletar() {
                         increase_width_by = 1.2;
                     }
                     if (specific_drawing >= 5 && specific_drawing <= 7) {
-                        // caps
                         my_pixels_height += 11;
                         x_pos_ribp -= 93;
                         y_pos_ribp -= 10;
                         increase_width_by = 3.0;
                     }
                     if (specific_drawing >= 8 && specific_drawing <= 9) {
-                        // caps
                         my_pixels_height += 25;
                         x_pos_ribp -= 62;
                         y_pos_ribp -= 35;
+                        increase_width_by = 3.0;
+                    }
+                    if (specific_drawing == 10) {
+                        my_pixels_height += 55;
+                        x_pos_ribp -= 57;
+                        y_pos_ribp -= 62;
+                        increase_width_by = 1.3;
+                    }
+                    if (specific_drawing >= 11 && specific_drawing <= 13) {
+                        my_pixels_height += 155;
+                        x_pos_ribp -= 117;
+                        y_pos_ribp -= 32;
+                        increase_width_by = 1.4;
+                    }
+                    if (specific_drawing == 14) {
+                        my_pixels_height += 20;
+                        x_pos_ribp -= 95;
+                        y_pos_ribp -= 32;
                         increase_width_by = 3.0;
                     }
                 }
