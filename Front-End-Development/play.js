@@ -714,14 +714,39 @@ function friendsBoard() {
     /**Shows my friends, should be at the bottom
      * this helps to block display for friends holder when the scroll happens
     */
-    ctx.fillStyle = 'rgb(120, 201, 241)';
-    ctx.fillRect(0, 0, 260, 70);
+    var height_of_friends_bar_rect = 70;
+    var width_of_friends_bar_rect = 260;
+    var gradient = ctx.createLinearGradient(0, 0, 0, height_of_friends_bar_rect);
+    gradient.addColorStop(0, 'rgb(120, 201, 241)');     // Start color (0%)
+    gradient.addColorStop(0.5, 'rgb(111, 239, 239)');
+    gradient.addColorStop(1, 'rgb(0, 211, 222)');
+    ctx.fillStyle = gradient;
+    // ctx.fillStyle = 'rgb(120, 201, 241)';
+    ctx.fillRect(0, 0, width_of_friends_bar_rect, height_of_friends_bar_rect);
 
-    ctx.font = "40px Arial";
-    ctx.strokeStyle = 'rgb(2, 2, 2)';
-    ctx.strokeText("Friends:", 50, 60);
-    ctx.fillStyle = 'rgb(0, 0, 0)';
-    ctx.fillText("Friends:", 50, 60);
+
+    // black shadow add
+    ctx.shadowColor = "black";
+    ctx.shadowBlur = 1;
+    ctx.shadowOffsetX = 2;
+    ctx.shadowOffsetY = 2;
+
+    var x_friends = 20;
+    var y_friends = 50;
+
+    ctx.font = "50px Arial";
+    ctx.strokeStyle = 'rgb(252, 249, 249)';
+    ctx.strokeText("Friends:", x_friends, y_friends);
+    ctx.fillStyle = 'rgb(254, 251, 251)';
+    ctx.fillText("Friends:", x_friends, y_friends);
+    
+    
+    // black shadow remove
+    ctx.shadowColor = "white";
+    ctx.shadowBlur = 0;
+    ctx.shadowOffsetX = 0;
+    ctx.shadowOffsetY = 0;
+
     
 
 }
