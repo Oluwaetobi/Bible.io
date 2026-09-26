@@ -1486,7 +1486,118 @@ function show_or_hide_html_elements () {
 }
 
 function extra_info_and_images () {
-    
+    flag_size_x = 250;
+    ctx.drawImage(img_racing_flags, 625, 250, flag_size_x, (flag_size_x)/1.8);
+
+    const date = new Date();
+    const month = date.getMonth();
+    const day_of_month = date.getDate();
+    const day_week = date.getDay();
+    const year = date.getFullYear();
+    const hours = date.getHours();
+    const minutes = date.getMinutes();
+    const seconds = date.getSeconds();
+
+    var month_in_text = "January";
+    var day_of_the_week = "Sunday";
+    var real_hours = hours;
+    var extra_zero = "";
+    var time_of_day = "AM";
+
+    if (day_week == 1) {
+        day_of_the_week = "Monday";
+    }
+    if (day_week == 2) {
+        day_of_the_week = "Tuesday";
+    }
+    if (day_week == 3) {
+        day_of_the_week = "Wednesday";
+    }
+    if (day_week == 4) {
+        day_of_the_week = "Thursday";
+    }
+    if (day_week == 5) {
+        day_of_the_week = "Friday";
+    }
+    if (day_week == 6) {
+        day_of_the_week = "Saturday";
+    }
+    if (day_week == 7) {
+        day_of_the_week = "Sunday";
+    }
+
+
+    if (month == 1) {
+        month_in_text = "January";
+    }
+    if (month == 2) {
+        month_in_text = "February";
+    }
+    if (month == 3) {
+        month_in_text = "March";
+    }
+    if (month == 4) {
+        month_in_text = "April";
+    }
+    if (month == 5) {
+        month_in_text = "May";
+    }
+    if (month == 6) {
+        month_in_text = "June";
+    }
+    if (month == 7) {
+        month_in_text = "July";
+    }
+    if (month == 8) {
+        month_in_text = "August";
+    }
+    if (month == 9) {
+        month_in_text = "September";
+    }
+    if (month == 10) {
+        month_in_text = "October";
+    }
+    if (month == 11) {
+        month_in_text = "November";
+    }
+    if (month == 12) {
+        month_in_text = "December";
+    }
+
+    if (hours > 12) {
+        real_hours -= 12;
+    }
+
+    if (minutes < 10) {
+        extra_zero = "0"
+    }
+
+    if (hours > 11) {
+        time_of_day = "PM";
+    }
+
+    function getDateDisplay() {
+        var display_date = (day_of_the_week + ", " + month_in_text + " " +  day_of_month + ", " + year + " | " + real_hours + ":" + extra_zero + minutes + " " + time_of_day)
+        return display_date;
+    }
+
+    var date_display = getDateDisplay();
+
+    ctx.fillStyle = 'rgba(249, 248, 248, 0.8)';
+    ctx.fillRect(350, 550, 750, 130);
+
+    ctx.font = "18px Arial";
+    ctx.fillStyle = "rgb(0,0,0)";
+    // displays date as text
+    ctx.fillText(date_display, 580, 570);
+
+    ctx.fillStyle = "rgb(0,0,0)";
+    ctx.fillText("Jesus Loves You", 660, 675);
+
+    ctx.font = "30px Arial";
+    ctx.fillText("World's Bible Day Contest - July 1st to July 31st", 410, 620);
+
+
 }
 
 function draw_Background () {
