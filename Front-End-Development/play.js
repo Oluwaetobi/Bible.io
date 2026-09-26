@@ -623,6 +623,15 @@ function loadingBox() {
 
 
 function friendsBoard() {
+
+    if (i_am_a_developer == true) {
+        /** set first friend's bibletar to my bibletar, that way I don't have
+         * to enter the game before I see if the sizing, x, and y coorindates for everything is correct
+         */
+        for (let i = 0; i < my_bibletar_svg.length; i++) {
+            friends.bibletar[0][i] = my_bibletar_svg[i];
+        }
+    }
     
     ctx.fillStyle = 'rgb(250, 251, 252)';
     ctx.fillRect(0, 60, 260, canvas.height);

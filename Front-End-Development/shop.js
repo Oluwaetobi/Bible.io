@@ -976,11 +976,10 @@ function drawUsersBibletar() {
                     if (section_shop_or_closest == 1 || section_shop_or_closest == 3 || section_shop_or_closest == 4 || section_shop_or_closest == 5) {
                         /** We have to do this because, the references to acquired_stuff_closet, won't work properly 
                          * for backgrounds, glasses, shirts, and hats since some of the stuff exists in not_acquired_stuff_closet,
-                         * honestly, I think I have forgotten things, and confusing things up, all I know is that,
-                         * I need to combine the arrays so that specific_drawing or in this function which returns it
-                         * as specific drawing but which in this function is actually number_for_drawing, so that
-                         * it doesn't return and undefined value. Honestly, it's kind of complicated and 
-                         * I don't really know how to explain it anymore.
+                         * it will no longer be accessible in the shop, well at least the data. I still be able to draw
+                         * it on the screen, but the size widths and heights that go along with the data won't be correct, so
+                         * I need to combine the arrays so that it returns that correct specific drawing but
+                         *  in this function it is known as number_for_drawing, this way it doesn't return and undefined value.
                          */
                         var combine_the_array = []
                         combine_the_array.push(acquired_stuff_closet[section_shop_or_closest - 1].concat(not_acquired_stuff_shop[section_shop_or_closest - 1]));
