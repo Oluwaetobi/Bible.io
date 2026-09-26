@@ -171,6 +171,36 @@ a:hover {
     flex-direction: column;
     align-items: center;
     position: relative;
+    padding: 10px 10px;
+    /* background-color: #fbfbfb; */
+    width: 500px;
+    
+}
+
+.learning-materials {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 1;
+    /* box-sizing: border-box; */
+
+    top:-30px;
+    max-height: 500px;
+    /* width: 500px; */
+    text-align: center;
+    /* also have to set the color in javascript too */
+    background-color: rgba(252, 251, 251, 0.9);
+    width: 800px;
+    /* place-items: center; */
+    /* box-sizing: border-box; */
+    /* justify-content: center; */
+    align-items: center;
+    border-radius: 30px 30px;
+    left: 50px;
+    padding: 20px 20px;
+    overflow-y:auto;
+    /* flex-grow: 1; */
+    /* border: 1px solid black; */
 }
 
 
@@ -180,23 +210,24 @@ a:hover {
 }
 
 .scrollable-table-bible {
-    height: 120px;
+    min-height: 120px;
     width: 700px;
-    aspect-ratio: 1 / 1;  
+    /* aspect-ratio: 1 / 1;   */
     /* overflow-y makes only the y coordinates scrollable */
-    overflow-y: auto;
+    overflow-x: auto;
     /* background-color: #7f2e2e; */
-    scroll-snap-type: y mandatory;
-    position: fixed;
-    left: 100px;
+    /* scroll-snap-type: y mandatory; */
+    position: static;
+    /* left: 100px; */
     /* translate: -50%; */
     z-index: 1;
-    top: 200px;
+    /* top: 0px; */
+    margin: 10px;
     background-color: #fbfbfb;
     display: grid;
     grid-template-columns: 30% 70%;
     border: 6px solid black;
-    border-radius: 2%;
+    border-radius: 20px 20px;
 }
 
 /* Scrollable table class takes precedence over table class
@@ -253,23 +284,24 @@ table takes up the full width of it's parent the scrollable table */
 }
 
 .scrollable-table-christians {
-    height: 200px;
+    min-height: 200px;
     width: 700px;
-    aspect-ratio: 1 / 1;  
+    /* aspect-ratio: 1 / 1;   */
     /* overflow-y makes only the y coordinates scrollable */
-    overflow-y: auto;
+    overflow-x: auto;
     /* background-color: #7f2e2e; */
-    scroll-snap-type: y mandatory;
-    position: fixed;
-    left: 100px;
+    /* scroll-snap-type: y mandatory; */
+    position: static;
+    margin: 10px;
+    /* left: 100px; */
     /* translate: -50%; */
     z-index: 1;
-    top: 350px;
+    /* top: 350px; */
     background-color: #fbfbfb;
     display: grid;
     grid-template-columns: 30% 70%;
     border: 6px solid black;
-    border-radius: 2%;
+    border-radius: 20px 20px;
 }
 
 /* Scrollable table class takes precedence over table class
@@ -331,24 +363,23 @@ table takes up the full width of it's parent the scrollable table */
 }
 
 .scrollable-table-articles {
-    height: 200px;
+    min-height: 200px;
     width: 700px;
     /* aspect-ratio: 1 / 1;   */
     /* overflow-y makes only the y coordinates scrollable */
-    overflow-y: auto;
     overflow-x: auto;
     /* background-color: #7f2e2e; */
-    scroll-snap-type: x y mandatory;
-    position: fixed;
-    left: 100px;
+    position: static;
+    /* left: 100px; */
+    margin: 10px;
     /* translate: -50%; */
     z-index: 1;
-    top: 580px;
+    /* top: 580px; */
     background-color: #fbfbfb;
     display: grid;
     grid-template-columns: 30% 70%;
     border: 6px solid black;
-    border-radius: 2%;
+    border-radius: 20px 20px;
 }
 
 .scrollable-table-articles caption {
