@@ -369,7 +369,7 @@ function randomRobotModes() {
                 }
                 if (j == 1) {
                     // bakcground
-                    my_game.bibletar[i][j] = (Math.floor(Math.random() *3) + 1);
+                    my_game.bibletar[i][j] = (Math.floor(Math.random() *8) + 1);
                 }
                 if (j == 2) {
                     // face
