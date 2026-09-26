@@ -1227,10 +1227,10 @@ function drawUsersBibletar() {
                         increase_width_by = 1.3;
                     }
                     if (specific_drawing == 24) {
-                        my_pixels_height += 140;
+                        my_pixels_height += 230;
                         x_pos_ribp -= 111;
-                        y_pos_ribp -= 15;
-                        increase_width_by = 1.3;
+                        y_pos_ribp -= 20;
+                        increase_width_by = 0.9;
                     }
                 }
             }

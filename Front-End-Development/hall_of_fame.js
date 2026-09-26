@@ -378,8 +378,91 @@ function playerClickedBibletar () {
                      * variable is more accurate and yes, it knows whether it is for hats, glasses or 
                      * shirt, and etc
                      */
-                    if (specific_drawing > 1) {
+                    // default 
+                    increase_width_by = 1.4;
+                    if (specific_drawing > 1 && specific_drawing <= 3) {
+                        my_pixels_height += 0;
+                        x_pos_ribp += 0;
+                        y_pos_ribp += 0;
                         increase_width_by = 1.4;
+                    }
+                    if (specific_drawing == 4) {
+                        my_pixels_height += 76;
+                        x_pos_ribp -= 62.5;
+                        y_pos_ribp -= 83;
+                        increase_width_by = 1.2;
+                    }
+                    if (specific_drawing >= 5 && specific_drawing <= 7) {
+                        my_pixels_height += 11;
+                        x_pos_ribp -= 93;
+                        y_pos_ribp -= 10;
+                        increase_width_by = 3.0;
+                    }
+                    if (specific_drawing >= 8 && specific_drawing <= 9) {
+                        my_pixels_height += 25;
+                        x_pos_ribp -= 62;
+                        y_pos_ribp -= 35;
+                        increase_width_by = 3.0;
+                    }
+                    if (specific_drawing == 10) {
+                        my_pixels_height += 55;
+                        x_pos_ribp -= 57;
+                        y_pos_ribp -= 62;
+                        increase_width_by = 1.3;
+                    }
+                    if (specific_drawing >= 11 && specific_drawing <= 13) {
+                        my_pixels_height += 155;
+                        x_pos_ribp -= 117;
+                        y_pos_ribp -= 32;
+                        increase_width_by = 1.4;
+                    }
+                    if (specific_drawing == 14) {
+                        my_pixels_height += 20;
+                        x_pos_ribp -= 95;
+                        y_pos_ribp -= 32;
+                        increase_width_by = 3.0;
+                    }
+                    if (specific_drawing >= 15 && specific_drawing <= 16) {
+                        my_pixels_height += 10;
+                        x_pos_ribp -= 70;
+                        y_pos_ribp -= 22;
+                        increase_width_by = 2.7;
+                    }
+                    if (specific_drawing == 17) {
+                        my_pixels_height += 50;
+                        x_pos_ribp -= 70;
+                        y_pos_ribp -= 62;
+                        increase_width_by = 1.6;
+                    }
+                    if (specific_drawing == 18) {
+                        my_pixels_height += 100;
+                        x_pos_ribp -= 63;
+                        y_pos_ribp -= 112;
+                        increase_width_by = 1.0;
+                    }
+                    if (specific_drawing >= 19 && specific_drawing <= 20) {
+                        my_pixels_height += 120;
+                        x_pos_ribp -= 78;
+                        y_pos_ribp -= 40;
+                        increase_width_by = 1.1;
+                    }
+                    if (specific_drawing >= 21 && specific_drawing <= 22) {
+                        my_pixels_height += 120;
+                        x_pos_ribp -= 98;
+                        y_pos_ribp -= 15;
+                        increase_width_by = 1.3;
+                    }
+                    if (specific_drawing == 23) {
+                        my_pixels_height += 140;
+                        x_pos_ribp -= 111;
+                        y_pos_ribp -= 15;
+                        increase_width_by = 1.3;
+                    }
+                    if (specific_drawing == 24) {
+                        my_pixels_height += 230;
+                        x_pos_ribp -= 111;
+                        y_pos_ribp -= 20;
+                        increase_width_by = 0.9;
                     }
                 }
             }

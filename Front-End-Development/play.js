@@ -640,16 +640,12 @@ function friendsBoard() {
     var friends_info_x_alignment = 20;
     
     for (let i = 0; i < friends.name.length; i++) {
-        // name of friends
-        ctx.font = "18px Arial";
-        ctx.fillStyle = 'rgb(0, 0, 0)';
-        ctx.fillText(friends.name[i], 20, (i*friends_y_spacing) + 90 + friends.scroll_y);
         // console.log(i);
-
+        
         // friends' bibletar background border box display
         ctx.fillStyle = 'rgb(100, 102, 103)';
         ctx.fillRect(10, (i*friends_y_spacing) + 95 + friends.scroll_y, 100, 90);
-
+        
         var online_y_baseline = -20;
         if (friends.online[i] == "Online" || friends.online[i] == "online") {
             ctx.fillStyle = 'rgb(78, 244, 97)'
@@ -675,8 +671,33 @@ function friendsBoard() {
         }
         ctx.drawImage(img_countries_sources_friends[i], 120 + friends_info_x_alignment, (i*friends_y_spacing) + 155 + friends.scroll_y, 60, 30);
         // ctx.drawImage(img_countries, 130, 100, 100, 50);
-
+        
         draw_players_bibletars(i);
+        
+        // behind friend's name box, slightly transparent
+        var move_names_up = -2;
+        ctx.fillStyle = "rgba(12, 12, 12, 0.5)"; 
+        ctx.fillRect(7, 72 + (i * friends_y_spacing) + friends.scroll_y + move_names_up, 230, 22);
+
+        
+        // black shadow add
+        ctx.shadowColor = "black";
+        ctx.shadowBlur = 1;
+        ctx.shadowOffsetX = 2;
+        ctx.shadowOffsetY = 2;
+
+    
+        // name of friends
+        ctx.font = "18px Arial";
+        ctx.fillStyle = 'rgb(247, 245, 245)';
+        ctx.fillText(friends.name[i], 20, (i*friends_y_spacing) + 90 + friends.scroll_y + move_names_up);
+    
+        // black shadow remove
+        ctx.shadowColor = "white";
+        ctx.shadowBlur = 0;
+        ctx.shadowOffsetX = 0;
+        ctx.shadowOffsetY = 0;
+
 
     }
     
@@ -723,11 +744,11 @@ function myBibletar () {
     ctx.fillText(my_name, 1190, 680);
     
     
-        // black shadow remove
-        ctx.shadowColor = "white";
-        ctx.shadowBlur = 0;
-        ctx.shadowOffsetX = 0;
-        ctx.shadowOffsetY = 0;
+    // black shadow remove
+    ctx.shadowColor = "white";
+    ctx.shadowBlur = 0;
+    ctx.shadowOffsetX = 0;
+    ctx.shadowOffsetY = 0;
 
     
 
@@ -894,8 +915,91 @@ function myBibletar () {
                      * variable is more accurate and yes, it knows whether it is for hats, glasses or 
                      * shirt, and etc
                      */
-                    if (specific_drawing > 1) {
+                    // default 
+                    increase_width_by = 1.4;
+                    if (specific_drawing > 1 && specific_drawing <= 3) {
+                        my_pixels_height += 0;
+                        x_pos_ribp += 0;
+                        y_pos_ribp += 0;
                         increase_width_by = 1.4;
+                    }
+                    if (specific_drawing == 4) {
+                        my_pixels_height += 76;
+                        x_pos_ribp -= 62.5;
+                        y_pos_ribp -= 83;
+                        increase_width_by = 1.2;
+                    }
+                    if (specific_drawing >= 5 && specific_drawing <= 7) {
+                        my_pixels_height += 11;
+                        x_pos_ribp -= 93;
+                        y_pos_ribp -= 10;
+                        increase_width_by = 3.0;
+                    }
+                    if (specific_drawing >= 8 && specific_drawing <= 9) {
+                        my_pixels_height += 25;
+                        x_pos_ribp -= 62;
+                        y_pos_ribp -= 35;
+                        increase_width_by = 3.0;
+                    }
+                    if (specific_drawing == 10) {
+                        my_pixels_height += 55;
+                        x_pos_ribp -= 57;
+                        y_pos_ribp -= 62;
+                        increase_width_by = 1.3;
+                    }
+                    if (specific_drawing >= 11 && specific_drawing <= 13) {
+                        my_pixels_height += 155;
+                        x_pos_ribp -= 117;
+                        y_pos_ribp -= 32;
+                        increase_width_by = 1.4;
+                    }
+                    if (specific_drawing == 14) {
+                        my_pixels_height += 20;
+                        x_pos_ribp -= 95;
+                        y_pos_ribp -= 32;
+                        increase_width_by = 3.0;
+                    }
+                    if (specific_drawing >= 15 && specific_drawing <= 16) {
+                        my_pixels_height += 10;
+                        x_pos_ribp -= 70;
+                        y_pos_ribp -= 22;
+                        increase_width_by = 2.7;
+                    }
+                    if (specific_drawing == 17) {
+                        my_pixels_height += 50;
+                        x_pos_ribp -= 70;
+                        y_pos_ribp -= 62;
+                        increase_width_by = 1.6;
+                    }
+                    if (specific_drawing == 18) {
+                        my_pixels_height += 100;
+                        x_pos_ribp -= 63;
+                        y_pos_ribp -= 112;
+                        increase_width_by = 1.0;
+                    }
+                    if (specific_drawing >= 19 && specific_drawing <= 20) {
+                        my_pixels_height += 120;
+                        x_pos_ribp -= 78;
+                        y_pos_ribp -= 40;
+                        increase_width_by = 1.1;
+                    }
+                    if (specific_drawing >= 21 && specific_drawing <= 22) {
+                        my_pixels_height += 120;
+                        x_pos_ribp -= 98;
+                        y_pos_ribp -= 15;
+                        increase_width_by = 1.3;
+                    }
+                    if (specific_drawing == 23) {
+                        my_pixels_height += 140;
+                        x_pos_ribp -= 111;
+                        y_pos_ribp -= 15;
+                        increase_width_by = 1.3;
+                    }
+                    if (specific_drawing == 24) {
+                        my_pixels_height += 230;
+                        x_pos_ribp -= 111;
+                        y_pos_ribp -= 20;
+                        increase_width_by = 0.9;
                     }
                 }
             }
@@ -1993,8 +2097,91 @@ function draw_players_bibletars(index_loop) {
                      * variable is more accurate and yes, it knows whether it is for hats, glasses or 
                      * shirt, and etc
                      */
-                    if (specific_drawing > 1) {
+                    // default 
+                    increase_width_by = 1.4;
+                    if (specific_drawing > 1 && specific_drawing <= 3) {
+                        my_pixels_height += 0;
+                        x_pos_ribp += 0;
+                        y_pos_ribp += 0;
                         increase_width_by = 1.4;
+                    }
+                    if (specific_drawing == 4) {
+                        my_pixels_height += 76;
+                        x_pos_ribp -= 62.5;
+                        y_pos_ribp -= 83;
+                        increase_width_by = 1.2;
+                    }
+                    if (specific_drawing >= 5 && specific_drawing <= 7) {
+                        my_pixels_height += 11;
+                        x_pos_ribp -= 93;
+                        y_pos_ribp -= 10;
+                        increase_width_by = 3.0;
+                    }
+                    if (specific_drawing >= 8 && specific_drawing <= 9) {
+                        my_pixels_height += 25;
+                        x_pos_ribp -= 62;
+                        y_pos_ribp -= 35;
+                        increase_width_by = 3.0;
+                    }
+                    if (specific_drawing == 10) {
+                        my_pixels_height += 55;
+                        x_pos_ribp -= 57;
+                        y_pos_ribp -= 62;
+                        increase_width_by = 1.3;
+                    }
+                    if (specific_drawing >= 11 && specific_drawing <= 13) {
+                        my_pixels_height += 155;
+                        x_pos_ribp -= 117;
+                        y_pos_ribp -= 32;
+                        increase_width_by = 1.4;
+                    }
+                    if (specific_drawing == 14) {
+                        my_pixels_height += 20;
+                        x_pos_ribp -= 95;
+                        y_pos_ribp -= 32;
+                        increase_width_by = 3.0;
+                    }
+                    if (specific_drawing >= 15 && specific_drawing <= 16) {
+                        my_pixels_height += 10;
+                        x_pos_ribp -= 70;
+                        y_pos_ribp -= 22;
+                        increase_width_by = 2.7;
+                    }
+                    if (specific_drawing == 17) {
+                        my_pixels_height += 50;
+                        x_pos_ribp -= 70;
+                        y_pos_ribp -= 62;
+                        increase_width_by = 1.6;
+                    }
+                    if (specific_drawing == 18) {
+                        my_pixels_height += 100;
+                        x_pos_ribp -= 63;
+                        y_pos_ribp -= 112;
+                        increase_width_by = 1.0;
+                    }
+                    if (specific_drawing >= 19 && specific_drawing <= 20) {
+                        my_pixels_height += 120;
+                        x_pos_ribp -= 78;
+                        y_pos_ribp -= 40;
+                        increase_width_by = 1.1;
+                    }
+                    if (specific_drawing >= 21 && specific_drawing <= 22) {
+                        my_pixels_height += 120;
+                        x_pos_ribp -= 98;
+                        y_pos_ribp -= 15;
+                        increase_width_by = 1.3;
+                    }
+                    if (specific_drawing == 23) {
+                        my_pixels_height += 140;
+                        x_pos_ribp -= 111;
+                        y_pos_ribp -= 15;
+                        increase_width_by = 1.3;
+                    }
+                    if (specific_drawing == 24) {
+                        my_pixels_height += 230;
+                        x_pos_ribp -= 111;
+                        y_pos_ribp -= 20;
+                        increase_width_by = 0.9;
                     }
                 }
             }
@@ -2343,6 +2530,10 @@ function draw_players_bibletars(index_loop) {
                     if (specific_drawing >= 2 && specific_drawing <= 3) {
                         x_pos_ribp -= 60;
                         y_pos_ribp -= 5;
+                    }
+                    if (specific_drawing == 4) {
+                        x_pos_ribp -= 21;
+                        y_pos_ribp += 48;
                     }
                 }
             }
