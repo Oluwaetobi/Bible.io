@@ -177,6 +177,14 @@ var img_mouths_sources = [];
 var img_hair_sources = [];
 
 
+var img_racing_flags = new Image();
+img_racing_flags.src = "./images/bibleio_racing_flags.svg"; // Set source URL
+img_racing_flags.alt = "flag";
+
+var img_friends_star = new Image();
+img_friends_star.src = "./images/bibleio_friends_star_logo.svg"; // Set source URL
+img_friends_star.alt = "star";
+
 
 var img_wrong = new Image();
 img_wrong.src = "./images/wrong.svg";
@@ -633,7 +641,12 @@ function friendsBoard() {
         }
     }
     
-    ctx.fillStyle = 'rgb(250, 251, 252)';
+    var gradient = ctx.createLinearGradient(0, 0, 260, 0);
+    gradient.addColorStop(0, 'rgb(240, 238, 238)');     // Start color (0%)
+    gradient.addColorStop(0.5, 'rgba(255, 255, 255, 0.8)');
+    gradient.addColorStop(1, 'rgb(220, 216, 216)');
+    ctx.fillStyle = gradient;
+    // ctx.fillStyle = 'rgb(250, 251, 252)';
     ctx.fillRect(0, 60, 260, canvas.height);
 
     var friends_y_spacing = 130;
@@ -731,14 +744,17 @@ function friendsBoard() {
     ctx.shadowOffsetX = 2;
     ctx.shadowOffsetY = 2;
 
-    var x_friends = 20;
+    var x_friends = 68;
     var y_friends = 50;
 
     ctx.font = "50px Arial";
     ctx.strokeStyle = 'rgb(252, 249, 249)';
-    ctx.strokeText("Friends:", x_friends, y_friends);
+    ctx.strokeText("Friends", x_friends, y_friends);
     ctx.fillStyle = 'rgb(254, 251, 251)';
-    ctx.fillText("Friends:", x_friends, y_friends);
+    ctx.fillText("Friends", x_friends, y_friends);
+
+    ctx.drawImage(img_friends_star, 7, 7, 50, 50);
+    // ctx.drawImage()
     
     
     // black shadow remove
@@ -1467,6 +1483,10 @@ function show_or_hide_html_elements () {
         document.getElementById('questions-i-got-wrong').style.display = "block";
         document.getElementById('continue-button').style.display = "block";
     }
+}
+
+function extra_info_and_images () {
+    
 }
 
 function draw_Background () {
@@ -3714,6 +3734,7 @@ function drawGame() {
         otherTextDisplay();
         challenge_box_display();
         myBibletar();
+        extra_info_and_images();
     } else if (home_page == 2) {
         connectPlayers();
         /** declared loadingbox inside connectPlayers() function, that way it doesn't go on top
