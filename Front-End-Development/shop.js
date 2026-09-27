@@ -1043,6 +1043,14 @@ function drawUsersBibletar() {
         var specific_drawing = 0;
         specific_drawing = detect_specific_drawing(specific_drawing, type_of_drawing);
 
+        if (i_am_a_developer == true) {
+            ctx.font = "30px Arial";
+            ctx.fillStyle = "rgb(0,0,0)";
+            if (type_of_drawing == closet_section) {
+                ctx.fillText("Specific Drawing: " + specific_drawing, 1020, 618);
+            }
+        }
+
         // over here I resize the width based off of the given height
         // background
         if (type_of_drawing == 1) {
