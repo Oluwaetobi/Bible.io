@@ -1214,6 +1214,18 @@ function drawUsersBibletar() {
                     y_pos_ribp -= 20;
                     increase_width_by = 1.1;
                 }
+                if (specific_drawing >= 49 && specific_drawing <= 53) {
+                    my_pixels_height += 20;
+                    x_pos_ribp -= 67.5;
+                    y_pos_ribp -= 25;
+                    increase_width_by = 2.3;
+                }
+                if (specific_drawing >= 54 && specific_drawing <= 57) {
+                    my_pixels_height += 65;
+                    x_pos_ribp -= 67.5;
+                    y_pos_ribp -= 75;
+                    increase_width_by = 1.4;
+                }
             } else {
                 if (i_am_a_girl == true) {
                     /** replace bibletar_hats with specific_drawing, I upgraded detection skills, this
