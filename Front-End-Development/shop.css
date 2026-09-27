@@ -205,6 +205,10 @@ a:hover {
 
 }
 
+#bibletar_girl_or_boy img:hover {
+    cursor: pointer;
+}
+
 #bibletar_page_1_text {
     display: block;
     visibility: visible;
