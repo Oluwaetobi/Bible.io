@@ -1053,6 +1053,12 @@ function myBibletar () {
                         y_pos_ribp -= 20;
                         increase_width_by = 0.9;
                     }
+                    if (specific_drawing >= 25 && specific_drawing <= 34) {
+                        my_pixels_height += 45;
+                        x_pos_ribp -= 67;
+                        y_pos_ribp -= 50;
+                        increase_width_by = 1.7;
+                    }
                 }
             }
         }
@@ -2355,6 +2361,12 @@ function draw_players_bibletars(index_loop) {
                         y_pos_ribp -= 20;
                         increase_width_by = 0.9;
                     }
+                    if (specific_drawing >= 25 && specific_drawing <= 34) {
+                        my_pixels_height += 45;
+                        x_pos_ribp -= 67;
+                        y_pos_ribp -= 50;
+                        increase_width_by = 1.7;
+                    }
                 }
             }
         }
@@ -2750,6 +2762,10 @@ function draw_players_bibletars(index_loop) {
                     if (specific_drawing == 24) {
                         x_pos_ribp += 11.5;
                         y_pos_ribp += 6.5;
+                    }
+                    if (specific_drawing >= 25 && specific_drawing <= 34) {
+                        x_pos_ribp -= 17.5;
+                        y_pos_ribp += 26;
                     }
                 }
             }

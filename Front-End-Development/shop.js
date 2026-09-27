@@ -1238,6 +1238,12 @@ function drawUsersBibletar() {
                         y_pos_ribp -= 20;
                         increase_width_by = 0.9;
                     }
+                    if (specific_drawing >= 25) {
+                        my_pixels_height += 45;
+                        x_pos_ribp -= 67;
+                        y_pos_ribp -= 50;
+                        increase_width_by = 1.7;
+                    }
                 }
             }
         }
