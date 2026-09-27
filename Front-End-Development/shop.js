@@ -1328,11 +1328,53 @@ function drawUsersBibletar() {
                         y_pos_ribp -= 34;
                         increase_width_by = 2.7;
                 }
-                if (specific_drawing >= 121 && specific_drawing <= 126) {
+                if (specific_drawing >= 121 && specific_drawing <= 127) {
                         my_pixels_height += 168;
-                        x_pos_ribp -= 88.0;
-                        y_pos_ribp -= 64;
+                        x_pos_ribp -= 94.5;
+                        y_pos_ribp -= 50;
                         increase_width_by = 1.0;
+                }
+                if (specific_drawing >= 128 && specific_drawing <= 129) {
+                        my_pixels_height += 248;
+                        x_pos_ribp -= 85.5;
+                        y_pos_ribp -= 105;
+                        increase_width_by = 0.7;
+                }
+                if (specific_drawing == 130) {
+                        my_pixels_height += 178;
+                        x_pos_ribp -= 84.5;
+                        y_pos_ribp -= 25;
+                        increase_width_by = 0.85;
+                }
+                if (specific_drawing == 132) {
+                        my_pixels_height += 68;
+                        x_pos_ribp -= 65.5;
+                        y_pos_ribp -= 75;
+                        increase_width_by = 1.3;
+                }
+                if (specific_drawing >= 133 && specific_drawing <= 136) {
+                        my_pixels_height += 98;
+                        x_pos_ribp -= 97.5;
+                        y_pos_ribp -= 15;
+                        increase_width_by = 1.5;
+                }
+                if (specific_drawing >= 137 && specific_drawing <= 140) {
+                        my_pixels_height += 123;
+                        x_pos_ribp -= 98.5;
+                        y_pos_ribp -= 15;
+                        increase_width_by = 1.3;
+                }
+                if (specific_drawing >= 141 && specific_drawing <= 144) {
+                        my_pixels_height += 15;
+                        x_pos_ribp -= 43.5;
+                        y_pos_ribp += 145;
+                        increase_width_by = 1.8;
+                }
+                if (specific_drawing >= 145 && specific_drawing <= 148) {
+                        my_pixels_height -= 13;
+                        x_pos_ribp -= 78.5;
+                        y_pos_ribp += 80;
+                        increase_width_by = 5.0;
                 }
             } else {
                 if (i_am_a_girl == true) {
