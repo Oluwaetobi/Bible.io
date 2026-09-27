@@ -1412,6 +1412,12 @@ function drawUsersBibletar() {
                         y_pos_ribp -= 15;
                         increase_width_by = 0.8;
                 }
+                if (specific_drawing == 174) {
+                        my_pixels_height += 40;
+                        x_pos_ribp -= 78.5;
+                        y_pos_ribp -= 48;
+                        increase_width_by = 2.0;
+                }
             } else {
                 if (i_am_a_girl == true) {
                     /** replace bibletar_hats with specific_drawing, I upgraded detection skills, this
@@ -1509,6 +1515,12 @@ function drawUsersBibletar() {
                         x_pos_ribp -= 67;
                         y_pos_ribp -= 50;
                         increase_width_by = 1.7;
+                    }
+                    if (specific_drawing == 35) {
+                        my_pixels_height += 25;
+                        x_pos_ribp -= 73;
+                        y_pos_ribp -= 35;
+                        increase_width_by = 2.3;
                     }
                 }
             }
