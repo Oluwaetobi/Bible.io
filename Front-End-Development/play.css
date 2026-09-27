@@ -194,6 +194,10 @@ a:hover {
     filter: brightness(120%);
 }
 
+.modes_assets #choice2:hover {
+    cursor: pointer;
+}
+
 .questions {
     z-index: 1;
     position: absolute;
