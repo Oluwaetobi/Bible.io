@@ -3316,7 +3316,7 @@ function choose_Random_Question () {
 
     // Return a random integer between 1 and 10 (both included): Math.floor(Math.random() * 10) + 1;
 
-    var amount_of_question_in_level_1 = 23;
+    var amount_of_question_in_level_1 = 24;
     var amount_of_question_in_level_2 = 15;
     var amount_of_question_in_level_3 = 27;
 
@@ -3557,6 +3557,14 @@ function level_1_Questions () {
         answer3.innerText += `30 years old `;
         answer4.innerText += `33 years old `;
         correct_answer = 3;
+    }
+    if (randomQuestion == 24) {
+        question.innerText = `Who said this: I am the voice of one crying in the wilderness. Prepare ye the way of the Lord, make his paths straight `;
+        answer1.innerText += `John the Baptist `;
+        answer2.innerText += `Jeremiah `;
+        answer3.innerText += `Elisha `;
+        answer4.innerText += `Nathan `;
+        correct_answer = 1;
     }
 }
 

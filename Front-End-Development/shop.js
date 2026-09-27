@@ -1154,6 +1154,66 @@ function drawUsersBibletar() {
                     y_pos_ribp -= 40;
                     increase_width_by = 3.0;
                 }
+                if (specific_drawing >= 18 && specific_drawing <= 22) {
+                    my_pixels_height += 21;
+                    x_pos_ribp -= 60.5;
+                    y_pos_ribp -= 40;
+                    increase_width_by = 3.0;
+                }
+                if (specific_drawing == 23) {
+                    my_pixels_height += 121;
+                    x_pos_ribp -= 100.5;
+                    y_pos_ribp -= 140;
+                    increase_width_by = 1.3;
+                }
+                if (specific_drawing == 24) {
+                    my_pixels_height += 60;
+                    x_pos_ribp -= 60.5;
+                    y_pos_ribp -= 67;
+                    increase_width_by = 1.3;
+                }
+                if (specific_drawing >= 25 && specific_drawing <= 27 || specific_drawing == 31) {
+                    my_pixels_height += 60;
+                    x_pos_ribp -= 95.5;
+                    y_pos_ribp -= 77;
+                    increase_width_by = 1.95;
+                }
+                if (specific_drawing == 28) {
+                    my_pixels_height += 90;
+                    x_pos_ribp -= 98.5;
+                    y_pos_ribp -= 107;
+                    increase_width_by = 1.55;
+                }
+                if (specific_drawing == 29) {
+                    my_pixels_height += 60;
+                    x_pos_ribp -= 88.5;
+                    y_pos_ribp -= 78;
+                    increase_width_by = 1.75;
+                }
+                if (specific_drawing == 30 || specific_drawing >= 32 && specific_drawing <= 39) {
+                    my_pixels_height += 20;
+                    x_pos_ribp -= 99.5;
+                    y_pos_ribp -= 37;
+                    increase_width_by = 3.15;
+                }
+                if (specific_drawing >= 40 && specific_drawing <= 42) {
+                    my_pixels_height += 180;
+                    x_pos_ribp -= 109.5;
+                    y_pos_ribp -= 52;
+                    increase_width_by = 1.25;
+                }
+                if (specific_drawing == 44) {
+                    my_pixels_height += 160;
+                    x_pos_ribp -= 70.5;
+                    y_pos_ribp -= 45;
+                    increase_width_by = 0.80;
+                }
+                if (specific_drawing == 43 || specific_drawing >= 45 && specific_drawing <= 48) {
+                    my_pixels_height += 150;
+                    x_pos_ribp -= 95.5;
+                    y_pos_ribp -= 20;
+                    increase_width_by = 1.1;
+                }
             } else {
                 if (i_am_a_girl == true) {
                     /** replace bibletar_hats with specific_drawing, I upgraded detection skills, this
