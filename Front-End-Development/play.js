@@ -1503,7 +1503,11 @@ function extra_info_and_images () {
 
     const date = new Date();
     const month = date.getMonth();
+    /** Returns an integer, between 0 and 11, representing the month for the given date according to local time: 0 
+     * for January, 1 for February, and so on */
     const day_of_month = date.getDate();
+    /** Returns an integer, between 0 and 6, representing the day of the week for the given date according 
+     * to local time: 0 for Sunday, 1 for Monday, 2 for Tuesday, and so on */
     const day_week = date.getDay();
     const year = date.getFullYear();
     const hours = date.getHours();
@@ -1516,6 +1520,9 @@ function extra_info_and_images () {
     var extra_zero = "";
     var time_of_day = "AM";
 
+    if (day_week == 0) {
+        day_of_the_week = "Sunday";
+    }
     if (day_week == 1) {
         day_of_the_week = "Monday";
     }
@@ -1534,45 +1541,42 @@ function extra_info_and_images () {
     if (day_week == 6) {
         day_of_the_week = "Saturday";
     }
-    if (day_week == 7) {
-        day_of_the_week = "Sunday";
-    }
 
 
-    if (month == 1) {
+    if (month == 0) {
         month_in_text = "January";
     }
-    if (month == 2) {
+    if (month == 1) {
         month_in_text = "February";
     }
-    if (month == 3) {
+    if (month == 2) {
         month_in_text = "March";
     }
-    if (month == 4) {
+    if (month == 3) {
         month_in_text = "April";
     }
-    if (month == 5) {
+    if (month == 4) {
         month_in_text = "May";
     }
-    if (month == 6) {
+    if (month == 5) {
         month_in_text = "June";
     }
-    if (month == 7) {
+    if (month == 6) {
         month_in_text = "July";
     }
-    if (month == 8) {
+    if (month == 7) {
         month_in_text = "August";
     }
-    if (month == 9) {
+    if (month == 8) {
         month_in_text = "September";
     }
-    if (month == 10) {
+    if (month == 9) {
         month_in_text = "October";
     }
-    if (month == 11) {
+    if (month == 10) {
         month_in_text = "November";
     }
-    if (month == 12) {
+    if (month == 11) {
         month_in_text = "December";
     }
 
