@@ -1418,6 +1418,49 @@ function drawUsersBibletar() {
                         y_pos_ribp -= 48;
                         increase_width_by = 2.0;
                 }
+                if (specific_drawing == 175) {
+                        my_pixels_height += 30;
+                        x_pos_ribp -= 69.5;
+                        y_pos_ribp -= 38;
+                        increase_width_by = 2.0;
+                }
+                if (specific_drawing == 176 || specific_drawing == 177) {
+                        my_pixels_height += 90;
+                        x_pos_ribp -= 74.5;
+                        y_pos_ribp -= 98;
+                        increase_width_by = 1.25;
+                }
+                if (specific_drawing == 178) {
+                        my_pixels_height += 225;
+                        x_pos_ribp -= 72.5;
+                        y_pos_ribp -= 118;
+                        increase_width_by = 0.65;
+                }
+                if (specific_drawing >= 179 && specific_drawing <= 180) {
+                        my_pixels_height += 35;
+                        x_pos_ribp -= 66.5;
+                        y_pos_ribp -= 37;
+                        increase_width_by = 1.9;
+                }
+                if (specific_drawing >= 183 && specific_drawing <= 187) {
+                        my_pixels_height += 15;
+                        x_pos_ribp -= 24.5;
+                        y_pos_ribp -= 37;
+                        increase_width_by = 1.2;
+                }
+                if (specific_drawing >= 190 && specific_drawing <= 193) {
+                        my_pixels_height += 75;
+                        x_pos_ribp -= 62.5;
+                        y_pos_ribp -= 78;
+                        increase_width_by = 1.2;
+                }
+                if (specific_drawing >= 195 && specific_drawing <= 197) {
+                        my_pixels_height += 275;
+                        x_pos_ribp -= 62.5;
+                        y_pos_ribp -= 88;
+                        increase_width_by = 0.8;
+                }
+
             } else {
                 if (i_am_a_girl == true) {
                     /** replace bibletar_hats with specific_drawing, I upgraded detection skills, this
@@ -1521,6 +1564,12 @@ function drawUsersBibletar() {
                         x_pos_ribp -= 73;
                         y_pos_ribp -= 35;
                         increase_width_by = 2.3;
+                    }
+                    if (specific_drawing == 36) {
+                        my_pixels_height += 275;
+                        x_pos_ribp -= 63.5;
+                        y_pos_ribp -= 90;
+                        increase_width_by = 0.8;
                     }
                 }
             }

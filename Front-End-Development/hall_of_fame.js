@@ -476,6 +476,12 @@ function playerClickedBibletar () {
                         y_pos_ribp -= 35;
                         increase_width_by = 2.3;
                     }
+                    if (specific_drawing == 36) {
+                        my_pixels_height += 275;
+                        x_pos_ribp -= 63.5;
+                        y_pos_ribp -= 90;
+                        increase_width_by = 0.8;
+                    }
                 }
             }
         }
