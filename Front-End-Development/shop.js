@@ -1226,6 +1226,24 @@ function drawUsersBibletar() {
                     y_pos_ribp -= 75;
                     increase_width_by = 1.4;
                 }
+                if (specific_drawing >= 58 && specific_drawing <= 65) {
+                    my_pixels_height += 25;
+                    x_pos_ribp -= 77.5;
+                    y_pos_ribp -= 30;
+                    increase_width_by = 2.4;
+                }
+                if (specific_drawing >= 66 && specific_drawing <= 67) {
+                    my_pixels_height += 65;
+                    x_pos_ribp -= 84.5;
+                    y_pos_ribp -= 72;
+                    increase_width_by = 1.7;
+                }
+                if (specific_drawing >= 68 && specific_drawing <= 71) {
+                    my_pixels_height += -20;
+                    x_pos_ribp -= 56.5;
+                    y_pos_ribp -= -12;
+                    increase_width_by = 4.7;
+                }
             } else {
                 if (i_am_a_girl == true) {
                     /** replace bibletar_hats with specific_drawing, I upgraded detection skills, this
