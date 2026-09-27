@@ -474,12 +474,324 @@ function myBibletar () {
        if (type_of_drawing == 5) {
             increase_width_by += 2.0;
             if (i_am_a_boy == true) {
-                if (specific_drawing > 0 && specific_drawing < 9) {
+                if (specific_drawing >= 1 && specific_drawing <= 8) {
                     // caps
                     my_pixels_height += 11;
                     x_pos_ribp -= 93;
                     y_pos_ribp -= 10;
                     increase_width_by = 3.0;
+                }
+                if (specific_drawing >= 9 && specific_drawing <= 17) {
+                    my_pixels_height += 21;
+                    x_pos_ribp -= 96.5;
+                    y_pos_ribp -= 40;
+                    increase_width_by = 3.0;
+                }
+                if (specific_drawing >= 18 && specific_drawing <= 22) {
+                    my_pixels_height += 21;
+                    x_pos_ribp -= 60.5;
+                    y_pos_ribp -= 40;
+                    increase_width_by = 3.0;
+                }
+                if (specific_drawing == 23) {
+                    my_pixels_height += 121;
+                    x_pos_ribp -= 100.5;
+                    y_pos_ribp -= 140;
+                    increase_width_by = 1.3;
+                }
+                if (specific_drawing == 24) {
+                    my_pixels_height += 60;
+                    x_pos_ribp -= 60.5;
+                    y_pos_ribp -= 67;
+                    increase_width_by = 1.3;
+                }
+                if (specific_drawing >= 25 && specific_drawing <= 27 || specific_drawing == 31) {
+                    my_pixels_height += 60;
+                    x_pos_ribp -= 95.5;
+                    y_pos_ribp -= 77;
+                    increase_width_by = 1.95;
+                }
+                if (specific_drawing == 28) {
+                    my_pixels_height += 90;
+                    x_pos_ribp -= 98.5;
+                    y_pos_ribp -= 107;
+                    increase_width_by = 1.55;
+                }
+                if (specific_drawing == 29) {
+                    my_pixels_height += 60;
+                    x_pos_ribp -= 88.5;
+                    y_pos_ribp -= 78;
+                    increase_width_by = 1.75;
+                }
+                if (specific_drawing == 30 || specific_drawing >= 32 && specific_drawing <= 39) {
+                    my_pixels_height += 20;
+                    x_pos_ribp -= 99.5;
+                    y_pos_ribp -= 37;
+                    increase_width_by = 3.15;
+                }
+                if (specific_drawing >= 40 && specific_drawing <= 42) {
+                    my_pixels_height += 180;
+                    x_pos_ribp -= 109.5;
+                    y_pos_ribp -= 52;
+                    increase_width_by = 1.25;
+                }
+                if (specific_drawing == 44) {
+                    my_pixels_height += 160;
+                    x_pos_ribp -= 70.5;
+                    y_pos_ribp -= 45;
+                    increase_width_by = 0.80;
+                }
+                if (specific_drawing == 43 || specific_drawing >= 45 && specific_drawing <= 48) {
+                    my_pixels_height += 150;
+                    x_pos_ribp -= 95.5;
+                    y_pos_ribp -= 20;
+                    increase_width_by = 1.1;
+                }
+                if (specific_drawing >= 49 && specific_drawing <= 53) {
+                    my_pixels_height += 20;
+                    x_pos_ribp -= 67.5;
+                    y_pos_ribp -= 25;
+                    increase_width_by = 2.3;
+                }
+                if (specific_drawing >= 54 && specific_drawing <= 57) {
+                    my_pixels_height += 65;
+                    x_pos_ribp -= 67.5;
+                    y_pos_ribp -= 75;
+                    increase_width_by = 1.4;
+                }
+                if (specific_drawing >= 58 && specific_drawing <= 65) {
+                    my_pixels_height += 25;
+                    x_pos_ribp -= 77.5;
+                    y_pos_ribp -= 30;
+                    increase_width_by = 2.4;
+                }
+                if (specific_drawing >= 66 && specific_drawing <= 67) {
+                    my_pixels_height += 65;
+                    x_pos_ribp -= 84.5;
+                    y_pos_ribp -= 72;
+                    increase_width_by = 1.7;
+                }
+                if (specific_drawing >= 68 && specific_drawing <= 71) {
+                    my_pixels_height += -20;
+                    x_pos_ribp -= 56.5;
+                    y_pos_ribp -= -12;
+                    increase_width_by = 4.7;
+                }
+                if (specific_drawing >= 72 && specific_drawing <= 73) {
+                    my_pixels_height += 50;
+                    x_pos_ribp -= 62.5;
+                    y_pos_ribp -= 59;
+                    increase_width_by = 1.5;
+                }
+                if (specific_drawing == 74) {
+                    my_pixels_height += 60;
+                    x_pos_ribp -= 97.5;
+                    y_pos_ribp -= 67;
+                    increase_width_by = 1.9;
+                }
+                if (specific_drawing == 75) {
+                    my_pixels_height += 130;
+                    x_pos_ribp -= 102.5;
+                    y_pos_ribp -= 60;
+                    increase_width_by = 1.2;
+                }
+                if (specific_drawing >= 76 && specific_drawing <= 77) {
+                    my_pixels_height += 20;
+                    x_pos_ribp -= 108.5;
+                    y_pos_ribp -= 30;
+                    increase_width_by = 3.5;
+                }
+                if (specific_drawing == 78) {
+                    my_pixels_height += 130;
+                    x_pos_ribp -= 69.5;
+                    y_pos_ribp -= 22;
+                    increase_width_by = 0.9;
+                }
+                if (specific_drawing == 79) {
+                    my_pixels_height += 30;
+                    x_pos_ribp -= 43.5;
+                    y_pos_ribp -= 53;
+                    increase_width_by = 1.4;
+                }
+                if (specific_drawing >= 80 && specific_drawing <= 82) {
+                    my_pixels_height += 40;
+                    x_pos_ribp -= 60.5;
+                    y_pos_ribp -= 45;
+                    increase_width_by = 1.6;
+                }
+                if (specific_drawing >= 83 && specific_drawing <= 95) {
+                        my_pixels_height += 38;
+                        x_pos_ribp -= 62.5;
+                        y_pos_ribp -= 42;
+                        increase_width_by = 1.7;
+                }
+                if (specific_drawing >= 96 && specific_drawing <= 104) {
+                        my_pixels_height += 8;
+                        x_pos_ribp -= 62.5;
+                        y_pos_ribp -= 12;
+                        increase_width_by = 2.5;
+                }
+                if (specific_drawing >= 105 && specific_drawing <= 109) {
+                        my_pixels_height += 98;
+                        x_pos_ribp -= 53.0;
+                        y_pos_ribp -= 112;
+                        increase_width_by = 0.9;
+                }
+                if (specific_drawing >= 110 && specific_drawing <= 111) {
+                        my_pixels_height += 48;
+                        x_pos_ribp -= 96.0;
+                        y_pos_ribp -= 30;
+                        increase_width_by = 2.4;
+                }
+                if (specific_drawing == 112) {
+                        my_pixels_height += 38;
+                        x_pos_ribp -= 60.0;
+                        y_pos_ribp -= 40;
+                        increase_width_by = 1.6;
+                }
+                if (specific_drawing == 113) {
+                        my_pixels_height += 48;
+                        x_pos_ribp -= 66.0;
+                        y_pos_ribp -= 50;
+                        increase_width_by = 1.6;
+                }
+                if (specific_drawing >= 114 && specific_drawing <= 120) {
+                        my_pixels_height += 28;
+                        x_pos_ribp -= 91.0;
+                        y_pos_ribp -= 34;
+                        increase_width_by = 2.7;
+                }
+                if (specific_drawing >= 121 && specific_drawing <= 127) {
+                        my_pixels_height += 168;
+                        x_pos_ribp -= 94.5;
+                        y_pos_ribp -= 50;
+                        increase_width_by = 1.0;
+                }
+                if (specific_drawing >= 128 && specific_drawing <= 129) {
+                        my_pixels_height += 248;
+                        x_pos_ribp -= 85.5;
+                        y_pos_ribp -= 105;
+                        increase_width_by = 0.7;
+                }
+                if (specific_drawing == 130) {
+                        my_pixels_height += 178;
+                        x_pos_ribp -= 84.5;
+                        y_pos_ribp -= 25;
+                        increase_width_by = 0.85;
+                }
+                if (specific_drawing == 132) {
+                        my_pixels_height += 68;
+                        x_pos_ribp -= 65.5;
+                        y_pos_ribp -= 75;
+                        increase_width_by = 1.3;
+                }
+                if (specific_drawing >= 133 && specific_drawing <= 136) {
+                        my_pixels_height += 98;
+                        x_pos_ribp -= 97.5;
+                        y_pos_ribp -= 15;
+                        increase_width_by = 1.5;
+                }
+                if (specific_drawing >= 137 && specific_drawing <= 140) {
+                        my_pixels_height += 123;
+                        x_pos_ribp -= 98.5;
+                        y_pos_ribp -= 15;
+                        increase_width_by = 1.3;
+                }
+                if (specific_drawing >= 141 && specific_drawing <= 144) {
+                        my_pixels_height += 15;
+                        x_pos_ribp -= 43.5;
+                        y_pos_ribp += 145;
+                        increase_width_by = 1.8;
+                }
+                if (specific_drawing >= 145 && specific_drawing <= 148) {
+                        my_pixels_height -= 13;
+                        x_pos_ribp -= 78.5;
+                        y_pos_ribp += 80;
+                        increase_width_by = 5.0;
+                }
+                if (specific_drawing >= 149 && specific_drawing <= 152) {
+                        my_pixels_height += 133;
+                        x_pos_ribp -= 76.5;
+                        y_pos_ribp += 76;
+                        increase_width_by = 1.0;
+                }
+                if (specific_drawing >= 153 && specific_drawing <= 161) {
+                        my_pixels_height += 90;
+                        x_pos_ribp -= 96.5;
+                        y_pos_ribp -= 10;
+                        increase_width_by = 1.6;
+                }
+                if (specific_drawing >= 163 && specific_drawing <= 166) {
+                        my_pixels_height += 160;
+                        x_pos_ribp -= 90.5;
+                        y_pos_ribp -= 60;
+                        increase_width_by = 1.0;
+                }
+                if (specific_drawing >= 167 && specific_drawing <= 169) {
+                        my_pixels_height += 160;
+                        x_pos_ribp -= 122.5;
+                        y_pos_ribp -= 23;
+                        increase_width_by = 1.3;
+                }
+                if (specific_drawing >= 170 && specific_drawing <= 172) {
+                        my_pixels_height += 230;
+                        x_pos_ribp -= 111.5;
+                        y_pos_ribp -= 20;
+                        increase_width_by = 0.9;
+                }
+                if (specific_drawing == 173) {
+                        my_pixels_height += 225;
+                        x_pos_ribp -= 94.5;
+                        y_pos_ribp -= 15;
+                        increase_width_by = 0.8;
+                }
+                if (specific_drawing == 174) {
+                        my_pixels_height += 40;
+                        x_pos_ribp -= 78.5;
+                        y_pos_ribp -= 48;
+                        increase_width_by = 2.0;
+                }
+                if (specific_drawing == 175) {
+                        my_pixels_height += 30;
+                        x_pos_ribp -= 69.5;
+                        y_pos_ribp -= 38;
+                        increase_width_by = 2.0;
+                }
+                if (specific_drawing == 176 || specific_drawing == 177) {
+                        my_pixels_height += 90;
+                        x_pos_ribp -= 74.5;
+                        y_pos_ribp -= 98;
+                        increase_width_by = 1.25;
+                }
+                if (specific_drawing == 178) {
+                        my_pixels_height += 225;
+                        x_pos_ribp -= 72.5;
+                        y_pos_ribp -= 118;
+                        increase_width_by = 0.65;
+                }
+                if (specific_drawing >= 179 && specific_drawing <= 180) {
+                        my_pixels_height += 35;
+                        x_pos_ribp -= 66.5;
+                        y_pos_ribp -= 37;
+                        increase_width_by = 1.9;
+                }
+                if (specific_drawing >= 183 && specific_drawing <= 187) {
+                        my_pixels_height += 15;
+                        x_pos_ribp -= 24.5;
+                        y_pos_ribp -= 37;
+                        increase_width_by = 1.2;
+                }
+                if (specific_drawing >= 190 && specific_drawing <= 193) {
+                        my_pixels_height += 75;
+                        x_pos_ribp -= 62.5;
+                        y_pos_ribp -= 78;
+                        increase_width_by = 1.2;
+                }
+                if (specific_drawing >= 195 && specific_drawing <= 197) {
+                        my_pixels_height += 275;
+                        x_pos_ribp -= 62.5;
+                        y_pos_ribp -= 88;
+                        increase_width_by = 0.8;
                 }
             } else {
                 if (i_am_a_girl == true) {
