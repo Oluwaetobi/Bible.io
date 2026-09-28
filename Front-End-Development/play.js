@@ -4249,7 +4249,7 @@ function choose_Random_Question () {
 
     // Return a random integer between 1 and 10 (both included): Math.floor(Math.random() * 10) + 1;
 
-    var amount_of_question_in_level_1 = 25;
+    var amount_of_question_in_level_1 = 26;
     var amount_of_question_in_level_2 = 18;
     var amount_of_question_in_level_3 = 27;
 
@@ -4464,6 +4464,14 @@ function level_1_Questions () {
         answer3.innerText += `John `;
         answer4.innerText += `Timothy `;
         correct_answer = 2;
+    }
+    if (randomQuestion == 26) {
+        question.innerText = `What is the mark of the Beast? `;
+        answer1.innerText += `It is UNKNOWN" `;
+        answer2.innerText += `777 `;
+        answer3.innerText += `312 `;
+        answer4.innerText += `666 `;
+        correct_answer = 4;
     }
 }
 
