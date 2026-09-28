@@ -167,6 +167,15 @@ header {
     float: right;
 }
 
+.special-thanks {
+    position: static;
+    /* max-width: 1000px; */
+    white-space: pre-wrap;
+    width: min(100%, 80rem);
+    margin: 0;
+    text-align: left;
+}
+
 a {
     text-decoration: none;
     /* color: var(--login-color); */
