@@ -177,9 +177,9 @@ a:hover {
     /* TRBL: Top, Right, Bottom, Left */
     /* padding: 0px 0px 0px 200px;  */
     display: flex;
-    gap: 80px;
+    gap: 140px;
     left: 50%;
-    translate: -40%;
+    translate: -37%;
     /* right: 20%; */
     max-width: 900px;
     overflow-x: hidden;
@@ -198,10 +198,13 @@ a:hover {
 }
 
 #bibletar_girl_or_boy img {
-    border-style: groove;
-    border-color: #908f8f;
-    border-width: 10px;
+    /* I removed the border style because now the boys bibletar logo has his hat sticking out of the box
+    whick kind of ruins the border */
+    /* border-style: groove; */
+    /* border-color: #908f8f; */
+    /* border-width: 10px; */
     /* border-style: */
+    text-decoration: none;
 
 }
 
