@@ -4202,25 +4202,6 @@ function spectatorMode() {
     
 }
 
-function choose_Random_Question () {
-    /** Choose a random question from our database */
-
-    // Return a random integer between 1 and 10 (both included): Math.floor(Math.random() * 10) + 1;
-
-    var amount_of_question_in_level_1 = 24;
-    var amount_of_question_in_level_2 = 15;
-    var amount_of_question_in_level_3 = 27;
-
-
-    if (level == 1) {
-        randomQuestion = Math.floor(Math.random() * amount_of_question_in_level_1) + 1;
-    } else if (level == 2) {
-        randomQuestion = Math.floor(Math.random() * amount_of_question_in_level_2) + 1;
-    } else if (level == 3) {
-        randomQuestion = Math.floor(Math.random() * amount_of_question_in_level_3) + 1;
-    }
-}
-
 function questions_Display() {
     questions_background();
 
@@ -4261,6 +4242,25 @@ function questions_Display() {
         level_3_Questions();
     }
 
+}
+
+function choose_Random_Question () {
+    /** Choose a random question from our database */
+
+    // Return a random integer between 1 and 10 (both included): Math.floor(Math.random() * 10) + 1;
+
+    var amount_of_question_in_level_1 = 25;
+    var amount_of_question_in_level_2 = 18;
+    var amount_of_question_in_level_3 = 27;
+
+
+    if (level == 1) {
+        randomQuestion = Math.floor(Math.random() * amount_of_question_in_level_1) + 1;
+    } else if (level == 2) {
+        randomQuestion = Math.floor(Math.random() * amount_of_question_in_level_2) + 1;
+    } else if (level == 3) {
+        randomQuestion = Math.floor(Math.random() * amount_of_question_in_level_3) + 1;
+    }
 }
 
 function level_1_Questions () {
@@ -4450,12 +4450,20 @@ function level_1_Questions () {
         correct_answer = 3;
     }
     if (randomQuestion == 24) {
-        question.innerText = `Who said this: I am the voice of one crying in the wilderness. Prepare ye the way of the Lord, make his paths straight `;
-        answer1.innerText += `John the Baptist `;
+        question.innerText = `Who said this: "I am the voice of one crying in the wilderness. Prepare ye the way of the Lord, make his paths straight `;
+        answer1.innerText += `John the Baptist" `;
         answer2.innerText += `Jeremiah `;
         answer3.innerText += `Elisha `;
         answer4.innerText += `Nathan `;
         correct_answer = 1;
+    }
+    if (randomQuestion == 25) {
+        question.innerText = `After Saul encountered Jesus, what was his named changed to? `;
+        answer1.innerText += `His name was not changed" `;
+        answer2.innerText += `Paul `;
+        answer3.innerText += `John `;
+        answer4.innerText += `Timothy `;
+        correct_answer = 2;
     }
 }
 
@@ -4579,6 +4587,30 @@ function level_2_Questions () {
         answer2.innerText += `600 men `;
         answer3.innerText += `1,000 men `;
         answer4.innerText += `10,000 men `;
+        correct_answer = 1;
+    }
+    if (randomQuestion == 16) {
+        question.innerText = `Which man tried to purchase the power of the Holy Spirit `;
+        answer1.innerText += `Simon `;
+        answer2.innerText += `Elymas `;
+        answer3.innerText += `Ananias `;
+        answer4.innerText += `Demas `;
+        correct_answer = 1;
+    }
+    if (randomQuestion == 17) {
+        question.innerText = `What was Elymas the Sorcerer's other name? `;
+        answer1.innerText += `Abishai `;
+        answer2.innerText += `Belial `;
+        answer3.innerText += `Bar-Jesus `;
+        answer4.innerText += `Lucius `;
+        correct_answer = 3;
+    }
+    if (randomQuestion == 18) {
+        question.innerText = `Paul and Barnabas when to island named Paphos, but what was the name of the man they preached to? `;
+        answer1.innerText += `Sergius Paulus `;
+        answer2.innerText += `Porcius Festus `;
+        answer3.innerText += `Antonius Felix `;
+        answer4.innerText += `Cornelius `;
         correct_answer = 1;
     }
 }
