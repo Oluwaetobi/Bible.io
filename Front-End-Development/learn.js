@@ -417,6 +417,12 @@ function myBibletar () {
                     y_pos_ribp -= 10;
                     increase_width_by = 1.65;
                 }
+                if (specific_drawing == 85) {
+                    my_pixels_height += 50;
+                    x_pos_ribp -= 2;
+                    y_pos_ribp -= 52;
+                    increase_width_by = 1.16;
+                }
             } else {
                 if (i_am_a_girl == true ) {
                     if (specific_drawing == 2) {
