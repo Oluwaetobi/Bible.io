@@ -1774,11 +1774,20 @@ function otherTextDisplay() {
     ctx.fillText("Verse Friends", 945, baseline_y);
 }
 
+function showBuildingFaithInSocietyInformation () {
+    document.getElementById('building-faith-text').style.display = "block";
+}
+
+function hideBuildingFaithInSocietyInformation () {
+    document.getElementById('building-faith-text').style.display = "none";
+}
+
 function show_or_hide_html_elements () {
     if (home_page == 1) {
         document.getElementById('choice1').style.display = "flex";
         document.getElementById('choice2').style.display = "flex";
         document.getElementById('choice3').style.display = "flex";
+        document.getElementById('building-faith').style.display = "block";
 
         form.style.display = "none";
         question.style.display = "none";
@@ -1793,6 +1802,7 @@ function show_or_hide_html_elements () {
         document.getElementById('choice1').style.display = "none";
         document.getElementById('choice2').style.display = "none";
         document.getElementById('choice3').style.display = "none";
+        document.getElementById('building-faith').style.display = "none";
 
         form.style.display = "none";
         question.style.display = "none";
@@ -1826,6 +1836,7 @@ function show_or_hide_html_elements () {
 
         document.getElementById('questions-i-got-wrong').style.display = "none";
         document.getElementById('continue-button').style.display = "none";
+        document.getElementById('building-faith').style.display = "none";
     } else if (home_page == 4) {
         form.style.display = "none";
         question.style.display = "none";
@@ -1836,6 +1847,7 @@ function show_or_hide_html_elements () {
 
         document.getElementById('questions-i-got-wrong').style.display = "block";
         document.getElementById('continue-button').style.display = "block";
+        document.getElementById('building-faith').style.display = "none";
     }
 }
 

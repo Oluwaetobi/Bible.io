@@ -416,3 +416,19 @@ form input::placeholder {
     filter: brightness(150%);
     padding: 13px 13px;
 }
+
+.building-faith-text {
+    background-color: rgba(255, 254, 254, 0.95);
+    box-sizing: border-box;
+    border-radius: 5px 5px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    white-space: pre-wrap;
+    text-align: left;
+    padding: 5px 5px;
+    max-width: 400px;
+    position: fixed;
+    left: 860px;
+    top: 95px;
+    display: none;
+}

@@ -92,13 +92,20 @@
             <button onclick="update_Data_And_Continue_Game()">Continue</button>
          </div>
 
-         <div class="building-faith">
+         <!-- Diffeerence between onmouseout and onmouseleave, I have no clue!??? -->
+         <div class="building-faith" id="building-faith" onmouseover="showBuildingFaithInSocietyInformation()" onmouseleave="hideBuildingFaithInSocietyInformation()">
             <div class="building-faith-box">
                 <div class="side-arrow"> <strong> < </strong>  </div>
                 <div>Building Faith in our Society</div>
             </div>
-            <div class="building-faith-text"></div>
+            <div class="building-faith-text" id="building-faith-text">
+                <p>
+                    - God's 2 most imporant commands are: love the your God with all your heart, soul, strength and mind, and love thy neighbor at thyself.
+                </p>
+            </div>
          </div>
+
+         
 
          <div class="custom-alert-box" id="custom-alert">
             <p id="alert-box-text"></p>
