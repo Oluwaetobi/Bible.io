@@ -4027,6 +4027,68 @@ alertButton.addEventListener("click", function() {
 var show_accomplishment = true;
 var bonus_money = 0;
 
+function results_information() {
+
+    var my_rank = 0;
+    var my_place = "";
+
+    for (let i = 1; i < my_game.online; i++) {
+        if (my_game.everyones_points[0] > my_game.everyones_points[i]) {
+            my_rank += 1;
+        }
+    }
+
+    if (my_rank == 0) {
+        my_place = "Last Place"
+    }
+    if (my_rank == 1) {
+        my_place = "Third Place"
+    }
+    if (my_rank == 2) {
+        my_place = "Second Place"
+    }
+    if (my_rank == 3) {
+        my_place = "First Place"
+    }
+
+
+    var gradient = ctx.createLinearGradient(0, 268, 0, 268 + 200);
+    gradient.addColorStop(0, 'rgb(212, 210, 210)');     // Start color (0%)
+    gradient.addColorStop(0.5, 'rgb(156, 158, 158)');
+    gradient.addColorStop(1, 'rgb(123, 123, 123)');    // End color (100%)
+    ctx.fillStyle = gradient;
+    ctx.fillRect(496, 268, 400, 200);
+
+    var gradient = ctx.createLinearGradient(0, 268, 0, 268 + 200);
+    gradient.addColorStop(0, 'rgb(14, 161, 246)');     // Start color (0%)
+    gradient.addColorStop(0.5, 'rgb(14, 161, 246)');
+    gradient.addColorStop(1, 'rgb(14, 161, 246)');   
+    ctx.fillStyle = gradient;
+    // ctx.fillStyle = 'rgb(14, 161, 246)';
+    ctx.fillRect(496, 268, 400, 35);
+
+    // black shadow add
+    ctx.shadowColor = "black";
+    ctx.shadowBlur = 3;
+    ctx.shadowOffsetX = 0;
+    ctx.shadowOffsetY = 0;
+    
+    ctx.font = "30px Arial";
+    ctx.fillStyle = 'rgb(255, 255, 255)';
+    ctx.fillText("ME: ", 520, 300);
+
+    ctx.font = "25px Arial"
+    ctx.fillText(my_place, 520, 330);
+    ctx.fillText("My Score: " + my_game.everyones_points[0], 520, 360);
+    
+    // black shadow remove
+    ctx.shadowColor = "white";
+    ctx.shadowBlur = 0;
+    ctx.shadowOffsetX = 0;
+    ctx.shadowOffsetY = 0;
+
+}
+
 function show_results() {
     /**Shows who won and places, questions I got wrong, as well as gives me the option to play
      * again or go back to the main page in the play section of Bible.io
@@ -4126,7 +4188,7 @@ function show_results() {
         // ctx.fillText("Congrats, you got 1st place and you earned a bonus of $ " + bonus_money + " dollars", 212, 602);
     }
 
-
+    results_information();
 }
 
 
