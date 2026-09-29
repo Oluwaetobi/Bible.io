@@ -425,8 +425,9 @@ form input::placeholder {
     overflow-x: hidden;
     white-space: pre-wrap;
     text-align: left;
-    padding: 5px 5px;
+    padding: 10px 10px;
     max-width: 400px;
+    max-height: 500px;
     position: fixed;
     left: 860px;
     top: 95px;
