@@ -4332,8 +4332,8 @@ function choose_Random_Question () {
 
     // Return a random integer between 1 and 10 (both included): Math.floor(Math.random() * 10) + 1;
 
-    var amount_of_question_in_level_1 = 26;
-    var amount_of_question_in_level_2 = 18;
+    var amount_of_question_in_level_1 = 27;
+    var amount_of_question_in_level_2 = 19;
     var amount_of_question_in_level_3 = 27;
 
 
@@ -4556,6 +4556,14 @@ function level_1_Questions () {
         answer4.innerText += `666 `;
         correct_answer = 4;
     }
+    if (randomQuestion == 27) {
+        question.innerText = `Who was Nicodemus? `;
+        answer1.innerText += `A teacher of the law `;
+        answer2.innerText += `A lunatic `;
+        answer3.innerText += `A blind man `;
+        answer4.innerText += `One of Jesus' 12 disciples `;
+        correct_answer = 4;
+    }
 }
 
 function level_2_Questions () {
@@ -4703,6 +4711,14 @@ function level_2_Questions () {
         answer3.innerText += `Antonius Felix `;
         answer4.innerText += `Cornelius `;
         correct_answer = 1;
+    }
+    if (randomQuestion == 19) {
+        question.innerText = `What was Queen Esther's other name `;
+        answer1.innerText += `Talia `;
+        answer2.innerText += `Hadassah `;
+        answer3.innerText += `Menucha `;
+        answer4.innerText += `Shayna  `;
+        correct_answer = 2;
     }
 }
 
