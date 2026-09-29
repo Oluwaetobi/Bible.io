@@ -1184,6 +1184,27 @@ function show_my_country() {
     ctx.shadowOffsetY = 0;
 }
 
+function displayTextInfo () {
+
+    // black shadow add
+    ctx.shadowColor = 'rgb(8, 8, 8)';
+    ctx.shadowBlur = 3;
+    ctx.shadowOffsetX = 1;
+    ctx.shadowOffsetY = 1;
+
+    var x_shift_back = 390;
+    ctx.font = "15px Arial";
+    ctx.fillStyle = 'rgb(252, 252, 251)';
+    ctx.fillText(` Revelation 22:12 "And, behold, I come quickly; and my reward is with me, to give every man according as his work shall be." `, (((canvas.width)/2) - x_shift_back), canvas.height - 20);
+
+    // black shadow remove
+    ctx.shadowColor = "white";
+    ctx.shadowBlur = 0;
+    ctx.shadowOffsetX = 0;
+    ctx.shadowOffsetY = 0;
+
+}
+
 
 function drawGame() {
     // blue background
@@ -1198,6 +1219,7 @@ function drawGame() {
     loadingBox();
     myBibletar();
     show_my_country();
+    displayTextInfo();
 
 }
 
