@@ -4086,8 +4086,8 @@ function results_information() {
     ctx.font = "25px Arial"
     ctx.fillStyle = 'rgb(0, 0, 0)';
     ctx.fillText(my_place, 520, 330 + shift_y_results);
-    ctx.fillText("My Score: " + my_game.everyones_points[0], 520, 360 + shift_y_results);
-    ctx.fillText("Level: " + level, 520, 390 + shift_y_results);
+    ctx.fillText("Level: " + level, 520, 360 + shift_y_results);
+    ctx.fillText("My Score: " + my_game.everyones_points[0], 520, 390 + shift_y_results);
     ctx.fillText("My Highscore: " + my_highscores[level - 1], 520, 420 + shift_y_results);
     
     // black shadow remove
