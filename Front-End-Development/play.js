@@ -4075,8 +4075,8 @@ function results_information() {
     // black shadow add
     ctx.shadowColor = 'rgb(8, 8, 8)';
     ctx.shadowBlur = 1;
-    ctx.shadowOffsetX = 0;
-    ctx.shadowOffsetY = 0;
+    ctx.shadowOffsetX = 1;
+    ctx.shadowOffsetY = 1;
     
     ctx.font = "30px Arial";
     ctx.fillStyle = 'rgb(255, 255, 255)';

@@ -1166,15 +1166,33 @@ function show_my_country() {
         country_svg == "New_Zealand"
     }
 
+
+    // black shadow add
+    ctx.shadowColor = 'rgb(8, 8, 8)';
+    ctx.shadowBlur = 3;
+    ctx.shadowOffsetX = 1;
+    ctx.shadowOffsetY = 1;
+
     // Don't touch this
     img_my_country.src = "./images/country_" + country_svg + ".svg";
     ctx.drawImage(img_my_country, 50, 520, 100, 50);
+
+    // black shadow remove
+    ctx.shadowColor = "white";
+    ctx.shadowBlur = 0;
+    ctx.shadowOffsetX = 0;
+    ctx.shadowOffsetY = 0;
 }
 
 
 function drawGame() {
     // blue background
-    ctx.fillStyle = 'rgb(189, 189, 190)';
+    var gradient = ctx.createLinearGradient(0, 0, canvas.width, canvas.height);
+    gradient.addColorStop(0, 'rgb(121, 121, 121)');     // Start color (0%)
+    gradient.addColorStop(0.5, 'rgb(163, 163, 163)');
+    gradient.addColorStop(1, 'rgb(196, 197, 198)');    // End color (100%)
+    // ctx.fillStyle = 'rgb(189, 189, 190)';
+    ctx.fillStyle = gradient;
     ctx.fillRect(0, 0, canvas.width, canvas.height);
     
     loadingBox();
