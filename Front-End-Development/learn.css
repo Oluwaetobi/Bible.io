@@ -478,6 +478,7 @@ table takes up the full width of it's parent the scrollable table */
     font-size: large;
     padding-top: 10px;
     padding-bottom: 10px;
+    text-align: center;
     /* font-size: large; */
 }
 
@@ -519,6 +520,9 @@ table takes up the full width of it's parent the scrollable table */
     /* font-weight: normal; */
     /* font-size: 15px;
     border: 1px solid black;  */
+    text-align: left;
+    /* preserves spaces, indents, and next lines */
+    white-space: pre-wrap;
 }
 
 .table-reading tr {

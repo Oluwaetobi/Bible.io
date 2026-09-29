@@ -384,3 +384,35 @@ form input::placeholder {
 .custom-alert-box button:hover {
     filter: brightness(150%);
 }
+
+.building-faith {
+    position: fixed;
+    left: 1260px;
+    top: 95px;
+    z-index: 2;
+}
+
+.building-faith-box {
+    background-color: rgba(41, 98, 158, 0.8);
+    font-size: 30px;
+    max-width: 250px;
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 10px 10px;
+    display: flex;
+    align-items: center;
+    padding: 10px 10px;
+    gap: 10px;
+    color:#fcfbfb;
+    /* right or left, down or up, blur radius, color */
+    text-shadow: 2px 2px 3px rgb(14, 14, 14);
+}
+
+.side-arrow {
+    font-weight: bolder;
+}
+
+.building-faith-box:hover {
+    filter: brightness(150%);
+    padding: 13px 13px;
+}

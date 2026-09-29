@@ -154,7 +154,7 @@ header {
 
 .wrapper #legacy-version {
     text-align: center;
-    /* right or left, down or up, blur radius, color, you can also add more than one shadow */
+    /* right or left, down or up, blur radius, color */
     text-shadow: 2px 2px 20px rgb(243, 232, 18);
 }
 
