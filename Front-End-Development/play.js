@@ -4057,10 +4057,10 @@ function results_information() {
     ctx.fillRect(495, 267, 402, 202);
 
     // boxed results
-    var gradient = ctx.createLinearGradient(0, 268, 0, 268 + 200);
-    gradient.addColorStop(0, 'rgb(212, 210, 210)');     // Start color (0%)
-    gradient.addColorStop(0.5, 'rgb(156, 158, 158)');
-    gradient.addColorStop(1, 'rgb(202, 199, 199)');    // End color (100%)
+    var gradient = ctx.createLinearGradient(0, 268 + 40, 0, 268 + 200);
+    gradient.addColorStop(0, 'rgb(171, 171, 171)');     // Start color (0%)
+    gradient.addColorStop(0.5, 'rgb(222, 222, 222)');
+    gradient.addColorStop(1, 'rgb(227, 229, 229)');    // End color (100%)
     ctx.fillStyle = gradient;
     ctx.fillRect(496, 268, 400, 200);
 
@@ -4073,8 +4073,8 @@ function results_information() {
     ctx.fillRect(496, 268, 400, 40);
 
     // black shadow add
-    ctx.shadowColor = "black";
-    ctx.shadowBlur = 3;
+    ctx.shadowColor = 'rgb(8, 8, 8)';
+    ctx.shadowBlur = 1;
     ctx.shadowOffsetX = 0;
     ctx.shadowOffsetY = 0;
     
@@ -4082,11 +4082,13 @@ function results_information() {
     ctx.fillStyle = 'rgb(255, 255, 255)';
     ctx.fillText("ME: ", 520, 300);
 
+    var shift_y_results = 10;
     ctx.font = "25px Arial"
-    ctx.fillText(my_place, 520, 330);
-    ctx.fillText("My Score: " + my_game.everyones_points[0], 520, 360);
-    ctx.fillText("Level: " + level, 520, 390);
-    ctx.fillText("My Highscore: " + my_highscores[level - 1], 520, 420);
+    ctx.fillStyle = 'rgb(0, 0, 0)';
+    ctx.fillText(my_place, 520, 330 + shift_y_results);
+    ctx.fillText("My Score: " + my_game.everyones_points[0], 520, 360 + shift_y_results);
+    ctx.fillText("Level: " + level, 520, 390 + shift_y_results);
+    ctx.fillText("My Highscore: " + my_highscores[level - 1], 520, 420 + shift_y_results);
     
     // black shadow remove
     ctx.shadowColor = "white";
@@ -4103,8 +4105,8 @@ function show_results() {
 
     // background
     var gradient = ctx.createLinearGradient(0, 0, 0, canvas.height);
-    gradient.addColorStop(0, 'rgb(104, 109, 110)');     // Start color (0%)
-    gradient.addColorStop(0.5, 'rgb(163, 168, 168)');
+    gradient.addColorStop(0, 'rgb(138, 139, 139)');     // Start color (0%)
+    gradient.addColorStop(0.5, 'rgb(163, 163, 163)');
     gradient.addColorStop(1, 'rgb(223, 226, 228)');    // End color (100%)
     ctx.fillStyle = gradient;
     // ctx.fillStyle = 'rgb(72, 99, 108)';
