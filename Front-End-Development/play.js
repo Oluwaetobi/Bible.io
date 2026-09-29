@@ -4052,20 +4052,25 @@ function results_information() {
     }
 
 
+    // background layer for box
+    ctx.fillStyle = 'rgb(0, 0, 0)';
+    ctx.fillRect(495, 267, 402, 202);
+
+    // boxed results
     var gradient = ctx.createLinearGradient(0, 268, 0, 268 + 200);
     gradient.addColorStop(0, 'rgb(212, 210, 210)');     // Start color (0%)
     gradient.addColorStop(0.5, 'rgb(156, 158, 158)');
-    gradient.addColorStop(1, 'rgb(123, 123, 123)');    // End color (100%)
+    gradient.addColorStop(1, 'rgb(202, 199, 199)');    // End color (100%)
     ctx.fillStyle = gradient;
     ctx.fillRect(496, 268, 400, 200);
 
-    var gradient = ctx.createLinearGradient(0, 268, 0, 268 + 200);
-    gradient.addColorStop(0, 'rgb(14, 161, 246)');     // Start color (0%)
-    gradient.addColorStop(0.5, 'rgb(14, 161, 246)');
-    gradient.addColorStop(1, 'rgb(14, 161, 246)');   
+    var gradient = ctx.createLinearGradient(0, 268, 0, 268 + 40);
+    gradient.addColorStop(0, 'rgb(8, 47, 143)');     // Start color (0%)
+    gradient.addColorStop(0.5, 'rgb(19, 80, 142)');
+    gradient.addColorStop(1, 'rgb(9, 97, 148)');   
     ctx.fillStyle = gradient;
     // ctx.fillStyle = 'rgb(14, 161, 246)';
-    ctx.fillRect(496, 268, 400, 35);
+    ctx.fillRect(496, 268, 400, 40);
 
     // black shadow add
     ctx.shadowColor = "black";
@@ -4080,6 +4085,8 @@ function results_information() {
     ctx.font = "25px Arial"
     ctx.fillText(my_place, 520, 330);
     ctx.fillText("My Score: " + my_game.everyones_points[0], 520, 360);
+    ctx.fillText("Level: " + level, 520, 390);
+    ctx.fillText("My Highscore: " + my_highscores[level - 1], 520, 420);
     
     // black shadow remove
     ctx.shadowColor = "white";
