@@ -4451,8 +4451,8 @@ function choose_Random_Question () {
 
     // Return a random integer between 1 and 10 (both included): Math.floor(Math.random() * 10) + 1;
 
-    var amount_of_question_in_level_1 = 27;
-    var amount_of_question_in_level_2 = 19;
+    var amount_of_question_in_level_1 = 28;
+    var amount_of_question_in_level_2 = 21;
     var amount_of_question_in_level_3 = 27;
 
 
@@ -4683,6 +4683,14 @@ function level_1_Questions () {
         answer4.innerText += `One of Jesus' 12 disciples `;
         correct_answer = 4;
     }
+    if (randomQuestion == 28) {
+        question.innerText = `How many days was Jonah in the belly of the big fish for? `;
+        answer1.innerText += `1 days `;
+        answer2.innerText += `2 days `;
+        answer3.innerText += `3 days `;
+        answer4.innerText += `He was never in the belly of a fish `;
+        correct_answer = 3;
+    }
 }
 
 function level_2_Questions () {
@@ -4837,6 +4845,22 @@ function level_2_Questions () {
         answer2.innerText += `Hadassah `;
         answer3.innerText += `Menucha `;
         answer4.innerText += `Shayna  `;
+        correct_answer = 2;
+    }
+    if (randomQuestion == 20) {
+        question.innerText = `When Jesus died on the cross, in how many languages was the sign over his head written in `;
+        answer1.innerText += `1 language `;
+        answer2.innerText += `2 languages `;
+        answer3.innerText += `3 languages `;
+        answer4.innerText += `4 languages  `;
+        correct_answer = 3;
+    }
+    if (randomQuestion == 21) {
+        question.innerText = `In Jesus' time, whose image was imprinted on their coins? `;
+        answer1.innerText += `Augustus `;
+        answer2.innerText += `Caesar `;
+        answer3.innerText += `Titus `;
+        answer4.innerText += `Domitian  `;
         correct_answer = 2;
     }
 }
