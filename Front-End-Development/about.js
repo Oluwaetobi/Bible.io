@@ -16,3 +16,12 @@ const developer_tools = JSON.parse(localStorage.getItem('i_am_a_developer'));
 if (developer_tools) {
     i_am_a_developer = developer_tools;
 }
+
+const date = new Date();
+const year = date.getFullYear();
+
+var info_year_write = "";
+
+info_year_write = year + " Bibleio | Bible.io Corporation - Making the Bible fun since the year 2025 ";
+
+document.getElementById('bibleio-info-year').innerText = info_year_write;

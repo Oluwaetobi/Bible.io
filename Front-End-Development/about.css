@@ -135,6 +135,11 @@ header {
     /* Helps text flow around the image */
     float: right;
 }
+
+.head-down img:hover {
+    filter: brightness(120%);
+}
+
 .head-down2, .bottom {
     position: static;
     width: min(100%, 80rem);
@@ -174,6 +179,30 @@ header {
     width: min(100%, 80rem);
     margin: 0;
     text-align: left;
+}
+
+.footer-page {
+    background-color: rgba(11, 11, 11, 0.9);
+    position: static;
+    width: 100rem;
+}
+.footer-text {
+    text-align: left;
+    white-space: pre-wrap;
+    color:#fefefe;
+    margin: 0;
+    /* width: min(100%, 80rem); */
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 10px 10px;
+}
+
+.footer-text h1 {
+    text-align: center;
+}
+
+.footer-text p {
+    text-align: center;
 }
 
 a {

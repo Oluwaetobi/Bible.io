@@ -4209,6 +4209,13 @@ function show_results() {
         // ctx.fillText("Congrats, you got 1st place and you earned a bonus of $ " + bonus_money + " dollars", 212, 602);
     }
 
+    const date = new Date();
+    const year = date.getFullYear();
+
+    ctx.font = "15px Arial";
+    ctx.fillStyle = 'rgb(0, 0, 0)';
+    ctx.fillText(year + " Bibleio | Bible.io Corporation", 1050, canvas.height - 20);
+
     results_information();
 }
 
