@@ -237,19 +237,23 @@ a:hover {
     /* translate: -50%; */
     z-index: 1;
     top: 175px;
-    background-color: #e0dada;
+    background-color: #e5e1e1;
     display: grid;
     grid-template-columns: 30% 70%;
+    scrollbar-color: #1388d1 #8e8a8a;
 }
 
 .scrollable-table caption {
     background-color: #000000;
-    color:#d0d0d0;
+    color:#f9f7f7;
     position: sticky;
     top: 0px;
     font-weight: bold;
     font-size: large;
     z-index: 4;
+    padding: 5px 0px;
+    border-radius: 5px 5px;
+    /* padding-bottom: 10px; */
 }
 
 /* Scrollable table class takes precedence over table class
@@ -288,6 +292,8 @@ table takes up the full width of it's parent the scrollable table */
     font-size: 15px;
     border: 5px solid rgb(113, 111, 111); 
     text-align: center;
+    border-radius: 10px 10px;
+    background-color: #d0cece;
 }
 
 .table td:hover {
@@ -344,16 +350,17 @@ JAVASCRIPT FILE*/
     grid-template-columns: 30% 70%;
     border: 6px solid black;
     border-radius: 3%;
+    scrollbar-color: #d14913 #8e8a8a;
 }
 
 .scrollable-table-background caption {
     font-size: large;
     font-weight: bold;
-    color: #d0d0d0;
+    color: #fbf9f9;
     background-color: #000000;
     position: sticky;
     top: 0px;
-    padding-bottom: 5px;;
+    padding-bottom: 5px;
     /* border-collapse: collapse; */
     z-index: 4;
 }
@@ -440,7 +447,7 @@ JAVASCRIPT FILE*/
     /* overflow-y makes only the y coordinates scrollable */
     overflow-x: auto;
     /* background-color: #7f2e2e; */
-    scroll-snap-type: x mandatory;
+    /* scroll-snap-type: x mandatory; */
     position: fixed;
     left: 200px;
     /* translate: -50%; */
@@ -450,7 +457,8 @@ JAVASCRIPT FILE*/
     display: grid;
     grid-template-columns: 30% 70%;
     border: 6px solid black;
-    border-radius: 3%;
+    border-radius: 20px 20px;
+    scrollbar-color: #ffffff #111111;
 }
 
 /* Scrollable table class takes precedence over table class
@@ -568,7 +576,7 @@ table takes up the full width of it's parent the scrollable table */
     display: grid;
     grid-template-columns: 30% 70%;
     border: 6px solid black;
-    border-radius: 2%;
+    border-radius: 20px 20px;
 }
 
 .scrollable-table-extra caption {
