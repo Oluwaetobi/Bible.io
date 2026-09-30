@@ -161,6 +161,11 @@ header {
     border-radius: 5px 5px;
 }
 
+.bibletar-meme img:hover {
+    filter: brightness(120%);
+    padding: 10px 10px;
+}
+
 .bibletar-short-story {
     position: static;
     max-width: 850px;

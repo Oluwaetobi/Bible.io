@@ -345,3 +345,12 @@ to the parent assuming the parent is position relative */
 .footer-text p {
     text-align: center;
 }
+
+#who-we-are {
+    font-size: 20px;
+}
+
+#who-we-are:hover {
+    text-decoration:underline;
+    cursor: pointer;
+}
