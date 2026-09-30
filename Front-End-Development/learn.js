@@ -915,6 +915,24 @@ function myBibletar () {
                         y_pos_ribp -= 90;
                         increase_width_by = 0.8;
                     }
+                    if (specific_drawing == 37) {
+                        my_pixels_height += 20;
+                        x_pos_ribp -= 63;
+                        y_pos_ribp -= 30;
+                        increase_width_by = 2.25;
+                    }
+                    if (specific_drawing == 38) {
+                        my_pixels_height += 5;
+                        x_pos_ribp -= 70;
+                        y_pos_ribp -= 5;
+                        increase_width_by = 3.0;
+                    }
+                    if (specific_drawing >= 39 && specific_drawing <= 41) {
+                        my_pixels_height += 40;
+                        x_pos_ribp -= 200;
+                        y_pos_ribp -= 40;
+                        increase_width_by = 5.0;
+                    }
                 }
             }
         }
