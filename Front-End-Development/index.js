@@ -124,3 +124,10 @@ allInputs.forEach (input => {
 /** Function to make logos slide  */
 const logos = document.querySelector(".sliding-logos__track").cloneNode(true)
 document.querySelector(".sliding-logos").appendChild(logos)
+
+/** Footer of Bible.io Page */
+const date = new Date();
+const year = date.getFullYear();
+var info_year_write = "";
+info_year_write = year + " Bibleio | Bible.io Corporation - Making the Bible fun since the year 2025 ";
+document.getElementById('bibleio-info-year').innerText = info_year_write;
