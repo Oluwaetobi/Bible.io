@@ -292,6 +292,7 @@ a:hover {
 .note-message:hover {
     filter: brightness(150%);
     padding: 20px 20px;
+    cursor: pointer;
 }
 
 /* I hate default scroll bars, they look ugly and are to skinny, so I made my own custom scroll bars */
