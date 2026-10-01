@@ -271,7 +271,7 @@ a:hover {
 .scrollable-table::-webkit-scrollbar-corner {
     background-color: #1a1a1a; 
     border: 1px solid #3f3f3f;
-    border-radius: 20px 20px;
+    border-radius: 0px 0px;
 }
 
 
@@ -417,7 +417,7 @@ JAVASCRIPT FILE*/
 .scrollable-table-background::-webkit-scrollbar-corner {
     background-color: #1a1a1a; 
     border: 1px solid #3f3f3f;
-    border-radius: 20px 20px;
+    border-radius: 0px 0px;
 }
 
 .scrollable-table-background caption {
@@ -554,7 +554,7 @@ JAVASCRIPT FILE*/
 .scrollable-table-shop::-webkit-scrollbar-corner {
     background-color: #1a1a1a; 
     border: 1px solid #3f3f3f;
-    border-radius: 20px 20px;
+    border-radius: 0px 0px;
 }
 
 /* Scrollable table class takes precedence over table class
@@ -700,7 +700,7 @@ table takes up the full width of it's parent the scrollable table */
 .scrollable-table-extra::-webkit-scrollbar-corner {
     background-color: #1a1a1a; 
     border: 1px solid #3f3f3f;
-    border-radius: 20px 20px;
+    border-radius: 0px 0px;
 }
 
 .scrollable-table-extra caption {
