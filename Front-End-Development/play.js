@@ -4451,8 +4451,8 @@ function choose_Random_Question () {
 
     // Return a random integer between 1 and 10 (both included): Math.floor(Math.random() * 10) + 1;
 
-    var amount_of_question_in_level_1 = 28;
-    var amount_of_question_in_level_2 = 21;
+    var amount_of_question_in_level_1 = 29;
+    var amount_of_question_in_level_2 = 24;
     var amount_of_question_in_level_3 = 27;
 
 
@@ -4691,6 +4691,14 @@ function level_1_Questions () {
         answer4.innerText += `He was never in the belly of a fish `;
         correct_answer = 3;
     }
+    if (randomQuestion == 29) {
+        question.innerText = `Out of these 4 men, who was not a disciple of Jesus Christ? `;
+        answer1.innerText += `Didymus `;
+        answer2.innerText += `Thaddeus `;
+        answer3.innerText += `Bartholomew `;
+        answer4.innerText += `Stephen `;
+        correct_answer = 3;
+    }
 }
 
 function level_2_Questions () {
@@ -4862,6 +4870,30 @@ function level_2_Questions () {
         answer3.innerText += `Titus `;
         answer4.innerText += `Domitian  `;
         correct_answer = 2;
+    }
+    if (randomQuestion == 22) {
+        question.innerText = `Who was Jesus' closest disciple? `;
+        answer1.innerText += `James `;
+        answer2.innerText += `John `;
+        answer3.innerText += `Peter `;
+        answer4.innerText += `Thomas  `;
+        correct_answer = 2;
+    }
+    if (randomQuestion == 23) {
+        question.innerText = `Who killed Asahel? `;
+        answer1.innerText += `Abner `;
+        answer2.innerText += `Joab `;
+        answer3.innerText += `Abishai `;
+        answer4.innerText += `Shimei  `;
+        correct_answer = 1;
+    }
+    if (randomQuestion == 24) {
+        question.innerText = `Who was the fastest of the sons of Zeruiah? `;
+        answer1.innerText += `Joab `;
+        answer2.innerText += `Asher `;
+        answer3.innerText += `Asahel `;
+        answer4.innerText += `Abishai  `;
+        correct_answer = 3;
     }
 }
 
