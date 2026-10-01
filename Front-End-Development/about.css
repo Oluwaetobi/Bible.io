@@ -176,7 +176,7 @@ header {
     box-sizing: border-box;
     border-radius: 20px 20px;
     background-color: rgba(252, 251, 251, 1);
-    border: 2px solid #000000;
+    border: 5px solid #000000;
     padding: 0px 20px;
 }
 .bibletar-short-story h1 {
@@ -189,6 +189,43 @@ header {
 
 .bibletar-short-story img {
     float: right;
+}
+
+/* I'm only redoing the scroll bar here again because I need to round the edges so that
+it blends in with the short story rounded edge box display */
+.bibletar-short-story::-webkit-scrollbar {
+    width: 22px;
+}
+
+.bibletar-short-story::-webkit-scrollbar-track {
+    background: #807f7f;
+    border-radius: 12px;
+    border: 2px solid black;
+}
+.bibletar-short-story::-webkit-scrollbar-track:hover {
+    background: #414141;
+    /* border-radius: 6px; */
+}
+
+.bibletar-short-story::-webkit-scrollbar-thumb {
+    background: #5d5c5c;
+    border: 3px solid #f8f9f9;
+    border-radius: 15px;
+    
+    /* I created to inner shadow, inset means inside, by default it's set to the outside */
+    box-shadow: inset 1.5px 1.5px 1px #282828, inset -1.5px -1.5px 1px #222222;
+    
+}
+.bibletar-short-story::-webkit-scrollbar-thumb:hover {
+    background: #efefee;
+    border: 3px solid #060606;
+    cursor: grabbing;
+}
+
+.bibletar-short-story::-webkit-scrollbar-corner {
+    background-color: #1a1a1a; 
+    border: 1px solid #3f3f3f;
+    border-radius: 0px 0px;
 }
 
 .special-thanks {
@@ -255,4 +292,40 @@ a:hover {
 .note-message:hover {
     filter: brightness(150%);
     padding: 20px 20px;
+}
+
+/* I hate default scroll bars, they look ugly and are to skinny, so I made my own custom scroll bars */
+::-webkit-scrollbar {
+    width: 22px;
+}
+
+::-webkit-scrollbar-track {
+    background: #807f7f;
+    /* border-radius: 6px; */
+    border: 2px solid black;
+}
+::-webkit-scrollbar-track:hover {
+    background: #414141;
+    /* border-radius: 6px; */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #5d5c5c;
+    border: 3px solid #f8f9f9;
+    border-radius: 15px;
+    
+    /* I created to inner shadow, inset means inside, by default it's set to the outside */
+    box-shadow: inset 1.5px 1.5px 1px #282828, inset -1.5px -1.5px 1px #222222;
+    
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #efefee;
+    border: 3px solid #060606;
+    cursor: grabbing;
+}
+
+::-webkit-scrollbar-corner {
+    background-color: #1a1a1a; 
+    border: 1px solid #3f3f3f;
+    border-radius: 0px 0px;
 }

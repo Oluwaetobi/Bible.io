@@ -294,3 +294,39 @@ form div.incorrect input {
 #error-message {
     color: rgb(175, 0, 0);
 }
+
+/* I hate default scroll bars, they look ugly and are to skinny, so I made my own custom scroll bars */
+::-webkit-scrollbar {
+    width: 22px;
+}
+
+::-webkit-scrollbar-track {
+    background: #807f7f;
+    /* border-radius: 6px; */
+    border: 2px solid black;
+}
+::-webkit-scrollbar-track:hover {
+    background: #414141;
+    /* border-radius: 6px; */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #5d5c5c;
+    border: 3px solid #f8f9f9;
+    border-radius: 15px;
+    
+    /* I created to inner shadow, inset means inside, by default it's set to the outside */
+    box-shadow: inset 1.5px 1.5px 1px #282828, inset -1.5px -1.5px 1px #222222;
+    
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #efefee;
+    border: 3px solid #060606;
+    cursor: grabbing;
+}
+
+::-webkit-scrollbar-corner {
+    background-color: #1a1a1a; 
+    border: 1px solid #3f3f3f;
+    border-radius: 0px 0px;
+}
