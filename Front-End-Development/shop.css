@@ -241,11 +241,44 @@ a:hover {
     background-color: #e5e1e1;
     display: grid;
     grid-template-columns: 30% 70%;
-    scrollbar-color: #1388d1 #8e8a8a;
+    /* scrollbar-color: #1388d1 #8e8a8a; */
+    /* scrollbar-width: 105; */
     /* padding-right: 5px; */
+    /* scrollbar-arrow */
     border-radius: 20px 20px;
     border: 5px solid black;
 }
+
+.scrollable-table::-webkit-scrollbar {
+    width: 20px;
+}
+
+.scrollable-table::-webkit-scrollbar-track {
+    background: #807f7f;
+    border-radius: 6px;
+}
+.scrollable-table::-webkit-scrollbar-track:hover {
+    background: #464545;
+    border-radius: 6px;
+}
+
+.scrollable-table::-webkit-scrollbar-thumb {
+    background: #4f46e5;
+  border-radius: 6px;
+  border: 2px solid #f8f9f9;
+}
+
+.scrollable-table::-webkit-scrollbar-corner {
+    background-color: #1a1a1a; 
+    border: 1px solid #3f3f3f;
+    border-radius: 20px 20px;
+}
+
+
+.scrollable-table::-webkit-scrollbar-thumb:hover {
+    background: #4338ca;
+}
+
 
 .scrollable-table caption {
     background-color: #000000;
@@ -354,7 +387,37 @@ JAVASCRIPT FILE*/
     grid-template-columns: 30% 70%;
     border: 6px solid black;
     border-radius: 3%;
-    scrollbar-color: #d14913 #8e8a8a;
+    /* scrollbar-color: #d14913 #8e8a8a; */
+}
+
+.scrollable-table-background::-webkit-scrollbar {
+    width: 20px;
+}
+
+.scrollable-table-background::-webkit-scrollbar-track {
+    background: #807f7f;
+    border-radius: 6px;
+}
+.scrollable-table-background::-webkit-scrollbar-track:hover {
+    background: #444444;
+    border-radius: 6px;
+}
+
+
+.scrollable-table-background::-webkit-scrollbar-thumb {
+    background: #e55346;
+  border-radius: 6px;
+  border: 2px solid #f8f9f9;
+}
+
+.scrollable-table-background::-webkit-scrollbar-thumb:hover {
+    background: #901717;
+}
+
+.scrollable-table-background::-webkit-scrollbar-corner {
+    background-color: #1a1a1a; 
+    border: 1px solid #3f3f3f;
+    border-radius: 20px 20px;
 }
 
 .scrollable-table-background caption {
@@ -462,7 +525,36 @@ JAVASCRIPT FILE*/
     grid-template-columns: 30% 70%;
     border: 6px solid black;
     border-radius: 20px 20px;
-    scrollbar-color: #ffffff #111111;
+    /* scrollbar-color: #ffffff #111111; */
+}
+
+.scrollable-table-shop::-webkit-scrollbar {
+    width: 20px;
+}
+
+.scrollable-table-shop::-webkit-scrollbar-track {
+    background: #807f7f;
+    border-radius: 6px;
+}
+.scrollable-table-shop::-webkit-scrollbar-track:hover {
+    background: #3e3e3e;
+    border-radius: 6px;
+}
+
+.scrollable-table-shop::-webkit-scrollbar-thumb {
+    background: #46e569;
+  border-radius: 6px;
+  border: 2px solid #f8f9f9;
+}
+
+.scrollable-table-shop::-webkit-scrollbar-thumb:hover {
+    background: #1d8635;
+}
+
+.scrollable-table-shop::-webkit-scrollbar-corner {
+    background-color: #1a1a1a; 
+    border: 1px solid #3f3f3f;
+    border-radius: 20px 20px;
 }
 
 /* Scrollable table class takes precedence over table class
@@ -580,6 +672,34 @@ table takes up the full width of it's parent the scrollable table */
     display: grid;
     grid-template-columns: 30% 70%;
     border: 6px solid black;
+    border-radius: 20px 20px;
+}
+
+.scrollable-table-extra::-webkit-scrollbar {
+    width: 20px;
+}
+
+.scrollable-table-extra::-webkit-scrollbar-track {
+    background: #807f7f;
+    border-radius: 6px;
+}
+.scrollable-table-extra::-webkit-scrollbar-track:hover {
+    background: #414141;
+    border-radius: 6px;
+}
+
+.scrollable-table-extra::-webkit-scrollbar-thumb {
+    background: #d5e546;
+  border-radius: 6px;
+  border: 2px solid #f8f9f9;
+}
+.scrollable-table-extra::-webkit-scrollbar-thumb:hover {
+    background: #808a17;
+}
+
+.scrollable-table-extra::-webkit-scrollbar-corner {
+    background-color: #1a1a1a; 
+    border: 1px solid #3f3f3f;
     border-radius: 20px 20px;
 }
 
