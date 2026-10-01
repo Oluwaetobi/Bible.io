@@ -233,3 +233,26 @@ a:hover {
 .footer-text p {
     text-align: center;
 }
+
+.note-message {
+    background-color: #000000;
+    max-width: 250px;
+    font-size: large;
+    color: #fbf9f9;
+    padding: 10px 10px;
+    border-radius: 20px 20px;
+
+    z-index:2;
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    text-align: center;
+    place-items: center;
+    display: flex;
+    gap: 10px;
+}
+
+.note-message:hover {
+    filter: brightness(150%);
+    padding: 20px 20px;
+}
