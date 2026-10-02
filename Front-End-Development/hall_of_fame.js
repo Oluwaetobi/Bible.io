@@ -33,16 +33,31 @@ var hall_of_fame_clicked_is_a_girl = false;
 
 const canvas = document.getElementById('myCanvas');
 const ctx = canvas.getContext('2d');
+
+
 var i_am_a_developer = false;
 const developer_tools = JSON.parse(localStorage.getItem('i_am_a_developer'));
 if (developer_tools) {
     i_am_a_developer = developer_tools;
 }
+
+
 const top_border = 90;
 const side_border = 2;
 var player_Clicked_Name = "Unknown Player"
 
 var hall_of_fame_bibletar_svg = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
+const hall_of_fame = {
+    everyones_points: [0, 0, 0, 0],
+    countries: ["America", "America", "America", "America"],
+    everyones_names: ["Unknown Player"],
+    bibletar: [
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+    ],
+}
 
 var box_x_pos = 1;
 var gameOn = false;
@@ -149,6 +164,60 @@ for (let i = 0; i < 5; i++) {
     liveDisplayPositions.push((i * liveDisplay_Text_Spacing) + 500);
 }
 var end_of_screen_benchmark  = (liveDisplay_Text_Spacing * -1);
+
+function update_hall_of_fame () {
+
+    /** Able to keep trach of the top 100 players in the entire world */
+    var amount_of_players_tracked = 100;
+    if (hall_of_fame.bibletar.length <= amount_of_players_tracked) {
+        hall_of_fame.bibletar.push([1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]);
+    }
+    if (hall_of_fame.countries.length <= amount_of_players_tracked) {
+        hall_of_fame.countries.push("America");
+    }
+    if (hall_of_fame.everyones_points.length <= amount_of_players_tracked) {
+        hall_of_fame.everyones_points.push(0);
+    }
+    if (hall_of_fame.everyones_names.length <= amount_of_players_tracked) {
+        hall_of_fame.everyones_names.push("Unknown Player");
+    }
+
+    const images = document.querySelectorAll('#hall-of-fame-design img');
+    const hof_text_display = document.querySelectorAll('#hall-of-fame-design td');
+
+    /** Able to replace all image countries data in the hall of fame with the data in
+     * the hall of fame object in the top of my program/file
+     */
+    images.forEach((img, index)=> {
+        if(hall_of_fame.countries[index] != null) {
+            img.src = ("./images/country_" + hall_of_fame.countries[index] + ".svg");
+            img.alt = "Unknown country";
+            // console.log("newSources[index]: " +  newSources[index]);
+        }
+    });
+
+    /** Able to replace all data in the hall of fame with data in the hall of fame object
+     * new the top of my program/file
+     */
+    hof_text_display.forEach((td, index)=> {
+        var consecutive_numbers = Math.ceil(index/4);
+        if(index % 4 == 1) {
+            // rank
+            td.textContent = consecutive_numbers;
+        }
+        if(index % 4 == 2) {
+            // name
+            td.textContent = hall_of_fame.everyones_names[consecutive_numbers];
+        }
+        if(index % 4 == 3) {
+            // points
+            td.textContent = hall_of_fame.everyones_points[consecutive_numbers];
+        }
+    })
+
+
+}
+
 
 function live_Display_Slider () {
     ctx.fillStyle = 'rgb(214, 6, 6)';
@@ -1136,6 +1205,7 @@ function drawGame() {
     live_Display_Slider();
     loadingBox();
     playerClickedBibletar();
+    update_hall_of_fame();
 
 }
 
