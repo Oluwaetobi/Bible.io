@@ -534,6 +534,8 @@ table takes up the full width of it's parent the scrollable table */
 /* This is for the reading mose, I can edit it as much as I want */
 #text-to-read {
     font-size: 20px;
+    text-indent: 40px;
+    white-space: pre-wrap;
 }
 
 #read-a-book button{
