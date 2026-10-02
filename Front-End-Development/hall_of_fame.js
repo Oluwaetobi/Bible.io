@@ -48,12 +48,12 @@ var player_Clicked_Name = "Unknown Player"
 
 var hall_of_fame_bibletar_svg = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
 const hall_of_fame = {
-    everyones_points: [0, 0, 0, 0],
+    everyones_points: [5, 10, 15, 0],
     countries: ["America", "America", "America", "America"],
-    everyones_names: ["Unknown Player"],
+    everyones_names: ["Unknown Player", "Jack", "Jimmy"],
     bibletar: [
-        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
-        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+        [1, 3, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+        [1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1],
         [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
         [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
     ],
@@ -207,11 +207,11 @@ function update_hall_of_fame () {
         }
         if(index % 4 == 2) {
             // name
-            td.textContent = hall_of_fame.everyones_names[consecutive_numbers];
+            td.textContent = hall_of_fame.everyones_names[consecutive_numbers - 1];
         }
         if(index % 4 == 3) {
             // points
-            td.textContent = hall_of_fame.everyones_points[consecutive_numbers];
+            td.textContent = hall_of_fame.everyones_points[consecutive_numbers - 1];
         }
     })
 
@@ -256,6 +256,15 @@ function loadingBox() {
         box_x_pos = -100;
     }
 
+}
+
+function change_top_player_display(player_click_html) {
+    /** Changes the display of the Top Player display to the correct one */
+    for (let i = 0; i < hall_of_fame_bibletar_svg.length; i++) {
+        hall_of_fame_bibletar_svg[i] = hall_of_fame.bibletar[player_click_html - 1][i];
+    }
+    
+    player_Clicked_Name = hall_of_fame.everyones_names[player_click_html - 1];
 }
 
 function playerClickedBibletar () {
