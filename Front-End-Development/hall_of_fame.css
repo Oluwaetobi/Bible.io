@@ -261,6 +261,23 @@ table takes up the full width of it's parent the scrollable table */
     translate: -20%;
 }
 
+#stats-display {
+    text-align: center;
+}
+#walking-with-Jesus {
+    /* background-color: #614102; */
+    background: linear-gradient(180deg, #c18103, #644e05);
+    padding: 10px 10px 10px;
+    color: #f8f9f8;
+    font-weight: bold;
+    text-align: center;
+    font-size: 50px;
+    text-shadow: 2px 2px 10px rgb(2, 2, 2);
+    /* inside the box or outside or none, offset x, offset y, size of shadow, color */
+    box-shadow: inset 1.5px 1.5px 20px #000000;
+    
+}
+
 .top-left img:hover {
     filter: brightness(120%);
 }
