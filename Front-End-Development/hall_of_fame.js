@@ -48,12 +48,12 @@ var player_Clicked_Name = "Unknown Player"
 
 var hall_of_fame_bibletar_svg = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
 const hall_of_fame = {
-    everyones_points: [5, 10, 15, 0],
+    everyones_points: [0, 0, 0, 0],
     countries: ["America", "America", "America", "America"],
-    everyones_names: ["Unknown Player", "Jack", "Jimmy"],
+    everyones_names: ["Unknown Player"],
     bibletar: [
-        [1, 3, 1, 1, 1, 1, 1, 1, 1, 1, 1],
-        [1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
         [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
         [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
     ],
