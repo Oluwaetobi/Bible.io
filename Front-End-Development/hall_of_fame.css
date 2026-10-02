@@ -131,7 +131,9 @@ header {
 
 .hall-of-fame-middle {
     z-index: 1;
+    display: flex;
     position: relative;
+    flex-direction: column;
     top:130px;
     text-align: center;
     background-color: rgba(252, 251, 251, 0.9);
@@ -146,6 +148,44 @@ header {
     border-width: 10px;
     /* border-style: */
     box-shadow: inset 1.5px 1.5px 10px #000000;
+    max-height: 660px;
+    overflow-y: auto;
+}
+
+.hall-of-fame-middle::-webkit-scrollbar {
+    width: 22px;
+}
+
+.hall-of-fame-middle::-webkit-scrollbar-track {
+    background: #807f7f;
+    /* border-radius: 6px; */
+    border: 2px solid black;
+    border-radius: 10px 10px;
+}
+.hall-of-fame-middle::-webkit-scrollbar-track:hover {
+    background: #414141;
+    /* border-radius: 6px; */
+}
+
+.hall-of-fame-middle::-webkit-scrollbar-thumb {
+    background: #5d5c5c;
+    border: 3px solid #f8f9f9;
+    border-radius: 15px;
+    
+    /* I created to inner shadow, inset means inside, by default it's set to the outside */
+    box-shadow: inset 1.5px 1.5px 1px #282828, inset -1.5px -1.5px 1px #222222;
+    
+}
+.hall-of-fame-middle::-webkit-scrollbar-thumb:hover {
+    background: #efefee;
+    border: 3px solid #060606;
+    cursor: grabbing;
+}
+
+.hall-of-fame-middle::-webkit-scrollbar-corner {
+    background-color: #1a1a1a; 
+    border: 1px solid #3f3f3f;
+    border-radius: 0px 0px;
 }
 
 .hall-of-fame-middle h1 {
@@ -185,13 +225,13 @@ a:hover {
 }
 
 .scrollable-table {
-    height: 370px;
+    min-height: 370px;
     width: 600px;
     /* overflow-y makes only the y coordinates scrollable */
     overflow-y: auto;
     /* background-color: #7f2e2e; */
     scroll-snap-type: y mandatory;
-    position: relative;
+    position: static;
     /* left: 450px; */
     border: 2px solid #000000;
     /* box-sizing: border-box; */
@@ -317,12 +357,16 @@ table takes up the full width of it's parent the scrollable table */
     box-sizing: border-box;
     border-radius: 20px 20px;
     /* top right bottom left */
-    padding: 20px 20px 20px 20px;
+    padding: 0px 0px 0px 0px;
     max-width: 400px;
     top: 550px;
+    place-self: center;
     place-items: center;
     align-items: center;
     justify-content: center;
+    border-style: groove;
+    border-color: #908f8f;
+    overflow: hidden;
 }
 
 #myCanvas {
