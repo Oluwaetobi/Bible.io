@@ -4895,6 +4895,14 @@ function level_2_Questions () {
         answer4.innerText += `Abishai  `;
         correct_answer = 3;
     }
+    if (randomQuestion == 25) {
+        question.innerText = `Abishai, Joab, and Asahel were the sons of which father? `;
+        answer1.innerText += `Zeruiah `;
+        answer2.innerText += `Noam `;
+        answer3.innerText += `Manoah `;
+        answer4.innerText += `Elimelech  `;
+        correct_answer = 1;
+    }
 }
 
 function level_3_Questions () {
