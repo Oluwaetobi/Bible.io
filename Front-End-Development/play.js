@@ -1764,7 +1764,8 @@ function displayLevels() {
         var spacing_x = 60;
         ctx.font = "20px Arial";
         if ((i+1) == level) {
-            ctx.fillStyle = 'rgb(245, 186, 77)';
+            // ctx.fillStyle = 'rgb(245, 186, 77)';
+            ctx.fillStyle = 'rgb(245, 95, 14)';
         } else {
             ctx.fillStyle = 'rgb(239, 245, 77)';
         }
@@ -4110,7 +4111,7 @@ function broadcast_game_is_over (time_alloted_for_each_game) {
 
     var gradient = ctx.createLinearGradient(0, 470, 0, 470 + 170);
     gradient.addColorStop(0, 'rgb(120, 118, 118)');     // Start color (0%)
-    gradient.addColorStop(0.5, 'rgb(197, 195, 195)');
+    gradient.addColorStop(0.5, 'rgb(130, 125, 125)');
     gradient.addColorStop(1, 'rgb(85, 86, 86)');    // End color (100%)
     // ctx.fillStyle = 'rgb(249, 247, 247)';
     ctx.fillStyle = gradient;
