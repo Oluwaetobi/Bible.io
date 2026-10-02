@@ -184,7 +184,7 @@ function loadingBox() {
     
     box_x_pos += 3;
     if (box_x_pos > canvas.width + 100) {
-        box_x_pos = -50;
+        box_x_pos = -100;
     }
 
 }
