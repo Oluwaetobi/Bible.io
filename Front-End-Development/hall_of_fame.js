@@ -167,7 +167,10 @@ var end_of_screen_benchmark  = (liveDisplay_Text_Spacing * -1);
 
 function update_hall_of_fame () {
 
-    /** Able to keep trach of the top 100 players in the entire world */
+    /** Able to keep trach of the top 100 players in the entire world, now I need to also fetch it from
+     * a server, now I need to work on backend and start actually putting the write data in the
+     * hall_of_fame object
+     */
     var amount_of_players_tracked = 100;
     if (hall_of_fame.bibletar.length <= amount_of_players_tracked) {
         hall_of_fame.bibletar.push([1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]);
@@ -258,7 +261,10 @@ function loadingBox() {
 
 }
 
+var player_clicked = 1;
+
 function change_top_player_display(player_click_html) {
+    player_clicked = player_click_html;
     /** Changes the display of the Top Player display to the correct one */
     for (let i = 0; i < hall_of_fame_bibletar_svg.length; i++) {
         hall_of_fame_bibletar_svg[i] = hall_of_fame.bibletar[player_click_html - 1][i];
@@ -271,6 +277,7 @@ function playerClickedBibletar () {
 
     // WRITE Player Clicked's NAME
     var shift_name_y_over = -100;
+    var x_shift_over = 1100;
 
     // black shadow add
     ctx.shadowColor = "black";
@@ -279,16 +286,16 @@ function playerClickedBibletar () {
     ctx.shadowOffsetY = 2;
 
 
-    
+    var text_name_to_display = (player_clicked + ". " + player_Clicked_Name);
     ctx.font = "40px Arial";
     ctx.strokeStyle = 'rgb(251, 250, 250)';
-    ctx.strokeText(player_Clicked_Name, 1150, 500 + shift_name_y_over);
+    ctx.strokeText(text_name_to_display, x_shift_over, 500 + shift_name_y_over);
     ctx.fillStyle = 'rgb(252, 248, 248)';
-    ctx.fillText(player_Clicked_Name, 1150, 500 + shift_name_y_over);
+    ctx.fillText(text_name_to_display, x_shift_over, 500 + shift_name_y_over);
     
     ctx.font = "20px Arial";
     ctx.fillStyle = 'rgb(246, 242, 242)';
-    ctx.fillText("Top player on Leaderboard", 1160, 535 + shift_name_y_over);
+    ctx.fillText("Top player on Leaderboard", x_shift_over + 30, 535 + shift_name_y_over);
     
     // black shadow remove
     ctx.shadowColor = "white";
