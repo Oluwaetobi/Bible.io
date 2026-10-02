@@ -240,7 +240,8 @@ table takes up the full width of it's parent the scrollable table */
     z-index: 2;
     position: fixed;
     left: 20px;
-    background-color: rgba(252, 251, 251, 0.9);
+    /* background-color: rgba(252, 251, 251, 0.9); */
+    background: linear-gradient(180deg, #eae9e8, #dededd);
     box-sizing: border-box;
     border-radius: 20px 20px;
     /* top right bottom left */
@@ -255,6 +256,7 @@ table takes up the full width of it's parent the scrollable table */
     border-color: #908f8f;
     border-width: 10px;
     overflow-x: hidden;
+    /* box-shadow: inset 1.5px 1.5px 0.3px #000000; */
 }
 
 #raising-good-kids {
@@ -263,6 +265,9 @@ table takes up the full width of it's parent the scrollable table */
 
 #stats-display {
     text-align: center;
+    font-weight: bold;
+    /* background: linear-gradient(180deg, #eae9e8, #a4a4a3); */
+    /* padding: 10px 120px; */
 }
 #walking-with-Jesus {
     /* background-color: #614102; */
