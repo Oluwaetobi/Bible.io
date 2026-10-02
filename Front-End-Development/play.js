@@ -4108,6 +4108,15 @@ function broadcast_game_is_over (time_alloted_for_each_game) {
 
     var end_game_message = "Time's Up, Game Over!!!";
 
+    var gradient = ctx.createLinearGradient(0, 268 + 40, 0, 268 + 200);
+    gradient.addColorStop(0, 'rgb(250, 246, 246)');     // Start color (0%)
+    gradient.addColorStop(0.5, 'rgb(197, 195, 195)');
+    gradient.addColorStop(1, 'rgb(135, 137, 137)');    // End color (100%)
+    // ctx.fillStyle = 'rgb(249, 247, 247)';
+    ctx.fillStyle = gradient;
+    ctx.fillRect(80, 480, 500, 190);
+
+
     ctx.font = "80px Arial";
     ctx.strokeStyle = 'rgb(250, 248, 248)';
     ctx.strokeText(end_game_message, 100, 540);
@@ -4625,7 +4634,7 @@ function level_1_Questions () {
         answer2.innerText += `David `;
         answer3.innerText += `Solomon `;
         answer4.innerText += `Rehoboam `;
-        correct_answer = 2;
+        correct_answer = 1;
     }
     if (randomQuestion == 21) {
         question.innerText = `Who betrayed Samson? `;
@@ -4681,7 +4690,7 @@ function level_1_Questions () {
         answer2.innerText += `A lunatic `;
         answer3.innerText += `A blind man `;
         answer4.innerText += `One of Jesus' 12 disciples `;
-        correct_answer = 4;
+        correct_answer = 1;
     }
     if (randomQuestion == 28) {
         question.innerText = `How many days was Jonah in the belly of the big fish for? `;
@@ -4697,7 +4706,7 @@ function level_1_Questions () {
         answer2.innerText += `Thaddeus `;
         answer3.innerText += `Bartholomew `;
         answer4.innerText += `Stephen `;
-        correct_answer = 3;
+        correct_answer = 4;
     }
 }
 
