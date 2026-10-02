@@ -446,6 +446,7 @@ form input::placeholder {
 }
 ::-webkit-scrollbar-track:hover {
     background: #414141;
+    cursor: pointer;
     /* border-radius: 6px; */
 }
 
