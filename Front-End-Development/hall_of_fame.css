@@ -168,7 +168,7 @@ header {
 }
 
 .hall-of-fame-middle::-webkit-scrollbar-thumb {
-    background: #5d5c5c;
+    background: #5c5d5d;
     border: 3px solid #f8f9f9;
     border-radius: 15px;
     
@@ -359,7 +359,7 @@ table takes up the full width of it's parent the scrollable table */
     /* top right bottom left */
     padding: 0px 0px 0px 0px;
     max-width: 400px;
-    top: 550px;
+    top: 580px;
     place-self: center;
     place-items: center;
     align-items: center;

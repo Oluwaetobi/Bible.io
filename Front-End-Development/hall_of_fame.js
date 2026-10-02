@@ -48,6 +48,12 @@ var player_Clicked_Name = "Unknown Player"
 
 var hall_of_fame_bibletar_svg = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
 const hall_of_fame = {
+    /** It might not look like it but all the data that is display on the country
+     * hall of fame is controlled by here, I push in default values from a loop in 
+     * the update_hall_of_fame function until we have 100 tables of data to track
+     * players which I should be able to edit accordingly by fetching or receiving
+     *  the data from a server whether through backend or front-end
+     */
     everyones_points: [0, 0, 0, 0],
     countries: ["America", "America", "America", "America"],
     everyones_names: ["Unknown Player"],
@@ -58,6 +64,10 @@ const hall_of_fame = {
         [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
     ],
 }
+
+var img_country = new Image();
+img_country.src = "./images/country_America.svg"; // Sets default source url
+img_country.alt = "country";
 
 var box_x_pos = 1;
 var gameOn = false;
@@ -271,7 +281,11 @@ function change_top_player_display(player_click_html) {
     }
     
     player_Clicked_Name = hall_of_fame.everyones_names[player_click_html - 1];
+    players_points = hall_of_fame.everyones_points[player_click_html - 1];
+    img_country.src = ("./images/country_" + hall_of_fame.countries[player_click_html - 1] + ".svg");
 }
+
+var players_points = hall_of_fame.everyones_points[0];
 
 function playerClickedBibletar () {
 
@@ -285,7 +299,7 @@ function playerClickedBibletar () {
     ctx.shadowOffsetX = 2;
     ctx.shadowOffsetY = 2;
 
-
+    // name
     var text_name_to_display = (player_clicked + ". " + player_Clicked_Name);
     ctx.font = "40px Arial";
     ctx.strokeStyle = 'rgb(251, 250, 250)';
@@ -293,9 +307,16 @@ function playerClickedBibletar () {
     ctx.fillStyle = 'rgb(252, 248, 248)';
     ctx.fillText(text_name_to_display, x_shift_over, 500 + shift_name_y_over);
     
-    ctx.font = "20px Arial";
+    // country and points
+    ctx.font = "35px Arial";
+    ctx.fillStyle = 'rgb(250, 250, 250)';
+    ctx.drawImage(img_country, 1100, 420, 70, 35);
+    ctx.fillText("Points: " + players_points, 1190, 450);
+
+    ctx.font = "16px Arial";
     ctx.fillStyle = 'rgb(246, 242, 242)';
-    ctx.fillText("Top player on Leaderboard", x_shift_over + 30, 535 + shift_name_y_over);
+    // ctx.fillText("Top player on Leaderboard", x_shift_over + 30, 585 + shift_name_y_over);
+
     
     // black shadow remove
     ctx.shadowColor = "white";
