@@ -140,12 +140,12 @@ header {
     box-sizing: border-box;
     border-radius: 30px 30px;
     left: 360px;
-    padding: 20px 20px;
-    /* width: 500px; */
+    padding: 5px 5px;
     border-style: groove;
     border-color: #908f8f;
     border-width: 10px;
     /* border-style: */
+    box-shadow: inset 1.5px 1.5px 10px #000000;
 }
 
 .hall-of-fame-middle h1 {
@@ -169,6 +169,12 @@ header {
     font-weight: bold;
 }
 
+#sub-title {
+    /* background-color: rgba(27, 142, 208, 0.1); */
+    /* padding: 5px; */
+    text-decoration:none;
+}
+
 a {
     text-decoration: none;
     /* color: var(--login-color); */
@@ -187,6 +193,9 @@ a:hover {
     scroll-snap-type: y mandatory;
     position: relative;
     /* left: 450px; */
+    border: 2px solid #000000;
+    /* box-sizing: border-box; */
+    border-radius: 5px 5px;
 
     z-index: 1;
 }
@@ -204,9 +213,11 @@ table takes up the full width of it's parent the scrollable table */
 }
 /*  */
 .table th {
-    background-color: #6085fffe;
+    /* background-color: #6085fffe; */
+    background: linear-gradient(0deg, #03d2fc, #3853ef);
     color: #ffffff;
     font-size: 20px;
+    font-weight: bold;
     text-align: left;
     position: sticky;
     top: 0px;
@@ -229,7 +240,7 @@ table takes up the full width of it's parent the scrollable table */
 
 /* Background color for every even row (opposite of odd rows) */
 .table tbody tr:nth-of-type(even) {
-    background-color: #a7a7a7;
+    background-color: #bdbcbc;
 }
 
 .table tbody tr:nth-of-type(odd) {
