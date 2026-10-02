@@ -142,6 +142,10 @@ header {
     left: 360px;
     padding: 20px 20px;
     /* width: 500px; */
+    border-style: groove;
+    border-color: #908f8f;
+    border-width: 10px;
+    /* border-style: */
 }
 
 .hall-of-fame-middle h1 {
@@ -160,7 +164,7 @@ header {
     font-weight: bold;
 }
 
-.hall-of-fame-middle p {
+#top-players-text {
     color: #d31e0d;
     font-weight: bold;
 }
@@ -240,33 +244,24 @@ table takes up the full width of it's parent the scrollable table */
     box-sizing: border-box;
     border-radius: 20px 20px;
     /* top right bottom left */
-    padding: 20px 20px 20px 20px;
+    padding: 0px 0px 0px 0px;
     max-width: 320px;
     top: 130px;
     place-items: center;
     align-items: center;
     justify-content: center;
+    /* Gives the border a nice look */
+    border-style: groove;
+    border-color: #908f8f;
+    border-width: 10px;
+    overflow-x: hidden;
+}
+
+#raising-good-kids {
+    translate: -20%;
 }
 
 .top-left img:hover {
-    filter: brightness(120%);
-}
-
-.side-to-side {
-    display: flex;
-    gap: 10px;
-    background-color: rgba(71, 96, 125, 0.9);
-    box-sizing: border-box;
-    border-radius: 20px 20px;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-.side-to-side h3 {
-    color:#f8faf9;
-}
-
-.side-to-side:hover {
     filter: brightness(120%);
 }
 
