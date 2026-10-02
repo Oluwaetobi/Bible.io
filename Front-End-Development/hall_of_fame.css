@@ -238,6 +238,7 @@ table takes up the full width of it's parent the scrollable table */
     scroll-snap-align: start;
 }
 
+
 /* Background color for every even row (opposite of odd rows) */
 .table tbody tr:nth-of-type(even) {
     background-color: #bdbcbc;
@@ -245,6 +246,11 @@ table takes up the full width of it's parent the scrollable table */
 
 .table tbody tr:nth-of-type(odd) {
     background-color: #f8faf9;
+}
+
+.table tr:hover {
+    background-color: #1096b1;
+    filter: brightness(80%);
 }
 
 .top-left {
