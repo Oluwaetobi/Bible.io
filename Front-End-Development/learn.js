@@ -1234,14 +1234,29 @@ function myBibletar () {
 
 }
 
+function draw_Background () {
+    if (learn_page == 1) {
+        // blue background
+        var gradient = ctx.createLinearGradient(0, 0, 0, canvas.height);
+        gradient.addColorStop(0, 'rgb(38, 197, 222)');     // Start color (0%)
+        gradient.addColorStop(0.5, 'rgb(191, 250, 72)');
+        gradient.addColorStop(1, 'rgb(160, 195, 241)');    // End color (100%)
+        ctx.fillStyle = gradient;
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+    }
+    if (learn_page == 2) {
+        var gradient = ctx.createLinearGradient(0, 0, 0, canvas.height);
+        gradient.addColorStop(0, 'rgb(227, 229, 229)');     // Start color (0%)
+        gradient.addColorStop(0.5, 'rgb(142, 143, 142)');
+        gradient.addColorStop(1, 'rgb(175, 176, 176)');    // End color (100%)
+        ctx.fillStyle = gradient;
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+    }
+
+}
+
 function drawGame() {
-    // blue background
-    var gradient = ctx.createLinearGradient(0, 0, 0, canvas.height);
-    gradient.addColorStop(0, 'rgb(38, 197, 222)');     // Start color (0%)
-    gradient.addColorStop(0.5, 'rgb(191, 250, 72)');
-    gradient.addColorStop(1, 'rgb(160, 195, 241)');    // End color (100%)
-    ctx.fillStyle = gradient;
-    ctx.fillRect(0, 0, canvas.width, canvas.height);
+    draw_Background();
 
     // ctx.fillStyle = 'rgb(176, 223, 255)';
     // ctx.fillRect(0, 0, canvas.width, canvas.height);
@@ -1253,7 +1268,9 @@ function drawGame() {
     show_table_or_hide_table();
     goBackSign();
     takeCareOfText();
-    drawGameAssets();
+    if (learn_page == 2) {
+        drawGameAssets();
+    }
     myBibletar();
     start_timer();
 
