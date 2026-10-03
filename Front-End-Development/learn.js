@@ -1316,6 +1316,7 @@ function Bible_DataBase () {
     if (book_clicked == 1) {
         
     }
+    text_to_read.innerText = `We are sorry, but the Bible is currently not available on our site.`
 }
 
 function stop_re_adding_text (type_of_text) {
