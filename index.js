@@ -32577,6 +32577,174 @@ Before the sun, etc.... That is, before old age: the effects of which upon all t
 
 `
 
+var book_of_songs_of_solomon = `1:1 The song of songs, which is Solomon's.
+1:2 Let him kiss me with the kisses of his mouth: for your love is better than wine.
+1:3 Because of the smell of your good ointments your name is as ointment poured forth, therefore do the virgins love you.
+1:4 Draw me, we will run after you: the king has brought me into his chambers: we will be glad and rejoice in you, we will remember your love more than wine: the upright love you.
+1:5 I am black, but comely, O you daughters of Jerusalem, as the tents of Kedar, as the curtains of Solomon.
+1:6 Look not on me, because I am black, because the sun has looked on me: my mother's children were angry with me; they made me the keeper of the vineyards; but my own vineyard have I not kept.
+1:7 Tell me, O you whom my soul loves, where you feed, where you make your flock to rest at noon: for why should I be as one that turns aside by the flocks of your companions?
+1:8 If you know not, O you fairest among women, go your way forth by the footsteps of the flock, and feed your kids beside the shepherds' tents.
+1:9 I have compared you, O my love, to a company of horses in Pharaoh's chariots.
+1:10 Your cheeks are comely with rows of jewels, your neck with chains of gold.
+1:11 We will make you borders of gold with studs of silver.
+1:12 While the king sits at his table, my spikenard sends forth the smell thereof.
+1:13 A bundle of myrrh is my well-beloved to me; he shall lie all night between my breasts.
+1:14 My beloved is to me as a cluster of camphire in the vineyards of Engedi.
+1:15 Behold, you are fair, my love; behold, you are fair; you have doves' eyes.
+1:16 Behold, you are fair, my beloved, yes, pleasant: also our bed is green.
+1:17 The beams of our house are cedar, and our rafters of fir.
+ 	
+AKJV
+ 	 	 	 	
+Song of Solomon 2
+ 	 	 	 	
+AV 1611
+
+2:1 I am the rose of Sharon, and the lily of the valleys.
+2:2 As the lily among thorns, so is my love among the daughters.
+2:3 As the apple tree among the trees of the wood, so is my beloved among the sons. I sat down under his shadow with great delight, and his fruit was sweet to my taste.
+2:4 He brought me to the banqueting house, and his banner over me was love.
+2:5 Stay me with flagons, comfort me with apples: for I am sick of love.
+2:6 His left hand is under my head, and his right hand does embrace me.
+2:7 I charge you, O you daughters of Jerusalem, by the roes, and by the hinds of the field, that you stir not up, nor awake my love, till he please.
+2:8 The voice of my beloved! behold, he comes leaping on the mountains, skipping on the hills.
+2:9 My beloved is like a roe or a young hart: behold, he stands behind our wall, he looks forth at the windows, showing himself through the lattice.
+2:10 My beloved spoke, and said to me, Rise up, my love, my fair one, and come away.
+2:11 For, see, the winter is past, the rain is over and gone;
+2:12 The flowers appear on the earth; the time of the singing of birds is come, and the voice of the turtle is heard in our land;
+2:13 The fig tree puts forth her green figs, and the vines with the tender grape give a good smell. Arise, my love, my fair one, and come away.
+2:14 O my dove, that are in the clefts of the rock, in the secret places of the stairs, let me see your countenance, let me hear your voice; for sweet is your voice, and your countenance is comely.
+2:15 Take us the foxes, the little foxes, that spoil the vines: for our vines have tender grapes.
+2:16 My beloved is mine, and I am his: he feeds among the lilies.
+2:17 Until the day break, and the shadows flee away, turn, my beloved, and be you like a roe or a young hart on the mountains of Bether.
+ 	
+AKJV
+ 	 	 	 	
+Song of Solomon 3
+ 	 	 	 	
+AV 1611
+
+3:1 By night on my bed I sought him whom my soul loves: I sought him, but I found him not.
+3:2 I will rise now, and go about the city in the streets, and in the broad ways I will seek him whom my soul loves: I sought him, but I found him not.
+3:3 The watchmen that go about the city found me: to whom I said, Saw you him whom my soul loves?
+3:4 It was but a little that I passed from them, but I found him whom my soul loves: I held him, and would not let him go, until I had brought him into my mother's house, and into the chamber of her that conceived me.
+3:5 I charge you, O you daughters of Jerusalem, by the roes, and by the hinds of the field, that you stir not up, nor awake my love, till he please.
+3:6 Who is this that comes out of the wilderness like pillars of smoke, perfumed with myrrh and frankincense, with all powders of the merchant?
+3:7 Behold his bed, which is Solomon's; three score valiant men are about it, of the valiant of Israel.
+3:8 They all hold swords, being expert in war: every man has his sword on his thigh because of fear in the night.
+3:9 King Solomon made himself a chariot of the wood of Lebanon.
+3:10 He made the pillars thereof of silver, the bottom thereof of gold, the covering of it of purple, the middle thereof being paved with love, for the daughters of Jerusalem.
+3:11 Go forth, O you daughters of Zion, and behold king Solomon with the crown with which his mother crowned him in the day of his espousals, and in the day of the gladness of his heart.
+ 	
+AKJV
+ 	 	 	 	
+Song of Solomon 4
+ 	 	 	 	
+AV 1611
+
+4:1 Behold, you are fair, my love; behold, you are fair; you have doves' eyes within your locks: your hair is as a flock of goats, that appear from mount Gilead.
+4:2 Your teeth are like a flock of sheep that are even shorn, which came up from the washing; whereof every one bear twins, and none is barren among them.
+4:3 Your lips are like a thread of scarlet, and your speech is comely: your temples are like a piece of a pomegranate within your locks.
+4:4 Your neck is like the tower of David built for an armory, where on there hang a thousand bucklers, all shields of mighty men.
+4:5 Your two breasts are like two young roes that are twins, which feed among the lilies.
+4:6 Until the day break, and the shadows flee away, I will get me to the mountain of myrrh, and to the hill of frankincense.
+4:7 You are all fair, my love; there is no spot in you.
+4:8 Come with me from Lebanon, my spouse, with me from Lebanon: look from the top of Amana, from the top of Shenir and Hermon, from the lions' dens, from the mountains of the leopards.
+4:9 You have ravished my heart, my sister, my spouse; you have ravished my heart with one of your eyes, with one chain of your neck.
+4:10 How fair is your love, my sister, my spouse! how much better is your love than wine! and the smell of your ointments than all spices!
+4:11 Your lips, O my spouse, drop as the honeycomb: honey and milk are under your tongue; and the smell of your garments is like the smell of Lebanon.
+4:12 A garden enclosed is my sister, my spouse; a spring shut up, a fountain sealed.
+4:13 Your plants are an orchard of pomegranates, with pleasant fruits; camphire, with spikenard,
+4:14 Spikenard and saffron; calamus and cinnamon, with all trees of frankincense; myrrh and aloes, with all the chief spices:
+4:15 A fountain of gardens, a well of living waters, and streams from Lebanon.
+4:16 Awake, O north wind; and come, you south; blow on my garden, that the spices thereof may flow out. Let my beloved come into his garden, and eat his pleasant fruits.
+ 	
+AKJV
+ 	 	 	 	
+Song of Solomon 5
+ 	 	 	 	
+AV 1611
+
+5:1 I am come into my garden, my sister, my spouse: I have gathered my myrrh with my spice; I have eaten my honeycomb with my honey; I have drunk my wine with my milk: eat, O friends; drink, yes, drink abundantly, O beloved.
+5:2 I sleep, but my heart wakes: it is the voice of my beloved that knocks, saying, Open to me, my sister, my love, my dove, my undefiled: for my head is filled with dew, and my locks with the drops of the night.
+5:3 I have put off my coat; how shall I put it on? I have washed my feet; how shall I defile them?
+5:4 My beloved put in his hand by the hole of the door, and my bowels were moved for him.
+5:5 I rose up to open to my beloved; and my hands dropped with myrrh, and my fingers with sweet smelling myrrh, on the handles of the lock.
+5:6 I opened to my beloved; but my beloved had withdrawn himself, and was gone: my soul failed when he spoke: I sought him, but I could not find him; I called him, but he gave me no answer.
+5:7 The watchmen that went about the city found me, they smote me, they wounded me; the keepers of the walls took away my veil from me.
+5:8 I charge you, O daughters of Jerusalem, if you find my beloved, that you tell him, that I am sick of love.
+5:9 What is your beloved more than another beloved, O you fairest among women? what is your beloved more than another beloved, that you do so charge us?
+5:10 My beloved is white and ruddy, the most chief among ten thousand.
+5:11 His head is as the most fine gold, his locks are bushy, and black as a raven.
+5:12 His eyes are as the eyes of doves by the rivers of waters, washed with milk, and fitly set.
+5:13 His cheeks are as a bed of spices, as sweet flowers: his lips like lilies, dropping sweet smelling myrrh.
+5:14 His hands are as gold rings set with the beryl: his belly is as bright ivory overlaid with sapphires.
+5:15 His legs are as pillars of marble, set on sockets of fine gold: his countenance is as Lebanon, excellent as the cedars.
+5:16 His mouth is most sweet: yes, he is altogether lovely. This is my beloved, and this is my friend, O daughters of Jerusalem.
+ 	
+AKJV
+ 	 	 	 	
+Song of Solomon 6
+ 	 	 	 	
+AV 1611
+
+6:1 Where is your beloved gone, O you fairest among women? where is your beloved turned aside? that we may seek him with you.
+6:2 My beloved is gone down into his garden, to the beds of spices, to feed in the gardens, and to gather lilies.
+6:3 I am my beloved's, and my beloved is mine: he feeds among the lilies.
+6:4 You are beautiful, O my love, as Tirzah, comely as Jerusalem, terrible as an army with banners.
+6:5 Turn away your eyes from me, for they have overcome me: your hair is as a flock of goats that appear from Gilead.
+6:6 Your teeth are as a flock of sheep which go up from the washing, whereof every one bears twins, and there is not one barren among them.
+6:7 As a piece of a pomegranate are your temples within your locks.
+6:8 There are three score queens, and fourscore concubines, and virgins without number.
+6:9 My dove, my undefiled is but one; she is the only one of her mother, she is the choice one of her that bore her. The daughters saw her, and blessed her; yes, the queens and the concubines, and they praised her.
+6:10 Who is she that looks forth as the morning, fair as the moon, clear as the sun, and terrible as an army with banners?
+6:11 I went down into the garden of nuts to see the fruits of the valley, and to see whether the vine flourished and the pomegranates budded.
+6:12 Or ever I was aware, my soul made me like the chariots of Amminadib.
+6:13 Return, return, O Shulamite; return, return, that we may look on you. What will you see in the Shulamite? As it were the company of two armies.
+ 	
+AKJV
+ 	 	 	 	
+Song of Solomon 7
+ 	 	 	 	
+AV 1611
+
+7:1 How beautiful are your feet with shoes, O prince's daughter! the joints of your thighs are like jewels, the work of the hands of a cunning workman.
+7:2 Your navel is like a round goblet, which wants not liquor: your belly is like an heap of wheat set about with lilies.
+7:3 Your two breasts are like two young roes that are twins.
+7:4 Your neck is as a tower of ivory; your eyes like the fish pools in Heshbon, by the gate of Bathrabbim: your nose is as the tower of Lebanon which looks toward Damascus.
+7:5 Your head on you is like Carmel, and the hair of your head like purple; the king is held in the galleries.
+7:6 How fair and how pleasant are you, O love, for delights!
+7:7 This your stature is like to a palm tree, and your breasts to clusters of grapes.
+7:8 I said, I will go up to the palm tree, I will take hold of the boughs thereof: now also your breasts shall be as clusters of the vine, and the smell of your nose like apples;
+7:9 And the roof of your mouth like the best wine for my beloved, that goes down sweetly, causing the lips of those that are asleep to speak.
+7:10 I am my beloved's, and his desire is toward me.
+7:11 Come, my beloved, let us go forth into the field; let us lodge in the villages.
+7:12 Let us get up early to the vineyards; let us see if the vine flourish, whether the tender grape appear, and the pomegranates bud forth: there will I give you my loves.
+7:13 The mandrakes give a smell, and at our gates are all manner of pleasant fruits, new and old, which I have laid up for you, O my beloved.
+ 	
+AKJV
+ 	 	 	 	
+Song of Solomon 8
+ 	 	 	 	
+AV 1611
+
+8:1 O that you were as my brother, that sucked the breasts of my mother!  when I should find you without, I would kiss you; yes, I should not be despised.
+8:2 I would lead you, and bring you into my mother's house, who would instruct me: I would cause you to drink of spiced wine of the juice of my pomegranate.
+8:3 His left hand should be under my head, and his right hand should embrace me.
+8:4 I charge you, O daughters of Jerusalem, that you stir not up, nor awake my love, until he please.
+8:5 Who is this that comes up from the wilderness, leaning on her beloved? I raised you up under the apple tree: there your mother brought you forth: there she brought you forth that bore you.
+8:6 Set me as a seal on your heart, as a seal on your arm: for love is strong as death; jealousy is cruel as the grave: the coals thereof are coals of fire, which has a most vehement flame.
+8:7 Many waters cannot quench love, neither can the floods drown it: if a man would give all the substance of his house for love, it would utterly be contemned.
+8:8 We have a little sister, and she has no breasts: what shall we do for our sister in the day when she shall be spoken for?
+8:9 If she be a wall, we will build on her a palace of silver: and if she be a door, we will enclose her with boards of cedar.
+8:10 I am a wall, and my breasts like towers: then was I in his eyes as one that found favor.
+8:11 Solomon had a vineyard at Baalhamon; he let out the vineyard to keepers; every one for the fruit thereof was to bring a thousand pieces of silver.
+8:12 My vineyard, which is mine, is before me: you, O Solomon, must have a thousand, and those that keep the fruit thereof two hundred.
+8:13 You that dwell in the gardens, the companions listen to your voice: cause me to hear it.
+8:14 Make haste, my beloved, and be you like to a roe or to a young hart on the mountains of spices.`
+
+
 var book_of_isaiah = `
 1:1 The vision of Isaiah the son of Amoz, which he saw concerning Judah and Jerusalem in the days of Uzziah, Jotham, Ahaz, and Hezekiah, kings of Judah.
 1:2 Hear, O heavens, and give ear, O earth: for the LORD has spoken, I have nourished and brought up children, and they have rebelled against me.
@@ -38272,6 +38440,1460 @@ AV 1611
 12:11 And from the time that the daily sacrifice shall be taken away, and the abomination that makes desolate set up, there shall be a thousand two hundred and ninety days.
 12:12 Blessed is he that waits, and comes to the thousand three hundred and five and thirty days.
 12:13 But go you your way till the end be: for you shall rest, and stand in your lot at the end of the days.`
+
+var book_of_hosea = `
+1:1 The word of the LORD that came to Hosea, the son of Beeri, in the days of Uzziah, Jotham, Ahaz, and Hezekiah, kings of Judah, and in the days of Jeroboam the son of Joash, king of Israel.
+1:2 The beginning of the word of the LORD by Hosea. And the LORD said to Hosea, Go, take to you a wife of prostitutions and children of prostitutions: for the land has committed great prostitution, departing from the LORD.
+1:3 So he went and took Gomer the daughter of Diblaim; which conceived, and bore him a son.
+1:4 And the LORD said to him, Call his name Jezreel; for yet a little while, and I will avenge the blood of Jezreel on the house of Jehu, and will cause to cease the kingdom of the house of Israel.
+1:5 And it shall come to pass at that day, that I will break the bow of Israel, in the valley of Jezreel.
+1:6 And she conceived again, and bore a daughter. And God said to him, Call her name Loruhamah: for I will no more have mercy on the house of Israel; but I will utterly take them away.
+1:7 But I will have mercy on the house of Judah, and will save them by the LORD their God, and will not save them by bow, nor by sword, nor by battle, by horses, nor by horsemen.
+1:8 Now when she had weaned Loruhamah, she conceived, and bore a son.
+1:9 Then said God, Call his name Loammi: for you are not my people, and I will not be your God.
+1:10 Yet the number of the children of Israel shall be as the sand of the sea, which cannot be measured nor numbered; and it shall come to pass, that in the place where it was said to them, You are not my people, there it shall be said to them, You are the sons of the living God.
+1:11 Then shall the children of Judah and the children of Israel be gathered together, and appoint themselves one head, and they shall come up out of the land: for great shall be the day of Jezreel.
+ 	
+AKJV
+ 	 	 	 	
+Hosea 2
+ 	 	 	 	
+AV 1611
+
+2:1 Say you to your brothers, Ammi; and to your sisters, Ruhamah.
+2:2 Plead with your mother, plead: for she is not my wife, neither am I her husband: let her therefore put away her prostitutions out of her sight, and her adulteries from between her breasts;
+2:3 Lest I strip her naked, and set her as in the day that she was born, and make her as a wilderness, and set her like a dry land, and slay her with thirst.
+2:4 And I will not have mercy on her children; for they be the children of prostitutions.
+2:5 For their mother has played the harlot: she that conceived them has done shamefully: for she said, I will go after my lovers, that give me my bread and my water, my wool and my flax, my oil and my drink.
+2:6 Therefore, behold, I will hedge up your way with thorns, and make a wall, that she shall not find her paths.
+2:7 And she shall follow after her lovers, but she shall not overtake them; and she shall seek them, but shall not find them: then shall she say, I will go and return to my first husband; for then was it better with me than now.
+2:8 For she did not know that I gave her corn, and wine, and oil, and multiplied her silver and gold, which they prepared for Baal.
+2:9 Therefore will I return, and take away my corn in the time thereof, and my wine in the season thereof, and will recover my wool and my flax given to cover her nakedness.
+2:10 And now will I discover her lewdness in the sight of her lovers, and none shall deliver her out of my hand.
+2:11 I will also cause all her mirth to cease, her feast days, her new moons, and her sabbaths, and all her solemn feasts.
+2:12 And I will destroy her vines and her fig trees, whereof she has said, These are my rewards that my lovers have given me: and I will make them a forest, and the beasts of the field shall eat them.
+2:13 And I will visit on her the days of Baalim, wherein she burned incense to them, and she decked herself with her earrings and her jewels, and she went after her lovers, and forgot me, said the LORD.
+2:14 Therefore, behold, I will allure her, and bring her into the wilderness, and speak comfortably to her.
+2:15 And I will give her her vineyards from there, and the valley of Achor for a door of hope: and she shall sing there, as in the days of her youth, and as in the day when she came up out of the land of Egypt.
+2:16 And it shall be at that day, said the LORD, that you shall call me Ishi; and shall call me no more Baali.
+2:17 For I will take away the names of Baalim out of her mouth, and they shall no more be remembered by their name.
+2:18 And in that day will I make a covenant for them with the beasts of the field and with the fowls of heaven, and with the creeping things of the ground: and I will break the bow and the sword and the battle out of the earth, and will make them to lie down safely.
+2:19 And I will betroth you to me for ever; yes, I will betroth you to me in righteousness, and in judgment, and in loving kindness, and in mercies.
+2:20 I will even betroth you to me in faithfulness: and you shall know the LORD.
+2:21 And it shall come to pass in that day, I will hear, said the LORD, I will hear the heavens, and they shall hear the earth;
+2:22 And the earth shall hear the corn, and the wine, and the oil; and they shall hear Jezreel.
+2:23 And I will sow her to me in the earth; and I will have mercy on her that had not obtained mercy; and I will say to them which were not my people, You are my people; and they shall say, You are my God.
+ 	
+AKJV
+ 	 	 	 	
+Hosea 3
+ 	 	 	 	
+AV 1611
+
+3:1 Then said the LORD to me, Go yet, love a woman beloved of her friend, yet an adulteress, according to the love of the LORD toward the children of Israel, who look to other gods, and love flagons of wine.
+3:2 So I bought her to me for fifteen pieces of silver, and for an homer of barley, and an half homer of barley:
+3:3 And I said to her, You shall abide for me many days; you shall not play the harlot, and you shall not be for another man: so will I also be for you.
+3:4 For the children of Israel shall abide many days without a king, and without a prince, and without a sacrifice, and without an image, and without an ephod, and without teraphim:
+3:5 Afterward shall the children of Israel return, and seek the LORD their God, and David their king; and shall fear the LORD and his goodness in the latter days.
+ 	
+AKJV
+ 	 	 	 	
+Hosea 4
+ 	 	 	 	
+AV 1611
+
+4:1 Hear the word of the LORD, you children of Israel: for the LORD has a controversy with the inhabitants of the land, because there is no truth, nor mercy, nor knowledge of God in the land.
+4:2 By swearing, and lying, and killing, and stealing, and committing adultery, they break out, and blood touches blood.
+4:3 Therefore shall the land mourn, and every one that dwells therein shall languish, with the beasts of the field, and with the fowls of heaven; yes, the fishes of the sea also shall be taken away.
+4:4 Yet let no man strive, nor reprove another: for your people are as they that strive with the priest.
+4:5 Therefore shall you fall in the day, and the prophet also shall fall with you in the night, and I will destroy your mother.
+4:6 My people are destroyed for lack of knowledge: because you have rejected knowledge, I will also reject you, that you shall be no priest to me: seeing you have forgotten the law of your God, I will also forget your children.
+4:7 As they were increased, so they sinned against me: therefore will I change their glory into shame.
+4:8 They eat up the sin of my people, and they set their heart on their iniquity.
+4:9 And there shall be, like people, like priest: and I will punish them for their ways, and reward them their doings.
+4:10 For they shall eat, and not have enough: they shall commit prostitution, and shall not increase: because they have left off to take heed to the LORD.
+4:11 Prostitution and wine and new wine take away the heart.
+4:12 My people ask counsel at their stocks, and their staff declares to them: for the spirit of prostitutions has caused them to err, and they have gone a whoring from under their God.
+4:13 They sacrifice on the tops of the mountains, and burn incense on the hills, under oaks and poplars and elms, because the shadow thereof is good: therefore your daughters shall commit prostitution, and your spouses shall commit adultery.
+4:14 I will not punish your daughters when they commit prostitution, nor your spouses when they commit adultery: for themselves are separated with whores, and they sacrifice with harlots: therefore the people that does not understand shall fall.
+4:15 Though you, Israel, play the harlot, yet let not Judah offend; and come not you to Gilgal, neither go you up to Bethaven, nor swear, The LORD lives.
+4:16 For Israel slides back as a backsliding heifer: now the LORD will feed them as a lamb in a large place.
+4:17 Ephraim is joined to idols: let him alone.
+4:18 Their drink is sour: they have committed prostitution continually: her rulers with shame do love, Give you.
+4:19 The wind has bound her up in her wings, and they shall be ashamed because of their sacrifices.
+ 	
+AKJV
+ 	 	 	 	
+Hosea 5
+ 	 	 	 	
+AV 1611
+
+5:1 Hear you this, O priests; and listen, you house of Israel; and give you ear, O house of the king; for judgment is toward you, because you have been a snare on Mizpah, and a net spread on Tabor.
+5:2 And the rebels are profound to make slaughter, though I have been a rebuker of them all.
+5:3 I know Ephraim, and Israel is not hid from me: for now, O Ephraim, you commit prostitution, and Israel is defiled.
+5:4 They will not frame their doings to turn to their God: for the spirit of prostitutions is in the middle of them, and they have not known the LORD.
+5:5 And the pride of Israel does testify to his face: therefore shall Israel and Ephraim fall in their iniquity: Judah also shall fall with them.
+5:6 They shall go with their flocks and with their herds to seek the LORD; but they shall not find him; he has withdrawn himself from them.
+5:7 They have dealt treacherously against the LORD: for they have begotten strange children: now shall a month devour them with their portions.
+5:8 Blow you the cornet in Gibeah, and the trumpet in Ramah: cry aloud at Bethaven, after you, O Benjamin.
+5:9 Ephraim shall be desolate in the day of rebuke: among the tribes of Israel have I made known that which shall surely be.
+5:10 The princes of Judah were like them that remove the bound: therefore I will pour out my wrath on them like water.
+5:11 Ephraim is oppressed and broken in judgment, because he willingly walked after the commandment.
+5:12 Therefore will I be to Ephraim as a moth, and to the house of Judah as rottenness.
+5:13 When Ephraim saw his sickness, and Judah saw his wound, then went Ephraim to the Assyrian, and sent to king Jareb: yet could he not heal you, nor cure you of your wound.
+5:14 For I will be to Ephraim as a lion, and as a young lion to the house of Judah: I, even I, will tear and go away; I will take away, and none shall rescue him.
+5:15 I will go and return to my place, till they acknowledge their offense, and seek my face: in their affliction they will seek me early.
+ 	
+AKJV
+ 	 	 	 	
+Hosea 6
+ 	 	 	 	
+AV 1611
+
+6:1 Come, and let us return to the LORD: for he has torn, and he will heal us; he has smitten, and he will bind us up.
+6:2 After two days will he revive us: in the third day he will raise us up, and we shall live in his sight.
+6:3 Then shall we know, if we follow on to know the LORD: his going forth is prepared as the morning; and he shall come to us as the rain, as the latter and former rain to the earth.
+6:4 O Ephraim, what shall I do to you? O Judah, what shall I do to you? for your goodness is as a morning cloud, and as the early dew it goes away.
+6:5 Therefore have I hewed them by the prophets; I have slain them by the words of my mouth: and your judgments are as the light that goes forth.
+6:6 For I desired mercy, and not sacrifice; and the knowledge of God more than burnt offerings.
+6:7 But they like men have transgressed the covenant: there have they dealt treacherously against me.
+6:8 Gilead is a city of them that work iniquity, and is polluted with blood.
+6:9 And as troops of robbers wait for a man, so the company of priests murder in the way by consent: for they commit lewdness.
+6:10 I have seen an horrible thing in the house of Israel: there is the prostitution of Ephraim, Israel is defiled.
+6:11 Also, O Judah, he has set an harvest for you, when I returned the captivity of my people.
+ 	
+AKJV
+ 	 	 	 	
+Hosea 7
+ 	 	 	 	
+AV 1611
+
+7:1 When I would have healed Israel, then the iniquity of Ephraim was discovered, and the wickedness of Samaria: for they commit falsehood; and the thief comes in, and the troop of robbers spoils without.
+7:2 And they consider not in their hearts that I remember all their wickedness: now their own doings have beset them about; they are before my face.
+7:3 They make the king glad with their wickedness, and the princes with their lies.
+7:4 They are all adulterers, as an oven heated by the baker, who ceases from raising after he has kneaded the dough, until it be leavened.
+7:5 In the day of our king the princes have made him sick with bottles of wine; he stretched out his hand with scorners.
+7:6 For they have made ready their heart like an oven, whiles they lie in wait: their baker sleeps all the night; in the morning it burns as a flaming fire.
+7:7 They are all hot as an oven, and have devoured their judges; all their kings are fallen: there is none among them that calls to me.
+7:8 Ephraim, he has mixed himself among the people; Ephraim is a cake not turned.
+7:9 Strangers have devoured his strength, and he knows it not: yes, gray hairs are here and there on him, yet he knows not.
+7:10 And the pride of Israel testifies to his face: and they do not return to the LORD their God, nor seek him for all this.
+7:11 Ephraim also is like a silly dove without heart: they call to Egypt, they go to Assyria.
+7:12 When they shall go, I will spread my net on them; I will bring them down as the fowls of the heaven; I will chastise them, as their congregation has heard.
+7:13 Woe to them! for they have fled from me: destruction to them! because they have transgressed against me: though I have redeemed them, yet they have spoken lies against me.
+7:14 And they have not cried to me with their heart, when they howled on their beds: they assemble themselves for corn and wine, and they rebel against me.
+7:15 Though I have bound and strengthened their arms, yet do they imagine mischief against me.
+7:16 They return, but not to the most High: they are like a deceitful bow: their princes shall fall by the sword for the rage of their tongue: this shall be their derision in the land of Egypt.
+ 	
+AKJV
+ 	 	 	 	
+Hosea 8
+ 	 	 	 	
+AV 1611
+
+8:1 Set the trumpet to your mouth. He shall come as an eagle against the house of the LORD, because they have transgressed my covenant, and trespassed against my law.
+8:2 Israel shall cry to me, My God, we know you.
+8:3 Israel has cast off the thing that is good: the enemy shall pursue him.
+8:4 They have set up kings, but not by me: they have made princes, and I knew it not: of their silver and their gold have they made them idols, that they may be cut off.
+8:5 Your calf, O Samaria, has cast you off; my anger is kindled against them: how long will it be ere they attain to innocence?
+8:6 For from Israel was it also: the workman made it; therefore it is not God: but the calf of Samaria shall be broken in pieces.
+8:7 For they have sown the wind, and they shall reap the whirlwind: it has no stalk; the bud shall yield no meal: if so be it yield, the strangers shall swallow it up.
+8:8 Israel is swallowed up: now shall they be among the Gentiles as a vessel wherein is no pleasure.
+8:9 For they are gone up to Assyria, a wild ass alone by himself: Ephraim has hired lovers.
+8:10 Yes, though they have hired among the nations, now will I gather them, and they shall sorrow a little for the burden of the king of princes.
+8:11 Because Ephraim has made many altars to sin, altars shall be to him to sin.
+8:12 I have written to him the great things of my law, but they were counted as a strange thing.
+8:13 They sacrifice flesh for the sacrifices of my offerings, and eat it; but the LORD accepts them not; now will he remember their iniquity, and visit their sins: they shall return to Egypt.
+8:14 For Israel has forgotten his Maker, and builds temples; and Judah has multiplied fenced cities: but I will send a fire on his cities, and it shall devour the palaces thereof.
+ 	
+AKJV
+ 	 	 	 	
+Hosea 9
+ 	 	 	 	
+AV 1611
+
+9:1 Rejoice not, O Israel, for joy, as other people: for you have gone a whoring from your God, you have loved a reward on every corn floor.
+9:2 The floor and the wine press shall not feed them, and the new wine shall fail in her.
+9:3 They shall not dwell in the LORD's land; but Ephraim shall return to Egypt, and they shall eat unclean things in Assyria.
+9:4 They shall not offer wine offerings to the LORD, neither shall they be pleasing to him: their sacrifices shall be to them as the bread of mourners; all that eat thereof shall be polluted: for their bread for their soul shall not come into the house of the LORD.
+9:5 What will you do in the solemn day, and in the day of the feast of the LORD?
+9:6 For, see, they are gone because of destruction: Egypt shall gather them up, Memphis shall bury them: the pleasant places for their silver, nettles shall possess them: thorns shall be in their tabernacles.
+9:7 The days of visitation are come, the days of recompense are come; Israel shall know it: the prophet is a fool, the spiritual man is mad, for the multitude of your iniquity, and the great hatred.
+9:8 The watchman of Ephraim was with my God: but the prophet is a snare of a fowler in all his ways, and hatred in the house of his God.
+9:9 They have deeply corrupted themselves, as in the days of Gibeah: therefore he will remember their iniquity, he will visit their sins.
+9:10 I found Israel like grapes in the wilderness; I saw your fathers as the first ripe in the fig tree at her first time: but they went to Baalpeor, and separated themselves to that shame; and their abominations were according as they loved.
+9:11 As for Ephraim, their glory shall fly away like a bird, from the birth, and from the womb, and from the conception.
+9:12 Though they bring up their children, yet will I bereave them, that there shall not be a man left: yes, woe also to them when I depart from them!
+9:13 Ephraim, as I saw Tyrus, is planted in a pleasant place: but Ephraim shall bring forth his children to the murderer.
+9:14 Give them, O LORD: what will you give? give them a miscarrying womb and dry breasts.
+9:15 All their wickedness is in Gilgal: for there I hated them: for the wickedness of their doings I will drive them out of my house, I will love them no more: all their princes are rebels.
+9:16 Ephraim is smitten, their root is dried up, they shall bear no fruit: yes, though they bring forth, yet will I slay even the beloved fruit of their womb.
+9:17 My God will cast them away, because they did not listen to him: and they shall be wanderers among the nations.
+ 	
+AKJV
+ 	 	 	 	
+Hosea 10
+ 	 	 	 	
+AV 1611
+
+10:1 Israel is an empty vine, he brings forth fruit to himself: according to the multitude of his fruit he has increased the altars; according to the goodness of his land they have made goodly images.
+10:2 Their heart is divided; now shall they be found faulty: he shall break down their altars, he shall spoil their images.
+10:3 For now they shall say, We have no king, because we feared not the LORD; what then should a king do to us?
+10:4 They have spoken words, swearing falsely in making a covenant: thus judgment springs up as hemlock in the furrows of the field.
+10:5 The inhabitants of Samaria shall fear because of the calves of Bethaven: for the people thereof shall mourn over it, and the priests thereof that rejoiced on it, for the glory thereof, because it is departed from it.
+10:6 It shall be also carried to Assyria for a present to king Jareb: Ephraim shall receive shame, and Israel shall be ashamed of his own counsel.
+10:7 As for Samaria, her king is cut off as the foam on the water.
+10:8 The high places also of Aven, the sin of Israel, shall be destroyed: the thorn and the thistle shall come up on their altars; and they shall say to the mountains, Cover us; and to the hills, Fall on us.
+10:9 O Israel, you have sinned from the days of Gibeah: there they stood: the battle in Gibeah against the children of iniquity did not overtake them.
+10:10 It is in my desire that I should chastise them; and the people shall be gathered against them, when they shall bind themselves in their two furrows.
+10:11 And Ephraim is as an heifer that is taught, and loves to tread out the corn; but I passed over on her fair neck: I will make Ephraim to ride; Judah shall plow, and Jacob shall break his clods.
+10:12 Sow to yourselves in righteousness, reap in mercy; break up your fallow ground: for it is time to seek the LORD, till he come and rain righteousness on you.
+10:13 You have plowed wickedness, you have reaped iniquity; you have eaten the fruit of lies: because you did trust in your way, in the multitude of your mighty men.
+10:14 Therefore shall a tumult arise among your people, and all your fortresses shall be spoiled, as Shalman spoiled Betharbel in the day of battle: the mother was dashed in pieces on her children.
+10:15 So shall Bethel do to you because of your great wickedness: in a morning shall the king of Israel utterly be cut off.
+ 	
+AKJV
+ 	 	 	 	
+Hosea 11
+ 	 	 	 	
+AV 1611
+
+11:1 When Israel was a child, then I loved him, and called my son out of Egypt.
+11:2 As they called them, so they went from them: they sacrificed to Baalim, and burned incense to graven images.
+11:3 I taught Ephraim also to go, taking them by their arms; but they knew not that I healed them.
+11:4 I drew them with cords of a man, with bands of love: and I was to them as they that take off the yoke on their jaws, and I laid meat to them.
+11:5 He shall not return into the land of Egypt, and the Assyrian shall be his king, because they refused to return.
+11:6 And the sword shall abide on his cities, and shall consume his branches, and devour them, because of their own counsels.
+11:7 And my people are bent to backsliding from me: though they called them to the most High, none at all would exalt him.
+11:8 How shall I give you up, Ephraim? how shall I deliver you, Israel?  how shall I make you as Admah? how shall I set you as Zeboim? my heart is turned within me, my repentings are kindled together.
+11:9 I will not execute the fierceness of my anger, I will not return to destroy Ephraim: for I am God, and not man; the Holy One in the middle of you: and I will not enter into the city.
+11:10 They shall walk after the LORD: he shall roar like a lion: when he shall roar, then the children shall tremble from the west.
+11:11 They shall tremble as a bird out of Egypt, and as a dove out of the land of Assyria: and I will place them in their houses, said the LORD.
+11:12 Ephraim compasses me about with lies, and the house of Israel with deceit: but Judah yet rules with God, and is faithful with the saints.
+ 	
+AKJV
+ 	 	 	 	
+Hosea 12
+ 	 	 	 	
+AV 1611
+
+12:1 Ephraim feeds on wind, and follows after the east wind: he daily increases lies and desolation; and they do make a covenant with the Assyrians, and oil is carried into Egypt.
+12:2 The LORD has also a controversy with Judah, and will punish Jacob according to his ways; according to his doings will he recompense him.
+12:3 He took his brother by the heel in the womb, and by his strength he had power with God:
+12:4 Yes, he had power over the angel, and prevailed: he wept, and made supplication to him: he found him in Bethel, and there he spoke with us;
+12:5 Even the LORD God of hosts; the LORD is his memorial.
+12:6 Therefore turn you to your God: keep mercy and judgment and wait on your God continually.
+12:7 He is a merchant, the balances of deceit are in his hand: he loves to oppress.
+12:8 And Ephraim said, Yet I am become rich, I have found me out substance: in all my labors they shall find none iniquity in me that were sin.
+12:9 And I that am the LORD your God from the land of Egypt will yet make you to dwell in tabernacles, as in the days of the solemn feast.
+12:10 I have also spoken by the prophets, and I have multiplied visions, and used similitudes, by the ministry of the prophets.
+12:11 Is there iniquity in Gilead? surely they are vanity: they sacrifice bullocks in Gilgal; yes, their altars are as heaps in the furrows of the fields.
+12:12 And Jacob fled into the country of Syria, and Israel served for a wife, and for a wife he kept sheep.
+12:13 And by a prophet the LORD brought Israel out of Egypt, and by a prophet was he preserved.
+12:14 Ephraim provoked him to anger most bitterly: therefore shall he leave his blood on him, and his reproach shall his LORD return to him.
+ 	
+AKJV
+ 	 	 	 	
+Hosea 13
+ 	 	 	 	
+AV 1611
+
+13:1 When Ephraim spoke trembling, he exalted himself in Israel; but when he offended in Baal, he died.
+13:2 And now they sin more and more, and have made them molten images of their silver, and idols according to their own understanding, all of it the work of the craftsmen: they say of them, Let the men that sacrifice kiss the calves.
+13:3 Therefore they shall be as the morning cloud and as the early dew that passes away, as the chaff that is driven with the whirlwind out of the floor, and as the smoke out of the chimney.
+13:4 Yet I am the LORD your God from the land of Egypt, and you shall know no god but me: for there is no savior beside me.
+13:5 I did know you in the wilderness, in the land of great drought.
+13:6 According to their pasture, so were they filled; they were filled, and their heart was exalted; therefore have they forgotten me.
+13:7 Therefore I will be to them as a lion: as a leopard by the way will I observe them:
+13:8 I will meet them as a bear that is bereaved of her whelps, and will rend the lobe of their heart, and there will I devour them like a lion: the wild beast shall tear them.
+13:9 O Israel, you have destroyed yourself; but in me is your help.
+13:10 I will be your king: where is any other that may save you in all your cities? and your judges of whom you said, Give me a king and princes?
+13:11 I gave you a king in my anger, and took him away in my wrath.
+13:12 The iniquity of Ephraim is bound up; his sin is hid.
+13:13 The sorrows of a travailing woman shall come on him: he is an unwise son; for he should not stay long in the place of the breaking forth of children.
+13:14 I will ransom them from the power of the grave; I will redeem them from death: O death, I will be your plagues; O grave, I will be your destruction: repentance shall be hid from my eyes.
+13:15 Though he be fruitful among his brothers, an east wind shall come, the wind of the LORD shall come up from the wilderness, and his spring shall become dry, and his fountain shall be dried up: he shall spoil the treasure of all pleasant vessels.
+13:16 Samaria shall become desolate; for she has rebelled against her God: they shall fall by the sword: their infants shall be dashed in pieces, and their women with child shall be ripped up.
+ 	
+AKJV
+ 	 	 	 	
+Hosea 14
+ 	 	 	 	
+AV 1611
+
+14:1 O Israel, return to the LORD your God; for you have fallen by your iniquity.
+14:2 Take with you words, and turn to the LORD: say to him, Take away all iniquity, and receive us graciously: so will we render the calves of our lips.
+14:3 Asshur shall not save us; we will not ride on horses: neither will we say any more to the work of our hands, You are our gods: for in you the fatherless finds mercy.
+14:4 I will heal their backsliding, I will love them freely: for my anger is turned away from him.
+14:5 I will be as the dew to Israel: he shall grow as the lily, and cast forth his roots as Lebanon.
+14:6 His branches shall spread, and his beauty shall be as the olive tree, and his smell as Lebanon.
+14:7 They that dwell under his shadow shall return; they shall revive as the corn, and grow as the vine: the scent thereof shall be as the wine of Lebanon.
+14:8 Ephraim shall say, What have I to do any more with idols? I have heard him, and observed him: I am like a green fir tree. From me is your fruit found.
+14:9 Who is wise, and he shall understand these things? prudent, and he shall know them? for the ways of the LORD are right, and the just shall walk in them: but the transgressors shall fall therein.`
+
+var book_of_joel = `
+1:1 The word of the LORD that came to Joel the son of Pethuel.
+1:2 Hear this, you old men, and give ear, all you inhabitants of the land.  Has this been in your days, or even in the days of your fathers?
+1:3 Tell you your children of it, and let your children tell their children, and their children another generation.
+1:4 That which the palmerworm has left has the locust eaten; and that which the locust has left has the cankerworm eaten; and that which the cankerworm has left has the caterpillar eaten.
+1:5 Awake, you drunkards, and weep; and howl, all you drinkers of wine, because of the new wine; for it is cut off from your mouth.
+1:6 For a nation is come up on my land, strong, and without number, whose teeth are the teeth of a lion, and he has the cheek teeth of a great lion.
+1:7 He has laid my vine waste, and barked my fig tree: he has made it clean bore, and cast it away; the branches thereof are made white.
+1:8 Lament like a virgin girded with sackcloth for the husband of her youth.
+1:9 The meat offering and the drink offering is cut off from the house of the LORD; the priests, the LORD's ministers, mourn.
+1:10 The field is wasted, the land mourns; for the corn is wasted: the new wine is dried up, the oil languishes.
+1:11 Be you ashamed, O you farmers; howl, O you vinedressers, for the wheat and for the barley; because the harvest of the field is perished.
+1:12 The vine is dried up, and the fig tree languishes; the pomegranate tree, the palm tree also, and the apple tree, even all the trees of the field, are withered: because joy is withered away from the sons of men.
+1:13 Gird yourselves, and lament, you priests: howl, you ministers of the altar: come, lie all night in sackcloth, you ministers of my God: for the meat offering and the drink offering is withheld from the house of your God.
+1:14 Sanctify you a fast, call a solemn assembly, gather the elders and all the inhabitants of the land into the house of the LORD your God, and cry to the LORD,
+1:15 Alas for the day! for the day of the LORD is at hand, and as a destruction from the Almighty shall it come.
+1:16 Is not the meat cut off before our eyes, yes, joy and gladness from the house of our God?
+1:17 The seed is rotten under their clods, the garners are laid desolate, the barns are broken down; for the corn is withered.
+1:18 How do the beasts groan! the herds of cattle are perplexed, because they have no pasture; yes, the flocks of sheep are made desolate.
+1:19 O LORD, to you will I cry: for the fire has devoured the pastures of the wilderness, and the flame has burned all the trees of the field.
+1:20 The beasts of the field cry also to you: for the rivers of waters are dried up, and the fire has devoured the pastures of the wilderness.
+ 	
+AKJV
+ 	 	 	 	
+Joel 2
+ 	 	 	 	
+AV 1611
+
+2:1 Blow you the trumpet in Zion, and sound an alarm in my holy mountain: let all the inhabitants of the land tremble: for the day of the LORD comes, for it is near at hand;
+2:2 A day of darkness and of gloominess, a day of clouds and of thick darkness, as the morning spread on the mountains: a great people and a strong; there has not been ever the like, neither shall be any more after it, even to the years of many generations.
+2:3 A fire devours before them; and behind them a flame burns: the land is as the garden of Eden before them, and behind them a desolate wilderness; yes, and nothing shall escape them.
+2:4 The appearance of them is as the appearance of horses; and as horsemen, so shall they run.
+2:5 Like the noise of chariots on the tops of mountains shall they leap, like the noise of a flame of fire that devours the stubble, as a strong people set in battle array.
+2:6 Before their face the people shall be much pained: all faces shall gather blackness.
+2:7 They shall run like mighty men; they shall climb the wall like men of war; and they shall march every one on his ways, and they shall not break their ranks:
+2:8 Neither shall one thrust another; they shall walk every one in his path: and when they fall on the sword, they shall not be wounded.
+2:9 They shall run to and fro in the city; they shall run on the wall, they shall climb up on the houses; they shall enter in at the windows like a thief.
+2:10 The earth shall quake before them; the heavens shall tremble: the sun and the moon shall be dark, and the stars shall withdraw their shining:
+2:11 And the LORD shall utter his voice before his army: for his camp is very great: for he is strong that executes his word: for the day of the LORD is great and very terrible; and who can abide it?
+2:12 Therefore also now, said the LORD, turn you even to me with all your heart, and with fasting, and with weeping, and with mourning:
+2:13 And rend your heart, and not your garments, and turn to the LORD your God: for he is gracious and merciful, slow to anger, and of great kindness, and repents him of the evil.
+2:14 Who knows if he will return and repent, and leave a blessing behind him; even a meat offering and a drink offering to the LORD your God?
+2:15 Blow the trumpet in Zion, sanctify a fast, call a solemn assembly:
+2:16 Gather the people, sanctify the congregation, assemble the elders, gather the children, and those that suck the breasts: let the bridegroom go forth of his chamber, and the bride out of her closet.
+2:17 Let the priests, the ministers of the LORD, weep between the porch and the altar, and let them say, Spare your people, O LORD, and give not your heritage to reproach, that the heathen should rule over them: why should they say among the people, Where is their God?
+2:18 Then will the LORD be jealous for his land, and pity his people.
+2:19 Yes, the LORD will answer and say to his people, Behold, I will send you corn, and wine, and oil, and you shall be satisfied therewith: and I will no more make you a reproach among the heathen:
+2:20 But I will remove far off from you the northern army, and will drive him into a land barren and desolate, with his face toward the east sea, and his hinder part toward the utmost sea, and his stink shall come up, and his ill smell shall come up, because he has done great things.
+2:21 Fear not, O land; be glad and rejoice: for the LORD will do great things.
+2:22 Be not afraid, you beasts of the field: for the pastures of the wilderness do spring, for the tree bears her fruit, the fig tree and the vine do yield their strength.
+2:23 Be glad then, you children of Zion, and rejoice in the LORD your God: for he has given you the former rain moderately, and he will cause to come down for you the rain, the former rain, and the latter rain in the first month.
+2:24 And the floors shall be full of wheat, and the vats shall overflow with wine and oil.
+2:25 And I will restore to you the years that the locust has eaten, the cankerworm, and the caterpillar, and the palmerworm, my great army which I sent among you.
+2:26 And you shall eat in plenty, and be satisfied, and praise the name of the LORD your God, that has dealt wondrously with you: and my people shall never be ashamed.
+2:27 And you shall know that I am in the middle of Israel, and that I am the LORD your God, and none else: and my people shall never be ashamed.
+2:28 And it shall come to pass afterward, that I will pour out my spirit on all flesh; and your sons and your daughters shall prophesy, your old men shall dream dreams, your young men shall see visions:
+2:29 And also on the servants and on the handmaids in those days will I pour out my spirit.
+2:30 And I will show wonders in the heavens and in the earth, blood, and fire, and pillars of smoke.
+2:31 The sun shall be turned into darkness, and the moon into blood, before the great and terrible day of the LORD come.
+2:32 And it shall come to pass, that whoever shall call on the name of the LORD shall be delivered: for in mount Zion and in Jerusalem shall be deliverance, as the LORD has said, and in the remnant whom the LORD shall call.
+ 	
+AKJV
+ 	 	 	 	
+Joel 3
+ 	 	 	 	
+AV 1611
+
+3:1 For, behold, in those days, and in that time, when I shall bring again the captivity of Judah and Jerusalem,
+3:2 I will also gather all nations, and will bring them down into the valley of Jehoshaphat, and will plead with them there for my people and for my heritage Israel, whom they have scattered among the nations, and parted my land.
+3:3 And they have cast lots for my people; and have given a boy for an harlot, and sold a girl for wine, that they might drink.
+3:4 Yes, and what have you to do with me, O Tyre, and Zidon, and all the coasts of Palestine? will you render me a recompense? and if you recompense me, swiftly and speedily will I return your recompense on your own head;
+3:5 Because you have taken my silver and my gold, and have carried into your temples my goodly pleasant things:
+3:6 The children also of Judah and the children of Jerusalem have you sold to the Grecians, that you might remove them far from their border.
+3:7 Behold, I will raise them out of the place where you have sold them, and will return your recompense on your own head:
+3:8 And I will sell your sons and your daughters into the hand of the children of Judah, and they shall sell them to the Sabeans, to a people far off: for the LORD has spoken it.
+3:9 Proclaim you this among the Gentiles; Prepare war, wake up the mighty men, let all the men of war draw near; let them come up:
+3:10 Beat your plowshares into swords and your pruning hooks into spears: let the weak say, I am strong.
+3:11 Assemble yourselves, and come, all you heathen, and gather yourselves together round about: thither cause your mighty ones to come down, O LORD.
+3:12 Let the heathen be wakened, and come up to the valley of Jehoshaphat: for there will I sit to judge all the heathen round about.
+3:13 Put you in the sickle, for the harvest is ripe: come, get you down; for the press is full, the fats overflow; for their wickedness is great.
+3:14 Multitudes, multitudes in the valley of decision: for the day of the LORD is near in the valley of decision.
+3:15 The sun and the moon shall be darkened, and the stars shall withdraw their shining.
+3:16 The LORD also shall roar out of Zion, and utter his voice from Jerusalem; and the heavens and the earth shall shake: but the LORD will be the hope of his people, and the strength of the children of Israel.
+3:17 So shall you know that I am the LORD your God dwelling in Zion, my holy mountain: then shall Jerusalem be holy, and there shall no strangers pass through her any more.
+3:18 And it shall come to pass in that day, that the mountains shall drop down new wine, and the hills shall flow with milk, and all the rivers of Judah shall flow with waters, and a fountain shall come forth out of the house of the LORD, and shall water the valley of Shittim.
+3:19 Egypt shall be a desolation, and Edom shall be a desolate wilderness, for the violence against the children of Judah, because they have shed innocent blood in their land.
+3:20 But Judah shall dwell for ever, and Jerusalem from generation to generation.
+3:21 For I will cleanse their blood that I have not cleansed: for the LORD dwells in Zion.`
+
+var book_of_amos = `1:1 The words of Amos, who was among the herdsmen of Tekoa, which he saw concerning Israel in the days of Uzziah king of Judah, and in the days of Jeroboam the son of Joash king of Israel, two years before the earthquake.
+1:2 And he said, The LORD will roar from Zion, and utter his voice from Jerusalem; and the habitations of the shepherds shall mourn, and the top of Carmel shall wither.
+1:3 Thus said the LORD; For three transgressions of Damascus, and for four, I will not turn away the punishment thereof; because they have threshed Gilead with threshing instruments of iron:
+1:4 But I will send a fire into the house of Hazael, which shall devour the palaces of Benhadad.
+1:5 I will break also the bar of Damascus, and cut off the inhabitant from the plain of Aven, and him that holds the scepter from the house of Eden: and the people of Syria shall go into captivity to Kir, said the LORD.
+1:6 Thus said the LORD; For three transgressions of Gaza, and for four, I will not turn away the punishment thereof; because they carried away captive the whole captivity, to deliver them up to Edom:
+1:7 But I will send a fire on the wall of Gaza, which shall devour the palaces thereof:
+1:8 And I will cut off the inhabitant from Ashdod, and him that holds the scepter from Ashkelon, and I will turn my hand against Ekron: and the remnant of the Philistines shall perish, said the Lord GOD.
+1:9 Thus said the LORD; For three transgressions of Tyrus, and for four, I will not turn away the punishment thereof; because they delivered up the whole captivity to Edom, and remembered not the brotherly covenant:
+1:10 But I will send a fire on the wall of Tyrus, which shall devour the palaces thereof.
+1:11 Thus said the LORD; For three transgressions of Edom, and for four, I will not turn away the punishment thereof; because he did pursue his brother with the sword, and did cast off all pity, and his anger did tear perpetually, and he kept his wrath for ever:
+1:12 But I will send a fire on Teman, which shall devour the palaces of Bozrah.
+1:13 Thus said the LORD; For three transgressions of the children of Ammon, and for four, I will not turn away the punishment thereof; because they have ripped up the women with child of Gilead, that they might enlarge their border:
+1:14 But I will kindle a fire in the wall of Rabbah, and it shall devour the palaces thereof, with shouting in the day of battle, with a tempest in the day of the whirlwind:
+1:15 And their king shall go into captivity, he and his princes together, said the LORD.
+ 	
+AKJV
+ 	 	 	 	
+Amos 2
+ 	 	 	 	
+AV 1611
+
+2:1 Thus said the LORD; For three transgressions of Moab, and for four, I will not turn away the punishment thereof; because he burned the bones of the king of Edom into lime:
+2:2 But I will send a fire on Moab, and it shall devour the palaces of Kirioth: and Moab shall die with tumult, with shouting, and with the sound of the trumpet:
+2:3 And I will cut off the judge from the middle thereof, and will slay all the princes thereof with him, said the LORD.
+2:4 Thus said the LORD; For three transgressions of Judah, and for four, I will not turn away the punishment thereof; because they have despised the law of the LORD, and have not kept his commandments, and their lies caused them to err, after the which their fathers have walked:
+2:5 But I will send a fire on Judah, and it shall devour the palaces of Jerusalem.
+2:6 Thus said the LORD; For three transgressions of Israel, and for four, I will not turn away the punishment thereof; because they sold the righteous for silver, and the poor for a pair of shoes;
+2:7 That pant after the dust of the earth on the head of the poor, and turn aside the way of the meek: and a man and his father will go in to the same maid, to profane my holy name:
+2:8 And they lay themselves down on clothes laid to pledge by every altar, and they drink the wine of the condemned in the house of their god.
+2:9 Yet destroyed I the Amorite before them, whose height was like the height of the cedars, and he was strong as the oaks; yet I destroyed his fruit from above, and his roots from beneath.
+2:10 Also I brought you up from the land of Egypt, and led you forty years through the wilderness, to possess the land of the Amorite.
+2:11 And I raised up of your sons for prophets, and of your young men for Nazarites. Is it not even thus, O you children of Israel? said the LORD.
+2:12 But you gave the Nazarites wine to drink; and commanded the prophets, saying, Prophesy not.
+2:13 Behold, I am pressed under you, as a cart is pressed that is full of sheaves.
+2:14 Therefore the flight shall perish from the swift, and the strong shall not strengthen his force, neither shall the mighty deliver himself:
+2:15 Neither shall he stand that handles the bow; and he that is swift of foot shall not deliver himself: neither shall he that rides the horse deliver himself.
+2:16 And he that is courageous among the mighty shall flee away naked in that day, said the LORD.
+ 	
+AKJV
+ 	 	 	 	
+Amos 3
+ 	 	 	 	
+AV 1611
+
+3:1 Hear this word that the LORD has spoken against you, O children of Israel, against the whole family which I brought up from the land of Egypt, saying,
+3:2 You only have I known of all the families of the earth: therefore I will punish you for all your iniquities.
+3:3 Can two walk together, except they be agreed?
+3:4 Will a lion roar in the forest, when he has no prey? will a young lion cry out of his den, if he have taken nothing?
+3:5 Can a bird fall in a snare on the earth, where no gin is for him?  shall one take up a snare from the earth, and have taken nothing at all?
+3:6 Shall a trumpet be blown in the city, and the people not be afraid?  shall there be evil in a city, and the LORD has not done it?
+3:7 Surely the Lord GOD will do nothing, but he reveals his secret to his servants the prophets.
+3:8 The lion has roared, who will not fear? the Lord GOD has spoken, who can but prophesy?
+3:9 Publish in the palaces at Ashdod, and in the palaces in the land of Egypt, and say, Assemble yourselves on the mountains of Samaria, and behold the great tumults in the middle thereof, and the oppressed in the middle thereof.
+3:10 For they know not to do right, said the LORD, who store up violence and robbery in their palaces.
+3:11 Therefore thus said the Lord GOD; An adversary there shall be even round about the land; and he shall bring down your strength from you, and your palaces shall be spoiled.
+3:12 Thus said the LORD; As the shepherd takes out of the mouth of the lion two legs, or a piece of an ear; so shall the children of Israel be taken out that dwell in Samaria in the corner of a bed, and in Damascus in a couch.
+3:13 Hear you, and testify in the house of Jacob, said the Lord GOD, the God of hosts,
+3:14 That in the day that I shall visit the transgressions of Israel on him I will also visit the altars of Bethel: and the horns of the altar shall be cut off, and fall to the ground.
+3:15 And I will smite the winter house with the summer house; and the houses of ivory shall perish, and the great houses shall have an end, said the LORD.
+ 	
+AKJV
+ 	 	 	 	
+Amos 4
+ 	 	 	 	
+AV 1611
+
+4:1 Hear this word, you cows of Bashan, that are in the mountain of Samaria, which oppress the poor, which crush the needy, which say to their masters, Bring, and let us drink.
+4:2 The Lord GOD has sworn by his holiness, that, see, the days shall come on you, that he will take you away with hooks, and your posterity with fishhooks.
+4:3 And you shall go out at the breaches, every cow at that which is before her; and you shall cast them into the palace, said the LORD.
+4:4 Come to Bethel, and transgress; at Gilgal multiply transgression; and bring your sacrifices every morning, and your tithes after three years:
+4:5 And offer a sacrifice of thanksgiving with leaven, and proclaim and publish the free offerings: for this likes you, O you children of Israel, said the Lord GOD.
+4:6 And I also have given you cleanness of teeth in all your cities, and want of bread in all your places: yet have you not returned to me, said the LORD.
+4:7 And also I have withheld the rain from you, when there were yet three months to the harvest: and I caused it to rain on one city, and caused it not to rain on another city: one piece was rained on, and the piece whereupon it rained not withered.
+4:8 So two or three cities wandered to one city, to drink water; but they were not satisfied: yet have you not returned to me, said the LORD.
+4:9 I have smitten you with blasting and mildew: when your gardens and your vineyards and your fig trees and your olive trees increased, the palmerworm devoured them: yet have you not returned to me, said the LORD.
+4:10 I have sent among you the pestilence after the manner of Egypt: your young men have I slain with the sword, and have taken away your horses; and I have made the stink of your camps to come up to your nostrils: yet have you not returned to me, said the LORD.
+4:11 I have overthrown some of you, as God overthrew Sodom and Gomorrah, and you were as a firebrand plucked out of the burning: yet have you not returned to me, said the LORD.
+4:12 Therefore thus will I do to you, O Israel: and because I will do this to you, prepare to meet your God, O Israel.
+4:13 For, see, he that forms the mountains, and creates the wind, and declares to man what is his thought, that makes the morning darkness, and treads on the high places of the earth, The LORD, The God of hosts, is his name.
+ 	
+AKJV
+ 	 	 	 	
+Amos 5
+ 	 	 	 	
+AV 1611
+
+5:1 Hear you this word which I take up against you, even a lamentation, O house of Israel.
+5:2 The virgin of Israel is fallen; she shall no more rise: she is forsaken on her land; there is none to raise her up.
+5:3 For thus said the Lord GOD; The city that went out by a thousand shall leave an hundred, and that which went forth by an hundred shall leave ten, to the house of Israel.
+5:4 For thus said the LORD to the house of Israel, Seek you me, and you shall live:
+5:5 But seek not Bethel, nor enter into Gilgal, and pass not to Beersheba: for Gilgal shall surely go into captivity, and Bethel shall come to nothing.
+5:6 Seek the LORD, and you shall live; lest he break out like fire in the house of Joseph, and devour it, and there be none to quench it in Bethel.
+5:7 You who turn judgment to wormwood, and leave off righteousness in the earth,
+5:8 Seek him that makes the seven stars and Orion, and turns the shadow of death into the morning, and makes the day dark with night: that calls for the waters of the sea, and pours them out on the face of the earth: The LORD is his name:
+5:9 That strengthens the spoiled against the strong, so that the spoiled shall come against the fortress.
+5:10 They hate him that rebukes in the gate, and they abhor him that speaks uprightly.
+5:11 For as much therefore as your treading is on the poor, and you take from him burdens of wheat: you have built houses of hewn stone, but you shall not dwell in them; you have planted pleasant vineyards, but you shall not drink wine of them.
+5:12 For I know your manifold transgressions and your mighty sins: they afflict the just, they take a bribe, and they turn aside the poor in the gate from their right.
+5:13 Therefore the prudent shall keep silence in that time; for it is an evil time.
+5:14 Seek good, and not evil, that you may live: and so the LORD, the God of hosts, shall be with you, as you have spoken.
+5:15 Hate the evil, and love the good, and establish judgment in the gate: it may be that the LORD God of hosts will be gracious to the remnant of Joseph.
+5:16 Therefore the LORD, the God of hosts, the LORD, said thus; Wailing shall be in all streets; and they shall say in all the highways, Alas! alas!  and they shall call the farmer to mourning, and such as are skillful of lamentation to wailing.
+5:17 And in all vineyards shall be wailing: for I will pass through you, said the LORD.
+5:18 Woe to you that desire the day of the LORD! to what end is it for you? the day of the LORD is darkness, and not light.
+5:19 As if a man did flee from a lion, and a bear met him; or went into the house, and leaned his hand on the wall, and a serpent bit him.
+5:20 Shall not the day of the LORD be darkness, and not light? even very dark, and no brightness in it?
+5:21 I hate, I despise your feast days, and I will not smell in your solemn assemblies.
+5:22 Though you offer me burnt offerings and your meat offerings, I will not accept them: neither will I regard the peace offerings of your fat beasts.
+5:23 Take you away from me the noise of your songs; for I will not hear the melody of your viols.
+5:24 But let judgment run down as waters, and righteousness as a mighty stream.
+5:25 Have you offered to me sacrifices and offerings in the wilderness forty years, O house of Israel?
+5:26 But you have borne the tabernacle of your Moloch and Chiun your images, the star of your god, which you made to yourselves.
+5:27 Therefore will I cause you to go into captivity beyond Damascus, said the LORD, whose name is The God of hosts.
+ 	
+AKJV
+ 	 	 	 	
+Amos 6
+ 	 	 	 	
+AV 1611
+
+6:1 Woe to them that are at ease in Zion, and trust in the mountain of Samaria, which are named chief of the nations, to whom the house of Israel came!
+6:2 Pass you to Calneh, and see; and from there go you to Hamath the great: then go down to Gath of the Philistines: be they better than these kingdoms? or their border greater than your border?
+6:3 You that put far away the evil day, and cause the seat of violence to come near;
+6:4 That lie on beds of ivory, and stretch themselves on their couches, and eat the lambs out of the flock, and the calves out of the middle of the stall;
+6:5 That chant to the sound of the viol, and invent to themselves instruments of music, like David;
+6:6 That drink wine in bowls, and anoint themselves with the chief ointments: but they are not grieved for the affliction of Joseph.
+6:7 Therefore now shall they go captive with the first that go captive, and the banquet of them that stretched themselves shall be removed.
+6:8 The Lord GOD has sworn by himself, said the LORD the God of hosts, I abhor the excellency of Jacob, and hate his palaces: therefore will I deliver up the city with all that is therein.
+6:9 And it shall come to pass, if there remain ten men in one house, that they shall die.
+6:10 And a man's uncle shall take him up, and he that burns him, to bring out the bones out of the house, and shall say to him that is by the sides of the house, Is there yet any with you? and he shall say, No. Then shall he say, Hold your tongue: for we may not make mention of the name of the LORD.
+6:11 For, behold, the LORD commands, and he will smite the great house with breaches, and the little house with clefts.
+6:12 Shall horses run on the rock? will one plow there with oxen? for you have turned judgment into gall, and the fruit of righteousness into hemlock:
+6:13 You which rejoice in a thing of nothing, which say, Have we not taken to us horns by our own strength?
+6:14 But, behold, I will raise up against you a nation, O house of Israel, said the LORD the God of hosts; and they shall afflict you from the entering in of Hemath to the river of the wilderness.
+ 	
+AKJV
+ 	 	 	 	
+Amos 7
+ 	 	 	 	
+AV 1611
+
+7:1 Thus has the Lord GOD showed to me; and, behold, he formed grasshoppers in the beginning of the shooting up of the latter growth; and, see, it was the latter growth after the king's mowings.
+7:2 And it came to pass, that when they had made an end of eating the grass of the land, then I said, O Lord GOD, forgive, I beseech you: by whom shall Jacob arise? for he is small.
+7:3 The LORD repented for this: It shall not be, said the LORD.
+7:4 Thus has the Lord GOD showed to me: and, behold, the Lord GOD called to contend by fire, and it devoured the great deep, and did eat up a part.
+7:5 Then said I, O Lord GOD, cease, I beseech you: by whom shall Jacob arise? for he is small.
+7:6 The LORD repented for this: This also shall not be, said the Lord GOD.
+7:7 Thus he showed me: and, behold, the LORD stood on a wall made by a plumb line, with a plumb line in his hand.
+7:8 And the LORD said to me, Amos, what see you? And I said, A plumb line. Then said the LORD, Behold, I will set a plumb line in the middle of my people Israel: I will not again pass by them any more:
+7:9 And the high places of Isaac shall be desolate, and the sanctuaries of Israel shall be laid waste; and I will rise against the house of Jeroboam with the sword.
+7:10 Then Amaziah the priest of Bethel sent to Jeroboam king of Israel, saying, Amos has conspired against you in the middle of the house of Israel: the land is not able to bear all his words.
+7:11 For thus Amos said, Jeroboam shall die by the sword, and Israel shall surely be led away captive out of their own land.
+7:12 Also Amaziah said to Amos, O you seer, go, flee you away into the land of Judah, and there eat bread, and prophesy there:
+7:13 But prophesy not again any more at Bethel: for it is the king's chapel, and it is the king's court.
+7:14 Then answered Amos, and said to Amaziah, I was no prophet, neither was I a prophet's son; but I was an herdsman, and a gatherer of sycomore fruit:
+7:15 And the LORD took me as I followed the flock, and the LORD said to me, Go, prophesy to my people Israel.
+7:16 Now therefore hear you the word of the LORD: You say, Prophesy not against Israel, and drop not your word against the house of Isaac.
+7:17 Therefore thus said the LORD; Your wife shall be an harlot in the city, and your sons and your daughters shall fall by the sword, and your land shall be divided by line; and you shall die in a polluted land: and Israel shall surely go into captivity forth of his land.
+ 	
+AKJV
+ 	 	 	 	
+Amos 8
+ 	 	 	 	
+AV 1611
+
+8:1 Thus has the Lord GOD showed to me: and behold a basket of summer fruit.
+8:2 And he said, Amos, what see you? And I said, A basket of summer fruit. Then said the LORD to me, The end is come on my people of Israel; I will not again pass by them any more.
+8:3 And the songs of the temple shall be howlings in that day, said the Lord GOD: there shall be many dead bodies in every place; they shall cast them forth with silence.
+8:4 Hear this, O you that swallow up the needy, even to make the poor of the land to fail,
+8:5 Saying, When will the new moon be gone, that we may sell corn? and the sabbath, that we may set forth wheat, making the ephah small, and the shekel great, and falsifying the balances by deceit?
+8:6 That we may buy the poor for silver, and the needy for a pair of shoes; yes, and sell the refuse of the wheat?
+8:7 The LORD has sworn by the excellency of Jacob, Surely I will never forget any of their works.
+8:8 Shall not the land tremble for this, and every one mourn that dwells therein? and it shall rise up wholly as a flood; and it shall be cast out and drowned, as by the flood of Egypt.
+8:9 And it shall come to pass in that day, said the Lord GOD, that I will cause the sun to go down at noon, and I will darken the earth in the clear day:
+8:10 And I will turn your feasts into mourning, and all your songs into lamentation; and I will bring up sackcloth on all loins, and baldness on every head; and I will make it as the mourning of an only son, and the end thereof as a bitter day.
+8:11 Behold, the days come, said the Lord GOD, that I will send a famine in the land, not a famine of bread, nor a thirst for water, but of hearing the words of the LORD:
+8:12 And they shall wander from sea to sea, and from the north even to the east, they shall run to and fro to seek the word of the LORD, and shall not find it.
+8:13 In that day shall the fair virgins and young men faint for thirst.
+8:14 They that swear by the sin of Samaria, and say, Your god, O Dan, lives; and, The manner of Beersheba lives; even they shall fall, and never rise up again.
+ 	
+AKJV
+ 	 	 	 	
+Amos 9
+ 	 	 	 	
+AV 1611
+
+9:1 I saw the LORD standing on the altar: and he said, Smite the lintel of the door, that the posts may shake: and cut them in the head, all of them; and I will slay the last of them with the sword: he that flees of them shall not flee away, and he that escapes of them shall not be delivered.
+9:2 Though they dig into hell, there shall my hand take them; though they climb up to heaven, there will I bring them down:
+9:3 And though they hide themselves in the top of Carmel, I will search and take them out there; and though they be hid from my sight in the bottom of the sea, there will I command the serpent, and he shall bite them:
+9:4 And though they go into captivity before their enemies, there will I command the sword, and it shall slay them: and I will set my eyes on them for evil, and not for good.
+9:5 And the Lord GOD of hosts is he that touches the land, and it shall melt, and all that dwell therein shall mourn: and it shall rise up wholly like a flood; and shall be drowned, as by the flood of Egypt.
+9:6 It is he that builds his stories in the heaven, and has founded his troop in the earth; he that calls for the waters of the sea, and pours them out on the face of the earth: The LORD is his name.
+9:7 Are you not as children of the Ethiopians to me, O children of Israel? said the LORD. Have not I brought up Israel out of the land of Egypt? and the Philistines from Caphtor, and the Syrians from Kir?
+9:8 Behold, the eyes of the Lord GOD are on the sinful kingdom, and I will destroy it from off the face of the earth; saving that I will not utterly destroy the house of Jacob, said the LORD.
+9:9 For, see, I will command, and I will sift the house of Israel among all nations, like as corn is sifted in a sieve, yet shall not the least grain fall on the earth.
+9:10 All the sinners of my people shall die by the sword, which say, The evil shall not overtake nor prevent us.
+9:11 In that day will I raise up the tabernacle of David that is fallen, and close up the breaches thereof; and I will raise up his ruins, and I will build it as in the days of old:
+9:12 That they may possess the remnant of Edom, and of all the heathen, which are called by my name, said the LORD that does this.
+9:13 Behold, the days come, said the LORD, that the plowman shall overtake the reaper, and the treader of grapes him that sows seed; and the mountains shall drop sweet wine, and all the hills shall melt.
+9:14 And I will bring again the captivity of my people of Israel, and they shall build the waste cities, and inhabit them; and they shall plant vineyards, and drink the wine thereof; they shall also make gardens, and eat the fruit of them.
+9:15 And I will plant them on their land, and they shall no more be pulled up out of their land which I have given them, said the LORD your God.
+`
+
+var book_of_obadiah = `1:1 The vision of Obadiah. Thus said the Lord GOD concerning Edom; We have heard a rumor from the LORD, and an ambassador is sent among the heathen, Arise you, and let us rise up against her in battle.
+1:2 Behold, I have made you small among the heathen: you are greatly despised.
+1:3 The pride of your heart has deceived you, you that dwell in the clefts of the rock, whose habitation is high; that said in his heart, Who shall bring me down to the ground?
+1:4 Though you exalt yourself as the eagle, and though you set your nest among the stars, there will I bring you down, said the LORD.
+1:5 If thieves came to you, if robbers by night, (how are you cut off!)  would they not have stolen till they had enough? if the grape gatherers came to you, would they not leave some grapes?
+1:6 How are the things of Esau searched out! how are his hidden things sought up!
+1:7 All the men of your confederacy have brought you even to the border: the men that were at peace with you have deceived you, and prevailed against you; that they eat your bread have laid a wound under you: there is none understanding in him.
+1:8 Shall I not in that day, said the LORD, even destroy the wise men out of Edom, and understanding out of the mount of Esau?
+1:9 And your mighty men, O Teman, shall be dismayed, to the end that every one of the mount of Esau may be cut off by slaughter.
+1:10 For your violence against your brother Jacob shame shall cover you, and you shall be cut off for ever.
+1:11 In the day that you stood on the other side, in the day that the strangers carried away captive his forces, and foreigners entered into his gates, and cast lots on Jerusalem, even you were as one of them.
+1:12 But you should not have looked on the day of your brother in the day that he became a stranger; neither should you have rejoiced over the children of Judah in the day of their destruction; neither should you have spoken proudly in the day of distress.
+1:13 You should not have entered into the gate of my people in the day of their calamity; yes, you should not have looked on their affliction in the day of their calamity, nor have laid hands on their substance in the day of their calamity;
+1:14 Neither should you have stood in the crossway, to cut off those of his that did escape; neither should you have delivered up those of his that did remain in the day of distress.
+1:15 For the day of the LORD is near on all the heathen: as you have done, it shall be done to you: your reward shall return on your own head.
+1:16 For as you have drunk on my holy mountain, so shall all the heathen drink continually, yes, they shall drink, and they shall swallow down, and they shall be as though they had not been.
+1:17 But on mount Zion shall be deliverance, and there shall be holiness; and the house of Jacob shall possess their possessions.
+1:18 And the house of Jacob shall be a fire, and the house of Joseph a flame, and the house of Esau for stubble, and they shall kindle in them, and devour them; and there shall not be any remaining of the house of Esau; for the LORD has spoken it.
+1:19 And they of the south shall possess the mount of Esau; and they of the plain the Philistines: and they shall possess the fields of Ephraim, and the fields of Samaria: and Benjamin shall possess Gilead.
+1:20 And the captivity of this host of the children of Israel shall possess that of the Canaanites, even to Zarephath; and the captivity of Jerusalem, which is in Sepharad, shall possess the cities of the south.
+1:21 And saviors shall come up on mount Zion to judge the mount of Esau; and the kingdom shall be the LORD's.`
+
+var book_of_jonah = `1:1 Now the word of the LORD came to Jonah the son of Amittai, saying,
+1:2 Arise, go to Nineveh, that great city, and cry against it; for their wickedness is come up before me.
+1:3 But Jonah rose up to flee to Tarshish from the presence of the LORD, and went down to Joppa; and he found a ship going to Tarshish: so he paid the fare thereof, and went down into it, to go with them to Tarshish from the presence of the LORD.
+1:4 But the LORD sent out a great wind into the sea, and there was a mighty tempest in the sea, so that the ship was like to be broken.
+1:5 Then the mariners were afraid, and cried every man to his god, and cast forth the wares that were in the ship into the sea, to lighten it of them. But Jonah was gone down into the sides of the ship; and he lay, and was fast asleep.
+1:6 So the shipmaster came to him, and said to him, What mean you, O sleeper? arise, call on your God, if so be that God will think on us, that we perish not.
+1:7 And they said every one to his fellow, Come, and let us cast lots, that we may know for whose cause this evil is on us. So they cast lots, and the lot fell on Jonah.
+1:8 Then said they to him, Tell us, we pray you, for whose cause this evil is on us; What is your occupation? and from where come you? what is your country? and of what people are you?
+1:9 And he said to them, I am an Hebrew; and I fear the LORD, the God of heaven, which has made the sea and the dry land.
+1:10 Then were the men exceedingly afraid, and said to him. Why have you done this? For the men knew that he fled from the presence of the LORD, because he had told them.
+1:11 Then said they to him, What shall we do to you, that the sea may be calm to us? for the sea worked, and was tempestuous.
+1:12 And he said to them, Take me up, and cast me forth into the sea; so shall the sea be calm to you: for I know that for my sake this great tempest is on you.
+1:13 Nevertheless the men rowed hard to bring it to the land; but they could not: for the sea worked, and was tempestuous against them.
+1:14 Why they cried to the LORD, and said, We beseech you, O LORD, we beseech you, let us not perish for this man's life, and lay not on us innocent blood: for you, O LORD, have done as it pleased you.
+1:15 So they look up Jonah, and cast him forth into the sea: and the sea ceased from her raging.
+1:16 Then the men feared the LORD exceedingly, and offered a sacrifice to the LORD, and made vows.
+1:17 Now the LORD had prepared a great fish to swallow up Jonah. And Jonah was in the belly of the fish three days and three nights.
+ 	
+AKJV
+ 	 	 	 	
+Jonah 2
+ 	 	 	 	
+AV 1611
+
+2:1 Then Jonah prayed to the LORD his God out of the fish's belly,
+2:2 And said, I cried by reason of my affliction to the LORD, and he heard me; out of the belly of hell cried I, and you heard my voice.
+2:3 For you had cast me into the deep, in the middle of the seas; and the floods compassed me about: all your billows and your waves passed over me.
+2:4 Then I said, I am cast out of your sight; yet I will look again toward your holy temple.
+2:5 The waters compassed me about, even to the soul: the depth closed me round about, the weeds were wrapped about my head.
+2:6 I went down to the bottoms of the mountains; the earth with her bars was about me for ever: yet have you brought up my life from corruption, O LORD my God.
+2:7 When my soul fainted within me I remembered the LORD: and my prayer came in to you, into your holy temple.
+2:8 They that observe lying vanities forsake their own mercy.
+2:9 But I will sacrifice to you with the voice of thanksgiving; I will pay that that I have vowed. Salvation is of the LORD.
+2:10 And the LORD spoke to the fish, and it vomited out Jonah on the dry land.
+ 	
+AKJV
+ 	 	 	 	
+Jonah 3
+ 	 	 	 	
+AV 1611
+
+3:1 And the word of the LORD came to Jonah the second time, saying,
+3:2 Arise, go to Nineveh, that great city, and preach to it the preaching that I bid you.
+3:3 So Jonah arose, and went to Nineveh, according to the word of the LORD. Now Nineveh was an exceeding great city of three days' journey.
+3:4 And Jonah began to enter into the city a day's journey, and he cried, and said, Yet forty days, and Nineveh shall be overthrown.
+3:5 So the people of Nineveh believed God, and proclaimed a fast, and put on sackcloth, from the greatest of them even to the least of them.
+3:6 For word came to the king of Nineveh, and he arose from his throne, and he laid his robe from him, and covered him with sackcloth, and sat in ashes.
+3:7 And he caused it to be proclaimed and published through Nineveh by the decree of the king and his nobles, saying, Let neither man nor beast, herd nor flock, taste any thing: let them not feed, nor drink water:
+3:8 But let man and beast be covered with sackcloth, and cry mightily to God: yes, let them turn every one from his evil way, and from the violence that is in their hands.
+3:9 Who can tell if God will turn and repent, and turn away from his fierce anger, that we perish not?
+3:10 And God saw their works, that they turned from their evil way; and God repented of the evil, that he had said that he would do to them; and he did it not.
+ 	
+AKJV
+ 	 	 	 	
+Jonah 4
+ 	 	 	 	
+AV 1611
+
+4:1 But it displeased Jonah exceedingly, and he was very angry.
+4:2 And he prayed to the LORD, and said, I pray you, O LORD, was not this my saying, when I was yet in my country? Therefore I fled before to Tarshish: for I knew that you are a gracious God, and merciful, slow to anger, and of great kindness, and repent you of the evil.
+4:3 Therefore now, O LORD, take, I beseech you, my life from me; for it is better for me to die than to live.
+4:4 Then said the LORD, Do you well to be angry?
+4:5 So Jonah went out of the city, and sat on the east side of the city, and there made him a booth, and sat under it in the shadow, till he might see what would become of the city.
+4:6 And the LORD God prepared a gourd, and made it to come up over Jonah, that it might be a shadow over his head, to deliver him from his grief. So Jonah was exceeding glad of the gourd.
+4:7 But God prepared a worm when the morning rose the next day, and it smote the gourd that it withered.
+4:8 And it came to pass, when the sun did arise, that God prepared a vehement east wind; and the sun beat on the head of Jonah, that he fainted, and wished in himself to die, and said, It is better for me to die than to live.
+4:9 And God said to Jonah, Do you well to be angry for the gourd? And he said, I do well to be angry, even to death.
+4:10 Then said the LORD, You have had pity on the gourd, for the which you have not labored, neither made it grow; which came up in a night, and perished in a night:
+4:11 And should not I spare Nineveh, that great city, wherein are more then six score thousand persons that cannot discern between their right hand and their left hand; and also much cattle?`
+
+var book_of_micah = `1:1 The word of the LORD that came to Micah the Morasthite in the days of Jotham, Ahaz, and Hezekiah, kings of Judah, which he saw concerning Samaria and Jerusalem.
+1:2 Hear, all you people; listen, O earth, and all that therein is: and let the Lord GOD be witness against you, the LORD from his holy temple.
+1:3 For, behold, the LORD comes forth out of his place, and will come down, and tread on the high places of the earth.
+1:4 And the mountains shall be molten under him, and the valleys shall be cleft, as wax before the fire, and as the waters that are poured down a steep place.
+1:5 For the transgression of Jacob is all this, and for the sins of the house of Israel. What is the transgression of Jacob? is it not Samaria? and what are the high places of Judah? are they not Jerusalem?
+1:6 Therefore I will make Samaria as an heap of the field, and as plantings of a vineyard: and I will pour down the stones thereof into the valley, and I will discover the foundations thereof.
+1:7 And all the graven images thereof shall be beaten to pieces, and all the hires thereof shall be burned with the fire, and all the idols thereof will I lay desolate: for she gathered it of the hire of an harlot, and they shall return to the hire of an harlot.
+1:8 Therefore I will wail and howl, I will go stripped and naked: I will make a wailing like the dragons, and mourning as the owls.
+1:9 For her wound is incurable; for it is come to Judah; he is come to the gate of my people, even to Jerusalem.
+1:10 Declare you it not at Gath, weep you not at all: in the house of Aphrah roll yourself in the dust.
+1:11 Pass you away, you inhabitant of Saphir, having your shame naked: the inhabitant of Zaanan came not forth in the mourning of Bethezel; he shall receive of you his standing.
+1:12 For the inhabitant of Maroth waited carefully for good: but evil came down from the LORD to the gate of Jerusalem.
+1:13 O you inhabitant of Lachish, bind the chariot to the swift beast: she is the beginning of the sin to the daughter of Zion: for the transgressions of Israel were found in you.
+1:14 Therefore shall you give presents to Moreshethgath: the houses of Achzib shall be a lie to the kings of Israel.
+1:15 Yet will I bring an heir to you, O inhabitant of Mareshah: he shall come to Adullam the glory of Israel.
+1:16 Make you bald, and poll you for your delicate children; enlarge your baldness as the eagle; for they are gone into captivity from you.
+ 	
+AKJV
+ 	 	 	 	
+Micah 2
+ 	 	 	 	
+AV 1611
+
+2:1 Woe to them that devise iniquity, and work evil on their beds! when the morning is light, they practice it, because it is in the power of their hand.
+2:2 And they covet fields, and take them by violence; and houses, and take them away: so they oppress a man and his house, even a man and his heritage.
+2:3 Therefore thus said the LORD; Behold, against this family do I devise an evil, from which you shall not remove your necks; neither shall you go haughtily: for this time is evil.
+2:4 In that day shall one take up a parable against you, and lament with a doleful lamentation, and say, We be utterly spoiled: he has changed the portion of my people: how has he removed it from me! turning away he has divided our fields.
+2:5 Therefore you shall have none that shall cast a cord by lot in the congregation of the LORD.
+2:6 Prophesy you not, say they to them that prophesy: they shall not prophesy to them, that they shall not take shame.
+2:7 O you that are named the house of Jacob, is the spirit of the LORD straitened? are these his doings? do not my words do good to him that walks uprightly?
+2:8 Even of late my people is risen up as an enemy: you pull off the robe with the garment from them that pass by securely as men averse from war.
+2:9 The women of my people have you cast out from their pleasant houses; from their children have you taken away my glory for ever.
+2:10 Arise you, and depart; for this is not your rest: because it is polluted, it shall destroy you, even with a sore destruction.
+2:11 If a man walking in the spirit and falsehood do lie, saying, I will prophesy to you of wine and of strong drink; he shall even be the prophet of this people.
+2:12 I will surely assemble, O Jacob, all of you; I will surely gather the remnant of Israel; I will put them together as the sheep of Bozrah, as the flock in the middle of their fold: they shall make great noise by reason of the multitude of men.
+2:13 The breaker is come up before them: they have broken up, and have passed through the gate, and are gone out by it: and their king shall pass before them, and the LORD on the head of them.
+ 	
+AKJV
+ 	 	 	 	
+Micah 3
+ 	 	 	 	
+AV 1611
+
+3:1 And I said, Hear, I pray you, O heads of Jacob, and you princes of the house of Israel; Is it not for you to know judgment?
+3:2 Who hate the good, and love the evil; who pluck off their skin from off them, and their flesh from off their bones;
+3:3 Who also eat the flesh of my people, and flay their skin from off them; and they break their bones, and chop them in pieces, as for the pot, and as flesh within the caldron.
+3:4 Then shall they cry to the LORD, but he will not hear them: he will even hide his face from them at that time, as they have behaved themselves ill in their doings.
+3:5 Thus said the LORD concerning the prophets that make my people err, that bite with their teeth, and cry, Peace; and he that puts not into their mouths, they even prepare war against him.
+3:6 Therefore night shall be to you, that you shall not have a vision; and it shall be dark to you, that you shall not divine; and the sun shall go down over the prophets, and the day shall be dark over them.
+3:7 Then shall the seers be ashamed, and the diviners confounded: yes, they shall all cover their lips; for there is no answer of God.
+3:8 But truly I am full of power by the spirit of the LORD, and of judgment, and of might, to declare to Jacob his transgression, and to Israel his sin.
+3:9 Hear this, I pray you, you heads of the house of Jacob, and princes of the house of Israel, that abhor judgment, and pervert all equity.
+3:10 They build up Zion with blood, and Jerusalem with iniquity.
+3:11 The heads thereof judge for reward, and the priests thereof teach for hire, and the prophets thereof divine for money: yet will they lean on the LORD, and say, Is not the LORD among us? none evil can come on us.
+3:12 Therefore shall Zion for your sake be plowed as a field, and Jerusalem shall become heaps, and the mountain of the house as the high places of the forest.
+ 	
+AKJV
+ 	 	 	 	
+Micah 4
+ 	 	 	 	
+AV 1611
+
+4:1 But in the last days it shall come to pass, that the mountain of the house of the LORD shall be established in the top of the mountains, and it shall be exalted above the hills; and people shall flow to it.
+4:2 And many nations shall come, and say, Come, and let us go up to the mountain of the LORD, and to the house of the God of Jacob; and he will teach us of his ways, and we will walk in his paths: for the law shall go forth of Zion, and the word of the LORD from Jerusalem.
+4:3 And he shall judge among many people, and rebuke strong nations afar off; and they shall beat their swords into plowshares, and their spears into pruning hooks: nation shall not lift up a sword against nation, neither shall they learn war any more.
+4:4 But they shall sit every man under his vine and under his fig tree; and none shall make them afraid: for the mouth of the LORD of hosts has spoken it.
+4:5 For all people will walk every one in the name of his god, and we will walk in the name of the LORD our God for ever and ever.
+4:6 In that day, said the LORD, will I assemble her that halts, and I will gather her that is driven out, and her that I have afflicted;
+4:7 And I will make her that halted a remnant, and her that was cast far off a strong nation: and the LORD shall reign over them in mount Zion from now on, even for ever.
+4:8 And you, O tower of the flock, the strong hold of the daughter of Zion, to you shall it come, even the first dominion; the kingdom shall come to the daughter of Jerusalem.
+4:9 Now why do you cry out aloud? is there no king in you? is your counselor perished? for pangs have taken you as a woman in travail.
+4:10 Be in pain, and labor to bring forth, O daughter of Zion, like a woman in travail: for now shall you go forth out of the city, and you shall dwell in the field, and you shall go even to Babylon; there shall you be delivered; there the LORD shall redeem you from the hand of your enemies.
+4:11 Now also many nations are gathered against you, that say, Let her be defiled, and let our eye look on Zion.
+4:12 But they know not the thoughts of the LORD, neither understand they his counsel: for he shall gather them as the sheaves into the floor.
+4:13 Arise and thresh, O daughter of Zion: for I will make your horn iron, and I will make your hoofs brass: and you shall beat in pieces many people: and I will consecrate their gain to the LORD, and their substance to the Lord of the whole earth.
+ 	
+AKJV
+ 	 	 	 	
+Micah 5
+ 	 	 	 	
+AV 1611
+
+5:1 Now gather yourself in troops, O daughter of troops: he has laid siege against us: they shall smite the judge of Israel with a rod on the cheek.
+5:2 But you, Bethlehem Ephratah, though you be little among the thousands of Judah, yet out of you shall he come forth to me that is to be ruler in Israel; whose goings forth have been from of old, from everlasting.
+5:3 Therefore will he give them up, until the time that she which travails has brought forth: then the remnant of his brothers shall return to the children of Israel.
+5:4 And he shall stand and feed in the strength of the LORD, in the majesty of the name of the LORD his God; and they shall abide: for now shall he be great to the ends of the earth.
+5:5 And this man shall be the peace, when the Assyrian shall come into our land: and when he shall tread in our palaces, then shall we raise against him seven shepherds, and eight principal men.
+5:6 And they shall waste the land of Assyria with the sword, and the land of Nimrod in the entrances thereof: thus shall he deliver us from the Assyrian, when he comes into our land, and when he treads within our borders.
+5:7 And the remnant of Jacob shall be in the middle of many people as a dew from the LORD, as the showers on the grass, that tarries not for man, nor waits for the sons of men.
+5:8 And the remnant of Jacob shall be among the Gentiles in the middle of many people as a lion among the beasts of the forest, as a young lion among the flocks of sheep: who, if he go through, both treads down, and tears in pieces, and none can deliver.
+5:9 Your hand shall be lifted up on your adversaries, and all your enemies shall be cut off.
+5:10 And it shall come to pass in that day, said the LORD, that I will cut off your horses out of the middle of you, and I will destroy your chariots:
+5:11 And I will cut off the cities of your land, and throw down all your strong holds:
+5:12 And I will cut off witchcrafts out of your hand; and you shall have no more soothsayers:
+5:13 Your graven images also will I cut off, and your standing images out of the middle of you; and you shall no more worship the work of your hands.
+5:14 And I will pluck up your groves out of the middle of you: so will I destroy your cities.
+5:15 And I will execute vengeance in anger and fury on the heathen, such as they have not heard.
+ 	
+AKJV
+ 	 	 	 	
+Micah 6
+ 	 	 	 	
+AV 1611
+
+6:1 Hear you now what the LORD said; Arise, contend you before the mountains, and let the hills hear your voice.
+6:2 Hear you, O mountains, the LORD's controversy, and you strong foundations of the earth: for the LORD has a controversy with his people, and he will plead with Israel.
+6:3 O my people, what have I done to you? and wherein have I wearied you? testify against me.
+6:4 For I brought you up out of the land of Egypt, and redeemed you out of the house of servants; and I sent before you Moses, Aaron, and Miriam.
+6:5 O my people, remember now what Balak king of Moab consulted, and what Balaam the son of Beor answered him from Shittim to Gilgal; that you may know the righteousness of the LORD.
+6:6 With which shall I come before the LORD, and bow myself before the high God? shall I come before him with burnt offerings, with calves of a year old?
+6:7 Will the LORD be pleased with thousands of rams, or with ten thousands of rivers of oil? shall I give my firstborn for my transgression, the fruit of my body for the sin of my soul?
+6:8 He has showed you, O man, what is good; and what does the LORD require of you, but to do justly, and to love mercy, and to walk humbly with your God?
+6:9 The LORD's voice cries to the city, and the man of wisdom shall see your name: hear you the rod, and who has appointed it.
+6:10 Are there yet the treasures of wickedness in the house of the wicked, and the scant measure that is abominable?
+6:11 Shall I count them pure with the wicked balances, and with the bag of deceitful weights?
+6:12 For the rich men thereof are full of violence, and the inhabitants thereof have spoken lies, and their tongue is deceitful in their mouth.
+6:13 Therefore also will I make you sick in smiting you, in making you desolate because of your sins.
+6:14 You shall eat, but not be satisfied; and your casting down shall be in the middle of you; and you shall take hold, but shall not deliver; and that which you deliver will I give up to the sword.
+6:15 You shall sow, but you shall not reap; you shall tread the olives, but you shall not anoint you with oil; and sweet wine, but shall not drink wine.
+6:16 For the statutes of Omri are kept, and all the works of the house of Ahab, and you walk in their counsels; that I should make you a desolation, and the inhabitants thereof an hissing: therefore you shall bear the reproach of my people.
+ 	
+AKJV
+ 	 	 	 	
+Micah 7
+ 	 	 	 	
+AV 1611
+
+7:1 Woe is me! for I am as when they have gathered the summer fruits, as the grape gleanings of the vintage: there is no cluster to eat: my soul desired the first ripe fruit.
+7:2 The good man is perished out of the earth: and there is none upright among men: they all lie in wait for blood; they hunt every man his brother with a net.
+7:3 That they may do evil with both hands earnestly, the prince asks, and the judge asks for a reward; and the great man, he utters his mischievous desire: so they wrap it up.
+7:4 The best of them is as a brier: the most upright is sharper than a thorn hedge: the day of your watchmen and your visitation comes; now shall be their perplexity.
+7:5 Trust you not in a friend, put you not confidence in a guide: keep the doors of your mouth from her that lies in your bosom.
+7:6 For the son dishonors the father, the daughter rises up against her mother, the daughter in law against her mother in law; a man's enemies are the men of his own house.
+7:7 Therefore I will look to the LORD; I will wait for the God of my salvation: my God will hear me.
+7:8 Rejoice not against me, O my enemy: when I fall, I shall arise; when I sit in darkness, the LORD shall be a light to me.
+7:9 I will bear the indignation of the LORD, because I have sinned against him, until he plead my cause, and execute judgment for me: he will bring me forth to the light, and I shall behold his righteousness.
+7:10 Then she that is my enemy shall see it, and shame shall cover her which said to me, Where is the LORD your God? my eyes shall behold her: now shall she be trodden down as the mire of the streets.
+7:11 In the day that your walls are to be built, in that day shall the decree be far removed.
+7:12 In that day also he shall come even to you from Assyria, and from the fortified cities, and from the fortress even to the river, and from sea to sea, and from mountain to mountain.
+7:13 Notwithstanding the land shall be desolate because of them that dwell therein, for the fruit of their doings.
+7:14 Feed your people with your rod, the flock of your heritage, which dwell solitarily in the wood, in the middle of Carmel: let them feed in Bashan and Gilead, as in the days of old.
+7:15 According to the days of your coming out of the land of Egypt will I show to him marvelous things.
+7:16 The nations shall see and be confounded at all their might: they shall lay their hand on their mouth, their ears shall be deaf.
+7:17 They shall lick the dust like a serpent, they shall move out of their holes like worms of the earth: they shall be afraid of the LORD our God, and shall fear because of you.
+7:18 Who is a God like to you, that pardons iniquity, and passes by the transgression of the remnant of his heritage? he retains not his anger for ever, because he delights in mercy.
+7:19 He will turn again, he will have compassion on us; he will subdue our iniquities; and you will cast all their sins into the depths of the sea.
+7:20 You will perform the truth to Jacob, and the mercy to Abraham, which you have sworn to our fathers from the days of old.`
+
+var book_of_nahum = `
+1:1 The burden of Nineveh. The book of the vision of Nahum the Elkoshite.
+1:2 God is jealous, and the LORD revenges; the LORD revenges, and is furious; the LORD will take vengeance on his adversaries, and he reserves wrath for his enemies.
+1:3 The LORD is slow to anger, and great in power, and will not at all acquit the wicked: the LORD has his way in the whirlwind and in the storm, and the clouds are the dust of his feet.
+1:4 He rebukes the sea, and makes it dry, and dries up all the rivers: Bashan languishes, and Carmel, and the flower of Lebanon languishes.
+1:5 The mountains quake at him, and the hills melt, and the earth is burned at his presence, yes, the world, and all that dwell therein.
+1:6 Who can stand before his indignation? and who can abide in the fierceness of his anger? his fury is poured out like fire, and the rocks are thrown down by him.
+1:7 The LORD is good, a strong hold in the day of trouble; and he knows them that trust in him.
+1:8 But with an overrunning flood he will make an utter end of the place thereof, and darkness shall pursue his enemies.
+1:9 What do you imagine against the LORD? he will make an utter end: affliction shall not rise up the second time.
+1:10 For while they be entwined together as thorns, and while they are drunken as drunkards, they shall be devoured as stubble fully dry.
+1:11 There is one come out of you, that imagines evil against the LORD, a wicked counselor.
+1:12 Thus said the LORD; Though they be quiet, and likewise many, yet thus shall they be cut down, when he shall pass through. Though I have afflicted you, I will afflict you no more.
+1:13 For now will I break his yoke from off you, and will burst your bonds in sunder.
+1:14 And the LORD has given a commandment concerning you, that no more of your name be sown: out of the house of your gods will I cut off the graven image and the molten image: I will make your grave; for you are vile.
+1:15 Behold on the mountains the feet of him that brings good tidings, that publishes peace! O Judah, keep your solemn feasts, perform your vows: for the wicked shall no more pass through you; he is utterly cut off.
+ 	
+AKJV
+ 	 	 	 	
+Nahum 2
+ 	 	 	 	
+AV 1611
+
+2:1 He that dashes in pieces is come up before your face: keep the fortification, watch the way, make your loins strong, fortify your power mightily.
+2:2 For the LORD has turned away the excellency of Jacob, as the excellency of Israel: for the emptiers have emptied them out, and marred their vine branches.
+2:3 The shield of his mighty men is made red, the valiant men are in scarlet: the chariots shall be with flaming torches in the day of his preparation, and the fir trees shall be terribly shaken.
+2:4 The chariots shall rage in the streets, they shall jostle one against another in the broad ways: they shall seem like torches, they shall run like the lightning.
+2:5 He shall recount his worthies: they shall stumble in their walk; they shall make haste to the wall thereof, and the defense shall be prepared.
+2:6 The gates of the rivers shall be opened, and the palace shall be dissolved.
+2:7 And Huzzab shall be led away captive, she shall be brought up, and her maids shall lead her as with the voice of doves, beating on their breasts.
+2:8 But Nineveh is of old like a pool of water: yet they shall flee away.
+Stand, stand, shall they cry; but none shall look back.
+2:9 Take you the spoil of silver, take the spoil of gold: for there is none end of the store and glory out of all the pleasant furniture.
+2:10 She is empty, and void, and waste: and the heart melts, and the knees smite together, and much pain is in all loins, and the faces of them all gather blackness.
+2:11 Where is the dwelling of the lions, and the feeding place of the young lions, where the lion, even the old lion, walked, and the lion's whelp, and none made them afraid?
+2:12 The lion did tear in pieces enough for his whelps, and strangled for his lionesses, and filled his holes with prey, and his dens with shred.
+2:13 Behold, I am against you, said the LORD of hosts, and I will burn her chariots in the smoke, and the sword shall devour your young lions: and I will cut off your prey from the earth, and the voice of your messengers shall no more be heard.
+ 	
+AKJV
+ 	 	 	 	
+Nahum 3
+ 	 	 	 	
+AV 1611
+
+3:1 Woe to the bloody city! it is all full of lies and robbery; the prey departs not;
+3:2 The noise of a whip, and the noise of the rattling of the wheels, and of the prancing horses, and of the jumping chariots.
+3:3 The horseman lifts up both the bright sword and the glittering spear: and there is a multitude of slain, and a great number of carcasses; and there is none end of their corpses; they stumble on their corpses:
+3:4 Because of the multitude of the prostitutions of the well favored harlot, the mistress of witchcrafts, that sells nations through her prostitutions, and families through her witchcrafts.
+3:5 Behold, I am against you, said the LORD of hosts; and I will discover your skirts on your face, and I will show the nations your nakedness, and the kingdoms your shame.
+3:6 And I will cast abominable filth on you, and make you vile, and will set you as a spectacle.
+3:7 And it shall come to pass, that all they that look on you shall flee from you, and say, Nineveh is laid waste: who will bemoan her? from where shall I seek comforters for you?
+3:8 Are you better than populous No, that was situate among the rivers, that had the waters round about it, whose rampart was the sea, and her wall was from the sea?
+3:9 Ethiopia and Egypt were her strength, and it was infinite; Put and Lubim were your helpers.
+3:10 Yet was she carried away, she went into captivity: her young children also were dashed in pieces at the top of all the streets: and they cast lots for her honorable men, and all her great men were bound in chains.
+3:11 You also shall be drunken: you shall be hid, you also shall seek strength because of the enemy.
+3:12 All your strong holds shall be like fig trees with the first ripe figs: if they be shaken, they shall even fall into the mouth of the eater.
+3:13 Behold, your people in the middle of you are women: the gates of your land shall be set wide open to your enemies: the fire shall devour your bars.
+3:14 Draw you waters for the siege, fortify your strong holds: go into clay, and tread the mortar, make strong the brick kiln.
+3:15 There shall the fire devour you; the sword shall cut you off, it shall eat you up like the cankerworm: make yourself many as the cankerworm, make yourself many as the locusts.
+3:16 You have multiplied your merchants above the stars of heaven: the cankerworm spoils, and flees away.
+3:17 Your crowned are as the locusts, and your captains as the great grasshoppers, which camp in the hedges in the cold day, but when the sun rises they flee away, and their place is not known where they are.
+3:18 Your shepherds slumber, O king of Assyria: your nobles shall dwell in the dust: your people is scattered on the mountains, and no man gathers them.
+3:19 There is no healing of your bruise; your wound is grievous: all that hear the bruit of you shall clap the hands over you: for on whom has not your wickedness passed continually?`
+
+var book_of_habukkuk = `1:1 The burden which Habakkuk the prophet did see.
+1:2 O LORD, how long shall I cry, and you will not hear! even cry out to you of violence, and you will not save!
+1:3 Why do you show me iniquity, and cause me to behold grievance? for spoiling and violence are before me: and there are that raise up strife and contention.
+1:4 Therefore the law is slacked, and judgment does never go forth: for the wicked does compass about the righteous; therefore wrong judgment proceeds.
+1:5 Behold you among the heathen, and regard, and wonder marvelously: for I will work a work in your days which you will not believe, though it be told you.
+1:6 For, see, I raise up the Chaldeans, that bitter and hasty nation, which shall march through the breadth of the land, to possess the dwelling places that are not their's.
+1:7 They are terrible and dreadful: their judgment and their dignity shall proceed of themselves.
+1:8 Their horses also are swifter than the leopards, and are more fierce than the evening wolves: and their horsemen shall spread themselves, and their horsemen shall come from far; they shall fly as the eagle that hastens to eat.
+1:9 They shall come all for violence: their faces shall sup up as the east wind, and they shall gather the captivity as the sand.
+1:10 And they shall scoff at the kings, and the princes shall be a scorn to them: they shall deride every strong hold; for they shall heap dust, and take it.
+1:11 Then shall his mind change, and he shall pass over, and offend, imputing this his power to his god.
+1:12 Are you not from everlasting, O LORD my God, my Holy One? we shall not die. O LORD, you have ordained them for judgment; and, O mighty God, you have established them for correction.
+1:13 You are of purer eyes than to behold evil, and can not look on iniquity: why look you on them that deal treacherously, and hold your tongue when the wicked devours the man that is more righteous than he?
+1:14 And make men as the fishes of the sea, as the creeping things, that have no ruler over them?
+1:15 They take up all of them with the angle, they catch them in their net, and gather them in their drag: therefore they rejoice and are glad.
+1:16 Therefore they sacrifice to their net, and burn incense to their drag; because by them their portion is fat, and their meat plenteous.
+1:17 Shall they therefore empty their net, and not spare continually to slay the nations?
+ 	
+AKJV
+ 	 	 	 	
+Habakkuk 2
+ 	 	 	 	
+AV 1611
+
+2:1 I will stand on my watch, and set me on the tower, and will watch to see what he will say to me, and what I shall answer when I am reproved.
+2:2 And the LORD answered me, and said, Write the vision, and make it plain on tables, that he may run that reads it.
+2:3 For the vision is yet for an appointed time, but at the end it shall speak, and not lie: though it tarry, wait for it; because it will surely come, it will not tarry.
+2:4 Behold, his soul which is lifted up is not upright in him: but the just shall live by his faith.
+2:5 Yes also, because he transgresses by wine, he is a proud man, neither keeps at home, who enlarges his desire as hell, and is as death, and cannot be satisfied, but gathers to him all nations, and heaps to him all people:
+2:6 Shall not all these take up a parable against him, and a taunting proverb against him, and say, Woe to him that increases that which is not his! how long? and to him that lades himself with thick clay!
+2:7 Shall they not rise up suddenly that shall bite you, and awake that shall vex you, and you shall be for booties to them?
+2:8 Because you have spoiled many nations, all the remnant of the people shall spoil you; because of men's blood, and for the violence of the land, of the city, and of all that dwell therein.
+2:9 Woe to him that covets an evil covetousness to his house, that he may set his nest on high, that he may be delivered from the power of evil!
+2:10 You have consulted shame to your house by cutting off many people, and have sinned against your soul.
+2:11 For the stone shall cry out of the wall, and the beam out of the timber shall answer it.
+2:12 Woe to him that builds a town with blood, and establishes a city by iniquity!
+2:13 Behold, is it not of the LORD of hosts that the people shall labor in the very fire, and the people shall weary themselves for very vanity?
+2:14 For the earth shall be filled with the knowledge of the glory of the LORD, as the waters cover the sea.
+2:15 Woe to him that gives his neighbor drink, that put your bottle to him, and make him drunken also, that you may look on their nakedness!
+2:16 You are filled with shame for glory: drink you also, and let your foreskin be uncovered: the cup of the LORD's right hand shall be turned to you, and shameful spewing shall be on your glory.
+2:17 For the violence of Lebanon shall cover you, and the spoil of beasts, which made them afraid, because of men's blood, and for the violence of the land, of the city, and of all that dwell therein.
+2:18 What profits the graven image that the maker thereof has graven it; the molten image, and a teacher of lies, that the maker of his work trusts therein, to make dumb idols?
+2:19 Woe to him that said to the wood, Awake; to the dumb stone, Arise, it shall teach! Behold, it is laid over with gold and silver, and there is no breath at all in the middle of it.
+2:20 But the LORD is in his holy temple: let all the earth keep silence before him.
+ 	
+AKJV
+ 	 	 	 	
+Habakkuk 3
+ 	 	 	 	
+AV 1611
+
+3:1 A prayer of Habakkuk the prophet on Shigionoth.
+3:2 O LORD, I have heard your speech, and was afraid: O LORD, revive your work in the middle of the years, in the middle of the years make known; in wrath remember mercy.
+3:3 God came from Teman, and the Holy One from mount Paran. Selah. His glory covered the heavens, and the earth was full of his praise.
+3:4 And his brightness was as the light; he had horns coming out of his hand: and there was the hiding of his power.
+3:5 Before him went the pestilence, and burning coals went forth at his feet.
+3:6 He stood, and measured the earth: he beheld, and drove asunder the nations; and the everlasting mountains were scattered, the perpetual hills did bow: his ways are everlasting.
+3:7 I saw the tents of Cushan in affliction: and the curtains of the land of Midian did tremble.
+3:8 Was the LORD displeased against the rivers? was your anger against the rivers? was your wrath against the sea, that you did ride on your horses and your chariots of salvation?
+3:9 Your bow was made quite naked, according to the oaths of the tribes, even your word. Selah. You did split the earth with rivers.
+3:10 The mountains saw you, and they trembled: the overflowing of the water passed by: the deep uttered his voice, and lifted up his hands on high.
+3:11 The sun and moon stood still in their habitation: at the light of your arrows they went, and at the shining of your glittering spear.
+3:12 You did march through the land in indignation, you did thresh the heathen in anger.
+3:13 You went forth for the salvation of your people, even for salvation with your anointed; you wounded the head out of the house of the wicked, by discovering the foundation to the neck. Selah.
+3:14 You did strike through with his staves the head of his villages: they came out as a whirlwind to scatter me: their rejoicing was as to devour the poor secretly.
+3:15 You did walk through the sea with your horses, through the heap of great waters.
+3:16 When I heard, my belly trembled; my lips quivered at the voice: rottenness entered into my bones, and I trembled in myself, that I might rest in the day of trouble: when he comes up to the people, he will invade them with his troops.
+3:17 Although the fig tree shall not blossom, neither shall fruit be in the vines; the labor of the olive shall fail, and the fields shall yield no meat; the flock shall be cut off from the fold, and there shall be no herd in the stalls:
+3:18 Yet I will rejoice in the LORD, I will joy in the God of my salvation.
+3:19 The LORD God is my strength, and he will make my feet like hinds' feet, and he will make me to walk on my high places. To the chief singer on my stringed instruments.`
+
+var book_of_zephaniah = `1:1 The word of the LORD which came to Zephaniah the son of Cushi, the son of Gedaliah, the son of Amariah, the son of Hizkiah, in the days of Josiah the son of Amon, king of Judah.
+1:2 I will utterly consume all things from off the land, said the LORD.
+1:3 I will consume man and beast; I will consume the fowls of the heaven, and the fishes of the sea, and the stumbling blocks with the wicked: and I will cut off man from off the land, said the LORD.
+1:4 I will also stretch out my hand on Judah, and on all the inhabitants of Jerusalem; and I will cut off the remnant of Baal from this place, and the name of the Chemarims with the priests;
+1:5 And them that worship the host of heaven on the housetops; and them that worship and that swear by the LORD, and that swear by Malcham;
+1:6 And them that are turned back from the LORD; and those that have not sought the LORD, nor inquired for him.
+1:7 Hold your peace at the presence of the Lord GOD: for the day of the LORD is at hand: for the LORD has prepared a sacrifice, he has bid his guests.
+1:8 And it shall come to pass in the day of the LORD's sacrifice, that I will punish the princes, and the king's children, and all such as are clothed with strange apparel.
+1:9 In the same day also will I punish all those that leap on the threshold, which fill their masters' houses with violence and deceit.
+1:10 And it shall come to pass in that day, said the LORD, that there shall be the noise of a cry from the fish gate, and an howling from the second, and a great crashing from the hills.
+1:11 Howl, you inhabitants of Maktesh, for all the merchant people are cut down; all they that bear silver are cut off.
+1:12 And it shall come to pass at that time, that I will search Jerusalem with candles, and punish the men that are settled on their lees: that say in their heart, The LORD will not do good, neither will he do evil.
+1:13 Therefore their goods shall become a booty, and their houses a desolation: they shall also build houses, but not inhabit them; and they shall plant vineyards, but not drink the wine thereof.
+1:14 The great day of the LORD is near, it is near, and hastens greatly, even the voice of the day of the LORD: the mighty man shall cry there bitterly.
+1:15 That day is a day of wrath, a day of trouble and distress, a day of devastation and desolation, a day of darkness and gloominess, a day of clouds and thick darkness,
+1:16 A day of the trumpet and alarm against the fenced cities, and against the high towers.
+1:17 And I will bring distress on men, that they shall walk like blind men, because they have sinned against the LORD: and their blood shall be poured out as dust, and their flesh as the dung.
+1:18 Neither their silver nor their gold shall be able to deliver them in the day of the LORD's wrath; but the whole land shall be devoured by the fire of his jealousy: for he shall make even a speedy riddance of all them that dwell in the land.
+ 	
+AKJV
+ 	 	 	 	
+Zephaniah 2
+ 	 	 	 	
+AV 1611
+
+2:1 Gather yourselves together, yes, gather together, O nation not desired;
+2:2 Before the decree bring forth, before the day pass as the chaff, before the fierce anger of the LORD come on you, before the day of the LORD's anger come on you.
+2:3 Seek you the LORD, all you meek of the earth, which have worked his judgment; seek righteousness, seek meekness: it may be you shall be hid in the day of the LORD's anger.
+2:4 For Gaza shall be forsaken, and Ashkelon a desolation: they shall drive out Ashdod at the noon day, and Ekron shall be rooted up.
+2:5 Woe to the inhabitants of the sea coast, the nation of the Cherethites! the word of the LORD is against you; O Canaan, the land of the Philistines, I will even destroy you, that there shall be no inhabitant.
+2:6 And the sea coast shall be dwellings and cottages for shepherds, and folds for flocks.
+2:7 And the coast shall be for the remnant of the house of Judah; they shall feed thereupon: in the houses of Ashkelon shall they lie down in the evening: for the LORD their God shall visit them, and turn away their captivity.
+2:8 I have heard the reproach of Moab, and the revilings of the children of Ammon, whereby they have reproached my people, and magnified themselves against their border.
+2:9 Therefore as I live, said the LORD of hosts, the God of Israel, Surely Moab shall be as Sodom, and the children of Ammon as Gomorrah, even the breeding of nettles, and salt pits, and a perpetual desolation: the residue of my people shall spoil them, and the remnant of my people shall possess them.
+2:10 This shall they have for their pride, because they have reproached and magnified themselves against the people of the LORD of hosts.
+2:11 The LORD will be terrible to them: for he will famish all the gods of the earth; and men shall worship him, every one from his place, even all the isles of the heathen.
+2:12 You Ethiopians also, you shall be slain by my sword.
+2:13 And he will stretch out his hand against the north, and destroy Assyria; and will make Nineveh a desolation, and dry like a wilderness.
+2:14 And flocks shall lie down in the middle of her, all the beasts of the nations: both the cormorant and the bittern shall lodge in the upper lintels of it; their voice shall sing in the windows; desolation shall be in the thresholds; for he shall uncover the cedar work.
+2:15 This is the rejoicing city that dwelled carelessly, that said in her heart, I am, and there is none beside me: how is she become a desolation, a place for beasts to lie down in! every one that passes by her shall hiss, and wag his hand.
+ 	
+AKJV
+ 	 	 	 	
+Zephaniah 3
+ 	 	 	 	
+AV 1611
+
+3:1 Woe to her that is filthy and polluted, to the oppressing city!
+3:2 She obeyed not the voice; she received not correction; she trusted not in the LORD; she drew not near to her God.
+3:3 Her princes within her are roaring lions; her judges are evening wolves; they gnaw not the bones till the morrow.
+3:4 Her prophets are light and treacherous persons: her priests have polluted the sanctuary, they have done violence to the law.
+3:5 The just LORD is in the middle thereof; he will not do iniquity: every morning does he bring his judgment to light, he fails not; but the unjust knows no shame.
+3:6 I have cut off the nations: their towers are desolate; I made their streets waste, that none passes by: their cities are destroyed, so that there is no man, that there is none inhabitant.
+3:7 I said, Surely you will fear me, you will receive instruction; so their dwelling should not be cut off, howsoever I punished them: but they rose early, and corrupted all their doings.
+3:8 Therefore wait you on me, said the LORD, until the day that I rise up to the prey: for my determination is to gather the nations, that I may assemble the kingdoms, to pour on them my indignation, even all my fierce anger: for all the earth shall be devoured with the fire of my jealousy.
+3:9 For then will I turn to the people a pure language, that they may all call on the name of the LORD, to serve him with one consent.
+3:10 From beyond the rivers of Ethiopia my suppliants, even the daughter of my dispersed, shall bring my offering.
+3:11 In that day shall you not be ashamed for all your doings, wherein you have transgressed against me: for then I will take away out of the middle of you them that rejoice in your pride, and you shall no more be haughty because of my holy mountain.
+3:12 I will also leave in the middle of you an afflicted and poor people, and they shall trust in the name of the LORD.
+3:13 The remnant of Israel shall not do iniquity, nor speak lies; neither shall a deceitful tongue be found in their mouth: for they shall feed and lie down, and none shall make them afraid.
+3:14 Sing, O daughter of Zion; shout, O Israel; be glad and rejoice with all the heart, O daughter of Jerusalem.
+3:15 The LORD has taken away your judgments, he has cast out your enemy: the king of Israel, even the LORD, is in the middle of you: you shall not see evil any more.
+3:16 In that day it shall be said to Jerusalem, Fear you not: and to Zion, Let not your hands be slack.
+3:17 The LORD your God in the middle of you is mighty; he will save, he will rejoice over you with joy; he will rest in his love, he will joy over you with singing.
+3:18 I will gather them that are sorrowful for the solemn assembly, who are of you, to whom the reproach of it was a burden.
+3:19 Behold, at that time I will undo all that afflict you: and I will save her that halts, and gather her that was driven out; and I will get them praise and fame in every land where they have been put to shame.
+3:20 At that time will I bring you again, even in the time that I gather you: for I will make you a name and a praise among all people of the earth, when I turn back your captivity before your eyes, said the LORD.`
+
+var book_of_haggai = `1:1 In the second year of Darius the king, in the sixth month, in the first day of the month, came the word of the LORD by Haggai the prophet to Zerubbabel the son of Shealtiel, governor of Judah, and to Joshua the son of Josedech, the high priest, saying,
+1:2 Thus speaks the LORD of hosts, saying, This people say, The time is not come, the time that the LORD's house should be built.
+1:3 Then came the word of the LORD by Haggai the prophet, saying,
+1:4 Is it time for you, O you, to dwell in your paneled houses, and this house lie waste?
+1:5 Now therefore thus said the LORD of hosts; Consider your ways.
+1:6 You have sown much, and bring in little; you eat, but you have not enough; you drink, but you are not filled with drink; you clothe you, but there is none warm; and he that earns wages earns wages to put it into a bag with holes.
+1:7 Thus said the LORD of hosts; Consider your ways.
+1:8 Go up to the mountain, and bring wood, and build the house; and I will take pleasure in it, and I will be glorified, said the LORD.
+1:9 You looked for much, and, see it came to little; and when you brought it home, I did blow on it. Why? said the LORD of hosts. Because of my house that is waste, and you run every man to his own house.
+1:10 Therefore the heaven over you is stayed from dew, and the earth is stayed from her fruit.
+1:11 And I called for a drought on the land, and on the mountains, and on the corn, and on the new wine, and on the oil, and on that which the ground brings forth, and on men, and on cattle, and on all the labor of the hands.
+1:12 Then Zerubbabel the son of Shealtiel, and Joshua the son of Josedech, the high priest, with all the remnant of the people, obeyed the voice of the LORD their God, and the words of Haggai the prophet, as the LORD their God had sent him, and the people did fear before the LORD.
+1:13 Then spoke Haggai the LORD's messenger in the LORD's message to the people, saying, I am with you, said the LORD.
+1:14 And the LORD stirred up the spirit of Zerubbabel the son of Shealtiel, governor of Judah, and the spirit of Joshua the son of Josedech, the high priest, and the spirit of all the remnant of the people; and they came and did work in the house of the LORD of hosts, their God,
+1:15 In the four and twentieth day of the sixth month, in the second year of Darius the king.
+ 	
+AKJV
+ 	 	 	 	
+Haggai 2
+ 	 	 	 	
+AV 1611
+
+2:1 In the seventh month, in the one and twentieth day of the month, came the word of the LORD by the prophet Haggai, saying,
+2:2 Speak now to Zerubbabel the son of Shealtiel, governor of Judah, and to Joshua the son of Josedech, the high priest, and to the residue of the people, saying,
+2:3 Who is left among you that saw this house in her first glory? and how do you see it now? is it not in your eyes in comparison of it as nothing?
+2:4 Yet now be strong, O Zerubbabel, said the LORD; and be strong, O Joshua, son of Josedech, the high priest; and be strong, all you people of the land, said the LORD, and work: for I am with you, said the LORD of hosts:
+2:5 According to the word that I covenanted with you when you came out of Egypt, so my spirit remains among you: fear you not.
+2:6 For thus said the LORD of hosts; Yet once, it is a little while, and I will shake the heavens, and the earth, and the sea, and the dry land;
+2:7 And I will shake all nations, and the desire of all nations shall come: and I will fill this house with glory, said the LORD of hosts.
+2:8 The silver is mine, and the gold is mine, said the LORD of hosts.
+2:9 The glory of this latter house shall be greater than of the former, said the LORD of hosts: and in this place will I give peace, said the LORD of hosts.
+2:10 In the four and twentieth day of the ninth month, in the second year of Darius, came the word of the LORD by Haggai the prophet, saying,
+2:11 Thus said the LORD of hosts; Ask now the priests concerning the law, saying,
+2:12 If one bear holy flesh in the skirt of his garment, and with his skirt do touch bread, or pottage, or wine, or oil, or any meat, shall it be holy? And the priests answered and said, No.
+2:13 Then said Haggai, If one that is unclean by a dead body touch any of these, shall it be unclean? And the priests answered and said, It shall be unclean.
+2:14 Then answered Haggai, and said, So is this people, and so is this nation before me, said the LORD; and so is every work of their hands; and that which they offer there is unclean.
+2:15 And now, I pray you, consider from this day and upward, from before a stone was laid on a stone in the temple of the LORD:
+2:16 Since those days were, when one came to an heap of twenty measures, there were but ten: when one came to the fat press for to draw out fifty vessels out of the press, there were but twenty.
+2:17 I smote you with blasting and with mildew and with hail in all the labors of your hands; yet you turned not to me, said the LORD.
+2:18 Consider now from this day and upward, from the four and twentieth day of the ninth month, even from the day that the foundation of the LORD's temple was laid, consider it.
+2:19 Is the seed yet in the barn? yes, as yet the vine, and the fig tree, and the pomegranate, and the olive tree, has not brought forth: from this day will I bless you.
+2:20 And again the word of the LORD came to Haggai in the four and twentieth day of the month, saying,
+2:21 Speak to Zerubbabel, governor of Judah, saying, I will shake the heavens and the earth;
+2:22 And I will overthrow the throne of kingdoms, and I will destroy the strength of the kingdoms of the heathen; and I will overthrow the chariots, and those that ride in them; and the horses and their riders shall come down, every one by the sword of his brother.
+2:23 In that day, said the LORD of hosts, will I take you, O Zerubbabel, my servant, the son of Shealtiel, said the LORD, and will make you as a signet: for I have chosen you, said the LORD of hosts.
+`
+
+var book_of_zechariah = `1:1 In the eighth month, in the second year of Darius, came the word of the LORD to Zechariah, the son of Berechiah, the son of Iddo the prophet, saying,
+1:2 The LORD has been sore displeased with your fathers.
+1:3 Therefore say you to them, Thus said the LORD of hosts; Turn you to me, said the LORD of hosts, and I will turn to you, said the LORD of hosts.
+1:4 Be you not as your fathers, to whom the former prophets have cried, saying, Thus said the LORD of hosts; Turn you now from your evil ways, and from your evil doings: but they did not hear, nor listen to me, said the LORD.
+1:5 Your fathers, where are they? and the prophets, do they live for ever?
+1:6 But my words and my statutes, which I commanded my servants the prophets, did they not take hold of your fathers? and they returned and said, Like as the LORD of hosts thought to do to us, according to our ways, and according to our doings, so has he dealt with us.
+1:7 On the four and twentieth day of the eleventh month, which is the month Sebat, in the second year of Darius, came the word of the LORD to Zechariah, the son of Berechiah, the son of Iddo the prophet, saying,
+1:8 I saw by night, and behold a man riding on a red horse, and he stood among the myrtle trees that were in the bottom; and behind him were there red horses, speckled, and white.
+1:9 Then said I, O my lord, what are these? And the angel that talked with me said to me, I will show you what these be.
+1:10 And the man that stood among the myrtle trees answered and said, These are they whom the LORD has sent to walk to and fro through the earth.
+1:11 And they answered the angel of the LORD that stood among the myrtle trees, and said, We have walked to and fro through the earth, and, behold, all the earth sits still, and is at rest.
+1:12 Then the angel of the LORD answered and said, O LORD of hosts, how long will you not have mercy on Jerusalem and on the cities of Judah, against which you have had indignation these three score and ten years?
+1:13 And the LORD answered the angel that talked with me with good words and comfortable words.
+1:14 So the angel that communed with me said to me, Cry you, saying, Thus said the LORD of hosts; I am jealous for Jerusalem and for Zion with a great jealousy.
+1:15 And I am very sore displeased with the heathen that are at ease: for I was but a little displeased, and they helped forward the affliction.
+1:16 Therefore thus said the LORD; I am returned to Jerusalem with mercies: my house shall be built in it, said the LORD of hosts, and a line shall be stretched forth on Jerusalem.
+1:17 Cry yet, saying, Thus said the LORD of hosts; My cities through prosperity shall yet be spread abroad; and the LORD shall yet comfort Zion, and shall yet choose Jerusalem.
+1:18 Then lifted I up my eyes, and saw, and behold four horns.
+1:19 And I said to the angel that talked with me, What be these? And he answered me, These are the horns which have scattered Judah, Israel, and Jerusalem.
+1:20 And the LORD showed me four carpenters.
+1:21 Then said I, What come these to do? And he spoke, saying, These are the horns which have scattered Judah, so that no man did lift up his head: but these are come to fray them, to cast out the horns of the Gentiles, which lifted up their horn over the land of Judah to scatter it.
+ 	
+AKJV
+ 	 	 	 	
+Zechariah 2
+ 	 	 	 	
+AV 1611
+
+2:1 I lifted up my eyes again, and looked, and behold a man with a measuring line in his hand.
+2:2 Then said I, Where go you? And he said to me, To measure Jerusalem, to see what is the breadth thereof, and what is the length thereof.
+2:3 And, behold, the angel that talked with me went forth, and another angel went out to meet him,
+2:4 And said to him, Run, speak to this young man, saying, Jerusalem shall be inhabited as towns without walls for the multitude of men and cattle therein:
+2:5 For I, said the LORD, will be to her a wall of fire round about, and will be the glory in the middle of her.
+2:6 Ho, ho, come forth, and flee from the land of the north, said the LORD: for I have spread you abroad as the four winds of the heaven, said the LORD.
+2:7 Deliver yourself, O Zion, that dwell with the daughter of Babylon.
+2:8 For thus said the LORD of hosts; After the glory has he sent me to the nations which spoiled you: for he that touches you touches the apple of his eye.
+2:9 For, behold, I will shake my hand on them, and they shall be a spoil to their servants: and you shall know that the LORD of hosts has sent me.
+2:10 Sing and rejoice, O daughter of Zion: for, see, I come, and I will dwell in the middle of you, said the LORD.
+2:11 And many nations shall be joined to the LORD in that day, and shall be my people: and I will dwell in the middle of you, and you shall know that the LORD of hosts has sent me to you.
+2:12 And the LORD shall inherit Judah his portion in the holy land, and shall choose Jerusalem again.
+2:13 Be silent, O all flesh, before the LORD: for he is raised up out of his holy habitation.
+ 	
+AKJV
+ 	 	 	 	
+Zechariah 3
+ 	 	 	 	
+AV 1611
+
+3:1 And he showed me Joshua the high priest standing before the angel of the LORD, and Satan standing at his right hand to resist him.
+3:2 And the LORD said to Satan, The LORD rebuke you, O Satan; even the LORD that has chosen Jerusalem rebuke you: is not this a brand plucked out of the fire?
+3:3 Now Joshua was clothed with filthy garments, and stood before the angel.
+3:4 And he answered and spoke to those that stood before him, saying, Take away the filthy garments from him. And to him he said, Behold, I have caused your iniquity to pass from you, and I will clothe you with change of raiment.
+3:5 And I said, Let them set a fair turban on his head. So they set a fair turban on his head, and clothed him with garments. And the angel of the LORD stood by.
+3:6 And the angel of the LORD protested to Joshua, saying,
+3:7 Thus said the LORD of hosts; If you will walk in my ways, and if you will keep my charge, then you shall also judge my house, and shall also keep my courts, and I will give you places to walk among these that stand by.
+3:8 Hear now, O Joshua the high priest, you, and your fellows that sit before you: for they are men wondered at: for, behold, I will bring forth my servant the BRANCH.
+3:9 For behold the stone that I have laid before Joshua; on one stone shall be seven eyes: behold, I will engrave the engraving thereof, said the LORD of hosts, and I will remove the iniquity of that land in one day.
+3:10 In that day, said the LORD of hosts, shall you call every man his neighbor under the vine and under the fig tree.
+ 	
+AKJV
+ 	 	 	 	
+Zechariah 4
+ 	 	 	 	
+AV 1611
+
+4:1 And the angel that talked with me came again, and waked me, as a man that is wakened out of his sleep.
+4:2 And said to me, What see you? And I said, I have looked, and behold a candlestick all of gold, with a bowl on the top of it, and his seven lamps thereon, and seven pipes to the seven lamps, which are on the top thereof:
+4:3 And two olive trees by it, one on the right side of the bowl, and the other on the left side thereof.
+4:4 So I answered and spoke to the angel that talked with me, saying, What are these, my lord?
+4:5 Then the angel that talked with me answered and said to me, Know you not what these be? And I said, No, my lord.
+4:6 Then he answered and spoke to me, saying, This is the word of the LORD to Zerubbabel, saying, Not by might, nor by power, but by my spirit, said the LORD of hosts.
+4:7 Who are you, O great mountain? before Zerubbabel you shall become a plain: and he shall bring forth the headstone thereof with shoutings, crying, Grace, grace to it.
+4:8 Moreover the word of the LORD came to me, saying,
+4:9 The hands of Zerubbabel have laid the foundation of this house; his hands shall also finish it; and you shall know that the LORD of hosts has sent me to you.
+4:10 For who has despised the day of small things? for they shall rejoice, and shall see the plummet in the hand of Zerubbabel with those seven; they are the eyes of the LORD, which run to and fro through the whole earth.
+4:11 Then answered I, and said to him, What are these two olive trees on the right side of the candlestick and on the left side thereof?
+4:12 And I answered again, and said to him, What be these two olive branches which through the two golden pipes empty the golden oil out of themselves?
+4:13 And he answered me and said, Know you not what these be? And I said, No, my lord.
+4:14 Then said he, These are the two anointed ones, that stand by the LORD of the whole earth.
+ 	
+AKJV
+ 	 	 	 	
+Zechariah 5
+ 	 	 	 	
+AV 1611
+
+5:1 Then I turned, and lifted up my eyes, and looked, and behold a flying roll.
+5:2 And he said to me, What see you? And I answered, I see a flying roll; the length thereof is twenty cubits, and the breadth thereof ten cubits.
+5:3 Then said he to me, This is the curse that goes forth over the face of the whole earth: for every one that steals shall be cut off as on this side according to it; and every one that swears shall be cut off as on that side according to it.
+5:4 I will bring it forth, said the LORD of hosts, and it shall enter into the house of the thief, and into the house of him that swears falsely by my name: and it shall remain in the middle of his house, and shall consume it with the timber thereof and the stones thereof.
+5:5 Then the angel that talked with me went forth, and said to me, Lift up now your eyes, and see what is this that goes forth.
+5:6 And I said, What is it? And he said, This is an ephah that goes forth. He said moreover, This is their resemblance through all the earth.
+5:7 And, behold, there was lifted up a talent of lead: and this is a woman that sits in the middle of the ephah.
+5:8 And he said, This is wickedness. And he cast it into the middle of the ephah; and he cast the weight of lead on the mouth thereof.
+5:9 Then lifted I up my eyes, and looked, and, behold, there came out two women, and the wind was in their wings; for they had wings like the wings of a stork: and they lifted up the ephah between the earth and the heaven.
+5:10 Then said I to the angel that talked with me, Where do these bear the ephah?
+5:11 And he said to me, To build it an house in the land of Shinar: and it shall be established, and set there on her own base.
+ 	
+AKJV
+ 	 	 	 	
+Zechariah 6
+ 	 	 	 	
+AV 1611
+
+6:1 And I turned, and lifted up my eyes, and looked, and, behold, there came four chariots out from between two mountains; and the mountains were mountains of brass.
+6:2 In the first chariot were red horses; and in the second chariot black horses;
+6:3 And in the third chariot white horses; and in the fourth chariot spotted and bay horses.
+6:4 Then I answered and said to the angel that talked with me, What are these, my lord?
+6:5 And the angel answered and said to me, These are the four spirits of the heavens, which go forth from standing before the LORD of all the earth.
+6:6 The black horses which are therein go forth into the north country; and the white go forth after them; and the spotted go forth toward the south country.
+6:7 And the bay went forth, and sought to go that they might walk to and fro through the earth: and he said, Get you hence, walk to and fro through the earth. So they walked to and fro through the earth.
+6:8 Then cried he on me, and spoke to me, saying, Behold, these that go toward the north country have quieted my spirit in the north country.
+6:9 And the word of the LORD came to me, saying,
+6:10 Take of them of the captivity, even of Heldai, of Tobijah, and of Jedaiah, which are come from Babylon, and come you the same day, and go into the house of Josiah the son of Zephaniah;
+6:11 Then take silver and gold, and make crowns, and set them on the head of Joshua the son of Josedech, the high priest;
+6:12 And speak to him, saying, Thus speaks the LORD of hosts, saying, Behold the man whose name is The BRANCH; and he shall grow up out of his place, and he shall build the temple of the LORD:
+6:13 Even he shall build the temple of the LORD; and he shall bear the glory, and shall sit and rule on his throne; and he shall be a priest on his throne: and the counsel of peace shall be between them both.
+6:14 And the crowns shall be to Helem, and to Tobijah, and to Jedaiah, and to Hen the son of Zephaniah, for a memorial in the temple of the LORD.
+6:15 And they that are far off shall come and build in the temple of the LORD, and you shall know that the LORD of hosts has sent me to you. And this shall come to pass, if you will diligently obey the voice of the LORD your God.
+ 	
+AKJV
+ 	 	 	 	
+Zechariah 7
+ 	 	 	 	
+AV 1611
+
+7:1 And it came to pass in the fourth year of king Darius, that the word of the LORD came to Zechariah in the fourth day of the ninth month, even in Chisleu;
+7:2 When they had sent to the house of God Sherezer and Regemmelech, and their men, to pray before the LORD,
+7:3 And to speak to the priests which were in the house of the LORD of hosts, and to the prophets, saying, Should I weep in the fifth month, separating myself, as I have done these so many years?
+7:4 Then came the word of the LORD of hosts to me, saying,
+7:5 Speak to all the people of the land, and to the priests, saying, When you fasted and mourned in the fifth and seventh month, even those seventy years, did you at all fast to me, even to me?
+7:6 And when you did eat, and when you did drink, did not you eat for yourselves, and drink for yourselves?
+7:7 Should you not hear the words which the LORD has cried by the former prophets, when Jerusalem was inhabited and in prosperity, and the cities thereof round about her, when men inhabited the south and the plain?
+7:8 And the word of the LORD came to Zechariah, saying,
+7:9 Thus speaks the LORD of hosts, saying, Execute true judgment, and show mercy and compassions every man to his brother:
+7:10 And oppress not the widow, nor the fatherless, the stranger, nor the poor; and let none of you imagine evil against his brother in your heart.
+7:11 But they refused to listen, and pulled away the shoulder, and stopped their ears, that they should not hear.
+7:12 Yes, they made their hearts as an adamant stone, lest they should hear the law, and the words which the LORD of hosts has sent in his spirit by the former prophets: therefore came a great wrath from the LORD of hosts.
+7:13 Therefore it is come to pass, that as he cried, and they would not hear; so they cried, and I would not hear, said the LORD of hosts:
+7:14 But I scattered them with a whirlwind among all the nations whom they knew not. Thus the land was desolate after them, that no man passed through nor returned: for they laid the pleasant land desolate.
+ 	
+AKJV
+ 	 	 	 	
+Zechariah 8
+ 	 	 	 	
+AV 1611
+
+8:1 Again the word of the LORD of hosts came to me, saying,
+8:2 Thus said the LORD of hosts; I was jealous for Zion with great jealousy, and I was jealous for her with great fury.
+8:3 Thus said the LORD; I am returned to Zion, and will dwell in the middle of Jerusalem: and Jerusalem shall be called a city of truth; and the mountain of the LORD of hosts the holy mountain.
+8:4 Thus said the LORD of hosts; There shall yet old men and old women dwell in the streets of Jerusalem, and every man with his staff in his hand for very age.
+8:5 And the streets of the city shall be full of boys and girls playing in the streets thereof.
+8:6 Thus said the LORD of hosts; If it be marvelous in the eyes of the remnant of this people in these days, should it also be marvelous in my eyes? said the LORD of hosts.
+8:7 Thus said the LORD of hosts; Behold, I will save my people from the east country, and from the west country;
+8:8 And I will bring them, and they shall dwell in the middle of Jerusalem: and they shall be my people, and I will be their God, in truth and in righteousness.
+8:9 Thus said the LORD of hosts; Let your hands be strong, you that hear in these days these words by the mouth of the prophets, which were in the day that the foundation of the house of the LORD of hosts was laid, that the temple might be built.
+8:10 For before these days there was no hire for man, nor any hire for beast; neither was there any peace to him that went out or came in because of the affliction: for I set all men every one against his neighbor.
+8:11 But now I will not be to the residue of this people as in the former days, said the LORD of hosts.
+8:12 For the seed shall be prosperous; the vine shall give her fruit, and the ground shall give her increase, and the heavens shall give their dew; and I will cause the remnant of this people to possess all these things.
+8:13 And it shall come to pass, that as you were a curse among the heathen, O house of Judah, and house of Israel; so will I save you, and you shall be a blessing: fear not, but let your hands be strong.
+8:14 For thus said the LORD of hosts; As I thought to punish you, when your fathers provoked me to wrath, said the LORD of hosts, and I repented not:
+8:15 So again have I thought in these days to do well to Jerusalem and to the house of Judah: fear you not.
+8:16 These are the things that you shall do; Speak you every man the truth to his neighbor; execute the judgment of truth and peace in your gates:
+8:17 And let none of you imagine evil in your hearts against his neighbor; and love no false oath: for all these are things that I hate, said the LORD.
+8:18 And the word of the LORD of hosts came to me, saying,
+8:19 Thus said the LORD of hosts; The fast of the fourth month, and the fast of the fifth, and the fast of the seventh, and the fast of the tenth, shall be to the house of Judah joy and gladness, and cheerful feasts; therefore love the truth and peace.
+8:20 Thus said the LORD of hosts; It shall yet come to pass, that there shall come people, and the inhabitants of many cities:
+8:21 And the inhabitants of one city shall go to another, saying, Let us go speedily to pray before the LORD, and to seek the LORD of hosts: I will go also.
+8:22 Yes, many people and strong nations shall come to seek the LORD of hosts in Jerusalem, and to pray before the LORD.
+8:23 Thus said the LORD of hosts; In those days it shall come to pass, that ten men shall take hold out of all languages of the nations, even shall take hold of the skirt of him that is a Jew, saying, We will go with you: for we have heard that God is with you.
+ 	
+AKJV
+ 	 	 	 	
+Zechariah 9
+ 	 	 	 	
+AV 1611
+
+9:1 The burden of the word of the LORD in the land of Hadrach, and Damascus shall be the rest thereof: when the eyes of man, as of all the tribes of Israel, shall be toward the LORD.
+9:2 And Hamath also shall border thereby; Tyrus, and Zidon, though it be very wise.
+9:3 And Tyrus did build herself a strong hold, and heaped up silver as the dust, and fine gold as the mire of the streets.
+9:4 Behold, the LORD will cast her out, and he will smite her power in the sea; and she shall be devoured with fire.
+9:5 Ashkelon shall see it, and fear; Gaza also shall see it, and be very sorrowful, and Ekron; for her expectation shall be ashamed; and the king shall perish from Gaza, and Ashkelon shall not be inhabited.
+9:6 And a bastard shall dwell in Ashdod, and I will cut off the pride of the Philistines.
+9:7 And I will take away his blood out of his mouth, and his abominations from between his teeth: but he that remains, even he, shall be for our God, and he shall be as a governor in Judah, and Ekron as a Jebusite.
+9:8 And I will encamp about my house because of the army, because of him that passes by, and because of him that returns: and no oppressor shall pass through them any more: for now have I seen with my eyes.
+9:9 Rejoice greatly, O daughter of Zion; shout, O daughter of Jerusalem: behold, your King comes to you: he is just, and having salvation; lowly, and riding on an ass, and on a colt the foal of an ass.
+9:10 And I will cut off the chariot from Ephraim, and the horse from Jerusalem, and the battle bow shall be cut off: and he shall speak peace to the heathen: and his dominion shall be from sea even to sea, and from the river even to the ends of the earth.
+9:11 As for you also, by the blood of your covenant I have sent forth your prisoners out of the pit wherein is no water.
+9:12 Turn you to the strong hold, you prisoners of hope: even to day do I declare that I will render double to you;
+9:13 When I have bent Judah for me, filled the bow with Ephraim, and raised up your sons, O Zion, against your sons, O Greece, and made you as the sword of a mighty man.
+9:14 And the LORD shall be seen over them, and his arrow shall go forth as the lightning: and the LORD God shall blow the trumpet, and shall go with whirlwinds of the south.
+9:15 The LORD of hosts shall defend them; and they shall devour, and subdue with sling stones; and they shall drink, and make a noise as through wine; and they shall be filled like bowls, and as the corners of the altar.
+9:16 And the LORD their God shall save them in that day as the flock of his people: for they shall be as the stones of a crown, lifted up as an ensign on his land.
+9:17 For how great is his goodness, and how great is his beauty! corn shall make the young men cheerful, and new wine the maids.
+ 	
+AKJV
+ 	 	 	 	
+Zechariah 10
+ 	 	 	 	
+AV 1611
+
+10:1 Ask you of the LORD rain in the time of the latter rain; so the LORD shall make bright clouds, and give them showers of rain, to every one grass in the field.
+10:2 For the idols have spoken vanity, and the diviners have seen a lie, and have told false dreams; they comfort in vain: therefore they went their way as a flock, they were troubled, because there was no shepherd.
+10:3 My anger was kindled against the shepherds, and I punished the goats: for the LORD of hosts has visited his flock the house of Judah, and has made them as his goodly horse in the battle.
+10:4 Out of him came forth the corner, out of him the nail, out of him the battle bow, out of him every oppressor together.
+10:5 And they shall be as mighty men, which tread down their enemies in the mire of the streets in the battle: and they shall fight, because the LORD is with them, and the riders on horses shall be confounded.
+10:6 And I will strengthen the house of Judah, and I will save the house of Joseph, and I will bring them again to place them; for I have mercy on them: and they shall be as though I had not cast them off: for I am the LORD their God, and will hear them.
+10:7 And they of Ephraim shall be like a mighty man, and their heart shall rejoice as through wine: yes, their children shall see it, and be glad; their heart shall rejoice in the LORD.
+10:8 I will hiss for them, and gather them; for I have redeemed them: and they shall increase as they have increased.
+10:9 And I will sow them among the people: and they shall remember me in far countries; and they shall live with their children, and turn again.
+10:10 I will bring them again also out of the land of Egypt, and gather them out of Assyria; and I will bring them into the land of Gilead and Lebanon; and place shall not be found for them.
+10:11 And he shall pass through the sea with affliction, and shall smite the waves in the sea, and all the deeps of the river shall dry up: and the pride of Assyria shall be brought down, and the scepter of Egypt shall depart away.
+10:12 And I will strengthen them in the LORD; and they shall walk up and down in his name, said the LORD.
+ 	
+AKJV
+ 	 	 	 	
+Zechariah 11
+ 	 	 	 	
+AV 1611
+
+11:1 Open your doors, O Lebanon, that the fire may devour your cedars.
+11:2 Howl, fir tree; for the cedar is fallen; because the mighty are spoiled: howl, O you oaks of Bashan; for the forest of the vintage is come down.
+11:3 There is a voice of the howling of the shepherds; for their glory is spoiled: a voice of the roaring of young lions; for the pride of Jordan is spoiled.
+11:4 Thus said the LORD my God; Feed the flock of the slaughter;
+11:5 Whose possessors slay them, and hold themselves not guilty: and they that sell them say, Blessed be the LORD; for I am rich: and their own shepherds pity them not.
+11:6 For I will no more pity the inhabitants of the land, said the LORD: but, see, I will deliver the men every one into his neighbor's hand, and into the hand of his king: and they shall smite the land, and out of their hand I will not deliver them.
+11:7 And I will feed the flock of slaughter, even you, O poor of the flock. And I took to me two staves; the one I called Beauty, and the other I called Bands; and I fed the flock.
+11:8 Three shepherds also I cut off in one month; and my soul loathed them, and their soul also abhorred me.
+11:9 Then said I, I will not feed you: that that dies, let it die; and that that is to be cut off, let it be cut off; and let the rest eat every one the flesh of another.
+11:10 And I took my staff, even Beauty, and cut it asunder, that I might break my covenant which I had made with all the people.
+11:11 And it was broken in that day: and so the poor of the flock that waited on me knew that it was the word of the LORD.
+11:12 And I said to them, If you think good, give me my price; and if not, forbear. So they weighed for my price thirty pieces of silver.
+11:13 And the LORD said to me, Cast it to the potter: a goodly price that I was priced at of them. And I took the thirty pieces of silver, and cast them to the potter in the house of the LORD.
+11:14 Then I cut asunder my other staff, even Bands, that I might break the brotherhood between Judah and Israel.
+11:15 And the LORD said to me, Take to you yet the instruments of a foolish shepherd.
+11:16 For, see, I will raise up a shepherd in the land, which shall not visit those that be cut off, neither shall seek the young one, nor heal that that is broken, nor feed that that stands still: but he shall eat the flesh of the fat, and tear their claws in pieces.
+11:17 Woe to the idol shepherd that leaves the flock! the sword shall be on his arm, and on his right eye: his arm shall be clean dried up, and his right eye shall be utterly darkened.
+ 	
+AKJV
+ 	 	 	 	
+Zechariah 12
+ 	 	 	 	
+AV 1611
+
+12:1 The burden of the word of the LORD for Israel, said the LORD, which stretches forth the heavens, and lays the foundation of the earth, and forms the spirit of man within him.
+12:2 Behold, I will make Jerusalem a cup of trembling to all the people round about, when they shall be in the siege both against Judah and against Jerusalem.
+12:3 And in that day will I make Jerusalem a burdensome stone for all people: all that burden themselves with it shall be cut in pieces, though all the people of the earth be gathered together against it.
+12:4 In that day, said the LORD, I will smite every horse with astonishment, and his rider with madness: and I will open my eyes on the house of Judah, and will smite every horse of the people with blindness.
+12:5 And the governors of Judah shall say in their heart, The inhabitants of Jerusalem shall be my strength in the LORD of hosts their God.
+12:6 In that day will I make the governors of Judah like an hearth of fire among the wood, and like a torch of fire in a sheaf; and they shall devour all the people round about, on the right hand and on the left: and Jerusalem shall be inhabited again in her own place, even in Jerusalem.
+12:7 The LORD also shall save the tents of Judah first, that the glory of the house of David and the glory of the inhabitants of Jerusalem do not magnify themselves against Judah.
+12:8 In that day shall the LORD defend the inhabitants of Jerusalem; and he that is feeble among them at that day shall be as David; and the house of David shall be as God, as the angel of the LORD before them.
+12:9 And it shall come to pass in that day, that I will seek to destroy all the nations that come against Jerusalem.
+12:10 And I will pour on the house of David, and on the inhabitants of Jerusalem, the spirit of grace and of supplications: and they shall look on me whom they have pierced, and they shall mourn for him, as one mourns for his only son, and shall be in bitterness for him, as one that is in bitterness for his firstborn.
+12:11 In that day shall there be a great mourning in Jerusalem, as the mourning of Hadadrimmon in the valley of Megiddon.
+12:12 And the land shall mourn, every family apart; the family of the house of David apart, and their wives apart; the family of the house of Nathan apart, and their wives apart;
+12:13 The family of the house of Levi apart, and their wives apart; the family of Shimei apart, and their wives apart;
+12:14 All the families that remain, every family apart, and their wives apart.
+ 	
+AKJV
+ 	 	 	 	
+Zechariah 13
+ 	 	 	 	
+AV 1611
+
+13:1 In that day there shall be a fountain opened to the house of David and to the inhabitants of Jerusalem for sin and for uncleanness.
+13:2 And it shall come to pass in that day, said the LORD of hosts, that I will cut off the names of the idols out of the land, and they shall no more be remembered: and also I will cause the prophets and the unclean spirit to pass out of the land.
+13:3 And it shall come to pass, that when any shall yet prophesy, then his father and his mother that begat him shall say to him, You shall not live; for you speak lies in the name of the LORD: and his father and his mother that begat him shall thrust him through when he prophesies.
+13:4 And it shall come to pass in that day, that the prophets shall be ashamed every one of his vision, when he has prophesied; neither shall they wear a rough garment to deceive:
+13:5 But he shall say, I am no prophet, I am an farmer; for man taught me to keep cattle from my youth.
+13:6 And one shall say to him, What are these wounds in your hands? Then he shall answer, Those with which I was wounded in the house of my friends.
+13:7 Awake, O sword, against my shepherd, and against the man that is my fellow, said the LORD of hosts: smite the shepherd, and the sheep shall be scattered: and I will turn my hand on the little ones.
+13:8 And it shall come to pass, that in all the land, said the LORD, two parts therein shall be cut off and die; but the third shall be left therein.
+13:9 And I will bring the third part through the fire, and will refine them as silver is refined, and will try them as gold is tried: they shall call on my name, and I will hear them: I will say, It is my people: and they shall say, The LORD is my God.
+ 	
+AKJV
+ 	 	 	 	
+Zechariah 14
+ 	 	 	 	
+AV 1611
+
+14:1 Behold, the day of the LORD comes, and your spoil shall be divided in the middle of you.
+14:2 For I will gather all nations against Jerusalem to battle; and the city shall be taken, and the houses rifled, and the women ravished; and half of the city shall go forth into captivity, and the residue of the people shall not be cut off from the city.
+14:3 Then shall the LORD go forth, and fight against those nations, as when he fought in the day of battle.
+14:4 And his feet shall stand in that day on the mount of Olives, which is before Jerusalem on the east, and the mount of Olives shall split in the middle thereof toward the east and toward the west, and there shall be a very great valley; and half of the mountain shall remove toward the north, and half of it toward the south.
+14:5 And you shall flee to the valley of the mountains; for the valley of the mountains shall reach to Azal: yes, you shall flee, like as you fled from before the earthquake in the days of Uzziah king of Judah: and the LORD my God shall come, and all the saints with you.
+14:6 And it shall come to pass in that day, that the light shall not be clear, nor dark:
+14:7 But it shall be one day which shall be known to the LORD, not day, nor night: but it shall come to pass, that at evening time it shall be light.
+14:8 And it shall be in that day, that living waters shall go out from Jerusalem; half of them toward the former sea, and half of them toward the hinder sea: in summer and in winter shall it be.
+14:9 And the LORD shall be king over all the earth: in that day shall there be one LORD, and his name one.
+14:10 All the land shall be turned as a plain from Geba to Rimmon south of Jerusalem: and it shall be lifted up, and inhabited in her place, from Benjamin's gate to the place of the first gate, to the corner gate, and from the tower of Hananeel to the king's winepresses.
+14:11 And men shall dwell in it, and there shall be no more utter destruction; but Jerusalem shall be safely inhabited.
+14:12 And this shall be the plague with which the LORD will smite all the people that have fought against Jerusalem; Their flesh shall consume away while they stand on their feet, and their eyes shall consume away in their holes, and their tongue shall consume away in their mouth.
+14:13 And it shall come to pass in that day, that a great tumult from the LORD shall be among them; and they shall lay hold every one on the hand of his neighbor, and his hand shall rise up against the hand of his neighbor.
+14:14 And Judah also shall fight at Jerusalem; and the wealth of all the heathen round about shall be gathered together, gold, and silver, and apparel, in great abundance.
+14:15 And so shall be the plague of the horse, of the mule, of the camel, and of the ass, and of all the beasts that shall be in these tents, as this plague.
+14:16 And it shall come to pass, that every one that is left of all the nations which came against Jerusalem shall even go up from year to year to worship the King, the LORD of hosts, and to keep the feast of tabernacles.
+14:17 And it shall be, that whoever will not come up of all the families of the earth to Jerusalem to worship the King, the LORD of hosts, even on them shall be no rain.
+14:18 And if the family of Egypt go not up, and come not, that have no rain; there shall be the plague, with which the LORD will smite the heathen that come not up to keep the feast of tabernacles.
+14:19 This shall be the punishment of Egypt, and the punishment of all nations that come not up to keep the feast of tabernacles.
+14:20 In that day shall there be on the bells of the horses, HOLINESS UNTO THE LORD; and the pots in the LORD's house shall be like the bowls before the altar.
+14:21 Yes, every pot in Jerusalem and in Judah shall be holiness to the LORD of hosts: and all they that sacrifice shall come and take of them, and seethe therein: and in that day there shall be no more the Canaanite in the house of the LORD of hosts.`
+
+var book_of_malachi = `1:1 The burden of the word of the LORD to Israel by Malachi.
+1:2 I have loved you, said the LORD. Yet you say, Wherein have you loved us? Was not Esau Jacob's brother? said the LORD: yet I loved Jacob,
+1:3 And I hated Esau, and laid his mountains and his heritage waste for the dragons of the wilderness.
+1:4 Whereas Edom said, We are impoverished, but we will return and build the desolate places; thus said the LORD of hosts, They shall build, but I will throw down; and they shall call them, The border of wickedness, and, The people against whom the LORD has indignation for ever.
+1:5 And your eyes shall see, and you shall say, The LORD will be magnified from the border of Israel.
+1:6 A son honors his father, and a servant his master: if then I be a father, where is my honor? and if I be a master, where is my fear? said the LORD of hosts to you, O priests, that despise my name. And you say, Wherein have we despised your name?
+1:7 You offer polluted bread on my altar; and you say, Wherein have we polluted you? In that you say, The table of the LORD is contemptible.
+1:8 And if you offer the blind for sacrifice, is it not evil? and if you offer the lame and sick, is it not evil? offer it now to your governor; will he be pleased with you, or accept your person? said the LORD of hosts.
+1:9 And now, I pray you, beseech God that he will be gracious to us: this has been by your means: will he regard your persons? said the LORD of hosts.
+1:10 Who is there even among you that would shut the doors for nothing? neither do you kindle fire on my altar for nothing. I have no pleasure in you, said the LORD of hosts, neither will I accept an offering at your hand.
+1:11 For from the rising of the sun even to the going down of the same my name shall be great among the Gentiles; and in every place incense shall be offered to my name, and a pure offering: for my name shall be great among the heathen, said the LORD of hosts.
+1:12 But you have profaned it, in that you say, The table of the LORD is polluted; and the fruit thereof, even his meat, is contemptible.
+1:13 You said also, Behold, what a weariness is it! and you have snuffed at it, said the LORD of hosts; and you brought that which was torn, and the lame, and the sick; thus you brought an offering: should I accept this of your hand? said the LORD.
+1:14 But cursed be the deceiver, which has in his flock a male, and vows, and sacrifices to the LORD a corrupt thing: for I am a great King, said the LORD of hosts, and my name is dreadful among the heathen.
+ 	
+AKJV
+ 	 	 	 	
+Malachi 2
+ 	 	 	 	
+AV 1611
+
+2:1 And now, O you priests, this commandment is for you.
+2:2 If you will not hear, and if you will not lay it to heart, to give glory to my name, said the LORD of hosts, I will even send a curse on you, and I will curse your blessings: yes, I have cursed them already, because you do not lay it to heart.
+2:3 Behold, I will corrupt your seed, and spread dung on your faces, even the dung of your solemn feasts; and one shall take you away with it.
+2:4 And you shall know that I have sent this commandment to you, that my covenant might be with Levi, said the LORD of hosts.
+2:5 My covenant was with him of life and peace; and I gave them to him for the fear with which he feared me, and was afraid before my name.
+2:6 The law of truth was in his mouth, and iniquity was not found in his lips: he walked with me in peace and equity, and did turn many away from iniquity.
+2:7 For the priest's lips should keep knowledge, and they should seek the law at his mouth: for he is the messenger of the LORD of hosts.
+2:8 But you are departed out of the way; you have caused many to stumble at the law; you have corrupted the covenant of Levi, said the LORD of hosts.
+2:9 Therefore have I also made you contemptible and base before all the people, according as you have not kept my ways, but have been partial in the law.
+2:10 Have we not all one father? has not one God created us? why do we deal treacherously every man against his brother, by profaning the covenant of our fathers?
+2:11 Judah has dealt treacherously, and an abomination is committed in Israel and in Jerusalem; for Judah has profaned the holiness of the LORD which he loved, and has married the daughter of a strange god.
+2:12 The LORD will cut off the man that does this, the master and the scholar, out of the tabernacles of Jacob, and him that offers an offering to the LORD of hosts.
+2:13 And this have you done again, covering the altar of the LORD with tears, with weeping, and with crying out, so that he regards not the offering any more, or receives it with good will at your hand.
+2:14 Yet you say, Why? Because the LORD has been witness between you and the wife of your youth, against whom you have dealt treacherously: yet is she your companion, and the wife of your covenant.
+2:15 And did not he make one? Yet had he the residue of the spirit. And why one? That he might seek a godly seed. Therefore take heed to your spirit, and let none deal treacherously against the wife of his youth.
+2:16 For the LORD, the God of Israel, said that he hates putting away: for one covers violence with his garment, said the LORD of hosts: therefore take heed to your spirit, that you deal not treacherously.
+2:17 You have wearied the LORD with your words. Yet you say, Wherein have we wearied him? When you say, Every one that does evil is good in the sight of the LORD, and he delights in them; or, Where is the God of judgment?
+ 	
+AKJV
+ 	 	 	 	
+Malachi 3
+ 	 	 	 	
+AV 1611
+
+3:1 Behold, I will send my messenger, and he shall prepare the way before me: and the LORD, whom you seek, shall suddenly come to his temple, even the messenger of the covenant, whom you delight in: behold, he shall come, said the LORD of hosts.
+3:2 But who may abide the day of his coming? and who shall stand when he appears? for he is like a refiner's fire, and like fullers' soap:
+3:3 And he shall sit as a refiner and purifier of silver: and he shall purify the sons of Levi, and purge them as gold and silver, that they may offer to the LORD an offering in righteousness.
+3:4 Then shall the offering of Judah and Jerusalem be pleasant to the LORD, as in the days of old, and as in former years.
+3:5 And I will come near to you to judgment; and I will be a swift witness against the sorcerers, and against the adulterers, and against false swearers, and against those that oppress the hireling in his wages, the widow, and the fatherless, and that turn aside the stranger from his right, and fear not me, said the LORD of hosts.
+3:6 For I am the LORD, I change not; therefore you sons of Jacob are not consumed.
+3:7 Even from the days of your fathers you are gone away from my ordinances, and have not kept them. Return to me, and I will return to you, said the LORD of hosts. But you said, Wherein shall we return?
+3:8 Will a man rob God? Yet you have robbed me. But you say, Wherein have we robbed you? In tithes and offerings.
+3:9 You are cursed with a curse: for you have robbed me, even this whole nation.
+3:10 Bring you all the tithes into the storehouse, that there may be meat in my house, and prove me now herewith, said the LORD of hosts, if I will not open you the windows of heaven, and pour you out a blessing, that there shall not be room enough to receive it.
+3:11 And I will rebuke the devourer for your sakes, and he shall not destroy the fruits of your ground; neither shall your vine cast her fruit before the time in the field, said the LORD of hosts.
+3:12 And all nations shall call you blessed: for you shall be a delightsome land, said the LORD of hosts.
+3:13 Your words have been stout against me, said the LORD. Yet you say, What have we spoken so much against you?
+3:14 You have said, It is vain to serve God: and what profit is it that we have kept his ordinance, and that we have walked mournfully before the LORD of hosts?
+3:15 And now we call the proud happy; yes, they that work wickedness are set up; yes, they that tempt God are even delivered.
+3:16 Then they that feared the LORD spoke often one to another: and the LORD listened, and heard it, and a book of remembrance was written before him for them that feared the LORD, and that thought on his name.
+3:17 And they shall be mine, said the LORD of hosts, in that day when I make up my jewels; and I will spare them, as a man spares his own son that serves him.
+3:18 Then shall you return, and discern between the righteous and the wicked, between him that serves God and him that serves him not.
+ 	
+AKJV
+ 	 	 	 	
+Malachi 4
+ 	 	 	 	
+AV 1611
+
+4:1 For, behold, the day comes, that shall burn as an oven; and all the proud, yes, and all that do wickedly, shall be stubble: and the day that comes shall burn them up, said the LORD of hosts, that it shall leave them neither root nor branch.
+4:2 But to you that fear my name shall the Sun of righteousness arise with healing in his wings; and you shall go forth, and grow up as calves of the stall.
+4:3 And you shall tread down the wicked; for they shall be ashes under the soles of your feet in the day that I shall do this, said the LORD of hosts.
+4:4 Remember you the law of Moses my servant, which I commanded to him in Horeb for all Israel, with the statutes and judgments.
+4:5 Behold, I will send you Elijah the prophet before the coming of the great and dreadful day of the LORD:
+4:6 And he shall turn the heart of the fathers to the children, and the heart of the children to their fathers, lest I come and smite the earth with a curse.`
+
 
 
 var book_of_matthew = `Matthew Chapter 1
@@ -51099,6 +52721,807 @@ Reprobates.... that is, without proof, by having no occasion of shewing our powe
 13:13. The grace of our Lord Jesus Christ and the charity of God and the communication of the Holy Ghost be with you all. Amen.
 
 `
+
+var book_of_galatians = `1:1 Paul, an apostle, (not of men, neither by man, but by Jesus Christ, and God the Father, who raised him from the dead;)
+1:2 And all the brothers which are with me, to the churches of Galatia:
+1:3 Grace be to you and peace from God the Father, and from our Lord Jesus Christ,
+1:4 Who gave himself for our sins, that he might deliver us from this present evil world, according to the will of God and our Father:
+1:5 To whom be glory for ever and ever. Amen.
+1:6 I marvel that you are so soon removed from him that called you into the grace of Christ to another gospel:
+1:7 Which is not another; but there be some that trouble you, and would pervert the gospel of Christ.
+1:8 But though we, or an angel from heaven, preach any other gospel to you than that which we have preached to you, let him be accursed.
+1:9 As we said before, so say I now again, if any man preach any other gospel to you than that you have received, let him be accursed.
+1:10 For do I now persuade men, or God? or do I seek to please men? for if I yet pleased men, I should not be the servant of Christ.
+1:11 But I certify you, brothers, that the gospel which was preached of me is not after man.
+1:12 For I neither received it of man, neither was I taught it, but by the revelation of Jesus Christ.
+1:13 For you have heard of my conversation in time past in the Jews' religion, how that beyond measure I persecuted the church of God, and wasted it:
+1:14 And profited in the Jews' religion above many my equals in my own nation, being more exceedingly zealous of the traditions of my fathers.
+1:15 But when it pleased God, who separated me from my mother's womb, and called me by his grace,
+1:16 To reveal his Son in me, that I might preach him among the heathen; immediately I conferred not with flesh and blood:
+1:17 Neither went I up to Jerusalem to them which were apostles before me; but I went into Arabia, and returned again to Damascus.
+1:18 Then after three years I went up to Jerusalem to see Peter, and stayed with him fifteen days.
+1:19 But other of the apostles saw I none, save James the Lord's brother.
+1:20 Now the things which I write to you, behold, before God, I lie not.
+1:21 Afterwards I came into the regions of Syria and Cilicia;
+1:22 And was unknown by face to the churches of Judaea which were in Christ:
+1:23 But they had heard only, That he which persecuted us in times past now preaches the faith which once he destroyed.
+1:24 And they glorified God in me.
+ 	
+AKJV
+ 	 	 	 	
+Galatians 2
+ 	 	 	 	
+AV 1611
+
+2:1 Then fourteen years after I went up again to Jerusalem with Barnabas, and took Titus with me also.
+2:2 And I went up by revelation, and communicated to them that gospel which I preach among the Gentiles, but privately to them which were of reputation, lest by any means I should run, or had run, in vain.
+2:3 But neither Titus, who was with me, being a Greek, was compelled to be circumcised:
+2:4 And that because of false brothers unawares brought in, who came in privately to spy out our liberty which we have in Christ Jesus, that they might bring us into bondage:
+2:5 To whom we gave place by subjection, no, not for an hour; that the truth of the gospel might continue with you.
+2:6 But of these who seemed to be somewhat, (whatever they were, it makes no matter to me: God accepts no man's person:) for they who seemed to be somewhat in conference added nothing to me:
+2:7 But contrariwise, when they saw that the gospel of the uncircumcision was committed to me, as the gospel of the circumcision was to Peter;
+2:8 (For he that worked effectually in Peter to the apostleship of the circumcision, the same was mighty in me toward the Gentiles:)
+2:9 And when James, Cephas, and John, who seemed to be pillars, perceived the grace that was given to me, they gave to me and Barnabas the right hands of fellowship; that we should go to the heathen, and they to the circumcision.
+2:10 Only they would that we should remember the poor; the same which I also was forward to do.
+2:11 But when Peter was come to Antioch, I withstood him to the face, because he was to be blamed.
+2:12 For before that certain came from James, he did eat with the Gentiles: but when they were come, he withdrew and separated himself, fearing them which were of the circumcision.
+2:13 And the other Jews dissembled likewise with him; so that Barnabas also was carried away with their dissimulation.
+2:14 But when I saw that they walked not uprightly according to the truth of the gospel, I said to Peter before them all, If you, being a Jew, live after the manner of Gentiles, and not as do the Jews, why compel you the Gentiles to live as do the Jews?
+2:15 We who are Jews by nature, and not sinners of the Gentiles,
+2:16 Knowing that a man is not justified by the works of the law, but by the faith of Jesus Christ, even we have believed in Jesus Christ, that we might be justified by the faith of Christ, and not by the works of the law: for by the works of the law shall no flesh be justified.
+2:17 But if, while we seek to be justified by Christ, we ourselves also are found sinners, is therefore Christ the minister of sin? God forbid.
+2:18 For if I build again the things which I destroyed, I make myself a transgressor.
+2:19 For I through the law am dead to the law, that I might live to God.
+2:20 I am crucified with Christ: nevertheless I live; yet not I, but Christ lives in me: and the life which I now live in the flesh I live by the faith of the Son of God, who loved me, and gave himself for me.
+2:21 I do not frustrate the grace of God: for if righteousness come by the law, then Christ is dead in vain.
+ 	
+AKJV
+ 	 	 	 	
+Galatians 3
+ 	 	 	 	
+AV 1611
+
+3:1 O foolish Galatians, who has bewitched you, that you should not obey the truth, before whose eyes Jesus Christ has been evidently set forth, crucified among you?
+3:2 This only would I learn of you, Received you the Spirit by the works of the law, or by the hearing of faith?
+3:3 Are you so foolish? having begun in the Spirit, are you now made perfect by the flesh?
+3:4 Have you suffered so many things in vain? if it be yet in vain.
+3:5 He therefore that ministers to you the Spirit, and works miracles among you, does he it by the works of the law, or by the hearing of faith?
+3:6 Even as Abraham believed God, and it was accounted to him for righteousness.
+3:7 Know you therefore that they which are of faith, the same are the children of Abraham.
+3:8 And the scripture, foreseeing that God would justify the heathen through faith, preached before the gospel to Abraham, saying, In you shall all nations be blessed.
+3:9 So then they which be of faith are blessed with faithful Abraham.
+3:10 For as many as are of the works of the law are under the curse: for it is written, Cursed is every one that continues not in all things which are written in the book of the law to do them.
+3:11 But that no man is justified by the law in the sight of God, it is evident: for, The just shall live by faith.
+3:12 And the law is not of faith: but, The man that does them shall live in them.
+3:13 Christ has redeemed us from the curse of the law, being made a curse for us: for it is written, Cursed is every one that hangs on a tree:
+3:14 That the blessing of Abraham might come on the Gentiles through Jesus Christ; that we might receive the promise of the Spirit through faith.
+3:15 Brothers, I speak after the manner of men; Though it be but a man's covenant, yet if it be confirmed, no man cancels, or adds thereto.
+3:16 Now to Abraham and his seed were the promises made. He said not, And to seeds, as of many; but as of one, And to your seed, which is Christ.
+3:17 And this I say, that the covenant, that was confirmed before of God in Christ, the law, which was four hundred and thirty years after, cannot cancel, that it should make the promise of none effect.
+3:18 For if the inheritance be of the law, it is no more of promise: but God gave it to Abraham by promise.
+3:19 Why then serves the law? It was added because of transgressions, till the seed should come to whom the promise was made; and it was ordained by angels in the hand of a mediator.
+3:20 Now a mediator is not a mediator of one, but God is one.
+3:21 Is the law then against the promises of God? God forbid: for if there had been a law given which could have given life, truly righteousness should have been by the law.
+3:22 But the scripture has concluded all under sin, that the promise by faith of Jesus Christ might be given to them that believe.
+3:23 But before faith came, we were kept under the law, shut up to the faith which should afterwards be revealed.
+3:24 Why the law was our schoolmaster to bring us to Christ, that we might be justified by faith.
+3:25 But after that faith is come, we are no longer under a schoolmaster.
+3:26 For you are all the children of God by faith in Christ Jesus.
+3:27 For as many of you as have been baptized into Christ have put on Christ.
+3:28 There is neither Jew nor Greek, there is neither bond nor free, there is neither male nor female: for you are all one in Christ Jesus.
+3:29 And if you be Christ's, then are you Abraham's seed, and heirs according to the promise.
+ 	
+AKJV
+ 	 	 	 	
+Galatians 4
+ 	 	 	 	
+AV 1611
+
+4:1 Now I say, That the heir, as long as he is a child, differs nothing from a servant, though he be lord of all;
+4:2 But is under tutors and governors until the time appointed of the father.
+4:3 Even so we, when we were children, were in bondage under the elements of the world:
+4:4 But when the fullness of the time was come, God sent forth his Son, made of a woman, made under the law,
+4:5 To redeem them that were under the law, that we might receive the adoption of sons.
+4:6 And because you are sons, God has sent forth the Spirit of his Son into your hearts, crying, Abba, Father.
+4:7 Why you are no more a servant, but a son; and if a son, then an heir of God through Christ.
+4:8 However, then, when you knew not God, you did service to them which by nature are no gods.
+4:9 But now, after that you have known God, or rather are known of God, how turn you again to the weak and beggarly elements, whereunto you desire again to be in bondage?
+4:10 You observe days, and months, and times, and years.
+4:11 I am afraid of you, lest I have bestowed on you labor in vain.
+4:12 Brothers, I beseech you, be as I am; for I am as you are: you have not injured me at all.
+4:13 You know how through infirmity of the flesh I preached the gospel to you at the first.
+4:14 And my temptation which was in my flesh you despised not, nor rejected; but received me as an angel of God, even as Christ Jesus.
+4:15 Where is then the blessedness you spoke of? for I bear you record, that, if it had been possible, you would have plucked out your own eyes, and have given them to me.
+4:16 Am I therefore become your enemy, because I tell you the truth?
+4:17 They zealously affect you, but not well; yes, they would exclude you, that you might affect them.
+4:18 But it is good to be zealously affected always in a good thing, and not only when I am present with you.
+4:19 My little children, of whom I travail in birth again until Christ be formed in you,
+4:20 I desire to be present with you now, and to change my voice; for I stand in doubt of you.
+4:21 Tell me, you that desire to be under the law, do you not hear the law?
+4:22 For it is written, that Abraham had two sons, the one by a female slave, the other by a free woman.
+4:23 But he who was of the female slave was born after the flesh; but he of the free woman was by promise.
+4:24 Which things are an allegory: for these are the two covenants; the one from the mount Sinai, which engenders to bondage, which is Agar.
+4:25 For this Agar is mount Sinai in Arabia, and answers to Jerusalem which now is, and is in bondage with her children.
+4:26 But Jerusalem which is above is free, which is the mother of us all.
+4:27 For it is written, Rejoice, you barren that bore not; break forth and cry, you that travail not: for the desolate has many more children than she which has an husband.
+4:28 Now we, brothers, as Isaac was, are the children of promise.
+4:29 But as then he that was born after the flesh persecuted him that was born after the Spirit, even so it is now.
+4:30 Nevertheless what said the scripture? Cast out the female slave and her son: for the son of the female slave shall not be heir with the son of the free woman.
+4:31 So then, brothers, we are not children of the female slave, but of the free.
+ 	
+AKJV
+ 	 	 	 	
+Galatians 5
+ 	 	 	 	
+AV 1611
+
+5:1 Stand fast therefore in the liberty with which Christ has made us free, and be not entangled again with the yoke of bondage.
+5:2 Behold, I Paul say to you, that if you be circumcised, Christ shall profit you nothing.
+5:3 For I testify again to every man that is circumcised, that he is a debtor to do the whole law.
+5:4 Christ is become of no effect to you, whoever of you are justified by the law; you are fallen from grace.
+5:5 For we through the Spirit wait for the hope of righteousness by faith.
+5:6 For in Jesus Christ neither circumcision avails any thing, nor uncircumcision; but faith which works by love.
+5:7 You did run well; who did hinder you that you should not obey the truth?
+5:8 This persuasion comes not of him that calls you.
+5:9 A little leaven leavens the whole lump.
+5:10 I have confidence in you through the Lord, that you will be none otherwise minded: but he that troubles you shall bear his judgment, whoever he be.
+5:11 And I, brothers, if I yet preach circumcision, why do I yet suffer persecution? then is the offense of the cross ceased.
+5:12 I would they were even cut off which trouble you.
+5:13 For, brothers, you have been called to liberty; only use not liberty for an occasion to the flesh, but by love serve one another.
+5:14 For all the law is fulfilled in one word, even in this; You shall love your neighbor as yourself.
+5:15 But if you bite and devour one another, take heed that you be not consumed one of another.
+5:16 This I say then, Walk in the Spirit, and you shall not fulfill the lust of the flesh.
+5:17 For the flesh lusts against the Spirit, and the Spirit against the flesh: and these are contrary the one to the other: so that you cannot do the things that you would.
+5:18 But if you be led of the Spirit, you are not under the law.
+5:19 Now the works of the flesh are manifest, which are these; Adultery, fornication, uncleanness, lasciviousness,
+5:20 Idolatry, witchcraft, hatred, variance, jealousies, wrath, strife, seditions, heresies,
+5:21 Contentions, murders, drunkenness, revelings, and such like: of the which I tell you before, as I have also told you in time past, that they which do such things shall not inherit the kingdom of God.
+5:22 But the fruit of the Spirit is love, joy, peace, long-suffering, gentleness, goodness, faith,
+5:23 Meekness, temperance: against such there is no law.
+5:24 And they that are Christ's have crucified the flesh with the affections and lusts.
+5:25 If we live in the Spirit, let us also walk in the Spirit.
+5:26 Let us not be desirous of vain glory, provoking one another, envying one another.
+ 	
+AKJV
+ 	 	 	 	
+Galatians 6
+ 	 	 	 	
+AV 1611
+
+6:1 Brothers, if a man be overtaken in a fault, you which are spiritual, restore such an one in the spirit of meekness; considering yourself, lest you also be tempted.
+6:2 Bear you one another's burdens, and so fulfill the law of Christ.
+6:3 For if a man think himself to be something, when he is nothing, he deceives himself.
+6:4 But let every man prove his own work, and then shall he have rejoicing in himself alone, and not in another.
+6:5 For every man shall bear his own burden.
+6:6 Let him that is taught in the word communicate to him that teaches in all good things.
+6:7 Be not deceived; God is not mocked: for whatever a man sows, that shall he also reap.
+6:8 For he that sows to his flesh shall of the flesh reap corruption; but he that sows to the Spirit shall of the Spirit reap life everlasting.
+6:9 And let us not be weary in well doing: for in due season we shall reap, if we faint not.
+6:10 As we have therefore opportunity, let us do good to all men, especially to them who are of the household of faith.
+6:11 You see how large a letter I have written to you with my own hand.
+6:12 As many as desire to make a fair show in the flesh, they constrain you to be circumcised; only lest they should suffer persecution for the cross of Christ.
+6:13 For neither they themselves who are circumcised keep the law; but desire to have you circumcised, that they may glory in your flesh.
+6:14 But God forbid that I should glory, save in the cross of our Lord Jesus Christ, by whom the world is crucified to me, and I to the world.
+6:15 For in Christ Jesus neither circumcision avails any thing, nor uncircumcision, but a new creature.
+6:16 And as many as walk according to this rule, peace be on them, and mercy, and on the Israel of God.
+6:17 From now on let no man trouble me: for I bear in my body the marks of the Lord Jesus.
+6:18 Brothers, the grace of our Lord Jesus Christ be with your spirit.  Amen.`
+
+var book_of_ephesians = `1:1 Paul, an apostle of Jesus Christ by the will of God, to the saints which are at Ephesus, and to the faithful in Christ Jesus:
+1:2 Grace be to you, and peace, from God our Father, and from the Lord Jesus Christ.
+1:3 Blessed be the God and Father of our Lord Jesus Christ, who has blessed us with all spiritual blessings in heavenly places in Christ:
+1:4 According as he has chosen us in him before the foundation of the world, that we should be holy and without blame before him in love:
+1:5 Having predestinated us to the adoption of children by Jesus Christ to himself, according to the good pleasure of his will,
+1:6 To the praise of the glory of his grace, wherein he has made us accepted in the beloved.
+1:7 In whom we have redemption through his blood, the forgiveness of sins, according to the riches of his grace;
+1:8 Wherein he has abounded toward us in all wisdom and prudence;
+1:9 Having made known to us the mystery of his will, according to his good pleasure which he has purposed in himself:
+1:10 That in the dispensation of the fullness of times he might gather together in one all things in Christ, both which are in heaven, and which are on earth; even in him:
+1:11 In whom also we have obtained an inheritance, being predestinated according to the purpose of him who works all things after the counsel of his own will:
+1:12 That we should be to the praise of his glory, who first trusted in Christ.
+1:13 In whom you also trusted, after that you heard the word of truth, the gospel of your salvation: in whom also after that you believed, you were sealed with that holy Spirit of promise,
+1:14 Which is the earnest of our inheritance until the redemption of the purchased possession, to the praise of his glory.
+1:15 Why I also, after I heard of your faith in the Lord Jesus, and love to all the saints,
+1:16 Cease not to give thanks for you, making mention of you in my prayers;
+1:17 That the God of our Lord Jesus Christ, the Father of glory, may give to you the spirit of wisdom and revelation in the knowledge of him:
+1:18 The eyes of your understanding being enlightened; that you may know what is the hope of his calling, and what the riches of the glory of his inheritance in the saints,
+1:19 And what is the exceeding greatness of his power to us-ward who believe, according to the working of his mighty power,
+1:20 Which he worked in Christ, when he raised him from the dead, and set him at his own right hand in the heavenly places,
+1:21 Far above all principality, and power, and might, and dominion, and every name that is named, not only in this world, but also in that which is to come:
+1:22 And has put all things under his feet, and gave him to be the head over all things to the church,
+1:23 Which is his body, the fullness of him that fills all in all.
+ 	
+AKJV
+ 	 	 	 	
+Ephesians 2
+ 	 	 	 	
+AV 1611
+
+2:1 And you has he quickened, who were dead in trespasses and sins;
+2:2 Wherein in time past you walked according to the course of this world, according to the prince of the power of the air, the spirit that now works in the children of disobedience:
+2:3 Among whom also we all had our conversation in times past in the lusts of our flesh, fulfilling the desires of the flesh and of the mind; and were by nature the children of wrath, even as others.
+2:4 But God, who is rich in mercy, for his great love with which he loved us,
+2:5 Even when we were dead in sins, has quickened us together with Christ, (by grace you are saved;)
+2:6 And has raised us up together, and made us sit together in heavenly places in Christ Jesus:
+2:7 That in the ages to come he might show the exceeding riches of his grace in his kindness toward us through Christ Jesus.
+2:8 For by grace are you saved through faith; and that not of yourselves: it is the gift of God:
+2:9 Not of works, lest any man should boast.
+2:10 For we are his workmanship, created in Christ Jesus to good works, which God has before ordained that we should walk in them.
+2:11 Why remember, that you being in time past Gentiles in the flesh, who are called Uncircumcision by that which is called the Circumcision in the flesh made by hands;
+2:12 That at that time you were without Christ, being aliens from the commonwealth of Israel, and strangers from the covenants of promise, having no hope, and without God in the world:
+2:13 But now in Christ Jesus you who sometimes were far off are made near by the blood of Christ.
+2:14 For he is our peace, who has made both one, and has broken down the middle wall of partition between us;
+2:15 Having abolished in his flesh the enmity, even the law of commandments contained in ordinances; for to make in himself of two one new man, so making peace;
+2:16 And that he might reconcile both to God in one body by the cross, having slain the enmity thereby:
+2:17 And came and preached peace to you which were afar off, and to them that were near.
+2:18 For through him we both have access by one Spirit to the Father.
+2:19 Now therefore you are no more strangers and foreigners, but fellow citizens with the saints, and of the household of God;
+2:20 And are built on the foundation of the apostles and prophets, Jesus Christ himself being the chief corner stone;
+2:21 In whom all the building fitly framed together grows to an holy temple in the Lord:
+2:22 In whom you also are built together for an habitation of God through the Spirit.
+ 	
+AKJV
+ 	 	 	 	
+Ephesians 3
+ 	 	 	 	
+AV 1611
+
+3:1 For this cause I Paul, the prisoner of Jesus Christ for you Gentiles,
+3:2 If you have heard of the dispensation of the grace of God which is given me to you-ward:
+3:3 How that by revelation he made known to me the mystery; (as I wrote before in few words,
+3:4 Whereby, when you read, you may understand my knowledge in the mystery of Christ)
+3:5 Which in other ages was not made known to the sons of men, as it is now revealed to his holy apostles and prophets by the Spirit;
+3:6 That the Gentiles should be fellow heirs, and of the same body, and partakers of his promise in Christ by the gospel:
+3:7 Whereof I was made a minister, according to the gift of the grace of God given to me by the effectual working of his power.
+3:8 To me, who am less than the least of all saints, is this grace given, that I should preach among the Gentiles the unsearchable riches of Christ;
+3:9 And to make all men see what is the fellowship of the mystery, which from the beginning of the world has been hid in God, who created all things by Jesus Christ:
+3:10 To the intent that now to the principalities and powers in heavenly places might be known by the church the manifold wisdom of God,
+3:11 According to the eternal purpose which he purposed in Christ Jesus our Lord:
+3:12 In whom we have boldness and access with confidence by the faith of him.
+3:13 Why I desire that you faint not at my tribulations for you, which is your glory.
+3:14 For this cause I bow my knees to the Father of our Lord Jesus Christ,
+3:15 Of whom the whole family in heaven and earth is named,
+3:16 That he would grant you, according to the riches of his glory, to be strengthened with might by his Spirit in the inner man;
+3:17 That Christ may dwell in your hearts by faith; that you, being rooted and grounded in love,
+3:18 May be able to comprehend with all saints what is the breadth, and length, and depth, and height;
+3:19 And to know the love of Christ, which passes knowledge, that you might be filled with all the fullness of God.
+3:20 Now to him that is able to do exceeding abundantly above all that we ask or think, according to the power that works in us,
+3:21 To him be glory in the church by Christ Jesus throughout all ages, world without end. Amen.
+ 	
+AKJV
+ 	 	 	 	
+Ephesians 4
+ 	 	 	 	
+AV 1611
+
+4:1 I therefore, the prisoner of the Lord, beseech you that you walk worthy of the vocation with which you are called,
+4:2 With all lowliness and meekness, with long-suffering, forbearing one another in love;
+4:3 Endeavoring to keep the unity of the Spirit in the bond of peace.
+4:4 There is one body, and one Spirit, even as you are called in one hope of your calling;
+4:5 One Lord, one faith, one baptism,
+4:6 One God and Father of all, who is above all, and through all, and in you all.
+4:7 But to every one of us is given grace according to the measure of the gift of Christ.
+4:8 Why he said, When he ascended up on high, he led captivity captive, and gave gifts to men.
+4:9 (Now that he ascended, what is it but that he also descended first into the lower parts of the earth?
+4:10 He that descended is the same also that ascended up far above all heavens, that he might fill all things.)
+4:11 And he gave some, apostles; and some, prophets; and some, evangelists; and some, pastors and teachers;
+4:12 For the perfecting of the saints, for the work of the ministry, for the edifying of the body of Christ:
+4:13 Till we all come in the unity of the faith, and of the knowledge of the Son of God, to a perfect man, to the measure of the stature of the fullness of Christ:
+4:14 That we from now on be no more children, tossed to and fro, and carried about with every wind of doctrine, by the sleight of men, and cunning craftiness, whereby they lie in wait to deceive;
+4:15 But speaking the truth in love, may grow up into him in all things, which is the head, even Christ:
+4:16 From whom the whole body fitly joined together and compacted by that which every joint supplies, according to the effectual working in the measure of every part, makes increase of the body to the edifying of itself in love.
+4:17 This I say therefore, and testify in the Lord, that you from now on walk not as other Gentiles walk, in the vanity of their mind,
+4:18 Having the understanding darkened, being alienated from the life of God through the ignorance that is in them, because of the blindness of their heart:
+4:19 Who being past feeling have given themselves over to lasciviousness, to work all uncleanness with greediness.
+4:20 But you have not so learned Christ;
+4:21 If so be that you have heard him, and have been taught by him, as the truth is in Jesus:
+4:22 That you put off concerning the former conversation the old man, which is corrupt according to the deceitful lusts;
+4:23 And be renewed in the spirit of your mind;
+4:24 And that you put on the new man, which after God is created in righteousness and true holiness.
+4:25 Why putting away lying, speak every man truth with his neighbor: for we are members one of another.
+4:26 Be you angry, and sin not: let not the sun go down on your wrath:
+4:27 Neither give place to the devil.
+4:28 Let him that stole steal no more: but rather let him labor, working with his hands the thing which is good, that he may have to give to him that needs.
+4:29 Let no corrupt communication proceed out of your mouth, but that which is good to the use of edifying, that it may minister grace to the hearers.
+4:30 And grieve not the holy Spirit of God, whereby you are sealed to the day of redemption.
+4:31 Let all bitterness, and wrath, and anger, and clamor, and evil speaking, be put away from you, with all malice:
+4:32 And be you kind one to another, tenderhearted, forgiving one another, even as God for Christ's sake has forgiven you.
+ 	
+AKJV
+ 	 	 	 	
+Ephesians 5
+ 	 	 	 	
+AV 1611
+
+5:1 Be you therefore followers of God, as dear children;
+5:2 And walk in love, as Christ also has loved us, and has given himself for us an offering and a sacrifice to God for a sweet smelling smell.
+5:3 But fornication, and all uncleanness, or covetousness, let it not be once named among you, as becomes saints;
+5:4 Neither filthiness, nor foolish talking, nor jesting, which are not convenient: but rather giving of thanks.
+5:5 For this you know, that no fornicator, nor unclean person, nor covetous man, who is an idolater, has any inheritance in the kingdom of Christ and of God.
+5:6 Let no man deceive you with vain words: for because of these things comes the wrath of God on the children of disobedience.
+5:7 Be not you therefore partakers with them.
+5:8 For you were sometimes darkness, but now are you light in the Lord: walk as children of light:
+5:9 (For the fruit of the Spirit is in all goodness and righteousness and truth;)
+5:10 Proving what is acceptable to the Lord.
+5:11 And have no fellowship with the unfruitful works of darkness, but rather reprove them.
+5:12 For it is a shame even to speak of those things which are done of them in secret.
+5:13 But all things that are reproved are made manifest by the light: for whatever does make manifest is light.
+5:14 Why he said, Awake you that sleep, and arise from the dead, and Christ shall give you light.
+5:15 See then that you walk circumspectly, not as fools, but as wise,
+5:16 Redeeming the time, because the days are evil.
+5:17 Why be you not unwise, but understanding what the will of the Lord is.
+5:18 And be not drunk with wine, wherein is excess; but be filled with the Spirit;
+5:19 Speaking to yourselves in psalms and hymns and spiritual songs, singing and making melody in your heart to the Lord;
+5:20 Giving thanks always for all things to God and the Father in the name of our Lord Jesus Christ;
+5:21 Submitting yourselves one to another in the fear of God.
+5:22 Wives, submit yourselves to your own husbands, as to the Lord.
+5:23 For the husband is the head of the wife, even as Christ is the head of the church: and he is the savior of the body.
+5:24 Therefore as the church is subject to Christ, so let the wives be to their own husbands in every thing.
+5:25 Husbands, love your wives, even as Christ also loved the church, and gave himself for it;
+5:26 That he might sanctify and cleanse it with the washing of water by the word,
+5:27 That he might present it to himself a glorious church, not having spot, or wrinkle, or any such thing; but that it should be holy and without blemish.
+5:28 So ought men to love their wives as their own bodies. He that loves his wife loves himself.
+5:29 For no man ever yet hated his own flesh; but nourishes and cherishes it, even as the Lord the church:
+5:30 For we are members of his body, of his flesh, and of his bones.
+5:31 For this cause shall a man leave his father and mother, and shall be joined to his wife, and they two shall be one flesh.
+5:32 This is a great mystery: but I speak concerning Christ and the church.
+5:33 Nevertheless let every one of you in particular so love his wife even as himself; and the wife see that she reverence her husband.
+ 	
+AKJV
+ 	 	 	 	
+Ephesians 6
+ 	 	 	 	
+AV 1611
+
+6:1 Children, obey your parents in the Lord: for this is right.
+6:2 Honor your father and mother; which is the first commandment with promise;
+6:3 That it may be well with you, and you may live long on the earth.
+6:4 And, you fathers, provoke not your children to wrath: but bring them up in the nurture and admonition of the Lord.
+6:5 Servants, be obedient to them that are your masters according to the flesh, with fear and trembling, in singleness of your heart, as to Christ;
+6:6 Not with eye-service, as men pleasers; but as the servants of Christ, doing the will of God from the heart;
+6:7 With good will doing service, as to the Lord, and not to men:
+6:8 Knowing that whatever good thing any man does, the same shall he receive of the Lord, whether he be bond or free.
+6:9 And, you masters, do the same things to them, forbearing threatening: knowing that your Master also is in heaven; neither is there respect of persons with him.
+6:10 Finally, my brothers, be strong in the Lord, and in the power of his might.
+6:11 Put on the whole armor of God, that you may be able to stand against the wiles of the devil.
+6:12 For we wrestle not against flesh and blood, but against principalities, against powers, against the rulers of the darkness of this world, against spiritual wickedness in high places.
+6:13 Why take to you the whole armor of God, that you may be able to withstand in the evil day, and having done all, to stand.
+6:14 Stand therefore, having your loins girt about with truth, and having on the breastplate of righteousness;
+6:15 And your feet shod with the preparation of the gospel of peace;
+6:16 Above all, taking the shield of faith, with which you shall be able to quench all the fiery darts of the wicked.
+6:17 And take the helmet of salvation, and the sword of the Spirit, which is the word of God:
+6:18 Praying always with all prayer and supplication in the Spirit, and watching thereunto with all perseverance and supplication for all saints;
+6:19 And for me, that utterance may be given to me, that I may open my mouth boldly, to make known the mystery of the gospel,
+6:20 For which I am an ambassador in bonds: that therein I may speak boldly, as I ought to speak.
+6:21 But that you also may know my affairs, and how I do, Tychicus, a beloved brother and faithful minister in the Lord, shall make known to you all things:
+6:22 Whom I have sent to you for the same purpose, that you might know our affairs, and that he might comfort your hearts.
+6:23 Peace be to the brothers, and love with faith, from God the Father and the Lord Jesus Christ.
+6:24 Grace be with all them that love our Lord Jesus Christ in sincerity. Amen.`
+
+var book_of_philippians = `1:1 Paul and Timotheus, the servants of Jesus Christ, to all the saints in Christ Jesus which are at Philippi, with the bishops and deacons:
+1:2 Grace be to you, and peace, from God our Father, and from the Lord Jesus Christ.
+1:3 I thank my God on every remembrance of you,
+1:4 Always in every prayer of my for you all making request with joy,
+1:5 For your fellowship in the gospel from the first day until now;
+1:6 Being confident of this very thing, that he which has begun a good work in you will perform it until the day of Jesus Christ:
+1:7 Even as it is meet for me to think this of you all, because I have you in my heart; inasmuch as both in my bonds, and in the defense and confirmation of the gospel, you all are partakers of my grace.
+1:8 For God is my record, how greatly I long after you all in the bowels of Jesus Christ.
+1:9 And this I pray, that your love may abound yet more and more in knowledge and in all judgment;
+1:10 That you may approve things that are excellent; that you may be sincere and without offense till the day of Christ.
+1:11 Being filled with the fruits of righteousness, which are by Jesus Christ, to the glory and praise of God.
+1:12 But I would you should understand, brothers, that the things which happened to me have fallen out rather to the furtherance of the gospel;
+1:13 So that my bonds in Christ are manifest in all the palace, and in all other places;
+1:14 And many of the brothers in the Lord, waxing confident by my bonds, are much more bold to speak the word without fear.
+1:15 Some indeed preach Christ even of envy and strife; and some also of good will:
+1:16 The one preach Christ of contention, not sincerely, supposing to add affliction to my bonds:
+1:17 But the other of love, knowing that I am set for the defense of the gospel.
+1:18 What then? notwithstanding, every way, whether in pretense, or in truth, Christ is preached; and I therein do rejoice, yes, and will rejoice.
+1:19 For I know that this shall turn to my salvation through your prayer, and the supply of the Spirit of Jesus Christ,
+1:20 According to my earnest expectation and my hope, that in nothing I shall be ashamed, but that with all boldness, as always, so now also Christ shall be magnified in my body, whether it be by life, or by death.
+1:21 For to me to live is Christ, and to die is gain.
+1:22 But if I live in the flesh, this is the fruit of my labor: yet what I shall choose I know not.
+1:23 For I am in a strait between two, having a desire to depart, and to be with Christ; which is far better:
+1:24 Nevertheless to abide in the flesh is more needful for you.
+1:25 And having this confidence, I know that I shall abide and continue with you all for your furtherance and joy of faith;
+1:26 That your rejoicing may be more abundant in Jesus Christ for me by my coming to you again.
+1:27 Only let your conversation be as it becomes the gospel of Christ: that whether I come and see you, or else be absent, I may hear of your affairs, that you stand fast in one spirit, with one mind striving together for the faith of the gospel;
+1:28 And in nothing terrified by your adversaries: which is to them an evident token of perdition, but to you of salvation, and that of God.
+1:29 For to you it is given in the behalf of Christ, not only to believe on him, but also to suffer for his sake;
+1:30 Having the same conflict which you saw in me, and now hear to be in me.
+ 	
+AKJV
+ 	 	 	 	
+Philippians 2
+ 	 	 	 	
+AV 1611
+
+2:1 If there be therefore any consolation in Christ, if any comfort of love, if any fellowship of the Spirit, if any bowels and mercies,
+2:2 Fulfill you my joy, that you be like minded, having the same love, being of one accord, of one mind.
+2:3 Let nothing be done through strife or vainglory; but in lowliness of mind let each esteem other better than themselves.
+2:4 Look not every man on his own things, but every man also on the things of others.
+2:5 Let this mind be in you, which was also in Christ Jesus:
+2:6 Who, being in the form of God, thought it not robbery to be equal with God:
+2:7 But made himself of no reputation, and took on him the form of a servant, and was made in the likeness of men:
+2:8 And being found in fashion as a man, he humbled himself, and became obedient to death, even the death of the cross.
+2:9 Why God also has highly exalted him, and given him a name which is above every name:
+2:10 That at the name of Jesus every knee should bow, of things in heaven, and things in earth, and things under the earth;
+2:11 And that every tongue should confess that Jesus Christ is Lord, to the glory of God the Father.
+2:12 Why, my beloved, as you have always obeyed, not as in my presence only, but now much more in my absence, work out your own salvation with fear and trembling.
+2:13 For it is God which works in you both to will and to do of his good pleasure.
+2:14 Do all things without murmurings and disputings:
+2:15 That you may be blameless and harmless, the sons of God, without rebuke, in the middle of a crooked and perverse nation, among whom you shine as lights in the world;
+2:16 Holding forth the word of life; that I may rejoice in the day of Christ, that I have not run in vain, neither labored in vain.
+2:17 Yes, and if I be offered on the sacrifice and service of your faith, I joy, and rejoice with you all.
+2:18 For the same cause also do you joy, and rejoice with me.
+2:19 But I trust in the Lord Jesus to send Timotheus shortly to you, that I also may be of good comfort, when I know your state.
+2:20 For I have no man like minded, who will naturally care for your state.
+2:21 For all seek their own, not the things which are Jesus Christ's.
+2:22 But you know the proof of him, that, as a son with the father, he has served with me in the gospel.
+2:23 Him therefore I hope to send presently, so soon as I shall see how it will go with me.
+2:24 But I trust in the Lord that I also myself shall come shortly.
+2:25 Yet I supposed it necessary to send to you Epaphroditus, my brother, and companion in labor, and fellow soldier, but your messenger, and he that ministered to my wants.
+2:26 For he longed after you all, and was full of heaviness, because that you had heard that he had been sick.
+2:27 For indeed he was sick near to death: but God had mercy on him; and not on him only, but on me also, lest I should have sorrow on sorrow.
+2:28 I sent him therefore the more carefully, that, when you see him again, you may rejoice, and that I may be the less sorrowful.
+2:29 Receive him therefore in the Lord with all gladness; and hold such in reputation:
+2:30 Because for the work of Christ he was near to death, not regarding his life, to supply your lack of service toward me.
+ 	
+AKJV
+ 	 	 	 	
+Philippians 3
+ 	 	 	 	
+AV 1611
+
+3:1 Finally, my brothers, rejoice in the Lord. To write the same things to you, to me indeed is not grievous, but for you it is safe.
+3:2 Beware of dogs, beware of evil workers, beware of the concision.
+3:3 For we are the circumcision, which worship God in the spirit, and rejoice in Christ Jesus, and have no confidence in the flesh.
+3:4 Though I might also have confidence in the flesh. If any other man thinks that he has whereof he might trust in the flesh, I more:
+3:5 Circumcised the eighth day, of the stock of Israel, of the tribe of Benjamin, an Hebrew of the Hebrews; as touching the law, a Pharisee;
+3:6 Concerning zeal, persecuting the church; touching the righteousness which is in the law, blameless.
+3:7 But what things were gain to me, those I counted loss for Christ.
+3:8 Yes doubtless, and I count all things but loss for the excellency of the knowledge of Christ Jesus my Lord: for whom I have suffered the loss of all things, and do count them but dung, that I may win Christ,
+3:9 And be found in him, not having my own righteousness, which is of the law, but that which is through the faith of Christ, the righteousness which is of God by faith:
+3:10 That I may know him, and the power of his resurrection, and the fellowship of his sufferings, being made conformable to his death;
+3:11 If by any means I might attain to the resurrection of the dead.
+3:12 Not as though I had already attained, either were already perfect: but I follow after, if that I may apprehend that for which also I am apprehended of Christ Jesus.
+3:13 Brothers, I count not myself to have apprehended: but this one thing I do, forgetting those things which are behind, and reaching forth to those things which are before,
+3:14 I press toward the mark for the prize of the high calling of God in Christ Jesus.
+3:15 Let us therefore, as many as be perfect, be thus minded: and if in any thing you be otherwise minded, God shall reveal even this to you.
+3:16 Nevertheless, whereto we have already attained, let us walk by the same rule, let us mind the same thing.
+3:17 Brothers, be followers together of me, and mark them which walk so as you have us for an ensample.
+3:18 (For many walk, of whom I have told you often, and now tell you even weeping, that they are the enemies of the cross of Christ:
+3:19 Whose end is destruction, whose God is their belly, and whose glory is in their shame, who mind earthly things.)
+3:20 For our conversation is in heaven; from where also we look for the Savior, the Lord Jesus Christ:
+3:21 Who shall change our vile body, that it may be fashioned like to his glorious body, according to the working whereby he is able even to subdue all things to himself.
+ 	
+AKJV
+ 	 	 	 	
+Philippians 4
+ 	 	 	 	
+AV 1611
+
+4:1 Therefore, my brothers dearly beloved and longed for, my joy and crown, so stand fast in the Lord, my dearly beloved.
+4:2 I beseech Euodias, and beseech Syntyche, that they be of the same mind in the Lord.
+4:3 And I entreat you also, true yoke fellow, help those women which labored with me in the gospel, with Clement also, and with other my fellow laborers, whose names are in the book of life.
+4:4 Rejoice in the Lord always: and again I say, Rejoice.
+4:5 Let your moderation be known to all men. The Lord is at hand.
+4:6 Be careful for nothing; but in every thing by prayer and supplication with thanksgiving let your requests be made known to God.
+4:7 And the peace of God, which passes all understanding, shall keep your hearts and minds through Christ Jesus.
+4:8 Finally, brothers, whatever things are true, whatever things are honest, whatever things are just, whatever things are pure, whatever things are lovely, whatever things are of good report; if there be any virtue, and if there be any praise, think on these things.
+4:9 Those things, which you have both learned, and received, and heard, and seen in me, do: and the God of peace shall be with you.
+4:10 But I rejoiced in the Lord greatly, that now at the last your care of me has flourished again; wherein you were also careful, but you lacked opportunity.
+4:11 Not that I speak in respect of want: for I have learned, in whatever state I am, therewith to be content.
+4:12 I know both how to be abased, and I know how to abound: every where and in all things I am instructed both to be full and to be hungry, both to abound and to suffer need.
+4:13 I can do all things through Christ which strengthens me.
+4:14 Notwithstanding you have well done, that you did communicate with my affliction.
+4:15 Now you Philippians know also, that in the beginning of the gospel, when I departed from Macedonia, no church communicated with me as concerning giving and receiving, but you only.
+4:16 For even in Thessalonica you sent once and again to my necessity.
+4:17 Not because I desire a gift: but I desire fruit that may abound to your account.
+4:18 But I have all, and abound: I am full, having received of Epaphroditus the things which were sent from you, an odor of a sweet smell, a sacrifice acceptable, well pleasing to God.
+4:19 But my God shall supply all your need according to his riches in glory by Christ Jesus.
+4:20 Now to God and our Father be glory for ever and ever. Amen.
+4:21 Salute every saint in Christ Jesus. The brothers which are with me greet you.
+4:22 All the saints salute you, chiefly they that are of Caesar's household.
+4:23 The grace of our Lord Jesus Christ be with you all. Amen.`
+
+var book_of_colossians = `1:1  Paul, an apostle of Jesus Christ by the will of God, and Timotheus our brother,
+1:2  To the saints and faithful brothers in Christ which are at Colosse: Grace be to you, and peace, from God our Father and the Lord Jesus Christ.
+1:3  We give thanks to God and the Father of our Lord Jesus Christ, praying always for you,
+1:4  Since we heard of your faith in Christ Jesus, and of the love which you have to all the saints,
+1:5  For the hope which is laid up for you in heaven, whereof you heard before in the word of the truth of the gospel;
+1:6  Which is come to you, as it is in all the world; and brings forth fruit, as it does also in you, since the day you heard of it, and knew the grace of God in truth:
+1:7  As you also learned of Epaphras our dear fellow servant, who is for you a faithful minister of Christ;
+1:8  Who also declared to us your love in the Spirit.
+1:9  For this cause we also, since the day we heard it, do not cease to pray for you, and to desire that you might be filled with the knowledge of his will in all wisdom and spiritual understanding;
+1:10  That you might walk worthy of the Lord to all pleasing, being fruitful in every good work, and increasing in the knowledge of God;
+1:11  Strengthened with all might, according to his glorious power, to all patience and long-suffering with joyfulness;
+1:12  Giving thanks to the Father, which has made us meet to be partakers of the inheritance of the saints in light:
+1:13  Who has delivered us from the power of darkness, and has translated us into the kingdom of his dear Son:
+1:14  In whom we have redemption through his blood, even the forgiveness of sins:
+1:15  Who is the image of the invisible God, the firstborn of every creature:
+1:16  For by him were all things created, that are in heaven, and that are in earth, visible and invisible, whether they be thrones, or dominions, or principalities, or powers: all things were created by him, and for him:
+1:17  And he is before all things, and by him all things consist.
+1:18  And he is the head of the body, the church: who is the beginning, the firstborn from the dead; that in all things he might have the preeminence.
+1:19  For it pleased the Father that in him should all fullness dwell;
+1:20  And, having made peace through the blood of his cross, by him to reconcile all things to himself; by him, I say, whether they be things in earth, or things in heaven.
+1:21  And you, that were sometime alienated and enemies in your mind by wicked works, yet now has he reconciled
+1:22  In the body of his flesh through death, to present you holy and blameless and unreproveable in his sight:
+1:23  If you continue in the faith grounded and settled, and be not moved away from the hope of the gospel, which you have heard, and which was preached to every creature which is under heaven; whereof I Paul am made a minister;
+1:24  Who now rejoice in my sufferings for you, and fill up that which is behind of the afflictions of Christ in my flesh for his body's sake, which is the church:
+1:25  Whereof I am made a minister, according to the dispensation of God which is given to me for you, to fulfill the word of God;
+1:26  Even the mystery which has been hid from ages and from generations, but now is made manifest to his saints:
+1:27  To whom God would make known what is the riches of the glory of this mystery among the Gentiles; which is Christ in you, the hope of glory:
+1:28  Whom we preach, warning every man, and teaching every man in all wisdom; that we may present every man perfect in Christ Jesus:
+1:29  Whereunto I also labor, striving according to his working, which works in me mightily.
+ 	
+AKJV
+ 	 	 	 	
+Colossians 2
+ 	 	 	 	
+AV 1611
+
+2:1  For I would that you knew what great conflict I have for you, and for them at Laodicea, and for as many as have not seen my face in the flesh;
+2:2  That their hearts might be comforted, being knit together in love, and to all riches of the full assurance of understanding, to the acknowledgment of the mystery of God, and of the Father, and of Christ;
+2:3  In whom are hid all the treasures of wisdom and knowledge.
+2:4  And this I say, lest any man should beguile you with enticing words.
+2:5  For though I be absent in the flesh, yet am I with you in the spirit, rejoicing and beholding your order, and the steadfastness of your faith in Christ.
+2:6  As you have therefore received Christ Jesus the Lord, so walk you in him:
+2:7  Rooted and built up in him, and established in the faith, as you have been taught, abounding therein with thanksgiving.
+2:8  Beware lest any man spoil you through philosophy and vain deceit, after the tradition of men, after the rudiments of the world, and not after Christ.
+2:9  For in him dwells all the fullness of the Godhead bodily.
+2:10  And you are complete in him, which is the head of all principality and power:
+2:11  In whom also you are circumcised with the circumcision made without hands, in putting off the body of the sins of the flesh by the circumcision of Christ:
+2:12  Buried with him in baptism, wherein also you are risen with him through the faith of the operation of God, who has raised him from the dead.
+2:13  And you, being dead in your sins and the uncircumcision of your flesh, has he quickened together with him, having forgiven you all trespasses;
+2:14  Blotting out the handwriting of ordinances that was against us, which was contrary to us, and took it out of the way, nailing it to his cross;
+2:15  And having spoiled principalities and powers, he made a show of them openly, triumphing over them in it.
+2:16  Let no man therefore judge you in meat, or in drink, or in respect of an holy day, or of the new moon, or of the sabbath days:
+2:17  Which are a shadow of things to come; but the body is of Christ.
+2:18  Let no man beguile you of your reward in a voluntary humility and worshipping of angels, intruding into those things which he has not seen, vainly puffed up by his fleshly mind,
+2:19  And not holding the Head, from which all the body by joints and bands having nourishment ministered, and knit together, increases with the increase of God.
+2:20  Why if you be dead with Christ from the rudiments of the world, why, as though living in the world, are you subject to ordinances,
+2:21  (Touch not; taste not; handle not;
+2:22  Which all are to perish with the using;) after the commandments and doctrines of men?
+2:23  Which things have indeed a show of wisdom in will worship, and humility, and neglecting of the body: not in any honor to the satisfying of the flesh.
+ 	
+AKJV
+ 	 	 	 	
+Colossians 3
+ 	 	 	 	
+AV 1611
+
+3:1  If you then be risen with Christ, seek those things which are above, where Christ sits on the right hand of God.
+3:2  Set your affection on things above, not on things on the earth.
+3:3  For you are dead, and your life is hid with Christ in God.
+3:4  When Christ, who is our life, shall appear, then shall you also appear with him in glory.
+3:5  Mortify therefore your members which are on the earth; fornication, uncleanness, inordinate affection, evil concupiscence, and covetousness, which is idolatry:
+3:6  For which things' sake the wrath of God comes on the children of disobedience:
+3:7  In the which you also walked some time, when you lived in them.
+3:8  But now you also put off all these; anger, wrath, malice, blasphemy, filthy communication out of your mouth.
+3:9  Lie not one to another, seeing that you have put off the old man with his deeds;
+3:10  And have put on the new man, which is renewed in knowledge after the image of him that created him:
+3:11  Where there is neither Greek nor Jew, circumcision nor uncircumcision, Barbarian, Scythian, bond nor free: but Christ is all, and in all.
+3:12  Put on therefore, as the elect of God, holy and beloved, bowels of mercies, kindness, humbleness of mind, meekness, long-suffering;
+3:13  Forbearing one another, and forgiving one another, if any man have a quarrel against any: even as Christ forgave you, so also do you.
+3:14  And above all these things put on charity, which is the bond of perfection.
+3:15  And let the peace of God rule in your hearts, to the which also you are called in one body; and be you thankful.
+3:16  Let the word of Christ dwell in you richly in all wisdom; teaching and admonishing one another in psalms and hymns and spiritual songs, singing with grace in your hearts to the Lord.
+3:17  And whatever you do in word or deed, do all in the name of the Lord Jesus, giving thanks to God and the Father by him.
+3:18  Wives, submit yourselves to your own husbands, as it is fit in the Lord.
+3:19  Husbands, love your wives, and be not bitter against them.
+3:20  Children, obey your parents in all things: for this is well pleasing to the Lord.
+3:21  Fathers, provoke not your children to anger, lest they be discouraged.
+3:22  Servants, obey in all things your masters according to the flesh; not with eye-service, as men pleasers; but in singleness of heart, fearing God;
+3:23  And whatever you do, do it heartily, as to the Lord, and not to men;
+3:24  Knowing that of the Lord you shall receive the reward of the inheritance: for you serve the Lord Christ.
+3:25  But he that does wrong shall receive for the wrong which he has done: and there is no respect of persons.
+ 	
+AKJV
+ 	 	 	 	
+Colossians 4
+ 	 	 	 	
+AV 1611
+
+4:1  Masters, give to your servants that which is just and equal; knowing that you also have a Master in heaven.
+4:2  Continue in prayer, and watch in the same with thanksgiving;
+4:3  With praying also for us, that God would open to us a door of utterance, to speak the mystery of Christ, for which I am also in bonds:
+4:4  That I may make it manifest, as I ought to speak.
+4:5  Walk in wisdom toward them that are without, redeeming the time.
+4:6  Let your speech be always with grace, seasoned with salt, that you may know how you ought to answer every man.
+4:7  All my state shall Tychicus declare to you, who is a beloved brother, and a faithful minister and fellow servant in the Lord:
+4:8  Whom I have sent to you for the same purpose, that he might know your estate, and comfort your hearts;
+4:9  With Onesimus, a faithful and beloved brother, who is one of you. They shall make known to you all things which are done here.
+4:10  Aristarchus my fellow prisoner salutes you, and Marcus, sister's son to Barnabas, (touching whom you received commandments: if he come to you, receive him;)
+4:11  And Jesus, which is called Justus, who are of the circumcision. These only are my fellow workers to the kingdom of God, which have been a comfort to me.
+4:12  Epaphras, who is one of you, a servant of Christ, salutes you, always laboring fervently for you in prayers, that you may stand perfect and complete in all the will of God.
+4:13  For I bear him record, that he has a great zeal for you, and them that are in Laodicea, and them in Hierapolis.
+4:14  Luke, the beloved physician, and Demas, greet you.
+4:15  Salute the brothers which are in Laodicea, and Nymphas, and the church which is in his house.
+4:16  And when this letter is read among you, cause that it be read also in the church of the Laodiceans; and that you likewise read the letter from Laodicea.
+4:17  And say to Archippus, Take heed to the ministry which you have received in the Lord, that you fulfill it.
+4:18  The salutation by the hand of me Paul. Remember my bonds. Grace be with you. Amen.`
+
+var book_of_1thessalonians = `1:1 Paul, and Silvanus, and Timotheus, to the church of the Thessalonians which is in God the Father and in the Lord Jesus Christ: Grace be to you, and peace, from God our Father, and the Lord Jesus Christ.
+1:2 We give thanks to God always for you all, making mention of you in our prayers;
+1:3 Remembering without ceasing your work of faith, and labor of love, and patience of hope in our Lord Jesus Christ, in the sight of God and our Father;
+1:4 Knowing, brothers beloved, your election of God.
+1:5 For our gospel came not to you in word only, but also in power, and in the Holy Ghost, and in much assurance; as you know what manner of men we were among you for your sake.
+1:6 And you became followers of us, and of the Lord, having received the word in much affliction, with joy of the Holy Ghost.
+1:7 So that you were ensamples to all that believe in Macedonia and Achaia.
+1:8 For from you sounded out the word of the Lord not only in Macedonia and Achaia, but also in every place your faith to God-ward is spread abroad; so that we need not to speak any thing.
+1:9 For they themselves show of us what manner of entering in we had to you, and how you turned to God from idols to serve the living and true God;
+1:10 And to wait for his Son from heaven, whom he raised from the dead, even Jesus, which delivered us from the wrath to come.
+ 	
+AKJV
+ 	 	 	 	
+I Thessalonians 2
+ 	 	 	 	
+AV 1611
+
+2:1 For yourselves, brothers, know our entrance in to you, that it was not in vain:
+2:2 But even after that we had suffered before, and were shamefully entreated, as you know, at Philippi, we were bold in our God to speak to you the gospel of God with much contention.
+2:3 For our exhortation was not of deceit, nor of uncleanness, nor in guile:
+2:4 But as we were allowed of God to be put in trust with the gospel, even so we speak; not as pleasing men, but God, which tries our hearts.
+2:5 For neither at any time used we flattering words, as you know, nor a cloak of covetousness; God is witness:
+2:6 Nor of men sought we glory, neither of you, nor yet of others, when we might have been burdensome, as the apostles of Christ.
+2:7 But we were gentle among you, even as a nurse cherishes her children:
+2:8 So being affectionately desirous of you, we were willing to have imparted to you, not the gospel of God only, but also our own souls, because you were dear to us.
+2:9 For you remember, brothers, our labor and travail: for laboring night and day, because we would not be chargeable to any of you, we preached to you the gospel of God.
+2:10 You are witnesses, and God also, how piously and justly and blamelessly we behaved ourselves among you that believe:
+2:11 As you know how we exhorted and comforted and charged every one of you, as a father does his children,
+2:12 That you would walk worthy of God, who has called you to his kingdom and glory.
+2:13 For this cause also thank we God without ceasing, because, when you received the word of God which you heard of us, you received it not as the word of men, but as it is in truth, the word of God, which effectually works also in you that believe.
+2:14 For you, brothers, became followers of the churches of God which in Judaea are in Christ Jesus: for you also have suffered like things of your own countrymen, even as they have of the Jews:
+2:15 Who both killed the Lord Jesus, and their own prophets, and have persecuted us; and they please not God, and are contrary to all men:
+2:16 Forbidding us to speak to the Gentiles that they might be saved, to fill up their sins always: for the wrath is come on them to the uttermost.
+2:17 But we, brothers, being taken from you for a short time in presence, not in heart, endeavored the more abundantly to see your face with great desire.
+2:18 Why we would have come to you, even I Paul, once and again; but Satan hindered us.
+2:19 For what is our hope, or joy, or crown of rejoicing? Are not even you in the presence of our Lord Jesus Christ at his coming?
+2:20 For you are our glory and joy.
+ 	
+AKJV
+ 	 	 	 	
+I Thessalonians 3
+ 	 	 	 	
+AV 1611
+
+3:1 Why when we could no longer forbear, we thought it good to be left at Athens alone;
+3:2 And sent Timotheus, our brother, and minister of God, and our fellow laborer in the gospel of Christ, to establish you, and to comfort you concerning your faith:
+3:3 That no man should be moved by these afflictions: for yourselves know that we are appointed thereunto.
+3:4 For truly, when we were with you, we told you before that we should suffer tribulation; even as it came to pass, and you know.
+3:5 For this cause, when I could no longer forbear, I sent to know your faith, lest by some means the tempter have tempted you, and our labor be in vain.
+3:6 But now when Timotheus came from you to us, and brought us good tidings of your faith and charity, and that you have good remembrance of us always, desiring greatly to see us, as we also to see you:
+3:7 Therefore, brothers, we were comforted over you in all our affliction and distress by your faith:
+3:8 For now we live, if you stand fast in the Lord.
+3:9 For what thanks can we render to God again for you, for all the joy with which we joy for your sakes before our God;
+3:10 Night and day praying exceedingly that we might see your face, and might perfect that which is lacking in your faith?
+3:11 Now God himself and our Father, and our Lord Jesus Christ, direct our way to you.
+3:12 And the Lord make you to increase and abound in love one toward another, and toward all men, even as we do toward you:
+3:13 To the end he may establish your hearts blameless in holiness before God, even our Father, at the coming of our Lord Jesus Christ with all his saints.
+ 	
+AKJV
+ 	 	 	 	
+I Thessalonians 4
+ 	 	 	 	
+AV 1611
+
+4:1 Furthermore then we beseech you, brothers, and exhort you by the Lord Jesus, that as you have received of us how you ought to walk and to please God, so you would abound more and more.
+4:2 For you know what commandments we gave you by the Lord Jesus.
+4:3 For this is the will of God, even your sanctification, that you should abstain from fornication:
+4:4 That every one of you should know how to possess his vessel in sanctification and honor;
+4:5 Not in the lust of concupiscence, even as the Gentiles which know not God:
+4:6 That no man go beyond and defraud his brother in any matter: because that the Lord is the avenger of all such, as we also have forewarned you and testified.
+4:7 For God has not called us to uncleanness, but to holiness.
+4:8 He therefore that despises, despises not man, but God, who has also given to us his holy Spirit.
+4:9 But as touching brotherly love you need not that I write to you: for you yourselves are taught of God to love one another.
+4:10 And indeed you do it toward all the brothers which are in all Macedonia: but we beseech you, brothers, that you increase more and more;
+4:11 And that you study to be quiet, and to do your own business, and to work with your own hands, as we commanded you;
+4:12 That you may walk honestly toward them that are without, and that you may have lack of nothing.
+4:13 But I would not have you to be ignorant, brothers, concerning them which are asleep, that you sorrow not, even as others which have no hope.
+4:14 For if we believe that Jesus died and rose again, even so them also which sleep in Jesus will God bring with him.
+4:15 For this we say to you by the word of the Lord, that we which are alive and remain to the coming of the Lord shall not prevent them which are asleep.
+4:16 For the Lord himself shall descend from heaven with a shout, with the voice of the archangel, and with the trump of God: and the dead in Christ shall rise first:
+4:17 Then we which are alive and remain shall be caught up together with them in the clouds, to meet the Lord in the air: and so shall we ever be with the Lord.
+4:18 Why comfort one another with these words.
+ 	
+AKJV
+ 	 	 	 	
+I Thessalonians 5
+ 	 	 	 	
+AV 1611
+
+5:1 But of the times and the seasons, brothers, you have no need that I write to you.
+5:2 For yourselves know perfectly that the day of the Lord so comes as a thief in the night.
+5:3 For when they shall say, Peace and safety; then sudden destruction comes on them, as travail on a woman with child; and they shall not escape.
+5:4 But you, brothers, are not in darkness, that that day should overtake you as a thief.
+5:5 You are all the children of light, and the children of the day: we are not of the night, nor of darkness.
+5:6 Therefore let us not sleep, as do others; but let us watch and be sober.
+5:7 For they that sleep sleep in the night; and they that be drunken are drunken in the night.
+5:8 But let us, who are of the day, be sober, putting on the breastplate of faith and love; and for an helmet, the hope of salvation.
+5:9 For God has not appointed us to wrath, but to obtain salvation by our Lord Jesus Christ,
+5:10 Who died for us, that, whether we wake or sleep, we should live together with him.
+5:11 Why comfort yourselves together, and edify one another, even as also you do.
+5:12 And we beseech you, brothers, to know them which labor among you, and are over you in the Lord, and admonish you;
+5:13 And to esteem them very highly in love for their work's sake. And be at peace among yourselves.
+5:14 Now we exhort you, brothers, warn them that are unruly, comfort the feebleminded, support the weak, be patient toward all men.
+5:15 See that none render evil for evil to any man; but ever follow that which is good, both among yourselves, and to all men.
+5:16 Rejoice ever more.
+5:17 Pray without ceasing.
+5:18 In every thing give thanks: for this is the will of God in Christ Jesus concerning you.
+5:19 Quench not the Spirit.
+5:20 Despise not prophesyings.
+5:21 Prove all things; hold fast that which is good.
+5:22 Abstain from all appearance of evil.
+5:23 And the very God of peace sanctify you wholly; and I pray God your whole spirit and soul and body be preserved blameless to the coming of our Lord Jesus Christ.
+5:24 Faithful is he that calls you, who also will do it.
+5:25 Brothers, pray for us.
+5:26 Greet all the brothers with an holy kiss.
+5:27 I charge you by the Lord that this letter be read to all the holy brothers.
+5:28 The grace of our Lord Jesus Christ be with you. Amen.`
+
+var book_of_2thessalonians = `1:1 Paul, and Silvanus, and Timotheus, to the church of the Thessalonians in God our Father and the Lord Jesus Christ:
+1:2 Grace to you, and peace, from God our Father and the Lord Jesus Christ.
+1:3 We are bound to thank God always for you, brothers, as it is meet, because that your faith grows exceedingly, and the charity of every one of you all toward each other abounds;
+1:4 So that we ourselves glory in you in the churches of God for your patience and faith in all your persecutions and tribulations that you endure:
+1:5 Which is a manifest token of the righteous judgment of God, that you may be counted worthy of the kingdom of God, for which you also suffer:
+1:6 Seeing it is a righteous thing with God to recompense tribulation to them that trouble you;
+1:7 And to you who are troubled rest with us, when the Lord Jesus shall be revealed from heaven with his mighty angels,
+1:8 In flaming fire taking vengeance on them that know not God, and that obey not the gospel of our Lord Jesus Christ:
+1:9 Who shall be punished with everlasting destruction from the presence of the Lord, and from the glory of his power;
+1:10 When he shall come to be glorified in his saints, and to be admired in all them that believe (because our testimony among you was believed) in that day.
+1:11 Why also we pray always for you, that our God would count you worthy of this calling, and fulfill all the good pleasure of his goodness, and the work of faith with power:
+1:12 That the name of our Lord Jesus Christ may be glorified in you, and you in him, according to the grace of our God and the Lord Jesus Christ.
+ 	
+AKJV
+ 	 	 	 	
+II Thessalonians 2
+ 	 	 	 	
+AV 1611
+
+2:1 Now we beseech you, brothers, by the coming of our Lord Jesus Christ, and by our gathering together to him,
+2:2 That you be not soon shaken in mind, or be troubled, neither by spirit, nor by word, nor by letter as from us, as that the day of Christ is at hand.
+2:3 Let no man deceive you by any means: for that day shall not come, except there come a falling away first, and that man of sin be revealed, the son of perdition;
+2:4 Who opposes and exalts himself above all that is called God, or that is worshipped; so that he as God sits in the temple of God, showing himself that he is God.
+2:5 Remember you not, that, when I was yet with you, I told you these things?
+2:6 And now you know what withholds that he might be revealed in his time.
+2:7 For the mystery of iniquity does already work: only he who now lets will let, until he be taken out of the way.
+2:8 And then shall that Wicked be revealed, whom the Lord shall consume with the spirit of his mouth, and shall destroy with the brightness of his coming:
+2:9 Even him, whose coming is after the working of Satan with all power and signs and lying wonders,
+2:10 And with all delusion of unrighteousness in them that perish; because they received not the love of the truth, that they might be saved.
+2:11 And for this cause God shall send them strong delusion, that they should believe a lie:
+2:12 That they all might be damned who believed not the truth, but had pleasure in unrighteousness.
+2:13 But we are bound to give thanks always to God for you, brothers beloved of the Lord, because God has from the beginning chosen you to salvation through sanctification of the Spirit and belief of the truth:
+2:14 Whereunto he called you by our gospel, to the obtaining of the glory of our Lord Jesus Christ.
+2:15 Therefore, brothers, stand fast, and hold the traditions which you have been taught, whether by word, or our letter.
+2:16 Now our Lord Jesus Christ himself, and God, even our Father, which has loved us, and has given us everlasting consolation and good hope through grace,
+2:17 Comfort your hearts, and establish you in every good word and work.
+ 	
+AKJV
+ 	 	 	 	
+II Thessalonians 3
+ 	 	 	 	
+AV 1611
+
+3:1 Finally, brothers, pray for us, that the word of the Lord may have free course, and be glorified, even as it is with you:
+3:2 And that we may be delivered from unreasonable and wicked men: for all men have not faith.
+3:3 But the Lord is faithful, who shall establish you, and keep you from evil.
+3:4 And we have confidence in the Lord touching you, that you both do and will do the things which we command you.
+3:5 And the Lord direct your hearts into the love of God, and into the patient waiting for Christ.
+3:6 Now we command you, brothers, in the name of our Lord Jesus Christ, that you withdraw yourselves from every brother that walks disorderly, and not after the tradition which he received of us.
+3:7 For yourselves know how you ought to follow us: for we behaved not ourselves disorderly among you;
+3:8 Neither did we eat any man's bread for nothing; but worked with labor and travail night and day, that we might not be chargeable to any of you:
+3:9 Not because we have not power, but to make ourselves an ensample to you to follow us.
+3:10 For even when we were with you, this we commanded you, that if any would not work, neither should he eat.
+3:11 For we hear that there are some which walk among you disorderly, working not at all, but are busybodies.
+3:12 Now them that are such we command and exhort by our Lord Jesus Christ, that with quietness they work, and eat their own bread.
+3:13 But you, brothers, be not weary in well doing.
+3:14 And if any man obey not our word by this letter, note that man, and have no company with him, that he may be ashamed.
+3:15 Yet count him not as an enemy, but admonish him as a brother.
+3:16 Now the Lord of peace himself give you peace always by all means. The Lord be with you all.
+3:17 The salutation of Paul with my own hand, which is the token in every letter: so I write.
+3:18 The grace of our Lord Jesus Christ be with you all. Amen.`
+
+
 
 var book_of_1timothy = `1 Timothy Chapter 1
 He puts Timothy in mind of his charge and blesses God for the mercy he himself had received.
