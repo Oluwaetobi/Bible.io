@@ -287,9 +287,15 @@ table takes up the full width of it's parent the scrollable table */
     background-color: #f8faf9;
 }
 
+/* You would think that I would be able to combine these 2 but I can't
+because they are not theh same thing, at least the parameters aren't */
+.table tr:hover td {
+    /* background-color: #8cdeee; */
+    background-color: rgba(6, 248, 248, 0.8);
+    /* text-decoration: none; */
+}
 .table tr:hover {
-    background-color: #1096b1;
-    filter: brightness(80%);
+    filter: brightness(130%);
 }
 
 .top-left {
