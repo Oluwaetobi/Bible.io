@@ -1319,7 +1319,16 @@ function Bible_DataBase () {
     if (book_clicked == 1) {
         
     }
-    text_to_read.innerText = `We are sorry, but the Bible is currently not available on our site.`
+    text_to_read.innerText = `We are sorry, but the entire Bible is currently NOT available on our site. 
+        The only books of the Bible that are available on our site are: 
+        ___________________________________________________________________________
+
+
+        Old Testament:
+        Genesis, Job, Proverbs, Ecclesiastes,
+        
+        New Testament:
+        Matthew, Mark, Luke, John, Acts, Romans, and Revelation `
 }
 
 function stop_re_adding_text (type_of_text) {

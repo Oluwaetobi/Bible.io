@@ -212,10 +212,16 @@ a:hover {
 
 #testament-title {
     font-size: 20px;
+    background-color: rgba(199, 181, 45, 0.9);
+    padding: 10px 10px;
+    box-sizing: border-box;
+    border-radius: 10px 10px;
+    font-weight: bold;
+    /* border-collapse: collapse; */
 }
 
 .scrollable-table-bible {
-    min-height: 200px;
+    min-height: 270px;
     width: 700px;
     /* aspect-ratio: 1 / 1;   */
     /* overflow-y makes only the y coordinates scrollable */
