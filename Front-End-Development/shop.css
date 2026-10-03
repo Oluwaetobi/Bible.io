@@ -595,6 +595,7 @@ table takes up the full width of it's parent the scrollable table */
 .table-shop th:hover {
     padding: 10px 10px 10px 10px;
     filter: brightness(150%);
+    cursor: pointer;
 
 }
 

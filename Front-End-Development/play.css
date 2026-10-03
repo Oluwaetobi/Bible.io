@@ -187,7 +187,9 @@ a:hover {
 }
 
 .modes_assets img {
-    padding-left: 50px;
+    /* padding-left: 50px; */
+    margin-left: 50px;
+    cursor: pointer;
 }
 
 .modes_assets img:hover {

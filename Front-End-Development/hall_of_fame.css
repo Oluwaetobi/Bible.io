@@ -293,6 +293,7 @@ because they are not theh same thing, at least the parameters aren't */
     /* background-color: #8cdeee; */
     background-color: rgba(6, 248, 248, 0.8);
     /* text-decoration: none; */
+    cursor: pointer;
 }
 .table tr:hover {
     filter: brightness(130%);
