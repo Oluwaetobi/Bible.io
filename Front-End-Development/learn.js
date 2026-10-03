@@ -1314,21 +1314,28 @@ function all_Text_Database () {
     } 
 }
 
+const genesis_book = JSON.parse(sessionStorage.getItem('book_of_genesis'));
 function Bible_DataBase () {
     /**I am not going to store the entire Bible on here, I need to fetch that fromo a server */
-    if (book_clicked == 1) {
-        
-    }
+    
+    
+    // default
     text_to_read.innerText = `We are sorry, but the entire Bible is currently NOT available on our site. 
         The only books of the Bible that are available on our site are: 
         ___________________________________________________________________________
 
 
         Old Testament:
-        Genesis, Job, Proverbs, Ecclesiastes,
+        Genesis, Job, Psalms, Proverbs, Ecclesiastes,
         
         New Testament:
         Matthew, Mark, Luke, John, Acts, Romans, and Revelation `
+
+
+    if (book_clicked == 1) {
+        text_to_read.innerText = genesis_book;
+    }
+
 }
 
 function stop_re_adding_text (type_of_text) {
