@@ -1382,7 +1382,14 @@ const jude_book = JSON.parse(sessionStorage.getItem('book_of_jude'));
 const revelation_book = JSON.parse(sessionStorage.getItem('book_of_revelation'));
 
 function Bible_DataBase () {
-    /**I am not going to store the entire Bible on here, I need to fetch that fromo a server */
+    /** Instead of using the fetch api command in JavaScript to fetch Bible data from a server, I'm storing
+     * it on this program, because rumor has it that some people are buying bible companies and others storing
+     * book data, then get ridding of any other copies. And that they are editing some of the stuff that it says,
+     * and they are doing the same thing to the Bible. I don't want none of that nonsense with the Bible!!
+     * It's a sacred script, it's God's word and I'm not going to be presenting people with the edited word
+     * of God. So I've taken laws in my own hands and we're storing the Bible, the entire thing, here,
+     * in our code.
+     */
     
     
     // default

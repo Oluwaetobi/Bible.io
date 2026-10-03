@@ -32,7 +32,11 @@ if (developer_tools) {
 
 
 
-function store_Bible_books_sessionally () {
+function store_big_books_sessionally () {
+    /**Instead of putting the entire text for these big books in learn.js, I'm storing there here
+     * in order to not have too many lines of code that is in fact just plain text
+     */
+
     sessionStorage.setItem('book_of_genesis', JSON.stringify(book_of_genesis))
     sessionStorage.setItem('book_of_exodus', JSON.stringify(book_of_exodus))
     sessionStorage.setItem('book_of_leviticus', JSON.stringify(book_of_leviticus))
@@ -50814,6 +50818,6 @@ AV 1611
 22:21 The grace of our Lord Jesus Christ be with you all. Amen.
     `
 
-store_Bible_books_sessionally();
+store_big_books_sessionally();
 /**Must stay at the end!! */
 redirect_User_to_the_right_page();
