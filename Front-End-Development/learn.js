@@ -1351,7 +1351,7 @@ const nahum_book = JSON.parse(sessionStorage.getItem('book_of_nahum'));
 const habakkuk_book = JSON.parse(sessionStorage.getItem('book_of_habakkuk'));
 const zephaniah_book = JSON.parse(sessionStorage.getItem('book_of_zephaniah'));
 const haggai_book = JSON.parse(sessionStorage.getItem('book_of_haggai'));
-const zecharaih_book = JSON.parse(sessionStorage.getItem('book_of_zechariah'));
+const zechariah_book = JSON.parse(sessionStorage.getItem('book_of_zechariah'));
 const malachi_book = JSON.parse(sessionStorage.getItem('book_of_malachi'));
 const matthew_book = JSON.parse(sessionStorage.getItem('book_of_matthew'));
 const mark_book = JSON.parse(sessionStorage.getItem('book_of_mark'));
@@ -1455,6 +1455,9 @@ function Bible_DataBase () {
     if (book_clicked == 21) {
         text_to_read.innerText = ecclesiastes_book;
     }
+    if (book_clicked == 22) {
+        text_to_read.innerText = song_of_solomon_book;
+    }
     if (book_clicked == 23) {
         text_to_read.innerText = isaiah_book;
     }
@@ -1469,6 +1472,42 @@ function Bible_DataBase () {
     }
     if (book_clicked == 27) {
         text_to_read.innerText = daniel_book;
+    }
+    if (book_clicked == 28) {
+        text_to_read.innerText = hosea_book;
+    }
+    if (book_clicked == 29) {
+        text_to_read.innerText = joel_book;
+    }
+    if (book_clicked == 30) {
+        text_to_read.innerText = amos_book;
+    }
+    if (book_clicked == 31) {
+        text_to_read.innerText = obadiah_book;
+    }
+    if (book_clicked == 32) {
+        text_to_read.innerText = jonah_book;
+    }
+    if (book_clicked == 33) {
+        text_to_read.innerText = micah_book;
+    }
+    if (book_clicked == 34) {
+        text_to_read.innerText = nahum_book;
+    }
+    if (book_clicked == 35) {
+        text_to_read.innerText = habakkuk_book;
+    }
+    if (book_clicked == 36) {
+        text_to_read.innerText = zephaniah_book;
+    }
+    if (book_clicked == 37) {
+        text_to_read.innerText = haggai_book;
+    }
+    if (book_clicked == 38) {
+        text_to_read.innerText = zechariah_book;
+    }
+    if (book_clicked == 39) {
+        text_to_read.innerText = malachi_book;
     }
     if (book_clicked == 40) {
         text_to_read.innerText = matthew_book;
@@ -1493,6 +1532,24 @@ function Bible_DataBase () {
     }
     if (book_clicked == 47) {
         text_to_read.innerText = second_corinthians_book;
+    }
+    if (book_clicked == 48) {
+        text_to_read.innerText = galatians_book;
+    }
+    if (book_clicked == 49) {
+        text_to_read.innerText = ephesians_book;
+    }
+    if (book_clicked == 50) {
+        text_to_read.innerText = philippians_book;
+    }
+    if (book_clicked == 51) {
+        text_to_read.innerText = colossians_book;
+    }
+    if (book_clicked == 52) {
+        text_to_read.innerText = first_thessalonians_book;
+    }
+    if (book_clicked == 53) {
+        text_to_read.innerText = second_thessalonians_book;
     }
     if (book_clicked == 54) {
         text_to_read.innerText = first_timothy_book;

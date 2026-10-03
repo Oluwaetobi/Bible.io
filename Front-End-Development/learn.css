@@ -481,7 +481,8 @@ table takes up the full width of it's parent the scrollable table */
 }
 
 .scrollable-table-reading caption {
-    background-color: #0cc4dd;
+    /* background-color: #0b97a9; */
+    background: linear-gradient(180deg, #0dc4dd, #0b97a9);
     color:#fcfcfc;
     position: sticky;
     top: 0px;
@@ -490,6 +491,8 @@ table takes up the full width of it's parent the scrollable table */
     padding-top: 10px;
     padding-bottom: 10px;
     text-align: center;
+    /* right or left, down or up, blur radius, color */
+    text-shadow: 2px 2px 3px rgb(9, 9, 9);
     /* font-size: large; */
 }
 
