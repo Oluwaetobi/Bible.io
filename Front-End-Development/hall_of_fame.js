@@ -214,9 +214,14 @@ function update_hall_of_fame () {
      */
     hof_text_display.forEach((td, index)=> {
         var consecutive_numbers = Math.ceil(index/4);
+        if(index % 4 == 0) {
+            // country
+            td.width = 40;
+        }
         if(index % 4 == 1) {
             // rank
             td.textContent = consecutive_numbers;
+            td.width = 20;
         }
         if(index % 4 == 2) {
             // name

@@ -256,8 +256,6 @@ table takes up the full width of it's parent the scrollable table */
     /* background-color: #6085fffe; */
     background: linear-gradient(0deg, #03d2fc, #3853ef);
     color: #ffffff;
-    font-size: 20px;
-    font-weight: bold;
     text-align: left;
     position: sticky;
     top: 0px;
@@ -265,6 +263,8 @@ table takes up the full width of it's parent the scrollable table */
     align-items: center; */
     box-sizing: border-box;
     border-radius: 2px 2px;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .table th,
@@ -277,7 +277,6 @@ table takes up the full width of it's parent the scrollable table */
 .table tr {
     scroll-snap-align: start;
 }
-
 
 /* Background color for every even row (opposite of odd rows) */
 .table tbody tr:nth-of-type(even) {
