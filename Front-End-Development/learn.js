@@ -298,7 +298,10 @@ function start_timer() {
             /**Every twenty seconds you get 1 point for learning, and anytime I change data, I need
              * to save it
              */
-            my_points += 1;
+            if (learn_page != 1) {
+                // if the player is actually learning something, not just looking at the front page then give them points
+                my_points += 1;
+            }
             save_Data_to_Local_or_Session_Storage();
         }
 
