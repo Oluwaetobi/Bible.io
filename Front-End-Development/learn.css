@@ -217,7 +217,17 @@ a:hover {
     box-sizing: border-box;
     border-radius: 10px 10px;
     font-weight: bold;
+    color:#fcfbfb;
+    /* right or left, down or up, blur radius, color */
+    text-shadow: 2px 2px 3px rgb(10, 10, 10);
+    /* border: 2px solid black; */
+    box-shadow: inset 1.5px 1.5px 10px #000000;
     /* border-collapse: collapse; */
+}
+
+#testament-title:hover {
+    cursor:pointer;
+    filter: brightness(130%);
 }
 
 .scrollable-table-bible {
