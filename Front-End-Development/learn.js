@@ -1335,11 +1335,24 @@ const job_book = JSON.parse(sessionStorage.getItem('book_of_job'));
 const psalms_book = JSON.parse(sessionStorage.getItem('book_of_psalms'));
 const proverbs_book = JSON.parse(sessionStorage.getItem('book_of_proverbs'));
 const ecclesiastes_book = JSON.parse(sessionStorage.getItem('book_of_ecclesiastes'));
+const song_of_solomon_book = JSON.parse(sessionStorage.getItem('book_of_song_of_solomon'));
 const isaiah_book = JSON.parse(sessionStorage.getItem('book_of_isaiah'));
 const jeremiah_book = JSON.parse(sessionStorage.getItem('book_of_jeremiah'));
 const lamentations_book = JSON.parse(sessionStorage.getItem('book_of_lamentations'));
 const ezekiel_book = JSON.parse(sessionStorage.getItem('book_of_ezekiel'));
 const daniel_book = JSON.parse(sessionStorage.getItem('book_of_daniel'));
+const hosea_book = JSON.parse(sessionStorage.getItem('book_of_hosea'));
+const joel_book = JSON.parse(sessionStorage.getItem('book_of_joel'));
+const amos_book = JSON.parse(sessionStorage.getItem('book_of_amos'));
+const obadiah_book = JSON.parse(sessionStorage.getItem('book_of_obadiah'));
+const jonah_book = JSON.parse(sessionStorage.getItem('book_of_jonah'));
+const micah_book = JSON.parse(sessionStorage.getItem('book_of_micah'));
+const nahum_book = JSON.parse(sessionStorage.getItem('book_of_nahum'));
+const habakkuk_book = JSON.parse(sessionStorage.getItem('book_of_habakkuk'));
+const zephaniah_book = JSON.parse(sessionStorage.getItem('book_of_zephaniah'));
+const haggai_book = JSON.parse(sessionStorage.getItem('book_of_haggai'));
+const zecharaih_book = JSON.parse(sessionStorage.getItem('book_of_zechariah'));
+const malachi_book = JSON.parse(sessionStorage.getItem('book_of_malachi'));
 const matthew_book = JSON.parse(sessionStorage.getItem('book_of_matthew'));
 const mark_book = JSON.parse(sessionStorage.getItem('book_of_mark'));
 const luke_book = JSON.parse(sessionStorage.getItem('book_of_luke'));
@@ -1348,6 +1361,12 @@ const acts_book = JSON.parse(sessionStorage.getItem('book_of_acts'));
 const romans_book = JSON.parse(sessionStorage.getItem('book_of_romans'));
 const first_corinthians_book = JSON.parse(sessionStorage.getItem('book_of_1corinthians'));
 const second_corinthians_book = JSON.parse(sessionStorage.getItem('book_of_2corinthians'));
+const galatians_book = JSON.parse(sessionStorage.getItem('book_of_galatians'));
+const ephesians_book = JSON.parse(sessionStorage.getItem('book_of_ephesians'));
+const philippians_book = JSON.parse(sessionStorage.getItem('book_of_philippians'));
+const colossians_book = JSON.parse(sessionStorage.getItem('book_of_colossians'));
+const first_thessalonians_book = JSON.parse(sessionStorage.getItem('book_of_1thessalonians'));
+const second_thessalonians_book = JSON.parse(sessionStorage.getItem('book_of_2thessalonians'));
 const first_timothy_book = JSON.parse(sessionStorage.getItem('book_of_1timothy'));
 const second_timothy_book = JSON.parse(sessionStorage.getItem('book_of_2timothy'));
 const titus_book = JSON.parse(sessionStorage.getItem('book_of_titus'));
@@ -1367,16 +1386,10 @@ function Bible_DataBase () {
     
     
     // default
-    text_to_read.innerText = `We are sorry, but the entire Bible is currently NOT available on our site. 
-        The only books of the Bible that are available on our site are: 
-        ___________________________________________________________________________
-
-
-        Old Testament:
-        Genesis, Exodus, Leviticus, Numbers, Deuteronomy, Joshua, Judges, Ruth, 1 Samuel, 2 Samuel, 1 Kings, 2 Kings, 1 Chronicles, 2 Chronicles, Ezra, Nehemiah, Esther, Job, Psalms, Proverbs, Ecclesiastes, Isaiah, Jeremiah, Lamentations, Ezekiel, Daniel
-        
-        New Testament:
-        Matthew, Mark, Luke, John, Acts, Romans, 1 Corinthians, 2 Corinthians, 1 Timothy, 2 Timothy, Titus, Philemon, Hebrews, James, 1 Peter, 2 Peter, 1 John, 2 John, 3 John, Jude, and Revelation `
+    text_to_read.innerText = `
+    If you are seeing this message, it means we are missing a book of the bible, and it was incorrectly inputted on the storage of our site, please report this to Bible.io including the name of the book that is missing, thank you!
+    
+    - A Message from the Bible.io Team | Bible.io Corporation `
 
 
     if (book_clicked == 1) {

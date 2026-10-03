@@ -38,6 +38,7 @@ function store_Bible_books_sessionally () {
     sessionStorage.setItem('book_of_leviticus', JSON.stringify(book_of_leviticus))
     sessionStorage.setItem('book_of_numbers', JSON.stringify(book_of_numbers))
     sessionStorage.setItem('book_of_deuteronomy', JSON.stringify(book_of_deuteronomy))
+    sessionStorage.setItem('book_of_joshua', JSON.stringify(book_of_joshua))
     sessionStorage.setItem('book_of_judges', JSON.stringify(book_of_judges))
     sessionStorage.setItem('book_of_ruth', JSON.stringify(book_of_ruth))
     sessionStorage.setItem('book_of_1samuel', JSON.stringify(book_of_1samuel))
@@ -53,7 +54,7 @@ function store_Bible_books_sessionally () {
     sessionStorage.setItem('book_of_psalms', JSON.stringify(book_of_psalms))
     sessionStorage.setItem('book_of_proverbs', JSON.stringify(book_of_proverbs))
     sessionStorage.setItem('book_of_ecclesiastes', JSON.stringify(book_of_ecclesiastes))
-    sessionStorage.setItem('book_of_songs_of_solomon', JSON.stringify(book_of_songs_of_solomon))
+    sessionStorage.setItem('book_of_song_of_solomon', JSON.stringify(book_of_song_of_solomon))
     sessionStorage.setItem('book_of_isaiah', JSON.stringify(book_of_isaiah))
     sessionStorage.setItem('book_of_jeremiah', JSON.stringify(book_of_jeremiah))
     sessionStorage.setItem('book_of_lamentations', JSON.stringify(book_of_lamentations))
@@ -32596,7 +32597,7 @@ Before the sun, etc.... That is, before old age: the effects of which upon all t
 
 `
 
-var book_of_songs_of_solomon = `1:1 The song of songs, which is Solomon's.
+var book_of_song_of_solomon = `1:1 The song of songs, which is Solomon's.
 1:2 Let him kiss me with the kisses of his mouth: for your love is better than wine.
 1:3 Because of the smell of your good ointments your name is as ointment poured forth, therefore do the virgins love you.
 1:4 Draw me, we will run after you: the king has brought me into his chambers: we will be glad and rejoice in you, we will remember your love more than wine: the upright love you.
