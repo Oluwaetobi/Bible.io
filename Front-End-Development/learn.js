@@ -1315,52 +1315,52 @@ function all_Text_Database () {
 }
 
 const genesis_book = JSON.parse(sessionStorage.getItem('book_of_genesis'));
-const exodus_book = JSON.parse(sessionStorage.getItem('book_of_genesis'));
-const leviticus_book = JSON.parse(sessionStorage.getItem('book_of_genesis'));
-const numbers_book = JSON.parse(sessionStorage.getItem('book_of_genesis'));
-const deuteronomy_book = JSON.parse(sessionStorage.getItem('book_of_genesis'));
-const joshua_book = JSON.parse(sessionStorage.getItem('book_of_genesis'));
-const judges_book = JSON.parse(sessionStorage.getItem('book_of_genesis'));
-const ruth_book = JSON.parse(sessionStorage.getItem('book_of_genesis'));
-const first_samuel_book = JSON.parse(sessionStorage.getItem('book_of_genesis'));
-const second_sameuel_book = JSON.parse(sessionStorage.getItem('book_of_genesis'));
-const first_kings_book = JSON.parse(sessionStorage.getItem('book_of_genesis'));
-const second_kings_book = JSON.parse(sessionStorage.getItem('book_of_genesis'));
-const first_chronicles_book = JSON.parse(sessionStorage.getItem('book_of_genesis'));
-const second_chronicles_book = JSON.parse(sessionStorage.getItem('book_of_genesis'));
-const ezra_book = JSON.parse(sessionStorage.getItem('book_of_genesis'));
-const nehemiah_book = JSON.parse(sessionStorage.getItem('book_of_genesis'));
-const esther_book = JSON.parse(sessionStorage.getItem('book_of_genesis'));
-const job_book = JSON.parse(sessionStorage.getItem('book_of_genesis'));
-const psalms_book = JSON.parse(sessionStorage.getItem('book_of_genesis'));
-const proverbs_book = JSON.parse(sessionStorage.getItem('book_of_genesis'));
-const ecclesiastes_book = JSON.parse(sessionStorage.getItem('book_of_genesis'));
-const isaiah_book = JSON.parse(sessionStorage.getItem('book_of_genesis'));
-const jeremiah_book = JSON.parse(sessionStorage.getItem('book_of_genesis'));
-const lamentations_book = JSON.parse(sessionStorage.getItem('book_of_genesis'));
-const ezekiel_book = JSON.parse(sessionStorage.getItem('book_of_genesis'));
-const daniel_book = JSON.parse(sessionStorage.getItem('book_of_genesis'));
-const matthew_book = JSON.parse(sessionStorage.getItem('book_of_genesis'));
-const mark_book = JSON.parse(sessionStorage.getItem('book_of_genesis'));
-const luke_book = JSON.parse(sessionStorage.getItem('book_of_genesis'));
-const john_book = JSON.parse(sessionStorage.getItem('book_of_genesis'));
-const acts_book = JSON.parse(sessionStorage.getItem('book_of_genesis'));
-const romans_book = JSON.parse(sessionStorage.getItem('book_of_genesis'));
-const first_corinthians_book = JSON.parse(sessionStorage.getItem('book_of_genesis'));
-const second_corinthians_book = JSON.parse(sessionStorage.getItem('book_of_genesis'));
-const first_timothy_book = JSON.parse(sessionStorage.getItem('book_of_genesis'));
-const second_timothy_book = JSON.parse(sessionStorage.getItem('book_of_genesis'));
-const titus_book = JSON.parse(sessionStorage.getItem('book_of_genesis'));
-const philemon_book = JSON.parse(sessionStorage.getItem('book_of_genesis'));
-const hebrews_book = JSON.parse(sessionStorage.getItem('book_of_genesis'));
-const james_book = JSON.parse(sessionStorage.getItem('book_of_genesis'));
-const first_peter_book = JSON.parse(sessionStorage.getItem('book_of_genesis'));
-const second_peter_book = JSON.parse(sessionStorage.getItem('book_of_genesis'));
-const first_john_book = JSON.parse(sessionStorage.getItem('book_of_genesis'));
-const second_john_book = JSON.parse(sessionStorage.getItem('book_of_genesis'));
-const third_john_book = JSON.parse(sessionStorage.getItem('book_of_genesis'));
-const jude_book = JSON.parse(sessionStorage.getItem('book_of_genesis'));
-const revelation_book = JSON.parse(sessionStorage.getItem('book_of_genesis'));
+const exodus_book = JSON.parse(sessionStorage.getItem('book_of_exodus'));
+const leviticus_book = JSON.parse(sessionStorage.getItem('book_of_leviticus'));
+const numbers_book = JSON.parse(sessionStorage.getItem('book_of_numbers'));
+const deuteronomy_book = JSON.parse(sessionStorage.getItem('book_of_deuteronomy'));
+const joshua_book = JSON.parse(sessionStorage.getItem('book_of_joshua'));
+const judges_book = JSON.parse(sessionStorage.getItem('book_of_judges'));
+const ruth_book = JSON.parse(sessionStorage.getItem('book_of_ruth'));
+const first_samuel_book = JSON.parse(sessionStorage.getItem('book_of_1samuel'));
+const second_samuel_book = JSON.parse(sessionStorage.getItem('book_of_2samuel'));
+const first_kings_book = JSON.parse(sessionStorage.getItem('book_of_1kings'));
+const second_kings_book = JSON.parse(sessionStorage.getItem('book_of_2kings'));
+const first_chronicles_book = JSON.parse(sessionStorage.getItem('book_of_1chronicles'));
+const second_chronicles_book = JSON.parse(sessionStorage.getItem('book_of_2chronicles'));
+const ezra_book = JSON.parse(sessionStorage.getItem('book_of_ezra'));
+const nehemiah_book = JSON.parse(sessionStorage.getItem('book_of_nehemiah'));
+const esther_book = JSON.parse(sessionStorage.getItem('book_of_esther'));
+const job_book = JSON.parse(sessionStorage.getItem('book_of_job'));
+const psalms_book = JSON.parse(sessionStorage.getItem('book_of_psalms'));
+const proverbs_book = JSON.parse(sessionStorage.getItem('book_of_proverbs'));
+const ecclesiastes_book = JSON.parse(sessionStorage.getItem('book_of_ecclesiastes'));
+const isaiah_book = JSON.parse(sessionStorage.getItem('book_of_isaiah'));
+const jeremiah_book = JSON.parse(sessionStorage.getItem('book_of_jeremiah'));
+const lamentations_book = JSON.parse(sessionStorage.getItem('book_of_lamentations'));
+const ezekiel_book = JSON.parse(sessionStorage.getItem('book_of_ezekiel'));
+const daniel_book = JSON.parse(sessionStorage.getItem('book_of_daniel'));
+const matthew_book = JSON.parse(sessionStorage.getItem('book_of_matthew'));
+const mark_book = JSON.parse(sessionStorage.getItem('book_of_mark'));
+const luke_book = JSON.parse(sessionStorage.getItem('book_of_luke'));
+const john_book = JSON.parse(sessionStorage.getItem('book_of_john'));
+const acts_book = JSON.parse(sessionStorage.getItem('book_of_acts'));
+const romans_book = JSON.parse(sessionStorage.getItem('book_of_romans'));
+const first_corinthians_book = JSON.parse(sessionStorage.getItem('book_of_1corinthians'));
+const second_corinthians_book = JSON.parse(sessionStorage.getItem('book_of_2corinthians'));
+const first_timothy_book = JSON.parse(sessionStorage.getItem('book_of_1timothy'));
+const second_timothy_book = JSON.parse(sessionStorage.getItem('book_of_2timothy'));
+const titus_book = JSON.parse(sessionStorage.getItem('book_of_titus'));
+const philemon_book = JSON.parse(sessionStorage.getItem('book_of_philemon'));
+const hebrews_book = JSON.parse(sessionStorage.getItem('book_of_hebrews'));
+const james_book = JSON.parse(sessionStorage.getItem('book_of_james'));
+const first_peter_book = JSON.parse(sessionStorage.getItem('book_of_1peter'));
+const second_peter_book = JSON.parse(sessionStorage.getItem('book_of_2peter'));
+const first_john_book = JSON.parse(sessionStorage.getItem('book_of_1john'));
+const second_john_book = JSON.parse(sessionStorage.getItem('book_of_2john'));
+const third_john_book = JSON.parse(sessionStorage.getItem('book_of_3john'));
+const jude_book = JSON.parse(sessionStorage.getItem('book_of_jude'));
+const revelation_book = JSON.parse(sessionStorage.getItem('book_of_revelation'));
 
 function Bible_DataBase () {
     /**I am not going to store the entire Bible on here, I need to fetch that fromo a server */
@@ -1382,6 +1382,145 @@ function Bible_DataBase () {
     if (book_clicked == 1) {
         text_to_read.innerText = genesis_book;
     }
+    if (book_clicked == 2) {
+        text_to_read.innerText = exodus_book;
+    }
+    if (book_clicked == 3) {
+        text_to_read.innerText = leviticus_book;
+    }
+    if (book_clicked == 4) {
+        text_to_read.innerText = numbers_book;
+    }
+    if (book_clicked == 5) {
+        text_to_read.innerText = deuteronomy_book;
+    }
+    if (book_clicked == 6) {
+        text_to_read.innerText = joshua_book;
+    }
+    if (book_clicked == 7) {
+        text_to_read.innerText = judges_book;
+    }
+    if (book_clicked == 8) {
+        text_to_read.innerText = ruth_book;
+    }
+    if (book_clicked == 9) {
+        text_to_read.innerText = first_samuel_book;
+    }
+    if (book_clicked == 10) {
+        text_to_read.innerText = second_samuel_book;
+    }
+    if (book_clicked == 11) {
+        text_to_read.innerText = first_kings_book;
+    }
+    if (book_clicked == 12) {
+        text_to_read.innerText = second_kings_book;
+    }
+    if (book_clicked == 13) {
+        text_to_read.innerText = first_chronicles_book;
+    }
+    if (book_clicked == 14) {
+        text_to_read.innerText = second_chronicles_book;
+    }
+    if (book_clicked == 15) {
+        text_to_read.innerText = ezra_book;
+    }
+    if (book_clicked == 16) {
+        text_to_read.innerText = nehemiah_book;
+    }
+    if (book_clicked == 17) {
+        text_to_read.innerText = esther_book;
+    }
+    if (book_clicked == 18) {
+        text_to_read.innerText = job_book;
+    }
+    if (book_clicked == 19) {
+        text_to_read.innerText = psalms_book;
+    }
+    if (book_clicked == 20) {
+        text_to_read.innerText = proverbs_book;
+    }
+    if (book_clicked == 21) {
+        text_to_read.innerText = ecclesiastes_book;
+    }
+    if (book_clicked == 23) {
+        text_to_read.innerText = isaiah_book;
+    }
+    if (book_clicked == 24) {
+        text_to_read.innerText = jeremiah_book;
+    }
+    if (book_clicked == 25) {
+        text_to_read.innerText = lamentations_book;
+    }
+    if (book_clicked == 26) {
+        text_to_read.innerText = ezekiel_book;
+    }
+    if (book_clicked == 27) {
+        text_to_read.innerText = daniel_book;
+    }
+    if (book_clicked == 40) {
+        text_to_read.innerText = matthew_book;
+    }
+    if (book_clicked == 41) {
+        text_to_read.innerText = mark_book;
+    }
+    if (book_clicked == 42) {
+        text_to_read.innerText = luke_book;
+    }
+    if (book_clicked == 43) {
+        text_to_read.innerText = john_book;
+    }
+    if (book_clicked == 44) {
+        text_to_read.innerText = acts_book;
+    }
+    if (book_clicked == 45) {
+        text_to_read.innerText = romans_book;
+    }
+    if (book_clicked == 46) {
+        text_to_read.innerText = first_corinthians_book;
+    }
+    if (book_clicked == 47) {
+        text_to_read.innerText = second_corinthians_book;
+    }
+    if (book_clicked == 54) {
+        text_to_read.innerText = first_timothy_book;
+    }
+    if (book_clicked == 55) {
+        text_to_read.innerText = second_timothy_book;
+    }
+    if (book_clicked == 56) {
+        text_to_read.innerText = titus_book;
+    }
+    if (book_clicked == 57) {
+        text_to_read.innerText = philemon_book;
+    }
+    if (book_clicked == 58) {
+        text_to_read.innerText = hebrews_book;
+    }
+    if (book_clicked == 59) {
+        text_to_read.innerText = james_book;
+    }
+    if (book_clicked == 60) {
+        text_to_read.innerText = first_peter_book;
+    }
+    if (book_clicked == 61) {
+        text_to_read.innerText = second_peter_book;
+    }
+    if (book_clicked == 62) {
+        text_to_read.innerText = first_john_book;
+    }
+    if (book_clicked == 63) {
+        text_to_read.innerText = second_john_book;
+    }
+    if (book_clicked == 64) {
+        text_to_read.innerText = third_john_book;
+    }
+    if (book_clicked == 65) {
+        text_to_read.innerText = jude_book;
+    }
+    if (book_clicked == 66) {
+        text_to_read.innerText = revelation_book;
+    }
+    
 
 }
 
