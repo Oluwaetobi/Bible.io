@@ -1329,7 +1329,7 @@ function Bible_DataBase () {
         Genesis, Job, Psalms, Proverbs, Ecclesiastes,
         
         New Testament:
-        Matthew, Mark, Luke, John, Acts, Romans, and Revelation `
+        Matthew, Mark, Luke, John, Acts, Romans, 1 Corinthians, 2 Corinthians, 1 Timothy, 2 Timothy, Hebrews, James, 1 Peter, 2 Peter, 1 John, 2 John, 3 John, Jude, and Revelation `
 
 
     if (book_clicked == 1) {
