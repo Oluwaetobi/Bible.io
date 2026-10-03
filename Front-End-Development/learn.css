@@ -210,8 +210,12 @@ a:hover {
     display: block;
 }
 
+#testament-title {
+    font-size: 20px;
+}
+
 .scrollable-table-bible {
-    min-height: 120px;
+    min-height: 200px;
     width: 700px;
     /* aspect-ratio: 1 / 1;   */
     /* overflow-y makes only the y coordinates scrollable */
