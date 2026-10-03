@@ -251,7 +251,11 @@ function goBackSign () {
     if (learn_page == 2) {
         ctx.fillStyle = 'rgb(12, 12, 12)';
         ctx.fillRect(1130 -53, 52, 146, 36);
-        ctx.fillStyle = 'rgb(154, 82, 6)';
+        if (mouseX > 1077 && mouseX < 1227 && mouseY < 83 && mouseY > 50) {
+            ctx.fillStyle = 'rgb(243, 129, 8)';
+        } else {
+            ctx.fillStyle = 'rgb(154, 82, 6)';
+        }
         ctx.fillRect(1130 -50, 55, 140, 30);
         ctx.font = "25px Arial";
         ctx.fillStyle = 'rgb(252, 250, 250)';
