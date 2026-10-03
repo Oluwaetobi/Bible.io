@@ -53,11 +53,24 @@ function store_Bible_books_sessionally () {
     sessionStorage.setItem('book_of_psalms', JSON.stringify(book_of_psalms))
     sessionStorage.setItem('book_of_proverbs', JSON.stringify(book_of_proverbs))
     sessionStorage.setItem('book_of_ecclesiastes', JSON.stringify(book_of_ecclesiastes))
+    sessionStorage.setItem('book_of_songs_of_solomon', JSON.stringify(book_of_songs_of_solomon))
     sessionStorage.setItem('book_of_isaiah', JSON.stringify(book_of_isaiah))
     sessionStorage.setItem('book_of_jeremiah', JSON.stringify(book_of_jeremiah))
     sessionStorage.setItem('book_of_lamentations', JSON.stringify(book_of_lamentations))
     sessionStorage.setItem('book_of_ezekiel', JSON.stringify(book_of_ezekiel))
     sessionStorage.setItem('book_of_daniel', JSON.stringify(book_of_daniel))
+    sessionStorage.setItem('book_of_hosea', JSON.stringify(book_of_hosea))
+    sessionStorage.setItem('book_of_joel', JSON.stringify(book_of_joel))
+    sessionStorage.setItem('book_of_amos', JSON.stringify(book_of_amos))
+    sessionStorage.setItem('book_of_obadiah', JSON.stringify(book_of_obadiah))
+    sessionStorage.setItem('book_of_jonah', JSON.stringify(book_of_jonah))
+    sessionStorage.setItem('book_of_micah', JSON.stringify(book_of_micah))
+    sessionStorage.setItem('book_of_nahum', JSON.stringify(book_of_nahum))
+    sessionStorage.setItem('book_of_habakkuk', JSON.stringify(book_of_habakkuk))
+    sessionStorage.setItem('book_of_zephaniah', JSON.stringify(book_of_zephaniah))
+    sessionStorage.setItem('book_of_haggai', JSON.stringify(book_of_haggai))
+    sessionStorage.setItem('book_of_zechariah', JSON.stringify(book_of_zechariah))
+    sessionStorage.setItem('book_of_malachi', JSON.stringify(book_of_malachi))
     sessionStorage.setItem('book_of_matthew', JSON.stringify(book_of_matthew))
     sessionStorage.setItem('book_of_mark', JSON.stringify(book_of_mark))
     sessionStorage.setItem('book_of_luke', JSON.stringify(book_of_luke))
@@ -66,6 +79,12 @@ function store_Bible_books_sessionally () {
     sessionStorage.setItem('book_of_romans', JSON.stringify(book_of_romans))
     sessionStorage.setItem('book_of_1corinthians', JSON.stringify(book_of_1corinthians))
     sessionStorage.setItem('book_of_2corinthians', JSON.stringify(book_of_2corinthians))
+    sessionStorage.setItem('book_of_galatians', JSON.stringify(book_of_galatians))
+    sessionStorage.setItem('book_of_ephesians', JSON.stringify(book_of_ephesians))
+    sessionStorage.setItem('book_of_philippians', JSON.stringify(book_of_philippians))
+    sessionStorage.setItem('book_of_colossians', JSON.stringify(book_of_colossians))
+    sessionStorage.setItem('book_of_1thessalonians', JSON.stringify(book_of_1thessalonians))
+    sessionStorage.setItem('book_of_2thessalonians', JSON.stringify(book_of_2thessalonians)) 
     sessionStorage.setItem('book_of_1timothy', JSON.stringify(book_of_1timothy))
     sessionStorage.setItem('book_of_2timothy', JSON.stringify(book_of_2timothy))
     sessionStorage.setItem('book_of_titus', JSON.stringify(book_of_titus))
@@ -39328,7 +39347,7 @@ AV 1611
 3:18 Your shepherds slumber, O king of Assyria: your nobles shall dwell in the dust: your people is scattered on the mountains, and no man gathers them.
 3:19 There is no healing of your bruise; your wound is grievous: all that hear the bruit of you shall clap the hands over you: for on whom has not your wickedness passed continually?`
 
-var book_of_habukkuk = `1:1 The burden which Habakkuk the prophet did see.
+var book_of_habakkuk = `1:1 The burden which Habakkuk the prophet did see.
 1:2 O LORD, how long shall I cry, and you will not hear! even cry out to you of violence, and you will not save!
 1:3 Why do you show me iniquity, and cause me to behold grievance? for spoiling and violence are before me: and there are that raise up strife and contention.
 1:4 Therefore the law is slacked, and judgment does never go forth: for the wicked does compass about the righteous; therefore wrong judgment proceeds.
