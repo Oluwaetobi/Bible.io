@@ -1315,6 +1315,53 @@ function all_Text_Database () {
 }
 
 const genesis_book = JSON.parse(sessionStorage.getItem('book_of_genesis'));
+const exodus_book = JSON.parse(sessionStorage.getItem('book_of_genesis'));
+const leviticus_book = JSON.parse(sessionStorage.getItem('book_of_genesis'));
+const numbers_book = JSON.parse(sessionStorage.getItem('book_of_genesis'));
+const deuteronomy_book = JSON.parse(sessionStorage.getItem('book_of_genesis'));
+const joshua_book = JSON.parse(sessionStorage.getItem('book_of_genesis'));
+const judges_book = JSON.parse(sessionStorage.getItem('book_of_genesis'));
+const ruth_book = JSON.parse(sessionStorage.getItem('book_of_genesis'));
+const first_samuel_book = JSON.parse(sessionStorage.getItem('book_of_genesis'));
+const second_sameuel_book = JSON.parse(sessionStorage.getItem('book_of_genesis'));
+const first_kings_book = JSON.parse(sessionStorage.getItem('book_of_genesis'));
+const second_kings_book = JSON.parse(sessionStorage.getItem('book_of_genesis'));
+const first_chronicles_book = JSON.parse(sessionStorage.getItem('book_of_genesis'));
+const second_chronicles_book = JSON.parse(sessionStorage.getItem('book_of_genesis'));
+const ezra_book = JSON.parse(sessionStorage.getItem('book_of_genesis'));
+const nehemiah_book = JSON.parse(sessionStorage.getItem('book_of_genesis'));
+const esther_book = JSON.parse(sessionStorage.getItem('book_of_genesis'));
+const job_book = JSON.parse(sessionStorage.getItem('book_of_genesis'));
+const psalms_book = JSON.parse(sessionStorage.getItem('book_of_genesis'));
+const proverbs_book = JSON.parse(sessionStorage.getItem('book_of_genesis'));
+const ecclesiastes_book = JSON.parse(sessionStorage.getItem('book_of_genesis'));
+const isaiah_book = JSON.parse(sessionStorage.getItem('book_of_genesis'));
+const jeremiah_book = JSON.parse(sessionStorage.getItem('book_of_genesis'));
+const lamentations_book = JSON.parse(sessionStorage.getItem('book_of_genesis'));
+const ezekiel_book = JSON.parse(sessionStorage.getItem('book_of_genesis'));
+const daniel_book = JSON.parse(sessionStorage.getItem('book_of_genesis'));
+const matthew_book = JSON.parse(sessionStorage.getItem('book_of_genesis'));
+const mark_book = JSON.parse(sessionStorage.getItem('book_of_genesis'));
+const luke_book = JSON.parse(sessionStorage.getItem('book_of_genesis'));
+const john_book = JSON.parse(sessionStorage.getItem('book_of_genesis'));
+const acts_book = JSON.parse(sessionStorage.getItem('book_of_genesis'));
+const romans_book = JSON.parse(sessionStorage.getItem('book_of_genesis'));
+const first_corinthians_book = JSON.parse(sessionStorage.getItem('book_of_genesis'));
+const second_corinthians_book = JSON.parse(sessionStorage.getItem('book_of_genesis'));
+const first_timothy_book = JSON.parse(sessionStorage.getItem('book_of_genesis'));
+const second_timothy_book = JSON.parse(sessionStorage.getItem('book_of_genesis'));
+const titus_book = JSON.parse(sessionStorage.getItem('book_of_genesis'));
+const philemon_book = JSON.parse(sessionStorage.getItem('book_of_genesis'));
+const hebrews_book = JSON.parse(sessionStorage.getItem('book_of_genesis'));
+const james_book = JSON.parse(sessionStorage.getItem('book_of_genesis'));
+const first_peter_book = JSON.parse(sessionStorage.getItem('book_of_genesis'));
+const second_peter_book = JSON.parse(sessionStorage.getItem('book_of_genesis'));
+const first_john_book = JSON.parse(sessionStorage.getItem('book_of_genesis'));
+const second_john_book = JSON.parse(sessionStorage.getItem('book_of_genesis'));
+const third_john_book = JSON.parse(sessionStorage.getItem('book_of_genesis'));
+const jude_book = JSON.parse(sessionStorage.getItem('book_of_genesis'));
+const revelation_book = JSON.parse(sessionStorage.getItem('book_of_genesis'));
+
 function Bible_DataBase () {
     /**I am not going to store the entire Bible on here, I need to fetch that fromo a server */
     
