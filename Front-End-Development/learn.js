@@ -1326,10 +1326,10 @@ function Bible_DataBase () {
 
 
         Old Testament:
-        Genesis, Job, Psalms, Proverbs, Ecclesiastes,
+        Genesis, Exodus, Leviticus, Numbers, Deuteronomy, Joshua, Judges, Ruth, 1 Samuel, 2 Samuel, 1 Kings, 2 Kings, 1 Chronicles, 2 Chronicles, Ezra, Nehemiah, Esther, Job, Psalms, Proverbs, Ecclesiastes, Isaiah, Jeremiah, Lamentations, Ezekiel, Daniel
         
         New Testament:
-        Matthew, Mark, Luke, John, Acts, Romans, 1 Corinthians, 2 Corinthians, 1 Timothy, 2 Timothy, Hebrews, James, 1 Peter, 2 Peter, 1 John, 2 John, 3 John, Jude, and Revelation `
+        Matthew, Mark, Luke, John, Acts, Romans, 1 Corinthians, 2 Corinthians, 1 Timothy, 2 Timothy, Titus, Philemon, Hebrews, James, 1 Peter, 2 Peter, 1 John, 2 John, 3 John, Jude, and Revelation `
 
 
     if (book_clicked == 1) {

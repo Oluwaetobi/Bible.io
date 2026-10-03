@@ -3418,6 +3418,2661 @@ The mourning for Jacob, and his interment. Joseph’s kindness towards his breth
 
 `
 
+var book_of_exodus = `Exodus Chapter 1
+The Israelites are multiplied in Egypt. They are oppressed by a new king, who commandeth all their male children to be killed.
+
+1:1. These are the names of the children of Israel, that went into Egypt with Jacob: they went in every man with his household:
+
+1:2. Ruben, Simeon, Levi, Juda,
+
+1:3. Issachar, Zabulon, and Benjamin,
+
+1:4. Dan, and Nephthali, Gad and Aser.
+
+1:5. And all the souls that came out of Jacob’s thigh, were seventy: but Joseph was in Egypt.
+
+1:6. After he was dead, and all his brethren, and all that generation,
+
+1:7. The children of Israel increased, and sprung up into multitudes, and growing exceedingly strong they filled the land.
+
+1:8. In the mean time there arose a new king over Egypt, that knew not Joseph:
+
+1:9. And he said to his people: Behold the people of the children of Israel are numerous and stronger than we.
+
+1:10. Come let us wisely oppress them, lest they multiply: and if any war shall rise against us, join with our enemies, and having overcome us, depart out of the land.
+
+1:11. Therefore he set over them masters of the works, to afflict them with burdens: and they built for Pharao cities of tabernacles, Phithom, and Ramesses.
+
+Of tabernacles.... Or, of storehouses.
+
+1:12. But the more they oppressed them, the more they were multiplied and increased.
+
+1:13. And the Egyptians hated the children of Israel, and afflicted them and mocked them:
+
+1:14. And they made their life bitter with hard works in clay and brick, and with all manner of service, wherewith they were overcharged in the works of the earth.
+
+1:15. And the king of Egypt spoke to the midwives of the Hebrews: of whom one was called Sephora, the other Phua,
+
+1:16. Commanding them: When you shall do the office of midwives to the Hebrew women, and the time of delivery is come: if it be a man child, kill it: if a woman, keep it alive.
+
+1:17. But the midwives feared God, and did not do as the king of Egypt had commanded, but saved the men children.
+
+1:18. And the king called for them and said: What is it that you meant to do, that you would save the men children?
+
+1:19. They answered: The Hebrew women are not as the Egyptian women: for they themselves are skilful in the office of a midwife; and they are delivered before we come to them.
+
+1:20. Therefore God dealt well with the midwives: and the people multiplied and grew exceedingly strong.
+
+1:21. And because the midwives feared God, he built them houses.
+
+Because the midwives feared God, etc.... The midwives were rewarded, not for their lie, which was a venial sin; but for their fear of God, and their humanity: but this reward was only temporal, in building them houses, that is, in establishing and enriching their families.
+
+1:22. Pharao therefore charged all his people, saying: Whatsoever shall be born of the male sex, ye shall cast into the river: whatsoever of the female, ye shall save alive.
+
+Exodus Chapter 2
+Moses is born and exposed on the bank of the river; where he is taken up by the daughter of Pharao, and adopted for her son. He killeth an Egyptian, and fleeth into Madian; where he marrieth a wife.
+
+2:1. After this there went a man of the house of Levi; and took a wife of his own kindred.
+
+2:2. And she conceived, and bore a son: and seeing him a goodly child, hid him three months.
+
+2:3. And when she could hide him no longer, she took a basket made of bulrushes, and daubed it with slime and pitch: and put the little babe therein, and laid him in the sedges by the river’s brink,
+
+2:4. His sister standing afar off, and taking notice what would be done.
+
+2:5. And behold the daughter of Pharao came down to wash herself in the river: and her maids walked by the river’s brink. And when she saw the basket in the sedges she sent one of her maids for it: and when it was brought,
+
+2:6. She opened it, and seeing within it an infant crying, having compassion on it, she said: This is one of the babes of the Hebrews.
+
+2:7. And the child’s sister said to her: Shall I go, and call to thee a Hebrew woman, to nurse the babe?
+
+2:8. She answered: Go. The maid went and called her mother.
+
+2:9. And Pharao’s daughter said to her: Take this child, and nurse him for me: I will give thee thy wages. The woman took and nursed the child: and when he was grown up, she delivered him to Pharao’s daughter.
+
+2:10. And she adopted him for a son, and called him Moses, saying: Because I took him out of the water.
+
+Moses.... Or Moyses, in the Egyptian tongue, signifies one taken or saved out of the water.
+
+2:11. In those days, after Moses was grown up, he went out to his brethren: and saw their affliction, and an Egyptian striking one of the Hebrews, his brethren.
+
+2:12. And when he had looked about this way and that way, and saw no one there, he slew the Egyptian and hid him in the sand.
+
+He slew the Egyptian.... This he did by a particular inspiration of God; as a prelude to his delivering the people from their oppression and bondage. He thought, says St. Stephen, Acts 7.25, that his brethren understood that God by his hand would save them. But such particular and extraordinary examples are not to be imitated.
+
+2:13. And going out the next day, he saw two Hebrews quarrelling: and he said to him that did the wrong: Why strikest thou thy neighbour?
+
+2:14. But he answered: Who hath appointed thee prince and judge over us? wilt thou kill me, as thou didst yesterday kill the Egyptian? Moses feared, and said: How is this come to be known?
+
+2:15. And Pharao heard of this word, and sought to kill Moses: but he fled from his sight, and abode in the land of Madian, and he sat down by a well.
+
+Madian.... A city and country of Arabia, which took its name from Madian the son of Abraham, by Cetura, and was peopled by his posterity.
+
+2:16. And the priest of Madian had seven daughters, who came to draw water: and when the troughs were filled, desired to water their father’s flocks.
+
+2:17. And the shepherds came and drove them away: and Moses arose, and defending the maids, watered their sheep.
+
+2:18. And when they returned to Raguel their father, he said to them: Why are ye come sooner than usual?
+
+Raguel.... He had two names, being also called Jethro, as appears from the first verse of the following chapter.
+
+2:19. They answered: A man of Egypt delivered us from the hands of the shepherds: and he drew water also with us, and gave the sheep to drink.
+
+2:20. But he said: Where is he? why have you let the man go? call him that he may eat bread.
+
+2:21. And Moses swore that he would dwell with him. And he took Sephora his daughter to wife:
+
+2:22. And she bore him a son, whom he called Gersam, saying: I have been a stranger in a foreign country. And she bore another, whom he called Eliezer, saying: For the God of my father, my helper, hath delivered me out of the hand of Pharao.
+
+Gersam.... Or Gershom. This name signifies a stranger there: as Eliezer signifies the help of God.
+
+2:23. Now after a long time the king of Egypt died: and the children of Israel groaning, cried out because of the works: and their cry went up unto God from the works.
+
+2:24. And he heard their groaning, and remembered the covenant which he made with Abraham, Isaac, and Jacob.
+
+2:25. And the Lord looked upon the children of Israel, and he knew them.
+
+Knew them.... That is, he had respect to them, he cast a merciful eye upon them.
+
+Exodus Chapter 3
+God appeareth to Moses in a bush, and sendeth him to deliver Israel.
+
+3:1. Now Moses fed the sheep of Jethro, his father in law, the priest of Madian: and he drove the flock to the inner parts of the desert, and came to the mountain of God, Horeb.
+
+3:2. And the Lord appeared to him in a flame of fire out of the midst of a bush: and he saw that the bush was on fire, and was not burnt.
+
+The Lord appeared.... That is, an angel representing God, and speaking in his name.
+
+3:3. And Moses said: I will go, and see this great sight, why the bush is not burnt.
+
+3:4. And when the Lord saw that he went forward to see, he called to him out of the midst of the bush. and said: Moses, Moses. And he answered: Here I am.
+
+3:5. And he said: Come not nigh hither, put off the shoes from thy feet; for the place, whereon thou standest, is holy ground.
+
+3:6. And he said: I am the God of thy father, the God of Abraham, the God of Isaac, and the God of Jacob. Moses hid his face: for he durst not look at God.
+
+3:7. And the Lord said to him: I have seen the affliction of my people in Egypt, and I have heard their cry because of the rigour of them that are over the works;
+
+3:8. And knowing their sorrow, I am come down to deliver them out of the hands of the Egyptians, and to bring them out of that land into a good and spacious land, into a land that floweth with milk and honey, to the places of the Chanaanite, and Hethite, and Amorrhite, and Pherezite, and Hevite, and Jebusite.
+
+3:9. For the cry of the children of Israel is come unto me: and I have seen their affliction, wherewith they are oppressed by the Egyptians.
+
+3:10. But come, and I will send thee to Pharao, that thou mayst bring forth my people, the children of Israel, out of Egypt.
+
+3:11. And Moses said to God: Who am I that I should go to Pharao, and should bring forth the children of Israel out of Egypt?
+
+3:12. And he said to him: I will be with thee; and this thou shalt have for a sign that I have sent thee: When thou shalt have brought my people out of Egypt, thou shalt offer sacrifice to God upon this mountain.
+
+3:13. Moses said to God: Lo, I shall go to the children of Israel, and say to them: The God of your fathers hath sent me to you. If they shall say to me: What is his name? What shall I say to them?
+
+3:14. God said to Moses: I AM WHO AM. He said: Thus shalt thou say to the children of Israel: HE WHO IS, hath sent me to you.
+
+I am who am.... That is, I am being itself, eternal, self-existent, independent, infinite; without beginning, end, or change; and the source of all other beings.
+
+3:15. And God said again to Moses: Thus shalt thou say to the children of Israel: The Lord God of your fathers the God of Abraham, the God of Isaac, and the God of Jacob hath sent me to you; this is my name for ever, and this is my memorial unto all generations.
+
+3:16. Go and gather together the ancients of Israel, and thou shalt say to them: The Lord God of your fathers, the God of Abraham, the God of Isaac, and the God of Jacob, hath appeared to me, saying: Visiting I have visited you; and I have seen all that hath befallen you in Egypt.
+
+3:17. And I have said the word to bring you forth out of the affliction of Egypt, into the land of the Chanaanite, and Hethite, and Amorrhite, and Pherezite, and Hevite, and Jebusite, to a land that floweth with milk and honey.
+
+3:18. And they shall hear thy voice; and thou shalt go in, thou and the ancients of Israel, to the king of Egypt, and thou shalt say to him: The Lord God of the Hebrews hath called us; we will go three days’ journey into the wilderness, to sacrifice unto the Lord our God.
+
+3:19. But I know that the king of Egypt will not let you go, but by a mighty hand.
+
+3:20. For I will stretch forth my hand, and will strike Egypt with all my wonders which I will do in the midst of them: after these he will let you go.
+
+3:21. And I will give favour to this people, in the sight of the Egyptians: and when you go forth, you shall not depart empty:
+
+3:22. But every woman shall ask of her neighbour, and of her that is in her house, vessels of silver and of gold, and raiment: and you shall put them on your sons and daughters, and shall spoil Egypt.
+
+Shall spoil, etc.... That is, you shall strip, and take away the goods of the Egyptians. This was not authorizing theft or injustice; but was a just disposal made by Him, who is the great lord and master of all things, in order to pay the children of Israel some part of what was due to them from the Egyptians for their labours.
+
+Exodus Chapter 4
+Moses is empowered to confirm his mission with miracles: his brother Aaron is appointed to assist him.
+
+4:1. Moses answered, and said: They will not believe me, nor hear my voice, but they will say: The Lord hath not appeared to thee.
+
+4:2. Then he said to him: What is that thou holdest in thy hand? He answered: A rod.
+
+4:3. And the Lord said: Cast it down upon the ground. He cast it down, and it was turned into a serpent, so that Moses fled from it.
+
+4:4. And the Lord said: Put out thy hand, and take it by the tail. He put forth his hand, and took hold of it, and it was turned into a rod.
+
+4:5. That they may believe, saith he, that the Lord God of their fathers, the God of Abraham, the God of Isaac, and the God of Jacob, hath appeared to thee.
+
+4:6. And the Lord said again: Put thy hand into thy bosom. And when he had put it into his bosom, he brought it forth leprous as snow.
+
+4:7. And he said: Put back thy hand into thy bosom. He put it back, and brought it out again, and it was like the other flesh.
+
+4:8. If they will not believe thee, saith he, nor hear the voice of the former sign, they will believe the word of the latter sign.
+
+4:9. But if they will not even believe these two signs, nor hear thy voice: take of the river water, and pour it out upon the dry land, and whatsoever thou drawest out of the river, shall be turned into blood.
+
+4:10. Moses said: I beseech thee, Lord, I am not eloquent from yesterday and the day before; and since thou hast spoken to thy servant, I have more impediment and slowness of tongue.
+
+4:11. The Lord said to him: Who made man’s mouth? or who made the dumb and the deaf, the seeing and the blind? did not I?
+
+4:12. Go therefore, and I will be in thy mouth; and I will teach thee what thou shalt speak.
+
+4:13. But he said: I beseech thee, Lord, send whom thou wilt send.
+
+4:14. The Lord being angry at Moses, said: Aaron the Levite is thy brother, I know that he is eloquent: behold he cometh forth to meet thee, and seeing thee, shall be glad at heart.
+
+4:15. Speak to him, and put my words in his mouth: and I will be in thy mouth, and in his mouth, and will shew you what you must do.
+
+4:16. He shall speak in thy stead to the people, and shall be thy mouth: but thou shalt be to him in those things that pertain to God.
+
+4:17. And take this rod in thy hand, wherewith thou shalt do the signs.
+
+4:18. Moses went his way, and returned to Jethro his father in law, and said to him; I will go and return to my brethren into Egypt, that I may see if they be yet alive. And Jethro said to him: Go in peace.
+
+4:19. And the Lord said to Moses, in Madian: Go, and return into Egypt; for they are all dead that sought thy life.
+
+4:20. Moses therefore took his wife, and his sons, and set them upon an ass; and returned into Egypt, carrying the rod of God in his hand.
+
+4:21. And the Lord said to him as he was returning into Egypt: See that thou do all the wonders before Pharao, which I have put in thy hand: I shall harden his heart, and he will not let the people go.
+
+I shall harden, etc.... Not by being the efficient cause of his sin; but by withdrawing from him, for his just punishment, the dew of grace that might have softened his heart; and so suffering him to grow harder and harder.
+
+4:22. And thou shalt say to him: Thus saith the Lord: Israel is my son, my firstborn.
+
+4:23. I have said to thee: Let my son go, that he may serve me, and thou wouldst not let him go: behold I will kill thy son, thy firstborn.
+
+4:24. And when he was in his journey, in the inn, the Lord met him, and would have killed him.
+
+The Lord met him, and would have killed him.... This was an angel representing the Lord, who treated Moses in this manner, for having neglected the circumcision of his younger son; which his wife understanding, circumcised her child upon the spot, upon which the angel let Moses go.
+
+4:25. Immediately Sephora took a very sharp stone, and circumcised the foreskin of her son, and touched his feet, and said: A bloody spouse art thou to me.
+
+4:26. And he let him go after she had said: A bloody spouse art thou to me, because of the circumcision.
+
+4:27. And the Lord said to Aaron: Go into the desert to meet Moses. And he went forth to meet him in the mountain of God, and kissed him.
+
+4:28. And Moses told Aaron all the words of the Lord, by which he had sent him, and the signs that he had commanded.
+
+4:29. And they came together, and they assembled all the ancients of the children of Israel.
+
+4:30. And Aaron spoke all the words which the Lord had said to Moses: and he wrought the signs before the people.
+
+4:31. And the people believed. And they heard that the Lord had visited the children of Israel, and that he had looked upon their affliction: and falling down they adored.
+
+Exodus Chapter 5
+Pharao refuseth to let the people go. They are more oppressed.
+
+5:1. After these things, Moses and Aaron went in, and said to Pharao: Thus saith the Lord God of Israel: Let my people go, that they may sacrifice to me in the desert.
+
+5:2. But he answered: Who is the Lord, that I should hear his voice, and let Israel go? I know not the Lord, neither will I let Israel go.
+
+5:3. And they said: The God of the Hebrews hath called us, to go three days’ journey into the wilderness, and to sacrifice to the Lord our God; lest a pestilence or the sword fall upon us.
+
+5:4. The king of Egypt said to them: Why do you Moses and Aaron draw off the people from their works? Get you gone to your burdens.
+
+5:5. And Pharao said: The people of the land are numerous; you see that the multitude is increased; how much more if you give them rest from their works?
+
+5:6. Therefore he commanded the same day the overseers of the works, and the task-masters of the people, saying:
+
+5:7. You shall give straw no more to the people to make brick, as before; but let them go and gather straw.
+
+5:8. And you shall lay upon them the task of bricks, which they did before; neither shall you diminish any thing thereof, for they are idle, and therefore they cry, saying: Let us go and sacrifice to our God.
+
+5:9. Let them be oppressed with works, and let them fulfil them; that they may not regard lying words.
+
+5:10. And the overseers of the works, and the taskmasters, went out and said to the people: Thus saith Pharao: I allow you no straw;
+
+5:11. Go, and gather it where you can find it; neither shall any thing of your work be diminished.
+
+5:12. And the people was scattered through all the land of Egypt to gather straw.
+
+5:13. And the overseers of the works pressed them, saying: Fulfil your work every day, as before ye were wont to do, when straw was given you.
+
+5:14. And they that were over the works of the children of Israel, were scourged by Pharao’s taskmasters, saying: Why have you not made up the task of bricks, both yesterday and to day, as before?
+
+5:15. And the officers of the children of Israel came, and cried out to Pharao, saying: Why dealest thou so with thy servants?
+
+5:16. Straw is not given us, and bricks are required of us as before; behold we, thy servants, are beaten with whips, and thy people is unjustly dealt withal.
+
+5:17. And he said: You are idle, and therefore you say: Let us go and sacrifice to the Lord.
+
+5:18. Go therefore and work: straw shall not be given you, and you shall deliver the accustomed number of bricks.
+
+5:19. And the officers of the children of Israel saw that they were in evil case, because it was said to them: There shall not a whit be diminished of the bricks for every day.
+
+5:20. And they met Moses and Aaron, who stood over against them as they came out from Pharao:
+
+5:21. And they said to them: The Lord see and judge, because you have, made our savour to stink before Pharao and his servants, and you have given him a sword, to kill us.
+
+5:22. And Moses returned to the Lord, and said: Lord, why hast thou afflicted this people? wherefore hast thou sent me?
+
+5:23. For since the time that I went in to Pharao to speak in thy name, he hath afflicted thy people: and thou hast not delivered them.
+
+Exodus Chapter 6
+God reneweth his promise. The genealogies of Ruben, Simon and Levi, down to Moses and Aaron.
+
+6:1. And the Lord said to Moses: Now thou shalt see what I will do to Pharao: for by a mighty hand shall he let them go, and with a strong hand shall he cast them out of his land.
+
+6:2. And the Lord spoke to Moses, saying: I am the Lord
+
+6:3. That appeared to Abraham, to Isaac, and to Jacob, by the name of God Almighty: and my name ADONAI I did not shew them.
+
+My name Adonai.... The name, which is in the Hebrew text, is that most proper name of God, which signifieth his eternal, self-existent being, Ex. 3.14, which the Jews out of reverence never pronounce; but, instead of it, whenever it occurs in the Bible, they read Adonai, which signifies the Lord; and, therefore, they put the points or vowels, which belong to the name Adonai, to the four letters of that other ineffable name Jod, He, Vau, He. Hence some moderns have framed the name Jehovah, unknown to all the ancients, whether Jews or Christians; for the true pronunciation of the name, which is in the Hebrew text, by long disuse, is now quite lost.
+
+6:4. And I made a covenant with them, to give them the land of Chanaan, the land of their pilgrimage wherein they were strangers.
+
+6:5. I have heard the groaning of the children of Israel, wherewith the Egyptians have oppressed them: and I have remembered my covenant.
+
+6:6. Therefore say to the children of Israel: I am the Lord who will bring you out from the work-prison of the Egyptians, and will deliver you from bondage: and redeem you with a high arm, and great judgments.
+
+6:7. And I will take you to myself for my people, I will be your God: and you shall know that I am the Lord your God, who brought you out from the work-prison of the Egyptians:
+
+6:8. And brought you into the land, concerning which I lifted up my hand to give it to Abraham, Isaac, and Jacob: and I will give it you to possess: I am the Lord.
+
+6:9. And Moses told all this to the children of Israel: but they did not hearken to him, for anguish of spirit, and most painful work.
+
+6:10. And the Lord spoke to Moses, saying:
+
+6:11. Go in, and speak to Pharao king of Egypt, that he let the children of Israel go out of his land.
+
+6:12. Moses answered before the Lord: Behold the children of Israel do not hearken to me: and how will Pharao hear me, especially as I am of uncircumcised lips?
+
+Uncircumcised lips.... So he calls the defect he had in his words, or utterance.
+
+6:13. And the Lord spoke to Moses and Aaron, and he gave them a charge unto the children of Israel, and unto Pharao the king of Egypt, that they should bring forth the children of Israel out of the land of Egypt.
+
+6:14. These are the heads of their houses by their families. The sons of Ruben the firstborn of Israel: Henoch and Phallu, Hesron and Charmi.
+
+6:15. These are the kindreds of Ruben. The sons of Simeon, Jamuel and Jamin, and Ahod, and Jachin, and Soar, and Saul the son of a Chanaanitess: these are the families of Simeon.
+
+6:16. And these are the names of the sons of Levi by their kindreds: Gerson, and Caath, and Merari. And the years of the life of Levi were a hundred and thirty-seven.
+
+6:17. The sons of Gerson: Lobni and Semei, by their kindreds.
+
+6:18. The sons of Caath: Amram, and Isaar, and Hebron and Oziel. And the years of Caath’s life, were a hundred and thirty-three.
+
+6:19. The sons of Merari: Moholi and Musi. These are the kindreds of Levi by their families.
+
+6:20. And Amram took to wife Jochabed his aunt by the father’s side: and she bore him Aaron and Moses. And the years of Amram’s life, were a hundred and thirty-seven.
+
+6:21. The sons also of Isaar: Core, and Nepheg, and Zechri.
+
+6:22. The sons also of Oziel: Mizael, and Elizaphan, and Sethri.
+
+6:23. And Aaron took to wife Elizabeth the daughter of Aminadab, sister of Nahason, who bore him Nadab, and Abiu, and Eleazar, and Ithamar.
+
+6:24. The sons also of Core: Aser, and Elcana, and Abiasaph. These are the kindreds of the Corites.
+
+6:25. But Eleazar the son of Aaron took a wife of the daughters of Phutiel: and she bore him Phinees. These are the heads of the Levitical families by their kindreds.
+
+6:26. These are Aaron and Moses, whom the Lord commanded to bring forth the children of Israel out of the land of Egypt by their companies.
+
+6:27. These are they that speak to Pharao, king of Egypt, in order to bring out the children of Israel from Egypt: these are that Moses and Aaron,
+
+6:28. In the day when the Lord spoke to Moses in the land of Egypt.
+
+6:29. And the Lord spoke to Moses, saying: I am the Lord; speak thou to Pharao, king of Egypt, all that I say to thee.
+
+6:30. And Moses said before the Lord: Lo I am of uncircumcised lips, how will Pharao hear me?
+
+Exodus Chapter 7
+Moses and Aaron go into Pharao: they turn the rod into a serpent; and the waters of Egypt into blood, which was the first plague. The magicians do the like, and Pharao’s heart is hardened.
+
+7:1. And the Lord said to Moses: Behold, I have appointed thee the god of Pharao; and Aaron, thy brother, shall be thy prophet.
+
+The god of Pharao.... Viz., to be his judge; and to exercise a divine power, as God’s instrument, over him and his people.
+
+7:2. Thou shalt speak to him all that I command thee; and he shall speak to Pharao, that he let the children of Israel go out of his land.
+
+7:3. But I shall harden his heart, and shall multiply my signs and wonders in the land of Egypt.
+
+I shall harden, etc.... not by being the efficient cause of his hardness of heart, but by permitting it; and by withdrawing grace from him, in punishment of his malice; which alone was the proper cause of his being hardened.
+
+7:4. And he will not hear you: and I will lay my hand upon Egypt, and will bring forth my army and my people, the children of Israel, out of the land of Egypt, by very great judgments.
+
+7:5. And the Egyptians shall know that I am the Lord, who have stretched forth my hand upon Egypt, and have brought forth the children of Israel out of the midst of them.
+
+7:6. And Moses and Aaron did as the Lord had commanded; so did they.
+
+7:7. And Moses was eighty years old, and Aaron eighty-three, when they spoke to Pharao.
+
+7:8. And the Lord said to Moses and Aaron:
+
+7:9. When Pharao shall say to you, Shew signs; thou shalt say to Aaron: Take thy rod, and cast it down before Pharao, and it shall be turned into a serpent.
+
+7:10. So Moses and Aaron went in unto Pharao, and did as the Lord had commanded. And Aaron took the rod before Pharao and his servants, and it was turned into a serpent.
+
+7:11. And Pharao called the wise men and the magicians; and they also by Egyptian enchantments and certain secrets, did in like manner.
+
+Magicians.... Jannes, and Mambres, or Jambres, 2 Tim. 3.8.
+
+7:12. And they every one cast down their rods, and they were turned into serpents: but Aaron’s rod devoured their rods.
+
+7:13. And Pharao’s heart was hardened, and he did not hearken to them, as the Lord had commanded.
+
+7:14. And the Lord said to Moses: Pharao’s heart is hardened, he will not let the people go.
+
+7:15. Go to him in the morning, behold he will go out to the waters: and thou shalt stand to meet him on the bank of the river: and thou shalt take in thy hand the rod that was turned into a serpent.
+
+7:16. And thou shalt say to him: The Lord God of the Hebrews sent me to thee, saying: Let my people go to sacrifice to me in the desert: and hitherto thou wouldst not hear.
+
+7:17. Thus therefore saith the Lord: In this thou shalt know that I am the Lord: behold I will strike with the rod, that is in my hand, the water of the river, and it shall be turned into blood.
+
+7:18. And the fishes that are in the river, shall die, and the waters shall be corrupted, and the Egyptians shall be afflicted when they drink the water of the river.
+
+7:19. The Lord also said to Moses: Say to Aaron, Take thy rod; and stretch forth thy hand upon the waters of Egypt, and upon their rivers, and streams and pools, and all the ponds of waters, that they may be turned into blood: and let blood be in all the land of Egypt, both in vessels of wood and of stone.
+
+7:20. And Moses and Aaron did as the Lord had commanded: and lifting up the rod, he struck the water of the river before Pharao and his servants: and it was turned into blood.
+
+7:21. And the fishes that were in the river died; and the river corrupted, and the Egyptians could not drink the water of the river, and there was blood in all the land of Egypt.
+
+7:22. And the magicians of the Egyptians with their enchantments did in like manner; and Pharao’s heart was hardened, neither did he hear them, as the Lord had commanded.
+
+7:23. And he turned himself away, and went into his house, neither did he set his heart to it this time also.
+
+7:24. And all the Egyptians dug round about the river for water to drink; for they could not drink of the water of the river.
+
+7:25. And seven days were fully ended, after that the Lord struck the river.
+
+Exodus Chapter 8
+The second plague is of frogs: Pharao promiseth to let the Israelites go, but breaketh his promise. The third plague is of sciniphs. The fourth is of flies. Pharao again promiseth to dismiss the people, but doth it not.
+
+8:1. And the Lord said to Moses: Go in to Pharao, and thou shalt say to him: Thus saith the Lord: Let my people go to sacrifice to me.
+
+8:2. But if thou wilt not let them go, behold I will strike all thy coasts with frogs.
+
+8:3. And the river shall bring forth an abundance of frogs; which shall come up and enter into thy house, and thy bedchamber, and upon thy bed, and into the houses of thy servants, and to thy people, and into thy ovens, and into the remains of thy meats:
+
+8:4. And the frogs shall come in to thee, and to thy people, and to all thy servants.
+
+8:5. And the Lord said to Moses: Say to Aaron: Stretch forth thy hand upon the streams, and upon the rivers and the pools, and bring forth frogs upon the land of Egypt.
+
+8:6. And Aaron stretched forth his hand upon the waters of Egypt, and the frogs came up, and covered the land of Egypt.
+
+8:7. And the magicians also, by their enchantments, did in like manner, and they brought forth frogs upon the land of Egypt.
+
+8:8. But Pharao called Moses and Aaron, and said to them: Pray ye to the Lord to take away the frogs from me and from my people; and I will let the people go to sacrifice to the Lord.
+
+Pray ye to the Lord, etc.... By this it appears, that though the magicians, by the help of the devil, could bring frogs, yet they could not take them away: God being pleased to abridge in this the power of Satan. So we see they could not afterwards produce the lesser insects; and in this restraint of the power of the devil, were forced to acknowledge the finger of God.
+
+8:9. And Moses said to Pharao: Set me a time when I shall pray for thee, and for thy servants, and for thy people, that the frogs may be driven away from thee and from thy house, and from thy servants, and from thy people; and may remain only in the river.
+
+8:10. And he answered: To morrow. But he said: I will do according to thy word; that thou mayest know that there is none like to the Lord our God.
+
+8:11. And the frogs shall depart from thee, and from thy house, and from thy servants, and from thy people; and shall remain only in the river.
+
+8:12. And Moses and Aaron went forth from Pharao: and Moses cried to the Lord for the promise, which he had made to Pharao concerning the frogs.
+
+8:13. And the Lord did according to the word of Moses: and the frogs died out of the houses, and out of the villages, and out of the fields:
+
+8:14. And they gathered them together into immense heaps, and the land was corrupted.
+
+8:15. And Pharao seeing that rest was given, hardened his own heart, and did not hear them, as the Lord had commanded.
+
+Pharao hardened his own heart.... By this we see that Pharao was himself the efficient cause of his heart being hardened, and not God.—See the same repeated in ver. 32. Pharao hardened his heart at this time also: likewise chap. 9.7, 35, and chap. 13.15.
+
+8:16. And the Lord said to Moses: Say to Aaron: Stretch forth thy rod, and strike the dust of the earth; and may there be sciniphs in all the land of Egypt.
+
+Sciniphs.... Or Cinifs, Hebrew Chinnim, small flying insects, very troublesome both to men and beast.
+
+8:17. And they did so. And Aaron stretched forth his hand, holding the rod; and he struck the dust of the earth, and there came sciniphs on men and on beasts: all the dust of the earth was turned into sciniphs through all the land of Egypt.
+
+8:18. And the magicians with their enchantments practised in like manner, to bring forth sciniphs, and they could not: and there were sciniphs as well on men as on beasts.
+
+8:19. And the magicians said to Pharao: This is the finger of God. And Pharao’s heart was hardened, and he hearkened not unto them, as the Lord had commanded.
+
+8:20. The Lord also said to Moses: Arise early, and stand before Pharao; for he will go forth to the waters: and thou shalt say to him: Thus saith the Lord: Let my people go to sacrifice to me.
+
+8:21. But if thou wilt not let them go, behold I will send in upon thee, and upon thy servants, and upon thy houses, all kind of flies: and the houses of the Egyptians shall be filled with flies of divers kinds, and the whole land wherein they shall be.
+
+8:22. And I will make the land of Gessen wherein my people is, wonderful in that day, so that flies shall not be there: and thou shalt know that I am the Lord in the midst of the earth.
+
+8:23. And I will put a division between my people and thy people: to morrow shall this sign be.
+
+8:24. And the Lord did so. And there came a very grievous swarm of flies into the houses of Pharao and of his servants, and into all the land of Egypt: and the land was corrupted by this kind of flies.
+
+8:25. And Pharao called Moses and Aaron, and said to them: Go and sacrifice to your God in this land.
+
+8:26. And Moses said: It cannot be so: for we shall sacrifice the abominations of the Egyptians to the Lord our God: now if we kill those things which the Egyptians worship, in their presence, they will stone us.
+
+The abominations, etc.... That is, the things they worship for Gods: oxen, rams, etc. It is the usual style of the scriptures to call all idols and false gods, abominations, to signify how much the people of God ought to detest and abhor them.
+
+8:27. We will go three days’ journey into the wilderness; and we will sacrifice to the Lord our God, as he hath commanded us.
+
+8:28. And Pharao said: I will let you go to sacrifice to the Lord your God in the wilderness, but go no farther: pray for me.
+
+8:29. And Moses said: I will go out from thee, and will pray to the Lord: and the flies shall depart from Pharao, and from his servants, and from his people to morrow: but do not deceive any more, in not letting the people go to sacrifice to the Lord.
+
+8:30. So Moses went out from Pharao, and prayed to the Lord.
+
+8:31. And he did according to his word: and he took away the flies from Pharao, and from his servants, and from his people: there was not left so much as one.
+
+8:32. And Pharao’s heart was hardened, so that neither this time would he let the people go.
+
+Exodus Chapter 9
+The fifth plague is a murrain among the cattle. The sixth, of boils in men and beasts. The seventh, of hail. Pharao promiseth again to let the people go, and breaketh his word.
+
+9:1. And the Lord said to Moses: Go in to Pharao, and speak to him: Thus saith the Lord God of the Hebrews: Let my people go to sacrifice to me.
+
+9:2. But if thou refuse, and withhold them still:
+
+9:3. Behold my hand shall be upon thy fields; and a very grievous murrain upon thy horses, and asses, and camels, and oxen, and sheep.
+
+9:4. And the Lord will make a wonderful difference between the possessions of Israel and the possessions of the Egyptians, that nothing at all shall die of those things that belong to the children of Israel.
+
+9:5. And the Lord appointed a time, saying: To morrow will the Lord do this thing in the land.
+
+9:6. The Lord therefore did this thing the next day: and all the beasts of the Egyptians died, but of the beasts of the children of Israel there died not one.
+
+All the beasts.... That is, many of all kinds.
+
+9:7. And Pharao sent to see; and there was not any thing dead of that which Israel possessed. And Pharao’s heart was hardened, and he did not let the people go.
+
+9:8. And the Lord said to Moses and Aaron: Take to you handfuls of ashes out of the chimney, and let Moses sprinkle it in the air in the presence of Pharao.
+
+9:9. And be there dust upon all the land of Egypt: for there shall be boils and swelling blains both in men and beasts, in the whole land of Egypt.
+
+9:10. And they took ashes out of the chimney, and stood before Pharao, and Moses sprinkled it in the air; and there came boils with swelling blains in men and beasts.
+
+9:11. Neither could the magicians stand before Moses, for the boils that were upon them, and in all the land of Egypt.
+
+9:12. And the Lord hardened Pharao’s heart, and he hearkened not unto them, as the Lord had spoken to Moses.
+
+Hardened, etc.... See the annotations above, chap. 4.21, chap. 7.3, and chap. 8.15.
+
+9:13. And the Lord said to Moses: Arise in the morning, and stand before Pharao, and thou shalt say to him: Thus saith the Lord, the God of the Hebrews: Let my people go to sacrifice to me.
+
+9:14. For I will at this time send all my plagues upon thy heart, and upon thy servants, and upon thy people; that thou mayst know that there is none like me in all the earth.
+
+9:15. For now I will stretch out my hand to strike thee, and thy people, with pestilence, and thou shalt perish from the earth.
+
+9:16. And therefore have I raised thee, that I may shew my power in thee, and my name may be spoken of throughout all the earth.
+
+9:17. Dost thou yet hold back my people; and wilt thou not let them go?
+
+9:18. Behold I will cause it to rain to morrow at this same hour, an exceeding great hail; such as hath not been in Egypt from the day that it was founded, until this present time.
+
+9:19. Send therefore now presently, and gather together thy cattle, and all that thou hast in the field; for men and beasts, and all things that shall be found abroad, and not gathered together out of the fields which the hail shall fall upon, shall die.
+
+9:20. He that feared the word of the Lord among Pharao’s servants, made his servants and his cattle flee into houses:
+
+9:21. But he that regarded not the word of the Lord, left his servants, and his cattle in the fields.
+
+9:22. And the Lord said to Moses: Stretch forth thy hand towards heaven, that there may be hail in the whole land of Egypt upon men, and upon beasts, and upon every herb of the field in the land of Egypt.
+
+9:23. And Moses stretched forth his rod towards heaven, and the Lord sent thunder and hail, and lightnings running along the ground: and the Lord rained hail upon the land of Egypt.
+
+9:24. And the hail and fire mixt with it drove on together: and it was of so great bigness, as never before was seen in the whole land of Egypt since that nation was founded.
+
+9:25. And the hail destroyed through all the land of Egypt all things that were in the fields, both man and beast: and the hail smote every herb of the field, and it broke every tree of the country.
+
+9:26. Only in the land of Gessen, where the children of Israel were, the hail fell not.
+
+9:27. And Pharao sent and called Moses and Aaron, saying to them: I have sinned this time also, the Lord is just: I and my people, are wicked.
+
+9:28. Pray ye to the Lord that the thunderings of God and the hail may cease: that I may let you go, and that ye may stay here no longer.
+
+9:29. Moses said: As soon as I am gone out of the city, I will stretch forth my hands to the Lord, and the thunders shall cease, and the hail shall be no more: that thou mayst know that the earth is the Lord’s:
+
+9:30. But I know that neither thou, nor thy servants do yet fear the Lord God.
+
+9:31. The flax therefore, and the barley were hurt, because the barley was green, and the flax was now bolled;
+
+9:32. But the wheat, and other winter corn were not hurt, because they were lateward.
+
+9:33. And when Moses was gone from Pharao out of the city, he stretched forth his hands to the Lord: and the thunders and the hail ceased, neither did there drop any more rain upon the earth.
+
+9:34. And Pharao seeing that the rain, and the hail, and the thunders were ceased, increased his sin:
+
+9:35. And his heart was hardened, and the heart of his servants, and it was made exceeding hard: neither did he let the children of Israel go, as the Lord had commanded by the hand of Moses.
+
+Exodus Chapter 10
+The eighth plague of the locusts. The ninth, of darkness: Pharao is still hardened.
+
+10:1. And the Lord said to Moses: Go in to Pharao; for I have hardened his heart, and the heart of his servants: that I may work these my signs in him,
+
+10:2. And thou mayst tell in the ears of thy sons, and of thy grandsons, how often I have plagued the Egyptians, and wrought my signs amongst them: and you may know that I am the Lord.
+
+10:3. Therefore Moses and Aaron went in to Pharao, and said to him: Thus saith the Lord God of the Hebrews: How long refusest thou to submit to me? let my people go, to sacrifice to me.
+
+10:4. But if thou resist, and wilt not let them go, behold I will bring in to-morrow the locusts into thy coasts;
+
+10:5. To cover the face of the earth, that nothing thereof may appear, but that which the hail hath left may be eaten: for they shall feed upon all the trees that spring in the fields.
+
+10:6. And they shall fill thy houses, and the houses of thy servants, and of all the Egyptians: such a number as thy fathers have not seen, nor thy grandfathers, from the time they were first upon the earth, until this present day. And he turned himself away, and went forth from Pharao.
+
+10:7. And Pharao’s servants said to him: How long shall we endure this scandal? Iet the men go to sacrifice to the Lord their God. Dost thou not see that Egypt is undone?
+
+10:8. And they called back Moses, and Aaron, to Pharao; and he said to them: Go, sacrifice to the Lord your God: who are they that shall go?
+
+10:9. Moses said: We will go with our young and old, with our sons and daughters, with our sheep and herds: for it is the solemnity of the Lord our God.
+
+10:10. And Pharao answered: So be the Lord with you, as I shall let you and your children go: who can doubt but that you intend some great evil?
+
+10:11. It shall not be so, but go ye men only, and sacrifice to the Lord: for this yourselves also desired. And immediately they were cast out from Pharao’s presence.
+
+10:12. And the Lord said to Moses: Stretch forth thy hand upon the land of Egypt unto the locust, that it come upon it, and devour every herb that is left after the hail.
+
+10:13. And Moses stretched forth his rod upon the land of Egypt: and the Lord brought a burning wind all that day, and night; and when it was morning, the burning wind raised the locusts.
+
+10:14. And they came up over the whole land of Egypt; and rested in all the coasts of the Egyptians, innumerable, the like as had not been before that time, nor shall be hereafter.
+
+10:15. And they covered the whole face of the earth, wasting all things. And the grass of the earth was devoured, and what fruits soever were on the trees, which the hail had left; and there remained not any thing that was green on the trees, or in the herbs of the earth, in all Egypt.
+
+10:16. Wherefore Pharao in haste called Moses and Aaron, and said to them: I have sinned against the Lord your God, and against you.
+
+10:17. But now forgive me my sin this time also, and pray to the Lord your God, that he take away from me this death.
+
+10:18. And Moses going forth from the presence of Pharao, prayed to the Lord:
+
+10:19. And he made a very strong wind to blow from the west, and it took the locusts and cast them into the Red Sea: there remained not so much as one in all the coasts of Egypt.
+
+10:20. And the Lord hardened Pharao’s heart, neither did he let the children of Israel go.
+
+10:21. And the Lord said to Moses: Stretch out thy hand towards heaven: and may there be darkness upon the land of Egypt so thick that it may be felt.
+
+Darkness upon the land of Egypt, so thick that it may be felt.... By means of the gross exhalations, which were to cause and accompany the darkness.
+
+10:22. And Moses stretched forth his hand towards heaven: and there came horrible darkness in all the land of Egypt for three days.
+
+10:23. No man saw his brother, nor moved himself out of the place where he was: but wheresoever the children of Israel dwelt, there was light.
+
+10:24. And Pharao called Moses and Aaron, and said to them: Go, sacrifice to the Lord: let your sheep only, and herds remain, let your children go with you.
+
+10:25. Moses said: Thou shalt give us also sacrifices and burnt-offerings, to the Lord our God.
+
+10:26. All the flocks shall go with us; there shall not a hoof remain of them: for they are necessary for the service of the Lord our God: especially as we know not what must be offered, till we come to the very place.
+
+10:27. And the Lord hardened Pharao’s heart, and he would not let them go.
+
+10:28. And Pharao said to Moses: Get thee from me, and beware thou see not my face any more: in what day soever thou shalt come in my sight, thou shalt die.
+
+10:29. Moses answered: So shall it be as thou hast spoken, I will not see thy face anymore.
+
+Exodus Chapter 11
+Pharao and his people are threatened with the death of their firstborn.
+
+11:1. And the Lord said to Moses: Yet one plague more will I bring upon Pharao and Egypt, and after that he shall let you go, and thrust you out.
+
+11:2. Therefore thou shalt tell all the people, that every man ask of his friend, and every woman of her neighbour, vessels of silver and of gold.
+
+11:3. And the Lord will give favour to his people in the sight of the Egyptians. And Moses was a very great man in the land of Egypt, in the sight of Pharao’s servants, and of all the people.
+
+11:4. And he said: Thus saith the Lord: At midnight I will enter into Egypt:
+
+11:5. And every firstborn in the land of the Egyptians shall die, from the firstborn of Pharao who sitteth on his throne, even to the firstborn of the handmaid that is at the mill, and all the firstborn of beasts.
+
+11:6. And there shall be a great cry in all the land of Egypt, such as neither hath been before, nor shall be hereafter.
+
+11:7. But with all the children of Israel there shall not a dog make the least noise, from man even to beast; that you may know how wonderful a difference the Lord maketh between the Egyptians and Israel.
+
+11:8. And all these thy servants shall come down to me, and shall worship me, saying: Go forth thou, and all the people that is under thee: after that we will go out.
+
+11:9. And he went out from Pharao exceeding angry. But the Lord said to Moses: Pharao will not hear you, that many signs may be done in the land of Egypt.
+
+11:10. And Moses and Aaron did all the wonders that are written, before Pharao. And the Lord hardened Pharao’s heart, neither did he let the children of Israel go out of his land.
+
+The Lord hardened, etc.... See the annotations above, chap. 4.21, and chap. 7.3.
+
+Exodus Chapter 12
+The manner of preparing, and eating the paschal lamb: the firstborn of Egypt are all slain: the Israelites depart.
+
+12:1. And the Lord said to Moses and Aaron in the land of Egypt:
+
+12:2. This month shall be to you the beginning of months; it shall be the first in the months of the year.
+
+12:3. Speak ye to the whole assembly of the children of Israel, and say to them: On the tenth day of this month let every man take a lamb by their families and houses.
+
+12:4. But if the number be less than may suffice to eat the lamb, he shall take unto him his neighbour that joineth to his house, according to the number of souls which may be enough to eat the lamb.
+
+12:5. And it shall be a lamb without blemish, a male, of one year; according to which rite also you shall take a kid.
+
+A kid.... The phase might be performed, either with a lamb or with a kid: and all the same rites and ceremonies were to be used with the one as with the other.
+
+12:6. And you shall keep it until the fourteenth day of this month; and the whole multitude of the children of Israel shall sacrifice it in the evening.
+
+12:7. And they shall take of the blood thereof, and put it upon both the side posts, and on the upper door posts of the houses, wherein they shall eat it.
+
+12:8. And they shall eat the flesh that night roasted at the fire, and unleavened bread with wild lettuce.
+
+12:9. You shall not eat thereof any thing raw, nor boiled in water, but only roasted at the fire; you shall eat the head with the feet and entrails thereof.
+
+12:10. Neither shall there remain any thing of it until morning. If there be any thing left, you shall burn it with fire.
+
+12:11. And thus you shall eat it: you shall gird your reins, and you shall have shoes on your feet, holding staves in your hands, and you shall eat in haste; for it is the Phase (that is the Passage) of the Lord.
+
+12:12. And I will pass through the land of Egypt that night, and will kill every firstborn in the land of Egypt, both man and beast: and against all the gods of Egypt I will execute judgments; I am the Lord.
+
+12:13. And the blood shall be unto you for a sign in the houses where you shall be; and I shall see the blood, and shall pass over you; and the plague shall not be upon you to destroy you, when I shall strike the land of Egypt.
+
+12:14. And this day shall be for a memorial to you; and you shall keep it a feast to the Lord in your generations, with an everlasting observance.
+
+12:15. Seven days shall you eat unleavened bread: in the first day there shall be no leaven in your houses; whosoever shall eat any thing leavened, from the first day until the seventh day, that soul shall perish out of Israel.
+
+12:16. The first day shall be holy and solemn, and the seventh day shall be kept with the like solemnity: you shall do no work in them, except those things that belong to eating.
+
+12:17. And you shall observe the feast of the unleavened bread: for in this same day I will bring forth your army out of the land of Egypt, and you shall keep this day in your generations by a perpetual observance.
+
+12:18. The first month, the fourteenth day of the month, in the evening, you shall eat unleavened bread, until the one and twentieth day of the same month, in the evening.
+
+Unleavened bread.... By this it appears, that our Saviour made use of unleavened bread, in the institution of the blessed sacrament, which was on the evening of the paschal solemnity, at which time there was no leavened bread to be found in Israel.
+
+12:19. Seven days there shall not be found any leaven in your houses: he that shall eat leavened bread, his soul shall perish out of the assembly of Israel, whether he be a stranger or born in the land.
+
+12:20. You shall not eat any thing leavened: in all your habitations you shall eat unleavened bread.
+
+12:21. And Moses called all the ancients of the children of Israel, and said to them: Go take a lamb by your families, and sacrifice the Phase.
+
+12:22. And dip a bunch of hyssop in the blood that is at the door, and sprinkle the transom of the door therewith, and both the door cheeks: let none of you go out of the door of his house till morning.
+
+Sprinkle, etc.... This sprinkling the doors of the Israelites with the blood of the paschal lamb, in order to their being delivered from the sword of the destroying angel, was a lively figure of our redemption by the blood of Christ.
+
+12:23. For the Lord will pass through striking the Egyptians: and when he shall see the blood on the transom, and on both the posts, he will pass over the door of the house, and not suffer the destroyer to come into your houses and to hurt you.
+
+12:24. Thou shalt keep this thing as a law for thee and thy children for ever.
+
+12:25. And when you have entered into the land which the Lord will give you, as he hath promised, you shall observe these ceremonies.
+
+12:26. And when your children shall say to you: What is the meaning of this service?
+
+12:27. You shall say to them: It is the victim of the passage of the Lord, when he passed over the houses of the children of Israel in Egypt, striking the Egyptians, and saving our houses. And the people bowing themselves, adored.
+
+12:28. And the children of Israel going forth, did as the Lord had commanded Moses and Aaron.
+
+12:29. And it came to pass at midnight, the Lord slew every firstborn in the land of Egypt, from the firstborn of Pharao, who sat on his throne, unto the firstborn of the captive woman that was in the prison, and all the firstborn of cattle.
+
+12:30. And Pharao arose in the night, and all his servants, and all Egypt: and there arose a great cry in Egypt; for there was not a house wherein there lay not one dead.
+
+12:31. And Pharao calling Moses and Aaron, in the night, said: Arise and go forth from among my people, you and the children of Israel: go, sacrifice to the Lord as you say.
+
+12:32. Your sheep and herds take along with you, as you demanded, and departing bless me.
+
+12:33. And the Egyptians pressed the people to go forth out of the land speedily, saying: We shall all die.
+
+12:34. The people therefore took dough before it was leavened; and tying it in their cloaks, put it on their shoulders.
+
+12:35. And the children of Israel did as Moses had commanded: and they asked of the Egyptians vessels of silver and gold, and very much raiment.
+
+12:36. And the Lord gave favour to the people in the sight of the Egyptians, so that they lent unto them: and they stripped the Egyptians.
+
+12:37. And the children of Israel set forward from Ramesse to Socoth, being about six hundred thousand men on foot, beside children.
+
+12:38. And a mixed multitude, without number, went up also with them, sheep and herds, and beasts of divers kinds, exceeding many.
+
+12:39. And they baked the meal, which a little before they had brought out of Egypt in dough: and they made hearth cakes unleavened: for it could not be leavened, the Egyptians pressing them to depart, and not suffering them to make any stay; neither did they think of preparing any meat.
+
+12:40. And the abode of the children of Israel that they made in Egypt, was four hundred and thirty years.
+
+12:41. Which being expired, the same day all the army of the Lord went forth out of the land of Egypt.
+
+12:42. This is the observable night of the Lord, when he brought them forth out of the land of Egypt: this night all the children of Israel must observe in their generations.
+
+12:43. And the Lord said to Moses and Aaron: This is the service of the Phase; no foreigner shall eat of it.
+
+12:44. But every bought servant shall be circumcised, and so shall eat.
+
+12:45. The stranger and the hireling shall not eat thereof.
+
+12:46. In one house shall it be eaten, neither shall you carry forth of the flesh thereof out of the house, neither shall you break a bone thereof.
+
+12:47. All the assembly of the children of Israel shall keep it.
+
+12:48. And if any stranger be willing to dwell among you, and to keep the Phase of the Lord, all his males shall first be circumcised, and then shall he celebrate it according to the manner: and he shall be as he that is born in the land: but if any man be uncircumcised, he shall not eat thereof.
+
+12:49. The same law shall be to him that is born in the land, and to the proselyte that sojourneth with you.
+
+12:50. And all the children of Israel did as the Lord had commanded Moses and Aaron.
+
+12:51. And the same day the Lord brought forth the children of Israel out of the land of Egypt by their companies.
+
+Exodus Chapter 13
+The paschal solemnity is to be observed; and the firstborn are to be consecrated to God. The people are conducted through the desert by a pillar of fire in the night, and a cloud in the day.
+
+13:1. And the Lord spoke to Moses, saying:
+
+13:2. Sanctify unto me every firstborn that openeth the womb among the children of Israel, as well of men as of beasts: for they are all mine.
+
+Sanctify unto me every firstborn.... Sanctification in this place means that the firstborn males of the Hebrews should be deputed to the ministry in the divine worship; and the firstborn of beasts to be given for a sacrifice.
+
+13:3. And Moses said to the people: Remember this day in which you came forth out of Egypt, and out of the house of bondage, for with a strong hand hath the Lord brought you forth out of this place: that you eat no leavened bread.
+
+13:4. This day you go forth in the month of new corn.
+
+13:5. And when the Lord shall have brought thee into the land of the Chanaanite, and the Hethite, and the Amorrhite, and the Hevite, and the Jebusite, which he swore to thy fathers that he would give thee, a land that floweth with milk and honey, thou shalt celebrate this manner of sacred rites in this month.
+
+13:6. Seven days shalt thou eat unleavened bread: and on the seventh day shall be the solemnity of the Lord.
+
+13:7. Unleavened bread shall you eat seven days: there shall not be seen any thing leavened with thee, nor in all thy coasts.
+
+13:8. And thou shalt tell thy son in that day, saying: This is what the Lord did to me when I came forth out of Egypt.
+
+13:9. And it shall be as a sign in thy hand, and as a memorial before thy eyes; and that the law of the Lord be always in thy mouth, for with a strong hand the Lord hath brought thee out of the land of Egypt.
+
+13:10. Thou shalt keep this observance at the set time from days to days.
+
+13:11. And when the Lord shall have brought thee into the land of the Chanaanite, as he swore to thee and thy fathers, and shall give it thee:
+
+13:12. Thou shalt set apart all that openeth the womb for the Lord, and all that is first brought forth of thy cattle: whatsoever thou shalt have of the male sex, thou shalt consecrate to the Lord.
+
+13:13. The firstborn of an ass thou shalt change for a sheep: and if thou do not redeem it, thou shalt kill it. And every firstborn of men thou shalt redeem with a price.
+
+13:14. And when thy son shall ask thee to morrow, saying: What is this? thou shalt answer him: With a strong hand did the Lord bring us forth out of the land of Egypt, out of the house of bondage.
+
+13:15. For when Pharao was hardened, and would not let us go, the Lord slew every firstborn in the land of Egypt, from the firstborn of man to the firstborn of beasts: therefore I sacrifice to the Lord all that openeth the womb of the male sex, and all the firstborn of my sons I redeem.
+
+13:16. And it shall be as a sign in thy hand, and as a thing hung between thy eyes, for a remembrance: because the Lord hath brought us forth out of Egypt by a strong hand.
+
+13:17. And when Pharao had sent out the people, the Lord led them not by the way of the land of the Philistines, which is near; thinking lest perhaps they would repent, if they should see wars arise against them, and would return into Egypt.
+
+13:18. But he led them about by the way of the desert, which is by the Red Sea: and the children of Israel went up armed out of the land of Egypt.
+
+13:19. And Moses took Joseph’s bones with him: because he had adjured the children of Israel, saying: God shall visit you, carry out my bones from hence with you.
+
+13:20. And marching from Socoth, they encamped in Etham, in the utmost coasts of the wilderness.
+
+13:21. And the Lord went before them to shew the way, by day in a pillar of a cloud, and by night in a pillar of fire; that he might be the guide of their journey at both times.
+
+13:22. There never failed the pillar of the cloud by day, nor the pillar of fire by night, before the people.
+
+Exodus Chapter 14
+Pharao pursueth the children of Israel. They murmur against Moses, but are encouraged by him, and pass through the Red Sea. Pharao and his army following them are drowned.
+
+14:1. And the Lord spoke to Moses, saying:
+
+14:2. Speak to the children of Israel: Let them turn and encamp over against Phihahiroth, which is between Magdal and the sea over against Beelsephon: you shall encamp before it upon the sea.
+
+14:3. And Pharao will say of the children of Israel: They are straitened in the land, the desert hath shut them in.
+
+14:4. And I shall harden his heart and he will pursue you: and I shall be glorified in Pharao, and in all his army: and the Egyptians shall know that I am the Lord. And they did so.
+
+14:5. And it was told the king of the Egyptians that the people was fled: and the heart of Pharao and of his servants was changed with regard to the people, and they said: What meant we to do, that we let Israel go from serving us?
+
+14:6. So he made ready his chariot, and took all his people with him.
+
+14:7. And he took six hundred chosen chariots, and all the chariots that were in Egypt: and the captains of the whole army.
+
+14:8. And the Lord hardened the heart of Pharao, king of Egypt, and he pursued the children of Israel; but they were gone forth in a mighty hand.
+
+14:9. And when the Egyptians followed the steps of them who were gone before, they found them encamped at the sea side: all Pharao’s horse and chariots and the whole army were in Phihahiroth, before Beelsephon.
+
+14:10. And when Pharao drew near, the children of Israel lifting up their eyes, saw the Egyptians behind them: and they feared exceedingly, and cried to the Lord.
+
+14:11. And they said to Moses: Perhaps there were no graves in Egypt, therefore thou hast brought us to die in the wilderness: why wouldst thou do this, to lead us out of Egypt?
+
+14:12. Is not this the word that we spoke to thee in Egypt, saying: Depart from us, that we may serve the Egyptians? for it was much better to serve them, than to die in the wilderness.
+
+14:13. And Moses said to the people: Fear not: stand, and see the great wonders of the Lord, which he will do this day; for the Egyptians, whom you see now, you shall see no more for ever.
+
+14:14. The Lord will fight for you, and you shall hold your peace.
+
+14:15. And the Lord said to Moses: Why criest thou to me? Speak to the children of Israel to go forward.
+
+14:16. But lift thou up thy rod, and stretch forth thy hand over the sea, and divide it: that the children of Israel may go through the midst of the sea on dry ground.
+
+14:17. And I will harden the heart of the Egyptians to pursue you: and I will be glorified in Pharao, and in all his host, and in his chariots and in his horsemen.
+
+14:18. And the Egyptians shall know that I am the Lord, when I shall be glorified in Pharao, and in his chariots, and in his horsemen.
+
+14:19. And the angel of God, who went before the camp of Israel, removing, went behind them: and together with him the pillar of the cloud, leaving the forepart,
+
+14:20. Stood behind, between the Egyptians’ camp and the camp of Israel: and it was a dark cloud, and enlightening the night, so that they could not come at one another all the night.
+
+A dark cloud, and enlightening the night.... It was a dark cloud to the Egyptians; but enlightened the night to the Israelites by giving them a great light.
+
+14:21. And when Moses had stretched forth his hand over the sea, the Lord took it away by a strong and burning wind blowing all the night, and turned it into dry ground: and the water was divided.
+
+14:22. And the children of Israel went in through the midst of the sea dried up; for the water was as a wall on their right hand and on their left.
+
+14:23. And the Egyptians pursuing went in after them, and all Pharao’s horses, his chariots and horsemen, through the midst of the sea.
+
+14:24. And now the morning watch was come, and behold the Lord looking upon the Egyptian army through the pillar of fire and of the cloud, slew their host.
+
+14:25. And overthrew the wheels of the chariots, and they were carried into the deep. And the Egyptians said: Let us flee from Israel; for the Lord fighteth for them against us.
+
+14:26. And the Lord said to Moses: Stretch forth thy hand over the sea, that the waters may come again upon the Egyptians, upon their chariots and horsemen.
+
+14:27. And when Moses had stretched forth his hand towards the sea, it returned at the first break of day to the former place: and as the Egyptians were fleeing away, the waters came upon them, and the Lord shut them up in the middle of the waves.
+
+14:28. And the waters returned, and covered the chariots and the horsemen of all the army of Pharao, who had come into the sea after them, neither did there so much as one of them remain.
+
+14:29. But the children of Israel marched through the midst of the sea upon dry land, and the waters were to them as a wall on the right hand and on the left:
+
+14:30. And the Lord delivered Israel in that day out of the hands of the Egyptians.
+
+14:31. And they saw the Egyptians dead upon the sea shore, and the mighty hand that the Lord had used against them: and the people feared the Lord, and they believed the Lord, and Moses his servant.
+
+Exodus Chapter 15
+The canticle of Moses. The bitter waters of Mara are made sweet.
+
+15:1. Then Moses and the children of Israel sung this canticle to the Lord, and said: Let us sing to the Lord: for he is gloriously magnified, the horse and the rider he hath thrown into the sea.
+
+15:2. The Lord is my strength and my praise, and he is become salvation to me: he is my God, and I will glorify him: the God of my father, and I will exalt him.
+
+15:3. The Lord is as a man of war, Almighty is his name.
+
+15:4. Pharao’s chariots and his army he hath cast into the sea: his chosen captains are drowned in the Red Sea.
+
+15:5. The depths have covered them, they are sunk to the bottom like a stone.
+
+15:6. Thy right hand, O Lord, is magnified in strength: thy right hand, O Lord, hath slain the enemy.
+
+15:7. And in the multitude of thy glory thou hast put down thy adversaries: thou hast sent thy wrath, which hath devoured them like stubble.
+
+15:8. And with the blast of thy anger the waters were gathered together: the flowing water stood, the depths were gathered together in the midst of the sea.
+
+15:9. The enemy said: I will pursue and overtake, I will divide the spoils, my soul shall have its fill: I will draw my sword, my hand shall slay them.
+
+15:10. Thy wind blew and the sea covered them: they sunk as lead in the mighty waters.
+
+15:11. Who is like to thee, among the strong, O Lord? who is like to thee, glorious in holiness, terrible and praise-worthy, doing wonders?
+
+15:12. Thou stretchedst forth thy hand, and the earth swallowed them.
+
+15:13. In thy mercy thou hast been a leader to the people which thou hast redeemed: and in thy strength thou hast carried them to thy holy habitation.
+
+15:14. Nations rose up, and were angry: sorrows took hold on the inhabitants of Philisthiim.
+
+15:15. Then were the princes of Edom troubled, trembling seized on the stout men of Moab: all the inhabitants of Chanaan became stiff.
+
+15:16. Let fear and dread fall upon them, in the greatness of thy arm: let them become immoveable as a stone, until thy people, O Lord, pass by: until this thy people pass by, which thou hast possessed.
+
+15:17. Thou shalt bring them in, and plant them in the mountain of thy inheritance, in thy most firm habitation, which thou hast made, O Lord; thy sanctuary, O Lord, which thy hands have established.
+
+15:18. The Lord shall reign for ever and ever.
+
+15:19. For Pharao went in on horseback with his chariots and horsemen into the sea: and the Lord brought back upon them the waters of the sea: but the children of Israel walked on dry ground in the midst thereof.
+
+15:20. So Mary the prophetess, the sister of Aaron, took a timbrel in her hand: and all the women went forth after her with timbrels and with dances.
+
+15:21. And she began the song to them, saying: Let us sing to the Lord, for he is gloriously magnified, the horse and his rider he hath thrown into the sea.
+
+15:22. And Moses brought Israel from the Red Sea, and they went forth into the wilderness of Sur: and they marched three days through the wilderness, and found no water.
+
+15:23. And they came into Mara, and they could not drink the waters of Mara because they were bitter: whereupon he gave a name also agreeable to the place, calling it Mara, that is, bitterness.
+
+15:24. And the people murmured against Moses, saying: What shall we drink?
+
+15:25. But he cried to the Lord, and he shewed him a tree, which when he had cast into the waters, they were turned into sweetness. There he appointed him ordinances, and judgments, and there he proved him,
+
+15:26. Saying: If thou wilt hear the voice of the Lord thy God, and do what is right before him, and obey his commandments, and keep all his precepts, none of the evils that I laid upon Egypt, will I bring upon thee: for I am the Lord thy healer.
+
+15:27. And the children of Israel came into Elim, where there were twelve fountains of water, and seventy palm trees: and they encamped by the waters.
+
+Exodus Chapter 16
+The people murmur for want of meat: God giveth them quails and manna.
+
+16:1. And they set forward from Elim, and all the multitude of the children of Israel came into the desert of Sin, which is between Elim and Sinai: the fifteenth day of the second month, after they came out of the land of Egypt.
+
+16:2. And all the congregation of the children of Israel murmured against Moses and Aaron in the wilderness.
+
+16:3. And the children of Israel said to them: Would to God we had died by the hand of the Lord in the land of Egypt, when we sat over the fleshpots, and ate bread to the full: Why have you brought us into this desert, that you might destroy all the multitude with famine?
+
+16:4. And the Lord said to Moses: Behold I will rain bread from heaven for you; let the people go forth, and gather what is sufficient for every day: that I may prove them whether they will walk in my law, or not.
+
+16:5. But the sixth day let them provide for to bring in: and let it be double to that they were wont to gather every day.
+
+16:6. And Moses and Aaron said to the children of Israel In the evening you shall know that the Lord hath brought you forth out of the land of Egypt:
+
+16:7. And in the morning you shall see the glory of the Lord: for he hath heard your murmuring against the Lord: but as for us, what are we, that you mutter against us?
+
+16:8. And Moses said: In the evening the Lord will give you flesh to eat, and in the morning bread to the full: for he hath heard your murmurings, with which you have murmured against him, for what are we? your murmuring is not against us, but against the Lord.
+
+16:9. Moses also said to Aaron: Say to the whole congregation of the children of Israel: Come before the Lord; for he hath heard your murmuring.
+
+16:10. And when Aaron spoke to all the assembly of the children of Israel, they looked towards the wilderness; and behold the glory of the Lord appeared in a cloud.
+
+16:11. And the Lord spoke to Moses, saying:
+
+16:12. I have heard the murmuring of the children of Israel, say to them: In the evening you shall eat flesh, and in the morning you shall have your fill of bread; and you shall know that I am the Lord your God.
+
+16:13. So it came to pass in the evening, that quails coming up, covered the camp: and in the morning a dew lay round about the camp.
+
+16:14. And when it had covered the face of the earth, it appeared in the wilderness small, and as it were beaten with a pestle, like unto the hoar frost on the ground.
+
+16:15. And when the children of Israel saw it, they said one to another: Manhu! which signifieth: What is this! for they knew not what it was. And Moses said to them: This is the bread which the Lord hath given you to eat.
+
+16:16. This is the word that the Lord hath commanded: Let every one gather of it as much as is enough to eat; a gomor for every man, according to the number of your souls that dwell in a tent, so shall you take of it.
+
+16:17. And the children of Israel did so: and they gathered, one more, another less.
+
+16:18. And they measured by the measure of a gomor: neither had he more that had gathered more; nor did he find less that had provided less: but every one had gathered, according to what they were able to eat.
+
+16:19. And Moses said to them: Let no man leave thereof till the morning.
+
+16:20. And they hearkened not to him, but some of them left until the morning, and it began to be full of worms, and it putrified, and Moses was angry with them.
+
+16:21. Now every one of them gathered in the morning, as much as might suffice to eat: and after the sun grew hot, it melted.
+
+16:22. But on the sixth day they gathered twice as much, that is, two gomors every man: and all the rulers of the multitude came, and told Moses.
+
+16:23. And he said to them: This is what the Lord hath spoken: To morrow is the rest of the sabbath sanctified to the Lord. Whatsoever work is to be done, do it; and the meats that are to be dressed, dress them; and whatsoever shall remain, lay it up until the morning.
+
+16:24. And they did so as Moses had commanded, and it did not putrify, neither was there worm found in it.
+
+16:25. And Moses said: Eat it to day, because it is the sabbath of the Lord: to day it shall not be found in the field.
+
+16:26. Gather it six days; but on the seventh day is the sabbath of the Lord, therefore it shall not be found.
+
+16:27. And the seventh day came; and some of the people going forth to gather, found none.
+
+16:28. And the Lord said to Moses: How long will you refuse to keep my commandments, and my law?
+
+16:29. See that the Lord hath given you the sabbath, and for this reason on the sixth day he giveth you a double provision: let each man stay at home, and let none go forth out of his place the seventh day.
+
+16:30. And the people kept the sabbath on the seventh day.
+
+16:31. And the house of Israel called the name thereof Manna: and it was like coriander seed, white, and the taste thereof like to flour with honey.
+
+16:32. And Moses said: This is the word which the Lord hath commanded: Fill a gomor of it, and let it be kept unto generations to come hereafter; that they may know the bread, wherewith I fed you in the wilderness when you were brought forth out of the land of Egypt.
+
+16:33. And Moses said to Aaron: Take a vessel, and put manna into it, as much as a gomor can hold; and lay it up before the Lord, to keep unto your generations,
+
+16:34. As the Lord commanded Moses. And Aaron put it in the tabernacle to be kept.
+
+16:35. And the children of Israel ate manna forty years, till they came to a habitable land: with this meat were they fed, until they reached the borders of the land of Chanaan.
+
+16:36. Now a gomor is the tenth part of an ephi.
+
+Exodus Chapter 17
+The people murmur again for want of drink; the Lord giveth them water out of a rock. Moses lifting up his hand in prayer, Amalec is overcome.
+
+17:1. Then all the multitude of the children of Israel setting forward from the desert of Sin, by their mansions, according to the word of the Lord, encamped in Raphidim, where there was no water for the people to drink.
+
+17:2. And they chode with Moses, and said: Give us water, that we may drink. And Moses answered them: Why chide you with me? Wherefore do you tempt the Lord?
+
+17:3. So the people were thirsty there for want of water, and murmured against Moses, saying: Why didst thou make us go forth out of Egypt, to kill us and our children, and our beasts with thirst?
+
+17:4. And Moses cried to the Lord, saying: What shall I do to this people? Yet a little more and they will stone me.
+
+17:5. And the Lord said to Moses: Go before the people, and take with thee of the ancients of Israel: and take in thy hand the rod wherewith thou didst strike the river, and go.
+
+17:6. Behold I will stand there before thee, upon the rock Horeb, and thou shalt strike the rock, and water shall come out of it that the people may drink. Moses did so before the ancients of Israel:
+
+17:7. And he called the name of that place Temptation, because of the chiding of the children of Israel, and for that they tempted the Lord, saying: Is the Lord amongst us or not?
+
+17:8. And Amalec came, and fought against Israel in Raphidim.
+
+17:9. And Moses said to Josue: Choose out men; and go out and fight against Amalec: tomorrow I will stand on the top of the hill, having the rod of God in my hand.
+
+17:10. Josue did as Moses had spoken, and he fought against Amalec; but Moses, and Aaron, and Hur, went up upon the top of the hill.
+
+17:11. And when Moses lifted up his hands, Israel overcame; but if he let them down a little, Amalec overcame.
+
+17:12. And Moses’s hands were heavy: so they took a stone, and put under him, and he sat on it: and Aaron and Hur stayed up his hands on both sides. And it came to pass, that his hands were not weary until sunset.
+
+17:13. And Josue put Amalec and his people to flight, by the edge of the sword.
+
+17:14. And the Lord said to Moses: Write this for a memorial in a book, and deliver it to the ears of Josue; for I will destroy the memory of Amalec from under heaven.
+
+17:15. And Moses built an altar; and called the name thereof, The Lord, my exaltation, saying:
+
+17:16. Because the hand of the throne of the Lord, and the war of the Lord shall be against Amalec, from generation to generation.
+
+Exodus Chapter 18
+Jethro bringeth to Moses his wife and children. His counsel.
+
+18:1. And when Jethro the priest of Madian, the kinsman of Moses, had heard all the things that God had done to Moses, and to Israel his people, and that the Lord had brought forth Israel out of Egypt:
+
+18:2. He took Sephora, the wife of Moses, whom he had sent back:
+
+18:3. And her two sons, of whom one was called Gersam: his father saying, I have been a stranger in a foreign country.
+
+18:4. And the other Eliezer: For the God of my father, said he, is my helper, and hath delivered me from the sword of Pharao.
+
+18:5. And Jethro, the kinsman of Moses, came with his sons, and his wife to Moses into the desert, where he was camped by the mountain of God.
+
+18:6. And he sent word to Moses, saying: I Jethro, thy kinsman, come to thee, and thy wife, and thy two sons with her.
+
+18:7. And he went out to meet his kinsman, and worshipped and kissed him: and they saluted one another with words of peace. And when he was come into the tent,
+
+18:8. Moses told his kinsman all that the Lord had done to Pharao, and the Egyptians in favour of Israel: and all the labour which had befallen them in the journey, and that the Lord had delivered them.
+
+18:9. And Jethro rejoiced for all the good things that the Lord had done to Israel, because he had delivered them out of the hands of the Egyptians.
+
+18:10. And he said: Blessed is the Lord, who hath delivered you out of the hand of Pharao, and out of the hand of Egypt.
+
+18:11. Now I know, that the Lord is great above all gods; because he hath delivered his people out of the hand of the Egyptians, who dealt proudly against them.
+
+18:12. So Jethro, the kinsman of Moses, offered holocausts and sacrifices to God: and Aaron and all the ancients of Israel came, to eat bread with him before God.
+
+18:13. And the next day Moses sat to judge the people, who stood by Moses from morning until night.
+
+18:14. And when his kinsman had seen all things that he did among the people, he said: What is it that thou dost among the people? Why sittest thou alone, and all the people wait from morning till night?
+
+18:15. And Moses answered him: The people come to me to seek the judgment of God?
+
+18:16. And when any controversy falleth out among them, they come to me to judge between them, and to shew the precepts of God, and his laws.
+
+18:17. But he said: The thing thou dost is not good.
+
+18:18. Thou art spent with foolish labour, both thou, and this people that is with thee; the business is above thy strength, thou alone canst not bear it.
+
+18:19. But hear my words and counsels, and God shall be with thee. Be thou to the people in those things that pertain to God, to bring their words to him:
+
+18:20. And to shew the people the ceremonies, and the manner of worshipping; and the way wherein they ought to walk, and the work that they ought to do.
+
+18:21. And provide out of all the people able men, such as fear God, in whom there is truth, and that hate avarice, and appoint of them rulers of thousands, and of hundreds, and of fifties, and of tens,
+
+18:22. Who may judge the people at all times: and when any great matter soever shall fall out, let them refer it to thee, and let them judge the lesser matters only: that so it may be lighter for thee, the burden being shared out unto others.
+
+18:23. If thou dost this, thou shalt fulfil the commandment of God, and shalt be able to bear his precepts: and all this people shall return to their places with peace.
+
+18:24. And when Moses heard this, he did all things that he had suggested unto him.
+
+18:25. And choosing able men out of all Israel, he appointed them rulers of the people, rulers over thousands, and over hundreds, and over fifties, and over tens.
+
+18:26. And they judged the people at all times: and whatsoever was of greater difficulty they referred to him, and they judged the easier cases only.
+
+18:27. And he let his kinsman depart: and he returned and went into his own country.
+
+Exodus Chapter 19
+They come to Sinai: the people are commanded to be sanctified. The Lord, coming in thunder and lightning, speaketh with Moses.
+
+19:1. In the third month of the departure of Israel out of the land of Egypt, on this day they came into the wilderness of Sinai:
+
+19:2. For departing out of Raphidim, and coming to the desert of Sinai, they camped in the same place, and there Israel pitched their tents over against the mountain.
+
+19:3. And Moses went up to God; and the Lord called unto him from the mountain, and said: Thus shalt thou say to the house of Jacob, and tell the children of Israel:
+
+And Moses went up to God.... Moses went up to mount Sinai, where God spoke to him.
+
+19:4. You have seen what I have done to the Egyptians, how I have carried you upon the wings of eagles, and have taken you to myself.
+
+19:5. If therefore you will hear my voice, and keep my covenant, you shall be my peculiar possession above all people: for all the earth is mine.
+
+19:6. And you shall be to me a priestly kingdom, and a holy nation. These are the words thou shalt speak to the children of Israel.
+
+19:7. Moses came; and calling together the elders of the people, he declared all the words which the Lord had commanded.
+
+19:8. And all the people answered together: All that the Lord hath spoken, we will do. And when Moses had related the people’s words to the Lord,
+
+19:9. The Lord said to him: Lo, now will I come to thee in the darkness of a cloud, that the people may hear me speaking to thee, and may believe thee for ever. And Moses told the words of the people to the Lord.
+
+19:10. And he said to him: Go to the people, and sanctify them to day, and to morrow, and let them wash their garments.
+
+19:11. And let them be ready against the third day; for on the third day the Lord will come down in the sight of all the people, upon Mount Sinai.
+
+19:12. And thou shalt appoint certain limits to the people round about, and thou shalt say to them: Take heed ye go not up into the mount, and that ye touch not the borders thereof: every one that toucheth the mount, dying he shall die.
+
+19:13. No hands shall touch him, but he shall be stoned to death, or he shall be shot through with arrows: whether it be beast, or man, he shall not live. When the trumpet shall begin to sound, then let them go up into the mount.
+
+19:14. And Moses came down from the mount to the people, and sanctified them. And when they had washed their garments,
+
+19:15. He said to them: Be ready against the third day, and come not near your wives.
+
+19:16. And now the third day was come, and the morning appeared: and behold thunders began to be heard, and lightning to flash, and a very thick cloud to cover the mount, and the noise of the trumpet sounded exceeding loud; and the people that was in the camp, feared.
+
+19:17. And when Moses had brought them forth to meet God, from the place of the camp, they stood at the bottom of the mount.
+
+19:18. And all Mount Sinai was on a smoke: because the Lord was come down upon it in fire, and the smoke arose from it as out of a furnace: and all the mount was terrible.
+
+19:19. And the sound of the trumpet grew by degrees louder and louder, and was drawn out to a greater length: Moses spoke, and God answered him.
+
+19:20. And the Lord came down upon Mount Sinai, in the very top of the mount, and he called Moses unto the top thereof. And when he was gone up thither,
+
+19:21. He said unto him: Go down, and charge the people; lest they should have a mind to pass the limits to see the Lord, and a very great multitude of them should perish.
+
+19:22. The priests also that come to the Lord, let them be sanctified, lest he strike them.
+
+19:23. And Moses said to the Lord: The people cannot come up to Mount Sinai: for thou didst charge, and command, saying: Set limits about the mount, and sanctify it.
+
+19:24. And the Lord said to him: Go, get thee down; and thou shalt come up, thou and Aaron with thee: but let not the priests and the people pass the limits, nor come up to the Lord, lest he kill them.
+
+19:25. And Moses went down to the people and told them all.
+
+Exodus Chapter 20
+The ten commandments.
+
+20:1. And the Lord spoke all these words:
+
+20:2. I am the Lord thy God, who brought thee out of the land of Egypt, out of the house of bondage.
+
+20:3. Thou shalt not have strange gods before me.
+
+20:4. Thou shalt not make to thyself a graven thing, nor the likeness of any thing that is in heaven above, or in the earth beneath, nor of those things that are in the waters under the earth.
+
+A graven thing, nor the likeness of any thing, etc.... All such images, or likenesses, are forbidden by this commandment, as are made to be adored and served; according to that which immediately follows, thou shalt not adore them, nor serve them. That is, all such as are designed for idols or image-gods, or are worshipped with divine honour. But otherwise images, pictures, or representations, even in the house of God, and in the very sanctuary so far from being forbidden, are expressly authorized by the word of God. See Ex. 25.15, and etc.; chap. 38.7; Num. 21.8, 9; 1 Chron. or Paralip. 28.18, 19; 2 Chron. or Paralip. 3.10.
+
+20:5. Thou shalt not adore them, nor serve them: I am the Lord thy God, mighty, jealous, visiting the iniquity of the fathers upon the children, unto the third and fourth generation of them that hate me:
+
+20:6. And shewing mercy unto thousands to them that love me, and keep my commandments.
+
+20:7. Thou shalt not take the name of the Lord thy God in vain: for the Lord will not hold him guiltless that shall take the name of the Lord his God in vain.
+
+20:8. Remember that thou keep holy the sabbath day.
+
+20:9. Six days shalt thou labour, and shalt do all thy works.
+
+20:10. But on the seventh day is the sabbath of the Lord thy God: thou shalt do no work on it, thou nor thy son, nor thy daughter, nor thy manservant, nor thy maidservant, nor thy beast, nor the stranger that is within thy gates.
+
+20:11. For in six days the Lord made heaven and earth, and the sea, and all things that are in them, and rested on the seventh day: therefore the Lord blessed the seventh day, and sanctified it.
+
+20:12. Honour thy father and thy mother, that thou mayst be longlived upon the land which the Lord thy God will give thee.
+
+20:13. Thou shalt not kill.
+
+20:14. Thou shalt not commit adultery.
+
+20:15. Thou shalt not steal.
+
+20:16. Thou shalt not bear false witness against thy neighbour.
+
+20:17. Thou shalt not covet thy neighbour’s house; neither shalt thou desire his wife, nor his servant, nor his handmaid, nor his ox, nor his ass, nor any thing that is his.
+
+20:18. And all the people saw the voices and the flames, and the sound of the trumpet, and the mount smoking; and being terrified and struck with fear, they stood afar off,
+
+20:19. Saying to Moses: Speak thou to us, and we will hear: let not the Lord speak to us, lest we die.
+
+20:20. And Moses said to the people: Fear not; for God is come to prove you, and that the dread of him might be in you, and you should not sin.
+
+20:21. And the people stood afar off. But Moses went to the dark cloud wherein God was.
+
+20:22. And the Lord said to Moses: Thus shalt thou say to the children of Israel: You have seen that I have spoken to you from heaven.
+
+20:23. You shall not make gods of silver, nor shall you make to yourselves gods of gold.
+
+20:24. You shall make an altar of earth unto me, and you shall offer upon it your holocausts and peace offerings, your sheep and oxen, in every place where the memory of my name shall be: I will come to thee, and will bless thee.
+
+20:25. And if thou make an altar of stone unto me, thou shalt not build it of hewn stones; for if thou lift up a tool upon it, it shall be defiled.
+
+20:26. Thou shalt not go up by steps unto my altar, lest thy nakedness be discovered.
+
+Exodus Chapter 21
+Laws relating to Justice.
+
+21:1. These are the judgments which thou shalt set before them.
+
+21:2. If thou buy a Hebrew servant, six years shall he serve thee; in the seventh he shall go out free for nothing.
+
+21:3. With what raiment he came in, with the like let him go out: if having a wife, his wife also shall go out with him.
+
+21:4. But if his master gave him a wife, and she hath borne sons and daughters; the woman and her children shall be her master’s: but he himself shall go out with his raiment.
+
+21:5. And if the servant shall say: I love my master and my wife and children, I will not go out free:
+
+21:6. His master shall bring him to the gods, and he shall be set to the door and the posts, and he shall bore his ear through with an awl: and he shall be his servant for ever.
+
+To the gods.... Elohim. That is, to the judges, or magistrates, authorized by God.
+
+21:7. If any man sell his daughter to be a servant, she shall not go out as bondwomen are wont to go out.
+
+21:8. If she displease the eyes of her master to whom she was delivered, he shall let her go: but he shall have no power to sell her to a foreign nation, if he despise her.
+
+21:9. But if he have betrothed her to his son, he shall deal with her after the manner of daughters.
+
+21:10. And if he take another wife for him, he shall provide her a marriage, and raiment, neither shall he refuse the price of her chastity.
+
+21:11. If he do not these three things, she shall go out free without money.
+
+21:12. He that striketh a man with a will to kill him, shall be put to death.
+
+21:13. But he that did not lie in wait for him, but God delivered him into his hands: I will appoint thee a place to which he must flee.
+
+21:14. If a man kill his neighbour on set purpose, and by lying in wait for him: thou shalt take him away from my altar that he may die.
+
+21:15. He that striketh his father or mother, shall be put to death.
+
+21:16. He that shall steal a man, and sell him, being convicted of the guilt, shall be put to death.
+
+21:17. He that curseth his father or mother, shall die the death.
+
+21:18. If men quarrel, and the one strike his neighbour with a stone, or with his fist, and he die not, but keepeth his bed:
+
+21:19. If he rise again and walk abroad upon his staff, he that struck him shall be quit, yet so that he make restitution for his work, and for his expenses upon the physicians.
+
+21:20. He that striketh his bondman, or bondwoman, with a rod, and they die under his hands, shall be guilty of the crime.
+
+21:21. But if the party remain alive a day or two, he shall not be subject to the punishment, because it is his money.
+
+21:22. If men quarrel, and one strike a woman with child and she miscarry indeed, but live herself: he shall be answerable for so much damage as the woman’s husband shall require, and as arbiters shall award.
+
+21:23. But if her death ensue thereupon, he shall render life for life,
+
+21:24. Eye for eye, tooth for tooth, hand for hand, foot for foot,
+
+21:25. Burning for burning, wound for wound, stripe for stripe.
+
+21:26. If any man strike the eye of his manservant or maidservant, and leave them but one eye, he shall let them go free for the eye which he put out.
+
+21:27. Also if he strike out a tooth of his manservant or maidservant, he shall in like manner make them free.
+
+21:28. If an ox gore a man or a woman, and they die, he shall be stoned: and his flesh shall not be eaten, but the owner of the ox shall be quit.
+
+21:29. But if the ox was wont to push with his horn yesterday, and the day before, and they warned his master, and he did not shut him up, and he shall kill a man or a woman: then the ox shall be stoned, and his owner also shall be put to death.
+
+21:30. And if they set a price upon him, he shall give for his life whatsoever is laid upon him.
+
+21:31. If he have gored a son, or a daughter, he shall fall under the like sentence.
+
+21:32. If he assault a bondman or bondwoman, he shall give thirty sicles of silver to their master, and the ox shall be stoned.
+
+21:33. If a man open a pit, and dig one, and cover it not, and an ox or an ass fall into it,
+
+21:34. The owner of the pit shall pay the price of the beasts: and that which is dead shall be his own.
+
+21:35. If one man’s ox gore another man’s ox, and he die: they shall sell the live ox, and shall divide the price, and the carcass of that which died they shall part between them:
+
+21:36. But if he knew that his ox was wont to push yesterday, and the day before, and his master did not keep him in; he shall pay ox for ox, and shall take the whole carcass.
+
+Exodus Chapter 22
+The punishment of theft, and other trespasses. The law of lending without usury, of taking pledges of reverences to superiors, and of paying tithes.
+
+22:1. If any man steal an ox or a sheep, and kill or sell it: he shall restore five oxen for one ox, and four sheep for one sheep.
+
+22:2. If a thief be found breaking open a house or undermining it, and be wounded so as to die: he that slew him shall not be guilty of blood.
+
+22:3. But if he did this when the sun is risen, he hath committed murder, and he shall die. If he have not wherewith to make restitution for the theft, he shall be sold.
+
+22:4. If that which he stole be found with him, alive, either ox, or ass, or sheep: he shall restore double.
+
+22:5. If any man hurt a field or a vineyard, and put in his beast to feed upon that which is other men’s: he shall restore the best of whatsoever he hath in his own field, or in his vineyard, according to the estimation of the damage.
+
+22:6. If a fire breaking out light upon thorns, and catch stacks of corn, or corn standing in the fields, he that kindled the fire shall make good the loss.
+
+22:7. If a man deliver money, or any vessel unto his friend to keep, and they be stolen away from him that received them: if the thief be found, he shall restore double:
+
+22:8. If the thief be not known, the master of the house shall be brought to the gods, and shall swear that he did not lay his hand upon his neighbour’s goods,
+
+22:9. To do any fraud, either in ox, or in ass, or sheep, or raiment, or any thing that may bring damage: the cause of both parties shall come to the gods: and if they give judgment, he shall restore double to his neighbour.
+
+22:10. If a man deliver ass, ox, sheep, or any beast, to his neighbour’s custody, and it die, or be hurt, or be taken by enemies, and no man saw it:
+
+22:11. There shall be an oath between them, that he did not put forth his hand to his neighbour’s goods: and the owner shall accept of the oath, and he shall not be compelled to make restitution.
+
+22:12. But if it were taken away by stealth, he shall make the loss good to the owner.
+
+22:13. If it were eaten by a beast, let him bring to him that which was slain, and he shall not make restitution.
+
+22:14. If a man borrow of his neighbour any of these things, and it be hurt or die, the owner not being present, he shall be obliged to make restitution.
+
+22:15. But if the owner be present, he shall not make restitution, especially if it were hired, and came for the hire of his work.
+
+22:16. If a man seduce a virgin not yet espoused, and lie with her: he shall endow her, and have her to wife.
+
+22:17. If the maid’s father will not give her to him, he shall give money according to the dowry, which virgins are wont to receive.
+
+22:18. Wizards thou shalt not suffer to live.
+
+22:19. Whosoever copulateth with a beast; shall be put to death.
+
+22:20. He that sacrificeth to gods, shall be put to death, save only to the Lord.
+
+22:21. Thou shalt not molest a stranger, nor afflict him: for yourselves also were strangers in the land of Egypt.
+
+22:22. You shall not hurt a widow or an orphan.
+
+22:23. If you hurt them, they will cry out to me, and I will hear their cry:
+
+22:24. And my rage shall be enkindled, and I will strike you with the sword, and your wives shall be widows, and your children fatherless.
+
+22:25. If thou lend money to any of my people that is poor, that dwelleth with thee, thou shalt not be hard upon them as an extortioner, nor oppress them with usuries.
+
+22:26. If thou take of thy neighbour a garment in pledge, thou shalt give it him again before sunset.
+
+22:27. For that same is the only thing, wherewith he is covered, the clothing of his body, neither hath he any other to sleep in: if he cry to me, I will hear him, because I am compassionate.
+
+22:28. Thou shalt not speak ill of the gods, and the prince of thy people thou shalt not curse.
+
+22:29. Thou shalt not delay to pay thy tithes and thy firstfruits: thou shalt give the firstborn of thy sons to me.
+
+22:30. Thou shalt do the same with the firstborn of thy oxen also and sheep: seven days let it be with its dam: the eighth day thou shalt give it to me.
+
+22:31. You shall be holy men to me: the flesh that beasts have tasted of before, you shall not eat, but shall cast it to the dogs.
+
+Exodus Chapter 23
+Laws for judges; the rest of the seventh year, and day: three principal feasts to be solemnized every year; the promise of an angel, to conduct and protect them: idols are to be destroyed.
+
+23:1. Thou shalt not receive the voice of a lie: neither shalt thou join thy hand to bear false witness for a wicked person.
+
+23:2. Thou shalt not follow the multitude to do evil: neither shalt thou yield in judgment, to the opinion of the most part, to stray from the truth.
+
+23:3. Neither shalt thou favour a poor man in judgment.
+
+23:4. If thou meet thy enemy’s ox or ass going astray, bring it back to him.
+
+23:5. If thou see the ass of him that hateth thee lie underneath his burden, thou shalt not pass by, but shalt lift him up with him.
+
+23:6. Thou shalt not go aside in the poor man’s judgment.
+
+23:7. Thou shalt fly lying. The innocent and just person thou shalt not put to death: because I abhor the wicked.
+
+23:8. Neither shalt thou take bribes, which even blind the wise, and pervert the words of the just.
+
+23:9. Thou shalt not molest a stranger, for you know the hearts of strangers: for you also were strangers in the land of Egypt.
+
+23:10. Six years thou shalt sow thy ground, and shalt gather the corn thereof.
+
+23:11. But the seventh year thou shalt let it alone, and suffer it to rest, that the poor of thy people may eat, and whatsoever shall be left, let the beasts of the field eat it: so shalt thou do with thy vineyard and thy oliveyard.
+
+23:12. Six days thou shalt work: the seventh day thou shalt cease, that thy ox and thy ass may rest: and the son of thy handmaid and the stranger may be refreshed.
+
+23:13. Keep all things that I have said to you. And by the name of strange gods you shall not swear, neither shall it be heard out of your mouth.
+
+23:14. Three times every year you shall celebrate feasts to me.
+
+23:15. Thou shalt keep the feast of unleavened bread. Seven days shalt thou eat unleavened bread, as I commanded thee, in the time of the month of new corn, when thou didst come forth out of Egypt: thou shalt not appear empty before me.
+
+23:16. And the feast of the harvest of the firstfruits of thy work, whatsoever thou hast sown in the field. The feast also in the end of the year, when thou hast gathered in all thy corn out of the field.
+
+23:17. Thrice a year shall all thy males appear before the Lord thy God.
+
+23:18. Thou shalt not sacrifice the blood of my victim upon leaven, neither shall the fat of my solemnity remain until the morning.
+
+23:19. Thou shalt carry the first-fruits of the corn of thy ground to the house of the Lord thy God. Thou shalt not boil a kid in the milk of his dam.
+
+23:20. Behold I will send my angel, who shall go before thee, and keep thee in thy journey, and bring thee into the place that I have prepared.
+
+23:21. Take notice of him, and hear his voice, and do not think him one to be contemned: for he will not forgive when thou hast sinned, and my name is in him.
+
+23:22. But if thou wilt hear his voice, and do all that I speak, I will be an enemy to thy enemies, and will afflict them that afflict thee.
+
+23:23. And my angel shall go before thee, and shall bring thee in unto the Amorrhite, and the Hethite, and the Pherezite, and the Chanaanite, and the Hevite, and the Jebusite, whom I will destroy.
+
+23:24. Thou shalt not adore their gods, nor serve them. Thou shalt not do their works, but shalt destroy them, and break their statues.
+
+23:25. And you shall serve the Lord your God, that I may bless your bread and your waters, and may take away sickness from the midst of thee.
+
+23:26. There shall not be one fruitless nor barren in thy land: I will fill the number of thy days.
+
+23:27. I will send my fear before thee, and will destroy all the people to whom thou shalt come: and will turn the backs of all thy enemies before thee:
+
+23:28. Sending out hornets before, that shall drive away the Hevite, and the Chanaanite, and the Hethite, before thou come in.
+
+23:29. I will not cast them out from thy face in one year; lest the land be brought into a wilderness, and the beasts multiply against thee.
+
+23:30. By little and little I will drive them out from before thee, till thou be increased, and dost possess the land.
+
+23:31. And I will set thy bounds from the Red Sea to the sea of the Palestines, and from the desert to the river: I will deliver the inhabitants of the land into your hands, and will drive them out from before you.
+
+23:32. Thou shalt not enter into league with them, nor with their gods.
+
+23:33. Let them not dwell in thy land, lest perhaps they make thee sin against me, if thou serve their gods; which, undoubtedly, will be a scandal to thee.
+
+Exodus Chapter 24
+Moses writeth his law; and after offering sacrifices, sprinkleth the blood of the testament upon the people: then goeth up the mountain which God covereth with a fiery cloud.
+
+24:1. And he said to Moses: Come up to the Lord, thou, and Aaron, Nadab and Abiu, and seventy of the ancients of Israel, and you shall adore afar off.
+
+24:2. And Moses alone shall come up to the Lord, but they shall not come nigh; neither shall the people come up with him.
+
+24:3. So Moses came and told the people all the words of the Lord, and all the judgments: and all the people answered with one voice: We will do all the words of the Lord, which he hath spoken.
+
+24:4. And Moses wrote all the words of the Lord: and rising in the morning, he built an altar at the foot of the mount, and twelve titles according to the twelve tribes of Israel.
+
+Titles.... That is, pillars.
+
+24:5. And he sent young men of the children of Israel, and they offered holocausts, and sacrificed pacific victims of calves to the Lord.
+
+Holocausts.... Whole burnt offerings, in which the whole sacrifice was consumed with fire upon the altar.
+
+24:6. Then Moses took half of the blood, and put it into bowls; and the rest he poured upon the altar.
+
+24:7. And taking the book of the covenant, he read it in the hearing of the people: and they said: All things that the Lord hath spoken, we will do, we will be obedient.
+
+24:8. And he took the blood and sprinkled it upon the people, and he said: This is the blood of the covenant, which the Lord hath made with you concerning all these words.
+
+24:9. Then Moses and Aaron, Nadab and Abiu, and seventy of the ancients of Israel went up:
+
+24:10. And they saw the God of Israel: and under his feet as it were a work of sapphire stone, and as the heaven, when clear.
+
+24:11. Neither did he lay his hand upon those of the children of Israel, that retired afar off, and they saw God, and they did eat and drink.
+
+24:12. And the Lord said to Moses: Come up to me into the mount, and be there; and I will give thee tables of stone, and the law, and the commandments which I have written; that thou mayest teach them.
+
+24:13. Moses rose up, and his minister Josue: and Moses going up into the mount of God,
+
+24:14. Said to the ancients: Wait ye here till we return to you. You have Aaron and Hur with you: if any question shall arise, you shall refer it to them.
+
+24:15. And when Moses was gone up, a cloud covered the mount.
+
+24:16. And the glory of the Lord dwelt upon Sinai, covering it with a cloud six days: and the seventh day he called him out of the midst of the cloud.
+
+24:17. And the sight of the glory of the Lord, was like a burning fire upon the top of the mount, in the eyes of the children of Israel.
+
+24:18. And Moses entering into the midst of the cloud, went up into the mountain: And he was there forty days and forty nights.
+
+Exodus Chapter 25
+Offerings prescribed for making the tabernacle, the ark, the candlestick, etc.
+
+25:1. And the Lord spoke to Moses, saying:
+
+25:2. Speak to the children of Israel, that they bring firstfruits to me: of every man that offereth of his own accord, you shall take them.
+
+Firstfruits.... Offerings of some of the best and choicest of their goods.
+
+25:3. And these are the things you must take: Gold, and silver, and brass,
+
+25:4. Violet and purple, and scarlet twice dyed, and fine linen, and goats’ hair,
+
+25:5. And rams’ skins dyed red, and violet skins, and setim wood:
+
+Setim wood.... The wood of a tree that grows in the wilderness, which is said to be incorruptible.
+
+25:6. Oil to make lights: spices for ointment, and for sweetsmelling incense:
+
+25:7. Onyx stones, and precious stones to adorn the ephod and the rational.
+
+The ephod and the rational.... The ephod was the high priest’s upper vestment; and the rational his breastplate, in which were twelve gems, etc.
+
+25:8. And they shall make me a sanctuary, and I will dwell in the midst of them:
+
+25:9. According to all the likeness of the tabernacle which I will shew thee, and of all the vessels for the service thereof: and thus you shall make it:
+
+25:10. Frame an ark of setim wood, the length whereof shall be of two cubits and a half; the breadth, a cubit and a half; the height, likewise, a cubit and a half.
+
+25:11. And thou shalt overlay it with the purest gold, within and without; and over it thou shalt make a golden crown round about:
+
+25:12. And four golden rings, which thou shalt put at the four corners of the ark: let two rings be on the one side, and two on the other.
+
+25:13. Thou shalt make bars also of setim wood, and shalt overlay them with gold.
+
+25:14. And thou shalt put them in through the rings that are in the sides of the ark, that it may be carried on them:
+
+25:15. And they shall be always in the rings, neither shall they at any time be drawn out of them.
+
+25:16. And thou shalt put in the ark the testimony which I will give thee.
+
+25:17. Thou shalt make also a propitiatory of the purest gold: the length thereof shall be two cubits and a half, and the breadth a cubit and a half.
+
+A propitiatory.... a covering for the ark: called a propitiatory, or mercy seat, because the Lord, who was supposed to sit there upon the wings of the cherubims, with the ark for his footstool, from thence shewed mercy. It is also called the oracle, ver. 18 and 20; because from thence God gave his orders and his answers.
+
+25:18. Thou shalt make also two cherubims of beaten gold, on the two sides of the oracle.
+
+25:19. Let one cherub be on the one side, and the other on the other.
+
+25:20. Let them cover both sides of the propitiatory, spreading their wings, and covering the oracle, and let them look one towards the other, their faces being turned towards the propitiatory wherewith the ark is to be covered.
+
+25:21. In which thou shalt put the testimony that I will give thee.
+
+25:22. Thence will I give orders, and will speak to thee over the propitiatory, and from the midst of the two cherubims, which shall be upon the ark of the testimony, all things which I will command the children of Israel by thee.
+
+25:23. Thou shalt make a table also of setim wood, of two cubits in length, and a cubit in breadth, and a cubit and a half in height.
+
+A table.... On which were to be placed the twelve loaves of proposition: or, as they are called in the Hebrew, the face bread, because they were always to stand before the face of the Lord in his temple: as a figure of the eucharistic sacrifice and sacrament, in the church of Christ.
+
+25:24. And thou shalt overlay it with the purest gold: and thou shalt make to it a golden ledge round about.
+
+25:25. And to the ledge itself a polished crown, four inches high; and over the same another little golden crown.
+
+25:26. Thou shalt prepare also four golden rings, and shalt put them in the four corners of the same table, over each foot.
+
+25:27. Under the crown shall the golden rings be, that the bars may be put through them, and the table may be carried.
+
+25:28. The bars also themselves thou shalt make of setim wood, and shalt overlay them with gold, to bear up the table.
+
+25:29. Thou shalt prepare also dishes, and bowls, censers, and cups, wherein the libations are to be offered, of the purest gold.
+
+Libations.... That is, drink offerings.
+
+25:30. And thou shalt set upon the table loaves of proposition in my sight always.
+
+25:31. Thou shalt make also a candlestick of beaten work, of the finest gold, the shaft thereof, and the branches, the cups, and the bowls, and the lilies going forth from it.
+
+A candlestick.... This candlestick, with its seven lamps, which was always to give light in the house of God, was a figure of the light of the Holy Ghost, and his sevenfold grace, in the sanctuary of the church of Christ.
+
+25:32. Six branches shall come out of the sides, three out of one side, and three out of the other.
+
+25:33. Three cups as it were nuts to every branch, and a bowl withal, and a lily: and three cups likewise of the fashion of nuts in the other branch, and a bowl withal, and a lily. Such shall be the work of the six branches, that are to come out from the shaft:
+
+25:34. And in the candlestick itself shall be four cups in the manner of a nut, and at every one bowls and lilies.
+
+25:35. Bowls under two branches in three places, which together make six, coming forth out of one shaft.
+
+25:36. And both the bowls and the branches shall be of the same beaten work of the purest gold.
+
+25:37. Thou shalt make also seven lamps, and shalt set them upon the candlestick, to give light over against.
+
+25:38. The snuffers also, and where the snuffings shall be put out, shall be made of the purest gold.
+
+25:39. The whole weight of the candlestick, with all the furniture thereof, shall be a talent of the purest gold.
+
+25:40. Look, and make it according to the pattern that was shewn thee in the mount.
+
+Exodus Chapter 26
+The form of the tabernacle with its appurtenances.
+
+26:1. And thou shalt make the tabernacle in this manner: Thou shalt make ten curtains of fine twisted linen, and violet and purple, and scarlet twice dyed, diversified with embroidery.
+
+26:2. The length of one curtain shall be twenty-eight cubits; the breadth shall be four cubits. All the curtains shall be of one measure.
+
+26:3. Five curtains shall be joined one to another, and the other five shall be coupled together in like manner.
+
+26:4. Thou shalt make loops of violet in the sides and tops of the curtains, that they may be joined one to another.
+
+26:5. Every curtain shall have fifty loops on both sides, so set on, that one loop may be against another loop, and one may be fitted to the other.
+
+26:6. Thou shalt make also fifty rings of gold, wherewith the veils of the curtains are to be joined, that it may be made one tabernacle.
+
+26:7. Thou shalt make also eleven curtains of goats’ hair, to cover the top of the tabernacle.
+
+26:8. The length of one hair-curtain shall be thirty cubits; and the breadth, four: the measure of all the curtains shall be equal.
+
+26:9. Five of which thou shalt couple by themselves, and the six others thou shalt couple one to another, so as to double the sixth curtain in the front of the roof.
+
+26:10. Thou shalt make also fifty loops in the edge of one curtain, that it may be joined with the other: and fifty loops in the edge of the other curtain, that it may be coupled with its fellow.
+
+26:11. Thou shalt make also fifty buckles of brass, wherewith the loops may be joined, that of all there may be made one covering.
+
+26:12. And that which shall remain of the curtains, that are prepared for the roof, to wit, one curtain that is over and above, with the half thereof thou shalt cover the back parts of the tabernacle.
+
+26:13. And there shall hang down a cubit on the one side, and another on the other side, which is over and above in the length of the curtains, fencing both sides of the tabernacle.
+
+26:14. Thou shalt make also another cover to the roof of rams’ skins dyed red: and over that again another cover of violet coloured skins.
+
+26:15. Thou shalt make also the boards of the tabernacle standing upright of setim wood.
+
+26:16. Let every one of them be ten cubits in length, and in breadth one cubit and a half.
+
+26:17. In the sides of the boards shall be made two mortises, whereby one board may be joined to another board: and after this manner shall all the boards be prepared.
+
+26:18. Of which twenty shall be in the south side southward.
+
+26:19. For which thou shalt cast forty sockets of silver, that under every board may be put two sockets at the two corners.
+
+26:20. In the second side also of the tabernacle that looketh to the north, there shall be twenty boards,
+
+26:21. Having forty sockets of silver, two sockets shall be put under each board.
+
+26:22. But on the west side of the tabernacle thou shalt make six boards.
+
+26:23. And again other two which shall be erected in the corners at the back of the tabernacle.
+
+26:24. And they shall be joined together from beneath unto the top, and one joint shall hold them all. The like joining shall be observed for the two boards also that are to be put in the corners.
+
+26:25. And they shall be in all eight boards, and their silver sockets sixteen, reckoning two sockets for each board.
+
+26:26. Thou shalt make also five bars of setim wood, to hold together the boards on one side of the tabernacle.
+
+26:27. And five others on the other side, and as many at the west side:
+
+26:28. And they shall be put along by the midst of the boards, from one end to the other.
+
+26:29. The boards also themselves thou shalt overlay with gold, and shalt cast rings of gold to be set upon them, for places for the bars to hold together the boardwork: which bars thou shalt cover with plates of gold.
+
+26:30. And thou shalt rear up the tabernacle according to the pattern that was shewn thee in the mount.
+
+26:31. Thou shalt make also a veil of violet, and purple, and scarlet twice dyed, and fine twisted linen, wrought with embroidered work and goodly variety:
+
+26:32. And thou shalt hang it up before four pillars of setim wood, which themselves also shall be overlaid with gold, and shall have heads of gold, but sockets of silver.
+
+26:33. And the veil shall be hanged on with rings, and within it thou shalt put the ark of the testimony, and the sanctuary and the holy of the holies shall be divided with it.
+
+The sanctuary, etc.... That part of the tabernacle, which was without the veil, into which the priests daily entered, is here called the sanctuary, or holy place; that part which was within the veil, into which no one but the high priest ever went, and he but once a year, is called the holy of holies, (literally, the sanctuary of the sanctuaries,) as being the most holy of all holy places.
+
+26:34. And thou shalt set the propitiatory upon the ark of the testimony, in the holy of holies.
+
+26:35. And the table without the veil, and over against the table the candlestick in the south side of the tabernacle: for the table shall stand in the north side.
+
+26:36. Thou shalt make also a hanging in the entrance of the tabernacle of violet, and purple, and scarlet twice dyed, and fine twisted linen with embroidered work.
+
+26:37. And thou shalt overlay with gold five pillars of setim wood, before which the hanging shall be drawn: their heads shall be of gold, and the sockets of brass.
+
+Exodus Chapter 27
+The altar; and the court of the tabernacle with its hangings and pillars. Provision of oil for lamps.
+
+27:1. Thou shalt make also an altar of setim wood, which shall be five cubits long, and as many broad, that is four square, and three cubits high.
+
+27:2. And there shall be horns at the four corners of the same: and thou shalt cover it with brass.
+
+27:3. And thou shalt make for the uses thereof pans to receive the ashes, and tongs and fleshhooks, and firepans: all its vessels thou shalt make of brass.
+
+27:4. And a grate of brass in manner of a net; at the four corners of which, shall be four rings of brass,
+
+27:5. Which thou shalt put under the hearth of the altar: and the grate shall be even to the midst of the altar.
+
+27:6. Thou shalt make also two bars for the altar, of setim wood, which thou shalt cover with plates of brass:
+
+27:7. And thou shalt draw them through rings, and they shall be on both sides of the altar to carry it.
+
+27:8. Thou shalt not make it solid, but empty and hollow in the inside, as it was shewn thee in the mount.
+
+27:9. Thou shalt make also the court of the tabernacle, in the south side whereof southward there shall be hangings of fine twisted linen of a hundred cubits long for one side.
+
+27:10. And twenty pillars with as many sockets of brass, the heads of which, with their engraving, shall be of silver.
+
+27:11. In like manner also on the north side there shall be hangings of a hundred cubits long, twenty pillars, and as many sockets of brass, and their heads with their engraving of silver.
+
+27:12. But in the breadth of the court, that looketh to the west, there shall be hangings of fifty cubits, and ten pillars, and as many sockets.
+
+27:13. In that breadth also of the court, which looketh to the east, there shall be fifty cubits.
+
+27:14. In which there shall be for one side, hangings of fifteen cubits, and three pillars, and as many sockets.
+
+27:15. And in the other side, there shall be hangings of fifteen cubits, with three pillars, and as many sockets.
+
+27:16. And in the entrance of the court there shall be made a hanging of twenty cubits of violet and purple, and scarlet twice dyed, and fine twisted linen, with embroidered work: it shall have four pillars, with as many sockets.
+
+27:17. All the pillars of the court round about shall be garnished with plates of silver, silver heads, and sockets of brass.
+
+27:18. In length the court shall take up a hundred cubits, in breadth fifty, the height shall be of five cubits, and it shall be made of fine twisted linen, and shall have sockets of brass.
+
+27:19. All the vessels of the tabernacle for all uses and ceremonies, and the pins both of it and of the court, thou shalt make of brass.
+
+27:20. Command the children of Israel that they bring thee the purest oil of the olives, and beaten with a pestle: that a lamp may burn always,
+
+27:21. In the tabernacle of the testimony, without the veil that hangs before the testimony. And Aaron and his sons shall order it, that it may give light before the Lord until the morning. It shall be a perpetual observance throughout their successions among the children of Israel.
+
+Exodus Chapter 28
+The holy vestments for Aaron and his sons.
+
+28:1. Take unto thee also Aaron thy brother with his sons, from among the children of Israel, that they may minister to me in the priest’s office: Aaron, Nadab, and Abiu, Eleazar, and Ithamar.
+
+28:2. And thou shalt make a holy vesture for Aaron, thy brother, for glory and for beauty.
+
+28:3. And thou shalt speak to all the wise of heart, whom I have filled with the spirit of wisdom, that they may make Aaron’s vestments, in which he being consecrated, may minister to me.
+
+28:4. And these shall be the vestments that they shall make: A rational and an ephod, a tunic and a strait linen garment, a mitre and a girdle. They shall make the holy vestments for thy brother Aaron and his sons, that they may do the office of priesthood unto me.
+
+28:5. And they shall take gold, and violet, and purple, and scarlet twice dyed, and fine linen.
+
+28:6. And they shall make the ephod of gold, and violet, and purple, and scarlet twice dyed, and fine twisted linen, embroidered with divers colours.
+
+28:7. It shall have the two edges joined in the top on both sides, that they may be closed together.
+
+28:8. The very workmanship also, and all the variety of the work, shall be of gold, and violet, and purple, and scarlet twice dyed, and fine twisted linen.
+
+28:9. And thou shalt take two onyx stones, and shalt grave on them the names of the children of Israel:
+
+28:10. Six names on one stone, and the other six on the other, according to the order of their birth.
+
+28:11. With the work of an engraver, and the graving of a jeweller, thou shalt engrave them with the names of the children of Israel, set in gold and compassed about:
+
+28:12. And thou shalt put them in both sides of the ephod, a memorial for the children of Israel. And Aaron shall bear their names before the Lord upon both shoulders, for a remembrance.
+
+28:13. Thou shalt make also hooks of gold.
+
+28:14. And two little chains of the purest gold, linked one to another, which thou shalt put into the hooks.
+
+28:15. And thou shalt make the rational of judgment with embroidered work of divers colours, according to the workmanship of the ephod, of gold, violet, and purple, and scarlet twice dyed, and fine twisted linen.
+
+The rational of judgment.... This part of the priest’s attire, which he wore at his breast, was called the rational of judgment; partly because it admonished both priest and people of their duty to God, by carrying the names of all their tribes in his presence; and by the Urim and the Thummim, that is, doctrine and truth, which were written upon it; and partly because it gave divine answers and oracles, as if it were rational and endowed with judgment.
+
+28:16. It shall be four square and doubled: it shall be the measure of a span both in length and in breadth.
+
+28:17. And thou shalt set in it four rows of stones . In the first row shall be a sardius stone, and a topaz, and an emerald:
+
+28:18. In the second a carbuncle, a sapphire, and a jasper:
+
+28:19. In the third a ligurius, an agate, and an amethyst:
+
+28:20. In the fourth a chrysolite, an onyx, and a beryl. They shall be set in gold by their rows.
+
+28:21. And they shall have the names of the children of Israel: with twelve names shall they be engraved, each stone with the name of one according to the twelve tribes.
+
+28:22. And thou shalt make on the rational chains, linked one to another, of the purest gold:
+
+28:23. And two rings of gold, which thou shalt put in the two ends at the top of the rational.
+
+28:24. And the golden chains thou shalt join to the rings, that are in the ends thereof.
+
+28:25. And the ends of the chains themselves, thou shalt join together with two hooks, on both sides of the ephod, which is towards the rational.
+
+28:26. Thou shalt make also two rings of gold, which thou shalt put in the top parts of the rational, in the borders that are over against the ephod, and look towards the back parts thereof.
+
+28:27. Moreover also other two rings of gold, which are to be set on each side of the ephod beneath, that looketh towards the nether joining, that the rational may be fitted with the ephod,
+
+28:28. And may be fastened by the rings thereof unto the rings of the ephod with a violet fillet, that the joining artificially wrought may continue, and the rational and the ephod may not be loosed one from the other.
+
+28:29. And Aaron shall bear the names of the children of Israel in the rational of judgment upon his breast, when he shall enter into the sanctuary, a memorial before the Lord for ever.
+
+28:30. And thou shalt put in the rational of judgment doctrine and truth, which shall be on Aaron’s breast, when he shall go in before the Lord: and he shall bear the judgment of the children of Israel on his breast, in the sight of the Lord always.
+
+Doctrine and Truth.... Hebrew, Urim and Thummim: illuminations and perfections. These words, written on the rational, seem to signify the light of doctrine and the integrity of life, with which the priests of God ought to approach him.
+
+28:31. And thou shalt make the tunic of the ephod all of violet,
+
+28:32. In the midst whereof above shall be a hole for the head, and a border round about it woven, as is wont to be made in the outmost parts of garments, that it may not easily be broken.
+
+28:33. And beneath at the feet of the same tunic, round about, thou shalt make as it were pomegranates, of violet, and purple, and scarlet twice dyed, with little bells set between:
+
+28:34. So that there shall be a golden bell and a pomegranate, and again another golden bell and a pomegranate.
+
+28:35. And Aaron shall be vested with it in the office of his ministry, that the sound may be heard, when he goeth in and cometh out of the sanctuary, in the sight of the Lord, and that he may not die.
+
+28:36. Thou shalt make also a plate of the purest gold: wherein thou shalt grave with engraver’s work, Holy to the Lord.
+
+28:37. And thou shalt tie it with a violet fillet, and it shall be upon the mitre,
+
+28:38. Hanging over the forehead of the high priest. And Aaron shall bear the iniquities of those things, which the children of Israel have offered and sanctified, in all their gifts and offerings. And the plate shall be always on his forehead, that the Lord may be well pleased with them.
+
+28:39. And thou shalt gird the tunic with fine linen, and thou shalt make a fine linen mitre, and a girdle of embroidered work.
+
+28:40. Moreover, for the sons of Aaron thou shalt prepare linen tunics, and girdles and mitres for glory and beauty:
+
+28:41. And with all these things thou shalt vest Aaron thy brother, and his sons with him. And thou shalt consecrate the hands of them all, and shalt sanctify them, that they may do the office of priesthood unto me.
+
+28:42. Thou shalt make also linen breeches, to cover the flesh of their nakedness, from the reins to the thighs:
+
+28:43. And Aaron and his sons shall use them when they shall go into the tabernacle of the testimony, or when they approach to the altar to minister in the sanctuary, lest being guilty of iniquity they die. It shall be a law for ever to Aaron, and to his seed after him.
+
+Exodus Chapter 29
+The manner of consecrating Aaron and other priests; the institution of the daily sacrifice of two lambs, one in the morning, the other at evening.
+
+29:1. And thou shalt also do this, that they may be consecrated to me in priesthood. Take a calf from the herd, and two rams without blemish,
+
+29:2. And unleavened bread, and a cake without leaven, tempered with oil, wafers also unleavened, anointed with oil: thou shalt make them all of wheaten flour.
+
+29:3. And thou shalt put them in a basket, and offer them: and the calf and the two rams.
+
+29:4. And thou shalt bring Aaron and his sons to the door of the tabernacle of the testimony. And when thou hast washed the father and his sons with water,
+
+29:5. Thou shalt clothe Aaron with his vestments, that is, with the linen garment and the tunic, and the ephod and the rational, which thou shalt gird with the girdle.
+
+29:6. And thou shalt put the mitre upon his head, and the holy plate upon the mitre,
+
+29:7. And thou shalt pour the oil of unction upon his head: and by this rite shall he be consecrated.
+
+29:8. Thou shalt bring his sons also, and shalt put on them the linen tunics, and gird them with a girdle:
+
+29:9. To wit, Aaron and his children, and thou shalt put mitres upon them; and they shall be priests to me by a perpetual ordinance. After thou shalt have consecrated their hands,
+
+29:10. Thou shalt present also the calf before the tabernacle of the testimony. And Aaron and his sons shall lay their hands upon his head,
+
+29:11. And thou shalt kill him in the sight of the Lord, beside the door of the tabernacle of the testimony.
+
+29:12. And taking some of the blood of the calf, thou shalt put it upon the horns of the altar with thy finger, and the rest of the blood thou shalt pour at the bottom thereof.
+
+29:13. Thou shalt take also all the fat that covereth the entrails, and the caul of the liver, and the two kidneys, and the fat that is upon them, and shalt offer a burnt offering upon the altar:
+
+29:14. But the flesh of the calf, and the hide and the dung, thou shalt burn abroad, without the camp, because it is for sin.
+
+29:15. Thou shalt take also one ram, upon the head whereof Aaron and his sons shall lay their hands.
+
+29:16. And when thou hast killed him, thou shalt take of the blood thereof, and pour round about the altar.
+
+29:17. And thou shalt cut the ram in pieces, and having washed his entrails and feet, thou shalt put them upon the flesh that is cut in pieces, and upon his head.
+
+29:18. And thou shalt offer the whole ram for a burnt offering upon the altar: it is an oblation to the Lord, a most sweet savour of the victim of the Lord.
+
+29:19. Thou shalt take also the other ram, upon whose head Aaron and his sons shall lay their hands.
+
+29:20. And when thou hast sacrificed him, thou shalt take of his blood, and put upon the tip of the right ear of Aaron and of his sons, and upon the thumbs and great toes of their right hand and foot, and thou shalt pour the blood upon the altar round about.
+
+29:21. And when thou hast taken of the blood that is upon the altar, and of the oil of unction, thou shalt sprinkle Aaron and his vesture, his sons and their vestments. And after they and their vestments are consecrated,
+
+29:22. Thou shalt take the fat of the ram, and the rump, and the fat that covereth the lungs, and the caul of the liver, and the two kidneys, and the fat that is upon them, and the right shoulder, because it is the ram of consecration:
+
+29:23. And one roll of bread, a cake tempered with oil, a wafer out of the basket of unleavened bread, which is set in the sight of the Lord:
+
+29:24. And thou shalt put all upon the hands of Aaron and of his sons, and shalt sanctify them elevating before the Lord.
+
+29:25. And thou shalt take all from their hands; and shalt burn them upon the altar for a holocaust, a most sweet savour in the sight of the Lord, because it is his oblation.
+
+29:26. Thou shalt take also the breast of the ram, wherewith Aaron was consecrated, and elevating it thou shalt sanctify it before the Lord, and it shall fall to thy share.
+
+29:27. And thou shalt sanctify both the consecrated breast, and the shoulder that thou didst separate of the ram,
+
+29:28. Wherewith Aaron was consecrated and his sons, and they shall fall to Aaron’s share, and his sons’, by a perpetual right from the children of Israel: because they are the choicest and the beginnings of their peace victims which they offer to the Lord.
+
+29:29. And the holy vesture, which Aaron shall use, his sons shall have after him, that they may be anointed, and their hands consecrated in it.
+
+29:30. He of his sons that shall be appointed high priest in his stead, and that shall enter into the tabernacle of the testimony to minister in the sanctuary, shall wear it seven days.
+
+29:31. And thou shalt take the ram of the consecration, and shalt boil the flesh thereof in the holy place:
+
+29:32. And Aaron and his sons shall eat it. The loaves also, that are in the basket, they shall eat in the entry of the tabernacle of the testimony,
+
+29:33. That it may be an atoning sacrifice, and the hands of the offerers may be sanctified. A stranger shall not eat of them, because they are holy.
+
+29:34. And if there remain of the consecrated flesh, or of the bread, till the morning, thou shalt burn the remainder with fire: they shall not be eaten, because they are sanctified.
+
+29:35. All that I have commanded thee, thou shalt do unto Aaron and his sons. Seven days shalt thou consecrate their hands:
+
+29:36. And thou shalt offer a calf for sin every day for expiation. And thou shalt cleanse the altar when thou hast offered the victim of expiation, and shalt anoint it to sanctify it.
+
+29:37. Seven days shalt thou expiate the altar and sanctify it, and it shall be most holy. Every one, that shall touch it, shall be holy.
+
+29:38. This is what thou shalt sacrifice upon the altar: Two lambs of a year old every day continually,
+
+29:39. One lamb in the morning, and another in the evening.
+
+29:40. With one lamb a tenth part of flour tempered with beaten oil, of the fourth part of a hin, and wine for libation of the same measure.
+
+29:41. And the other lamb thou shalt offer in the evening, according to the rite of the morning oblation, and according to what we have said, for a savour of sweetness:
+
+29:42. It is a sacrifice to the Lord, by perpetual oblation unto your generations, at the door of the tabernacle of the testimony before the Lord, where I will appoint to speak unto thee.
+
+29:43. And there will I command the children of Israel, and the altar shall be sanctified by my glory.
+
+29:44. I will sanctify also the tabernacle of the testimony with the altar, and Aaron with his sons, to do the office of priesthood unto me.
+
+29:45. And I will dwell in the midst of the children of Israel, and will be their God:
+
+29:46. And they shall know that I am the Lord their God, who have brought them out of the land of Egypt, that I might abide among them, I the Lord their God.
+
+Exodus Chapter 30
+The altar of incense: money to be gathered for the use of the tabernacle: the brazen laver: the holy oil of unction, and the composition of the perfume.
+
+30:1. Thou shalt make also an altar to burn incense, of setim wood.
+
+An altar to burn incense.... This burning of incense was an emblem of prayer, ascending to God from an inflamed heart. See Ps. 140.2; Apoc. 5.8, and 8.4.
+
+30:2. It shall be a cubit in length, and another in breadth, that is, four square, and two in height. Horns shall go out of the same.
+
+30:3. And thou shalt overlay it with the purest gold, as well the grate thereof, as the walls round about, and the horns. And thou shalt make to it a crown of gold round about,
+
+30:4. And two golden rings under the crown on either side, that the bars may be put into them, and the altar be carried.
+
+30:5. And thou shalt make the bars also of setim wood, and shalt overlay them with gold.
+
+30:6. And thou shalt set the altar over against the veil, that hangeth before the ark of the testimony before the propitiatory wherewith the testimony is covered, where I will speak to thee.
+
+30:7. And Aaron shall burn sweet smelling incense upon it in the morning. When he shall dress the lamps, he shall burn it:
+
+30:8. And when he shall place them in the evening, he shall burn an everlasting incense before the Lord throughout your generations.
+
+30:9. You shall not offer upon it incense of another composition, nor oblation, and victim, neither shall you offer libations.
+
+30:10. And Aaron shall pray upon the horns thereof once a year, with the blood of that which was offered for sin; and shall make atonement upon it in your generations. It shall be most holy to the Lord.
+
+30:11. And the Lord spoke to Moses, saying:
+
+30:12. When thou shalt take the sum of the children of Israel, according to their number, every one of them shall give a price for their souls to the Lord, and there shall be no scourge among them, when they shall be reckoned.
+
+30:13. And this shall every one give that passeth at the naming, half a sicle according to the standard of the temple. A sicle hath twenty obols. Half a sicle shall be offered to the Lord.
+
+Half a sicle.... A sicle or shekel of silver, (which was also called a stater,) according to the standard or weight of the sanctuary, which was the most just and exact, was half an ounce of silver, that is, about half a crown of English money. The obol, or gerah, was about three halfpence.
+
+30:14. He that is counted in the number from twenty years and upwards, shall give the price.
+
+30:15. The rich man shall not add to half a sicle, and the poor man shall diminish nothing.
+
+30:16. And the money received, which was contributed by the children of Israel, thou shalt deliver unto the uses of the tabernacle of the testimony, that it may be a memorial of them before the Lord, and he may be merciful to their souls.
+
+30:17. And the Lord spoke to Moses, saying:
+
+30:18. Thou shalt make also a brazen laver with its foot to wash in: and thou shalt set it between the tabernacle of the testimony and the altar. And water being put into it:
+
+30:19. Aaron and his sons shall wash their hands and feet in it:
+
+30:20. When they are going into the tabernacle of the testimony, and when they are to come to the altar, to offer on it incense to the Lord,
+
+30:21. Lest perhaps they die. It shall be an everlasting law to him, and to his seed by successions.
+
+30:22. And the Lord spoke to Moses,
+
+30:23. Saying: Take spices, of principal and chosen myrrh five hundred sicles, and of cinnamon half so much; that is, two hundred and fifty sicles, of calamus in like manner two hundred and fifty,
+
+30:24. And of cassia five hundred sicles by the weight of the sanctuary, of oil of olives the measure hin:
+
+30:25. And thou shalt make the holy oil of unction, an ointment compounded after the art of the perfumer,
+
+30:26. And therewith thou shalt anoint the tabernacle of the testimony, and the ark of the testament,
+
+30:27. And the table with the vessels thereof, the candlestick and furniture thereof, the altars of incense,
+
+30:28. And of holocaust, and all the furniture that belongeth to the service of them.
+
+30:29. And thou shalt sanctify all, and they shall be most holy: he that shall touch them shall be sanctified.
+
+30:30. Thou shalt anoint Aaron and his sons, and shalt sanctify them, that they may do the office of priesthood unto me.
+
+30:31. And thou shalt say to the children of Israel: This oil of unction shall be holy unto me throughout your generations.
+
+30:32. The flesh of man shall not be anointed therewith, and you shall make none other of the same composition, because it is sanctified, and shall be holy unto you.
+
+30:33. What man soever shall compound such, and shall give thereof to a stranger, he shall be cut off from his people.
+
+30:34. And the Lord said to Moses: Take unto thee spices, stacte, and onycha, galbanum of sweet savour, and the clearest frankincense, all shall be of equal weight.
+
+30:35. And thou shalt make incense compounded by the work of the perfumer, well tempered together, and pure, and most worthy of sanctification.
+
+30:36. And when thou hast beaten all into very small powder, thou shalt set of it before the tabernacle of the testimony, in the place where I will appear to thee. Most holy shall this incense be unto you.
+
+30:37. You shall not make such a composition for your own uses, because it is holy to the Lord.
+
+30:38. What man soever shall make the like, to enjoy the smell thereof, he shall perish out of his people.
+
+Exodus Chapter 31
+Beseleel and Ooliab are appointed by the Lord to make the tabernacle, and the things belonging thereto. The observation of the sabbath day is again commanded. And the Lord delivereth to Moses two tables written with the finger of God.
+
+31:1. And the Lord spoke to Moses, saying:
+
+31:2. Behold, I have called by name Beseleel the son of Uri, the son of Hur, of the tribe of Juda,
+
+31:3. And I have filled him with the spirit of God, with wisdom and understanding, and knowledge in all manner of work,
+
+31:4. To devise whatsoever may be artificially made of gold, and silver, and brass,
+
+31:5. Of marble, and precious stones, and variety of wood.
+
+31:6. And I have given him for his companion Ooliab, the son of Achisamech, of the tribe of Dan. And I have put wisdom in the heart of every skilful man, that they may make all things which I have commanded thee,
+
+31:7. The tabernacle of the covenant, and the ark of the testimony, and the propitiatory, that is over it, and all the vessels of the tabernacle,
+
+31:8. And the table and the vessels thereof, the most pure candlestick with the vessels thereof, and the altars of incense,
+
+31:9. And of holocaust, and all their vessels, the laver with its foot,
+
+31:10. The holy vestments in the ministry for Aaron the priest, and for his sons, that they may execute their office, about the sacred things:
+
+31:11. The oil of unction, and the incense of spices in the sanctuary, all things which I have commanded thee, shall they make.
+
+31:12. And the Lord spoke to Moses, saying:
+
+31:13. Speak to the children of Israel, and thou shalt say to them: See that you keep my sabbath; because it is a sign between me and you in your generations that you may know that I am the Lord, who sanctify you.
+
+31:14. keep you my sabbath: for it is holy unto you: he that shall profane it, shall be put to death: he that shall do any work in it, his soul shall perish out of the midst of his people.
+
+31:15. Six days shall you do work: in the seventh day is the sabbath, the rest holy to the Lord. Every one that shall do any work on this day, shall die.
+
+31:16. Let the children of Israel keep the sabbath, and celebrate it in their generations.
+
+31:17. It is an everlasting covenant, and a perpetual sign between me and the children of Israel. For in six days the Lord made heaven and earth, and in the seventh he ceased from work.
+
+31:18. And the Lord, when he had ended these words in Mount Sinai, gave to Moses two stone tables of testimony, written with the finger of God.
+
+Exodus Chapter 32
+The people fall into idolatry. Moses prayeth for them. He breaketh the tables: destroyeth the idol: blameth Aaron, and causeth many of the idolaters to be slain.
+
+32:1. And the people seeing that Moses delayed to come down from the mount, gathering together against Aaron, said: Arise, make us gods, that may go before us: For as to this Moses, the man that brought us out of the land of Egypt, we know not what has befallen him.
+
+32:2. And Aaron said to them: Take the golden earrings from the ears of your wives, and your sons and daughters, and bring them to me.
+
+32:3. And the people did what he had commanded, bringing the earrings to Aaron.
+
+32:4. And when he had received them, he fashioned them by founders’ work, and made of them a molten calf. And they said: These are thy gods, O Israel, that have brought thee out of the land of Egypt.
+
+32:5. And when Aaron saw this, he built an altar before it, and made proclamation by a crier’s voice, saying To morrow is the solemnity of the Lord.
+
+32:6. And rising in the morning, they offered holocausts, and peace victims, and the people sat down to eat and drink, and they rose up to play.
+
+32:7. And the Lord spoke to Moses, saying: Go, get thee down: thy people, which thou hast brought out of the land of Egypt, hath sinned.
+
+32:8. They have quickly strayed from the way which thou didst shew them: and they have made to themselves a molten calf, and have adored it, and sacrificing victims to it, have said: These are thy gods, O Israel, that have brought thee out of the land of Egypt.
+
+32:9. And again the Lord said to Moses: I see that this people is stiffnecked:
+
+32:10. Let me alone, that my wrath may be kindled against them, and that I may destroy them, and I will make of thee a great nation.
+
+32:11. But Moses besought the Lord his God, saying: Why, O Lord, is thy indignation enkindled against thy people, whom thou hast brought out of the land of Egypt, with great power, and with a mighty hand?
+
+32:12. Let not the Egyptians say, I beseech thee: He craftily brought them out, that he might kill them in the mountains, and destroy them from the earth: let thy anger cease, and be appeased upon the wickedness of thy people.
+
+32:13. Remember Abraham, Isaac, and Israel, thy servants, to whom thou sworest by thy own self, saying: I will multiply your seed as the stars of heaven: and this whole land that I have spoken of, I will give to your seed, and you shall possess it for ever:
+
+32:14. And the Lord was appeased from doing the evil which he had spoken against his people.
+
+32:15. And Moses returned from the mount, carrying the two tables of the testimony in his hand, written on both sides,
+
+32:16. And made by the work of God; the writing also of God was graven in the tables.
+
+32:17. And Josue hearing the noise of the people shouting, said to Moses: The noise of battle is heard in the camp.
+
+32:18. But he answered: It is not the cry of men encouraging to fight, nor the shout of men compelling to flee: but I hear the voice of singers.
+
+32:19. And when he came nigh to the camp, he saw the calf, and the dances: and being very angry, he threw the tables out of his hand, and broke them at the foot of the mount:
+
+32:20. And laying hold of the calf which they had made, he burnt it, and beat it to powder, which he strewed into water, and gave thereof to the children of Israel to drink.
+
+32:21. And he said to Aaron: What has this people done to thee, that thou shouldst bring upon them a most heinous sin?
+
+32:22. And he answered him: Let not my lord be offended; for thou knowest this people, that they are prone to evil.
+
+32:23. They said to me: make us gods, that may go before us; for as to this Moses, who brought us forth out of the land of Egypt, we know not what is befallen him.
+
+32:24. And I said to them: Which of you hath any gold? and they took and brought it to me; and I cast it into the fire, and this calf came out.
+
+32:25. And when Moses saw that the people were naked, (for Aaron had stripped them by occasion of the shame of the filth, and had set them naked among their enemies)
+
+Naked.... Having lost not only their gold, and their honour, but what was worst of all, being stripped also of the grace of God, and having lost him.—The shame of the filth.... That is, of the idol, which they had taken for their god. It is the usual phrase of the scripture to call idols filth and abominations.
+
+32:26. Then standing in the gate of the camp, he said: If any man be on the Lord’s side, let him join with me. And all the sons of Levi gathered themselves together unto him:
+
+32:27. And he said to them: Thus saith the Lord God of Israel: Put every man his sword upon his thigh: go, and return from gate to gate through the midst of the camp, and let every man kill his brother, and friend, and neighbour.
+
+32:28. And the sons of Levi did according to the words of Moses, and there were slain that day about three and twenty thousand men.
+
+32:29. And Moses said: You have consecrated your hands this day to the Lord, every man in his son and in his brother, that a blessing may be given to you.
+
+32:30. And when the next day was come, Moses spoke to the people: You have sinned a very great sin: I will go up to the Lord, if by any means I may be able to entreat him for your crime.
+
+32:31. And returning to the Lord, he said: I beseech thee: this people hath sinned a heinous sin, and they have made to themselves gods of gold: either forgive them this trespass,
+
+32:32. Or if thou do not, strike me out of the book that thou hast written.
+
+32:33. And the Lord answered him: He that hath sinned against me, him will I strike out of my book:
+
+32:34. But go thou, and lead this people whither I have told thee: my angel shall go before thee. And I in the day of revenge will visit this sin also of theirs.
+
+32:35. The Lord therefore struck the people for the guilt, on occasion of the calf which Aaron had made.
+
+Exodus Chapter 33
+The people mourn for their sin. Moses pitcheth the tabernacle without the camp. He converseth familiarly with God. Desireth to see his glory.
+
+33:1. And the Lord spoke to Moses, saying: Go, get thee up from this place, thou and thy people which thou hast brought out of the land of Egypt, into the land concerning which I swore to Abraham, Isaac, and Jacob, saying: To thy seed I will give it:
+
+33:2. And I will send an angel before thee, that I may cast out the Chanaanite, and the Amorrhite, and the Hethite, and the Pherezite, and the Hevite, and the Jebusite,
+
+33:3. That thou mayst enter into the land that floweth with milk and honey. For I will not go up with thee, because thou art a stiffnecked people; lest I destroy thee in the way.
+
+33:4. And the people hearing these very bad tidings, mourned: and no man put on his ornaments according to custom.
+
+33:5. And the Lord said to Moses: Say to the children of Israel: Thou art a stiffnecked people, once I shall come up in the midst of thee, and shall destroy thee. Now presently lay aside thy ornaments, that I may know what to do to thee.
+
+33:6. So the children of Israel laid aside their ornaments by Mount Horeb.
+
+33:7. Moses also taking the tabernacle, pitched it without the camp afar off, and called the name thereof, The tabernacle of the covenant. And all the people, that had any question, went forth to the tabernacle of the covenant, without the camp.
+
+33:8. And when Moses went forth to the tabernacle, all the people rose up, and every one stood in the door of his pavilion, and they beheld the back of Moses, till he went into the tabernacle.
+
+33:9. And when he was gone into the tabernacle of the covenant, the pillar of the cloud came down, and stood at the door, and he spoke with Moses.
+
+33:10. And all saw that the pillar of the cloud stood at the door of the tabernacle. And they stood and worshipped at the doors of their tent.
+
+33:11. And the Lord spoke to Moses face to face, as a man is wont to speak to his friend. And when he returned into the camp, his servant Josue, the son of Nun, a young man, departed not from the tabernacle.
+
+Face to face.... That is, in a most familiar manner. Though as we learn from this very chapter, Moses could not see the face of the Lord.
+
+33:12. And Moses said to the Lord: Thou commandest me to lead forth this people; and thou dost not let me know whom thou wilt send with me, especially whereas thou hast said: I know thee by name, and thou hast found favour in my sight.
+
+I know thee by name.... In the language of the scriptures, God is said to know such as he approves and loves: and to know by name, those whom he favours in a most singular manner, as he did his servant Moses.
+
+33:13. If therefore I have found favour in thy sight, shew me thy face, that I may know thee, and may find grace before thy eyes: look upon thy people this nation.
+
+33:14. And the Lord said: My face shall go before thee, and I will give thee rest.
+
+33:15. And Moses said: If thou thyself dost not go before, bring us not out of this place.
+
+33:16. For how shall we be able to know, I and thy people, that we have found grace in thy sight, unless thou walk with us, that we may be glorified by all people that dwell upon the earth?
+
+33:17. And the Lord said to Moses: This word also, which thou hast spoken, will I do; for thou hast found grace before me, and thee I have known by name.
+
+33:18. And he said: Shew me thy glory.
+
+33:19. He answered: I will shew thee all good, and I will proclaim in the name of the Lord before thee: and I will have mercy on whom I will, and I will be merciful to whom it shall please me.
+
+33:20. And again he said: Thou canst not see my face: for man shall not see me, and live.
+
+33:21. And again he said: Behold there is a place with me, and thou shalt stand upon the rock.
+
+33:22. And when my glory shall pass, I will set thee in a hole of the rock, and protect thee with my right hand till I pass:
+
+33:23. And I will take away my hand, and thou shalt see my back parts: but my face thou canst not see.
+
+See my back parts.... The Lord by his angel, usually spoke to Moses in the pillar of the cloud; so that he could not see the glory of him that spoke familiarly with him. In the vision here mentioned he was allowed to see something of him, in an assumed corporeal form: not in the face, the rays of which were too bright for mortal eye to bear, but to view him as it were behind, when his face was turned from him.
+
+Exodus Chapter 34
+The tables are renewed: all society with the Chanaanites is forbid: some precepts concerning the firstborn, the sabbath, and other feasts: after forty days’ fast, Moses returneth to the people with the commandments, and his face appearing horned with rays of light, he covereth it, whensoever he speaketh to the people.
+
+34:1. And after this he said: Hew thee two tables of stone like unto the former, and I will write upon them the words, which were in the tables, which thou brokest.
+
+34:2. Be ready in the morning, that thou mayst forthwith go up into Mount Sinai, and thou shalt stand with me upon the top of the mount.
+
+34:3. Let no man go up with thee, and let not any man be seen throughout all the mount; neither let the oxen nor the sheep feed over against it.
+
+34:4. Then he cut out two tables of stone, such as had been before; and rising very early he went up into the Mount Sinai, as the Lord had commanded him, carrying with him the tables.
+
+34:5. And when the Lord was come down in a cloud, Moses stood with him, calling upon the name of the Lord.
+
+34:6. And when he passed before him, he said: O the Lord, the Lord God, merciful and gracious, patient and of much compassion, and true,
+
+34:7. Who keepest mercy unto thousands: who takest away iniquity, and wickedness, and sin, and no man of himself is innocent before thee. Who renderest the iniquity of the fathers to the children, and to the grandchildren unto the third and fourth generation.
+
+34:8. And Moses making haste, bowed down prostrate unto the earth, and adoring,
+
+34:9. Said: If I have found grace in thy sight, O Lord, I beseech thee that thou wilt go with us, (for it is a stiffnecked people) and take away our iniquities and sin, and possess us.
+
+34:10. The Lord answered: I will make a covenant in the sight of all, I will do signs such as were never seen upon the earth, nor in any nations; that this people, in the midst of whom thou art, may see the terrible work of the Lord which I will do.
+
+34:11. Observe all things which this day I command thee: I myself will drive out before thy face the Amorrhite, and the Chanaanite, and the Hethite, and the Pherezite, and the Hevite, and the Jebusite.
+
+34:12. Beware thou never join in friendship with the inhabitants of that land, which may be thy ruin:
+
+34:13. But destroy their altars, break their statues and cut down their groves:
+
+34:14. Adore not any strange god. The Lord his name is jealous, he is a jealous God.
+
+34:15. Make no covenant with the men of those countries; lest, when they have committed fornication with their gods, and have adored their idols, some one call thee to eat of the things sacrificed.
+
+34:16. Neither shalt thou take of their daughters a wife for thy son, lest after they themselves have committed fornication, they make thy sons also to commit fornication with their gods.
+
+34:17. Thou shalt not make to thyself any molten gods.
+
+34:18. Thou shalt keep the feast of the unleavened bread. Seven days shalt thou eat unleavened bread, as I commanded thee in the time of the month of the new corn: for in the month of the spring time thou camest out from Egypt.
+
+34:19. All of the male kind that openeth the womb, shall be mine. Of all beasts; both of oxen and of sheep, it shall be mine.
+
+34:20. The firstling of an ass thou shalt redeem with a sheep: but if thou wilt not give a price for it, it shall be slain. The firstborn of thy sons thou shalt redeem: neither shalt thou appear before me empty.
+
+34:21. Six days shalt thou work, the seventh day thou shalt cease to plough and to reap.
+
+34:22. Thou shalt keep the feast of weeks with the firstfruits of the corn of thy wheat harvest, and the feast when the time of the year returneth that all things are laid in.
+
+34:23. Three times in the year all thy males shall appear in the sight of the almighty Lord the God of Israel.
+
+34:24. For when I shall have taken away the nations from thy face, and shall have enlarged thy borders, no man shall lie in wait against thy land when thou shalt go up, and appear in the sight of the Lord thy God thrice in a year.
+
+34:25. Thou shalt not offer the blood of my sacrifice upon leaven; neither shall there remain in the morning any thing of the victim of the solemnity of the Phase.
+
+34:26. The first of the fruits of thy ground thou shalt offer in the house of the Lord thy God. Thou shalt not boil a kid in the milk of his dam.
+
+34:27. And the Lord said to Moses: Write thee these words, by which I have made a covenant both with thee and with Israel.
+
+34:28. And he was there with the Lord forty days and forty nights: he neither ate bread nor drank water, and he wrote upon the tables the ten words of the covenant.
+
+34:29. And when Moses came down from the Mount Sinai, he held the two tables of the testimony, and he knew not that his face was horned from the conversation of the Lord.
+
+Horned.... That is, shining, and sending forth rays of light like horns.
+
+34:30. And Aaron and the children of Israel seeing the face of Moses horned, were afraid to come near.
+
+34:31. And being called by him, they returned, both Aaron and the rulers of the congregation. And after that he spoke to them,
+
+34:32. And all the children of Israel came to him: and he gave them in commandment all that he had heard of the Lord on Mount Sinai.
+
+34:33. And having done speaking, he put a veil upon his face.
+
+34:34. But when he went in to the Lord, and spoke with him, he took it away until he came forth, and then he spoke to the children of Israel all things that had been commanded him.
+
+34:35. And they saw that the face of Moses when he came out was horned, but he covered his face again, if at any time he spoke to them.
+
+Exodus Chapter 35
+The sabbath. Offerings for making the tabernacle. Beseleel and Ooliab are called to the work.
+
+35:1. And all the multitude of the children of Israel being gathered together, he said to them: These are the things which the Lord hath commanded to be done:
+
+35:2. Six days you shall do work; the seventh day shall be holy unto you, the sabbath and the rest of the Lord: he that shall do any work on it, shall be put to death.
+
+35:3. You shall kindle no fire in any of your habitations on the sabbath day.
+
+35:4. And Moses said to all the assembly of the children of Israel: This is the word the Lord hath commanded, saying:
+
+35:5. Set aside with you firstfruits to the Lord. Let every one that is willing and hath a ready heart, offer them to the Lord: gold, and silver, and brass,
+
+35:6. Violet and purple, and scarlet twice dyed, and fine linen, goats’ hair,
+
+35:7. And rams’ skins dyed red, and violet coloured skins, setim wood,
+
+35:8. And oil to maintain lights, and to make ointment, and most sweet incense,
+
+35:9. Onyx stones, and precious stones, for the adorning of the ephod and the rational.
+
+35:10. Whosoever of you is wise, let him come, and make that which the Lord hath commanded:
+
+35:11. To wit, the tabernacle, and the roof thereof, and the cover, the rings, and the board-work with the bars, the pillars and the sockets:
+
+35:12. The ark and the staves, the propitiatory, and the veil that is drawn before it:
+
+35:13. The table with the bars and the vessels, and the loaves of proposition:
+
+35:14. The candlestick to bear up the lights, the vessels thereof and the lamps, and the oil for the nourishing of fires:
+
+35:15. The altar of incense, and the bars, and the oil of unction, and the incense of spices: the hanging at the door of the tabernacle:
+
+35:16. The altar of holocaust, and its grate of brass, with the bars and vessels thereof: the laver and its foot:
+
+35:17. The curtains of the court, with the pillars and the sockets, the hanging in the doors of the entry.
+
+35:18. The pins of the tabernacle, and of the court, with their little cords:
+
+35:19. The vestments that are to be used in the ministry of the sanctuary, the vesture of Aaron the high priest, and of his sons, to do the office of priesthood to me.
+
+35:20. And all the multitude of the children of Israel going out from the presence of Moses,
+
+35:21. Offered firstfruits to the Lord with a most ready and devout mind, to make the work of the tabernacle of the testimony. Whatever was necessary to the service and to the holy vestments,
+
+35:22. Both men and women gave bracelets and earrings, rings and tablets: every vessel of gold was set aside to be offered to the Lord.
+
+35:23. If any man had violet, and purple, and scarlet twice dyed, fine linen and goats’ hair, ramskins dyed red, and violet coloured skins,
+
+35:24. Metal of silver and brass, they offered it to the Lord, and setim wood for divers uses.
+
+35:25. The skilful women also gave such things as they had spun, violet, purple, and scarlet, and fine linen,
+
+35:26. And goats’ hair, giving all of their own accord.
+
+35:27. But the princes offered onyx stones, and precious stones, for the ephod and the rational,
+
+35:28. And spices and oil for the lights, and for the preparing of ointment, and to make the incense of most sweet savour.
+
+35:29. All, both men and women, with devout mind offered gifts, that the works might be done which the Lord had commanded by the hand of Moses. All the children of Israel dedicated voluntary offerings to the Lord.
+
+35:30. And Moses said to the children of Israel: Behold, the Lord hath called by name Beseleel, the son of Uri, the son of Hur, of the tribe of Juda,
+
+35:31. And hath filled him with the spirit of God, with wisdom and understanding, and knowledge, and all learning,
+
+35:32. To devise and to work in gold and silver and brass,
+
+35:33. And in engraving stones, and in carpenters’ work. Whatsoever can be devised artificially,
+
+35:34. He hath given in his heart: Ooliab also, the son of Achisamech, of the tribe of Dan:
+
+35:35. Both of them hath he instructed with wisdom, to do carpenters’ work, and tapestry, and embroidery in blue and purple, and scarlet twice dyed, and fine linen, and to weave all things, and to invent all new things.
+
+Exodus Chapter 36
+The offerings are delivered to the workmen, the curtains, coverings, boards, bars, veil, pillars, and hanging are made.
+
+36:1. Beseleel therefore, and Ooliab, and every wise man, to whom the Lord gave wisdom and understanding, to know how to work artificially, made the things that are necessary for the uses of the sanctuary, and which the Lord commanded.
+
+36:2. And when Moses had called them, and every skilful man, to whom the Lord had given wisdom, and such as of their own accord had offered themselves to the making of the work,
+
+36:3. He delivered all the offerings of the children of Israel unto them. And while they were earnest about the work, the people daily in the morning offered their vows.
+
+36:4. Whereupon the workmen being constrained to come,
+
+36:5. Said to Moses: The people offereth more than is necessary.
+
+36:6. Moses therefore commanded proclamation to be made by the crier’s voice: Let neither man nor woman offer any more for the work of the sanctuary. And so they ceased from offering gifts,
+
+36:7. Because the things that were offered did suffice, and were too much.
+
+36:8. And all the men that were wise of heart, to accomplish the work of the tabernacle, made ten curtains of twisted fine linen, and violet, and purple, and scarlet twice dyed, with varied work, and the art of embroidering:
+
+36:9. The length of one curtain was twenty-eight cubits, and the breadth four: all the curtains were of the same size.
+
+36:10. And he joined five curtains, one to another, and the other five he coupled one to another.
+
+36:11. He made also loops of violet in the edge of one curtain on both sides, and in the edge of the other curtain in like manner,
+
+36:12. That the loops might meet one against another, and might be joined each with the other.
+
+36:13. Whereupon also he cast fifty rings of gold, that might catch the loops of the curtains, and they might be made one tabernacle.
+
+36:14. He made also eleven curtains of goats’ hair, to cover the roof of the tabernacle:
+
+36:15. One curtain was thirty cubits long, and four cubits broad: all the curtains were of one measure.
+
+36:16. Five of which he joined apart, and the other six apart.
+
+36:17. And he made fifty loops in the edge of one curtain, and fifty in the edge of another curtain, that they might be joined one to another.
+
+36:18. And fifty buckles of brass wherewith the roof might be knit together, that of all the curtains there might be made one covering.
+
+36:19. He made also a cover for the tabernacle of rams’ skins dyed red; and another cover over that of violet skins.
+
+36:20. He made also the boards of the tabernacle of setim wood standing.
+
+36:21. The length of one board was ten cubits; and the breadth was one cubit and a half.
+
+36:22. There were two mortises throughout every board, that one might be joined to the other. And in this manner he made for all the boards of the tabernacle.
+
+36:23. Of which twenty were at the south side southward,
+
+36:24. With forty sockets of silver, two sockets were put under one board on the two sides of the corners, where the mortises of the sides end in the corners.
+
+36:25. At that side also of the tabernacle, that looketh towards the north, he made twenty boards,
+
+36:26. With forty sockets of silver, two sockets for every board.
+
+36:27. But against the west, to wit, at that side of the tabernacle, which looketh to the sea, he made six boards,
+
+36:28. And two others at each corner of the tabernacle behind:
+
+36:29. Which were also joined from beneath unto the top, and went together into one joint. Thus he did on both sides at the corners:
+
+36:30. So there were in all eight boards, and they had sixteen sockets of silver, to wit, two sockets under every board.
+
+36:31. He made also bars of setim wood, five to hold together the boards of one side of the tabernacle,
+
+36:32. And five others to join together the boards of the other side; and besides these, five other bars at the west side of the tabernacle towards the sea.
+
+36:33. He made also another bar, that might come by the midst of the boards from corner to corner.
+
+36:34. And the boards themselves he overlaid with gold casting for them sockets of silver. And their rings he made of gold, through which the bars might be drawn: and he covered the bars themselves with plates of gold.
+
+36:35. He made also a veil of violet, and purple, scarlet and fine twisted linen, varied and distinguished with embroidery:
+
+36:36. And four pillars of setim wood, which with their heads he overlaid with gold, casting for them sockets of silver.
+
+36:37. He made also a hanging in the entry of the tabernacle of violet, purple, scarlet, and fine twisted linen, with the work of an embroiderer.
+
+36:38. And five pillars with their heads, which he covered with gold, and their sockets he cast of brass.
+
+Exodus Chapter 37
+Beseleel maketh the ark: the propitiatory, and cherubims, the table, the candlestick, the lamps, and the altar of incense, and compoundeth the incense.
+
+37:1. And Beseleel made also, the ark of setim wood: it was two cubits and a half in length, and a cubit and a half in breadth, and the height was of one cubit and a half: and he overlaid it with the purest gold within and without.
+
+37:2. And he made to it a crown of gold round about,
+
+37:3. Casting four rings of gold at the four corners thereof: two rings in one side, and two in the other.
+
+37:4. And he made bars of setim wood, which he overlaid with gold,
+
+37:5. And he put them into the rings that were at the sides of the ark to carry it.
+
+37:6. He made also the propitiatory, that is, the oracle, of the purest gold, two cubits and a half in length, and a cubit and a half in breadth.
+
+37:7. Two cherubims also of beaten gold, which he set on the two sides of the propitiatory:
+
+37:8. One cherub in the top of one side, and the other cherub in the top of the other side: two cherubims at the two ends of the propitiatory,
+
+37:9. Spreading their wings, and covering the propitiatory, and looking one towards the other, and towards it.
+
+37:10. He made also the table of setim wood, in length two cubits, and in breadth one cubit, and in height it was a cubit and a half.
+
+37:11. And he overlaid it with the finest gold, and he made to it a golden ledge round about,
+
+37:12. And to the ledge itself he made a polished crown of gold, of four fingers breadth, and upon the same another golden crown.
+
+37:13. And he cast four rings of gold, which he put in the four corners at each foot of the table,
+
+37:14. Over against the crown: and he put the bars into them, that the table might be carried.
+
+37:15. The bars also themselves he made of setim wood, and overlaid them with gold.
+
+37:16. And the vessels for the divers uses of the table, dishes, bowls, and cups, and censers of pure gold, wherein the libations are to be offered.
+
+37:17. He made also the candlestick of beaten work of the finest gold. From the shaft whereof its branches, its cups, and bowls, and lilies came out:
+
+37:18. Six on the two sides: three branches on one side, and three on the other.
+
+37:19. Three cups in manner of a nut on each branch, and bowls withal and lilies: and three cups of the fashion of a nut in another branch, and bowls withal and lilies. The work of the six branches, that went out from the shaft of the candlestick was equal.
+
+37:20. And in the shaft itself were four cups after the manner of a nut, and bowls withal at every one, and lilies:
+
+37:21. And bowls under two branches in three places, which together made six branches going out from one shaft.
+
+37:22. So both the bowls, and the branches were of the same, all beaten work of the purest gold.
+
+37:23. He made also the seven lamps with their snuffers, and the vessels where the snuffings were to be put out, of the purest gold.
+
+37:24. The candlestick with all the vessels thereof weighed a talent of gold.
+
+37:25. He made also the altar of incense of setim wood, being a cubit on every side foursquare, and in height two cubits: from the corners of which went out horns.
+
+37:26. And he overlaid it with the purest gold, with its grate, and the sides, and the horns.
+
+37:27. And he made to it a crown of gold round about, and two golden rings under the crown at each side, that the bars might be put into them, and the altar be carried.
+
+37:28. And the bars themselves he made also of setim wood, and overlaid them with plates of gold.
+
+37:29. He compounded also the oil for the ointment of sanctification, and incense of the purest spices, according to the work of a perfumer.
+
+Exodus Chapter 38
+He maketh the altar of holocaust. The brazen laver. The court with its pillars and hangings. The sum of what the people offered.
+
+38:1. He made also the altar of holocaust of setim wood, five cubits square, and three in height:
+
+38:2. The horns whereof went out from the corners, and he overlaid it with plates of brass.
+
+38:3. And for the uses thereof, he prepared divers vessels of brass, cauldrons, tongs, fleshhooks, pothooks and firepans.
+
+38:4. And he made the grate thereof of brass, in manner of a net, and under it in the midst of the altar a hearth,
+
+38:5. Casting four rings at the four ends of the net at the top, to put in bars to carry it:
+
+38:6. And he made the bars of setim wood, and overlaid them with plates of brass:
+
+38:7. And he drew them through the rings that stood out in the sides of the altar. And the altar itself was not solid, but hollow, of boards, and empty within.
+
+38:8. He made also the laver of brass, with the foot thereof, of the mirrors of the women that watched at the door of the tabernacle.
+
+38:9. He made also the court, in the south side whereof were hangings of fine twisted linen of a hundred cubits.
+
+38:10. Twenty pillars of brass with their sockets, the heads of the pillars, and the whole graving of the work, of silver.
+
+38:11. In like manner at the north side the hangings, the pillars, and the sockets and heads of the pillars were of the same measure, and work and metal.
+
+38:12. But on that side that looketh to the west, there were hangings of fifty cubits, ten pillars of brass with their sockets, and the heads of the pillars, and all the graving of the work, of silver.
+
+38:13. Moreover, towards the east he prepared hangings of fifty cubits:
+
+38:14. Fifteen cubits of which, were on one side with three pillars, and their sockets:
+
+38:15. And on the other side (for between the two he made the entry of the tabernacle) there were hangings equally of fifteen cubits, and three pillars, and as many sockets.
+
+38:16. All the hangings of the court were woven with twisted linen.
+
+38:17. The sockets of the pillars were of brass, and their heads with all their gravings of silver: and he overlaid the pillars of the court also with silver.
+
+38:18. And he made in the entry thereof an embroidered hanging of violet, purple, scarlet, and fine twisted linen, that was twenty cubits long, and five cubits high, according to the measure of all the hangings of the court.
+
+38:19. And the pillars in the entry were four, with sockets of brass, and their heads and gravings of silver.
+
+38:20. The pins also of the tabernacle and of the court round about he made of brass.
+
+38:21. These are the instruments of the tabernacle of the testimony, which were counted according to the commandment of Moses, in the ceremonies of the Levites, by the hand of Ithamar, son of Aaron the priest:
+
+38:22. Which Beseleel, the son of Uri, the son of Hur of the tribe of Juda, had made, as the Lord commanded by Moses.
+
+38:23. Having for his companion Ooliab, the son of Achisamech, of the tribe of Dan: who also was an excellent artificer in wood, and worker in tapestry and embroidery in violet, purple, scarlet, and fine linen.
+
+38:24. All the gold that was spent in the work of the sanctuary, and that was offered in gifts, was nine and twenty talents, and seven hundred and thirty sicles according to the standard of the sanctuary.
+
+38:25. And it was offered by them that went to be numbered, from twenty years old and upwards, of six hundred and three thousand five hundred and fifty men able to bear arms.
+
+38:26. There were moreover a hundred talents of silver, whereof were cast the sockets of the sanctuary, and of the entry where the veil hangeth.
+
+38:27. A hundred sockets were made of a hundred talents, one talent being reckoned for every socket.
+
+38:28. And of the thousand seven hundred and seventy-five he made the heads of the pillars, which also he overlaid with silver.
+
+38:29. And there were offered of brass also seventy-two thousand talents, and four hundred sicles besides,
+
+38:30. Of which were cast the sockets in the entry of the tabernacle of the testimony, and the altar of brass with the grate thereof, and also the vessels that belong to the use thereof.
+
+38:31. And the sockets of the court as well round about as in the entry thereof, and the pins of the tabernacle, and of the court round about.
+
+Exodus Chapter 39
+All the ornaments of Aaron and his sons are made. And the whole work of the tabernacle is finished.
+
+39:1. And he made, of violet and purple, scarlet and fine linen, the vestments for Aaron to wear when he ministered in the holy places, as the Lord commanded Moses.
+
+39:2. So he made an ephod of gold, violet, and purple, and scarlet twice dyed, and fine twisted linen,
+
+39:3. With embroidered work, and he cut thin plates of gold, and drew them small into threads, that they might be twisted with the woof of the foresaid colours,
+
+39:4. And two borders coupled one to the other in the top on either side,
+
+39:5. And a girdle of the same colours, as the Lord had commanded Moses.
+
+39:6. He prepared also two onyx stones, fast set and closed in gold, and graven, by the art of a lapidary, with the names of the children of Israel:
+
+39:7. And he set them in the sides of the ephod, for a memorial of the children of Israel, as the Lord had commanded Moses.
+
+39:8. He made also a rational with embroidered work, according to the work of the ephod, of gold, violet, purple, and scarlet twice dyed, and fine twisted linen:
+
+39:9. Foursquare, double, of the measure of a span.
+
+39:10. And he set four rows of precious stones in it. In the first row was a sardius, a topaz, an emerald.
+
+39:11. In the second, a carbuncle, a sapphire, and a jasper.
+
+39:12. In the third, a ligurius, an agate, and an amethyst.
+
+39:13. In the fourth, a chrysolite, an onyx, and a beryl, set and enclosed in gold by their rows.
+
+39:14. And the twelve stones, were engraved with the names of the twelve tribes of Israel, each one with its several name.
+
+39:15. They made also in the rational little chains, linked one to another, of the purest gold,
+
+39:16. And two hooks, and as many rings of gold. And they set the rings on either side of the rational,
+
+39:17. On which rings the two golden chains should hang, which they put into the hooks that stood out in the corners of the ephod.
+
+39:18. These both before and behind so answered one another, that the ephod and the rational were bound together,
+
+39:19. Being fastened to the girdle, and strongly coupled with rings, which a violet fillet joined, lest they should flag loose, and be moved one from the other, as the Lord commanded Moses.
+
+39:20. They made also the tunic of the ephod all of violet,
+
+39:21. And a hole for the head in the upper part at the middle, and a woven border round about the hole:
+
+39:22. And beneath at the feet pomegranates of violet, purple, scarlet, and fine twisted linen:
+
+39:23. And little bells of the purest gold, which they put between the pomegranates at the bottom of the tunic round about:
+
+39:24. To wit, a bell of gold, and a pomegranate, wherewith the high priest went adorned, when he discharged his ministry, as the Lord had commanded Moses.
+
+39:25. They made also fine linen tunics with woven work for Aaron and his sons:
+
+39:26. And mitres with their little crowns of fine linen:
+
+39:27. And linen breeches of fine linen:
+
+39:28. And a girdle of fine twisted linen, violet, purple, and scarlet twice dyed, of embroidery work, as the Lord had commanded Moses.
+
+39:29. They made also the plate of sacred veneration of the purest gold, and they wrote on it with the engraving of a lapidary: The Holy of the Lord:
+
+39:30. And they fastened it to the mitre with a violet fillet, as the Lord had commanded Moses.
+
+39:31. So all the work of the tabernacle and of the roof of the testimony was finished: and the children of Israel did all things which the Lord had commanded Moses.
+
+39:32. And they offered the tabernacle, and the roof, and the whole furniture, the rings, the boards, the bars, the pillars and their sockets,
+
+39:33. The cover of rams’ skins dyed red, and the other cover of violet skins,
+
+39:34. The veil, the ark, the bars, the propitiatory,
+
+39:35. The table, with the vessels thereof, and the loaves of proposition:
+
+39:36. The candlestick, the lamps, and the furniture of them, with the oil:
+
+39:37. The altar of gold, and the ointment, and the incense of spices:
+
+39:38. And the hanging in the entry of the tabernacle:
+
+39:39. The altar of brass, the grate, the bars, and all the vessels thereof: the laver, with the foot thereof: the hangings of the court, and the pillars, with their sockets:
+
+39:40. The hanging in the entry of the court, and the little cords, and the pins thereof. Nothing was wanting of the vessels, that were commanded to be made for the ministry of the tabernacle, and for the roof of the covenant.
+
+39:41. The vestments also, which the priests, to wit, Aaron and his sons, use in the sanctuary,
+
+39:42. The children of Israel offered, as the Lord had commanded.
+
+39:43. And when Moses saw all things finished, he blessed them.
+
+Exodus Chapter 40
+The tabernacle is commanded to be set up and anointed. God filleth it with his majesty.
+
+40:1. And the Lord spoke to Moses, saying:
+
+40:2. The first month, the first day of the month, thou shalt set up the tabernacle of the testimony,
+
+40:3. And shalt put the ark in it, and shalt let down the veil before it:
+
+40:4. And thou shalt bring in the table, and set upon it the things that are commanded according to the rite. The candlestick shall stand with its lamps,
+
+40:5. And the altar of gold, whereon the incense is burnt before the ark of the testimony. Thou shalt put the hanging in the entry of the tabernacle,
+
+40:6. And before it the altar of holocaust.
+
+40:7. The laver between the altar and the tabernacle, and thou shalt fill it with water.
+
+40:8. And thou shalt encompass the court with hangings, and the entry thereof.
+
+40:9. And thou shalt take the oil of unction and anoint the tabernacle with its vessels, that they may be sanctified:
+
+40:10. The altar of holocaust and all its vessels:
+
+40:11. The laver with its foot: thou shalt consecrate all with the oil of unction, that they may be most holy.
+
+40:12. And thou shalt bring Aaron and his sons to the door of the tabernacle of the testimony, and having washed them with water,
+
+40:13. Thou shalt put on them the holy vestments, that they may minister to me, and that the unction of them may prosper to an everlasting priesthood.
+
+40:14. And Moses did all that the Lord had commanded.
+
+40:15. So in the first month of the second year, the first day of the month, the tabernacle was set up.
+
+40:16. And Moses reared it up, and placed the boards and the sockets and the bars, and set up the pillars,
+
+40:17. And spread the roof over the tabernacle, putting over it a cover, as the Lord had commanded.
+
+40:18. And he put the testimony in the ark, thrusting bars underneath, and the oracle above.
+
+40:19. And when he had brought the ark into the tabernacle, he drew the veil before it to fulfil the commandment of the Lord.
+
+40:20. And he set the table in the tabernacle of the testimony, at the north side, without the veil,
+
+40:21. Setting there in order the loaves of proposition, as the Lord had commanded Moses.
+
+40:22. He set the candlestick also in the tabernacle of the testimony, over against the table on the south side,
+
+40:23. Placing the lamps in order, according to the precept of the Lord.
+
+40:24. He set also the altar of gold under the roof of the testimony, over against the veil,
+
+40:25. And burnt upon it the incense of spices, as the Lord had commanded Moses.
+
+40:26. And he put also the hanging in the entry of the tabernacle of the testimony,
+
+40:27. And the altar of holocaust in the entry of the testimony, offering the holocaust, and the sacrifices upon it, as the Lord had commanded.
+
+40:28. And he set the laver between the tabernacle of the testimony and the altar, filling it with water.
+
+40:29. And Moses and Aaron, and his sons, washed their hands and feet,
+
+40:30. When they went into the tabernacle of the covenant, and went to the altar, as the Lord had commanded Moses.
+
+40:31. He set up also the court round about the tabernacle and the altar, drawing the hanging in the entry thereof. After all things were perfected,
+
+40:32. The cloud covered the tabernacle of the testimony, and the glory of the Lord filled it.
+
+40:33. Neither could Moses go into the tabernacle of the covenant, the cloud covering all things, and the majesty of the Lord shining, for the cloud had covered all.
+
+40:34. If at any time the cloud removed from the tabernacle, the children of Israel went forward by their troops:
+
+40:35. If it hung over, they remained in the same place.
+
+40:36. For the cloud of the Lord hung over the tabernacle by day, and a fire by night, in the sight of all the children of Israel throughout all their mansions.
+
+`
+
+
+
+
+
+
 var book_of_job = `Job Chapter 1
 Job’s virtue and riches. Satan by permission from God strippeth him of all his substance. His patience.
 
@@ -27639,6 +30294,2829 @@ An evangelist ... a diligent preacher of the gospel.
 
 `
 
+var book_of_titus = `Titus Chapter 1
+What kind of men he is to ordain priests. Some men are to be sharply rebuked.
+
+1:1. Paul, a servant of God and an apostle of Jesus Christ, according to the faith of the elect of God and the acknowledging of the truth, which is according to godliness:
+
+1:2. Unto the hope of life everlasting, which God, who lieth not, hath promised before the times of the world:
+
+1:3. But hath in due times manifested his word in preaching, which is committed to me according to the commandment of God our Saviour:
+
+1:4. To Titus, my beloved son according to the common faith, grace and peace, from God the Father and from Christ Jesus our Saviour.
+
+1:5. For this cause I left thee in Crete: that thou shouldest set in order the things that are wanting and shouldest ordain priests in every city, as I also appointed thee:
+
+1:6. If any be without crime, the husband of one wife, having faithful children, not accused of riot or unruly.
+
+1:7. For a bishop must be without crime, as the steward of God: not proud, not subject to anger, not given to wine, no striker, not greedy of filthy lucre:
+
+1:8. But given to hospitality, gentle, sober, just, holy, continent:
+
+1:9. Embracing that faithful word which is according to doctrine, that he may be able to exhort in sound doctrine and to convince the gainsayers.
+
+1:10. For there are also many disobedient, vain talkers and seducers: especially they who are of the circumcision.
+
+1:11. Who must be reproved, who subvert whole houses, teaching things which they ought not, for filthy lucre’s sake.
+
+1:12. One of them a prophet of their own, said: The Cretans are always liars, evil beasts, slothful bellies.
+
+1:13. This testimony is true. Wherefore, rebuke them sharply, that they may be sound in the faith:
+
+1:14. Not giving heed to Jewish fables and commandments of men who turn themselves away from the truth.
+
+1:15. All things are clean to the clean: but to them that are defiled and to unbelievers, nothing is clean: but both their mind and their conscience are defiled.
+
+1:16. They profess that they know God: but in their works they deny him: being abominable and incredulous and to every good work reprobate.
+
+Titus Chapter 2
+How he is to instruct both old and young. The duty of servants. The Christian’s rule of life.
+
+2:1. But speak thou the things that become sound doctrine:
+
+2:2. That the aged men be sober, chaste, prudent, sound in faith, in love, in patience.
+
+2:3. The aged women, in like manner, in holy attire, not false accusers, not given to much wine, teaching well:
+
+2:4. That they may teach the young women to be wise, to love their husbands, to love their children.
+
+2:5. To be discreet, chaste, sober, having a care of the house, gentle, obedient to their husbands: that the word of God be not blasphemed.
+
+2:6. Young men, in like manner, exhort that they be sober.
+
+2:7. In all things shew thyself an example of good works, in doctrine, in integrity, in gravity,
+
+2:8. The sound word that can not be blamed: that he who is on the contrary part may be afraid, having no evil to say of us.
+
+2:9. Exhort servants to be obedient to their masters: in all things pleasing, not gainsaying:
+
+2:10. Not defrauding, but in all things shewing good fidelity, that they may adorn the doctrine of God our Saviour in all things.
+
+2:11. For the grace of God our Saviour hath appeared to all men:
+
+2:12. Instructing us, that, denying ungodliness and worldly desires, we should live soberly and justly and godly in this world,
+
+2:13. Looking for the blessed hope and coming of the glory of the great God and our Saviour Jesus Christ.
+
+2:14. Who gave himself for us, that he might redeem us from all iniquity and might cleanse to himself a people acceptable, a pursuer of good works.
+
+2:15. These things speak and exhort and rebuke with all authority. Let no man despise thee.
+
+Titus Chapter 3
+Other instructions and directions for life and doctrine.
+
+3:1. Admonish them to be subject to princes and powers, to obey at a word, to be ready to every good work.
+
+3:2. To speak evil of no man, not to be litigious but gentle: shewing all mildness towards all men.
+
+3:3. For we ourselves also were some time unwise, incredulous, erring, slaves to divers desires and pleasures, living in malice and envy, hateful and hating one another.
+
+3:4. But when the goodness and kindness of God our Saviour appeared:
+
+3:5. Not by the works of justice which we have done, but according to his mercy, he saved us, by the laver of regeneration and renovation of the Holy Ghost.
+
+3:6. Whom he hath poured forth upon us abundantly, through Jesus Christ our Saviour:
+
+3:7. That, being justified by his grace, we may be heirs according to hope of life everlasting.
+
+3:8. It is a faithful saying. And these things I will have thee affirm constantly, that they who believe in God may be careful to excel in good works. These things are good and profitable unto men.
+
+3:9. But avoid foolish questions and genealogies and contentions and strivings about the law. For they are unprofitable and vain.
+
+3:10. A man that is a heretic, after the first and second admonition, avoid:
+
+3:11. Knowing that he that is such an one is subverted and sinneth, being condemned by his own judgment.
+
+By his own judgment.... Other offenders are judged, and cast out of the church, by the sentence of the pastors of the same church. Heretics, more unhappy, run out of the church of their own accord, and by doing so, give judgment and sentence against their own souls.
+
+3:12. When I shall send to thee Artemas or Tychicus, make haste to come unto me to Nicopolis. For there I have determined to winter.
+
+3:13. Send forward Zenas the lawyer and Apollo, with care that nothing be wanting to them.
+
+3:14. And let our men also learn to excel in good works for necessary uses: that they be not unfruitful.
+
+3:15. All that are with me salute thee. Salute them that love us in the faith. The grace of God be with you all. Amen.`
+
+var book_of_philemon = `Philemon Chapter 1
+He commends the faith and charity of Philemon; and sends back to him his fugitive servant, whom he had converted in prison.
+
+1:1. Paul, a prisoner of Christ Jesus, and Timothy, a brother: to Philemon, our beloved and fellow labourer,
+
+1:2. And to Appia, our dearest sister, and to Archippus, our fellow soldier, and to the church which is in thy house.
+
+1:3. Grace to you and peace, from God our Father and from the Lord Jesus Christ.
+
+1:4. I give thanks to my God, always making a remembrance of thee in my prayers.
+
+1:5. Hearing of thy charity and faith, which thou hast in the Lord Jesus and towards all the saints:
+
+1:6. That the communication of thy faith may be made evident in the acknowledgment of every good work that is in you in Christ Jesus.
+
+1:7. For I have had great joy and consolation in thy charity, because the bowels of the saints have been refreshed by thee, brother.
+
+1:8. Wherefore, though I have much confidence in Christ Jesus to command thee that which is to the purpose:
+
+1:9. For charity sake I rather beseech, whereas thou art such a one, as Paul, an old man and now a prisoner also of Jesus Christ.
+
+1:10. I beseech thee for my son, whom I have begotten in my bands, Onesimus,
+
+1:11. Who hath been heretofore unprofitable to thee but now is profitable both to me and thee:
+
+1:12. Whom I have sent back to thee. And do thou receive him as my own bowels.
+
+1:13. Whom I would have retained with me, that in thy stead he might have ministered to me in the bands of the gospel.
+
+1:14. But without thy counsel I would do nothing: that thy good deed might not be as it were of necessity, but voluntary.
+
+1:15. For perhaps he therefore departed for a season from thee that thou mightest receive him again for ever:
+
+1:16. Not now as a servant, but instead of a servant, a most dear brother, especially to me. But how much more to thee, both in the flesh and in the Lord?
+
+1:17. If therefore thou count me a partner, receive him as myself.
+
+1:18. And if he hath wronged thee in any thing or is in thy debt, put that to my account.
+
+1:19. I Paul have written it with my own hand: I will repay it: not to say to thee that thou owest me thy own self also.
+
+1:20. Yea, brother. May I enjoy thee in the Lord! Refresh my bowels in the Lord.
+
+1:21. Trusting in thy obedience, I have written to thee: knowing that thou wilt also do more than I say.
+
+1:22. But withal prepare me also a lodging. For I hope that through your prayers I shall be given unto you.
+
+1:23. There salute thee Epaphras, my fellow prisoner in Christ Jesus:
+
+1:24. Mark, Aristarchus, Demas and Luke, my fellow labourers.
+
+1:25. The grace of our Lord Jesus Christ be with your spirit. Amen.`
+
+var book_of_hebrews = `Hebrews Chapter 1
+God spoke of old by the prophets, but now by his Son, who is incomparably greater than the angels.
+
+1:1. God, who, at sundry times and in divers manners, spoke in times past to the fathers by the prophets, last of all,
+
+1:2. In these days, hath spoken to us by his Son, whom he hath appointed heir of all things, by whom also he made the world.
+
+1:3. Who being the brightness of his glory and the figure of his substance and upholding all things by the word of his power, making purgation of sins, sitteth on the right hand of the majesty on high:
+
+The figure ... that is, the express image, and most perfect resemblance. Making purgation.... That is, having purged away our sins by his passion.
+
+1:4. Being made so much better than the angels as he hath inherited a more excellent name than they.
+
+1:5. For to which of the angels hath he said at any time: Thou art my Son, to-day have I begotten thee? And again: I will be to him a Father, and he shall be to me a Son?
+
+1:6. And again, when he bringeth in the first begotten into the world, he saith: And let all the angels of God adore him.
+
+1:7. And to the angels indeed he saith: He that maketh his angels spirits and his ministers a flame of fire.
+
+1:8. But to the Son: Thy throne, O God, is for ever and ever: a sceptre of justice is the sceptre of thy kingdom.
+
+1:9. Thou hast loved justice and hated iniquity: therefore God, thy God, hath anointed thee with the oil of gladness above thy fellows.
+
+1:10. And: Thou in the beginning, O Lord, didst found the earth: and the works of thy hands are the heavens.
+
+1:11. They shall perish: but thou shalt continue: and they shall all grow old as a garment.
+
+1:12. And as a vesture shalt thou change them, and they shall be changed. But thou art the selfsame: and thy years shall not fail.
+
+1:13. But to which of the angels said he at any time: Sit on my right hand, until I make thy enemies thy footstool?
+
+1:14. Are they not all ministering spirits, sent to minister for them who shall receive the inheritance of salvation?
+
+Hebrews Chapter 2
+The transgression of the precepts of the Son of God is far more condemnable than of those of the Old Testament given by angels.
+
+2:1. Therefore ought we more diligently to observe the things which we have heard lest perhaps we should let them slip.
+
+2:2. For if the word spoken by angels became steadfast and every transgression and disobedience received a just recompense of reward:
+
+2:3. How shall we escape if we neglect so great salvation? Which, having begun to be declared by the Lord, was confirmed unto us by them that heard him.
+
+2:4. God also bearing them witness by signs and wonders and divers miracles and distributions of the Holy Ghost, according to his own will.
+
+2:5. For God hath not subjected unto angels the world to come, whereof we speak.
+
+2:6. But one in a certain place hath testified, saying: What is man, that thou art mindful of him? Or the son of man, that thou visitest him?
+
+2:7. Thou hast made him a little lower than the angels: thou hast crowned him with glory and honour and hast set him over the works of thy hands.
+
+2:8. Thou hast subjected all things under his feet. For in that he hath subjected all things to him he left nothing not subject to him. But now we see not as yet all things subject to him.
+
+2:9. But we see Jesus, who was made a little lower than the angels, for the suffering of death, crowned with glory and honour: that, through the grace of God he might taste death for all.
+
+2:10. For it became him for whom are all things and by whom are all things, who had brought many children into glory, to perfect the author of their salvation, by his passion.
+
+Perfect by his passion.... By suffering, Christ was to enter into his glory, Luke 24.26, which the apostle here calls being made perfect.
+
+2:11. For both he that sanctifieth and they who are sanctified are all of one. For which cause he is not ashamed to call them brethren, saying:
+
+2:12. I will declare thy name to my brethren: in the midst of the church will I praise thee.
+
+2:13. And again: I will put my trust in him. And again: Behold I and my children, whom God hath given me.
+
+2:14. Therefore because the children are partakers of flesh and blood, he also himself in like manner hath been partaker of the same: that, through death, he might destroy him who had the empire of death, that is to say, the devil:
+
+2:15. And might deliver them, who through the fear of death were all their lifetime subject to servitude.
+
+2:16. For nowhere doth he take hold of the angels: but of the seed of Abraham he taketh hold.
+
+No where doth he, etc.... That is, he never took upon him the nature of angels, but that of the seed of Abraham.
+
+2:17. Wherefore, it behoved him in all things to be made like unto his brethren, that he might become a merciful and faithful high priest before God, that he might be a propitiation for the sins of the people.
+
+2:18. For in that wherein he himself hath suffered and been tempted he is able to succour them also that are tempted.
+
+Hebrews Chapter 3
+Christ is more excellent than Moses. Wherefore we must adhere to him by faith and obedience.
+
+3:1. Wherefore, holy brethren, partakers of the heavenly vocation consider the apostle and high priest of our confession, Jesus:
+
+3:2. Who is faithful to him that made him, as was also Moses in all his house.
+
+3:3. For this man was counted worthy of greater glory than Moses, by so much as he that hath built the house hath greater honour than the house.
+
+3:4. For every house is built by some man: but he that created all things is God.
+
+3:5. And Moses indeed was faithful in all his house as a servant, for a testimony of those things which were to be said:
+
+3:6. But Christ, as the Son in his own house: which house are we, if we hold fast the confidence and glory of hope unto the end.
+
+3:7. Wherefore, as the Holy Ghost saith: To-day if you shall hear his voice,
+
+3:8. Harden not your hearts, as in the provocation, in the day of temptation in the desert,
+
+3:9. Where your fathers tempted me, proved and saw my works,
+
+3:10. Forty years: for which cause I was offended with this generation, and I said: They always err in heart. And they have not known my ways.
+
+3:11. As I have sworn in my wrath: If they shall enter into my rest.
+
+3:12. Take heed, brethren, lest perhaps there be in any of you an evil heart of unbelief, to depart from the living God.
+
+3:13. But exhort one another every day, whilst it is called to day, that none of you be hardened through the deceitfulness of sin.
+
+3:14. For we are made partakers of Christ: yet so, if we hold the beginning of his substance firm unto the end.
+
+3:15. While it is said: To day, if you shall hear his voice, harden not your hearts, as in that provocation.
+
+3:16. For some who heard did provoke: but not all that came out of Egypt by Moses.
+
+3:17. And with whom was he offended forty years? Was it not with them that sinned, whose carcasses were overthrown in the desert?
+
+3:18. And to whom did he swear, that they should not enter into his rest: but to them that were incredulous?
+
+3:19. And we see that they could not enter in, because of unbelief.
+
+Hebrews Chapter 4
+The Christian’s rest. We are to enter into it through Jesus Christ.
+
+4:1. Let us fear therefore lest, the promise being left of entering into his rest, any of you should be thought to be wanting.
+
+4:2. For unto us also it hath been declared in like manner as unto them. But the word of hearing did not profit them, not being mixed with faith of those things they heard.
+
+4:3. For we, who have believed, shall enter into rest; as he said: As I have sworn in my wrath: If they shall enter into my rest; and this indeed when the works from the foundation of the world were finished.
+
+4:4. For in a certain place he spoke of the seventh day thus: And God rested the seventh day from all his works.
+
+4:5. And in this place again: If they shall enter into my rest.
+
+4:6. Seeing then it remaineth that some are to enter into it, and they to whom it was first preached did not enter because of unbelief:
+
+4:7. Again he limiteth a certain day, saying in David; To day, after so long a time as it is above said: To day if you shall hear his voice, harden not your hearts.
+
+4:8. For if Jesus had given them rest he would never have afterwards spoken of another day.
+
+Jesus.... Josue, who in Greek is called Jesus.
+
+4:9. There remaineth therefore a day of rest for the people of God.
+
+4:10. For he that is entered into his rest, the same also hath rested from his works, as God did from his.
+
+4:11. Let us hasten therefore to enter into that rest: lest any man fall into the same example of unbelief.
+
+4:12. For the word of God is living and effectual and more piercing than any two edged sword; and reaching unto the division of the soul and the spirit, of the joints also and the marrow: and is a discerner of the thoughts and intents of the heart.
+
+4:13. Neither is there any creature invisible in his sight: but all things are naked and open to his eyes, to whom our speech is.
+
+4:14. Having therefore a great high priest that hath passed into the heavens, Jesus the Son of God: let us hold fast our confession.
+
+4:15. For we have not a high priest who cannot have compassion on our infirmities: but one tempted in all things like as we are, without sin.
+
+4:16. Let us go therefore with confidence to the throne of grace: that we may obtain mercy and find grace in seasonable aid.
+
+Hebrews Chapter 5
+The office of a high priest. Christ is our high priest.
+
+5:1. For every high priest taken from among men is ordained for men in the things that appertain to God, that he may offer up gifts and sacrifices for sins:
+
+5:2. Who can have compassion on them that are ignorant and that err: because he himself also is compassed with infirmity.
+
+5:3. And therefore he ought, as for the people, so also for himself, to offer for sins.
+
+5:4. Neither doth any man take the honour to himself, but he that is called by God, as Aaron was.
+
+5:5. So Christ also did not glorify himself, that he might be made a high priest: but he that said unto him: Thou art my Son: this day have I begotten thee.
+
+5:6. As he saith also in another place: Thou art a priest for ever, according to the order of Melchisedech.
+
+5:7. Who in the days of his flesh, with a strong cry and tears, offering up prayers and supplications to him that was able to save him from death, was heard for his reverence.
+
+5:8. And whereas indeed he was the Son of God, he learned obedience by the things which he suffered.
+
+5:9. And being consummated, he became, to all that obey him, the cause of eternal salvation:
+
+5:10. Called by God a high priest, according to the order of Melchisedech.
+
+5:11. Of whom we have much to say and hard to be intelligibly uttered: because you are become weak to hear.
+
+5:12. For whereas for the time you ought to be masters, you have need to be taught again what are the first elements of the words of God: and you are become such as have need of milk and not of strong meat.
+
+5:13. For every one that is a partaker of milk is unskilful in the word of justice: for he is a little child.
+
+5:14. But strong meat is for the perfect: for them who by custom have their senses exercised to the discerning of good and evil.
+
+Hebrews Chapter 6
+He warns them of the danger of falling by apostasy and exhorts them to patience and perseverance.
+
+6:1. Wherefore, leaving the word of the beginning of Christ, let us go on to things more perfect: not laying again the foundation of penance from dead works and of faith towards God,
+
+The word of the beginning.... The first rudiments of the Christian doctrine.
+
+6:2. Of the doctrine of baptisms and imposition of hands, and of the resurrection of the dead, and of eternal judgment.
+
+6:3. And this will we do, if God permit.
+
+6:4. For it is impossible for those who were once illuminated, have tasted also the heavenly gift and were made partakers of the Holy Ghost,
+
+It is impossible, etc.... The meaning is, that it is impossible for such as have fallen after baptism, to be again baptized; and very hard for such as have apostatized from the faith, after having received many graces, to return again to the happy state from which they fell.
+
+6:5. Have moreover tasted the good word of God and the powers of the world to come,
+
+6:6. And are fallen away: to be renewed again to penance, crucifying again to themselves the Son of God and making him a mockery.
+
+6:7. For the earth, that drinketh in the rain which cometh often upon it and bringeth forth herbs meet for them by whom it is tilled, receiveth blessing from God.
+
+6:8. But that which bringeth forth thorns and briers is reprobate and very near unto a curse: whose end is to be burnt.
+
+6:9. But, my dearly beloved, we trust better things of you, and nearer to salvation; though we speak thus.
+
+6:10. For God is not unjust, that he should forget your work and the love which you have shewn in his name, you who have ministered and do minister to the saints.
+
+6:11. And we desire that every one of you shew forth the same carefulness to the accomplishing of hope unto the end:
+
+6:12. That you become not slothful, but followers of them who through faith and patience shall inherit the promises.
+
+6:13. For God making promise to Abraham, because he had no one greater by whom he might swear, swore by himself,
+
+6:14. Saying: Unless blessing I shall bless thee and multiplying I shall multiply thee.
+
+6:15. And so patiently enduring he obtained the promise.
+
+6:16. For men swear by one greater than themselves: and an oath for confirmation is the end of all their controversy.
+
+6:17. Wherein God, meaning more abundantly to shew to the heirs of the promise the immutability of his counsel, interposed an oath:
+
+6:18. That by two immutable things in which it is impossible for God to lie, we may have the strongest comfort, we who have fled for refuge to hold fast the hope set before us.
+
+6:19. Which we have as an anchor of the soul, sure and firm, and which entereth in even within the veil:
+
+6:20. Where the forerunner Jesus is entered for us, made a high priest for ever according to the order of Melchisedech.
+
+Hebrews Chapter 7
+The priesthood of Christ according to the order of Melchisedech excels the Levitical priesthood and puts an end both to that and to the law.
+
+7:1. For this Melchisedech was king of Salem, priest of the most high God, who met Abraham returning from the slaughter of the kings and blessed him:
+
+7:2. To whom also Abraham divided the tithes of all: who first indeed by interpretation is king of justice: and then also king of Salem, that is, king of peace:
+
+7:3. Without father, without mother, without genealogy, having neither beginning of days nor end of life, but likened unto the Son of God, continueth a priest for ever.
+
+Without father, etc.... Not that he had no father, etc., but that neither his father, nor his pedigree, nor his birth, nor his death, are set down in scripture.
+
+7:4. Now consider how great this man is, to whom also Abraham the patriarch gave tithes out of the principal things.
+
+7:5. And indeed they that are of the sons of Levi, who receive the priesthood, have a commandment to take tithes of the people according to the law, that is to say, of their brethren: though they themselves also came out of the loins of Abraham.
+
+7:6. But he, whose pedigree is not numbered among them, received tithes of Abraham and blessed him that had the promises.
+
+7:7. And without all contradiction, that which is less is blessed by the better.
+
+7:8. And here indeed, men that die receive tithes: but there, he hath witness that he liveth.
+
+7:9. And (as it may be said) even Levi who received tithes paid tithes in Abraham:
+
+7:10. For he was yet in the loins of his father when Melchisedech met him.
+
+7:11. If then perfection was by the Levitical priesthood (for under it the people received the law), what further need was there that another priest should rise according to the order of Melchisedech: and not be called according to the order of Aaron?
+
+7:12. For the priesthood being translated, it is necessary that a translation also be made of the law,
+
+7:13. For he of whom these things are spoken is of another tribe, of which no one attended on the altar.
+
+7:14. For it is evident that our Lord sprung out of Juda: in which tribe Moses spoke nothing concerning priests.
+
+7:15. And it is yet far more evident: if according to the similitude of Melchisedech there ariseth another priest,
+
+7:16. Who is made, not according to the law of a carnal commandment, but according to the power of an indissoluble life.
+
+7:17. For he testifieth: Thou art a priest for ever according to the order of Melchisedech.
+
+7:18. There is indeed a setting aside of the former commandment, because of the weakness and unprofitableness thereof:
+
+7:19. For the law brought nothing to perfection: but a bringing in of a better hope, by which we draw nigh to God.
+
+7:20. And inasmuch as it is not without an oath (for the others indeed were made priests without an oath:
+
+7:21. But this with an oath, by him that said unto him: The Lord hath sworn and he will not repent: Thou art a priest for ever).
+
+7:22. By so much is Jesus made a surety of a better testament.
+
+7:23. And the others indeed were made many priests, because by reason of death they were not suffered to continue:
+
+Many priests, etc.... The apostle notes this difference between the high priests of the law, and our high priest Jesus Christ; that they being removed by death, made way for their successors; whereas our Lord Jesus is a priest for ever, and hath no successor; but liveth and concurreth for ever with his ministers, the priests of the new testament, in all their functions. Also, that no one priest of the law, nor all of them together, could offer that absolute sacrifice of everlasting redemption, which our one high priest Jesus Christ has offered once, and for ever.
+
+7:24. But this, for that he continueth for ever, hath an everlasting priesthood:
+
+7:25. Whereby he is able also to save for ever them that come to God by him; always living to make intercession for us.
+
+Make intercession.... Christ, as man, continually maketh intercession for us, by representing his passion to his Father.
+
+7:26. For it was fitting that we should have such a high priest, holy, innocent, undefiled, separated from sinners, and made higher than the heavens:
+
+7:27. Who needeth not daily (as the other priests) to offer sacrifices, first for his own sins, and then for the people’s: for this he did once, in offering himself.
+
+7:28. For the law maketh men priests, who have infirmity: but the word of the oath (which was since the law) the Son who is perfected for evermore.
+
+Hebrews Chapter 8
+More of the excellence of the priesthood of Christ and of the New Testament.
+
+8:1. Now of the things which we have spoken, this is the sum: We have such an high priest who is set on the right hand of the throne of majesty in the heavens,
+
+8:2. A minister of the holies and of the true tabernacle, which the Lord hath pitched, and not man.
+
+The holies.... That is, the sanctuary.
+
+8:3. For every high priest is appointed to offer gifts and sacrifices: wherefore it is necessary that he also should have some thing to offer.
+
+8:4. If then he were on earth, he would not be a priest: seeing that there would be others to offer gifts according to the law.
+
+If then he were on earth, etc.... That is, if he were not of a higher condition than the Levitical order of earthly priests, and had not another kind of sacrifice to offer, he should be excluded by them from the priesthood, and its functions, which by the law were appropriated to their tribe.
+
+8:5. Who serve unto the example and shadow of heavenly things. As it was answered to Moses, when he was to finish the tabernacle: See (saith he) that thou make all things according to the pattern which was shewn thee on the mount.
+
+Who serve unto, etc.... The priesthood of the law and its functions were a kind of an example and shadow of what is done by Christ in his church militant and triumphant, of which the tabernacle was a pattern.
+
+8:6. But now he hath obtained a better ministry, by how much also he is a mediator of a better testament which is established on better promises.
+
+8:7. For if that former had been faultless, there should not indeed a place have been sought for a second.
+
+8:8. For, finding fault with them, he saith: Behold the days shall come, saith the Lord: and I will perfect, unto the house of Israel and unto the house of Juda, a new testament:
+
+8:9. Not according to the testament which I made to their fathers, on the day when I took them by the hand to lead them out of the land of Egypt: because they continued not in my testament: and I regarded them not, saith the Lord.
+
+8:10. For this is the testament which I will make to the house of Israel after those days, saith the Lord: I will give my laws into their mind: and in their heart will I write them. And I will be their God: and they shall be my people.
+
+8:11. And they shall not teach every man his neighbour and every man his brother, saying: Know the Lord. For all shall know me, from the least to the greatest of them.
+
+They shall not teach, etc.... So great shall be light and grace of the new testament, that it shall not be necessary to inculcate to the faithful the belief and knowledge of the true God, for they shall all know him.
+
+8:12. Because I will be merciful to their iniquities: and their sins I will remember no more.
+
+8:13. Now in saying a new, he hath made the former old. And that which decayeth and groweth old is near its end.
+
+A new.... Supply ‘covenant’.
+
+Hebrews Chapter 9
+The sacrifices of the law were far inferior to that of Christ.
+
+9:1. The former indeed had also justifications of divine service and a worldly sanctuary.
+
+9:2. For there was a tabernacle made the first, wherein were the candlesticks and the table and the setting forth of loaves, which is called the Holy.
+
+9:3. And after the second veil, the tabernacle which is called the Holy of Holies:
+
+9:4. Having a golden censer and the ark of the testament covered about on every part with gold, in which was a golden pot that had manna and the rod of Aaron that had blossomed and the tables of the testament.
+
+9:5. And over it were the cherubims of glory overshadowing the propitiatory: of which it is not needful to speak now particularly.
+
+9:6. Now these things being thus ordered, into the first tabernacle, the priests indeed always entered, accomplishing the offices of sacrifices.
+
+9:7. But into the second, the high priest alone, once a year: not without blood, which he offereth for his own and the people’s ignorance:
+
+9:8. The Holy Ghost signifying this: That the way into the Holies was not yet made manifest, whilst the former tabernacle was yet standing.
+
+9:9. Which is a parable of the time present: according to which gifts and sacrifices are offered, which cannot, as to the conscience, make him perfect that serveth, only in meats and in drinks,
+
+9:10. And divers washings and justices of the flesh laid on them until the time of correction.
+
+Of correction.... Viz., when Christ should correct and settle all things.
+
+9:11. But Christ, being come an high priest of the good things to come, by a greater and more perfect tabernacle, not made with hand, that is, not of this creation:
+
+9:12. Neither by the blood of goats or of calves, but by his own blood, entered once into the Holies, having obtained eternal redemption.
+
+Eternal redemption.... By that one sacrifice of his blood, once offered on the cross, Christ our Lord paid and exhibited, once for all, the general price and ransom of all mankind: which no other priest could do.
+
+9:13. For if the blood of goats and of oxen, and the ashes of an heifer, being sprinkled, sanctify such as are defiled, to the cleansing of the flesh:
+
+9:14. How much more shall the blood of Christ, who by the Holy Ghost offered himself unspotted unto God, cleanse our conscience from dead works, to serve the living God?
+
+9:15. And therefore he is the mediator of the new testament: that by means of his death for the redemption of those transgressions which were under the former testament, they that are called may receive the promise of eternal inheritance.
+
+9:16. For where there is a testament the death of the testator must of necessity come in.
+
+9:17. For a testament is of force after men are dead: otherwise it is as yet of no strength, whilst the testator liveth.
+
+9:18. Whereupon neither was the first indeed dedicated without blood.
+
+9:19. For when every commandment of the law had been read by Moses to all the people, he took the blood of calves and goats, with water, and scarlet wool and hyssop, and sprinkled both the book itself and all the people.
+
+9:20. Saying: This is the blood of the testament which God hath enjoined unto you.
+
+9:21. The tabernacle also and all the vessels of the ministry, in like manner, he sprinkled with blood.
+
+9:22. And almost all things, according to the law, are cleansed with blood: and without shedding of blood there is no remission.
+
+9:23. It is necessary therefore that the patterns of heavenly things should be cleansed with these: but the heavenly things themselves with better sacrifices than these.
+
+9:24. For Jesus is not entered into the Holies made with hands, the patterns of the true: but into Heaven itself, that he may appear now in the presence of God for us.
+
+9:25. Nor yet that he should offer himself often, as the high priest entereth into the Holies every year with the blood of others:
+
+Offer himself often.... Christ shall never more offer himself in sacrifice, in that violent, painful, and bloody manner, nor can there be any occasion for it: since by that one sacrifice upon the cross, he has furnished the full ransom, redemption, and remedy for all the sins of the world. But this hinders not that he may offer himself daily in the sacred mysteries in an unbloody manner, for the daily application of that one sacrifice of redemption to our souls.
+
+9:26. For then he ought to have suffered often from the beginning of the world. But now once, at the end of ages, he hath appeared for the destruction of sin by the sacrifice of himself.
+
+9:27. And as it is appointed unto men once to die, and after this the judgment:
+
+9:28. So also Christ was offered once to exhaust the sins of many. The second time he shall appear without sin to them that expect him unto salvation.
+
+To exhaust.... That is, to empty, or draw out to the very bottom, by a plentiful and perfect redemption.
+
+Hebrews Chapter 10
+Because of the insufficiency of the sacrifices of the law, Christ our high priest shed his own blood for us, offering up once for all the sacrifice of our redemption. He exhorts them to perseverance.
+
+10:1. For the law, having a shadow of the good things to come, not the very image of the things, by the selfsame sacrifices which they offer continually every year, can never make the comers thereunto perfect.
+
+10:2. For then they would have ceased to be offered: because the worshippers once cleansed should have no conscience of sin any longer.
+
+They would have ceased.... If they had been of themselves perfect to all the intents of redemption and remission, as Christ’s death is there would have been no occasion of so often repeating them: as there is no occasion for Christ’s dying any more for our sins.
+
+10:3. But in them there is made a commemoration of sins every year:
+
+10:4. For it is impossible that with the blood of oxen and goats sin should be taken away.
+
+10:5. Wherefore, when he cometh into the world he saith: Sacrifice and oblation thou wouldest not: but a body thou hast fitted to me.
+
+10:6. Holocausts for sin did not please thee.
+
+10:7. Then said I: Behold I come: in the head of the book it is written of me: that I should do thy will, O God.
+
+10:8. In saying before, Sacrifices, and oblations, and holocausts for sin thou wouldest not, neither are they pleasing to thee, which are offered according to the law.
+
+10:9. Then said I: Behold, I come to do thy will, O God: He taketh away the first, that he may establish that which followeth.
+
+10:10. In the which will, we are sanctified by the oblation of the body of Jesus Christ once.
+
+10:11. And every priest indeed standeth daily ministering and often offering the same sacrifices which can never take away sins.
+
+10:12. But this man, offering one sacrifice for sins, for ever sitteth on the right hand of God,
+
+10:13. From henceforth expecting until his enemies be made his footstool.
+
+10:14. For by one oblation he hath perfected for ever them that are sanctified.
+
+10:15. And the Holy Ghost also doth testify this to us. For after that he said:
+
+10:16. And this is the testament which I will make unto them after those days, saith the Lord. I will give my laws in their hearts and on their minds will I write them:
+
+10:17. And their sins and iniquities I will remember no more.
+
+10:18. Now, where there is a remission of these, there is no more an oblation for sin.
+
+There is no more an oblation for sin.... Where there is a full remission of sins, as in baptism, there is no more occasion for a sin offering to be made for such sins already remitted; and as for sins committed afterwards, they can only be remitted in virtue of the one oblation of Christ’s death.
+
+10:19. Having therefore, brethren, a confidence in the entering into the holies by the blood of Christ:
+
+10:20. A new and living way which he hath dedicated for us through the veil, that is to say, his flesh:
+
+10:21. And a high priest over the house of God:
+
+10:22. Let us draw near with a true heart, in fulness of faith, having our hearts sprinkled from an evil conscience and our bodies washed with clean water.
+
+10:23. Let us hold fast the confession of our hope without wavering (for he is faithful that hath promised):
+
+10:24. And let us consider one another, to provoke unto charity and to good works:
+
+10:25. Not forsaking our assembly, as some are accustomed: but comforting one another, and so much the more as you see the day approaching.
+
+10:26. For if we sin wilfully after having the knowledge of the truth, there is now left no sacrifice for sins:
+
+If we sin wilfully.... He speaks of the sin of wilful apostasy from the known truth; after which, as we can not be baptized again, we can not expect to have that abundant remission of sins, which Christ purchased by his death, applied to our souls in that ample manner as it is in baptism: but we have rather all manner of reason to look for a dreadful judgment; the more because apostates from the known truth, seldom or never have the grace to return to it.
+
+10:27. But a certain dreadful expectation of judgment, and the rage of a fire which shall consume the adversaries.
+
+10:28. A man making void the law of Moses dieth without any mercy under two or three witnesses:
+
+10:29. How much more, do you think he deserveth worse punishments, who hath trodden under foot the Son of God and hath esteemed the blood of the testament unclean, by which he was sanctified, and hath offered an affront to the Spirit of grace?
+
+10:30. For we know him that hath said: Vengeance belongeth to me, and I will repay. And again: The Lord shall judge his people.
+
+10:31. It is a fearful thing to fall into the hands of the living God.
+
+10:32. But call to mind the former days, wherein, being illuminated, you endured a great fight of afflictions.
+
+10:33. And on the one hand indeed, by reproaches and tribulations, were made a gazingstock; and on the other, became companions of them that were used in such sort.
+
+10:34. For you both had compassion on them that were in bands and took with joy the being stripped of your own goods, knowing that you have a better and a lasting substance.
+
+10:35. Do not therefore lose your confidence which hath a great reward.
+
+10:36. For patience is necessary for you: that, doing the will of God, you may receive the promise.
+
+10:37. For yet a little and a very little while, and he that is to come will come and will not delay.
+
+10:38. But my just man liveth by faith: but if he withdraw himself, he shall not please my soul.
+
+10:39. But we are not the children of withdrawing unto perdition, but of faith to the saving of the soul.
+
+Hebrews Chapter 11
+What faith is. Its wonderful fruits and efficacy demonstrated in the fathers.
+
+11:1. Now, faith is the substance of things to be hoped for, the evidence of things that appear not.
+
+11:2. For by this the ancients obtained a testimony.
+
+11:3. By faith we understand that the world was framed by the word of God: that from invisible things visible things might be made.
+
+11:4. By faith Abel offered to God a sacrifice exceeding that of Cain, by which he obtained a testimony that he was just, God giving testimony to his gifts. And by it he being dead yet speaketh.
+
+11:5. By faith Henoch was translated that he should not see death: and he was not found because God had translated him. For before his translation he had testimony that he pleased God.
+
+11:6. But without faith it is impossible to please God. For he that cometh to God must believe that he is: and is a rewarder to them that seek him.
+
+11:7. By faith Noe, having received an answer concerning those things which as yet were not seen, moved with fear, framed the ark for the saving of his house: by the which he condemned the world and was instituted heir of the justice which is by faith.
+
+11:8. By faith he that is called Abraham obeyed to go out into a place which he was to receive for an inheritance. And he went out, not knowing whither he went.
+
+He that is called Abraham ... or, Abraham being called.
+
+11:9. By faith he abode in the land of promise, as in a strange country, dwelling in cottages, with Isaac and Jacob, the co-heirs of the same promise.
+
+11:10. For he looked for a city that hath foundations: whose builder and maker is God.
+
+11:11. By faith also Sara herself, being barren, received strength to conceive seed, even past the time of age: because she believed that he was faithful who had promised,
+
+11:12. For which cause there sprung even from one (and him as good as dead) as the stars of heaven in multitude and as the sand which is by the sea shore innumerable.
+
+11:13. All these died according to faith, not having received the promises but beholding them afar off and saluting them and confessing that they are pilgrims and strangers on the earth.
+
+11:14. For they that say these things do signify that they seek a country.
+
+11:15. And truly, if they had been mindful of that from whence they came out, they had doubtless, time to return.
+
+11:16. But now they desire a better, that is to say, a heavenly country. Therefore, God is not ashamed to be called their God: for he hath prepared for them a city.
+
+11:17. By faith Abraham, when he was tried, offered Isaac: and he that had received the promises offered up his only begotten son,
+
+11:18. (To whom it was said: In Isaac shall thy seed be called:)
+
+11:19. Accounting that God is able to raise up even from the dead. Whereupon also he received him for a parable.
+
+For a parable.... That is, as a figure of Christ, slain and coming to life again.
+
+11:20. By faith also of things to come Isaac blessed Jacob and Esau.
+
+11:21. By faith Jacob, dying, blessed each of the sons of Joseph and adored the top of his rod.
+
+Adored the top of his rod.... The apostle here follows the ancient Greek Bible of the seventy interpreters, (which translates in this manner, Gen. 47. 31.,) and alleges this fact of Jacob, in paying a relative honour and veneration to the top of the rod or sceptre of Joseph, as to a figure of Christ’s sceptre and kingdom, as an instance and argument of his faith. But some translators, who are no friends to this relative honour, have corrupted the text, by translating it, he worshipped, leaning upon the top of his staff; as if this circumstance of leaning upon his staff were any argument of Jacob’s faith, or worthy the being thus particularly taken notice of by the Holy Ghost.
+
+11:22. By faith Joseph, when he was dying, made mention of the going out of the children of Israel and gave commandment concerning his bones.
+
+11:23. By faith Moses, when he was born, was hid three months by his parents: because they saw he was a comely babe, and they feared not the king’s edict.
+
+11:24. By faith Moses, when he was grown up, denied himself to be the son of Pharao’s daughter:
+
+11:25. Rather choosing to be afflicted with the people of God than to have the pleasure of sin for a time:
+
+11:26. Esteeming the reproach of Christ greater riches than the treasure of the Egyptians. For he looked unto the reward.
+
+11:27. By faith he left Egypt, not fearing the fierceness of the king: for he endured, as seeing him that is invisible.
+
+11:28. By faith he celebrated the pasch and the shedding of the blood: that he who destroyed the firstborn might not touch them.
+
+11:29. By faith they passed through the Red Sea, as by dry land: which the Egyptians attempting, were swallowed up.
+
+11:30. By faith the walls of Jericho fell down, by the going round them seven days.
+
+11:31. By faith Rahab the harlot perished not with the unbelievers, receiving the spies with peace.
+
+11:32. And what shall I yet say? For the time would fail me to tell of Gedeon, Barac, Samson, Jephthe, David, Samuel, and the prophets:
+
+11:33. Who by faith conquered kingdoms, wrought justice, obtained promises, stopped the mouths of lions,
+
+11:34. Quenched the violence of fire, escaped the edge of the sword, recovered strength from weakness, became valiant in battle, put to flight the armies of foreigners.
+
+11:35. Women received their dead raised to life again. But others were racked, not accepting deliverance, that they might find a better resurrection.
+
+11:36. And others had trial of mockeries and stripes: moreover also of bands and prisons.
+
+11:37. They were stoned, they were cut asunder, they were tempted, they were put to death by the sword, they wandered about in sheepskins, in goatskins, being in want, distressed, afflicted:
+
+11:38. Of whom the world was not worthy: wandering in deserts, in mountains and in dens and in caves of the earth.
+
+11:39. And all these, being approved by the testimony of faith, received not the promise:
+
+11:40. God providing some better thing for us, that they should not be perfected without us.
+
+Hebrews Chapter 12
+Exhortation to constancy under their crosses. The danger of abusing the graces of the New Testament.
+
+12:1. And therefore we also having so great a cloud of witnesses over our head, laying aside every weight and sin which surrounds us, let us run by patience to the fight proposed to us:
+
+12:2. Looking on Jesus, the author and finisher of faith, who, having joy set before him, endured the cross, despising the shame, and now sitteth on the right hand of the throne of God.
+
+12:3. For think diligently upon him that endured such opposition from sinners against himself that you be not wearied, fainting in your minds.
+
+12:4. For you have not yet resisted unto blood, striving against sin.
+
+12:5. And you have forgotten the consolation which speaketh to you, as unto children, saying: My son, neglect not the discipline of the Lord: neither be thou wearied whilst thou art rebuked by him.
+
+12:6. For whom the Lord loveth he chastiseth: and he scourgeth every son whom he receiveth.
+
+12:7. Persevere under discipline. God dealeth with you as with his sons. For what son is there whom the father doth not correct?
+
+12:8. But if you be without chastisement, whereof all are made partakers, then are you bastards and not sons.
+
+12:9. Moreover, we have had fathers of our flesh for instructors, and we reverenced them. Shall we not much more obey the Father of spirits and live?
+
+12:10. And they indeed for a few days, according to their own pleasure, instructed us: but he, for our profit, that we might receive his sanctification.
+
+12:11. Now all chastisement for the present indeed seemeth not to bring with it joy, but sorrow: but afterwards it will yield to them that are exercised by it the most peaceable fruit of justice.
+
+12:12. Wherefore, lift up the hands which hang down and the feeble knees:
+
+12:13. And make straight steps with your feet: that no one, halting, may go out of the way; but rather be healed.
+
+12:14. Follow peace with all men and holiness: without which no man shall see God.
+
+12:15. Looking diligently, lest any man be wanting to the grace of God: lest any root of bitterness springing up do hinder and by it many be defiled:
+
+12:16. Lest there be any fornicator or profane person, as Esau who for one mess sold his first birthright.
+
+12:17. For know ye that afterwards, when he desired to inherit the benediction, he was rejected. For he found no place of repentance, although with tears he had sought it.
+
+He found, etc.... That is, he found no way to bring his father to repent, or change his mind, with relation to his having given the blessing to his younger brother Jacob.
+
+12:18. For you are not come to a mountain that might be touched and a burning fire and a whirlwind and darkness and storm,
+
+12:19. And the sound of a trumpet and the voice of words, which they that heard excused themselves, that the word might not be spoken to them.
+
+12:20. For they did not endure that which was said: and if so much as a beast shall touch the mount, it shall be stoned.
+
+12:21. And so terrible was that which was seen, Moses said: I am frighted, and tremble.
+
+12:22. But you are come to mount Sion and to the city of the living God, the heavenly Jerusalem, and to the company of many thousands of angels,
+
+12:23. And to the church of the firstborn who are written in the heavens, and to God the judge of all, and to the spirits of the just made perfect,
+
+12:24. And to Jesus the mediator of the new testament, and to the sprinkling of blood which speaketh better than that of Abel.
+
+12:25. See that you refuse him not that speaketh. For if they escaped not who refused him that spoke upon earth, much more shall not we that turn away from him that speaketh to us from heaven.
+
+12:26. Whose voice then moved the earth; but now he promiseth, saying: Yet once more: and I will move, not only the earth, but heaven also.
+
+12:27. And in that he saith: Yet once more, he signifieth the translation of the moveable things as made, that those things may remain which are immoveable.
+
+12:28. Therefore, receiving an immoveable kingdom, we have grace: whereby let us serve, pleasing God, with fear and reverence.
+
+12:29. For our God is a consuming fire.
+
+Hebrews Chapter 13
+Divers admonitions and exhortations.
+
+13:1. Let the charity of the brotherhood abide in you.
+
+13:2. And hospitality do not forget: for by this some, being not aware of it, have entertained angels.
+
+13:3. Remember them that are in bands, as if you were bound with them: and them that labour, as being yourselves also in the body.
+
+13:4. Marriage honourable in all, and the bed undefiled. For fornicators and adulterers God will judge.
+
+Or, Let marriage be honourable in all.... That is, in all things belonging to the marriage state. This is a warning to married people, not to abuse the sanctity of their state, by any liberties or irregularities contrary thereunto. Now it does not follow from this text that all persons are obliged to marry, even if the word omnibus were rendered, in all persons, instead of in all things: for if it was a precept, St. Paul himself would have transgressed it, as he never married. Moreover, those who have already made a vow to God to lead a single life, should they attempt to marry, they would incur their own damnation. 1 Tim. 5. 12.
+
+13:5. Let your manners be without covetousness, contented with such things as you have. For he hath said: I will not leave thee: neither will I forsake thee.
+
+13:6. So that we may confidently say: The Lord is my helper: I will not fear what man shall do to me.
+
+13:7. Remember your prelates who have spoken the word of God to you: whose faith follow, considering the end of their conversation,
+
+13:8. Jesus Christ, yesterday, and today: and the same for ever.
+
+13:9. Be not led away with various and strange doctrines. For it is best that the heart be established with grace, not with meats: which have not profited those that walk in them.
+
+13:10. We have an altar whereof they have no power to eat who serve the tabernacle.
+
+13:11. For the bodies of those beasts whose blood is brought into the holies by the high priest for sin are burned without the camp.
+
+13:12. Wherefore Jesus also, that he might sanctify the people by his own blood, suffered without the gate.
+
+13:13. Let us go forth therefore to him without the camp, bearing his reproach.
+
+Let us go forth therefore to him without the camp, bearing his reproach.... That is, bearing his cross. It is an exhortation to them to be willing to suffer with Christ, reproaches, persecutions, and even death, if they desire to partake of the benefit of his suffering for man’s redemption.
+
+13:14. For, we have not here a lasting city: but we seek one that is to come.
+
+13:15. By him therefore let us offer the sacrifice of praise always to God, that is to say, the fruit of lips confessing to his name.
+
+13:16. And do not forget to do good and to impart: for by such sacrifices God’s favour is obtained.
+
+13:17. Obey your prelates and be subject to them. For they watch as being to render an account of your souls: that they may do this with joy and not with grief. For this is not expedient for you.
+
+13:18. Pray for us. For we trust we have a good conscience, being willing to behave ourselves well in all things.
+
+13:19. And I beseech you the more to do this, that I may be restored to you the sooner.
+
+13:20. And may the God of peace, who brought again from the dead the great pastor of the sheep, our Lord Jesus Christ, in the blood of the everlasting testament,
+
+13:21. Fit you in all goodness, that you may do his will; doing in you that which is well pleasing in his sight, through Jesus Christ, to whom is glory for ever and ever. Amen.
+
+13:22. And I beseech you, brethren, that you suffer this word of consolation. For I have written to you in a few words.
+
+13:23. Know ye that our brother Timothy is set at liberty: with whom (if he come shortly) I will see you.
+
+13:24. Salute all your prelates and all the saints. The brethren from Italy salute you.
+
+13:25. Grace be with you all. Amen.`
+
+var book_of_james = `James Chapter 1
+The benefit of tribulations. Prayer with faith. God is the author of all good, but not of evil. We must be slow to anger and not hearers only, but doers of the word. Of bridling the tongue and of pure religion.
+
+1:1. James, the servant of God and of our Lord Jesus Christ, to the twelve tribes which are scattered abroad, greeting.
+
+1:2. My brethren, count it all joy, when you shall fall into divers temptations:
+
+Into divers temptations.... The word temptation, in this epistle, is sometimes taken for trials by afflictions or persecutions, as in this place: at other times, it is to be understood, tempting, enticing, or drawing others into sin.
+
+1:3. Knowing that the trying of your faith worketh patience
+
+1:4. And patience hath a perfect work: that you may be perfect and entire, failing in nothing.
+
+1:5. But if any of you want wisdom, let him ask of God who giveth to all men abundantly and upbraideth not. And it shall be given him.
+
+1:6. But let him ask in faith, nothing wavering. For he that wavereth is like a wave of the sea, which is moved and carried about by the wind.
+
+1:7. Therefore let not that man think that he shall receive any thing of the Lord.
+
+1:8. A double minded man is inconstant in all his ways.
+
+1:9. But let the brother of low condition glory in his exaltation:
+
+1:10. And the rich, in his being low: because as the flower of the grass shall he pass away.
+
+1:11. For the sun rose with a burning heat and parched the grass: and the flower thereof fell off, and the beauty of the shape thereof perished. So also shall the rich man fade away in his ways.
+
+1:12. Blessed is the man that endureth temptation: for, when he hath been proved, he shall receive the crown of life which God hath promised to them that love him.
+
+1:13. Let no man, when he is tempted, say that he is tempted by God. For God is not a tempter of evils: and he tempteth no man.
+
+1:14. But every man is tempted by his own concupiscence, being drawn away and allured.
+
+1:15. Then, when concupiscence hath conceived, it bringeth forth sin. But sin, when it is completed, begetteth death.
+
+1:16. Do not err, therefore, my dearest brethren.
+
+1:17. Every best gift and every perfect gift is from above, coming down from the Father of lights, with whom there is no change nor shadow of alteration.
+
+1:18. For of his own will hath he begotten us by the word of truth, that we might be some beginning of his creature.
+
+Some beginning.... That is, a kind of first fruits of his creatures.
+
+1:19. You know, my dearest brethren. And let every man be swift to hear, but slow to speak and slow to anger.
+
+1:20. For the anger of man worketh not the justice of God.
+
+1:21. Wherefore, casting away all uncleanness and abundance of naughtiness, with meekness receive the ingrafted word, which is able to save your souls.
+
+1:22. But be ye doers of the word and not hearers only, deceiving your own selves.
+
+1:23. For if a man be a hearer of the word and not a doer, he shall be compared to a man beholding his own countenance in a glass.
+
+1:24. For he beheld himself and went his way and presently forgot what manner of man he was.
+
+1:25. But he that hath looked into the perfect law of liberty and hath continued therein, not becoming a forgetful hearer but a doer of the work: this man shall be blessed in his deed.
+
+1:26. And if any man think himself to be religious, not bridling his tongue but deceiving his own heart, this man’s religion is vain.
+
+1:27. Religion clean and undefiled before God and the Father is this: to visit the fatherless and widows in their tribulation and to keep one’s self unspotted from this world.
+
+James Chapter 2
+Against respect of persons. The danger of transgressing one point of the law. Faith is dead without works.
+
+2:1. My brethren, have not the faith of our Lord Jesus Christ of glory, with respect of persons.
+
+With respect of persons.... The meaning is, that in matters relating to faith, the administering of the sacraments, and other spiritual functions in God’s church, there should be no respect of persons; but that the souls of the poor should be as much regarded as those of the rich. See Deut. 1.17.
+
+2:2. For if there shall come into your assembly a man having a golden ring, in fine apparel; and there shall come in also a poor man in mean attire:
+
+2:3. And you have respect to him that is clothed with the fine apparel and shall say to him: Sit thou here well: but say to the poor man: Stand thou there, or: Sit under my footstool:
+
+2:4. Do you not judge within yourselves, and are become judges of unjust thoughts?
+
+2:5. Hearken, my dearest brethren: Hath not God chosen the poor in this world, rich in faith and heirs of the kingdom which God hath promised to them that love him?
+
+2:6. But you have dishonoured the poor man. Do not the rich oppress you by might? And do not they draw you before the judgment seats?
+
+2:7. Do not they blaspheme the good name that is invoked upon you?
+
+2:8. If then you fulfil the royal law, according to the scriptures: Thou shalt love thy neighbour as thyself; you do well.
+
+2:9. But if you have respect to persons, you commit sin, being reproved by the law as transgressors.
+
+2:10. And whosoever shall keep the whole law, but offend in one point, is become guilty of all.
+
+Guilty of all; ... That is, he becomes a transgressor of the law in such a manner, that the observing of all other points will not avail him to salvation; for he despises the lawgiver, and breaks through the great and general commandment of charity, even by one mortal sin. For all the precepts of the law are to be considered as one total and entire law, and as it were a chain of precepts, where, by breaking one link of this chain, the whole chain is broken, or the integrity of the law consisting of a collection of precepts. A sinner, therefore, by a grievous offence against any one precept, incurs eternal punishment; yet the punishment in hell shall be greater for those who have been greater sinners, as a greater reward shall be for those in heaven who have lived with greater sanctity and perfection.
+
+2:11. For he that said: Thou shalt not commit adultery, said also: Thou shalt not kill. Now if thou do not commit adultery, but shalt kill, thou art become a transgressor of the law.
+
+2:12. So speak ye and so do, as being to be judged by the law of liberty.
+
+2:13. For judgment without mercy to him that hath not done mercy. And mercy exalteth itself above judgment.
+
+2:14. What shall it profit, my brethren, if a man say he hath faith, but hath not works? Shall faith be able to save him?
+
+2:15. And if a brother or sister be naked and want daily food:
+
+2:16. And one of you say to them: Go in peace, be ye warmed and filled; yet give them not those things that are necessary for the body, what shall it profit?
+
+2:17. So faith also, if it have not works, is dead in itself.
+
+2:18. But some man will say: Thou hast faith, and I have works. Shew me thy faith without works; and I will shew thee, by works, my faith.
+
+2:19. Thou believest that there is one God. Thou dost well: the devils also believe and tremble.
+
+2:20. But wilt thou know, O vain man, that faith without works is dead?
+
+2:21. Was not Abraham our father justified by works, offering up Isaac his son upon the altar?
+
+2:22. Seest thou that faith did cooperate with his works and by works faith was made perfect?
+
+2:23. And the scripture was fulfilled, saying: Abraham believed God, and it was reputed to him to justice, and he was called the friend of God.
+
+2:24. Do you see that by works a man is justified, and not by faith only?
+
+2:25. And in like manner also Rahab the harlot, was not she justified by works, receiving the messengers and sending them out another way?
+
+2:26. For even as the body without the spirit is dead: so also faith without works is dead.
+
+James Chapter 3
+Of the evils of the tongue. Of the difference between the earthly and heavenly wisdom.
+
+3:1. Be ye not many masters, my brethren, knowing that you receive the greater judgment.
+
+3:2. For in many things we all offend. If any man offend not in word, the same is a perfect man. He is able also with a bridle to lead about the whole body.
+
+3:3. For if we put bits into the mouths of horses, that they may obey us: and we turn about their whole body.
+
+3:4. Behold also ships, whereas they are great and are driven by strong winds, yet are they turned about with a small helm, whithersoever the force of the governor willeth.
+
+3:5. Even so the tongue is indeed a little member and boasteth great things. Behold how small a fire kindleth a great wood.
+
+3:6. And the tongue is a fire, a world of iniquity. The tongue is placed among our members, which defileth the whole body and inflameth the wheel of our nativity, being set on fire by hell.
+
+3:7. For every nature of beasts and of birds and of serpents and of the rest is tamed and hath been tamed, by the nature of man.
+
+3:8. But the tongue no man can tame, an unquiet evil, full of deadly poison.
+
+3:9. By it we bless God and the Father: and by it we curse men who are made after the likeness of God.
+
+3:10. Out of the same mouth proceedeth blessing and cursing. My brethren, these things ought not so to be.
+
+3:11. Doth a fountain send forth, out of the same hole, sweet and bitter water?
+
+3:12. Can the fig tree, my brethren, bear grapes? Or the vine, figs? So neither can the salt water yield sweet.
+
+3:13. Who is a wise man and endued with knowledge, among you? Let him shew, by a good conversation, his work in the meekness of wisdom.
+
+3:14. But if you have bitter zeal, and there be contentions in your hearts: glory not and be not liars against the truth.
+
+3:15. For this is not wisdom, descending from above: but earthly, sensual, devilish.
+
+3:16. For where envying and contention is: there is inconstancy and every evil work.
+
+3:17. But the wisdom that is from above, first indeed is chaste, then peaceable, modest, easy to be persuaded, consenting to the good, full of mercy and good fruits, without judging, without dissimulation.
+
+3:18. And the fruit of justice is sown in peace, to them that make peace.
+
+James Chapter 4
+The evils that flow from yielding to concupiscence and being friends to this world. Admonitions against pride, detraction and the like.
+
+4:1. From whence are wars and contentions among you? Are they not hence, from your concupiscences, which war in your members?
+
+4:2. You covet, and have not: you kill and envy and cannot obtain. You contend and war, and you have not: because you ask not.
+
+4:3. You ask and receive not: because you ask amiss, that you may consume it on your concupiscences.
+
+4:4. Adulterers, know you not that the friendship of this world is the enemy of God? Whosoever therefore will be a friend of this world becometh an enemy of God.
+
+4:5. Or do you think that the scripture saith in vain: To envy doth the spirit covet which dwelleth in you?
+
+4:6. But he giveth greater grace. Wherefore he saith: God resisteth the proud and giveth grace to the humble.
+
+4:7. Be subject therefore to God. But resist the devil: and he will fly from you.
+
+4:8. Draw nigh to God: and he will draw nigh to you. Cleanse your hands, ye sinners, and purify your hearts, ye double minded.
+
+4:9. Be afflicted and mourn and weep: let your laughter be turned into mourning and your joy into sorrow.
+
+4:10. Be humbled in the sight of the Lord: and he will exalt you.
+
+4:11. Detract not one another, my brethren. He that detracteth his brother, or he that judgeth his brother, detracteth the law and judgeth the law. But if thou judge the law, thou art not a doer of the law, but a judge.
+
+4:12. There is one lawgiver and judge, that is able to destroy and to deliver.
+
+4:13. But who art thou that judgest thy neighbour? Behold, now you that say: To-day or to-morrow we will go into such a city, and there we will spend a year and will traffic and make our gain.
+
+4:14. Whereas you know not what shall be on the morrow.
+
+4:15. For what is your life? It is a vapour which appeareth for a little while and afterwards shall vanish away. For that you should say: If the Lord will, and, If we shall live, we will do this or that.
+
+4:16. But now you rejoice in your arrogancies. All such rejoicing is wicked.
+
+4:17. To him therefore who knoweth to do good and doth it not, to him it is sin.
+
+James Chapter 5
+A woe to the rich that oppress the poor. Exhortations to patience and to avoid swearing. Of the anointing the sick, confession of sins and fervour in prayer.
+
+5:1. Go to now, ye rich men: weep and howl in your miseries, which shall come upon you.
+
+5:2. Your riches are corrupted: and your garments are motheaten.
+
+5:3. Your gold and silver is cankered: and the rust of them shall be for a testimony against you and shall eat your flesh like fire. You have stored up to yourselves wrath against the last days.
+
+5:4. Behold the hire of the labourers who have reaped down your fields, which by fraud has been kept back by you, crieth: and the cry of them hath entered into the ears of the Lord of Sabaoth.
+
+5:5. You have feasted upon earth: and in riotousness you have nourished your hearts, in the day of slaughter.
+
+5:6. You have condemned and put to death the Just One: and he resisted you not.
+
+5:7. Be patient therefore, brethren, until the coming of the Lord. Behold, the husbandman waiteth for the precious fruit of the earth: patiently bearing till he receive the early and latter rain.
+
+5:8. Be you therefore also patient and strengthen your hearts: for the coming of the Lord is at hand.
+
+5:9. Grudge not, brethren, one against another, that you may not be judged. Behold the judge standeth before the door.
+
+5:10. Take, my brethren, for an example of suffering evil, of labour and patience, the prophets who spoke in the name of the Lord.
+
+5:11. Behold, we account them blessed who have endured. You have heard of the patience of Job and you have seen the end of the Lord, that the Lord is merciful and compassionate.
+
+5:12. But above all things, my brethren, swear not, neither by heaven, nor by the earth, nor by any other oath. But let your speech be: Yea, Yea: No, No: that you fall not under judgment.
+
+5:13. Is any of you sad? Let him pray: Is he cheerful in mind? Let him sing.
+
+5:14. Is any man sick among you? Let him bring in the priests of the church and let them pray over him, anointing him with oil in the name of the Lord.
+
+Let him bring in, etc.... See here a plain warrant of scripture for the sacrament of extreme unction, that any controversy against its institution would be against the express words of the sacred text in the plainest terms.
+
+5:15. And the prayer of faith shall save the sick man. And the Lord shall raise him up: and if he be in sins, they shall be forgiven him.
+
+5:16. Confess therefore your sins one to another: and pray one for another, that you may be saved. For the continual prayer of a just man availeth much.
+
+Confess your sins one to another.... That is, to the priests of the church, whom (ver.14) he had ordered to be called for, and brought in to the sick; moreover, to confess to persons who had no power to forgive sins, would be useless. Hence the precept here means, that we must confess to men whom God hath appointed, and who, by their ordination and jurisdiction, have received the power of remitting sins in his name.
+
+5:17. Elias was a man passible like unto us: and with prayer he prayed that it might not rain upon the earth. And it rained not for three years and six months.
+
+5:18. And he prayed again. And the heaven gave rain: and the earth brought forth her fruit.
+
+5:19. My brethren, if any of you err from the truth and one convert him:
+
+5:20. He must know that he who causeth a sinner to be converted from the error of his way shall save his soul from death and shall cover a multitude of sins.`
+
+var book_of_1peter = `1 Peter Chapter 1
+He gives thanks to God for the benefit of our being called to the true faith and to eternal life, into which we are to enter by many tribulations. He exhorts to holiness of life, considering the holiness of God and our redemption by the blood of Christ.
+
+1:1. Peter, an apostle of Jesus Christ, to the strangers dispersed through Pontus, Galatia, Cappadocia, Asia and Bithynia, elect,
+
+1:2. According to the foreknowledge of God the Father, unto the sanctification of the Spirit, unto obedience and sprinkling of the blood of Jesus Christ. Grace unto you and peace be multiplied.
+
+1:3. Blessed be the God and Father of our Lord Jesus Christ, who according to his great mercy hath regenerated us unto a lively hope, by the resurrection of Jesus Christ from the dead:
+
+1:4. Unto an inheritance, incorruptible, and undefiled and that cannot fade, reserved in heaven for you,
+
+1:5. Who, by the power of God, are kept by faith unto salvation, ready to be revealed in the last time.
+
+1:6. Wherein you shall greatly rejoice, if now you must be for a little time made sorrowful in divers temptations:
+
+1:7. That the trial of your faith (much more precious than gold which is tried by the fire) may be found unto praise and glory and honour at the appearing of Jesus Christ.
+
+1:8. Whom having not seen, you love: in whom also now though you see him not, you believe and, believing, shall rejoice with joy unspeakable and glorified;
+
+1:9. Receiving the end of your faith, even the salvation of your souls.
+
+1:10. Of which salvation the prophets have inquired and diligently searched, who prophesied of the grace to come in you.
+
+1:11. Searching what or what manner of time the Spirit of Christ in them did signify, when it foretold those sufferings that are in Christ and the glories that should follow.
+
+1:12. To whom it was revealed that, not to themselves but to you, they ministered those things which are now declared to you by them that have preached the gospel to you: the Holy Ghost being sent down from heaven, on whom the angels desire to look.
+
+1:13. Wherefore, having the loins of your mind girt up, being sober, trust perfectly in the grace which is offered you in the revelation of Jesus Christ.
+
+1:14. As children of obedience, not fashioned according to the former desires of your ignorance,
+
+1:15. But according to him that hath called you, who is holy, be you also in all manner of conversation holy:
+
+1:16. Because it is written: You shall be holy, for I am holy.
+
+1:17. And if you invoke as Father him who, without respect of persons, judgeth according to every one’s work: converse in fear during the time of your sojourning here.
+
+1:18. Knowing that you were not redeemed with corruptible things, as gold or silver, from your vain conversation of the tradition of your fathers:
+
+1:19. But with the precious blood of Christ, as of a lamb unspotted and undefiled.
+
+1:20. Foreknown indeed before the foundation of the world, but manifested in the last times for you:
+
+1:21. Who through him are faithful in God who raised him up from the dead and hath given him glory, that your faith and hope might be in God.
+
+1:22. Purifying your souls in the obedience of charity, with a brotherly love, from a sincere heart love one another earnestly:
+
+1:23. Being born again, not of corruptible seed, but incorruptible, by the word of God who liveth and remaineth for ever.
+
+1:24. For all flesh is as grass and all the glory thereof as the flower of grass. The grass is withered and the flower thereof is fallen away.
+
+1:25. But the word of the Lord endureth for ever. And this is the word which by the gospel hath been preached unto you.
+
+1 Peter Chapter 2
+We are to lay aside all guile and go to Christ the living stone, and, as being now his people, walk worthily of him, with submission to superiors and patience under sufferings.
+
+2:1. Wherefore laying away all malice and all guile and dissimulations and envies and all detractions,
+
+2:2. As newborn babes, desire the rational milk without guile, that thereby you may grow unto salvation:
+
+2:3. If so be you have tasted that the Lord is sweet.
+
+2:4. Unto whom coming, as to a living stone, rejected indeed by men but chosen and made honourable by God:
+
+2:5. Be you also as living stones built up, a spiritual house, a holy priesthood, to offer up spiritual sacrifices, acceptable to God by Jesus Christ.
+
+2:6. Wherefore it is said in the scripture: Behold, I lay in Sion a chief corner stone, elect, precious. And he that shall believe in him shall not be confounded.
+
+2:7. To you therefore that believe, he is honour: but to them that believe not, the stone which the builders rejected, the same is made the head of the corner:
+
+2:8. And a stone of stumbling and a rock of scandal, to them who stumble at the word, neither do believe, whereunto also they are set.
+
+2:9. But you are a chosen generation, a kingly priesthood, a holy nation, a purchased people: that you may declare his virtues, who hath called you out of darkness into his marvelous light:
+
+2:10. Who in time past were not a people: but are now the people of God. Who had not obtained mercy: but now have obtained mercy.
+
+2:11. Dearly beloved, I beseech you, as strangers and pilgrims, to refrain yourselves from carnal desires which war against the soul,
+
+2:12. Having your conversation good among the Gentiles: that whereas they speak against you as evildoers, they may, by the good works which they shall behold in you, glorify God in the day of visitation.
+
+2:13. Be ye subject therefore to every human creature for God’s sake: whether it be to the king as excelling,
+
+2:14. Or to governors as sent by him for the punishment of evildoers and for the praise of the good.
+
+2:15. For so is the will of God, that by doing well you may put to silence the ignorance of foolish men:
+
+2:16. As free and not as making liberty a cloak for malice, but as the servants of God.
+
+2:17. Honour all men. Love the brotherhood. Fear God. Honour the king.
+
+2:18. Servants, be subject to your masters with all fear, not only to the good and gentle but also to the froward.
+
+2:19. For this is thankworthy: if, for conscience towards God, a man endure sorrows, suffering wrongfully.
+
+2:20. For what glory is it, if, committing sin and being buffeted for it, you endure? But if doing well you suffer patiently: this is thankworthy before God.
+
+2:21. For unto this are you called: because Christ also suffered for us, leaving you an example that you should follow his steps.
+
+2:22. Who did no sin, neither was guile found in his mouth.
+
+2:23. Who, when he was reviled, did not revile: when he suffered, he threatened not, but delivered himself to him that judged him unjustly.
+
+2:24. Who his own self bore our sins in his body upon the tree: that we, being dead to sins, should live to justice: by whose stripes you were healed.
+
+2:25. For you were as sheep going astray: but you are now converted to the shepherd and bishop of your souls.
+
+1 Peter Chapter 3
+How wives are to behave to their husbands. What ornaments they are to seek. Exhortations to divers Virtues.
+
+3:1. In like manner also, let wives be subject to their husbands: that, if any believe not the word, they may be won without the word, by the conversation of the wives,
+
+3:2. Considering your chaste conversation with fear.
+
+3:3. Whose adorning, let it not be the outward plaiting of the hair, or the wearing of gold, or the putting on of apparel:
+
+3:4. But the hidden man of the heart, in the incorruptibility of a quiet and a meek spirit which is rich in the sight of God.
+
+3:5. For after this manner heretofore, the holy women also who trusted in God adorned themselves, being in subjection to their own husbands:
+
+3:6. As Sara obeyed Abraham, calling him lord: whose daughters you are, doing well and not fearing any disturbance.
+
+3:7. Ye husbands, likewise dwelling with them according to knowledge, giving honour to the female as to the weaker vessel and as to the co-heirs of the grace of life: that your prayers be not hindered.
+
+3:8. And in fine, be ye all of one mind, having compassion one of another, being lovers of the brotherhood, merciful, modest, humble:
+
+3:9. Not rendering evil for evil, nor railing for railing, but contrariwise, blessing: for unto this are you called, that you may inherit a blessing.
+
+3:10. For he that will love life and see good days, let him refrain his tongue from evil, and his lips that they speak no guile.
+
+3:11. Let him decline from evil and do good: Let him seek after peace and pursue it:
+
+3:12. Because the eyes of the Lord are upon the just, and his ears unto their prayers but the countenance of the Lord upon them that do evil things.
+
+3:13. And who is he that can hurt you, if you be zealous of good?
+
+3:14. But if also you suffer any thing for justice’ sake, blessed are ye. And be not afraid of their fear: and be not troubled.
+
+3:15. But sanctify the Lord Christ in your hearts, being ready always to satisfy every one that asketh you a reason of that hope which is in you.
+
+3:16. But with modesty and fear, having a good conscience: that whereas they speak evil of you, they may be ashamed who falsely accuse your good conversation in Christ.
+
+3:17. For it is better doing well (if such be the will of God) to suffer than doing ill.
+
+3:18. Because Christ also died once for our sins, the just for the unjust: that he might offer us to God, being put to death indeed in the flesh, but enlivened in the spirit,
+
+3:19. In which also coming he preached to those spirits that were in prison:
+
+Spirits that were in prison.... See here a proof of a third place, or middle state of souls: for these spirits in prison, to whom Christ went to preach, after his death, were not in heaven; nor yet in the hell of the damned: because heaven is no prison: and Christ did not go to preach to the damned.
+
+3:20. Which had been some time incredulous, when they waited for the patience of God in the days of Noe, when the ark was a building: wherein a few, that is, eight souls, were saved by water.
+
+3:21. Whereunto baptism, being of the like form, now saveth you also: not the putting away of the filth of the flesh, but, the examination of a good conscience towards God by the resurrection of Jesus Christ.
+
+Whereunto baptism, etc.... Baptism is said to be of the like form with the water by which Noe was saved, because the one was a figure of the other. Not the putting away, etc.... As much as to say, that baptism has not its efficacy, in order to salvation, from its washing away any bodily filth or dirt; but from its purging the conscience from sin, when accompanied with suitable dispositions in the party, to answer the interrogations made at that time, with relation to faith, the renouncing of Satan with all his works; and the obedience to God’s commandments.
+
+3:22. Who is on the right hand of God, swallowing down death that we might be made heirs of life everlasting: being gone into heaven, the angels and powers and virtues being made subject to him.
+
+1 Peter Chapter 4
+Exhortations to cease from sin, to mutual charity, to do all for the glory of God, to be willing to suffer for Christ.
+
+4:1. Christ therefore having suffered in the flesh, be you also armed with the same thought: for he that hath suffered in the flesh hath ceased from sins:
+
+4:2. That now he may live the rest of his time in the flesh, not after the desires of men but according to the will of God.
+
+4:3. For the time past is sufficient to have fulfilled the will of the Gentiles, for them who have walked in riotousness, lusts, excess of wine, revellings, banquetings and unlawful worshipping of idols.
+
+4:4. Wherein they think it strange that you run not with them into the same confusion of riotousness: speaking evil of you.
+
+4:5. Who shall render account to him who is ready to judge the living and the dead.
+
+4:6. For, for this cause was the gospel preached also to the dead: That they might be judged indeed according to men, in the flesh: but may live according to God, in the Spirit.
+
+4:7. But the end of all is at hand. Be prudent therefore and watch in prayers.
+
+4:8. But before all things have a constant mutual charity among yourselves: for charity covereth a multitude of sins.
+
+4:9. Using hospitality one towards another, without murmuring,
+
+4:10. As every man hath received grace, ministering the same one to another: as good stewards of the manifold grace of God.
+
+4:11. If any man speak, let him speak, as the words of God. If any minister, let him do it, as of the power which God administereth: that in all things God may be honoured through Jesus Christ: to whom is glory and empire for ever and ever. Amen.
+
+4:12. Dearly beloved, think not strange the burning heat which is to try you: as if some new thing happened to you.
+
+4:13. But if you partake of the sufferings of Christ, rejoice that, when his glory shall be revealed, you may also be glad with exceeding joy.
+
+4:14. If you be reproached for the name of Christ, you shall be blessed: for that which is of the honour, glory and power of God, and that which is his Spirit resteth upon you.
+
+4:15. But let none of you suffer as a murderer or a thief or a railer or a coveter of other men’s things.
+
+4:16. But, if as a Christian, let him not be ashamed: but let him glorify God in that name.
+
+4:17. For the time is, that judgment should begin at the house of God. And if at first at us, what shall be the end of them that believe not the gospel of God?
+
+4:18. And if the just man shall scarcely be saved, where shall the ungodly and the sinner appear?
+
+Scarcely.... That is, not without much labour and difficulty; and because of the dangers which constantly surround, the temptations of the world, of the devil, and of our own corrupt nature.
+
+4:19. Wherefore let them also that suffer according to the will of God commend their souls in good deeds to the faithful Creator.
+
+1 Peter Chapter 5
+He exhorts both priests and laity to their respective duties and recommends to all humility and watchfulness.
+
+5:1. The ancients therefore that are among you, I beseech who am myself also an ancient and a witness of the sufferings of Christ, as also a partaker of that glory which is to be revealed in time to come:
+
+5:2. Feed the flock of God which is among you, taking care of it, not by constraint but willingly, according to God: not for filthy lucre’s sake but voluntarily:
+
+5:3. Neither as lording it over the clergy but being made a pattern of the flock from the heart.
+
+5:4. And when the prince of pastors shall appear, you shall receive a never fading crown of glory.
+
+5:5. In like manner, ye young men, be subject to the ancients. And do you all insinuate humility one to another: for God resisteth the proud, but to the humble he giveth grace.
+
+5:6. Be you humbled therefore under the mighty hand of God, that he may exalt you in the time of visitation:
+
+5:7. Casting all your care upon him, for he hath care of you.
+
+5:8. Be sober and watch: because your adversary the devil, as a roaring lion, goeth about seeking whom he may devour.
+
+5:9. Whom resist ye, strong in faith: knowing that the same affliction befalls, your brethren who are in the world.
+
+5:10. But the God of all grace, who hath called us unto his eternal glory in Christ Jesus, after you have suffered a little, will himself perfect you and confirm you and establish you.
+
+5:11. To him be glory and empire, for ever and ever. Amen.
+
+5:12. By Sylvanus, a faithful brother unto you, as I think, I have written briefly: beseeching and testifying that this is the true grace of God, wherein you stand.
+
+5:13. The church that is in Babylon, elected together with you, saluteth you. And so doth my son, Mark.
+
+5:14. Salute one another with a holy kiss. Grace be to all you who are in Christ Jesus. Amen.`
+
+var book_of_2peter = `2 Peter Chapter 1
+He exhorts them to join all other virtues with their faith, in order to secure their salvation.
+
+1:1. Simon Peter, servant and apostle of Jesus Christ: to them that have obtained equal faith with us in the justice of our God and Saviour Jesus Christ.
+
+1:2. Grace to you and peace be accomplished in the knowledge of God and of Christ Jesus our Lord.
+
+1:3. As all things of his divine power which appertain to life and godliness are given us through the knowledge of him who hath called us by his own proper glory and virtue.
+
+1:4. By whom he hath given us most great and precious promises: that by these you may be made partakers of the divine nature: flying the corruption of that concupiscence which is in the world.
+
+1:5. And you, employing all care, minister in your faith, virtue: And in virtue, knowledge:
+
+1:6. And in knowledge, abstinence: and in abstinence, patience: and in patience, godliness:
+
+1:7. And in godliness, love of brotherhood: and in love of brotherhood, charity.
+
+1:8. For if these things be with you and abound, they will make you to be neither empty nor unfruitful in the knowledge of our Lord Jesus Christ.
+
+1:9. For he that hath not these things with him is blind and groping, having forgotten that he was purged from his old sins.
+
+1:10. Wherefore, brethren, labour the more, that by good works you may make sure your calling and election. For doing these things, you shall not sin at any time.
+
+1:11. For so an entrance shall be ministered to you abundantly into the ever-lasting kingdom of our Lord and Saviour Jesus Christ.
+
+1:12. For which cause, I will begin to put you always in remembrance of these things: though indeed you know them and are confirmed in the present truth.
+
+1:13. But I think it meet, as long as I am in this tabernacle, to stir you up by putting you in remembrance.
+
+1:14. Being assured that the laying away of this my tabernacle is at hand, according as our Lord Jesus Christ also hath signified to me.
+
+1:15. And I will endeavour that you frequently have after my decease whereby you may keep a memory of these things.
+
+1:16. For we have not by following artificial fables made known to you the power and presence of our Lord Jesus Christ: but we were eyewitnesses of his greatness.
+
+1:17. For he received from God the Father honour and glory, this voice coming down to him from the excellent glory: This is my beloved Son, in whom I am well pleased. Hear ye him.
+
+1:18. And this voice, we heard brought from heaven, when we were with him in the holy mount.
+
+1:19. And we have the more firm prophetical word: whereunto you do well to attend, as to a light that shineth in a dark place, until the day dawn and the day star arise in your hearts.
+
+1:20. Understanding this first: That no prophecy of scripture is made by private interpretation.
+
+No prophecy of scripture is made by private interpretation.... This shows plainly that the scriptures are not to be expounded by any one’s private judgment or private spirit, because every part of the holy scriptures were written by men inspired by the Holy Ghost, and declared as such by the Church; therefore they are not to be interpreted but by the Spirit of God, which he hath left, and promised to remain with his Church to guide her in all truth to the end of the world. Some may tell us, that many of our divines interpret the scriptures: they may do so, but they do it always with a submission to the judgment of the Church, and not otherwise.
+
+1:21. For prophecy came not by the will of man at any time: but the holy men of God spoke, inspired by the Holy Ghost.
+
+2 Peter Chapter 2
+He warns them against false teachers and foretells their punishment.
+
+2:1. But there were also false prophets among the people, even as there shall be among you lying teachers who shall bring in sects of perdition and deny the Lord who bought them: bringing upon themselves swift destruction.
+
+Seeds of perdition.... That is, heresies destructive of salvation.
+
+2:2. And many shall follow their riotousnesses, through whom the way of truth shall be evil spoken of.
+
+2:3. And through covetousness shall they with feigned words make merchandise of you. Whose judgment now of a long time lingereth not: and their perdition slumbereth not.
+
+2:4. For if God spared not the angels that sinned, but delivered them, drawn down by infernal ropes to the lower hell, unto torments, to be reserved unto judgment:
+
+2:5. And spared not the original world, but preserved Noe, the eighth person, the preacher of justice, bringing in the flood upon the world of the ungodly.
+
+2:6. And reducing the cities of the Sodomites and of the Gomorrhites into ashes, condemned them to be overthrown, making them an example to those that should after act wickedly,
+
+2:7. And delivered just Lot, oppressed by the injustice and lewd conversation of the wicked:
+
+2:8. For in sight and hearing he was just, dwelling among them who from day to day vexed the just soul with unjust works.
+
+2:9. The Lord knoweth how to deliver the godly from temptation, but to reserve the unjust unto the day of judgment to be tormented:
+
+2:10. And especially them who walk after the flesh in the lust of uncleanness and despise government: audacious, self willed, they fear not to bring in sects, blaspheming.
+
+2:11. Whereas angels, who are greater in strength and power, bring not against themselves a railing judgment.
+
+Bring not a railing judgment, etc.... That is, they use no railing, nor cursing sentence; not even in their conflicts with the evil angels. See St. Jude, ver. 9.
+
+2:12. But these men, as irrational beasts, naturally tending to the snare and to destruction, blaspheming those things which they know not, shall perish in their corruption:
+
+2:13. Receiving the reward of their injustice, counting for a pleasure the delights of a day: stains and spots, sporting themselves to excess, rioting in their feasts with you:
+
+The delights of a day: that is, the short delights of this world, in which they place all their happiness.
+
+2:14. Having eyes full of adultery and of sin that ceaseth not: alluring unstable souls: having their heart exercised with covetousness: children of malediction.
+
+2:15. Leaving the right way, they have gone astray, having followed the way of Balaam of Bosor who loved the wages of iniquity,
+
+2:16. But had a check of his madness, the dumb beast used to the yoke, which, speaking with man’s voice, forbade the folly of the prophet.
+
+2:17. These are fountains without water and clouds tossed with whirlwinds, to whom the mist of darkness is reserved.
+
+2:18. For, speaking proud words of vanity, they allure by the desires of fleshly riotousness those who for a little while escape, such as converse in error:
+
+2:19. Promising them liberty, whereas they themselves are the slaves of corruption. For by whom a man is overcome, of the same also he is the slave.
+
+2:20. For if, flying from the pollutions of the world, through the knowledge of our Lord and Saviour Jesus Christ, they be again entangled in them and overcome: their latter state is become unto them worse than the former.
+
+2:21. For it had been better for them not to have known the way of justice than, after they have known it, to turn back from that holy commandment which was delivered to them.
+
+2:22. For, that of the true proverb has happened to them: The dog is returned to his vomit; and: The sow that was washed to her wallowing in the mire.
+
+2 Peter Chapter 3
+Against scoffers denying the second coming of Christ. He declares the sudden dissolution of this world and exhorts to holiness of life.
+
+3:1. Behold this second epistle I write to you, my dearly beloved, in which, I stir up by way of admonition your sincere mind:
+
+3:2. That you may be mindful of those words which I told you before from the holy prophets, and of your apostles, of the precepts of the Lord and Saviour.
+
+3:3. Knowing this first: That in the last days there shall come deceitful scoffers, walking after their own lusts,
+
+3:4. Saying: Where is his promise or his coming? For since the time that the fathers slept, all things continue as they were from the beginning of the creation.
+
+3:5. For this they are wilfully ignorant of: That the heavens were before, and the earth out of water and through water, consisting by the word of God:
+
+3:6. Whereby the world that then was, being overflowed with water, perished.
+
+3:7. But the heavens and the earth which are now, by the same word are kept in store, reserved unto fire against the day of judgment and perdition of the ungodly men.
+
+3:8. But of this one thing be not ignorant, my beloved, that one day with the Lord is as a thousand years, and a thousand years as one day.
+
+3:9. The Lord delayeth not his promise, as some imagine, but dealeth patiently for your sake, not willing that any should perish, but that all should return to penance,
+
+3:10. But the day of the Lord shall come as a thief, in which the heavens shall pass away with great violence and the elements shall be melted with heat and the earth and the works which are in it shall be burnt up.
+
+3:11. Seeing then that all these things are to be dissolved, what manner of people ought you to be in holy conversation and godliness?
+
+3:12. Looking for and hasting unto the coming of the day of the Lord, by which the heavens being on fire shall be dissolved, and the elements shall melt with the burning heat?
+
+3:13. But we look for new heavens and a new earth according to his promises, in which justice dwelleth.
+
+3:14. Wherefore, dearly beloved, waiting for these things, be diligent that you may be found before him unspotted and blameless in peace.
+
+3:15. And account the longsuffering of our Lord, salvation: as also our most dear brother Paul, according to the wisdom given him, hath written to you:
+
+3:16. As also in all his epistles, speaking in them of these things; in which are certain things hard to be understood, which the unlearned and unstable wrest, as they do also the other scriptures, to their own destruction.
+
+3:17. You therefore, brethren, knowing these things before, take heed, lest being led aside by the error of the unwise, you fall from your own steadfastness.
+
+3:18. But grow in grace and in the knowledge of our Lord and Saviour Jesus Christ. To him be glory both now and unto the day of eternity, Amen.`
+
+var book_of_1john = `1 John Chapter 1
+He declares what he has seen and heard of Christ who is the life eternal, to the end that we may have fellowship with God and all good through him. Yet so if we confess our sins.
+
+1:1. That which was from the beginning, which we have heard, which we have seen with our eyes, which we have looked upon and our hands have handled, of the word of life.
+
+1:2. For the life was manifested: and we have seen and do bear witness and declare unto you the life eternal, which was with the Father and hath appeared to us.
+
+1:3. That which we have seen and have heard, we declare unto you: that you also may have fellowship with us and our fellowship may be with the Father and with his Son Jesus Christ.
+
+1:4. And these things we write to you, that you may rejoice and your joy may be full.
+
+1:5. And this is the declaration which we have heard from him and declare unto you: That God is light and in him there is no darkness.
+
+1:6. If we say that we have fellowship with him and walk in darkness, we lie and do not the truth.
+
+1:7. But if we walk in the light, as he also is in the light, we have fellowship one with another: And the blood of Jesus Christ his Son cleanseth us from all sin.
+
+1:8. If we say that we have no sin, we deceive ourselves and the truth is not in us.
+
+1:9. If we confess our sins, he is faithful and just, to forgive us our sins and to cleanse us from all iniquity.
+
+1:10. If we say that we have not sinned, we make him a liar: and his word is not in us.
+
+1 John Chapter 2
+Christ is our advocate. We must keep his commandments and love one another. We must not love the world nor give ear to new teachers, but abide by the spirit of God in the church.
+
+2:1. My little children, these things I write to you, that you may not sin. But if any man sin, we have an advocate with the Father, Jesus Christ the just.
+
+2:2. And he is the propitiation for our sins: and not for ours only, but also for those of the whole world.
+
+2:3. And by this we know that we have known him, if we keep his commandments.
+
+We have known him, if we keep his commandments.... He speaks of that practical knowledge by love and affection, which can only be proved by our keeping his commandments; and without which we can not be said to know God as we should do.
+
+2:4. He who saith that he knoweth him and keepeth not his commandments is a liar: and the truth is not in him.
+
+2:5. But he that keepeth his word, in him in very deed the charity of God is perfected. And by this we know that we are in him.
+
+2:6. He that saith he abideth in him ought himself also to walk even as he walked.
+
+2:7. Dearly beloved, I write not a new commandment to you, but an old commandment which you had from the beginning. The old commandment is the word which you have heard.
+
+2:8. Again a new commandment I write unto you: which thing is true both in him and in you, because the darkness is passed and the true light now shineth.
+
+A new commandment.... Viz., the commandment of love, which was first given in the old law; but was renewed and extended by Christ. See John 13.34.
+
+2:9. He that saith he is in the light and hateth his brother is in darkness even until now.
+
+2:10. He that loveth his brother abideth in the light: and there is no scandal in him.
+
+2:11. But he that hateth his brother is in darkness and walketh in darkness and knoweth not whither he goeth: because the darkness hath blinded his eyes.
+
+2:12. I write unto you, little children, because your sins are forgiven you for his name’s sake.
+
+2:13. I write unto you, fathers, because you have known him who is from the beginning. I write unto you, young men, because you have overcome the wicked one.
+
+2:14. I write unto you, babes, because you have known the Father. I write unto you, young men, because you are strong, and the word of God abideth in you, and you have overcome the wicked one.
+
+2:15. Love not the world, nor the things which are in the world. If any man love the world, the charity of the Father is not in him.
+
+2:16. For all that is in the world is the concupiscence of the flesh and the concupiscence of the eyes and the pride of life, which is not of the Father but is of the world.
+
+2:17. And the world passeth away and the concupiscence thereof: but he that doth the will of God abideth for ever.
+
+2:18. Little children, it is the last hour: and as you have heard that Antichrist cometh, even now there are become many Antichrists: whereby we know that it is the last hour.
+
+It is the last hour.... That is, it is the last age of the world. Many Antichrists; ... that is, many heretics, enemies of Christ and his church, and forerunners of the great Antichrist.
+
+2:19. They went out from us but they were not of us. For if they had been of us, they would no doubt have remained with us: but that they may be manifest, that they are not all of us.
+
+They were not of us.... That is, they were not solid, steadfast, genuine Christians: otherwise they would have remained in the church.
+
+2:20. But you have the unction from the Holy One and know all things.
+
+The unction from the Holy One.... That is, grace and wisdom from the Holy Ghost. Know all things.... The true children of God’s church, remaining in unity, under the guidance of their lawful pastors, partake of the grace of the Holy Ghost, promised to the church and her pastors; and have in the church all necessary knowledge and instruction; so as to have no need to seek it elsewhere, since it can be only found in that society of which they are members.
+
+2:21. I have not written to you as to them that know not the truth, but as to them that know it: and that no lie is of the truth.
+
+2:22. Who is a liar, but he who denieth that Jesus is the Christ? This is Antichrist, who denieth the Father and the Son.
+
+2:23. Whosoever denieth the Son, the same hath not the Father. He that confesseth the Son hath the Father also.
+
+2:24. As for you, let that which you have heard from the beginning abide in you. If that abide in you, which you have heard from the beginning, you also shall abide in the Son and in the Father.
+
+2:25. And this is the promise which he hath promised us, life everlasting.
+
+2:26. These things have I written to you concerning them that seduce you.
+
+2:27. And as for you, let the unction, which you have received from him abide in you. And you have no need that any man teach you: but as his unction teacheth you of all things and is truth and is no lie. And as it hath taught you, abide in him.
+
+You have no need, etc.... You want not to be taught by any of these men, who, under pretence of imparting more knowledge to you, seek to seduce you (ver. 26), since you are sufficiently taught already, and have all knowledge and grace in the church, with the unction of the Holy Ghost; which these new teachers have no share in.
+
+2:28. And now, little children, abide in him, that when he shall appear we may have confidence and not be confounded by him at his coming.
+
+2:29. If you know that he is just, know ye, that every one also who doth justice is born of him.
+
+1 John Chapter 3
+Of the love of God to us. How we may distinguish the children of God and those of the devil. Of loving one another and of purity of conscience.
+
+3:1. Behold what manner of charity the Father hath bestowed upon us, that we should be called and should be the sons of God. Therefore the world knoweth not us, because it knew not him.
+
+3:2. Dearly beloved, we are now the sons of God: and it hath not yet appeared what we shall be. We know that when he shall appear we shall be like to him: because we shall see him as he is.
+
+3:3. And every one that hath this hope in him sanctifieth himself, as he also is holy.
+
+3:4. Whosoever committeth sin committeth also iniquity. And sin is iniquity.
+
+Iniquity.... transgression of the law.
+
+3:5. And you know that he appeared to take away our sins: and in him there is no sin.
+
+3:6. Whosoever abideth in him sinneth not: and whosoever sinneth hath not seen him nor known him.
+
+Sinneth not.... viz., mortally. See chap. 1.8.
+
+3:7. Little children, let no man deceive you. He that doth justice is just, even as he is just.
+
+3:8. He that committeth sin is of the devil: for the devil sinneth from the beginning. For this purpose the Son of God appeared, that he might destroy the works of the devil.
+
+3:9. Whosoever is born of God committeth not sin: for his seed abideth in him. And he cannot sin, because he is born of God.
+
+Committeth not sin.... That is, as long as he keepeth in himself this seed of grace, and this divine generation, by which he is born of God. But then he may fall from this happy state, by the abuse of his free will, as appears from Rom. 11.20-22; Cor. 9.27; and 10.12; Phil. 2.12; Apoc. 3.11.
+
+3:10. In this the children of God are manifest, and the children of the devil. Whosoever is not just is not of God, nor he that loveth not his brother.
+
+3:11. For this is the declaration which you have heard from the beginning, that you should love one another.
+
+3:12. Not as Cain, who was of the wicked one and killed his brother. And wherefore did he kill him? Because his own works were wicked: and his brother’s just.
+
+3:13. Wonder not, brethren, if the world hate you.
+
+3:14. We know that we have passed from death to life, because we love the brethren. He that loveth not abideth in death.
+
+3:15. Whosoever hateth his brother is a murderer. And you know that no murderer hath eternal life abiding in himself.
+
+3:16. In this we have known the charity of God, because he hath laid down his life for us: and we ought to lay down our lives for the brethren.
+
+3:17. He that hath the substance of this world and shall see his brother in need and shall shut up his bowels from him: how doth the charity of God abide in him?
+
+3:18. My little children, let us not love in word nor in tongue, but in deed and in truth.
+
+3:19. In this we know that we are of the truth and in his sight shall persuade our hearts.
+
+3:20. For if our heart reprehend us, God is greater than our heart and knoweth all things.
+
+3:21. Dearly beloved, if our heart do not reprehend us, we have confidence towards God.
+
+3:22. And whatsoever we shall ask, we shall receive of him: because we keep his commandments and do those things which are pleasing in his sight.
+
+3:23. And this is his commandment: That we should believe in the name of his Son Jesus Christ and love one another, as he hath given commandment unto us.
+
+3:24. And he that keepeth his commandments abideth in him, and he in him. And in this we know that he abideth in us by the Spirit which he hath given us.
+
+1 John Chapter 4
+What spirits are of God, and what are not. We must love one another, because God has loved us.
+
+4:1. Dearly beloved, believe not every spirit, but try the spirits if they be of God: because many false prophets are gone out into the world.
+
+Try the spirits.... Viz., by examining whether their teaching be agreeable to the rule of the Catholic faith, and the doctrine of the church. For as he says, (ver. 6,) He that knoweth God, heareth us [the pastors of the church]. By this we know the spirit of truth, and the spirit of error.
+
+4:2. By this is the spirit of God known. Every spirit which confesseth that Jesus Christ is come in the flesh is of God:
+
+Every spirit which confesseth, etc.... Not that the confession of this point of faith alone, is, at all times, and in all cases, sufficient; but that with relation to that time, and for that part of the Christian doctrine, which was then particularly to be confessed, taught, and maintained against the heretics of those days, this was the most proper token, by which the true teachers might be distinguished form the false.
+
+4:3. And every spirit that dissolveth Jesus is not of God. And this is Antichrist, of whom you have heard that he cometh: and he is now already in the world.
+
+That dissolveth Jesus.... Viz., either by denying his humanity, or his divinity. He is now already in the world.... Not in his person, but in his spirit, and in his precursors.
+
+4:4. You are of God, little children, and have overcome him. Because greater is he that is in you, than he that is in the world.
+
+4:5. They are of the world. Therefore of the world they speak: and the world heareth them.
+
+4:6. We are of God. He that knoweth God heareth us. He that is not of God heareth us not. By this we know the spirit of truth and the spirit of error.
+
+4:7. Dearly beloved, let us love one another: for charity is of God. And every one that loveth is born of God and knoweth God.
+
+4:8. He that loveth not knoweth not God: for God is charity.
+
+4:9. By this hath the charity of God appeared towards us, because God hath sent his only begotten Son into the world, that we may live by him.
+
+4:10. In this is charity: not as though we had loved God, but because he hath first loved us, and sent his Son to be a propitiation for our sins.
+
+4:11. My dearest, if God hath so loved us, we also ought to love one another.
+
+4:12. No man hath seen God at any time. If we love one another, God abideth in us: and his charity is perfected in us.
+
+4:13. In this we know that we abide in him, and he in us: because he hath given us of his spirit.
+
+4:14. And we have seen and do testify that the Father hath sent his Son to be the Saviour of the world.
+
+4:15. Whosoever shall confess that Jesus is the Son of God, God abideth in him, and he in God.
+
+4:16. And we have known and have believed the charity which God hath to us. God is charity: and he that abideth in charity abideth in God, and God in him.
+
+4:17. In this is the charity of God perfected with us, that we may have confidence in the day of judgment: because as he is, we also are in this world.
+
+4:18. Fear is not in charity: but perfect charity casteth out fear, because fear hath pain. And he that feareth is not perfected in charity.
+
+Fear is not in charity, etc.... Perfect charity, or love, banisheth human fear, that is, the fear of men; as also all perplexing fear, which makes men mistrust or despair of God’s mercy; and that kind of servile fear, which makes them fear the punishment of sin more than the offence offered to God. But it no way excludes the wholesome fear of God’s judgments, so often recomended in holy writ; nor that fear and trembling, with which we are told to work out our salvation. Phil. 2.12.
+
+4:19. Let us therefore love God: because God first hath loved us.
+
+4:20. If any man say: I love God, and hateth his brother; he is a liar. For he that loveth not his brother whom he seeth, how can he love God whom he seeth not?
+
+4:21. And this commandment we have from God, that he who loveth God love also his brother.
+
+1 John Chapter 5
+Of them that are born of God, and of true charity. Faith overcomes the world. Three that bear witness to Christ. Of faith in his name and of sin that is and is not to death.
+
+5:1. Whosoever believeth that Jesus is the Christ, is born of God. And every one that loveth him who begot, loveth him also who is born of him.
+
+Is born of God.... That is, is justified, and become a child of God by baptism: which is also to be understood; provided the belief of this fundamental article of the Christian faith be accompanied with all the other conditions, which, by the word of God, and his appointment, are also required to justification; such as a general belief of all that God has revealed and promised: hope, love, repentance, and a sincere disposition to keep God’s holy law and commandments.
+
+5:2. In this we know that we love the children of God: when we love God and keep his commandments.
+
+5:3. For this is the charity of God: That we keep his commandments. And his commandments are not heavy.
+
+5:4. For whatsoever is born of God overcometh the world. And this is the victory which overcometh the world: Our faith.
+
+Our faith.... Not a bare, speculative, or dead faith; but a faith that worketh by charity. Gal. 5.6
+
+5:5. Who is he that overcometh the world, but he that believeth that Jesus is the Son of God?
+
+5:6. This is he that came by water and blood, Jesus Christ: not by water only but by water and blood. And it is the Spirit which testifieth that Christ is the truth.
+
+Came by water and blood.... Not only to wash away our sins by the water of baptism, but by his own blood.
+
+5:7. And there are Three who give testimony in heaven, the Father, the Word, and the Holy Ghost. And these three are one.
+
+5:8. And there are three that give testimony on earth: the spirit and the water and the blood. And these three are one.
+
+The spirit, and the water, and the blood.... As the Father, the Word, and the Holy Ghost, all bear witness to Christ’s divinity; so the spirit, which he yielded up, crying out with a loud voice upon the cross; and the water and blood that issued from his side, bear witness to his humanity, and are one; that is, all agree in one testimony.
+
+5:9. If we receive the testimony of men, the testimony of God is greater. For this is the testimony of God, which is greater, because he hath testified of his Son.
+
+5:10. He that believeth in the Son of God hath the testimony of God in himself. He that believeth not the Son maketh him a liar: because he believeth not in the testimony which God hath testified of his Son.
+
+He that believeth not the Son, etc.... By refusing to believe the testimonies given by the three divine persons, that Jesus was the Messias, and the true Son of God, by whom eternal life is obtained and promised to all that comply with his doctrine. In him we have also this lively confidence, that we shall obtain whatever we ask, according to his will, when we ask what is for our good, with perseverance, and in the manner we ought. And this we know, and have experience of, by having obtained the petitions that we have made.
+
+5:11. And this is the testimony that God hath given to us eternal life. And this life is in his Son.
+
+5:12. He that hath the Son hath life. He that hath not the Son hath not life.
+
+5:13. These things I write to you that you may know that you have eternal life: you who believe in the name of the Son of God.
+
+5:14. And this is the confidence which we have towards him: That, whatsoever we shall ask according to his will, he heareth us.
+
+5:15. And we know that he heareth us whatsoever we ask: we know that we have the petitions which we request of him.
+
+5:16. He that knoweth his brother to sin a sin which is not to death, let him ask: and life shall be given to him who sinneth not to death. There is a sin unto death. For that I say not that any man ask.
+
+A sin which is not to death, etc.... It is hard to determine what St. John here calls a sin which is not to death, and a sin which is unto death. The difference can not be the same as betwixt sins that are called venial and mortal: for he says, that if a man pray for his brother, who commits a sin that is not to death, life shall be given him: therefore such a one had before lost the life of grace, and been guilty of what is commonly called a mortal sin. And when he speaks of a sin that is unto death, and adds these words, for that I say not that any man ask, it cannot be supposed that St. John would say this of every mortal sin, but only of some heinous sins, which are very seldom remitted, because such sinners very seldom repent. By a sin therefore which is unto death, interpreters commonly understand a wilfull apostasy from the faith, and from the known truth, when a sinner, hardened by his own ingratitude, becomes deaf to all admonitions, will do nothing for himself, but runs on to a final impenitence. Nor yet does St. John say, that such a sin is never remitted, or cannot be remitted, but only has these words, for that I say not that any man ask the remission: that is, though we must pray for all sinners whatsoever, yet men can not pray for such sinners with such a confidence of obtaining always their petitions, as St. John said before, ver. 14. Whatever exposition we follow on this verse, our faith teacheth us from the holy scriptures, that God desires not the death of any sinner, but that he be converted and live, Ezech. 33.11. Though men’s sins be as red as scarlet, they shall become as white as snow, Isa. 3.18. It is the will of God that every one come to the knowledge of the truth, and be saved. There is no sin so great but which God is willing to forgive, and has left a power in his church to remit the most enormous sins: so that no sinner need despair of pardon, nor will any sinner perish, but by his own fault. A sin unto death.... Some understand this of final impenitence, or of dying in mortal sin; which is the only sin that never can be remitted. But, it is probable, he may also comprise under this name, the sin of apostasy from the faith, and some other such heinous sins as are seldom and hardly remitted: and therefore he gives little encouragement, to such as pray for these sinners, to expect what they ask.
+
+5:17. All iniquity is sin. And there is a sin unto death.
+
+5:18. We know that whosoever is born of God sinneth not: but the generation of God preserveth him and the wicked one toucheth him not.
+
+5:19. We know that we are of God and the whole world is seated in wickedness.
+
+And the whole world is seated in wickedness.... That is, a great part of the world. It may also signify, is under the wicked one, meaning the devil, who is elsewhere called the prince of this world, that is, of all the wicked. John 12.31.
+
+5:20. And we know that the Son of God is come. And he hath given us understanding that we may know the true God and may be in his true Son. This is the true God and life eternal.
+
+And may be in his true Son. He is, or this is the true God, and life eternal.... Which words are a clear proof of Christ’s divinity, and as such made use of by the ancient fathers.
+
+5:21. Little children, keep yourselves from idols. Amen.
+
+Keep yourselves from idols.... An admonition to the newly converted Christians, lest conversing with heathens and idolaters, they might fall back into the sin of idolatry, which may be the sin unto death here mentioned by St. John.`
+
+var book_of_2john = `2 John Chapter 1
+He recommends walking in truth, loving one another and to beware of false teachers.
+
+1:1. The Ancient to the lady Elect and her children, whom I love in the truth: and not I only, but also all they that have known the truth,
+
+The ancient.... That is, the ancient bishop St. John, being the only one of the twelve apostles then living. To the lady Elect.... Some conjecture that Electa might be the name of a family, or of a particular church; but the general opinion is, that it is the proper name of a lady, so eminent for her piety and great charity, as to merit this Epistle from St. John.
+
+1:2. For the sake of the truth which dwelleth in us and shall be with us for ever.
+
+1:3. Grace be with you, mercy and peace from God the Father and from Christ Jesus the Son of the Father: in truth and charity.
+
+1:4. I was exceeding glad that I found of thy children walking in truth, as we have received a commandment from the Father.
+
+1:5. And now I beseech thee, lady, not as writing a new commandment to thee, but that which we have had from the beginning, that we love one another.
+
+1:6. And this is charity: That we walk according to his commandments. For this is the commandment that, as you have heard from the beginning, you should walk in the same:
+
+1:7. For many seducers are gone out into the world who confess not that Jesus Christ is come in the flesh. This is a seducer and an antichrist.
+
+1:8. Look to yourselves, that you lose not the things which you have wrought: but that you may receive a full reward.
+
+1:9. Whosoever revolteth and continueth not in the doctrine of Christ hath not God. He that continueth in the doctrine, the same hath both the Father and the Son.
+
+1:10. If any man come to you and bring not this doctrine, receive him not into the house nor say to him: God speed you.
+
+Nor say to him, God speed you.... This admonition is in general, to forewarn the faithful of the dangers which may arise from a familiarity with those who have prevaricated and gone from the true faith, and with such as teach false doctrine. But this is not forbidding a charity for all men, by which we ought to wish and pray for the eternal salvation of every one, even of our enemies.
+
+1:11. For he that saith unto him: God speed you, communicateth with his wicked works.
+
+1:12. Having more things to write unto you, I would not by paper and ink: for I hope that I shall be with you and speak face to face, that your joy may be full.
+
+1:13. The children of thy sister Elect salute thee.
+
+`
+
+var book_of_3john = `3 John Chapter 1
+1:1. The Ancient, to the dearly beloved Gaius, whom I love in truth.
+
+1:2. Dearly beloved, concerning all things I make it my prayer that thou mayest proceed prosperously and fare well, as thy soul doth prosperously.
+
+1:3. I was exceedingly glad when the brethren came and gave testimony to the truth in thee, even as thou walkest in the truth.
+
+1:4. I have no greater grace than this, to hear that my children walk in truth.
+
+No greater grace.... that is nothing that gives me greater joy and satisfaction.
+
+1:5. Dearly beloved, thou dost faithfully whatever thou dost for the brethren: and that for strangers,
+
+1:6. Who have given testimony to thy charity in the sight of the church. Whom thou shalt do well to bring forward on their way in a manner worthy of God:
+
+1:7. Because, for his name they went out, taking nothing of the Gentiles.
+
+Taking nothing of the Gentiles.... These ministers of the gospel are commended by St. John, who took nothing from the Gentiles, lest they should seem to preach in order to get money by it.
+
+1:8. We therefore ought to receive such: that we may be fellow helpers of the truth.
+
+1:9. I had written perhaps to the church: but Diotrephes, who loveth to have the preeminence among them, doth not receive us.
+
+1:10. For this cause, if I come, I will advertise his works which he doth, with malicious words prating against us. And as if these things were not enough for him, neither doth he himself receive the brethren, and them that do receive them he forbiddeth, and casteth out of the church.
+
+Diotrephes who loveth.... This man seemeth to be in power, but not a friend to the faithful; therefore this part of the letter might be an admonition to him from the apostle.
+
+1:11. Dearly beloved, follow not that which is evil: but that which is good. He that doth good is of God: he that doth evil hath not seen God.
+
+1:12. To Demetrius, testimony is given by all, and by the truth itself: yea and we also give testimony. And thou knowest that our testimony is true.
+
+1:13. I had many things to write unto thee: but I would not by ink and pen write to thee.
+
+1:14. But I hope speedily to see thee: and we will speak mouth to mouth. Peace be to thee. Our friends salute thee. Salute the friends by name.
+
+`
+
+var book_of_jude = `Jude Chapter 1
+He exhorts them to stand to the faith first delivered to them and to beware of heretics.
+
+1:1. Jude, the servant of Jesus Christ and brother of James: to them that are beloved in God the Father and preserved in Jesus Christ and called.
+
+1:2. Mercy unto you and peace: and charity be fulfilled.
+
+1:3. Dearly beloved, taking all care to write unto you concerning your common salvation, I was under a necessity to write unto you: to beseech you to contend earnestly for the faith once delivered to the saints.
+
+1:4. For certain men are secretly entered in (who were written of long ago unto this judgment), ungodly men, turning the grace of our Lord God into riotousness and denying the only sovereign Ruler and our Lord Jesus Christ.
+
+1:5. I will therefore admonish you, though ye once knew all things, that Jesus, having saved the people out of the land of Egypt, did afterwards destroy them that believed not.
+
+1:6. And the angels who kept not their principality but forsook their own habitation, he hath reserved under darkness in everlasting chains, unto the judgment of the great day.
+
+Principality.... That is, the state in which they were first created, their original dignity.
+
+1:7. As Sodom and Gomorrha and the neighbouring cities, in like manner, having given themselves to fornication and going after other flesh, were made an example, suffering the punishment of eternal fire.
+
+1:8. In like manner, these men also defile the flesh and despise dominion and blaspheme majesty.
+
+Blaspheme majesty.... Speak evil of them that are in dignity; and even utter blasphemies against the divine majesty.
+
+1:9. When Michael the archangel, disputing with the devil, contended about the body of Moses, he durst not bring against him the judgment of railing speech, but said: The Lord command thee.
+
+Contended about the body, etc.... This contention, which is no where else mentioned in holy writ, was originally known by revelation, and transmitted by tradition. It is thought the occasion of it was, that the devil would have had the body buried in such a place and manner, as to be worshipped by the Jews with divine honours. Command thee.... or rebuke thee.
+
+1:10. But these men blaspheme whatever things they know not: and what things soever they naturally know, like dumb beasts, in these they are corrupted.
+
+1:11. Woe unto them! For they have gone in the way of Cain: and after the error of Balaam they have for reward poured out themselves and have perished in the contradiction of Core.
+
+Gone in the way, etc.... Heretics follow the way of Cain, by murdering the souls of their brethren; the way of Balaam, by putting a scandal before the people of God, for their own private ends; and the way of Core or Korah, by their opposition to the church governors of divine appointment.
+
+1:12. These are spots in their banquets, feasting together without fear, feeding themselves: clouds without water, which are carried about by winds: trees of the autumn, unfruitful, twice dead, plucked up by the roots:
+
+1:13. Raging waves of the sea, foaming out their own confusion: wandering stars, to whom the storm of darkness is reserved for ever.
+
+1:14. Now of these Enoch also, the seventh from Adam, prophesied, saying: Behold, the Lord cometh with thousands of his saints:
+
+Prophesied.... This prophecy was either known by tradition, or from some book that is since lost.
+
+1:15. To execute judgment upon all and to reprove all the ungodly for all the works of their ungodliness, whereby they have done ungodly: and for all the hard things which ungodly sinners have spoken against God.
+
+1:16. These are murmurers, full of complaints, walking according to their own desires: and their mouth speaketh proud things, admiring persons, for gain’s sake.
+
+1:17. But you, my dearly beloved, be mindful of the words which have been spoken before by the apostles of our Lord Jesus Christ:
+
+But you, my dearly beloved, be mindful, etc.... He now exhorts the faithful to remain steadfast in the belief and practice of what they had heard from the apostles, who had also foretold that in aftertimes (lit. in the last time) there should be false teachers, scoffing and ridiculing all revealed truths, abandoning themselves to their passions and lusts; who separate themselves from the Catholic communion by heresies and schisms. Sensual men.... carried away and enslaved by the pleasures of the senses.
+
+1:18. Who told you that in the last time there should come mockers, walking according to their own desires in ungodlinesses.
+
+1:19. These are they who separate themselves, sensual men, having not the Spirit.
+
+1:20. But you, my beloved, building yourselves upon your most holy faith, praying in the Holy Ghost,
+
+1:21. Keep yourselves in the love of God, waiting for the mercy of our Lord Jesus Christ, unto life everlasting.
+
+Building yourselves upon your most holy faith.... Raising by your actions, a spiritual building, founded, 1st, upon faith; 2d, on the love of God; 3d, upon hope, whilst you are waiting for the mercies of God, and the reward of eternal life; 4th, joined with the great duty of prayer.
+
+1:22. And some indeed reprove, being judged:
+
+1:23. But others save, pulling them out of the fire. And on others have mercy, in fear, hating also the spotted garment which is carnal.
+
+And some indeed reprove being judged.... He gives them another instruction to practice charity in endeavouring to convert their neighbour, where they will meet with three sorts of persons: 1st, With persons obstinate in their errors and sins; these may be said to be already judged and condemned; they are to be sharply reprehended, reproved, and if possible convinced of their error. 2d, As to others you must endeavour to save them, by pulling them, as it were, out of the fire, from the ruin they stand in great danger of. 3d, You must have mercy on others in fear, when you see them through ignorance of frailty, in danger of being drawn into the snares of these heretics; with these you must deal more gently and mildly, with a charitable compassion, hating always, and teaching others to hate the carnal garment which is spotted, their sensual and corrupt manners, that defile both the soul and body.
+
+1:24. Now to him who is able to preserve you without sin and to present you spotless before the presence of his glory with exceeding joy, in the coming of our Lord Jesus Christ:
+
+1:25. To the only God our Saviour through Jesus Christ our Lord, be glory and magnificence, empire and power, before all ages, and now, and for all ages of ages. Amen.
+
+Now to him, etc.... St. Jude concludes his epistle with this doxology of praising God, and praying to the only God our Saviour, which may either signify God the Father, or God as equally agreeing to all the three persons, who are equally the cause of Christ’s incarnation, and man’s salvation, through Jesus Christ our Lord, who, being God from eternity, took upon him our human nature, that he might become our Redeemer.
+
+`
+
+var book_of_revelation = `
+    The Book of Revelation also known as Apocalypse
+
+
+    Apocalypse Chapter 1
+St. John is ordered to write to the seven churches in Asia. The manner of Christ’s appearing to him.
+
+1:1. The Revelation of Jesus Christ, which God gave unto him, to make known to his servants the things which must shortly come to pass: and signified, sending by his angel to his servant John,
+
+The things which must shortly come; ... and again it is said, ver. 3, The time is at hand.... This can not be meant of all the things prophesied in the Apocalypse, where mention is made also of the day of judgment, and of the glory of heaven at the end of the world. That some things were to come to pass shortly, is evident, by what is said to the Seven Churches, chap. 2 and 3, Or that the persecutions foretold should begin shortly. Or that these words signified, that all time is short, and that from the coming of Christ, we are now in the last age or last hour. See 1 John 2.18.
+
+1:2. Who hath given testimony to the word of God and the testimony of Jesus Christ, what things soever he hath seen.
+
+1:3. Blessed is he that readeth and heareth the words of this prophecy: and keepeth those things which are written in it. For the time is at hand.
+
+1:4. John to the seven churches which are in Asia. Grace be unto you and peace, from him that is and that was and that is to come: and from the seven spirits which are before his throne:
+
+1:5. And from Jesus Christ, who is the faithful witness, the first begotten of the dead and the prince of the kings of the earth, who hath loved us and washed us from our sins in his own blood,
+
+1:6. And hath made us a kingdom, and priests to God and his Father. To him be glory and empire for ever and ever. Amen.
+
+1:7. Behold, he cometh with the clouds, and every eye shall see him: and they also that pierced him. And all the tribes of the earth shall bewail themselves because of him. Even so. Amen.
+
+1:8. I am Alpha and Omega, the beginning and the end, saith the Lord God, who is and who was and who is to come, the Almighty.
+
+I am Alpha and Omega.... These are the names of the first and last letters of the Greek alphabet, and signify the same as what follows: The beginning and the end: the first cause and last end of all beings: who is, and who was, and who is to come, the Almighty.... These words signify the true God only, and are here applied to our Lord and Saviour Jesus Christ, who is to come again to judge the living and the dead.
+
+1:9. I, John, your brother and your partner in tribulation and in the kingdom and patience in Christ Jesus, was in the island which is called Patmos, for the word of God and for the testimony of Jesus.
+
+1:10. I was in the spirit on the Lord’s day and heard behind me a great voice, as of a trumpet,
+
+1:11. Saying: What thou seest, write in a book and send to the seven churches which are in Asia: to Ephesus and to Smyrna and to Pergamus and to Thyatira and to Sardis and to Philadelphia and to Laodicea.
+
+1:12. And I turned to see the voice that spoke with me. And being turned, I saw seven golden candlesticks:
+
+1:13. And in the midst of the seven golden candlesticks, one like to the Son of man, clothed with a garment down to the feet, and girt about the paps with a golden girdle.
+
+1:14. And his head and his hairs were white as white wool and as snow. And his eyes were as a flame of fire:
+
+1:15. And his feet like unto fine brass, as in a burning furnace. And his voice as the sound of many waters.
+
+1:16. And he had in his right hand seven stars. And from his mouth came out a sharp two-edged sword. And his face was as the sun shineth in his power.
+
+1:17. And when I had seen him, I fell at his feet as dead. And he laid his right hand upon me, saying: Fear not. I am the First and the Last,
+
+1:18. And alive, and was dead. And behold I am living for ever and ever and have the keys of death and of hell.
+
+1:19. Write therefore the things which thou hast seen: and which are: and which must be done hereafter.
+
+1:20. The mystery of the seven stars, which thou sawest in my right hand and the seven golden candlesticks. The seven stars are the angels of the seven churches. And the seven candlesticks are the seven churches.
+
+Apocalypse Chapter 2
+Directions what to write to the angels or bishops of Ephesus, Smyrna, Pergamus and Thyatira.
+
+2:1. Unto the angel of the church of Ephesus write: These things saith he who holdeth the seven stars in his right hand, who walketh in the midst of the seven golden candlesticks:
+
+2:2. I know thy works and thy labour and thy patience and how thou canst not bear them that are evil. And thou hast tried them who say they are apostles and are not: and hast found them liars:
+
+2:3. And thou hast patience and hast endured for my name and hast not fainted.
+
+2:4. But I have somewhat against thee, because thou hast left thy first charity.
+
+2:5. Be mindful therefore from whence thou art fallen: and do penance and do the first works. Or else I come to thee and will move thy candlestick out of its place, except thou do penance.
+
+2:6. But this thou hast, that thou hatest the deeds of the Nicolaites, which I also hate.
+
+2:7. He that hath an ear let him hear what the Spirit saith to the churches: To him that overcometh I will give to eat of the tree of life which is in the paradise of my God.
+
+2:8. And to the angel of the church of Smyrna write: These things saith the First and the Last, who was dead and is alive:
+
+2:9. I know thy tribulation and thy poverty: but thou art rich. And thou art blasphemed by them that say they are Jews and are not, but are the synagogue of Satan.
+
+2:10. Fear none of those things which thou shalt suffer. Behold, the devil will cast some of you into prison, that you may be tried: and you shall have tribulation ten days. Be thou faithful unto death: and I will give thee the crown of life.
+
+2:11. He that hath an ear, let him hear what the Spirit saith to the churches: He that shall overcome shall not be hurt by the second death.
+
+2:12. And to the angel of the church of Pergamus write: These things saith he that hath the sharp two-edged sword:
+
+2:13. I know where thou dwellest, where the seat of Satan is. And thou holdest fast my name and hast not denied my faith. Even in those days when Antipas was my faithful witness, who was slain among you, where Satan dwelleth.
+
+2:14. But I have against thee a few things: because thou hast there them that hold the doctrine of Balaam who taught Balac to cast a stumblingblock before the children of Israel, to eat and to commit fornication.
+
+2:15. So hast thou also them that hold the doctrine of the Nicolaites.
+
+2:16. In like manner do penance. If not, I will come to thee quickly and will fight against them with the sword of my mouth.
+
+2:17. He that hath an ear, let him hear what the Spirit saith to the churches: To him that overcometh I will give the hidden manna and will give him a white counter: and in the counter, a new name written, which no man knoweth but he that receiveth it.
+
+2:18. And to the angel of the church of Thyatira write: These things saith the Son of God, who hath his eyes like to a flame of fire and his feet like to fine brass.
+
+2:19. I know thy works and thy faith and thy charity and thy ministry and thy patience and thy last works, which are more than the former.
+
+2:20. But I have against thee a few things: because thou sufferest the woman Jezabel, who calleth herself a prophetess, to teach and to seduce my servants, to commit fornication and to eat of things sacrificed to idols.
+
+2:21. And I gave her a time that she might do penance: and she will not repent of her fornication.
+
+2:22. Behold, I will cast her into a bed: and they that commit adultery with her shall be in very great tribulation, except they do penance from their deeds,
+
+2:23. And I will kill her children with death: and all the churches shall know that I am he that searcheth the reins and hearts. And I will give to every one of you according to your works. But to you I say,
+
+2:24. And to the rest who are at Thyatira: Whosoever have not this doctrine and who have not known the depths of Satan, as they say: I will not put upon you any other burthen.
+
+2:25. Yet that which you have, hold fast till I come.
+
+2:26. And he that shall overcome and keep my works unto the end, I will give him power over the nations.
+
+Power over the nations.... This shews, that the saints, who are with Christ our Lord in heaven, receive power from him to preside over nations and provinces, as patrons; and shall come with him at the end of the world to execute his will against those who have not kept his commandments.
+
+2:27. And he shall rule them with a rod of iron: and as the vessel of a potter they shall be broken:
+
+2:28. As I also have received of my Father. And I will give him the morning star.
+
+2:29. He that hath an ear, let him hear what the Spirit saith to the churches.
+
+Apocalypse Chapter 3
+Directions what to write to Sardis, Philadelphia and Laodicea.
+
+3:1. And to the angel of the church of Sardis write: These things saith he that hath the seven spirits of God and the seven stars: I know thy works, that thou hast the name of being alive. And thou art dead.
+
+3:2. Be watchful and strengthen the things that remain, which are ready to die. For I find not thy works full before my God.
+
+3:3. Have in mind therefore in what manner thou hast received and heard: and observe and do penance: If then thou shalt not watch, I will come to thee as a thief: and thou shalt not know at what hour I will come to thee.
+
+3:4. But thou hast a few names in Sardis which have not defiled their garments: and they shall walk with me in white, because they are worthy.
+
+3:5. He that shall overcome shall thus be clothed in white garments: and I will not blot out his name out of the book of life. And I will confess his name before my Father and before his angels.
+
+3:6. He that hath an ear, let him hear what the Spirit saith to the churches.
+
+3:7. And to the angel of the church of Philadelphia write: These things saith the Holy One and the true one, he that hath the key of David, he that openeth and no man shutteth, shutteth and no man openeth:
+
+3:8. I know thy works. Behold, I have given before thee a door opened, which no man can shut: because thou hast a little strength and hast kept my word and hast not denied my name.
+
+3:9. Behold, I will bring of the synagogue of Satan, who say they are Jews and are not, but do lie. Behold, I will make them to come and adore before thy feet. And they shall know that I have loved thee.
+
+3:10. Because thou hast kept the word of my patience, I will also keep thee from the hour of temptation, which shall come upon the whole world to try them that dwell upon the earth.
+
+3:11. Behold, I come quickly: hold fast that which thou hast, that no man take thy crown.
+
+3:12. He that shall overcome, I will make him a pillar in the temple of my God: and he shall go out no more. And I will write upon him the name of my God and the name of the city of my God, the new Jerusalem, which cometh down out of heaven from my God, and my new name.
+
+3:13. He that hath an ear, let him hear what the Spirit saith to the churches.
+
+3:14. And to the angel of the church of Laodicea write: These things saith the Amen, the faithful and true witness, who is the beginning of the creation of God:
+
+The Amen, ... that is, the true one, the Truth itself; the Word and Son of God. The beginning ... that is, the principle, the source, and the efficient cause of the whole creation.
+
+3:15. I know thy works, that thou art neither cold nor hot. I would thou wert cold or hot.
+
+3:16. But because thou art lukewarm and neither cold nor hot, I will begin to vomit thee out of my mouth.
+
+3:17. Because thou sayest: I am rich and made wealthy and have need of nothing: and knowest not that thou art wretched and miserable and poor and blind and naked.
+
+3:18. I counsel thee to buy of me gold, fire tried, that thou mayest be made rich and mayest be clothed in white garments: and that the shame of thy nakedness may not appear. And anoint thy eyes with eyesalve, that thou mayest see.
+
+3:19. Such as I love, I rebuke and chastise. Be zealous therefore and do penance.
+
+3:20. Behold, I stand at the gate and knock. If any man shall hear my voice and open to me the door, I will come in to him and will sup with him: and he with me.
+
+3:21. To him that shall overcome, I will give to sit with me in my throne: as I also have overcome and am set down with my Father in his throne.
+
+3:22. He that hath an ear, let him hear what the Spirit saith to the churches.
+
+Apocalypse Chapter 4
+The vision of the throne of God, the twenty-four ancients and the four living creatures.
+
+4:1. After these things I looked, and behold a door was opened in heaven, and the first voice which I heard, as it were, of a trumpet speaking with me, said: Come up hither, and I will shew thee the things which must be done hereafter.
+
+4:2. And immediately I was in the spirit. And behold, there was a throne set in heaven, and upon the throne one sitting.
+
+4:3. And he that sat was to the sight like the jasper and the sardine stone. And there was a rainbow round about the throne, in sight like unto an emerald.
+
+4:4. And round about the throne were four and twenty seats: and upon the seats, four and twenty ancients sitting, clothed in white garments. And on their heads were crowns of gold.
+
+4:5. And from the throne proceeded lightnings and voices and thunders. And there were seven lamps burning before the throne, which are the seven spirits of God.
+
+4:6. And in the sight of the throne was, as it were, a sea of glass like to crystal: and in the midst of the throne, and round about the throne, were four living creatures, full of eyes before and behind.
+
+4:7. And the first living creature was like a lion: and the second living creature like a calf: and the third living creature, having the face, as it were, of a man: and the fourth living creature was like an eagle flying.
+
+4:8. And the four living creatures had each of them six wings: and round about and within they are full of eyes. And they rested not day and night, saying: Holy, Holy, Holy, Lord God Almighty, who was and who is and who is to come.
+
+4:9. And when those living creatures gave glory and honour and benediction to him that sitteth on the throne, who liveth for ever and ever:
+
+4:10. The four and twenty ancients fell down before him that sitteth on the throne and adored him that liveth for ever and ever and cast their crowns before the throne, saying:
+
+4:11. Thou art worthy, O Lord our God, to receive glory and honour and power. Because thou hast created all things: and for thy will they were and have been created.
+
+Apocalypse Chapter 5
+The book sealed with seven seals is opened by the Lamb, who thereupon receives adoration and praise from all.
+
+5:1. And I saw, in the right hand of him that sat on the throne, a book, written within and without, sealed with seven seals.
+
+5:2. And I saw a strong angel, proclaiming with a loud voice: Who is worthy to open the book and to loose the seals thereof?
+
+5:3. And no man was able, neither in heaven nor on earth nor under the earth, to open the book, nor to look on it.
+
+5:4. And I wept much, because no man was found worthy to open the book, nor to see it.
+
+5:5. And one of the ancients said to me: Weep not: behold the lion of the tribe of Juda, the root of David, hath prevailed to open the book and to loose the seven seals thereof.
+
+5:6. And I saw: and behold in the midst of the throne and of the four living creatures and in the midst of the ancients, a Lamb standing, as it were slain, having seven horns and seven eyes: which are the seven Spirits of God, sent forth into all the earth.
+
+5:7. And he came and took the book out of the right hand of him that sat on the throne.
+
+5:8. And when he had opened the book, the four living creatures and the four and twenty ancients fell down before the Lamb, having every one of them harps and golden vials full of odours, which are the prayers of saints.
+
+The prayers of saints.... Here we see that the saints in heaven offer up to Christ the prayers of the faithful upon earth.
+
+5:9. And they sung a new canticle, saying: Thou art worthy, O Lord, to take the book and to open the seals thereof: because thou wast slain and hast redeemed us to God, in thy blood, out of every tribe and tongue and people and nation:
+
+5:10. And hast made us to our God a kingdom and priests, and we shall reign on the earth.
+
+5:11. And I beheld, and I heard the voice of many angels round about the throne and the living creatures and the ancients (and the number of them was thousands of thousands),
+
+5:12. Saying with a loud voice: The Lamb that was slain is worthy to receive power and divinity and wisdom and strength and honour and glory and benediction.
+
+5:13. And every creature which is in heaven and on the earth and under the earth, and such as are in the sea, and all that are in them, I heard all saying: To him that sitteth on the throne and to the Lamb, benediction and honour and glory and power, for ever and ever.
+
+5:14. And the four living creatures said: Amen. And the four and twenty ancients fell down on their faces and adored him that liveth for ever and ever.
+
+Apocalypse Chapter 6
+What followed upon opening six of the seals.
+
+6:1. And I saw that the Lamb had opened one of the seven seals: and I heard one of the four living creatures, as it were the voice of thunder, saying: Come and see.
+
+6:2. And I saw: and behold a white horse, and he that sat on him had a bow, and there was a crown given him, and he went forth conquering that he might conquer.
+
+White horse.... He that sitteth on the white horse is Christ, going forth to subdue the world by his gospel. The other horses that follow represent the judgments and punishment that were to fall on the enemies of Christ and his church. The red horse signifies war; the black horse, famine; and the pale horse (which has Death for its rider), plagues or pestilence.
+
+6:3. And when he had opened the second seal, I heard the second living creature saying: Come and see.
+
+6:4. And there went out another horse that was red. And to him that sat thereon, it was given that he should take peace from the earth: and that they should kill one another. And a great sword was given to him.
+
+6:5. And when he had opened the third seal, I heard the third living creature saying: Come and see. And behold a black horse. And he that sat on him had a pair of scales in his hand.
+
+6:6. And I heard, as it were a voice in the midst of the four living creatures, saying: Two pounds of wheat for a penny, and thrice two pounds of barley for a penny: and see thou hurt not the wine and the oil.
+
+6:7. And when he had opened the fourth seal, I heard the voice of the fourth living creature saying: Come and see.
+
+6:8. And behold a pale horse: and he that sat upon him, his name was Death. And hell followed him. And power was given to him over the four parts of the earth, to kill with sword, with famine and with death and with the beasts of the earth.
+
+6:9. And when he had opened the fifth seal, I saw under the altar the souls of them that were slain for the word of God and for the testimony which they held.
+
+Under the altar.... Christ, as man, is this altar, under which the souls of the martyrs live in heaven, as their bodies are here deposited under our altars.
+
+6:10. And they cried with a loud voice, saying: How long, O Lord (Holy and True), dost thou not judge and revenge our blood on them that dwell on the earth?
+
+Revenge our blood.... They ask not this out of hatred to their enemies, but out of zeal for the glory of God, and a desire that the Lord would accelerate the general judgment, and the complete beatitude of all his elect.
+
+6:11. And white robes were given to every one of them one; And it was said to them that they should rest for a little time till their fellow servants and their brethren, who are to be slain even as they, should be filled up.
+
+6:12. And I saw, when he had opened the sixth seal: and behold there was a great earthquake. And the sun became black as sackcloth of hair: and the whole moon became as blood.
+
+6:13. And the stars from heaven fell upon the earth, as the fig tree casteth its green figs when it is shaken by a great wind.
+
+6:14. And the heaven departed as a book folded up. And every mountain, and the islands, were moved out of their places.
+
+6:15. And the kings of the earth and the princes and tribunes and the rich and the strong and every bondman and every freeman hid themselves in the dens and in the rocks of mountains:
+
+6:16. And they say to the mountains and the rocks: Fall upon us and hide us from the face of him that sitteth upon the throne and from the wrath of the Lamb.
+
+6:17. For the great day of their wrath is come. And who shall be able to stand?
+
+Apocalypse Chapter 7
+The number of them that were marked with the seal of the living God and clothed in white robes.
+
+7:1. After these things, I saw four angels standing on the four corners of the earth, holding the four winds of the earth, that they should not blow upon the earth nor upon the sea nor on any tree.
+
+7:2. And I saw another angel ascending from the rising of the sun, having the sign of the living God. And he cried with a loud voice to the four angels to whom it was given to hurt the earth and the sea,
+
+7:3. Saying: Hurt not the earth nor the sea nor the trees, till we sign the servants of our God in their foreheads.
+
+7:4. And I heard the number of them that were signed. An hundred forty-four thousand were signed, of every tribe of the children of Israel.
+
+7:5. Of the tribe of Juda, twelve thousand signed: Of the tribe of Ruben, twelve thousand signed: Of the tribe of Gad, twelve thousand signed:
+
+7:6. Of the tribe of Aser, twelve thousand signed: Of the tribe of Nephthali, twelve thousand signed: Of the tribe of Manasses, twelve thousand signed:
+
+7:7. Of the tribe of Simeon, twelve thousand signed: Of the tribe of Levi, twelve thousand signed: Of the tribe of Issachar, twelve thousand signed:
+
+7:8. Of the tribe of Zabulon, twelve thousand signed: Of the tribe of Joseph, twelve thousand signed: Of the tribe of Benjamin, twelve thousand signed.
+
+7:9. After this, I saw a great multitude, which no man could number, of all nations and tribes and peoples and tongues, standing before the throne and in sight of the Lamb, clothed with white robes, and palms in their hands.
+
+7:10. And they cried with a loud voice, saying: Salvation to our God, who sitteth upon the throne and to the Lamb.
+
+7:11. And all the angels stood round about the throne and the ancients and the four living creatures. And they fell down before the throne upon their faces and adored God,
+
+7:12. Saying: Amen. Benediction and glory and wisdom and thanksgiving, honour and power and strength, to our God, for ever and ever. Amen.
+
+7:13. And one of the ancients answered and said to me: These that are clothed in white robes, who are they? And whence came they?
+
+7:14. And I said to him: My Lord, thou knowest. And he said to me: These are they who are come out of great tribulation and have washed their robes and have made them white in the blood of the Lamb.
+
+7:15. Therefore, they are before the throne of God: and they serve him day and night in his temple. And he that sitteth on the throne shall dwell over them.
+
+7:16. They shall no more hunger nor thirst: neither shall the sun fall on them, nor any heat.
+
+7:17. For the Lamb, which is in the midst of the throne, shall rule them and shall lead them to the fountains of the waters of life: and God shall wipe away all tears from their eyes.
+
+Apocalypse Chapter 8
+The seventh seal is opened. The angels with the seven trumpets.
+
+8:1. And when he had opened the seventh seal, there was silence in heaven, as it were for half an hour.
+
+8:2. And I saw seven angels standing in the presence of God: and there were given to them seven trumpets.
+
+8:3. And another angel came and stood before the altar, having a golden censer: and there was given to him much incense, that he should offer of the prayers of all saints, upon the golden altar which is before the throne of God.
+
+8:4. And the smoke of the incense of the prayers of the saints ascended up before God from the hand of the angel.
+
+8:5. And the angel took the censer and filled it with the fire of the altar and cast it on the earth: and there were thunders and voices and lightnings and a great earthquake.
+
+8:6. And the seven angels who had the seven trumpets prepared themselves to sound the trumpet.
+
+8:7. And the first angel sounded the trumpet: and there followed hail and fire, mingled with blood: and it was cast on the earth. And the third part of the earth was burnt up: and the third part of the trees was burnt up: and all green grass was burnt up.
+
+8:8. And the second angel sounded the trumpet: and, as it were, a great mountain, burning with fire, was cast into the sea. And the third part of the sea became blood.
+
+8:9. And the third part of those creatures died which had life in the sea: and the third part of the ships was destroyed.
+
+8:10. And the third angel sounded the trumpet: and a great star fell from heaven, burning as it were a torch. And it fell on the third part of the rivers and upon the fountains of waters:
+
+8:11. And the name of the star is called Wormwood. And the third part of the waters became wormwood. And many men died of the waters, because they were made bitter.
+
+8:12. And the fourth angel sounded the trumpet: and the third part of the sun was smitten, and the third part of the moon, and the third part of the stars, so that the third part of them was darkened. And the day did not shine for a third part of it: and the night in like manner.
+
+8:13. And I beheld: and heard the voice of one eagle flying through the midst of heaven, saying with a loud voice: Woe, Woe, Woe to the inhabitants of the earth, by reason of the rest of the voices of the three angels, who are yet to sound the trumpet!
+
+Apocalypse Chapter 9
+Locusts come forth from the bottomless pit. The vision of the army of horsemen.
+
+9:1. And the fifth angel sounded the trumpet: and I saw a star fall from heaven upon the earth. And there was given to him the key of the bottomless pit.
+
+A star full.... This may mean the fall and apostasy of great and learned men from the true faith. Or a whole nation falling into error and separating from the church, not having the sign of God in their foreheads. And there was given to him the key of the bottomless pit.... That is, to the angel, not to the fallen star. To this angel was given the power, which is here signified by a key, of opening hell.
+
+9:2. And he opened the bottomless pit: and the smoke of the pit arose, as the smoke of a great furnace. And the sun and the air were darkened with the smoke of the pit.
+
+9:3. And from the smoke of the pit there came out locusts upon the earth. And power was given to them, as the scorpions of the earth have power.
+
+There came out locusts.... These may be devils in Antichrist’s time, having the appearance of locusts, but large and monstrous, as here described. Or they may be real locusts, but of an extraordinary size and monstrous shape, such as were never before seen on earth, sent to torment those who have not the sign (or seal) of God on their foreheads. Some commentators by these locusts understand heretics, and especially those heretics, that sprung from Jews, and with them denied the divinity of Jesus Christ; as Theodotus, Praxeas, Noetus, Paul of Samosata, Sabellius, Arius, etc. These were great enemies of the Christian religion; they tormented and infected the souls of men, stinging them like scorpions, with the poison of their heresies. Others have explained these locusts, and other animals, mentioned in different places throughout this sacred and mystical book, in a most absurd, fanciful, and ridiculous manner; they make Abaddon the Pope, and the locusts to be friars mendicant, etc. Here it is thought proper, not to enter into any controversy upon that subject, as the inventors of these fancies have been already answered, and fully refuted by many controvertists: besides, those who might be inposed on by such chimerical writers, are in these days much better informed.
+
+9:4. And it was commanded them that they should not hurt the grass of the earth nor any green thing nor any tree: but only the men who have not the sign of God on their foreheads.
+
+9:5. And it was given unto them that they should not kill them: but that they should torment them five months. And their torment was as the torment of a scorpion when he striketh a man.
+
+9:6. And in those days, men shall seek death and shall not find it. And they shall desire to die: and death shall fly from them.
+
+9:7. And the shapes of the locusts were like unto horses prepared unto battle. And on their heads were, as it were, crowns like gold: and their faces were as the faces of men.
+
+9:8. And they had hair as the hair of women: and their teeth were as lions.
+
+9:9. And they had breastplates as breastplates of iron: and the noise of their wings was as the noise of chariots and many horses running to battle.
+
+9:10. And they had tails like to scorpions: and there were stings in their tails. And their power was to hurt men, five months. And they had over them
+
+9:11. A king, the angel of the bottomless pit (whose name in Hebrew is Abaddon and in Greek Apollyon, in Latin Exterminans).
+
+9:12. One woe is past: and behold there come yet two woes more hereafter.
+
+9:13. And the sixth angel sounded the trumpet: and I heard a voice from the four horns of the golden altar which is before the eyes of God,
+
+9:14. Saying to the sixth angel who had the trumpet: Loose the four angels who are bound in the great river Euphrates.
+
+9:15. And the four angels were loosed, who were prepared for an hour, and a day, and a month, and a year: for to kill the third part of men.
+
+9:16. And the number of the army of horsemen was twenty thousand times ten thousand. And I heard the number of them.
+
+9:17. And thus I saw the horses in the vision. And they that sat on them had breastplates of fire and of hyacinth and of brimstone. And the heads of the horses were as the heads of lions: and from their mouths proceeded fire and smoke and brimstone.
+
+9:18. And by these three plagues was slain the third part of men, by the fire and by the smoke and by the brimstone which issued out of their mouths.
+
+9:19. For the power of the horses is in their mouths and in their tails. For, their tails are like to serpents and have heads: and with them they hurt.
+
+9:20. And the rest of the men, who were not slain by these plagues, did not do penance from the works of their hands, that they should not adore devils and idols of gold and silver and brass and stone and wood, which neither can see nor hear nor walk:
+
+9:21. Neither did they penance from their murders nor from their sorceries nor from their fornication nor from their thefts.
+
+Apocalypse Chapter 10
+The cry of a mighty angel. He gives John a book to eat.
+
+10:1. And I saw another mighty angel come down from heaven, clothed with a cloud. And a rainbow was on his head: and his face was as the sun, and his feet as pillars of fire.
+
+10:2. And he had in his hand a little book, open. And he set his right foot upon the sea, and his left foot upon the earth.
+
+10:3. And he cried with a loud voice as when a lion roareth. And when he had cried, seven thunders uttered their voices.
+
+10:4. And when the seven thunders had uttered their voices, I was about to write. And I heard a voice from heaven saying to me: Seal up the things which the seven thunders have spoken. And write them not.
+
+10:5. And the angel whom I saw standing upon the sea and upon the earth lifted up his hand to heaven.
+
+10:6. And he swore by him that liveth for ever and ever, who created heaven and the things which are therein, and the earth and the things which are in it, and the sea and the things which are therein: That time shall be no longer.
+
+10:7. But in the days of the voice of the seventh angel, when he shall begin to sound the trumpet, the mystery of God shall be finished, as he hath declared by his servants the prophets.
+
+Declared.... literally evangelized, to signify the good tidings, agreeable to the Gospel, of the final victory of Christ, and of that eternal life, which should be the reward of the temporal sufferings of the martyrs and faithful servants of God.
+
+10:8. And I heard a voice from heaven, again speaking to me and saying: Go and take the book that is open, from the hand of the angel who standeth upon the sea and upon the earth.
+
+10:9. And I went to the angel, saying unto him that he should give me the book. And he said to me: Take the book and eat it up. And it shall make thy belly bitter: but in thy mouth it shall be sweet as honey.
+
+10:10. And I took the book from the hand of the angel and ate it up: and it was in my mouth, sweet as honey. And when I had eaten it, my belly was bitter.
+
+10:11. And he said to me: Thou must prophesy again to many nations and peoples and tongues and kings.
+
+Apocalypse Chapter 11
+He is ordered to measure the temple. The two witnesses.
+
+11:1. And there was given me a reed, like unto a rod. And it was said to me: Arise, and measure the temple of God and the altar and them that adore therein.
+
+11:2. But the court which is without the temple, cast out and measure it not: because it is given unto the Gentiles. And the holy city they shall tread under foot, two and forty months:
+
+11:3. And I will give unto my two witnesses: and they shall prophesy, a thousand two hundred sixty days, clothed in sackcloth.
+
+My two witnesses.... It is commonly understood of Henoch and Elias.
+
+11:4. These are the two olive trees and the two candlesticks that stand before the Lord of the earth.
+
+11:5. And if any man will hurt them, fire shall come out of their mouths and shall devour their enemies. And if any man will hurt them, in this manner must he be slain.
+
+11:6. These have power to shut heaven, that it rain not in the days of their prophecy: And they have power over waters, to turn them into blood and to strike the earth with all plagues, as often as they will.
+
+11:7. And when they shall have finished their testimony, the beast that ascendeth out of the abyss shall make war against them and shall overcome them and kill them.
+
+11:8. And their bodies shall lie in the streets of the great city which is called spiritually, Sodom and Egypt: where their Lord also was crucified.
+
+11:9. And they of the tribes and peoples and tongues and nations shall see their bodies for three days and a half: and they shall not suffer their bodies to be laid in sepulchres.
+
+11:10. And they that dwell upon the earth shall rejoice over them and make merry: and shall send gifts one to another, because these two prophets tormented them that dwelt upon the earth.
+
+11:11. And after three days and a half, the spirit of life from God entered into them. And they stood upon their feet: and great fear fell upon them that saw them.
+
+11:12. And they heard a great voice from heaven, saying to them: Come up hither. And they went up to heaven in a cloud: and their enemies saw them.
+
+11:13. And at that hour there was made a great earthquake: and the tenth part of the city fell. And there were slain in the earthquake, names of men, seven thousand: and the rest were cast into a fear and gave glory to the God of heaven.
+
+11:14. The second woe is past: and behold the third woe will come quickly.
+
+11:15. And the seventh angel sounded the trumpet: and there were great voices in heaven, saying: The kingdom of this world is become our Lord’s and his Christ’s, and he shall reign for ever and ever. Amen.
+
+11:16. And the four and twenty ancients who sit on their seats in the sight of God, fell on their faces and adored God, saying:
+
+11:17. We give thee thanks, O Lord God Almighty, who art and who wast and who art to come: because thou hast taken to thee thy great power, and thou hast reigned.
+
+11:18. And the nations were angry: and thy wrath is come. And the time of the dead, that they should be judged and that thou shouldest render reward to thy servants the prophets and the saints, and to them that fear thy name, little and great: and shouldest destroy them who have corrupted the earth.
+
+11:19. And the temple of God was opened in heaven: and the ark of his testament was seen in his temple. And there were lightnings and voices and an earthquake and great hail.
+
+Apocalypse Chapter 12
+The vision of the woman clothed with the sun and of the great dragon her persecutor.
+
+12:1. And a great sign appeared in heaven: A woman clothed with the sun, and the moon under her feet, and on her head a crown of twelve stars.
+
+A woman.... The church of God. It may also, by allusion, be applied to our blessed Lady. The church is clothed with the sun, that is, with Christ: she hath the moon, that is, the changeable things of the world, under her feet: and the twelve stars with which she is crowned, are the twelve apostles: she is in labour and pain, whilst she brings forth her children, and Christ in them, in the midst of afflictions and persecutions.
+
+12:2. And being with child, she cried travailing in birth: and was in pain to be delivered.
+
+12:3. And there was seen another sign in heaven. And behold a great red dragon, having seven heads and ten horns and on his heads seven diadems.
+
+12:4. And his tail drew the third part of the stars of heaven and cast them to the earth. And the dragon stood before the woman who was ready to be delivered: that, when she should be delivered, he might devour her son.
+
+12:5. And she brought forth a man child, who was to rule all nations with an iron rod. And her son was taken up to God and to his throne.
+
+12:6. And the woman fled into the wilderness, where she had a place prepared by God, that there they should feed her, a thousand two hundred sixty days.
+
+12:7. And there was a great battle in heaven: Michael and his angels fought with the dragon, and the dragon fought, and his angels.
+
+12:8. And they prevailed not: neither was their place found any more in heaven.
+
+12:9. And that great dragon was cast out, that old serpent, who is called the devil and Satan, who seduceth the whole world. And he was cast unto the earth: and his angels were thrown down with him.
+
+12:10. And I heard a loud voice in heaven, saying: Now is come salvation and strength and the kingdom of our God and the power of his Christ: because the accuser of our brethren is cast forth, who accused them before our God day and night.
+
+12:11. And they overcame him by the blood of the Lamb and by the word of the testimony: and they loved not their lives unto death.
+
+12:12. Therefore, rejoice, O heavens, and you that dwell therein. Woe to the earth and to the sea, because the devil is come down unto you, having great wrath, knowing that he hath but a short time.
+
+12:13. And when the dragon saw that he was cast unto the earth, he persecuted the woman who brought forth the man child.
+
+12:14. And there were given to the woman two wings of a great eagle, that she might fly into the desert, unto her place, where she is nourished for a time and times, and half a time, from the face of the serpent.
+
+12:15. And the serpent cast out of his mouth, after the woman, water, as it were a river: that he might cause her to be carried away by the river.
+
+12:16. And the earth helped the woman: and the earth opened her mouth and swallowed up the river which the dragon cast out of his mouth.
+
+12:17. And the dragon was angry against the woman: and went to make war with the rest of her seed, who keep the commandments of God and have the testimony of Jesus Christ.
+
+12:18. And he stood upon the sand of the sea.
+
+Apocalypse Chapter 13
+Of the beast with seven heads and of a second beast.
+
+13:1. And I saw a beast coming up out of the sea, having seven heads and ten horns: and upon his horns, ten diadems: and upon his heads, names of blasphemy.
+
+A beast.... This first beast with seven heads and ten horns, is probably the whole company of infidels, enemies and persecutors of the people of God, from the beginning to the end of the world. The seven heads are seven kings, that is, seven principal kingdoms or empires, which have exercised, or shall exercise, tyrannical power over the people of God; of these, five were then fallen, viz.: the Egyptian, Assyrian, Chaldean, Persian, and Grecian monarchies: one was present, viz., the empire of Rome: and the seventh and chiefest was to come, viz., the great Antichrist and his empire. The ten horns may be understood of ten lesser persecutors.
+
+13:2. And the beast which I saw was like to a leopard: and his feet were as the feet of a bear, and his mouth as the mouth of a lion. And the dragon gave him his own strength and great power.
+
+13:3. And I saw one of his heads as it were slain to death: and his death’s wound was healed. And all the earth was in admiration after the beast.
+
+One of his heads, etc.... Some understand this of the mortal wound, which the idolatry of the Roman empire (signified by the sixth head) received from Constantine; which was, as it were, healed again by Julian the Apostate.
+
+13:4. And they adored the dragon which gave power to the beast. And they adored the beast, saying: Who is like to the beast? And who shall be able to fight with him?
+
+13:5. And there was given to him a mouth speaking great things and blasphemies: and power was given to him to do, two and forty months.
+
+13:6. And he opened his mouth unto blasphemies against God, to blaspheme his name and his tabernacle and them that dwell in heaven.
+
+His tabernacle, etc.... That is, his church and his saints.
+
+13:7. And it was given unto him to make war with the saints and to overcome them. And power was given him over every tribe and people and tongue and nation.
+
+13:8. And all that dwell upon the earth adored him, whose names are not written in the book of life of the Lamb which was slain from the beginning of the world.
+
+Slain from the beginning, etc.... In the foreknowledge of God; and inasmuch as all mercy and grace, from the beginning, was given in view of his death and passion.
+
+13:9. If any man have an ear, let him hear.
+
+13:10. He that shall lead into captivity shall go into captivity: he that shall kill by the sword must be killed by the sword. Here is the patience and the faith of the saints.
+
+13:11. And I saw another beast coming up out of the earth: and he had two horns, like a lamb: and he spoke as a dragon.
+
+Another beast.... This second beast with two horns, may be understood of the heathenish priests and magicians; the principal promoters both of idolatry and persecution.
+
+13:12. And he executed all the power of the former beast in his sight. And he caused the earth and them that dwell therein to adore the first beast, whose wound to death was healed.
+
+13:13. And he did great signs, so that he made also fire to come down from heaven unto the earth, in the sight of men.
+
+13:14. And he seduced them that dwell on the earth, for the signs which were given him to do in the sight of the beast: saying to them that dwell on the earth that they should make the image of the beast which had the wound by the sword and lived.
+
+13:15. And it was given him to give life to the image of the beast: and that the image of the beast should speak: and should cause that whosoever will not adore the image of the beast should be slain.
+
+13:16. And he shall make all, both little and great, rich and poor, freemen and bondmen, to have a character in their right hand or on their foreheads:
+
+13:17. And that no man might buy or sell, but he that hath the character, or the name of the beast, or the number of his name.
+
+13:18. Here is wisdom. He that hath understanding, let him count the number of the beast. For it is the number of a man: and the number of him is six hundred sixty-six.
+
+Six hundred sixty-six.... The numeral letters of his name shall make up this number.
+
+Apocalypse Chapter 14
+Of the Lamb and of the virgins that follow him. Of the judgments that shall fall upon the wicked.
+
+14:1. And I beheld: and lo a Lamb stood upon mount Sion, and with him an hundred forty-four thousand, having his name and the name of his Father written on their foreheads.
+
+14:2. And I heard a voice from heaven, as the noise of many waters and as the voice of great thunder. And the voice which I heard was as the voice of harpers, harping on their harps.
+
+14:3. And they sung as it were a new canticle, before the throne and before the four living creatures and the ancients: and no man could say the canticle, but those hundred forty-four thousand who were purchased from the earth.
+
+14:4. These are they who were not defiled with women: for they are virgins. These follow the Lamb whithersoever he goeth. These were purchased from among men, the firstfruits to God and to the Lamb.
+
+14:5. And in their mouth there was found no lie: for they are without spot before the throne of God.
+
+14:6. And I saw another angel flying through the midst of heaven, having the eternal gospel, to preach unto them that sit upon the earth and over every nation and tribe and tongue and people:
+
+14:7. Saying with a loud voice: Fear the Lord and give him honour, because the hour of his judgment is come. And adore ye him that made heaven and earth, the sea and the fountains of waters.
+
+14:8. And another angel followed, saying: That great Babylon is fallen, is fallen; which made all nations to drink of the wine of the wrath of her fornication.
+
+Babylon.... By Babylon may be very probably signified all the wicked world in general, which God will punish, and destroy after the short time of this mortal life: or it may signify every great city wherein enormous sins and abominations are daily committed; and that when the measure of its iniquities is full, the punishments due to its crimes are poured on it. It may also be some city of the description in the text, that will exist, and be destroyed, as here described, towards the end of the world.
+
+14:9. And the third angel followed them, saying with a loud voice: If any man shall adore the beast and his image and receive his character in his forehead or in his hand,
+
+14:10. He also shall drink of the wine of the wrath of God, which is mingled with pure wine in the cup of his wrath: and shall be tormented with fire and brimstone in the sight of the holy angels and in the sight of the Lamb.
+
+14:11. And the smoke of their torments, shall ascend up for ever and ever: neither have they rest day nor night, who have adored the beast and his image and whoever receiveth the character of his name.
+
+14:12. Here is the patience of the saints, who keep the commandments of God and the faith of Jesus.
+
+14:13. And I heard a voice from heaven, saying to me: Write: Blessed are the dead who die in the Lord. From henceforth now, saith the Spirit, that they may rest from their labours. For their works follow them.
+
+Die in the Lord.... It is understood of the martyrs who die for the Lord.
+
+14:14. And I saw: and behold a white cloud and upon the cloud one sitting like to the Son of man, having on his head a crown of gold and in his hand a sharp sickle.
+
+14:15. And another angel came out from the temple, crying with a loud voice to him that sat upon the cloud: Thrust in thy sickle and reap, because the hour is come to reap. For the harvest of the earth is ripe.
+
+14:16. And he that sat on the cloud thrust his sickle into the earth: and the earth was reaped.
+
+14:17. And another angel came out of the temple which is in heaven, he also having a sharp sickle.
+
+14:18. And another angel came out from the altar, who had power over fire. And he cried with a loud voice to him that had the sharp sickle, saying: Thrust in thy sharp sickle and gather the clusters of the vineyard of the earth, because the grapes thereof are ripe.
+
+14:19. And the angel thrust in his sharp sickle into the earth and gathered the vineyard of the earth and cast it into the great press of the wrath of God:
+
+14:20. And the press was trodden without the city, and blood came out of the press, up to the horses’ bridles, for a thousand and six hundred furlongs.
+
+Apocalypse Chapter 15
+They that have overcome the beast glorify God. Of the seven angels with the seven vials.
+
+15:1. And I saw another sign in heaven, great and wonderful: seven angels having the seven last plagues. For in them is filled up the wrath of God.
+
+15:2. And I saw as it were a sea of glass mingled with fire: and them that had overcome the beast and his image and the number of his name, standing on the sea of glass, having the harps of God:
+
+15:3. And singing the canticle of Moses, the servant of God, and the canticle of the Lamb, saying: Great and wonderful are thy works, O Lord God Almighty. Just and true are thy ways, O King of ages.
+
+15:4. Who shall not fear thee, O Lord, and magnify thy name? For thou only art holy. For all nations shall come and shall adore in thy sight, because thy judgments are manifest.
+
+15:5. And after these things, I looked: and behold, the temple of the tabernacle of the testimony in heaven was opened.
+
+15:6. And the seven angels came out of the temple, having the seven plagues, clothed with clean and white linen and girt about the breasts with golden girdles.
+
+15:7. And one of the four living creatures gave to the seven angels seven golden vials, full of the wrath of God, who liveth for ever and ever.
+
+15:8. And the temple was filled with smoke from the majesty of God and from his power. And no man was able to enter into the temple, till the seven plagues of the seven angels were fulfilled.
+
+Apocalypse Chapter 16
+The seven vials are poured out. The plagues that ensue.
+
+16:1. And I heard a great voice out of the temple, saying to the seven angels: Go and pour out the seven vials of the wrath of God upon the earth.
+
+16:2. And the first went and poured out his vial upon the earth. And there fell a sore and grievous wound upon men who had the character of the beast: and upon them that adored the image thereof.
+
+16:3. And the second angel poured out his vial upon the sea. And there came blood as it were of a dead man: and every living soul died in the sea.
+
+16:4. And the third poured out his vial upon the rivers and the fountains of waters. And there was made blood.
+
+16:5. And I heard the angel of the waters saying: Thou art just, O Lord, who art and who wast, the Holy One, because thou hast judged these things.
+
+16:6. For they have shed the blood of saints and prophets: and thou hast given them blood to drink. For they are worthy.
+
+16:7. And I heard another, from the altar, saying: Yea, O Lord God Almighty, true and just are thy judgments.
+
+16:8. And the fourth angel poured out his vial upon the sun. And it was given unto him to afflict men with heat and fire.
+
+16:9. And men were scorched with great heat: and they blasphemed the name of God, who hath power over these plagues. Neither did they penance to give him glory.
+
+16:10. And the fifth angel poured out his vial upon the seat of the beast. And his kingdom became dark: and they gnawed their tongues for pain.
+
+16:11. And they blasphemed the God of heaven, because of their pains and wounds: and did not penance for their works.
+
+16:12. And the sixth angel poured out his vial upon that great river Euphrates and dried up the water thereof, that a way might be prepared for the kings from the rising of the sun.
+
+16:13. And I saw from the mouth of the dragon and from the mouth of the beast and from the mouth of the false prophet, three unclean spirits like frogs.
+
+16:14. For they are the spirits of devils, working signs: and they go forth unto the kings of the whole earth, to gather them to battle against the great day of the Almighty God.
+
+16:15. Behold, I come as a thief. Blessed is he that watcheth and keepeth his garments, lest he walk naked, and they see his shame.
+
+16:16. And he shall gather them together into a place which in Hebrew is called Armagedon.
+
+Armagedon.... That is, the hill of robbers.
+
+16:17. And the seventh angel poured out his vial upon the air. And there came a great voice out of the temple from the throne, saying: It is done.
+
+16:18. And there were lightnings and voices and thunders: and there was a great earthquake, such an one as never had been since men were upon the earth, such an earthquake, so great.
+
+16:19. And the great city was divided into three parts: and the cities of the Gentiles fell. And great Babylon came in remembrance before God, to give her the cup of the wine of the indignation of his wrath.
+
+16:20. And every island fled away: and the mountains were not found.
+
+16:21. And great hail, like a talent, came down from heaven upon men: and men blasphemed God, for the plague of the hail: because it was exceeding great.
+
+Apocalypse Chapter 17
+The description of the great harlot and of the beast upon which she sits.
+
+17:1. And there came one of the seven angels who had the seven vials and spoke with me, saying: Come, I will shew thee the condemnation of the great harlot, who sitteth upon many waters:
+
+17:2. With whom the kings of the earth have committed fornication. And they who inhabit the earth have been made drunk with the wine of her whoredom.
+
+17:3. And he took me away in spirit into the desert. And I saw a woman sitting upon a scarlet coloured beast, full of names of blasphemy, having seven heads and ten horns.
+
+17:4. And the woman was clothed round about with purple and scarlet, and gilt with gold and precious stones and pearls, having a golden cup in her hand, full of the abomination and filthiness of her fornication.
+
+17:5. And on her forehead a name was written: A mystery: Babylon the great, the mother of the fornications and the abominations of the earth.
+
+A mystery.... That is, a secret; because what follows of the name and title of the great harlot is to be taken in a mystical sense. Babylon.... Either the city of the devil in general; or, if this place be to be understood of any particular city, pagan Rome, which then and for three hundred years persecuted the church; and was the principal seat both of empire and idolatry.
+
+17:6. And I saw the woman drunk with the blood of the saints and with the blood of the martyrs of Jesus. And I wondered, when I had seen her, with great admiration.
+
+17:7. And the angel said to me: Why dost thou wonder? I will tell thee the mystery of the woman and of the beast which carrieth her, which hath the seven heads and ten horns.
+
+17:8. The beast which thou sawest, was, and is not, and shall come up out of the bottomless pit and go into destruction. And the inhabitants on the earth (whose names are not written in the book of life from the foundation of the world) shall wonder, seeing the beast that was and is not.
+
+The beast which thou sawest.... This beast which supports Babylon, may signify the power of the devil: which was and is not, being much limited by the coming of Christ, but shall again exert itself under Antichrist. The seven heads of this beast are seven mountains or empires, instruments of his tyranny; of which five were then fallen. (See chap. 13.1, and below, ver. 10.) The beast itself is said to be the eighth, and is of the seven; because they all act under the devil, and by his instigation, so that his power is in them all, yet so as to make up, as it were, an eighth empire, distinct from them all.
+
+17:9. And here is the understanding that hath wisdom. The seven heads are seven mountains, upon which the woman sitteth: and they are seven kings.
+
+17:10. Five are fallen, one is, and the other is not yet come: and when he is come, he must remain a short time.
+
+17:11. And the beast which was and is not: the same also is the eighth, and is of the seven, and goeth into destruction.
+
+17:12. And the ten horns which thou sawest are ten kings, who have not yet received a kingdom: but shall receive power as kings, one hour after the beast.
+
+Ten kings.... Ten lesser kingdoms, enemies also of the church of Christ: which, nevertheless, shall be made instruments of the justice of God for the punishment of Babylon. Some understand this of the Goths, Vandals, Huns, and other barbarous nations, that destroyed the empire of Rome.
+
+17:13. These have one design: and their strength and power they shall deliver to the beast.
+
+17:14. These shall fight with the Lamb. And the Lamb shall overcome them because he is Lord of lords and King of kings: and they that are with him are called and elect and faithful.
+
+17:15. And he said to me: The waters which thou sawest, where the harlot sitteth, are peoples and nations and tongues.
+
+17:16. And the ten horns which thou sawest in the beast: These shall hate the harlot and shall make her desolate and naked and shall eat her flesh and shall burn her with fire.
+
+17:17. For God hath given into their hearts to do that which pleaseth him: that they give their kingdom to the beast, till the words of God be fulfilled.
+
+17:18. And the woman which thou sawest is the great city which hath kingdom over the kings of the earth.
+
+Apocalypse Chapter 18
+The fall of Babylon. Kings and merchants lament over her.
+
+18:1. And after these things, I saw another angel come down from heaven, having great power: and the earth was enlightened with his glory.
+
+18:2. And he cried out with a strong voice, saying: Babylon the great is fallen, is fallen: and is become the habitation of devils and the hold of every unclean spirit and the hold of every unclean and hateful bird:
+
+18:3. Because all nations have drunk of the wine of the wrath of her fornication: and the kings of the earth have committed fornication with her; And the merchants of the earth have been made rich by the power of her delicacies.
+
+18:4. And I heard another voice from heaven, saying: Go out from her, my people; that you be not partakers of her sins and that you receive not of her plagues.
+
+18:5. For her sins have reached unto heaven: and the Lord hath remembered her iniquities.
+
+18:6. Render to her as she also hath rendered to you: and double unto her double, according to her works. In the cup wherein she hath mingled, mingle ye double unto her.
+
+18:7. As much as she hath glorified herself and lived in delicacies, so much torment and sorrow give ye to her. Because she saith in her heart: I sit a queen and am no widow: and sorrow I shall not see.
+
+18:8. Therefore, shall her plagues come in one day, death and mourning and famine. And she shall be burnt with the fire: because God is strong, who shall judge her.
+
+18:9. And the kings of the earth, who have committed fornication and lived in delicacies with her, shall weep and bewail themselves over her, when they shall see the smoke of her burning:
+
+18:10. Standing afar off for fear of her torments, saying: Alas! alas! that great city, Babylon, that mighty city: for in one hour is thy judgment come.
+
+18:11. And the merchants of the earth shall weep and mourn over her: for no man shall buy their merchandise any more.
+
+18:12. Merchandise of gold and silver and precious stones: and of pearls and fine linen and purple and silk and scarlet: and all thyine wood: and all manner of vessels of ivory: and all manner of vessels of precious stone and of brass and of iron and of marble:
+
+18:13. And cinnamon and odours and ointment and frankincense and wine and oil and fine flour and wheat and beasts and sheep and horses and chariots: and slaves and souls of men.
+
+18:14. And the fruits of the desire of thy soul are departed from thee: and all fat and goodly things are perished from thee. And they shall find them no more at all.
+
+18:15. The merchants of these things, who were made rich, shall stand afar off from her, for fear of her torments, weeping and mourning,
+
+18:16. And saying: Alas! alas! that great city, which was clothed with fine linen and purple and scarlet and was gilt with gold and precious stones and pearls.
+
+18:17. For in one hour are so great riches come to nought. And every shipmaster and all that sail into the lake, and mariners, and as many as work in the sea, stood afar off,
+
+18:18. And cried, seeing the place of her burning, saying: What city is like to this great city?
+
+18:19. And they cast dust upon their heads and cried, weeping and mourning, saying: Alas! alas! that great city, wherein all were made rich, that had ships at sea, by reason of her prices. For, in one hour she is made desolate.
+
+18:20. Rejoice over her, thou heaven and ye holy apostles and prophets. For God hath judged your judgment on her.
+
+18:21. And a mighty angel took up a stone, as it were a great millstone, and cast it into the sea, saying: With such violence as this, shall Babylon, that great city, be thrown down and shall be found no more at all.
+
+18:22. And the voice of harpers and of musicians and of them that play on the pipe and on the trumpet shall no more be heard at all in thee: and no craftsman of any art whatsoever shall be found any more at all in thee: and the sound of the mill shall be heard no more at all in thee:
+
+18:23. And the light of the lamp shall shine no more at all in thee: and the voice of the bridegroom and the bride shall be heard no more at all in thee. For thy merchants were the great men of the earth: for all nations have been deceived by thy enchantments.
+
+18:24. And in her was found the blood of prophets and of saints and of all that were slain upon the earth.
+
+Apocalypse Chapter 19
+The saints glorify God for his judgments on the great harlot. Christ’s victory over the beast and the kings of the earth.
+
+19:1. After these things, I heard as it were the voice of much people in heaven, saying: Alleluia. Salvation and glory and power is to our God.
+
+19:2. For true and just are his judgments, who hath judged the great harlot which corrupted the earth with her fornication and hath revenged the blood of his servants, at her hands.
+
+19:3. And again they said: Alleluia. And her smoke ascendeth for ever and ever.
+
+19:4. And the four and twenty ancients and the four living creatures fell down and adored God that sitteth upon the throne, saying: Amen. Alleluia.
+
+19:5. And a voice came out from the throne, saying: Give praise to our God, all ye his servants: and you that fear him, little and great.
+
+19:6. And I heard as it were the voice of a great multitude, and as the voice of many waters, and as the voice of great thunders, saying: Alleluia: for the Lord our God, the Almighty, hath reigned.
+
+19:7. Let us be glad and rejoice and give glory to him. For the marriage of the Lamb is come: and his wife hath prepared herself.
+
+19:8. And it is granted to her that she should clothe herself with fine linen, glittering and white. For the fine linen are the justifications of saints.
+
+19:9. And he said to me: Write: Blessed are they that are called to the marriage supper of the Lamb. And he saith to me: These words of God are true.
+
+19:10. And I fell down before his feet, to adore him. And he saith to me: See thou do it not. I am thy fellow servant and of thy brethren who have the testimony of Jesus. Adore God. For the testimony of Jesus is the spirit of prophecy.
+
+I fell down before, etc.... St. Augustine (lib. 20, contra Faust, c. 21) is of opinion, that this angel appeared in so glorious a manner, that St. John took him to be God; and therefore would have given him divine honour had not the angel stopped him, by telling him he was but his fellow servant. St. Gregory (Hom. 8, in Evang.) rather thinks that the veneration offered by St. John, was not divine honour, or indeed any other than what might lawfully be given; but was nevertheless refused by the angel, in consideration of the dignity to which our human nature had been raised, by the incarnation of the Son of God, and the dignity of St. John, an apostle, prophet, and martyr.
+
+19:11. And I saw heaven opened: and behold a white horse. And he that sat upon him was called faithful and true: and with justice doth he judge and fight.
+
+19:12. And his eyes were as a flame of fire: and on his head were many diadems. And he had a name written, which no man knoweth but himself.
+
+19:13. And he was clothed with a garment sprinkled with blood. And his name is called: THE WORD OF GOD.
+
+19:14. And the armies that are in heaven followed him on white horses, clothed in fine linen, white and clean.
+
+19:15. And out of his mouth proceedeth a sharp two-edged sword, that with it he may strike the nations. And he shall rule them with a rod of iron: and he treadeth the winepress of the fierceness of the wrath of God the Almighty.
+
+19:16. And he hath on his garment and on his thigh written: KING OF KINGS AND LORD OF LORDS.
+
+19:17. And I saw an angel standing in the sun: and he cried with a loud voice, saying to all the birds that did fly through the midst of heaven: Come, gather yourselves together to the great supper of God:
+
+19:18. That you may eat the flesh of kings and the flesh of tribunes and the flesh of mighty men and the flesh of horses and of them that sit on them: and the flesh of all freemen and bondmen and of little and of great.
+
+19:19. And I saw the beast and the kings of the earth and their armies, gathered together to make war with him that sat upon the horse and with his army.
+
+19:20. And the beast was taken, and with him the false prophet who wrought signs before him, wherewith he seduced them who received the character of the beast and who adored his image. These two were cast alive into the pool of fire burning with brimstone.
+
+19:21. And the rest were slain by the sword of him that sitteth upon the horse, which proceedeth out of his mouth: and all the birds were filled with their flesh.
+
+Apocalypse Chapter 20
+Satan is bound for a thousand years. The souls of the martyrs reign with Christ in the first resurrection. The last attempts of Satan against the church. The last judgment.
+
+20:1. And I saw an angel coming down from heaven, having the key of the bottomless pit and a great chain in his hand.
+
+20:2. And he laid hold on the dragon, the old serpent, which is the devil and Satan, and bound him for a thousand years.
+
+Bound him, etc.... The power of Satan has been very much limited by the passion of Christ: for a thousand years; that is, for the whole time of the New Testament; but especially from the time of the destruction of Babylon or pagan Rome, till the new efforts of Gog and Magog against the church, towards the end of the world. During which time the souls of the martyrs and saints live and reign with Christ in heaven, in the first resurrection, which is that of the soul to the life of glory; as the second resurrection will be that of the body, at the day of the general judgment.
+
+20:3. And he cast him into the bottomless pit and shut him up and set a seal upon him, that he should no more seduce the nations till the thousand years be finished. And after that, he must be loosed a little time.
+
+20:4. And I saw seats. And they sat upon them: and judgment was given unto them. And the souls of them that were beheaded for the testimony of Jesus and for the word of God and who had not adored the beast nor his image nor received his character on their foreheads or in their hands. And they lived and reigned with Christ a thousand years.
+
+20:5. The rest of the dead lived not, till the thousand years were finished. This is the first resurrection.
+
+20:6. Blessed and holy is he that hath part in the first resurrection. In these the second death hath no power. But they shall be priests of God and of Christ: and shall reign with him a thousand years.
+
+20:7. And when the thousand years shall be finished, Satan shall be loosed out of his prison and shall go forth and seduce the nations which are over the four quarters of the earth, Gog and Magog: and shall gather them together to battle, the number of whom is as the sand of the sea.
+
+20:8. And they came upon the breadth of the earth and encompassed the camp of the saints and the beloved city.
+
+20:9. And there came down fire from God out of heaven and devoured them: and the devil, who seduced them, was cast into the pool of fire and brimstone, where both the beast
+
+20:10. And the false prophet shall be tormented day and night for ever and ever.
+
+20:11. And I saw a great white throne and one sitting upon it, from whose face the earth and heaven fled away: and there was no place found for them.
+
+20:12. And I saw the dead, great and small, standing in the presence of the throne. And the books were opened: and another book was opened, which is the book of life. And the dead were judged by those things which were written in the books, according to their works.
+
+20:13. And the sea gave up the dead that were in it: and death and hell gave up their dead that were in them. And they were judged, every one according to their works.
+
+20:14. And hell and death were cast into the pool of fire. This is the second death.
+
+20:15. And whosoever was not found written in the book of life was cast into the pool of fire.
+
+Apocalypse Chapter 21
+The new Jerusalem described.
+
+21:1. And I saw a new heaven and a new earth. For the first heaven and the first earth was gone: and the sea is now no more.
+
+The first heaven and the first earth was gone ... being changed, not as to their substance, but in their qualities.
+
+21:2. And I, John, saw the holy city, the new Jerusalem, coming down out of heaven from God, prepared as a bride adorned for her husband.
+
+21:3. And I heard a great voice from the throne, saying: Behold the tabernacle of God with men: and he will dwell with them. And they shall be his people: and God himself with them shall be their God.
+
+21:4. And God shall wipe away all tears from their eyes: and death shall be no more. Nor mourning, nor crying, nor sorrow shall be any more, for the former things are passed away.
+
+21:5. And he that sat on the throne, said: Behold, I make all things new. And he said to me: Write. For these words are most faithful and true.
+
+21:6. And he said to me: It is done. I am Alpha and Omega: the Beginning and the End. To him that thirsteth, I will give of the fountain of the water of life, freely.
+
+21:7. He that shall overcome shall possess these things. And I will be his God: and he shall be my son.
+
+21:8. But the fearful and unbelieving and the abominable and murderers and whoremongers and sorcerers and idolaters and all liars, they shall have their portion in the pool burning with fire and brimstone, which is the second death.
+
+21:9. And there came one of the seven angels, who had the vials full of the seven last plagues, and spoke with me, saying: Come and I will shew thee the bride, the wife of the Lamb.
+
+21:10. And he took me up in spirit to a great and high mountain: and he shewed me the holy city Jerusalem, coming down out of heaven from God,
+
+21:11. Having the glory of God, and the light thereof was like to a precious stone, as to the jasper stone even as crystal.
+
+21:12. And it had a wall great and high, having twelve gates, and in the gates twelve angels, and names written thereon, which are the names of the twelve tribes of the children of Israel.
+
+21:13. On the east, three gates: and on the north, three gates: and on the south, three gates: and on the west, three gates.
+
+21:14. And the wall of the city had twelve foundations: And in them, the twelve names of the twelve apostles of the Lamb,
+
+21:15. And he that spoke with me had a measure of a reed of gold, to measure the city and the gates thereof and the wall.
+
+21:16. And the city lieth in a four-square: and the length thereof is as great as the breadth. And he measured the city with the golden reed for twelve thousand furlongs: and the length and the height and the breadth thereof are equal.
+
+21:17. And he measured the wall thereof an hundred forty-four cubits, the measure of a man, which is of an angel.
+
+The measure of a man, i.e., According to the measure of men, and used by the angel.... This seems to be the true meaning of these words.
+
+21:18. And the building of the wall thereof was of jasper stone: but the city itself pure gold like to clear glass.
+
+21:19. And the foundations of the wall of the city were adorned with all manner of precious stones. The first foundation was jasper: the second, sapphire: the third; a chalcedony: the fourth, an emerald:
+
+21:20. The fifth, sardonyx: the sixth, sardius: the seventh, chrysolite: the eighth, beryl: the ninth, a topaz: the tenth, a chrysoprasus: the eleventh, a jacinth: the twelfth, an amethyst.
+
+21:21. And the twelve gates are twelve pearls, one to each: and every several gate was of one several pearl. And the street of the city was pure gold, as it were, transparent glass.
+
+21:22. And I saw no temple therein. For the Lord God Almighty is the temple thereof, and the Lamb.
+
+21:23. And the city hath no need of the sun, nor of the moon, to shine in it. For the glory of God hath enlightened it: and the Lamb is the lamp thereof.
+
+21:24. And the nations shall walk in the light of it: and the kings of the earth shall bring their glory and honour into it.
+
+21:25. And the gates thereof shall not be shut by day: for there shall be no night there.
+
+21:26. And they shall bring the glory and honour of the nations into it.
+
+21:27. There shall not enter into it any thing defiled or that worketh abomination or maketh a lie: but they that are written in the book of life of the Lamb.
+
+Apocalypse Chapter 22
+The water and tree of life. The conclusion.
+
+22:1. And he shewed me a river of water of life, clear as crystal, proceeding from the throne of God and of the Lamb.
+
+22:2. In the midst of the street thereof, and on both sides of the river, was the tree of life, bearing twelve fruits, yielding its fruits every month: and the leaves of the tree for the healing of the nations.
+
+22:3. And there shall be no curse any more: but the throne of God and of the Lamb shall be in it. And his servants shall serve him.
+
+22:4. And they shall see his face: and his name shall be on their foreheads.
+
+22:5. And night shall be no more. And they shall not need the light of the lamp, nor the light of the sun, because the Lord God shall enlighten them. And they shall reign for ever and ever.
+
+22:6. And he said to me: These words are most faithful and true. And the Lord God of the spirits of the prophets sent his angel to shew his servants the things which must be done shortly.
+
+22:7. And: Behold I come quickly. Blessed is he that keepeth the words of the prophecy of this book.
+
+22:8. And I, John, who have heard and seen these things. And, after I had heard and seen, I fell down to adore before the feet of the angel who shewed me these things.
+
+22:9. And he said to me: See thou do it not. For I am thy fellow servant, and of thy brethren the prophets and of them that keep the words of the prophecy of this book. Adore God.
+
+22:10. And he saith to me: Seal not the words of the prophecy of this book. For the time is at hand.
+
+For the time is at hand.... That is, when compared to eternity, all time and temporal things vanish, and are but of short duration. As to the time when the chief predictions should come to pass, we have no certainty, as appears by the different opinions, both of the ancient fathers and late interpreters. Many think that most things set down from the 4th chapter to the end, will not be fulfilled till a little time before the end of the world. Others are of opinion, that a great part of them, and particularly the fall of the wicked Babylon, happened at the destruction of paganism, by the destruction of heathen Rome, and its persecuting heathen emperors. Of these interpretations, see Aleazar, in his long commentary; see the learned Bossnet, bishop of Meaux, in his treatise on this Book; and P. Alleman, in his notes on the same Apocalypse, tom. 12, who in his Preface says, that this, in a great measure, may be now looked upon as the opinion followed by the learned men. In fine, others think that St. John’s design was in a mystical way, by metaphors and allegories, to represent the attempts and persecutions of the wicked against the servants of God, the punishments that should in a short time fall upon Babylon, that is, upon all the wicked in general: the eternal happiness and reward, which God had reserved for the pious inhabitants of Jerusalem, that is, for his faithful servants, after their short trials and the tribulations of this mortal life. In the mean time we meet with many profitable instructions and admonitions, which we may easily enough understand: but we have no certainty when we apply these predictions to particular events: for as St. Jerome takes notice, the Apocalypse has as many mysteries as words, or rather mysteries in every word. Apocalypsis Joannis tot habet Sacramenta quot verba—parum dixi, in verbis singulis multiplices latent intelligentiae. Ep. ad Paulin, t. 4. p. 574. Edit. Benedict.
+
+22:11. He that hurteth, let him hurt still: and he that is filthy, let him be filthy still: and he that is just, let him be justified still: and he that is holy, let him be sanctified still.
+
+Let him hurt still.... It is not an exhortation, or license to go on in sin; but an intimation, that how far soever the wicked may proceed, their progress shall quickly end, and then they must expect to meet with proportionable punishments.
+
+22:12. Behold, I come quickly: and my reward is with me, to render to every, man according to his works.
+
+22:13. I am Alpha and Omega, the First and the Last, the Beginning and the End.
+
+22:14. Blessed are they that wash their robes in the blood of the Lamb: that they may have a right to the tree of life and may enter in by the gates into the city.
+
+22:15. Without are dogs and sorcerers and unchaste and murderers and servers of idols and every one that loveth and maketh a lie.
+
+22:16. I, Jesus, have sent my angel, to testify to you these things in the churches. I am the root and stock of David, the bright and morning star.
+
+22:17. And the spirit and the bride say: Come. And he that heareth, let him say: Come. And he that thirsteth, let him come. And he that will, let him take the water of life, freely.
+
+22:18. For I testify to every one that heareth the words of the prophecy of this book: If any man shall add to these things, God shall add unto him the plagues written in this book.
+
+22:19. And if any man shall take away from the words of the book of this prophecy, God shall take away his part out of the book of life, and out of the holy city, and from these things that are written in this book.
+
+22:20. He that giveth testimony of these things, saith: Surely, I come quickly: Amen. Come, Lord Jesus.
+
+22:21. The grace of our Lord Jesus Christ be with you all. Amen.`
 
 store_Bible_books_sessionally();
 /**Must stay at the end!! */
