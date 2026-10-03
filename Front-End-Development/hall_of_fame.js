@@ -294,6 +294,10 @@ var players_points = hall_of_fame.everyones_points[0];
 
 function playerClickedBibletar () {
 
+    // transcluent box right side of hall of fame
+    ctx.fillStyle = "rgba(12, 12, 12, 0.5)"; 
+    ctx.fillRect(1080, 0, 500, 800);
+
     // WRITE Player Clicked's NAME
     var shift_name_y_over = -100;
     var x_shift_over = 1100;
@@ -1244,10 +1248,10 @@ function drawGame() {
     
     backgroundColorScreen();
     update_HTML_Text_And_Data_Information();
-    live_Display_Slider();
     loadingBox();
     playerClickedBibletar();
     update_hall_of_fame();
+    live_Display_Slider();
 
 }
 
