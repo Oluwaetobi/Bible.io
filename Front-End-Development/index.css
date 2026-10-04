@@ -66,35 +66,25 @@ header {
     /* right or left, down or up, blur radius, color, you can also add more than one shadow */
     box-shadow: inset 1px 1px 20px #060606;
     text-shadow: 2px 2px 3px rgb(8, 8, 8);
+    /* place-items: center; */
+    place-self: center;
+    overflow:hidden;
 }
 
 
 .head-left:hover {
-    filter: brightness(130%);
+    filter: brightness(150%);
+    cursor: pointer;
 }
 
 .head-left img{
     width: 69px;
-    height: 53px;
+    /* height: 53px; */
     margin-right: 10px;
 }
 
 .head-left img:hover {
     filter: brightness(120%);
-}
-
-.head-left button{
-    border: none;
-    padding: 10px 30px;
-    border-radius: 20px;
-    font-weight: 700;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.head-left button:hover {
-    opacity: 0.7;
-    
 }
 
 .head-right {

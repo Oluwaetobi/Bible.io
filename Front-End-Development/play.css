@@ -87,31 +87,38 @@ header {
 .head-left{
     display: flex;
     align-items: center;
-    
+    color:#f7ff12;
+    /* color: hsl(63, 100%, 50%); */
+    font-weight: bolder;
+    font-size: 30px;
+    /* background-color: rgba(254, 254, 255, 0.1); */
+    background: linear-gradient(180deg, #035b78, #07a9d6);
+    padding: 0px 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    border: 5px groove black;
+    /* right or left, down or up, blur radius, color, you can also add more than one shadow */
+    box-shadow: inset 1px 1px 20px #060606;
+    text-shadow: 2px 2px 3px rgb(8, 8, 8);
+    /* place-items: center; */
+    place-self: center;
+    overflow:hidden;
+}
+
+
+.head-left:hover {
+    filter: brightness(150%);
+    cursor: pointer;
 }
 
 .head-left img{
     width: 69px;
-    height: 53px;
+    /* height: 53px; */
     margin-right: 10px;
 }
 
 .head-left img:hover {
     filter: brightness(120%);
-}
-
-.head-left button{
-    border: none;
-    padding: 10px 30px;
-    border-radius: 20px;
-    font-weight: 700;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.head-left button:hover {
-    opacity: 0.7;
-    
 }
 
 .head-right {
