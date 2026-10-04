@@ -395,7 +395,7 @@ table takes up the full width of it's parent the scrollable table */
 }
 
 .scrollable-table-articles {
-    min-height: 200px;
+    min-height: 130px;
     width: 700px;
     /* aspect-ratio: 1 / 1;   */
     /* overflow-y makes only the y coordinates scrollable */
