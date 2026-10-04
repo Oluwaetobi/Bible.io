@@ -269,11 +269,12 @@ function loadingBox() {
 function myBibletar () {
 
     // WRITE Player Clicked's NAME
+    var name_y_pos = 460;
     ctx.font = "40px Arial";
     ctx.strokeStyle = 'rgb(10, 9, 9)';
-    ctx.strokeText(my_name, 50, 490);
+    ctx.strokeText(my_name, 50, name_y_pos);
     ctx.fillStyle = 'rgb(8, 8, 8)';
-    ctx.fillText(my_name, 50, 490);
+    ctx.fillText(my_name, 50, name_y_pos);
 
 
 
@@ -1217,7 +1218,7 @@ function show_my_country() {
 
     // Don't touch this
     img_my_country.src = "./images/country_" + country_svg + ".svg";
-    ctx.drawImage(img_my_country, 50, 520, 100, 50);
+    ctx.drawImage(img_my_country, 50, 480, 100, 50);
 
     // black shadow remove
     ctx.shadowColor = "white";
