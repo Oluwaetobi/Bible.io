@@ -383,6 +383,17 @@ table takes up the full width of it's parent the scrollable table */
     display: block;
 }
 
+.famous-quotes-newton {
+    position: static;
+    text-align: left;
+    width: 700px;
+    margin: 20px;
+}
+
+.famous-quotes-newton img {
+    float: right;
+}
+
 .scrollable-table-articles {
     min-height: 200px;
     width: 700px;
