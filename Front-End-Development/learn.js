@@ -204,19 +204,11 @@ function book_Chosen(table_clicked_html, book_clicked_html) {
 
 function show_table_or_hide_table() {
     if (learn_page == 1) {
-        document.getElementById('choose_bible_books').style.display = "block";
-        document.getElementById('choose_christians_books').style.display = "block";
-        document.getElementById('choose_articles_books').style.display = "block";
         document.getElementById('learning-materials-box').style.display = "flex";
-        document.getElementById('learning-materials-box').style.backgroundColor = "rgba(252, 251, 251, 0.9)";
         document.getElementById('books_reading_mode').style.display = "none";
     }
     if (learn_page == 2) {
-        document.getElementById('choose_bible_books').style.display = "none";
-        document.getElementById('choose_christians_books').style.display = "none";
-        document.getElementById('choose_articles_books').style.display = "none";
-        // set the learning-materials-box background color to transparent
-        document.getElementById('learning-materials-box').style.backgroundColor = "rgba(252, 251, 251, 0.0)";
+        document.getElementById('learning-materials-box').style.display = "none";
         document.getElementById('books_reading_mode').style.display = "block";
     }
 }
