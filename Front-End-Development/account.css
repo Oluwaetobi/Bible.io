@@ -78,8 +78,12 @@ header {
     justify-content: space-between;
     padding: 10px 40px;
     z-index: 999;
-    background-color: rgb(46, 46, 80);
+    /* originally 10px 40px */
+    padding: 10px 30px;
+    /* background-color: rgb(46, 46, 80); */
+    background: linear-gradient(180deg, #0a1899, #023a7f);
     backdrop-filter: blur(10px);
+    box-shadow: inset 1px 1px 13px #060606;
 }
 
 .head-left{
@@ -133,6 +137,7 @@ header {
     color: white;
     /* font-size was originally 15px but I might increase it */
     font-size: 30px;
+    text-shadow: 2px 2px 1px rgb(8, 8, 8);
 }
 
 .head-right a:hover {
@@ -142,7 +147,9 @@ header {
     border-inline-width: 60px;
     border-color: #776fac;
     width: max(60%, 20px);
-    background-color: #776fac;
+    /* background-color: #776fac; */
+    background-color: rgba(255, 254, 254, 0.3);
+    box-shadow: inset 1px 1px 10px #060606;
     background-position-x: 50px;
 }
 
