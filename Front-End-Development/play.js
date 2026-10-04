@@ -4461,8 +4461,8 @@ function choose_Random_Question () {
 
     // Return a random integer between 1 and 10 (both included): Math.floor(Math.random() * 10) + 1;
 
-    var amount_of_question_in_level_1 = 29;
-    var amount_of_question_in_level_2 = 24;
+    var amount_of_question_in_level_1 = 30;
+    var amount_of_question_in_level_2 = 29;
     var amount_of_question_in_level_3 = 27;
 
 
@@ -4709,6 +4709,14 @@ function level_1_Questions () {
         answer4.innerText += `Stephen `;
         correct_answer = 4;
     }
+     if (randomQuestion == 30) {
+        question.innerText = `Who was Moses' successor?  `;
+        answer1.innerText += `Joshua `;
+        answer2.innerText += `Caleb `;
+        answer3.innerText += `Eleazar `;
+        answer4.innerText += `Aaron `;
+        correct_answer = 1;
+    }
 }
 
 function level_2_Questions () {
@@ -4912,6 +4920,38 @@ function level_2_Questions () {
         answer3.innerText += `Manoah `;
         answer4.innerText += `Elimelech  `;
         correct_answer = 1;
+    }
+    if (randomQuestion == 26) {
+        question.innerText = `After Absalom had been killed, which man led the Israelites in rebellion against David?  `;
+        answer1.innerText += `Shimei `;
+        answer2.innerText += `Sheba `;
+        answer3.innerText += `Ahitophel `;
+        answer4.innerText += `Uri  `;
+        correct_answer = 2;
+    }
+    if (randomQuestion == 27) {
+        question.innerText = `Who killed Absalom?  `;
+        answer1.innerText += `Joab's army `;
+        answer2.innerText += `Joab `;
+        answer3.innerText += `Joab's armour bearers `;
+        answer4.innerText += `Cushi  `;
+        correct_answer = 3;
+    }
+    if (randomQuestion == 28) {
+        question.innerText = `Who begot Nimrod, the mighty hunter before the Lord?  `;
+        answer1.innerText += `Cush `;
+        answer2.innerText += `Ham `;
+        answer3.innerText += `Japheth `;
+        answer4.innerText += `Mizraim  `;
+        correct_answer = 1;
+    }
+     if (randomQuestion == 29) {
+        question.innerText = `In whose days according to the Bible was the Earth's only language confused and divided into many different languages?  `;
+        answer1.innerText += `Serug `;
+        answer2.innerText += `Peleg `;
+        answer3.innerText += `Joktan `;
+        answer4.innerText += `Reu  `;
+        correct_answer = 2;
     }
 }
 
