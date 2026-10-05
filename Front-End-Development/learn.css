@@ -602,7 +602,7 @@ table takes up the full width of it's parent the scrollable table */
 
 .advertisements {
     background-color: #000000;
-    max-width: 250px;
+    max-width: 450px;
     font-size: large;
     color: #fbf9f9;
     padding: 5px 5px;
@@ -615,11 +615,29 @@ table takes up the full width of it's parent the scrollable table */
     text-align: center;
     place-items: center;
     display:flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     gap: 0px;
 }
 
-.advertisements:hover {
+.ads1 {
+    background-color: rgba(253, 253, 253, 0.5);
+    overflow-y: auto;
+    min-height: fit-content;
+    color:#faf9f9;
+    text-shadow: 1px 1px 1px #000000;
+    font-weight: bold;
+    box-shadow: inset 1.5px 1.5px 30px #000000;
+}
+
+.ads2 {
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    place-items: center;
+    max-width: 200px;
+    overflow-x: hidden;
+}
+.ads2:hover {
     filter: brightness(160%);
     padding: 10px 10px;
     cursor: pointer;
