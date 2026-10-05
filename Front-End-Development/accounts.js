@@ -1308,15 +1308,18 @@ function display_my_progress_info() {
     ctx.shadowOffsetX = 1;
     ctx.shadowOffsetY = 1;
 
+    var score_and_goal_y_pos = 485;
+    var score_and_goal_xpos = 170;
+
     ctx.font = "30px Arial";
     ctx.fillStyle = 'rgb(253, 253, 253)';
-    ctx.fillText("My Points: " + my_points, 50, 550);
+    ctx.fillText("Points: " + my_points, score_and_goal_xpos, score_and_goal_y_pos);
 
     var goal_points = 100;
 
     ctx.font = "20px Arial";
     ctx.fillStyle = 'rgb(253, 253, 253)';
-    ctx.fillText("Try to reach " + goal_points + " points!", 50, 580);
+    ctx.fillText("Try to reach " + goal_points + " points!", score_and_goal_xpos, score_and_goal_y_pos + 30);
 
     // black shadow remove
     ctx.shadowColor = "white";
@@ -1325,7 +1328,7 @@ function display_my_progress_info() {
     ctx.shadowOffsetY = 0;
 
     var bar_x_size = 300;
-    var bar_y_pos = 595;
+    var bar_y_pos = 535;
 
     // black shadow add
     ctx.shadowColor = 'rgb(8, 8, 8)';
