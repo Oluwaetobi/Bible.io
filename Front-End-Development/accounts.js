@@ -205,8 +205,8 @@ function localStorageAndSessionStorageData () {
     const savedName = localStorage.getItem('my_name');
     // const savedHighscores = JSON.parse(sessionStorage.getItem('my_highscores'));
     // const savedPoints = JSON.parse(sessionStorage.getItem('my_points'));
-    const savedHighscores = cookies.my_highscores
-    const savedPoints = cookies.my_points;
+    const savedHighscores = JSON.parse(cookies.my_highscores);
+    const savedPoints = JSON.parse(cookies.my_points);
     const saved_bibletar_svg = JSON.parse(localStorage.getItem('my_bibletar_svg'));
     const saved_cash = JSON.parse(localStorage.getItem('my_cash'));
     const saved_country = localStorage.getItem('my_country');
