@@ -600,6 +600,31 @@ table takes up the full width of it's parent the scrollable table */
     opacity: 0.5;
 }
 
+.advertisements {
+    background-color: #000000;
+    max-width: 250px;
+    font-size: large;
+    color: #fbf9f9;
+    padding: 5px 5px;
+    border-radius: 20px 20px;
+
+    z-index:2;
+    position: fixed;
+    top: 110px;
+    right: 20px;
+    text-align: center;
+    place-items: center;
+    display:flex;
+    flex-direction: column;
+    gap: 0px;
+}
+
+.advertisements:hover {
+    filter: brightness(160%);
+    padding: 10px 10px;
+    cursor: pointer;
+}
+
 /* I hate default scroll bars, they look ugly and are to skinny, so I made my own custom scroll bars */
 ::-webkit-scrollbar {
     width: 22px;

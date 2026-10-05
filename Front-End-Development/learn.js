@@ -206,10 +206,12 @@ function show_table_or_hide_table() {
     if (learn_page == 1) {
         document.getElementById('learning-materials-box').style.display = "flex";
         document.getElementById('books_reading_mode').style.display = "none";
+        document.getElementById('advertisements').style.display = "flex";
     }
     if (learn_page == 2) {
         document.getElementById('learning-materials-box').style.display = "none";
         document.getElementById('books_reading_mode').style.display = "block";
+        document.getElementById('advertisements').style.display = "none";
     }
 }
 
