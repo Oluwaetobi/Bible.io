@@ -545,12 +545,12 @@ function save_Data_to_Local_or_Session_Storage() {
 
         // Format the date to the required UTC string
         const expires = "expires=" + endOfDay.toUTCString();
-        document.cookie = name + "=" + JSON.stringify(value) + ";" + expires;
+        document.cookie = name + "=" + value + ";" + expires;
     }
 
     // going to store these cookies until the end of the day, cookies don't work on localhost
-    setCookieUntilEndOfDay("my_points", my_points);
-    setCookieUntilEndOfDay("my_highscores", my_highscores);
+    setCookieUntilEndOfDay("my_points", encodeURIComponent(JSON.stringify(my_points)));
+    setCookieUntilEndOfDay("my_highscores", encodeURIComponent(JSON.stringify(my_highscores)));
 
 
     // sessionStorage.setItem('my_points', JSON.stringify(my_points));
