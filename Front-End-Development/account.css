@@ -178,37 +178,35 @@ a:hover {
     border-radius: 50px 50px;
     top: 100px;
     padding: 20px 20px;
-    left: 50%;
-    translate: -20%;
-    translate: -35vh;
+    left: 450px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     z-index: 1;
-    /* overflow hidden makes sure the website isn't scrollable */
-    /* overflow: hidden; */
-
+    overflow-y: auto;
+    min-height: 500px;
 
 
     /* I wanted to get the Bible.io Thumbnail on the side, but I'm really struggling with that */
 }
 
 .wrapper h1{
-    font-size: 3rem;
-    font-weight: 900;
+    font-size: 40px;
+    font-weight: bold;
     text-transform: uppercase;
     text-align: center;
+
 }
 
 form {
     width: min(400px, 100%);
     margin-top: 20px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     display:flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
 }
 form > div {
     width: 100%;
@@ -227,7 +225,7 @@ form label {
     justify-content: center;
     align-items: center;
     font-size: 1.5rem;
-    font-weight: 500;
+    font-weight: bold;
 }
 form input {
     box-sizing: border-box;
