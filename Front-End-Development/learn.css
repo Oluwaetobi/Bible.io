@@ -603,6 +603,7 @@ table takes up the full width of it's parent the scrollable table */
 .advertisements {
     background-color: #000000;
     max-width: 450px;
+    /* max-height: 200px; */
     font-size: large;
     color: #fbf9f9;
     padding: 5px 5px;
@@ -615,18 +616,46 @@ table takes up the full width of it's parent the scrollable table */
     text-align: center;
     place-items: center;
     display:flex;
+    flex-direction: column;
     /* flex-direction: column; */
     gap: 0px;
+    overflow: hidden;
+}
+
+#ads-caps {
+    /* text-decoration: dashed; */
+    background-color: rgba(255, 3, 3, 0.5);
+    padding: 1px 300px;
+    box-shadow: inset 1.5px 1.5px 10px #000000;
+    /* font-weight: bold; */
+    font-size: 20px;
+}
+
+.ads-wrapper {
+    display:flex;
+    gap: 2px;
+
 }
 
 .ads1 {
     background-color: rgba(253, 253, 253, 0.5);
     overflow-y: auto;
-    min-height: fit-content;
+    max-height: 200px;
+    max-width: 240px;
     color:#faf9f9;
     text-shadow: 1px 1px 1px #000000;
     font-weight: bold;
     box-shadow: inset 1.5px 1.5px 30px #000000;
+    text-align: left;
+    justify-content: center;
+}
+
+.ads1 p {
+    margin-left: 10px;
+}
+
+.ads1 ul {
+    cursor: pointer;
 }
 
 .ads2 {
@@ -636,8 +665,9 @@ table takes up the full width of it's parent the scrollable table */
     place-items: center;
     max-width: 200px;
     overflow-x: hidden;
+    max-height: 200px;
 }
-.ads2:hover {
+.ads2 img:hover {
     filter: brightness(160%);
     padding: 10px 10px;
     cursor: pointer;
