@@ -601,8 +601,8 @@ table takes up the full width of it's parent the scrollable table */
 }
 
 .advertisements {
-    background-color: #ec0a0a;
-    box-shadow: inset 1px 1px 10px #0b0b0b;
+    background-color: #c90000;
+    box-shadow: inset 1px 1px 15px #0b0b0b;
     max-width: 200px;
     padding-top: 5px;
     /* max-height: 200px; */
@@ -622,6 +622,7 @@ table takes up the full width of it's parent the scrollable table */
     gap: 0px;
     overflow: hidden;
     border: 3px solid rgb(143, 143, 143);
+    text-shadow: #000000 1px 1px 1px;
 }
 
 /* #ads-caps {
@@ -664,7 +665,7 @@ table takes up the full width of it's parent the scrollable table */
     flex-direction: column;
     text-align: center;
     place-items: center;
-    /* max-width: 200px; */
+    max-width: 190px;
     overflow-x: hidden;
     max-height: 200px;
     background-color: #000000;
