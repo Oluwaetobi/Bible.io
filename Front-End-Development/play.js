@@ -580,10 +580,10 @@ function localStorageAndSessionStorageData () {
     const savedHighscores = cookies.my_highscores;
     const savedPoints = cookies.my_points;
     if (savedHighscores) {
-        JSON.parse(savedHighscores);
+        JSON.parse(decodeURIComponent(savedHighscores));
     }
     if (savedPoints) {
-        JSON.parse(savedPoints);
+        JSON.parse(decodeURIComponent(savedPoints));
     }
 
     const saved_bibletar_svg = JSON.parse(localStorage.getItem('my_bibletar_svg'));
