@@ -4240,24 +4240,24 @@ function results_information() {
     ctx.fillStyle = 'rgb(0, 0, 0)';
     ctx.fillRect(495, 267, 402, 202);
 
-    // boxed results
+    // boxed results | Supposed to kind of look like a blackboard | Or chalk board (green)
     var gradient = ctx.createLinearGradient(0, 268 + 40, 0, 268 + 200);
-    gradient.addColorStop(0, 'rgb(171, 171, 171)');     // Start color (0%)
-    gradient.addColorStop(0.5, 'rgb(222, 222, 222)');
-    gradient.addColorStop(1, 'rgb(227, 229, 229)');    // End color (100%)
+    gradient.addColorStop(0, 'rgb(24, 116, 13)');     // Start color (0%)
+    gradient.addColorStop(0.5, 'rgb(14, 124, 6)');
+    gradient.addColorStop(1, 'rgb(6, 110, 28)');    // End color (100%)
     ctx.fillStyle = gradient;
     ctx.fillRect(496, 268, 400, 200);
 
     var gradient = ctx.createLinearGradient(0, 268, 0, 268 + 40);
-    gradient.addColorStop(0, 'rgb(8, 47, 143)');     // Start color (0%)
-    gradient.addColorStop(0.5, 'rgb(19, 80, 142)');
-    gradient.addColorStop(1, 'rgb(9, 97, 148)');   
+    gradient.addColorStop(0, 'rgb(143, 94, 8)');     // Start color (0%)
+    gradient.addColorStop(0.5, 'rgb(194, 166, 6)');
+    gradient.addColorStop(1, 'rgb(200, 151, 3)');   
     ctx.fillStyle = gradient;
     // ctx.fillStyle = 'rgb(14, 161, 246)';
     ctx.fillRect(496, 268, 400, 40);
 
     // black shadow add
-    ctx.shadowColor = 'rgb(8, 8, 8)';
+    ctx.shadowColor = 'rgb(255, 255, 255)';
     ctx.shadowBlur = 1;
     ctx.shadowOffsetX = 1;
     ctx.shadowOffsetY = 1;
@@ -4266,15 +4266,27 @@ function results_information() {
     ctx.fillStyle = 'rgb(255, 255, 255)';
     ctx.fillText("ME: ", 520, 300);
 
+    // black shadow remove
+    ctx.shadowColor = "white";
+    ctx.shadowBlur = 0;
+    ctx.shadowOffsetX = 0;
+    ctx.shadowOffsetY = 0;
+
+    // white shadow add
+    ctx.shadowColor = 'rgb(255, 255, 255)';
+    ctx.shadowBlur = 1;
+    ctx.shadowOffsetX = 1;
+    ctx.shadowOffsetY = 1;
+
     var shift_y_results = 10;
     ctx.font = "25px Arial"
-    ctx.fillStyle = 'rgb(0, 0, 0)';
+    ctx.fillStyle = 'rgb(255, 255, 255)';
     ctx.fillText(my_place, 520, 330 + shift_y_results);
     ctx.fillText("Level: " + level, 520, 360 + shift_y_results);
     ctx.fillText("My Score: " + my_game.everyones_points[0], 520, 390 + shift_y_results);
     ctx.fillText("My Highscore: " + my_highscores[level - 1], 520, 420 + shift_y_results);
     
-    // black shadow remove
+    // white shadow remove
     ctx.shadowColor = "white";
     ctx.shadowBlur = 0;
     ctx.shadowOffsetX = 0;
