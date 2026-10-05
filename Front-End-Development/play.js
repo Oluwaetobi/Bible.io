@@ -4512,7 +4512,7 @@ function choose_Random_Question () {
     // Return a random integer between 1 and 10 (both included): Math.floor(Math.random() * 10) + 1;
 
     var amount_of_question_in_level_1 = 30;
-    var amount_of_question_in_level_2 = 29;
+    var amount_of_question_in_level_2 = 33;
     var amount_of_question_in_level_3 = 27;
 
 
@@ -5002,6 +5002,38 @@ function level_2_Questions () {
         answer3.innerText += `Joktan `;
         answer4.innerText += `Reu  `;
         correct_answer = 2;
+    }
+    if (randomQuestion == 30) {
+        question.innerText = `What was the name of Peleg's brother?  `;
+        answer1.innerText += `Reu `;
+        answer2.innerText += `Joktan `;
+        answer3.innerText += `Jobab `;
+        answer4.innerText += `Serug  `;
+        correct_answer = 2;
+    }
+    if (randomQuestion == 31) {
+        question.innerText = `What was the name of Peleg's father?   `;
+        answer1.innerText += `Jobab `;
+        answer2.innerText += `Ophir `;
+        answer3.innerText += `Reu `;
+        answer4.innerText += `Eber  `;
+        correct_answer = 4;
+    }
+    if (randomQuestion == 32) {
+        question.innerText = `How many sons did Eber have?   `;
+        answer1.innerText += `one son `;
+        answer2.innerText += `two sons `;
+        answer3.innerText += `five sons `;
+        answer4.innerText += `eight sons  `;
+        correct_answer = 2;
+    }
+    if (randomQuestion == 33) {
+        question.innerText = `Who did Arphaxad beget?   `;
+        answer1.innerText += `Salah `;
+        answer2.innerText += `Almodad `;
+        answer3.innerText += `Hadoram  `;
+        answer4.innerText += `Asshur  `;
+        correct_answer = 1;
     }
 }
 
