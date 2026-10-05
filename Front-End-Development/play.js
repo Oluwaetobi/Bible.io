@@ -542,13 +542,10 @@ function save_Data_to_Local_or_Session_Storage() {
 
         // Format the date to the required UTC string
         const expires = "expires=" + endOfDay.toUTCString();
-
-        // Set the cookie (including path=/ ensures it is accessible across your site)
-        // document.cookie = `${encodeURIComponent(name)}=${encodeURIComponent(value)}; ${expires}; path=/`;
         document.cookie = name + "=" + JSON.stringify(value) + ";" + expires;
     }
 
-    // going to store these cookies until the end of the day
+    // going to store these cookies until the end of the day, cookies don't work on localhost
     setCookieUntilEndOfDay("my_points", my_points);
     setCookieUntilEndOfDay("my_highscores", my_highscores);
 
@@ -574,8 +571,18 @@ function localStorageAndSessionStorageData () {
     const savedName = localStorage.getItem('my_name');
     // const savedHighscores = JSON.parse(sessionStorage.getItem('my_highscores'));
     // const savedPoints = JSON.parse(sessionStorage.getItem('my_points'));
-    const savedHighscores = JSON.parse(cookies.my_highscores);
-    const savedPoints = JSON.parse(cookies.my_points);
+    
+    /* if the cookies exist, then parse them, if not then don't
+     if I parse cookies that don't exist it will crash the program because this is a syntax error */
+    const savedHighscores = cookies.my_highscores;
+    const savedPoints = cookies.my_points;
+    if (savedHighscores) {
+        JSON.parse(savedHighscores);
+    }
+    if (savedPoints) {
+        JSON.parse(savedPoints);
+    }
+
     const saved_bibletar_svg = JSON.parse(localStorage.getItem('my_bibletar_svg'));
     const saved_cash = JSON.parse(localStorage.getItem('my_cash'));
     const saved_country = localStorage.getItem('my_country');
