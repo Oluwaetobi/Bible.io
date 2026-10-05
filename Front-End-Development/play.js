@@ -528,17 +528,54 @@ function save_Data_to_Local_or_Session_Storage() {
     /**Don't save stuff that don't need to be saved in this section, for example, I don't
      * edit my bibletar in the play section of Bible.io, so why would I need to save that here,
      */
-    sessionStorage.setItem('my_points', JSON.stringify(my_points));
-    sessionStorage.setItem('my_highscores', JSON.stringify(my_highscores));
+
+    function setCookieUntilEndOfDay(name, value) {
+        const now = new Date();
+
+        // Create a date object set to 11:59:59 PM of the current day
+        const endOfDay = new Date (
+            now.getFullYear(),
+            now.getMonth(),
+            now.getDate(),
+            23, 59, 59
+        );
+
+        // Format the date to the required UTC string
+        const expires = "expires=" + endOfDay.toUTCString();
+
+        // Set the cookie (including path=/ ensures it is accessible across your site)
+        // document.cookie = `${encodeURIComponent(name)}=${encodeURIComponent(value)}; ${expires}; path=/`;
+        document.cookie = name + "=" + JSON.stringify(value) + ";" + expires;
+    }
+
+    // going to store these cookies until the end of the day
+    setCookieUntilEndOfDay("my_points", my_points);
+    setCookieUntilEndOfDay("my_highscores", my_highscores);
+
+
+    // sessionStorage.setItem('my_points', JSON.stringify(my_points));
+    // sessionStorage.setItem('my_highscores', JSON.stringify(my_highscores));
     localStorage.setItem('my_cash', JSON.stringify(my_cash));
 }
 
 localStorageAndSessionStorageData();
 function localStorageAndSessionStorageData () {
+
+    /* If you don't know what these 4 lines of code, here's a reference
+    https://youtu.be/8tL5P-RtAH0?si=Ezf5reG8uux_d8bY
+     */
+    var cookies = document.cookie
+    .split(';')
+    .map(cookie => cookie.split('='))
+    .reduce((accumulator, [key, value]) => ({ ...accumulator, [key.trim()]: decodeURIComponent(value) }), {});
+
+
     /** I use this function to read out my local and Session Storage Data, (get it) */
     const savedName = localStorage.getItem('my_name');
-    const savedHighscores = JSON.parse(sessionStorage.getItem('my_highscores'));
-    const savedPoints = JSON.parse(sessionStorage.getItem('my_points'));
+    // const savedHighscores = JSON.parse(sessionStorage.getItem('my_highscores'));
+    // const savedPoints = JSON.parse(sessionStorage.getItem('my_points'));
+    const savedHighscores = cookies.my_highscores
+    const savedPoints = cookies.my_points;
     const saved_bibletar_svg = JSON.parse(localStorage.getItem('my_bibletar_svg'));
     const saved_cash = JSON.parse(localStorage.getItem('my_cash'));
     const saved_country = localStorage.getItem('my_country');

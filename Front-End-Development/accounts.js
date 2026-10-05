@@ -192,10 +192,21 @@ console.log(savedUser.name); // Outputs: "Alice"
 
 localStorageAndSessionStorageData();
 function localStorageAndSessionStorageData () {
+
+    /* If you don't know what these 4 lines of code, here's a reference
+    https://youtu.be/8tL5P-RtAH0?si=Ezf5reG8uux_d8bY
+     */
+    var cookies = document.cookie
+    .split(';')
+    .map(cookie => cookie.split('='))
+    .reduce((accumulator, [key, value]) => ({ ...accumulator, [key.trim()]: decodeURIComponent(value) }), {});
+
     /** I use this function to read out my local and Session Storage Data */
     const savedName = localStorage.getItem('my_name');
-    const savedHighscores = JSON.parse(sessionStorage.getItem('my_highscores'));
-    const savedPoints = JSON.parse(sessionStorage.getItem('my_points'));
+    // const savedHighscores = JSON.parse(sessionStorage.getItem('my_highscores'));
+    // const savedPoints = JSON.parse(sessionStorage.getItem('my_points'));
+    const savedHighscores = cookies.my_highscores
+    const savedPoints = cookies.my_points;
     const saved_bibletar_svg = JSON.parse(localStorage.getItem('my_bibletar_svg'));
     const saved_cash = JSON.parse(localStorage.getItem('my_cash'));
     const saved_country = localStorage.getItem('my_country');
