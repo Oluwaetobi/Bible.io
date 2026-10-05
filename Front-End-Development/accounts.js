@@ -67,6 +67,9 @@ const ctx = canvas.getContext('2d');
 var i_am_a_developer = false;
 const top_border = 90;
 const side_border = 2;
+let mouseX = 0;
+let mouseY = 0;
+
 var my_name = "Unknown Player"
 
 var box_x_pos = 1;
@@ -126,6 +129,14 @@ img_mouths.alt = "mouths image";
 var img_hair = new Image();
 img_hair.src = "./images/hair_men1.svg"; // Set source URL
 img_hair.alt = "hair image";
+
+window.addEventListener('mousemove', (event) => {
+    mouseX = event.clientX;
+    mouseY = event.clientY;
+    // This is to counter for where the canvas is actually created on the screen
+    mouseX -= side_border;
+    mouseY -= top_border;
+})
 
 function wipeOutEntireScreen() {
     ctx.clearRect(0,0, canvas.width, canvas.height);
@@ -216,7 +227,7 @@ function localStorageAndSessionStorageData () {
     if (savedPoints) {
         JSON.parse(savedPoints);
     }
-    
+
     const saved_bibletar_svg = JSON.parse(localStorage.getItem('my_bibletar_svg'));
     const saved_cash = JSON.parse(localStorage.getItem('my_cash'));
     const saved_country = localStorage.getItem('my_country');
@@ -1269,6 +1280,69 @@ function displayTextInfo () {
 
 }
 
+function display_my_progress_info() {
+
+    // black shadow add
+    ctx.shadowColor = 'rgb(8, 8, 8)';
+    ctx.shadowBlur = 3;
+    ctx.shadowOffsetX = 1;
+    ctx.shadowOffsetY = 1;
+
+    ctx.font = "30px Arial";
+    ctx.fillStyle = 'rgb(253, 253, 253)';
+    ctx.fillText("My Points: " + my_points, 50, 570);
+
+    var goal_points = 100;
+
+    ctx.font = "20px Arial";
+    ctx.fillStyle = 'rgb(253, 253, 253)';
+    ctx.fillText("Try to reach " + goal_points + " points!", 50, 600);
+
+    // black shadow remove
+    ctx.shadowColor = "white";
+    ctx.shadowBlur = 0;
+    ctx.shadowOffsetX = 0;
+    ctx.shadowOffsetY = 0;
+
+    var bar_x_size = 300;
+
+    // black shadow add
+    ctx.shadowColor = 'rgb(8, 8, 8)';
+    ctx.shadowBlur = 3;
+    ctx.shadowOffsetX = 1;
+    ctx.shadowOffsetY = 1;
+
+    // goal to reach 100 points
+    ctx.fillStyle = 'rgb(245, 6, 6)';
+    ctx.fillRect(50, 620, bar_x_size, 30);
+
+    // black shadow remove
+    ctx.shadowColor = "white";
+    ctx.shadowBlur = 0;
+    ctx.shadowOffsetX = 0;
+    ctx.shadowOffsetY = 0;
+
+    ctx.fillStyle = 'rgb(12, 166, 4)';
+    if (my_points <= 100) {
+        ctx.fillRect(50, 620, (my_points * (bar_x_size/goal_points)), 30);
+    } else {
+        // goal has been reached
+        ctx.fillRect(50, 620, (goal_points * (bar_x_size/goal_points)), 30);
+    }
+
+}
+
+function displayMouseX_and_MouseY () {
+    if (i_am_a_developer == true) {
+        ctx.font = "30px Arial";
+        ctx.strokeStyle = 'rgb(190, 36, 36)';
+        ctx.strokeText("MouseX: " + mouseX + " MouseY: " + mouseY, 10, 30);
+        ctx.fillStyle = 'rgb(190, 36, 36)';
+        ctx.fillText("MouseX: " + mouseX + " MouseY: " + mouseY, 10, 30);
+    }
+
+}
+
 
 function drawGame() {
     // blue background
@@ -1284,6 +1358,8 @@ function drawGame() {
     myBibletar();
     show_my_country();
     displayTextInfo();
+    display_my_progress_info();
+    displayMouseX_and_MouseY();
 
 }
 
