@@ -294,7 +294,7 @@ var players_points = hall_of_fame.everyones_points[0];
 
 function playerClickedBibletar () {
 
-    // transcluent box right side of hall of fame
+    // translucent rectangle right side of hall of fame
     ctx.fillStyle = "rgba(12, 12, 12, 0.5)"; 
     ctx.fillRect(1080, 0, 500, 800);
 

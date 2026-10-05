@@ -304,13 +304,26 @@ function loadingBox() {
 function myBibletar () {
 
     // WRITE Player Clicked's NAME
-    var name_y_pos = 460;
-    ctx.font = "40px Arial";
-    ctx.strokeStyle = 'rgb(10, 9, 9)';
-    ctx.strokeText(my_name, 50, name_y_pos);
-    ctx.fillStyle = 'rgb(8, 8, 8)';
-    ctx.fillText(my_name, 50, name_y_pos);
+    var name_y_pos = 445;
 
+    // black shadow add
+    ctx.shadowColor = 'rgb(8, 8, 8)';
+    ctx.shadowBlur = 3;
+    ctx.shadowOffsetX = 1;
+    ctx.shadowOffsetY = 1;
+
+    
+    ctx.font = "40px Arial";
+    ctx.strokeStyle = 'rgb(255, 255, 255)';
+    ctx.strokeText(my_name, 50, name_y_pos);
+    ctx.fillStyle = 'rgb(255, 255, 255)';
+    ctx.fillText(my_name, 50, name_y_pos);
+    
+    // black shadow remove
+    ctx.shadowColor = "white";
+    ctx.shadowBlur = 0;
+    ctx.shadowOffsetX = 0;
+    ctx.shadowOffsetY = 0;
 
 
     /** Have to recalculate the src link based off of my_bibletar_svg */
@@ -1253,7 +1266,7 @@ function show_my_country() {
 
     // Don't touch this
     img_my_country.src = "./images/country_" + country_svg + ".svg";
-    ctx.drawImage(img_my_country, 50, 480, 100, 50);
+    ctx.drawImage(img_my_country, 50, 465, 100, 50);
 
     // black shadow remove
     ctx.shadowColor = "white";
@@ -1270,7 +1283,7 @@ function displayTextInfo () {
     ctx.shadowOffsetX = 1;
     ctx.shadowOffsetY = 1;
 
-    var x_shift_back = 390;
+    var x_shift_back = 230;
     ctx.font = "15px Arial";
     ctx.fillStyle = 'rgb(252, 252, 251)';
     ctx.fillText(` Revelation 22:12 "And, behold, I come quickly; and my reward is with me, to give every man according as his work shall be." `, (((canvas.width)/2) - x_shift_back), canvas.height - 20);
@@ -1285,6 +1298,10 @@ function displayTextInfo () {
 
 function display_my_progress_info() {
 
+    // translucent rectangle left side of account page
+    ctx.fillStyle = "rgba(12, 12, 12, 0.3)"; 
+    ctx.fillRect(0, 0, 430, 800);
+
     // black shadow add
     ctx.shadowColor = 'rgb(8, 8, 8)';
     ctx.shadowBlur = 3;
@@ -1293,13 +1310,13 @@ function display_my_progress_info() {
 
     ctx.font = "30px Arial";
     ctx.fillStyle = 'rgb(253, 253, 253)';
-    ctx.fillText("My Points: " + my_points, 50, 570);
+    ctx.fillText("My Points: " + my_points, 50, 550);
 
     var goal_points = 100;
 
     ctx.font = "20px Arial";
     ctx.fillStyle = 'rgb(253, 253, 253)';
-    ctx.fillText("Try to reach " + goal_points + " points!", 50, 600);
+    ctx.fillText("Try to reach " + goal_points + " points!", 50, 580);
 
     // black shadow remove
     ctx.shadowColor = "white";
@@ -1308,6 +1325,7 @@ function display_my_progress_info() {
     ctx.shadowOffsetY = 0;
 
     var bar_x_size = 300;
+    var bar_y_pos = 595;
 
     // black shadow add
     ctx.shadowColor = 'rgb(8, 8, 8)';
@@ -1317,7 +1335,7 @@ function display_my_progress_info() {
 
     // goal to reach 100 points
     ctx.fillStyle = 'rgb(245, 6, 6)';
-    ctx.fillRect(50, 620, bar_x_size, 30);
+    ctx.fillRect(50, bar_y_pos, bar_x_size, 30);
 
     // black shadow remove
     ctx.shadowColor = "white";
@@ -1327,21 +1345,38 @@ function display_my_progress_info() {
 
     ctx.fillStyle = 'rgb(12, 166, 4)';
     if (my_points <= 100) {
-        ctx.fillRect(50, 620, (my_points * (bar_x_size/goal_points)), 30);
+        ctx.fillRect(50, bar_y_pos, (my_points * (bar_x_size/goal_points)), 30);
     } else {
         // goal has been reached
-        ctx.fillRect(50, 620, (goal_points * (bar_x_size/goal_points)), 30);
+        ctx.fillRect(50, bar_y_pos, (goal_points * (bar_x_size/goal_points)), 30);
     }
 
 }
 
 function displayMouseX_and_MouseY () {
     if (i_am_a_developer == true) {
-        ctx.font = "30px Arial";
-        ctx.strokeStyle = 'rgb(190, 36, 36)';
-        ctx.strokeText("MouseX: " + mouseX + " MouseY: " + mouseY, 10, 30);
-        ctx.fillStyle = 'rgb(190, 36, 36)';
-        ctx.fillText("MouseX: " + mouseX + " MouseY: " + mouseY, 10, 30);
+
+        // black shadow add
+    ctx.shadowColor = 'rgb(8, 8, 8)';
+    ctx.shadowBlur = 3;
+    ctx.shadowOffsetX = 1;
+    ctx.shadowOffsetY = 1;
+
+
+    
+    
+    ctx.font = "30px Arial";
+    ctx.strokeStyle = 'rgb(190, 36, 36)';
+    ctx.strokeText("MouseX: " + mouseX + " MouseY: " + mouseY, 10, 30);
+    ctx.fillStyle = 'rgb(190, 36, 36)';
+    ctx.fillText("MouseX: " + mouseX + " MouseY: " + mouseY, 10, 30);
+    
+    // black shadow remove
+    ctx.shadowColor = "white";
+    ctx.shadowBlur = 0;
+    ctx.shadowOffsetX = 0;
+    ctx.shadowOffsetY = 0;
+    
     }
 
 }
@@ -1358,10 +1393,10 @@ function drawGame() {
     ctx.fillRect(0, 0, canvas.width, canvas.height);
     
     loadingBox();
+    display_my_progress_info();
     myBibletar();
     show_my_country();
     displayTextInfo();
-    display_my_progress_info();
     displayMouseX_and_MouseY();
 
 }
