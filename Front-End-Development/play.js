@@ -577,8 +577,8 @@ function localStorageAndSessionStorageData () {
     
     /* if the cookies exist, then parse them, if not then don't
      if I parse cookies that don't exist it will crash the program because this is a syntax error */
-    const savedHighscores = cookies.my_highscores;
-    const savedPoints = cookies.my_points;
+    var savedHighscores = cookies.my_highscores;
+    var savedPoints = cookies.my_points;
     if (savedHighscores) {
         savedHighscores = JSON.parse(savedHighscores);
     }
