@@ -42,12 +42,11 @@ font-family: Arial, Helvetica, sans-serif;
 
 header {
     position: static;
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  /* gap: 1rem; */
-  padding: 10px 40px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* gap: 1rem; */
     z-index: 2;
     /* originally 10px 40px */
     padding: 10px 30px;
@@ -62,6 +61,7 @@ header {
     align-items: center;
     color:#ffffff;
     /* color: hsl(63, 100%, 50%); */
+    min-width:fit-content;
     font-weight: bolder;
     font-size: 30px;
     /* background-color: rgba(254, 254, 255, 0.1); */
@@ -99,13 +99,9 @@ header {
 }
 
 .head-right a{
-
-  text-decoration: none;
+    text-decoration: none;
     /* padding-left was originally 25px but I want to increase it to space out the text more */
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 10px 40px 10px 40px;
     color: white;
     /* font-size was originally 15px but I might increase it */
     font-size: 30px;
