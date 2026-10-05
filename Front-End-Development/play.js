@@ -4257,7 +4257,7 @@ function results_information() {
     ctx.fillRect(496, 268, 400, 40);
 
     // black shadow add
-    ctx.shadowColor = 'rgb(255, 255, 255)';
+    ctx.shadowColor = 'rgb(6, 6, 6)';
     ctx.shadowBlur = 1;
     ctx.shadowOffsetX = 1;
     ctx.shadowOffsetY = 1;
