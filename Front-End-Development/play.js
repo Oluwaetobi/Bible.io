@@ -529,6 +529,9 @@ function save_Data_to_Local_or_Session_Storage() {
      * edit my bibletar in the play section of Bible.io, so why would I need to save that here,
      */
 
+    /* If you don't know what the code below does use this as a reference:
+    https://youtu.be/rGYoWJ398lI?si=RC4i8SWUHxv-9cTV
+     */
     function setCookieUntilEndOfDay(name, value) {
         const now = new Date();
 

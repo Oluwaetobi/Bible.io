@@ -53,12 +53,12 @@ header {
 .head-left{
     display: flex;
     align-items: center;
-    color:#f7ff12;
+    color:#ffffff;
     /* color: hsl(63, 100%, 50%); */
     font-weight: bolder;
     font-size: 30px;
     /* background-color: rgba(254, 254, 255, 0.1); */
-    background: linear-gradient(180deg, #035b78, #07a9d6);
+    background: linear-gradient(180deg, #0b0b0b, #b6b7b7);
     padding: 0px 10px;
     box-sizing: border-box;
     border-radius: 20px;
