@@ -4158,25 +4158,30 @@ function broadcast_game_is_over (time_alloted_for_each_game) {
     
 
     var end_game_message = "Time's Up, Game Over!!!";
+    var egm_pos_y = 550;
 
+    // back black border
+    ctx.fillStyle = 'rgb(0, 0, 0)';
+    ctx.fillRect(78, 468, 924, 174);
+    // box display
     var gradient = ctx.createLinearGradient(0, 470, 0, 470 + 170);
-    gradient.addColorStop(0, 'rgb(120, 118, 118)');     // Start color (0%)
-    gradient.addColorStop(0.5, 'rgb(130, 125, 125)');
-    gradient.addColorStop(1, 'rgb(85, 86, 86)');    // End color (100%)
+    gradient.addColorStop(0, 'rgb(250, 248, 248)');     // Start color (0%)
+    gradient.addColorStop(0.5, 'rgb(255, 254, 254)');
+    gradient.addColorStop(1, 'rgb(241, 241, 241)');    // End color (100%)
     // ctx.fillStyle = 'rgb(249, 247, 247)';
     ctx.fillStyle = gradient;
     ctx.fillRect(80, 470, 920, 170);
 
 
     ctx.font = "80px Arial";
-    ctx.strokeStyle = 'rgb(250, 248, 248)';
-    ctx.strokeText(end_game_message, 100, 540);
-    ctx.fillStyle = 'rgb(252, 251, 251)';
-    ctx.fillText(end_game_message, 100, 540);
+    ctx.strokeStyle = 'rgb(0, 0, 0)';
+    ctx.strokeText(end_game_message, 100, egm_pos_y);
+    ctx.fillStyle = 'rgb(0, 0, 0)';
+    ctx.fillText(end_game_message, 100, egm_pos_y);
 
     ctx.font = "30px Arial";
     ctx.fillStyle = 'rgb(244, 8, 8)';
-    ctx.fillText("Your results will soon be displayed on the next page", 100, 590);
+    ctx.fillText("Your results will soon be displayed on the next page", 100, egm_pos_y + 50);
         
     // black shadow remove
     ctx.shadowColor = "white";
