@@ -576,7 +576,10 @@ function localStorageAndSessionStorageData () {
     // const savedPoints = JSON.parse(sessionStorage.getItem('my_points'));
     
     /* if the cookies exist, then parse them, if not then don't
-     if I parse cookies that don't exist it will crash the program because this is a syntax error */
+     if I parse cookies that don't exist it will crash the program because this is a syntax error 
+     
+     note: instead of having constants I have variables, because I need to be able to reassign them in this case since 
+     they are cookies and the need to be parsed that is if they even exist */
     var savedHighscores = cookies.my_highscores;
     var savedPoints = cookies.my_points;
     if (savedHighscores) {
