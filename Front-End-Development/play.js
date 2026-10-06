@@ -4542,9 +4542,9 @@ function choose_Random_Question () {
 
     // Return a random integer between 1 and 10 (both included): Math.floor(Math.random() * 10) + 1;
 
-    var amount_of_question_in_level_1 = 30;
-    var amount_of_question_in_level_2 = 33;
-    var amount_of_question_in_level_3 = 27;
+    var amount_of_question_in_level_1 = 33;
+    var amount_of_question_in_level_2 = 37;
+    var amount_of_question_in_level_3 = 29;
 
 
     if (level == 1) {
@@ -5114,6 +5114,14 @@ function level_2_Questions () {
         answer4.innerText += `nine sons  `;
         correct_answer = 3;
     }
+    if (randomQuestion == 37) {
+        question.innerText = `Candace was the queen of which nation?  `;
+        answer1.innerText += `Ethiopia `;
+        answer2.innerText += `Egypt `;
+        answer3.innerText += `Persia  `;
+        answer4.innerText += `Canaan `;
+        correct_answer = 1;
+    }
 }
 
 function level_3_Questions () {
@@ -5335,6 +5343,22 @@ function level_3_Questions () {
         answer3.innerText += `Psalm 80:19-20 `;
         answer4.innerText += `Psalm 104:6-7 `;
         correct_answer = 4;
+    }
+    if (randomQuestion == 28) {
+        question.innerText = `And I will deliver thee out of the hand of the wicked, and I will redeem thee out of the hand of the terrible. `;
+        answer1.innerText += `Jeremiah 15:21 `;
+        answer2.innerText += `Ezekiel 29:6 `;
+        answer3.innerText += `Psalms 58:12 `;
+        answer4.innerText += `Deuteronomy 15:3 `;
+        correct_answer = 1;
+    }
+    if (randomQuestion == 29) {
+        question.innerText = `Have not I held my peace even of old, and thou fearest me not? `;
+        answer1.innerText += `Isaiah 32:6 `;
+        answer2.innerText += `Isaiah 57:11 `;
+        answer3.innerText += `Jeremiah 30:5 `;
+        answer4.innerText += `Jeremiah 46:2 `;
+        correct_answer = 2;
     }
     
 }
