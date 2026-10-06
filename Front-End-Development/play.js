@@ -4798,6 +4798,30 @@ function level_1_Questions () {
         answer4.innerText += `Aaron `;
         correct_answer = 1;
     }
+    if (randomQuestion == 31) {
+        question.innerText = `What was the name of King Ahab's wife?  `;
+        answer1.innerText += `Berenice `;
+        answer2.innerText += `Athaliah `;
+        answer3.innerText += `Jezebel `;
+        answer4.innerText += `Huldah `;
+        correct_answer = 3;
+    }
+    if (randomQuestion == 32) {
+        question.innerText = `What was the name of King David's father?  `;
+        answer1.innerText += `Barzillai `;
+        answer2.innerText += `Bezalel `;
+        answer3.innerText += `Obed `;
+        answer4.innerText += `Jesse `;
+        correct_answer = 4;
+    }
+    if (randomQuestion == 33) {
+        question.innerText = `What was name of King David's oldest brother?  `;
+        answer1.innerText += `Shammah `;
+        answer2.innerText += `Eliab `;
+        answer3.innerText += `Abinadab `;
+        answer4.innerText += `Shimeah `;
+        correct_answer = 2;
+    }
 }
 
 function level_2_Questions () {
@@ -5065,6 +5089,30 @@ function level_2_Questions () {
         answer3.innerText += `Hadoram  `;
         answer4.innerText += `Asshur  `;
         correct_answer = 1;
+    }
+    if (randomQuestion == 34) {
+        question.innerText = `Which man in the Bible said this: "and the God that answereth by fire, let him be God"   `;
+        answer1.innerText += `Elisha `;
+        answer2.innerText += `Elijah `;
+        answer3.innerText += `Saul  `;
+        answer4.innerText += `Nathan  `;
+        correct_answer = 2;
+    }
+    if (randomQuestion == 35) {
+        question.innerText = `Huldah the prophetess, was the wife of which man?   `;
+        answer1.innerText += `Achbor `;
+        answer2.innerText += `Hasrah `;
+        answer3.innerText += `Shallum  `;
+        answer4.innerText += `Shaphan  `;
+        correct_answer = 3;
+    }
+    if (randomQuestion == 36) {
+        question.innerText = `How many sons did Jesse have?   `;
+        answer1.innerText += `six sons `;
+        answer2.innerText += `seven sons `;
+        answer3.innerText += `eight sons  `;
+        answer4.innerText += `nine sons  `;
+        correct_answer = 3;
     }
 }
 
