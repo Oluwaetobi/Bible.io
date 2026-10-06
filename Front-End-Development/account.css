@@ -171,7 +171,7 @@ a:hover {
 
 .wrapper {
     box-sizing: border-box;
-    background-color: rgba(251, 251, 252, 0.3);
+    background-color: rgba(251, 251, 252, 0.6);
     min-height: 500px;
     width: max(40%, 800px);
     position: relative;

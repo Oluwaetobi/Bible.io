@@ -1296,6 +1296,25 @@ function displayTextInfo () {
 
 }
 
+function draw_account_background() {
+    var gradient = ctx.createLinearGradient(0, 0, 0, canvas.height);
+    /** original color
+     * gradient.addColorStop(0, 'rgb(101, 102, 102)');  
+     */
+    gradient.addColorStop(0, 'rgb(101, 102, 102)');     // Start color (0%)
+    // gradient.addColorStop(0.5, 'yellow'); // Middle color (50%)
+    if (i_am_a_boy == true) {
+        gradient.addColorStop(1, 'rgb(1, 132, 152)');    // End color (100%)
+    } else {
+        if (i_am_a_girl == true) {
+            gradient.addColorStop(1, 'rgb(152, 1, 114)');    // End color (100%)
+        }
+    }
+    
+    ctx.fillStyle = gradient;
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+}
+
 function display_my_progress_info() {
 
     // translucent rectangle left side of account page
@@ -1395,6 +1414,7 @@ function drawGame() {
     ctx.fillStyle = gradient;
     ctx.fillRect(0, 0, canvas.width, canvas.height);
     
+    draw_account_background();
     loadingBox();
     display_my_progress_info();
     myBibletar();
