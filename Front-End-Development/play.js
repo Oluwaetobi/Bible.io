@@ -5327,13 +5327,12 @@ function resizeCanvas() {
     canvas.height = window.innerHeight -90;
 
     /* Note: Changing the canvas size clears the context state. 
-    Redraw or call your render function here*/
-
-    drawGame();
+    Redraw or call your render function*/
 }
 
 function gameLoop() {
     /**Wiping the entire screen clear is important before drawing your next batch */
+    resizeCanvas();
     wipeOutEntireScreen();
     drawGame();
     /** All that requestAnimationFrame does it create a forever loop that can help me make
@@ -5344,7 +5343,6 @@ function gameLoop() {
 }
 
 /** Inititalize Dimensions on load */
-resizeCanvas();
 gameLoop();
 
 // console.log(ctx);
