@@ -163,8 +163,12 @@ a:hover {
     top: 30px;
     /* z index pushs it forward 1 layer */
     z-index: 1;
+    color:#fefefe;
+    font-weight: bold;
     font-size: 60px;
     text-align: center;
+    text-shadow: #000000 1px 1px 1px;
+    background-color: rgba(1, 1, 1, 0.1);
 }
 
 .small-text {
@@ -175,6 +179,10 @@ a:hover {
     z-index: 1;
     font-size: 20px;
     text-align: center;
+    color: rgb(251, 249, 249);
+    text-shadow: #010101 1px 1px 1px;
+    background-color: rgba(1, 1, 1, 0.1);
+    padding: 0px 0px 5px 0px;
 }
 
 .container2 {
