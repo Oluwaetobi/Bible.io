@@ -320,7 +320,7 @@ table takes up the full width of it's parent the scrollable table */
 
 /* Section for Amazing Christians From History */
 
-#choose_christians_books {
+#books_about_christians {
     display: block;
 }
 
@@ -486,6 +486,85 @@ table takes up the full width of it's parent the scrollable table */
 }
 
 .table-articles tr {
+    scroll-snap-align: start;
+}
+
+
+
+
+/* Sections for NOVELS */
+.scrollable-table-novels {
+    min-height: 130px;
+    width: 700px;
+    /* aspect-ratio: 1 / 1;   */
+    /* overflow-y makes only the y coordinates scrollable */
+    overflow-x: auto;
+    /* background-color: #7f2e2e; */
+    position: static;
+    /* left: 100px; */
+    margin: 10px;
+    /* translate: -50%; */
+    z-index: 1;
+    /* top: 580px; */
+    background-color: #fbfbfb;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    border: 6px solid black;
+    border-radius: 20px 20px;
+}
+
+.scrollable-table-novels caption {
+    background-color: #990d0d;
+    color:#fcfcfc;
+    position: sticky;
+    top: 0px;
+    font-weight: bold;
+    font-size: large;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* Scrollable table class takes precedence over table class
+table takes up the full width of it's parent the scrollable table */
+.scrollable-table-novels > .table-novels {
+    width: 100%
+}
+
+.table-novels {
+    /* border-collapse:collapse; */
+    font-size: 10px;
+    width: 300px;
+    /* border-collapse: collapse;
+    border: 2px;
+    border-color: #000000; */
+}
+/*  */
+.table-novels th {
+    background-color: #6085fffe;
+    color: #ffffff;
+    font-size: 20px;
+    text-align: left;
+    position: sticky;
+    top: 0px;
+    /* justify-content: center;
+    align-items: center; */
+}
+
+.table-novels th {
+    padding: 2px 6px;
+    font-weight: normal;
+    font-size: 15px;
+    border-collapse: collapse
+}
+.table-novels td {
+    /* top right bottom left */
+    padding: 0px 20px 0px 20px;
+    /* font-weight: normal; */
+    /* font-size: 15px;
+    border: 1px solid black;  */
+}
+
+.table-novels tr {
     scroll-snap-align: start;
 }
 

@@ -1337,6 +1337,10 @@ function all_Text_Database () {
             // Christian Articles to Read
             Christian_Articles_DataBase();
         }
+        if (table_clicked == 4) {
+            // christian novels
+            Christian_Novels_Database();
+        }
         stop_re_adding_text(1);
     } 
 }
@@ -1730,7 +1734,7 @@ In the year 1876, Mary Slessor left Scotland and went to Africa for missionary w
 function Christian_Articles_DataBase () {
     if (book_clicked == 1) {
         // Does Science Uphold the Bible
-        text_to_read.innerHTML = `
+        text_to_read.innerText = `
         Does Science Uphold the Bible:
 Christianity has been dropping in America in recent years, in the year 1950 more than 90% of America was Christian and now in the year 2026 today only about 66% of America is Christian. Millions and millions of people have left the church and a similar trend has been observed across western world except for in Asia and Africa where Christianity seems to be growing especially in places like Nigeria and China. But not in the Western world. In Canada back in the days almost 100% of Canada was Christian. You could walk down the street and take it for granted that your next day neighbor was Christian but nowadays in the year 2026 only about half of Canada is Christian but many of them don’t see Christianity as something important and is treated as something that they only pay attention to once per week on Sunday and in some cases, even worse. They only attend church 1 per year which is on Christmas. 
 The reason for the disappearance of a once popular religion and way of life, the reason for the downfall and death of Christianity is due to a very simple yet popular question. Does Science uphold the Bible? Did you know that the University of Oxford and many of the most prestigious universities of America used to be Christian but nowadays not so much, nowadays they promote a way-world agenda. An agenda against Christianity, the Bible, and the God of heaven. Many people believe in evolution and have erased the existence of God. They say that God isn’t real and that we came from monkeys. While it is true that people are free to believe whatever they want, such thinking is just simply illogical. 
@@ -1849,7 +1853,7 @@ The world seeks after treasure but the greatest treasure of all is wisdom.
     }
     if (book_clicked == 5) {
         // The Abomination of Desolation
-        text_to_read.innerHTML = `The Abomination of Desolation:
+        text_to_read.innerText = `The Abomination of Desolation:
 
 The Tribulation will last for 7 years, but the Great Tribulation will be during the last 2nd half of the 7 years. In Daniel 9:27 each day represents 1 year. So when it says 1 week, there are 7 days in a week, meaning 7 years. We know that this time is true because in the middle of the week, the covenant is broken and instead the abomination of desolation is set on the altar, according to Daniel 9:27, Daniel 11:31 and Daniel 12:11.
 
@@ -1870,6 +1874,12 @@ Revelation 9:6 says “And in those days shall men seek death, and shall not fin
 `
     }
 
+}
+
+function Christian_Novels_Database () {
+    if (book_clicked == 1) {
+        text_to_read.innerText = ` `;
+    }
 }
 
 function resizeCanvas() {
