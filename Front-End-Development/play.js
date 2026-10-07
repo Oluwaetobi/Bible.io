@@ -4543,8 +4543,8 @@ function choose_Random_Question () {
     // Return a random integer between 1 and 10 (both included): Math.floor(Math.random() * 10) + 1;
 
     var amount_of_question_in_level_1 = 33;
-    var amount_of_question_in_level_2 = 37;
-    var amount_of_question_in_level_3 = 29;
+    var amount_of_question_in_level_2 = 41;
+    var amount_of_question_in_level_3 = 30;
 
 
     if (level == 1) {
@@ -5122,6 +5122,38 @@ function level_2_Questions () {
         answer4.innerText += `Canaan `;
         correct_answer = 1;
     }
+    if (randomQuestion == 38) {
+        question.innerText = `Hazael was the king of which nation?  `;
+        answer1.innerText += `Jordan `;
+        answer2.innerText += `Syria `;
+        answer3.innerText += `Lebanon  `;
+        answer4.innerText += `Canaan `;
+        correct_answer = 2;
+    }
+    if (randomQuestion == 39) {
+        question.innerText = `Jabin was the king of which country?   `;
+        answer1.innerText += `Babylon `;
+        answer2.innerText += `Assyria `;
+        answer3.innerText += `Hazor  `;
+        answer4.innerText += `Tarshish `;
+        correct_answer = 3;
+    }
+    if (randomQuestion == 40) {
+        question.innerText = `Who slew Sisera?   `;
+        answer1.innerText += `Jael `;
+        answer2.innerText += `Lapidoth `;
+        answer3.innerText += `Heber  `;
+        answer4.innerText += `Rizpah `;
+        correct_answer = 1;
+    }
+    if (randomQuestion == 41) {
+        question.innerText = `What was the name of Deborah's husband?  `;
+        answer1.innerText += `Medad `;
+        answer2.innerText += `Heber `;
+        answer3.innerText += `Hobab  `;
+        answer4.innerText += `Lapidoth `;
+        correct_answer = 4;
+    }
 }
 
 function level_3_Questions () {
@@ -5359,6 +5391,14 @@ function level_3_Questions () {
         answer3.innerText += `Jeremiah 30:5 `;
         answer4.innerText += `Jeremiah 46:2 `;
         correct_answer = 2;
+    }
+    if (randomQuestion == 30) {
+        question.innerText = `Love... does not behave rudely, does not seek its own, is not provoked, thinks no evil; `;
+        answer1.innerText += `Proverbs 23:2 `;
+        answer2.innerText += `Proverbs 23:7 `;
+        answer3.innerText += `1 Corinthians 13:5 `;
+        answer4.innerText += `1 Corinthians 13:8 `;
+        correct_answer = 3;
     }
     
 }
