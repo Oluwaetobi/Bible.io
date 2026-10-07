@@ -366,6 +366,12 @@ to the parent assuming the parent is position relative */
     box-shadow: 1px 1px 20px #060606;
 }
 
+#learning-kids-left img:hover {
+    cursor: pointer;
+    filter: contrast(130%);
+    /* filter: brightness(130%); */
+}
+
 #learning-kids-right {
     padding: 20px 20px;
     font-weight: bold;
