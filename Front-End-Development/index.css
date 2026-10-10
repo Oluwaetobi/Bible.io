@@ -348,7 +348,7 @@ to the parent assuming the parent is position relative */
 
 .kids-learning {
     /* background-color: #fefefe; */
-    background: linear-gradient(180deg, #f9f9f9, #b8b8b8);
+    background: linear-gradient(180deg, rgb(239, 7, 7), rgba(9, 148, 255, 0.97));
     box-shadow: inset 1.5px 1.5px 60px #060606;
     position: static;
     width: 100%;
@@ -378,6 +378,14 @@ to the parent assuming the parent is position relative */
     font-size: 30px;
     max-width: 500px;
     text-align: center;
+    color:white;
+    text-shadow: #060606 2px 2px 1px;
+    box-shadow: inset 0px 0px 100px #060606;
+}
+
+#learning-kids-right-header {
+    background-color: rgba(196, 199, 18, 0.5);
+    border-radius: 20px 20px;
 }
 
 #learning-kids-appeal {
