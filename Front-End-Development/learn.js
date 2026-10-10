@@ -1345,6 +1345,7 @@ function all_Text_Database () {
     } 
 }
 
+// 66 books from the Bible
 const genesis_book = JSON.parse(sessionStorage.getItem('book_of_genesis'));
 const exodus_book = JSON.parse(sessionStorage.getItem('book_of_exodus'));
 const leviticus_book = JSON.parse(sessionStorage.getItem('book_of_leviticus'));
@@ -1411,6 +1412,9 @@ const second_john_book = JSON.parse(sessionStorage.getItem('book_of_2john'));
 const third_john_book = JSON.parse(sessionStorage.getItem('book_of_3john'));
 const jude_book = JSON.parse(sessionStorage.getItem('book_of_jude'));
 const revelation_book = JSON.parse(sessionStorage.getItem('book_of_revelation'));
+// end of books from the Bible
+
+const lawless_one_is_comin_stories = JSON.parse(sessionStorage.getItem('stories_lawless_one_is_comin'));
 
 function Bible_DataBase () {
     /** Instead of using the fetch api command in JavaScript to fetch Bible data from a server, I'm storing
@@ -1878,7 +1882,7 @@ Revelation 9:6 says “And in those days shall men seek death, and shall not fin
 
 function Christian_Novels_Database () {
     if (book_clicked == 1) {
-        text_to_read.innerText = ` `;
+        text_to_read.innerText = lawless_one_is_comin_stories;
     }
 }
 

@@ -37,6 +37,7 @@ function store_big_books_sessionally () {
      * in order to not have too many lines of code that is in fact just plain text
      */
 
+    // 66 books from the Bible
     sessionStorage.setItem('book_of_genesis', JSON.stringify(book_of_genesis))
     sessionStorage.setItem('book_of_exodus', JSON.stringify(book_of_exodus))
     sessionStorage.setItem('book_of_leviticus', JSON.stringify(book_of_leviticus))
@@ -103,6 +104,13 @@ function store_big_books_sessionally () {
     sessionStorage.setItem('book_of_3john', JSON.stringify(book_of_3john))
     sessionStorage.setItem('book_of_jude', JSON.stringify(book_of_jude))
     sessionStorage.setItem('book_of_revelation', JSON.stringify(book_of_revelation))
+    // end of books from the Bible
+
+
+    // novels and short stories
+    sessionStorage.setItem('stories_lawless_one_is_comin', JSON.stringify(stories_lawless_one_is_comin));
+
+
     
 }
 
@@ -50816,7 +50824,209 @@ AV 1611
 22:19 And if any man shall take away from the words of the book of this prophecy, God shall take away his part out of the book of life, and out of the holy city, and from the things which are written in this book.
 22:20 He which testifies these things said, Surely I come quickly. Amen.  Even so, come, Lord Jesus.
 22:21 The grace of our Lord Jesus Christ be with you all. Amen.
-    `
+  
+`
+
+var stories_lawless_one_is_comin = `
+"Blood Blood Blood!" They screamed.
+I heard the sound of glass breaking, people screaming.
+"Boom! Boom! Boom!" The gang charged at our door.
+There was a frightened look on my mother's face and my Dad cowered in fear.
+"One, two, three, four! Boom! One, two, three, four! Boom!" They shouted. They were all smashing their bodies collectively at the door to break-in but that's when police sirens started ringing. Then they started shooting randomly into the house, they cackled, then ran.
+This was the story that her mother relayed to me.
+"Great!" I said, "no one was hurt." But that's when the expression on her face changed drastically, she started weeping.
+I attended Isabelle's funeral that week. I had already spent several hours crying, I couldn't believe what I had seen and heard. A lifeless body, a lawless gang, a broken family. They're only child was dead. Isabelle was my best friend, she was taken way too early. I wasn't sad about it, I was furious!
+"How could they!" I screamed. How exactly could people be so evil as to viciously take a human life. Isabelle wasn't the only one that died that fateful day, many kids, teens, and parents lost their lives too.
+"We gather here today in memory of our dearest and most precious Isabelle," the pastor started. But I didn't stay to hear the rest. I ran for the stalls, I felt the service was stupid. Her life was gone, and the lives of so many others too. And the only thing they could do was to ceremonially and memorially remember them and pay their respects. But we couldn't bring them back.
+Suddenly, I heard a voice, "don't you think you're being a bit overly angry?" It asked.
+"Angry" I started. "Angry!" I shouted, "she's gone! I screamed, "and we can't bring her back!" I bursted into tears.
+"Why do we need to bring her back?" The voice asked.
+"So she can live again" I replied.
+"But this world is such an evil place" the voice grew louder, "filled with sin, unrighteousness, filth, and lawlessness!" Dust began to swirl, thunder began to crack.
+"If she lives again, she will only live and suffer from more evil."
+I was really scared now. Where was I? Cold wind blew, a strange dark mist had enveloped me and I could feel everything.
+I saw people walking in the far distance, it was like a great army, but they had no weapons. Their pilgrimage was long. They were dirty, and it looked like they hadn't bathed in their entire lives. But they were all smiling and laughing. Giggling, like what could possibly be the matter. Men and women, young boys and girls were in their midst. I looked around, but saw nothing else. The trail that they were taking was leading to the edge of a cliff.
+"Aren't they going to walk and fall off the cliff?" I muttered. "What were these humans thinking?" I thought.
+I looked around again and to my surprise I saw demons, each one was dressed in black apparel. Their faces were all pale and each of them was carrying out an assignment from their official, going out into the Earth and raging war against justice and truth. They possessed humans who were living in sin and enticed those who were not.
+Dust swirled around once more and I found myself in the city.
+I watched men screaming at their wives, disregarding them, not caring at all for them, hitting and even cheating them. I witnessed teenagers carrying out massacres in school. I saw drunk drivers driving over and killing innocent humans. I watched young men and women carrying out deadly sins and vices on the internet. I saw old men and women being disrespected, none of them were helped, they were all alone and the society made life miserable for them. I saw thieves breaking into corporation prohibited cyber spaces online, stealing SIN numbers, selling them online, and taking down entire businesses. I witnessed wealthy individuals and celebrities secretly sponsoring acts of terrorism and other poor people to kill their desired victims as well as masses of people. Hush money was paid to keep their identities and keep secrecy.
+The world was erupting into chaos. People practiced and lived in sin. It was a habit for them. They did whatever they wanted, whenever they wanted. They didn't care whether other people suffered as a result of their actions, they only cared that they didn't. They sought pleasure above all, regardless of whether it was good or evil.
+I couldn't help  but to wonder why humans were so evil. It enraged me, it was like a fire in my bones. But I couldn't let it out. It was such evil that had taken away Isabelle and the lives of many others.
+Then I started to hear something awkward. The demons started to sing "the lawless one is comin', the lawless one is comin.'"
+I didn't even think that demons could sing, and such thoughts chilled me to core. I looked down, gasped and jumped back in fright of what I saw. On the ground it was painted in red. "666."
+I started walking backwards until I hit something. Thug!
+"Where do you think you're going?" A deep and loud voice bellowed.
+I stopped dead in my tracks, I turned around and saw an angel. A big, mighty, and powerful angel. So huge, enormous, and mightily strong. Its voice echoed miles away and made the ground shake. I cowered in great fear. But the angel just laughed, the more I cowered, the more the angel laughed. It seemed to enjoy the fact that I was afraid.
+I made a run for it, I ran as fast as I possibly could, but the angel reached out its enormous arm and brought me back, this time even closer to its face. I screamed, I kicked, I squirmed, but it was no use, his hands wouldn't budge. He squeezed me, more and more and more until I thought it was all over.
+I woke up, it was dark and cold and solemn. And in front of me I saw a round table. Sitting around this table were demons, and they were talking.
+"Everything's going like planned," said the first one.
+"Yes!" They all replied, "everything is going as planned" the demons hissed and cackled.
+Just then somebody walked in, every demon jumped and stood to their feet.
+Objects started to fly and hover in the air, the aroma changed quickly, the atmosphere became murky and gross. But this entity's presence made me feel more conscious.
+"Belial" he screamed.
+"Lucifer" he replied. "It is done!"
+The laughter and cackling had dwindled, their faces became solemn and dark.
+"The time is drawing near," Lucifer said. "We must continue to ensure that humans live in sin. Ensure that they reject the gospel. And ensure that truth is suppressed entirely. Only then can the way fully be prepared for the Antichrist." He said
+"Preaching is at an all time low" said the second one.
+"Excellent" replied Lucifer.
+"Yet, there are still some stubborn Christians who are resisting and continue to share the gospel," bellowed the third demon.
+"Send more forces!" said the fourth pounding the table with his fists.
+"Fools!" Lucifer shouted. "Don't you know that more forces will only embolden them to continue their accursed work for their carpenter savior." Lucifer was filled with rage. "Lure them into sin. Proverbs 13:21 says that evil pursues sinners. Let God be the one to fight against them once they become slaves to sin. Entice them so that their good reason will be destroyed!"
+I was shocked, was the Devil really trying to use God’s word against his own people. “Even the Devil realizes how powerful scripture is, so much that he uses it to advise his own council” I thought.
+It seemed to me that with all the evil they did, they were still not satisfied. They were hungry like bloodthirsty men, never being full, only wanting more and more. The Bible tells us that there is no peace for the wicked, but I don't think they wanted peace anyway. It seemed like they wanted something more.
+"I will not rest until every good thing God has created is destroyed, let us rubbish His work. Let's wreck havoc while we still can. He cast me out of heaven, now we too will cast out his creation into Hell. He gave his only begotten son, I too shall beget my own" Lucifer said,
+"He's much more evil than Max" I thought. Max was a bully at my school. He enjoyed making people's lives miserable, but nowhere near to Lucifer's extent. I guess I now understood why the Devil could never be forgiven. He didn't want forgiveness. He wanted revenge. He tried to overthrow God, he tried to become God, but once he realized he couldn't he started taking revenge on his creation. God sent his son Jesus to save us from sin and from the power of Satan. He even sent prophets, scribes, and wise men to warn his people. Rising up early in the morning and sending them (Jeremiah 35:15). He last of all sent his perfect Son Jesus Christ to be the perfect sacrifice for our sins. He died on the cross, but society couldn't care less. I would never forgive that gang for what they did to Isabelle, I wanted revenge just like Lucifer but I knew that more chaos didn't make things better, it only made things more chaotic. Even though my case was different, because I was actually wronged, unlike Lucifer who was being punished for his evil rebellion. Evil was no excuse even for the most hideous acts of anyone or any entity. We needed justice, judgement, and truth. Not more blood, and most certainly not revenge. Only God was just, I too was a sinner, how could I therefore rightfully judge a sinful gang. In my own little way I was still guilty of evil. I didn't want blood, I wanted change. I wanted people to
+"Repent, and turn from your wicked ways!" A preacher shouted.
+But the crowd raged. The more the preacher preached, the more violence erupted in the streets.
+"Repent of what?" Screamed one man.
+"Of sin!" The preacher replied.
+"You mean ordinary mistakes," the man laughed. "You must be joking," he finished.
+"I'm not talking about mistakes, I'm talking about the great evil that is being wrought in this Great but Sinful country" he screamed, "porn, theft, murder, injustice, pride, sorcery, drugs..."
+"You are insane!" A woman yelled. "Those aren't sins," she screamed.
+I was astounded at what I heard. Could these people seriously not discern the difference between right and wrong.
+"You have gone crazy," another man yelled.
+"Citizens of..." the preacher began but before he could finish what he was saying a gun shot erupted into the air. Someone started firing,
+The mist started to blow again, this time a student was talking.
+"But that doesn't make sense," the student replied.
+"Actually it does," the teacher answered.
+"But it doesn't though," the student continued.
+"You must accept it though," the teacher solemnly declared.
+"But I can't" the student declared.
+"You will!" Said the principal who had just walked in. "To the office now!" He bellowed.
+The student had no choice but to follow.
+"Mom? Dad! What are you doing here?" Asked the student quizzically.
+"Sit!" Yelled the principal. "Your parents have been summoned because of what has been going on for the past week." The principal cleared his throat and directed his attention to the student's parents who couldn't help but wonder as to what was going on.
+"Mischief?" His dad asked.
+"No" answered the principal. "Even worse" the principal said.
+The parents gasped,
+"It is has come to my attention that your child repeatedly and obstinately refuses to adhere to the beliefs that due to the theory of natural selection as proposed by many of our great scientists that it can be deduced and inferred from this well known fact of evolution that humans are inherently related to monkeys and not just monkeys but bananas, apple trees, and all forms of living and non living things as we do share a very common ancestry that sprouted in our DNA millions, in fact billions of years ago.
+The parents gasped,
+"What!" Screamed the student's mom.
+"Yes it is true" replied the principal. "And not only does he refuse to adhere to school's..."
+"Are you crazy?" The student's Dad asked.
+"Is it me to whom you are referring craziness" the principal demanded. His expression had changed drastically.
+"Yes!" The student's Dad bellowed.
+"You are indoctrinating our son!" Yelled the student's mom. “...we are related to bananas?” She continued aggressively,
+“What makes you think we’re not related to bananas!” The principal howled,
+"Is this really what you called us to school for!" The student's Dad yelled.
+And with that, the office erupted into madness and chaos. I shook my head. I couldn't believe what I was not only hearing but seeing.
+The little girl was walking happily down the sidewalk.
+"Happy birthday Sophia," Freddy said.
+"Thanks," she replied. Sophia was grinning,
+"How does it feel to be 8 years old. " Freddy asked.
+"Wonderful" she chimed. "I can't wait till I get home, papa said he and mom are going to make me something very special for dinner!"
+"Can I come?" Freddy asked.
+"Of course you can," Sophia answered.
+"Awesome!" Freddy exclaimed. "But I'll need to tell my parents first, they always ought to know where I am." Freddy paused,
+"Why'd you stop?" Sophia asked.
+"Look!" Freddy pointed.
+A man started sprinting towards them, he grabbed Sophia's arm and started tugging her away.
+"Let me go!" She cried. “Let me go” she squealed.
+"Let her go!" Freddy screamed. Freddy ran after them, but the man stopped and used his free arm to hit Freddy onto the ground. Freddy started crying, he had been badly hurt. But the man didn't care. He continued to drag Sophia to the truck. Sophia kept screaming, but it was no use. Nobody was there to help them. The man slammed the door shut and drove away.
+"You got her?" the man asked.
+"Yup, it was easy biz, no sweat." The strange man replied. He continued driving, focusing on the road ahead.
+"Let me out of here!" Sophia screamed.
+"One more word for you, and that'll be the last of you" cackled the man. He pointed his gun at her head. But Sophia wasn't listening.
+"Don't waste your bullet on her" the man replied. "There's a reason why we kidnapped her," he continued.
+"Rightttttttt" the other man replied. And with that they started laughing hysterically like a bunch of ravenous wolves.
+Once the men arrived at their destination. They dragged Sophia out of the car into a building. Sophia continued screaming, but they were in a rural area, nobody was around to help her.
+Once the men entered the building, they bolted the door behind them.
+"You made it on time, that'll be an extra tip for you." Said the man dropping coins into their hands.
+"Well, it's been nice doing business with you!" The men replied and with that, the door was slammed shut.
+The dark mist blew again and this time I was taken to the alley, a spirit passed before me, his name was Regret.
+He entered the alley and approached the man and said,
+"Don't you remember your wife, Clementine, whom you killed?"
+"Yes, I remember!" He started, "it was an act of anger" he finished. The man started sobbing
+"Nay" the spirit replied. "It was an act of foolishness! Her blood will forever be on your hands!"
+The man looked up,
+"And what about all those banks you robbed and innocent kids you hurt?" The spirit asked,
+"I know! I know!" The man replied in anger, tears broke out from his eyes
+"You must escape this anguish!" The spirit cried.
+"But how?" The man asked,
+"Death" the spirit replied.
+"You want me to kill myself!" The man asked in utter shock.
+"You've ferociously killed many innocent!" The spirit screamed, "now you must do it to yourself and you are scared!"
+"I'm not scared!" He replied
+"Then what are you?" The spirit demanded,
+"I don't want to go to Hell" the man admitted.
+"What about all those people you killed!" The spirit snapped,
+"They were innocent and good people" the man replied. "I'm sure they must have made it to Heaven.
+"Fool!" The spirit screamed, "neither of those places even exist! It is fantasy, a fairy tale, nonsensical and idiotic stories told to feeble minds, of the likes which you seem the greatest!"
+The spirit grabbed the man by his neck and forced him to look into his eyes.
+"Be a man!" The spirit said firmly,
+The man drew out his gun slowly
+"Let her rip!" The spirit said.
+And with lightning speed the gun fired. Boom!
+The spirit raced away on to his next mission.
+The table was pounded.
+"Belial!"
+"Lucifer," the demon replied.
+"Summon the demons! He cried
+And with that a group of demons passed and entered through the walls.
+"Regret, Murder, Sorcery, Deception, Rebellion, Pride, Lust, Filth, Confusion" the demon called.
+"We are here!" They cackled.
+"I sense dark energy coming," Lucifer said. And with that, his lips curled into a smile.
+Suddenly a very slim and indiscernible spirit entered the room, his arrival brought a shockwave of reverberating and unintelligible noise into the room. It was wakening, it was violent it was
+"Terror!" Lucifer cried out.
+"I am here!" He bellowed. "I am here!"
+Violence erupted into the room, shockwaves of chaos rang in, hordes of monstrous demons that shapeshifted assembled themselves in such monstrous assembly that you would think all Hell had broken loose and they began to chant in a language that I could not understand.
+"What is the report?" Lucifer asked.
+Murder began, first starting at New York City, he elaborated on how many people were massacred due to terrorists, angry teenagers, and ordinary citizens that he had possessed. Regret continued, he shared how many men and women, both young and old had killed themselves due to actions of folly they had committed. Sorcery shared how many people had begun to practice witchcraft, and how many people he was able to get to sell their souls over to him. Filth shared how he had spread all forms of vices and unrighteousness through the country and abroad through Youtube, children's books, films and movies, through influencers, friends, and many other means. All the demons shared something, and as they shared, the council of demons hissed, cackled, and laughed at how easy it was to prey upon human life. One thing that was evident was their reach and reign was without borders and was powerful. Terror was the last to share but he did not talk, he only made terrifying noise, and as he left violence erupted, great noise left a trail of fear behind him. The demons all left the room and returned to wreak more destruction upon every inhabited and uninhabited place on Earth. And again, only the council of demons was left. They continued to talk and make plans on how to prepare the way for the man of lawlessness.
+"The first step has already been done," said one of the demons. "People no longer recognize or obey the law."
+"Now on to the next task" Lucifer said. "We must erase the law. Whether it be the law of man or law of God, and we will replace the law with lawlessness!" Finished Lucifer,
+"But how?" One of the demons asked
+"It has already been done," Lucifer replied. "We just need to take it one step further.
+"Dad," Charlotte said.
+"It's getting really bad," he said.
+"I know," Mom said, nodding in agreement. "They are ready to wipe us all out. They want less truth and more lies."
+"That's exactly what they'll get, but it comes at a great price" Dad said.
+"I mean just think of all the filth and nonsense that's displayed online," Mom said. "Its too much"
+"And you're just realizing," Dad chuckled. "It's been this way for years and it gets worse every week."
+Just then Jeremy bolted in,
+"It's all over the place, it's everywhere" he said panting, "people have gone crazy!" He finished.
+Dad shook his head.
+There were many outside declaring themselves to be the Christ, the son of the living God in the flesh.
+"It is me, Jesus of Nazareth! Worship me!" He cried. He started performing miracles, healing the sick, making the blind see again and performing all sorts of mind-blowing things. What the crowd did not know was that these miracles had been rehearsed the day before. They were fake, but the crowd did not know. Some people followed him, great throngs pressed after him. It was a great deception.
+One of the false prophets carried a staff and would shake them before the people. The prophet threw his staff right, and the deceased man's entire body flew right. The false prophet threw his staff left and the deceased man's entire body flew left. Wherever the prophet threw his staff the deceased man's body followed. Then the prophet spoke in a foreign language.
+"Recevez la vie!" He shouted,
+And the dead man came to life.
+The crowd shouted in amazement and applauded the man for his great powers. The crowd screamed more and more and more.
+This deception was practiced around the world. Other false prophets would close their eyes and prophesy, and they would jump around. And as they were approaching a hole, they started jumping in another direction just narrowly missing the hole. And once they began to approach another hole they started jumping in a different direction just narrowly missing the hole again. And they would prophesy like this for hours as such was their custom and they would tell people their futures.
+"There is great deception" the pastor started. "Need I say more what we can clearly see with our own eyes" he continued. "The wickedness that is wrought in this Great nation is great indeed. Kidnapping young girls, practicing witchcraft right even in the church, watching porn and all other forms of abominable filth, sponsoring terrorists to murder and kill street preachers." The pastor seemed exhausted. But the crowd already knew, some were grieved, some weeped. But there was a mixed multitude, not everyone agreed that what humans were doing was sinful. Some believed that drugs were the only form of entertainment. After all, you got to at least live a little. Faith shouldn't get in the way of fun, that’s what many were saying these days.
+The pastor was struggling to give this sermon, because he had been preaching about this as well as holiness for the past decade now, but it seemed like nothing was changing. In fact, things were getting worse, much worse.
+"Abominable, " the pastor continued. "Abominable! I am short of words,”
+It seemed that he did not know what to say. It was bad news, well, it was bad news for some people.
+"Cheers!" They cried. They sipped their wine, proud of their accomplishment.
+"We've done a great job" their leader said. "We've done an excellent job. No one will challenge our authority now."
+"Cheers!" They all cried again clanging their cup filled wines together. But it was only the beginning of something even more sinister.
+"I want all hands on deck," a strange voice said. "I want all hands on deck," he said again. "We've got limited time, and I would like to maximize our opportunities." He paused, "No, that's  not what I want. That's what you want and it's not going to work. I want all hands on deck, don't cause me any trouble." He hung up the phone,
+"Judith, are you sure this is going to work?" His assistant asked.
+"Of course it's going to work," he said. "Look!" He said, pointing out the window.
+"What?" She asked,
+"It's their faith that is my problem." He continued "I want to destroy it, and remake  everything the way it is supposed to be" he finished.
+I got out of the stall, and I was shocked by the things I saw. I didn't know the Devil had his own council and I didn't think that demons had meetings to discuss the horrors they committed through humans. It was sad, angering and very disturbing but what could I do? I sat down at the bench at my school. I really missed her. I couldn't get over it. It was at that moment that I saw Max the bully, I knew this couldn't be good. Bro was getting ready to pounce. I looked away, maybe he wouldn't notice me but it seemed to me that he wasn't going to let me off the hook this time.
+"Dude," Max said.
+"Who? Me!" I asked.
+"Yes you, who else do you see around?" he said.
+"What do you want Max?" I asked, I braced myself for whatever he was planning. I was scared, was he going to pounce on me, make my life even more miserable then it already was, or get me in trouble.
+"Look dude, I'm sorry for your loss" Max said.
+"Whattttttt?" I said, I had the most quizzical look on right now.
+"Connor" Max started,
+This was the first time Max had ever said my name. I was shocked that he actually even knew it.
+"Look, now you know how I feel," he continued.
+"You lost your best friend?" I asked,
+"No" he answered
+I was actually getting really confused now.
+"On my 8th birthday, my mom, dad, and twin sister left the house to go prepare a surprise birthday for me at my friend's house, but on their way, they got killed in a car crash. A drunk driver took their lives" Max said, "Dude, I got no one!"
+Max looked really sad now.
+"Everything I had, gone." Max said, "I live with my grandma, but it's not the same. She's not even my mom, and I really miss my sister. I just... it's not fair!" He screamed.
+I now began to understand why Max was a bully, he didn't enjoy making fun of others. He had just been so hurt, that he didn't see any reason to help or care for anyone else anymore. He had lost everything.
+"Sorry to hear that" I said. I really didn't know what else to say. I felt sorry for Max. These people deserved better, they shouldn't have died the way they did all because of the heartlessness of some foul person. I agreed with Max. It just wasn't fair. It wasn't.
+"Look dude" Max started again. "Just don't think this makes us friends. Like, I'm sorry for your loss and all. I know how you feel, but I'm still Max and I want you to remember that. I just wanted to tell you that I'm sorry about what happened. Because hey, I still have a heart, I'm not a monster, I'm still human." Max finished. And with that he walked away,
+I guess no matter how mean or evil someone may be, they still have a heart and we need to remember that. Obviously that does not mean people shouldn't be punished severely for the atrocities that they commit. But we have to be able to differentiate between an evil human and an evil Devil. Humans can change, demons don't. I mean even with how sinful the world was getting that doesn't necessarily mean humans are hopeless cases. I get that some of them will never change, but some of them will. If educated and given the chance. They need Jesus,  they need him, we need him. If we reject Christ, then we are accepting lawlessness and eventually the lawlessman will reign over us. I still missed Isabelle,  but I knew that she was in a much better place. Safe from all the evil the world could do.
+
+
+`
 
 store_big_books_sessionally();
 /**Must stay at the end!! */
