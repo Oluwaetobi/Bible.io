@@ -430,6 +430,7 @@ to the parent assuming the parent is position relative */
 #who-we-are:hover {
     text-decoration:underline;
     cursor: pointer;
+    color:#7f7502;
 }
 
 /* I hate default scroll bars, they look ugly and are to skinny, so I made my own custom scroll bars */

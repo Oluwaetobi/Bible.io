@@ -253,10 +253,25 @@ a:hover {
 }
 
 .footer-page {
-    background-color: rgba(11, 11, 11, 0.9);
+    background-color: rgba(11, 11, 11, 1);
     position: static;
     width: 100%;
 }
+
+.footer-page #hyper-links {
+    justify-content: center;
+    display: flex;
+    gap: 20px;
+    /* background-color: rgba(0, 0, 0, 0.1); */
+}
+
+.footer-page #hype-link-each:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    filter: brightness(150%);
+    color:#7f7502;
+}
+
 .footer-text {
     text-align: left;
     white-space: pre-wrap;
