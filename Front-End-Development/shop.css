@@ -47,6 +47,7 @@ body {
     background-color: rgb(215, 215, 215);
     scroll-behavior: smooth;
     /* align-items: center; */
+    overflow: hidden;
 }
 
 .container {
