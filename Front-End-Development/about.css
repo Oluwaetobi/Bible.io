@@ -123,14 +123,14 @@ header {
 
 .head-middle {
     position: static;
-    width: min(100%, 80rem);
+    width: min(95%, 80rem);
     margin: 0;
     text-align: center;
 }
 
 .head-down {
   position: static;
-  width: min(100%, 80rem);
+  width: min(95%, 80rem);
   margin: 0;
   text-align: left;
   text-indent: 40px;
@@ -147,7 +147,7 @@ header {
 
 .head-down2, .bottom {
     position: static;
-    width: min(100%, 80rem);
+    width: min(95%, 80rem);
     margin: 0;
     text-align: center;
 }
@@ -157,6 +157,7 @@ header {
     position: static;
     align-items: center;
     gap: 20px;
+    padding: 0px 20px;
 }
 
 .bibletar-meme {
@@ -237,7 +238,7 @@ it blends in with the short story rounded edge box display */
     position: static;
     /* max-width: 1000px; */
     white-space: pre-wrap;
-    width: min(100%, 80rem);
+    width: min(95%, 80rem);
     margin: 0;
     text-align: left;
 }
@@ -277,7 +278,7 @@ a:hover {
     white-space: pre-wrap;
     color:#fefefe;
     margin: 0;
-    /* width: min(100%, 80rem); */
+    /* width: min(95%, 80rem); */
     margin-left: 50px;
     margin-right: 50px;
     padding: 10px 10px;
