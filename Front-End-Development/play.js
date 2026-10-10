@@ -5154,6 +5154,30 @@ function level_2_Questions () {
         answer4.innerText += `Lapidoth `;
         correct_answer = 4;
     }
+    if (randomQuestion == 42) {
+        question.innerText = `Who slew Sisera?  `;
+        answer1.innerText += `Atarah `;
+        answer2.innerText += `Jael `;
+        answer3.innerText += `Apphia  `;
+        answer4.innerText += `Haggith `;
+        correct_answer = 2;
+    }
+    if (randomQuestion == 43) {
+        question.innerText = `When Sisera asked Jael for water, what did Jael give him?  `;
+        answer1.innerText += `milk `;
+        answer2.innerText += `water `;
+        answer3.innerText += `honey  `;
+        answer4.innerText += `wine `;
+        correct_answer = 1;
+    }
+    if (randomQuestion == 44) {
+        question.innerText = `Jabin was the king of which region?  `;
+        answer1.innerText += `Assyria `;
+        answer2.innerText += `Aram `;
+        answer3.innerText += `Philistia  `;
+        answer4.innerText += `Canaan `;
+        correct_answer = 4;
+    }
 }
 
 function level_3_Questions () {
