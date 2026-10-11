@@ -19,6 +19,7 @@ body {
     background-position-y: 5rem;
     scroll-behavior: smooth;
     /* align-items: center; */
+    overflow-x: hidden;
 }
 
 .container {
@@ -346,14 +347,39 @@ to the parent assuming the parent is position relative */
     }
 }
 
+.kl-back {
+    background: linear-gradient(180deg, rgb(239, 7, 7), rgba(9, 148, 255, 0.97));
+}
+
 .kids-learning {
     /* background-color: #fefefe; */
-    background: linear-gradient(180deg, rgb(239, 7, 7), rgba(9, 148, 255, 0.97));
     box-shadow: inset 1.5px 1.5px 60px #060606;
     position: static;
     width: 100%;
     display: flex;
     justify-content: center;
+    animation: projectReveal linear both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+@keyframes projectReveal {
+    from {
+        opacity: 0.4;
+        transform: perspective(1600px) rotateY(100deg) rotateX(45deg) translateY(150px) scale(0.95);
+        filter:blur(3px);
+    }
+
+    50% {
+        transform: perspective(1600px) rotateY(50deg) rotateX(-30deg) scale(1.45);
+    }
+
+    to {
+        opacity: 1;
+        /* remove all transforms */
+        transform: perspective(1600px) rotateY(0) rotateX(0) translateY(0) scale(1);
+        filter:blur(0);
+    }
 }
 
 #learning-kids-left {
