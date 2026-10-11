@@ -487,6 +487,7 @@ table takes up the full width of it's parent the scrollable table */
 
 .table-background td:hover {
     filter: brightness(150%);
+    cursor:pointer;
     /* padding: 2px 2px; */
 }
 
