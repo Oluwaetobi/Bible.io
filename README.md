@@ -10,23 +10,18 @@
 <p>Bible.io was originally built with a website called Scratch, and then after that we switched to Turbowarp
 meaning it was run with only JavaScript. Now we're moving forward and developing our own website right from
 scratch, with languages that drive not only the Web, but the Internet itself. Languages like HTML/CSS, 
-Full-Stack JavaScript, (Node.js) and maybe more. Since We will be working with Full-Stack JavaScript will be able to use
+Full-Stack JavaScript, (Node.js) and maybe more. Since We might be working with Full-Stack JavaScript, we will be able to use
 JavaScript not only for Front-End Development but as well as Back-End Development with frameworks such
 as Node.js | Development will take years but every step of the way is an oppurtunity to learn. If you would like to be a contributor to this project please state so in the discussions.</p>
 
 <h2>How Bible.io Works</h2>
-<p>Bible.io works by connecting people from around the globe and making use of online competition. Where
-kids can compete with each other in the same room, answering Bible Questions. You can check the old Bible.io
-Game for reference, all though we will be changing lots of things, apart from the fact that the screen
-dimensions will be wider, larger, and higher image quality, there will also be different levels. Games
-will be timed and last 60 seconds. Speed matters, but accuracy is important. If you get 5 questions
-wrong, you become a spectator and can no longer ansquer questions until the game finishes. A bar graph
-will be used to display people's points, and the type of input to answer questions is currently being
-rethought as the game will be experiencing new updates, and changes. You will also be able to see 
-players' bibletars as well as their countries</p>
+<p>Bible.io works by connecting people from around the globe and making use of online competition and faith based learning. 
+Kids compete with people around the world answering Bible questions. There are different levels, speed matters, but
+ accuracy is important. If you get 5 questions wrong, you become a spectator and can no longer answer questions until the game finishes. A bar graph is used to display people's points, You can answer questions via the keyboard or you can simply
+ click the answer. Players' bibletars, names, and countries are displayed.</p>
 
-<p>In the learn section people will have access to the Bible.io's personal library which includes: Videos,
-Christian Articles, the Bible, writings on different Amazing Christian From History, a practice station
+<p>In the learn section people will have access to the Bible.io Library which includes: the Bible, Videos,
+Christian Articles, Novels, Short Stories, writings on different Amazing Christian From History, poems, and a practice station
 where you can answer questions, such as questions related to the Bible, real-life scenarios, books, and more
 while at the end of the day tying it back to Biblical Beliefs and Christian Principles</p>
 
@@ -60,6 +55,8 @@ redirect you once you sign up or login. The issue of paying for servers will be 
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide </p>
 
 <h1>For Developers</h1>
+<p>If you aren't a programmer or coder, and you would like to contribute to a different area of Bible.io such
+as art, literature, and etc. Please use this link: https://github.com/Oluwaetobi/Bible.io/discussions</p>
 <h2>What IDE's do we recommend</h2>
 <p>For me personally I do recommend using Visual Studio Code for this, but if you have a preference
 then go for it. But I strongly do recommend setting up Git on your computer, so you can push, pull,
