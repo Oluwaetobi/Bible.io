@@ -451,7 +451,7 @@ to the parent assuming the parent is position relative */
 
 #learning-kids-right img:hover {
     /* filter: brightness(130%); */
-    filter: contrast(130%);
+    filter: contrast(150%);
 }
 
 
