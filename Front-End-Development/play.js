@@ -4542,8 +4542,8 @@ function choose_Random_Question () {
 
     // Return a random integer between 1 and 10 (both included): Math.floor(Math.random() * 10) + 1;
 
-    var amount_of_question_in_level_1 = 33;
-    var amount_of_question_in_level_2 = 41;
+    var amount_of_question_in_level_1 = 34;
+    var amount_of_question_in_level_2 = 46;
     var amount_of_question_in_level_3 = 30;
 
 
@@ -4821,6 +4821,14 @@ function level_1_Questions () {
         answer3.innerText += `Abinadab `;
         answer4.innerText += `Shimeah `;
         correct_answer = 2;
+    }
+    if (randomQuestion == 34) {
+        question.innerText = `Which man built the ark?  `;
+        answer1.innerText += `Noah `;
+        answer2.innerText += `Jonah `;
+        answer3.innerText += `Cainan `;
+        answer4.innerText += `Enoch `;
+        correct_answer = 1;
     }
 }
 
@@ -5177,6 +5185,22 @@ function level_2_Questions () {
         answer3.innerText += `Philistia  `;
         answer4.innerText += `Canaan `;
         correct_answer = 4;
+    }
+    if (randomQuestion == 45) {
+        question.innerText = `Which woman followed Barak to war against the king of Canaan?   `;
+        answer1.innerText += `Barak `;
+        answer2.innerText += `Korah`;
+        answer3.innerText += `Jabez  `;
+        answer4.innerText += `Bezalel `;
+        correct_answer = 1;
+    }
+    if (randomQuestion == 46) {
+        question.innerText = `With what item was Sisera killed with?   `;
+        answer1.innerText += `bow and arrow `;
+        answer2.innerText += `nail and hammer`;
+        answer3.innerText += `sling and stone  `;
+        answer4.innerText += `sword and shield `;
+        correct_answer = 2;
     }
 }
 
