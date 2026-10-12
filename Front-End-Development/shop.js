@@ -581,6 +581,35 @@ function updateClosetSection (closet_section_html) {
 allow NaN to receive their places for images */
 updateShopSection(1);
 function updateShopSection (shop_section_html) {
+    const head_color_display = document.querySelectorAll('#shop-stuff-header th');
+
+    head_color_display.forEach((th, index)=> {
+        /** I have these 2 if statements because shop_section_html isn't completely consecutive following
+         * with the buttons, it goes 1,3,4,5
+         */
+        const pressed_color = 'rgb(107, 107, 107)';
+        const not_pressed_color = 'rgb(84, 138, 255)';
+        if (index == 0) {
+            if((index + 1) == shop_section_html) {
+                // background
+                th.style.backgroundColor = pressed_color;
+                // th.style.display.backgroundColor = "green";
+            } else {
+                th.style.backgroundColor = not_pressed_color;
+            }
+        }
+        if (index > 0) {
+            if((index + 2) == shop_section_html) {
+                // background
+                th.style.backgroundColor = pressed_color;
+                // th.style.display.backgroundColor = "green";
+            } else {
+                th.style.backgroundColor = not_pressed_color;
+            }
+        }
+        // console.log(index);
+    })
+
     shop_section = shop_section_html
 
     const images = document.querySelectorAll('#choose_shop_stuff img');
