@@ -513,6 +513,56 @@ function delete_and_add_images_and_sometimes_cells () {
 allow NaN to receive their places for images */
 updateClosetSection(1);
 function updateClosetSection (closet_section_html) {
+    const head_color_display = document.querySelectorAll('#bibletar_designs td');
+    head_color_display.forEach((td, index)=> {
+        /** I have these 2 if statements because shop_section_html isn't completely consecutive following
+         * with the buttons, it goes 1,3,4,5,6,7,8,9,10 but not consecutively with the button
+         */
+        const pressed_color = 'rgb(255, 255, 255)';
+        const not_pressed_color = 'rgb(206, 206, 206)';
+        if (index < 6) {
+            // background to eyes, does NOT include eyebrows
+            if((index + 1) == closet_section_html) {
+                // background
+                td.style.backgroundColor = pressed_color;
+                // th.style.display.backgroundColor = "green";
+            } else {
+                td.style.backgroundColor = not_pressed_color;
+            }
+        }
+        if (index == 6) {
+            // nose
+            if((index + 2) == closet_section_html) {
+                // background
+                td.style.backgroundColor = pressed_color;
+                // th.style.display.backgroundColor = "green";
+            } else {
+                td.style.backgroundColor = not_pressed_color;
+            }
+        }
+        if (index >= 7 && index <= 8) {
+            // mouths to boys' hair
+            if((index + 2) == closet_section_html) {
+                // background
+                td.style.backgroundColor = pressed_color;
+                // th.style.display.backgroundColor = "green";
+            } else {
+                td.style.backgroundColor = not_pressed_color;
+            }
+        }
+        if ((index + 2) == 11) {
+            // girls' hair
+            if((index + 1) == closet_section_html) {
+                // background
+                td.style.backgroundColor = pressed_color;
+                // th.style.display.backgroundColor = "green";
+            } else {
+                td.style.backgroundColor = not_pressed_color;
+            }
+        }
+        // console.log(index);
+    })
+
     closet_section = closet_section_html;
 
     const images = document.querySelectorAll('#choose_bibletar_stuff img');
@@ -582,7 +632,6 @@ allow NaN to receive their places for images */
 updateShopSection(1);
 function updateShopSection (shop_section_html) {
     const head_color_display = document.querySelectorAll('#shop-stuff-header th');
-
     head_color_display.forEach((th, index)=> {
         /** I have these 2 if statements because shop_section_html isn't completely consecutive following
          * with the buttons, it goes 1,3,4,5

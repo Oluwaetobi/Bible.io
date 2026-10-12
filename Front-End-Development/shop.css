@@ -340,9 +340,11 @@ table takes up the full width of it's parent the scrollable table */
     padding: 20px 20px;
     font-weight: normal;
     font-size: 15px;
-    border: 5px solid rgb(113, 111, 111); 
+    border: 5px solid rgba(113, 111, 111, 0.8); 
     text-align: center;
     border-radius: 10px 10px;
+    /* background color is now controlled via JavaScript with the function updateClosetSection */
+    box-shadow: inset 0px 0px 20px rgb(113, 111, 111);
     background-color: #d0cece;
 }
 
@@ -589,6 +591,7 @@ table takes up the full width of it's parent the scrollable table */
 .table-shop th {
     /* background-color is controlled in JavaScript with the function, updateShopSection */
     background-color: #6085fffe;
+    box-shadow: inset 0px 0px 3px black;
     /* background-color: #09c736; */
     color: #ffffff;
     text-shadow: black 1px 1px 1px;
@@ -627,6 +630,10 @@ table takes up the full width of it's parent the scrollable table */
 
 .table-shop tr {
     scroll-snap-align: start;
+}
+
+#choose_shop_stuff button {
+    box-shadow: inset 0px 0px 3px black;
 }
 
 #choose_shop_stuff #try_bibletar_stuff button{
