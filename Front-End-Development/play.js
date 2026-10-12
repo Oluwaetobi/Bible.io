@@ -4294,8 +4294,8 @@ function results_information() {
     // white shadow add
     ctx.shadowColor = 'rgb(255, 255, 255)';
     ctx.shadowBlur = 1;
-    ctx.shadowOffsetX = 1;
-    ctx.shadowOffsetY = 1;
+    ctx.shadowOffsetX = 0.5;
+    ctx.shadowOffsetY = 0.5;
 
     var shift_y_results = 10;
     ctx.font = "25px Arial"
