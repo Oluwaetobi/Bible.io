@@ -344,8 +344,13 @@ table takes up the full width of it's parent the scrollable table */
     text-align: center;
     border-radius: 10px 10px;
     /* background color is now controlled via JavaScript with the function updateClosetSection */
-    box-shadow: inset 0px 0px 20px rgb(113, 111, 111);
     background-color: #d0cece;
+    box-shadow: inset 0px 0px 20px rgb(113, 111, 111, 0.7);
+    color:rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 16px;
+    text-shadow: #000000 0px 0px 1px;
+    /* max-width: 30px; */
 }
 
 .table td:hover {

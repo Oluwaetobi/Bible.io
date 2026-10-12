@@ -513,6 +513,11 @@ function delete_and_add_images_and_sometimes_cells () {
 allow NaN to receive their places for images */
 updateClosetSection(1);
 function updateClosetSection (closet_section_html) {
+    // CHANGE CLOSET SECTION
+    closet_section = closet_section_html;
+
+
+    /** Colors changed when closet selector is clicked */
     const head_color_display = document.querySelectorAll('#bibletar_designs td');
     head_color_display.forEach((td, index)=> {
         /** I have these 2 if statements because shop_section_html isn't completely consecutive following
@@ -563,8 +568,9 @@ function updateClosetSection (closet_section_html) {
         // console.log(index);
     })
 
-    closet_section = closet_section_html;
 
+
+    // CHANGES IMAGES DISPLAY IN CLOSET SECTION WHEN DIFFERENT SECTION IS CHOSEN
     const images = document.querySelectorAll('#choose_bibletar_stuff img');
 
     var newSources = [];
@@ -631,6 +637,11 @@ function updateClosetSection (closet_section_html) {
 allow NaN to receive their places for images */
 updateShopSection(1);
 function updateShopSection (shop_section_html) {
+    // CHANGE SHOP SECTION
+    shop_section = shop_section_html
+
+
+    /** Colors change when shop selectors are chosen  */
     const head_color_display = document.querySelectorAll('#shop-stuff-header th');
     head_color_display.forEach((th, index)=> {
         /** I have these 2 if statements because shop_section_html isn't completely consecutive following
@@ -659,8 +670,9 @@ function updateShopSection (shop_section_html) {
         // console.log(index);
     })
 
-    shop_section = shop_section_html
 
+
+    // CHANGES IMAGES DISPLAY IN SHOP SECTION WHEN DIFFERENT SECTION IS CHOSEN
     const images = document.querySelectorAll('#choose_shop_stuff img');
     const costs_display = document.querySelectorAll('#costs_of_items td');
 
