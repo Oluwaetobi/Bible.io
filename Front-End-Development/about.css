@@ -245,7 +245,10 @@ it blends in with the short story rounded edge box display */
     margin-top: 30px;
     margin-bottom: 30px;
     border: 2px solid black;
+    
 }
+
+
 
 .special-thanks #thanks-left {
     background-color: rgba(131, 131, 131, 0.9);
@@ -255,6 +258,7 @@ it blends in with the short story rounded edge box display */
     font-size: 30px;
     max-width: 400px;
     white-space: pre-wrap;
+    box-shadow: inset 1px 1px 3px #000000;
     /* place-self: center; */
 }
 
