@@ -128,6 +128,14 @@ header {
     text-align: center;
 }
 
+.head-middle h1 {
+    font-size: 55px;
+    background-color: rgba(127, 126, 126, 0.2);
+    border-radius: 20px 20px;
+    padding: 10px 0px;
+    text-shadow: #080808 1px 1px 2px;
+}
+
 .head-down {
   position: static;
   width: min(95%, 80rem);
@@ -138,6 +146,7 @@ header {
 
 .head-down img {
     /* Helps text flow around the image */
+    margin-left: 10px;
     float: right;
 }
 
@@ -242,16 +251,19 @@ it blends in with the short story rounded edge box display */
     margin: 0;
     text-align: left;
     display: flex;
-    margin-top: 30px;
+    margin-top: 50px;
     margin-bottom: 30px;
     border: 2px solid black;
+    box-shadow: #000000 0px 0px 20px;
     
 }
 
 
 
 .special-thanks #thanks-left {
-    background-color: rgba(131, 131, 131, 0.9);
+    /* background-color: rgba(131, 131, 131, 0.9); */
+    /* background: linear-gradient(180deg, rgba(131, 131, 131, 0.9), rgba(0, 0, 0, 0.9)); */
+    background: linear-gradient(180deg, rgba(192, 19, 19, 0.9), rgba(8, 107, 146, 0.9));
     color: white;
     text-shadow: #000000 1px 1px 2px;
     padding: 20px 20px;
@@ -268,6 +280,7 @@ it blends in with the short story rounded edge box display */
     background-color:rgba(224, 224, 224, 0.9);
     padding: 20px 20px;
     color:rgb(0, 0, 0);
+    box-shadow: #000000 0px 0px 10px inset;
 }
 
 a {
