@@ -241,6 +241,29 @@ it blends in with the short story rounded edge box display */
     width: min(95%, 80rem);
     margin: 0;
     text-align: left;
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: 2px solid black;
+}
+
+.special-thanks #thanks-left {
+    background-color: rgba(131, 131, 131, 0.9);
+    color: white;
+    text-shadow: #000000 1px 1px 2px;
+    padding: 20px 20px;
+    font-size: 30px;
+    max-width: 400px;
+    white-space: pre-wrap;
+    /* place-self: center; */
+}
+
+.special-thanks #thanks-right {
+    max-height: 400px;
+    overflow-y: auto;
+    background-color:rgba(224, 224, 224, 0.9);
+    padding: 20px 20px;
+    color:rgb(0, 0, 0);
 }
 
 a {
