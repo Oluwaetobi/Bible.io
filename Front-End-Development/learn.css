@@ -590,7 +590,7 @@ table takes up the full width of it's parent the scrollable table */
     /* aspect-ratio: 1 / 1;   */
     /* overflow-y makes only the y coordinates scrollable */
     overflow-y: auto;
-    scroll-behavior: smooth;
+    scroll-behavior: auto;
     /* overflow-x: auto; */
     /* background-color: #7f2e2e; */
     /* scroll-snap-type: y mandatory; */
