@@ -22,3 +22,8 @@ const year = date.getFullYear();
 var info_year_write = "";
 info_year_write = year + " Bibleio | Bible.io Corporation - Making the Bible fun since the year 2025 ";
 document.getElementById('bibleio-info-year').innerText = info_year_write;
+
+// write short story into bibletar short story box
+const bibletar_wordiness_a_word_or_not_stories = JSON.parse(sessionStorage.getItem('stories_bibletar_wordiness_a_word_or_not'));
+
+document.getElementById('bibletar-short-story').innerText = bibletar_wordiness_a_word_or_not_stories;

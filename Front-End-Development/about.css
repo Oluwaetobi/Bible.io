@@ -130,10 +130,13 @@ header {
 
 .head-middle h1 {
     font-size: 55px;
-    background-color: rgba(127, 126, 126, 0.2);
+    color: rgb(17, 16, 16);
+    /* background-color: rgba(215, 215, 215, 0.7); */
+    /* background: linear-gradient(180deg, rgba(161, 205, 204, 0.9), rgba(13, 75, 106, 0.9)); */
+    /* border: 2px black solid; */
     border-radius: 20px 20px;
     padding: 10px 0px;
-    text-shadow: #080808 1px 1px 2px;
+    /* text-shadow: #080808 1px 1px 2px; */
 }
 
 .head-down {
@@ -159,6 +162,56 @@ header {
     width: min(95%, 80rem);
     margin: 0;
     text-align: center;
+}
+
+.environmental-applications {
+    position: static;
+    width: min(95%, 80rem);
+    margin: 40px;
+    background-color: rgba(62, 138, 175, 0.9);
+    padding: 20px 20px;
+    white-space: pre-wrap;
+    display: flex;
+    flex-direction: column;
+    border-radius: 40px 40px;
+    box-shadow: 0px 0px 10px black;
+}
+
+.environmental-applications #applications-title {
+    text-align: center;
+    font-size: 30px;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: inset 0px 0px 3px black;
+    border-radius: 20px 20px;
+    font-weight: bold;
+}
+
+.applications-side-to-side {
+    display: flex;
+    place-items: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.environmental-applications #side-left img {
+    /* margin-top: 20px; */
+    border: 10px groove black;
+    border-radius: 20px 20px;
+}
+
+.environmental-applications #side-right{
+    background-color: rgba(225, 225, 225, 0.8);
+    box-shadow: inset 0px 0px 25px rgba(255, 255, 255, 0.9);
+    padding: 20px 20px;
+    /* max-width: 1000px; */
+    max-height: 400px;
+    overflow-y: auto;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    place-self: center;
+
 }
 
 .bibletar-side-to-side {
