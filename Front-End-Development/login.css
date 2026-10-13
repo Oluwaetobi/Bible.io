@@ -156,6 +156,7 @@ header {
 
     /* Pushes stuff at the bottom of the wrapper dive 40 pixels down */
     margin-bottom: 40px;
+    box-shadow: inset 0px 0px 10px black;
 
 }
 
@@ -245,6 +246,7 @@ form button {
     font-weight: 600;
     text-transform: uppercase;
     cursor: pointer;
+    box-shadow: inset 0px 0px 2px black;
 }
 form button:hover {
     background-color: var(--icon-color);
