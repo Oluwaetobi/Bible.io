@@ -342,7 +342,7 @@ form input::placeholder {
 
 .end-of-game-continue-button button {
     border-radius: 20px;
-    font-size: large;
+    font-size: 30px;
     /* changes the mouse cursor into a hand icon */
     cursor: pointer;
     transition: 0.3s;
@@ -353,7 +353,7 @@ form input::placeholder {
 
 .end-of-game-continue-button button:hover {
     filter: brightness(120%);
-    padding: 5px 5px 5px 5px;
+    padding: 10px;
 }
 
 /* Custom Aler Box */

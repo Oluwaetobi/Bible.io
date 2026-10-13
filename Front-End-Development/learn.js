@@ -311,6 +311,39 @@ function drawGameAssets () {
     resizeGameAssets(img_sunday_school_teacher, 950, 150, 200, 350, 1);
 }
 
+var new_second = 0;
+var seconds_spent = 0;
+function showTimeSpent() {
+
+    function formatDisplayTimeSpent(seconds_spent) {
+
+        return seconds_spent;
+    }
+
+    const date = new Date();
+    const seconds = date.getSeconds();
+    if (seconds != new_second) {
+        new_second = seconds;
+        seconds_spent += 1;
+    }
+
+    formatted_time = formatDisplayTimeSpent(seconds_spent);
+
+
+    ctx.fillStyle = 'rgb(14, 53, 77)';
+    ctx.fillRect(1200, 100, 300, 50);
+
+    ctx.font = "35px Arial";
+    ctx.fillStyle = 'rgb(255, 255, 255)';
+    ctx.fillText("Time Spent: ", 1250, 135)
+
+    // time spent display
+    ctx.font = "100px Arial";
+    ctx.fillStyle = 'rgb(255, 255, 255)';
+    ctx.fillText(formatted_time, 1200, 250);
+
+}
+
 function start_timer() {
     const date = new Date();
     const hours = date.getHours();
@@ -1285,6 +1318,15 @@ function draw_Background () {
         gradient.addColorStop(1, 'rgb(175, 176, 176)');    // End color (100%)
         ctx.fillStyle = gradient;
         ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+        // more designs
+        ctx.fillStyle = 'rgba(249, 249, 249, 0.5)';
+        ctx.fillRect(1000, 100, 200, 600);
+
+        ctx.fillStyle = 'rgba(3, 3, 3, 0.5)';
+        ctx.fillRect(1196, 96, 308, 208);
+        ctx.fillStyle = 'rgba(7, 116, 146, 0.5)';
+        ctx.fillRect(1200, 100, 300, 200);
     }
 
 }
@@ -1304,6 +1346,7 @@ function drawGame() {
     takeCareOfText();
     if (learn_page == 2) {
         drawGameAssets();
+        showTimeSpent();
     }
     myBibletar();
     start_timer();
