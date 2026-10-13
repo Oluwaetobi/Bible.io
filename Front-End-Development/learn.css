@@ -575,6 +575,84 @@ table takes up the full width of it's parent the scrollable table */
 
 
 
+/* Sections for POEMS */
+.scrollable-table-poems {
+    min-height: 150px;
+    width: 700px;
+    /* aspect-ratio: 1 / 1;   */
+    /* overflow-y makes only the y coordinates scrollable */
+    overflow-x: auto;
+    /* background-color: #7f2e2e; */
+    position: static;
+    /* left: 100px; */
+    margin: 10px;
+    /* translate: -50%; */
+    z-index: 1;
+    /* top: 580px; */
+    background-color: #fbfbfb;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    border: 6px solid black;
+    border-radius: 20px 20px;
+}
+
+.scrollable-table-poems caption {
+    background-color: #970d99;
+    color:#fcfcfc;
+    position: sticky;
+    top: 0px;
+    font-weight: bold;
+    font-size: large;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* Scrollable table class takes precedence over table class
+table takes up the full width of it's parent the scrollable table */
+.scrollable-table-poems > .table-poems {
+    width: 100%
+}
+
+.table-poems {
+    /* border-collapse:collapse; */
+    font-size: 10px;
+    width: 300px;
+    /* border-collapse: collapse;
+    border: 2px;
+    border-color: #000000; */
+}
+/*  */
+.table-poems th {
+    background-color: #6085fffe;
+    color: #ffffff;
+    font-size: 20px;
+    text-align: left;
+    position: sticky;
+    top: 0px;
+    /* justify-content: center;
+    align-items: center; */
+}
+
+.table-poems th {
+    padding: 2px 6px;
+    font-weight: normal;
+    font-size: 15px;
+    border-collapse: collapse
+}
+.table-poems td {
+    /* top right bottom left */
+    padding: 0px 20px 0px 20px;
+    /* font-weight: normal; */
+    /* font-size: 15px;
+    border: 1px solid black;  */
+}
+
+.table-poems tr {
+    scroll-snap-align: start;
+}
+
+
+
 
 
 
@@ -669,7 +747,7 @@ table takes up the full width of it's parent the scrollable table */
 }
 
 
-/* This is for the reading mose, I can edit it as much as I want */
+/* This is for the reading mode, I can edit it as much as I want */
 #text-to-read {
     font-size: 20px;
     text-indent: 40px;
