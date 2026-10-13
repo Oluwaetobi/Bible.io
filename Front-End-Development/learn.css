@@ -577,7 +577,7 @@ table takes up the full width of it's parent the scrollable table */
 
 /* Sections for POEMS */
 .scrollable-table-poems {
-    min-height: 150px;
+    min-height: 250px;
     width: 700px;
     /* aspect-ratio: 1 / 1;   */
     /* overflow-y makes only the y coordinates scrollable */

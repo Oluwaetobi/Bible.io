@@ -127,13 +127,13 @@ function store_big_books_sessionally () {
     sessionStorage.setItem('stories_bibletar_wordiness_a_word_or_not', JSON.stringify(stories_bibletar_wordiness_a_word_or_not))
 
     // poems
-    sessionStorage.setItem('poems_let_evil_cease', poems_let_evil_cease);
-    sessionStorage.setItem('poems_caedmons_hymn', poems_caedmons_hymn);
-    sessionStorage.setItem('poems_the_temple', poems_the_temple);
-    sessionStorage.setItem('poems_none_other_lamb', poems_none_other_lamb);
-    sessionStorage.setItem('poems_my_light_with_yours', poems_my_light_with_yours);
-    sessionStorage.setItem('poems_love', poems_love);
-    sessionStorage.setItem('poems_loves_apotheosis', poems_loves_apotheosis);
+    sessionStorage.setItem('poems_let_evil_cease', JSON.stringify(poems_let_evil_cease));
+    sessionStorage.setItem('poems_caedmons_hymn', JSON.stringify(poems_caedmons_hymn));
+    sessionStorage.setItem('poems_the_temple', JSON.stringify(poems_the_temple));
+    sessionStorage.setItem('poems_none_other_lamb', JSON.stringify(poems_none_other_lamb));
+    sessionStorage.setItem('poems_my_light_with_yours', JSON.stringify(poems_my_light_with_yours));
+    sessionStorage.setItem('poems_love', JSON.stringify(poems_love));
+    sessionStorage.setItem('poems_loves_apotheosis', JSON.stringify(poems_loves_apotheosis));
 
     
 }
@@ -51078,7 +51078,7 @@ The Abomination of Desolation
 
 The Tribulation will last for 7 years, but the Great Tribulation will be during the last 2nd half of the 7 years. In Daniel 9:27 each day represents 1 year. So when it says 1 week, there are 7 days in a week, meaning 7 years. We know that this time is true because in the middle of the week, the covenant is broken and instead the abomination of desolation is set on the altar, according to Daniel 9:27, Daniel 11:31 and Daniel 12:11.
 
-Daniel 12:11 is a very important scripture because it helps us remember and understand how the one week reference in Daniel 9:27 equals 7 years. Remember, the covenant is broken in the middle of the week." And Daniel 9:11 says "From the time that the daily sacrifice is taken away (this means according to Daniel 9:27 the promise/covenant is broken, he betrays them) and the abomination of desolation is set up. there shall be 1290 days. From half of the week to the end is 1,290 days which is 3.5 years and remember this is half of the week, multiply this by 2 and you get the full week. 3.5 times 2 equals 7, and this is where the 7 years comes from. This is known as Israel's missing week. 
+Daniel 12:11 is a very important piece of scripture because it helps us remember and understand how the one week reference in Daniel 9:27 equals 7 years. Remember, the covenant is broken in the middle of the week." And Daniel 9:11 says "From the time that the daily sacrifice is taken away (this means according to Daniel 9:27 the promise/covenant is broken, he betrays them) and the abomination of desolation is set up. there shall be 1290 days. From half of the week to the end is 1,290 days which is 3.5 years and remember this is half of the week, multiply this by 2 and you get the full week. 3.5 times 2 equals 7, and this is where the 7 years comes from. This is known as Israel's missing week. 
 Everything In Daniel 9:24-27 has happened except for verse 27. Every day equals 1 year. It's a coded message . And God often speaks in codes. Only the wise shall understand (Daniel 12:10) The Jews in Israel will think that they are being helped. But once the Evil One breaks the covenant he made with the Jews after allowing them to worship Yahweh, the true God. The God of Abraham, Isaac, and Jacob on their altar, once the Evil One puts the Abomination of Desolation on the altar. The Jews will be angry, it will be so disgusting and revolting to them but they will also realize that something is terribly wrong. And they should remember what Messiah the Prince said in Matthew 24:15-22 (KJV):
 
 15. When ye therefore shall see the abomination of desolation, spoken of by Daniel the prophet, stand in the holy place, (whoso readeth, let him understand:) 16. Then let them which be in Judaea flee into the mountains:
@@ -51099,6 +51099,8 @@ Revelation 9:6 says “And in those days shall men seek death, and shall not fin
 
 
 var stories_lawless_one_is_comin = `
+The Lawless One is Comin'
+
 "Blood Blood Blood!" They screamed.
 I heard the sound of glass breaking, people screaming.
 "Boom! Boom! Boom!" The gang charged at our door.
@@ -51295,6 +51297,7 @@ I now began to understand why Max was a bully, he didn't enjoy making fun of oth
 "Sorry to hear that" I said. I really didn't know what else to say. I felt sorry for Max. These people deserved better, they shouldn't have died the way they did all because of the heartlessness of some foul person. I agreed with Max. It just wasn't fair. It wasn't.
 "Look dude" Max started again. "Just don't think this makes us friends. Like, I'm sorry for your loss and all. I know how you feel, but I'm still Max and I want you to remember that. I just wanted to tell you that I'm sorry about what happened. Because hey, I still have a heart, I'm not a monster, I'm still human." Max finished. And with that he walked away,
 I guess no matter how mean or evil someone may be, they still have a heart and we need to remember that. Obviously that does not mean people shouldn't be punished severely for the atrocities that they commit. But we have to be able to differentiate between an evil human and an evil Devil. Humans can change, demons don't. I mean even with how sinful the world was getting that doesn't necessarily mean humans are hopeless cases. I get that some of them will never change, but some of them will. If educated and given the chance. They need Jesus,  they need him, we need him. If we reject Christ, then we are accepting lawlessness and eventually the lawlessman will reign over us. I still missed Isabelle,  but I knew that she was in a much better place. Safe from all the evil the world could do.
+
 
 
 `

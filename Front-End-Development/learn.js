@@ -1338,8 +1338,12 @@ function all_Text_Database () {
             Christian_Articles_DataBase();
         }
         if (table_clicked == 4) {
-            // christian novels
+            // christian novels and short stories
             Christian_Novels_Database();
+        }
+        if (table_clicked == 5) {
+            // christian poems
+            Christian_Poems_Database();
         }
         stop_re_adding_text(1);
     } 
@@ -1724,25 +1728,25 @@ const loves_apotheosis_poems = JSON.parse(sessionStorage.getItem('poems_loves_ap
 
 function Christian_Poems_Database() {
     if (book_clicked == 1) {
-        text_to_read.innerTest = let_evil_cease_poems;
+        text_to_read.innerText = let_evil_cease_poems;
     }
     if (book_clicked == 2) {
-        text_to_read.innerTest = caedmons_hymn_poems;
+        text_to_read.innerText = caedmons_hymn_poems;
     }
     if (book_clicked == 3) {
-        text_to_read.innerTest = the_temple_poems;
+        text_to_read.innerText = the_temple_poems;
     }
     if (book_clicked == 4) {
-        text_to_read.innerTest = none_other_lamb_poems;
+        text_to_read.innerText = none_other_lamb_poems;
     }
     if (book_clicked == 5) {
-        text_to_read.innerTest = my_light_with_yours_poems;
+        text_to_read.innerText = my_light_with_yours_poems;
     }
     if (book_clicked == 6) {
-        text_to_read.innerTest = love_poems;
+        text_to_read.innerText = love_poems;
     }
     if (book_clicked == 7) {
-        text_to_read.innerTest = loves_apotheosis_poems;
+        text_to_read.innerText = loves_apotheosis_poems;
     }
 }
 
