@@ -116,11 +116,24 @@ function store_big_books_sessionally () {
 
 
     // articles
+    sessionStorage.setItem('articles_does_science_uphold_the_bible', JSON.stringify(articles_does_science_uphold_the_bible));
+    sessionStorage.setItem('articles_why_does_God_hate_divorce', JSON.stringify(articles_why_does_God_hate_divorce));
+    sessionStorage.setItem('articles_heaven_and_hell', JSON.stringify(articles_heaven_and_hell));
+    sessionStorage.setItem('articles_the_most_important_thing', JSON.stringify(articles_the_most_important_thing));
+    sessionStorage.setItem('articles_the_abomination_of_desolation', JSON.stringify(articles_the_abomination_of_desolation));
 
     // novels and short stories
     sessionStorage.setItem('stories_lawless_one_is_comin', JSON.stringify(stories_lawless_one_is_comin));
     sessionStorage.setItem('stories_bibletar_wordiness_a_word_or_not', JSON.stringify(stories_bibletar_wordiness_a_word_or_not))
 
+    // poems
+    sessionStorage.setItem('poems_let_evil_cease', poems_let_evil_cease);
+    sessionStorage.setItem('poems_caedmons_hymn', poems_caedmons_hymn);
+    sessionStorage.setItem('poems_the_temple', poems_the_temple);
+    sessionStorage.setItem('poems_none_other_lamb', poems_none_other_lamb);
+    sessionStorage.setItem('poems_my_light_with_yours', poems_my_light_with_yours);
+    sessionStorage.setItem('poems_love', poems_love);
+    sessionStorage.setItem('poems_loves_apotheosis', poems_loves_apotheosis);
 
     
 }
@@ -51060,6 +51073,31 @@ Proverbs 1: 20-33 says “
 
 `
 
+var articles_the_abomination_of_desolation = `
+The Abomination of Desolation
+
+The Tribulation will last for 7 years, but the Great Tribulation will be during the last 2nd half of the 7 years. In Daniel 9:27 each day represents 1 year. So when it says 1 week, there are 7 days in a week, meaning 7 years. We know that this time is true because in the middle of the week, the covenant is broken and instead the abomination of desolation is set on the altar, according to Daniel 9:27, Daniel 11:31 and Daniel 12:11.
+
+Daniel 12:11 is a very important scripture because it helps us remember and understand how the one week reference in Daniel 9:27 equals 7 years. Remember, the covenant is broken in the middle of the week." And Daniel 9:11 says "From the time that the daily sacrifice is taken away (this means according to Daniel 9:27 the promise/covenant is broken, he betrays them) and the abomination of desolation is set up. there shall be 1290 days. From half of the week to the end is 1,290 days which is 3.5 years and remember this is half of the week, multiply this by 2 and you get the full week. 3.5 times 2 equals 7, and this is where the 7 years comes from. This is known as Israel's missing week. 
+Everything In Daniel 9:24-27 has happened except for verse 27. Every day equals 1 year. It's a coded message . And God often speaks in codes. Only the wise shall understand (Daniel 12:10) The Jews in Israel will think that they are being helped. But once the Evil One breaks the covenant he made with the Jews after allowing them to worship Yahweh, the true God. The God of Abraham, Isaac, and Jacob on their altar, once the Evil One puts the Abomination of Desolation on the altar. The Jews will be angry, it will be so disgusting and revolting to them but they will also realize that something is terribly wrong. And they should remember what Messiah the Prince said in Matthew 24:15-22 (KJV):
+
+15. When ye therefore shall see the abomination of desolation, spoken of by Daniel the prophet, stand in the holy place, (whoso readeth, let him understand:) 16. Then let them which be in Judaea flee into the mountains:
+17. Let him which is on the housetop not come down to take any thing out of his house:
+18. Neither let him which is in the field return back to take his clothes.
+19. And woe unto them that are with child, and to them that give suck in those days!
+20. But pray ye that your flight be not in the winter, neither on the sabbath day:
+21. For then shall be great tribulation, such as was not since the beginning of the world to this time, no, nor ever shall be.
+22. And except those days should be shortened, there should no flesh be saved: but for the elect's sake those days shall be shortened.
+
+There are many events that shall happen in the Great Tribulation which will last for 3.5 years, including: the mark of the beast “666”, the seven plagues, the seven woes, the two witnesses, it will be such a horrible time. But there is a way to escape, we must come to Jesus, repent of our sins, and by this we can escape the wrath to come. Jesus' arms are wide open to you today! Please do not ignore this call!
+
+I used to be a firm believer that nuclear bombs would never be used on Earth, but after decoding some of the messages in the book of Revelation, I’m starting to realize that they will be used. This has scared me, but thank God I won’t be there to witness it. There is a way to escape all this trouble, run to Jesus!
+
+Revelation 9:6 says “And in those days shall men seek death, and shall not find it; and shall desire to die, and death shall flee from them. ”
+
+`
+
+
 var stories_lawless_one_is_comin = `
 "Blood Blood Blood!" They screamed.
 I heard the sound of glass breaking, people screaming.
@@ -51479,7 +51517,166 @@ And that’s exactly what Tom was shooting for, that was the goal. He didn’t k
 "Atta boy" I thought.
  Even though Tom had to write down, "I will stop lying about words that never exist" on the whiteboard a thousand times. Even though he was the school janitor for an entire month. Tom knew it was worth it. He made history, big time! The word bibletar made history after all. And maybe some day, it really will be in your very own dictionary!
 
+`
 
+var poems_let_evil_cease = `
+Let Evil Cease
+
+Alas in my anguish I spoke, before the dread, oppression, and rise of the Antichrist come, I lift up my voice
+God is far too great for humankind, he is loving, he is merciful, he is gracious, he is kind, he is just, he is worthy
+Almighty, 
+Would to God that evil would cease from the land. 
+Oh regret, o death, both most horrible, but regret most dreadful. 
+Would to God that men could see, for we walk so blindly. 
+Would to God that men and women would give God thanks, for his mercy endures for ever. Would to God that evil men would change. Lest evil be done back to them. 
+My eyes are weary of 2 things: lack of wisdom and evil. 
+Would to God, that justice reigned in the land. 
+Would to God that every man and woman had compassion for one another.
+Would to God that truthful words would never cease from the land. 
+Why is wisdom so far from humans, why do humans lack wisdom? Why do the wicked do so wickedly. Why is common sense no longer common anymore? 
+Humans, oh humans, why don’t ye think, ye do evil and expect good in return. Ye stab, murder, kill, covet, greed fills the hearts of children of men.
+Would to God that men and women might see
+Would to God that men and women could understand what they do, for they are shortsighted, they neither think nor fathom how the actions they commit impact and crusheth the soul and heart of them that receiveth their bowls full of evil
+Would to God that a better a newer Earth would come
+A new place I pray, a land filled with holy men and women, and land that lacketh sin, filth, greed, death, regret, gloom, sadness, tears, and destruction
+Would to God that my words be engraved forever and echo throughout history.
+
+`
+
+var poems_caedmons_hymn = `
+Caedmon's Hymn 
+Cædmon (7th century) 
+Nū scylun hergan     hefaenrīcaes Uard,
+metudæs maecti     end his mōdgidanc,
+uerc Uuldurfadur,     suē hē uundra gihuaes,
+ēci dryctin     ōr āstelidæ
+hē ǣrist scōp     aelda barnum
+heben til hrōfe,     hāleg scepen.
+Thā middungeard     moncynnæs Uard,
+eci Dryctin,     æfter tīadæ
+fīrum foldu,     Frēa allmectig.[7]
+
+
+Translation:
+Now [we] shall honour / heaven-kingdom's guardian,
+the measurer's might / and his mind's plan,
+the work of the father of glory[a] / as he of each wonder,
+eternal lord, / the origin established;[b]
+he first created[c] / for the children of men[d]
+heaven for a roof, / holy creator.
+Then Middle-earth / mankind's guardian,
+eternal Lord, / after bestowed
+the lands to men,[e] / Lord almighty.
+
+`
+
+var poems_the_temple = `
+The Temple by George Herbert (1593–1633) 
+            The Altar
+A broken ALTAR, Lord, thy fervent reared,
+ Made of a heart, and cemented with tears:
+  Whofe parts are as thy hand did frame;
+ No workmans tool hath touch’d the fame.
+          A HEART alone
+         Is fuch a ftone,
+          As nothing but
+        Thy pow’r doth cut.
+        Whereforeeach part
+         Of my hard heart
+        Meets in this frame,
+        To praife thy name.
+  That it I chance to hold my peace,
+Thefe ftones to praife thee may not ceafe.
+  O let thy blessed SACRIFICE be mine,
+ And fanetifie this ALTAR to be thine.
+
+`
+var poems_none_other_lamb = `
+None Other Lamb by Christina Rossetti (1830–1894)
+1. None other Lamb, none other name,
+None other hope in heaven or earth or sea,
+None other hiding-place from guilt and shame,
+None beside thee.
+
+2. My faith burns low, my hope burns low;
+Only my heart's desire cries out in me
+By the deep thunder of its want and woe,
+Cries out to thee.
+
+3. Lord, thou art life, though I be dead;
+Love's fire thou art, however cold I be:
+Nor heav'n have I, nor place to lay my head,
+Nor home, but thee. 
+
+`
+
+var poems_my_light_with_yours = `
+    My Light with Yours by Edgar Lee Masters (1868–1950) 
+                       I
+When the sea has devoured the ships,
+And the spires and the towers
+Have gone back to the hills.
+And all the cities
+Are one with the plains again.
+And the beauty of bronze,
+And the strength of steel
+Are blown over silent continents,
+As the desert sand is blown—
+My dust with yours forever.
+                       II
+When folly and wisdom are no more,
+And fire is no more,
+Because man is no more;
+When the dead world slowly spinning
+Drifts and falls through the void—
+My light with yours
+In the Light of Lights forever!
+
+`
+
+var poems_love = `
+“Love” by Sir Walter Scott
+"In peace, Love tunes the shepherd’s reed;
+In war, he mounts the warrior’s steed;
+In halls, in gay attire is seen;
+In hamlets, dances on the green.
+Love rules the court, the camp, the grove,
+And men below and saints above;
+For love is heaven, and heaven is love." 
+
+`
+
+var poems_loves_apotheosis = `
+“Love's Apotheosis” by Paul Laurence Dunbar
+
+"Love me. I care not what the circling years
+        To me may do.
+  If, but in spite of time and tears,
+        You prove but true.
+
+  Love me--albeit grief shall dim mine eyes,
+        And tears bedew,
+  I shall not e'en complain, for then my skies
+        Shall still be blue.
+
+  Love me, and though the winter snow shall pile,
+        And leave me chill,
+  Thy passion's warmth shall make for me, meanwhile,
+        A sun-kissed hill.
+And when the days have lengthened into years,
+        And I grow old,
+  Oh, spite of pains and griefs and cares and fears,
+        Grow thou not cold.
+
+  Then hand and hand we shall pass up the hill,
+        I say not down;
+  That twain go up, of love, who 've loved their fill,--
+        To gain love's crown.
+
+  Love me, and let my life take up thine own,
+        As sun the dew.
+  Come, sit, my queen, for in my heart a throne
+        Awaits for you!"
 
 `
 
