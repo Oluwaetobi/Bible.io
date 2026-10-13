@@ -62,6 +62,12 @@ as art, literature, and etc. Please use this link: https://github.com/Oluwaetobi
 then go for it. But I strongly do recommend setting up Git on your computer, so you can push, pull,
 and commit changes to Github.</p>
 
+<h2>Fork</h2>
+<p>Feel free to fork the Bible.io repository, it's a helpful way to collaborate, especially for developers, if you don't
+know what forking is or how it works, feel free to watch this video:
+https://youtu.be/VbfvQzCoiQc?si=8VPFvPASEGJTg8d3
+</p>
+
 <h2>Bugs in Bible.io Code</h2>
 <p>Please don't report bugs on HackerOne, LOL. If you find any bugs, please just report them on "issues"
 https://github.com/Oluwaetobi/Bible.io/issues</p>
