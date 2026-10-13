@@ -210,6 +210,12 @@ function localStorageAndSessionStorageData () {
         // do nothing, has already been created to default
     }
 
+    if (savedPoints) {
+        my_points = savedPoints;
+    } else {
+        // do nothing, because the variable has already been created and set to zero at the top
+    }
+
     if (saved_cash) {
         my_cash = saved_cash;
     } else {
