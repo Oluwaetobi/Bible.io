@@ -4542,7 +4542,7 @@ function choose_Random_Question () {
 
     // Return a random integer between 1 and 10 (both included): Math.floor(Math.random() * 10) + 1;
 
-    var amount_of_question_in_level_1 = 34;
+    var amount_of_question_in_level_1 = 36;
     var amount_of_question_in_level_2 = 46;
     var amount_of_question_in_level_3 = 30;
 
@@ -4829,6 +4829,22 @@ function level_1_Questions () {
         answer3.innerText += `Cainan `;
         answer4.innerText += `Enoch `;
         correct_answer = 1;
+    }
+    if (randomQuestion == 35) {
+        question.innerText = `Which man saved Israel from the hand of the Midianites?  `;
+        answer1.innerText += `Samson `;
+        answer2.innerText += `Gideon `;
+        answer3.innerText += `Othniel `;
+        answer4.innerText += `Joshua `;
+        correct_answer = 2;
+    }
+    if (randomQuestion == 36) {
+        question.innerText = `Who fought the battle of Jericho  `;
+        answer1.innerText += `Barak `;
+        answer2.innerText += `Samson `;
+        answer3.innerText += `Joshua `;
+        answer4.innerText += `Gideon `;
+        correct_answer = 3;
     }
 }
 
