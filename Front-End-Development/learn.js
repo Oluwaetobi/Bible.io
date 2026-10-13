@@ -1708,8 +1708,41 @@ function Christian_Articles_DataBase () {
 const lawless_one_is_comin_stories = JSON.parse(sessionStorage.getItem('stories_lawless_one_is_comin'));
 
 function Christian_Novels_Database () {
+    // Novels and Short Short Stories Database
     if (book_clicked == 1) {
         text_to_read.innerText = lawless_one_is_comin_stories;
+    }
+}
+
+const let_evil_cease_poems = JSON.parse(sessionStorage.getItem('poems_let_evil_cease'));
+const caedmons_hymn_poems = JSON.parse(sessionStorage.getItem('poems_caedmons_hymn'));
+const the_temple_poems = JSON.parse(sessionStorage.getItem('poems_the_temple'));
+const none_other_lamb_poems = JSON.parse(sessionStorage.getItem('poems_none_other_lamb'));
+const my_light_with_yours_poems = JSON.parse(sessionStorage.getItem('poems_my_light_with_yours'));
+const love_poems = JSON.parse(sessionStorage.getItem('poems_love'));
+const loves_apotheosis_poems = JSON.parse(sessionStorage.getItem('poems_loves_apotheosis'));
+
+function Christian_Poems_Database() {
+    if (book_clicked == 1) {
+        text_to_read.innerTest = let_evil_cease_poems;
+    }
+    if (book_clicked == 2) {
+        text_to_read.innerTest = caedmons_hymn_poems;
+    }
+    if (book_clicked == 3) {
+        text_to_read.innerTest = the_temple_poems;
+    }
+    if (book_clicked == 4) {
+        text_to_read.innerTest = none_other_lamb_poems;
+    }
+    if (book_clicked == 5) {
+        text_to_read.innerTest = my_light_with_yours_poems;
+    }
+    if (book_clicked == 6) {
+        text_to_read.innerTest = love_poems;
+    }
+    if (book_clicked == 7) {
+        text_to_read.innerTest = loves_apotheosis_poems;
     }
 }
 
