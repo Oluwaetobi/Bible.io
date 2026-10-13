@@ -1831,7 +1831,7 @@ function displayLevels() {
             // ctx.fillStyle = 'rgb(245, 186, 77)';
             ctx.fillStyle = 'rgb(245, 95, 14)';
         } else {
-            ctx.fillStyle = 'rgb(239, 245, 77)';
+            ctx.fillStyle = 'rgb(254, 253, 253)';
         }
         if (mouseX > 1278 && mouseX < 1458) {
             var spacing_between_level_boxes = 59.5
