@@ -315,9 +315,42 @@ var new_second = 0;
 var seconds_spent = 0;
 function showTimeSpent() {
 
-    function formatDisplayTimeSpent(seconds_spent) {
+    // timer background
+    ctx.fillStyle = 'rgba(3, 3, 3, 0.5)';
+    ctx.fillRect(1196, 96, 308, 128);
+    ctx.fillStyle = 'rgba(7, 116, 146, 0.5)';
+    ctx.fillRect(1200, 100, 300, 120);
 
-        return seconds_spent;
+    function formatDisplayTimeSpent(seconds_spent) {
+        var min_spent = 0;
+        var hr_spent = 0;
+
+        if (seconds_spent > 59) {
+            min_spent = Math.floor(seconds_spent/60);
+            seconds_spent -= (min_spent * 60);
+        }
+        if (min_spent > 59) {
+            hr_spent = Math.floor(min_spent/60);
+            min_spent -= (hr_spent * 60);
+        }
+        if (seconds_spent < 10 && min_spent > 0) {
+            seconds_spent = "0" + seconds_spent;
+        }
+        if (min_spent < 10 && hr_spent > 0) {
+            min_spent = "0" + min_spent;
+        }
+        if (hr_spent < 10) {
+            hr_spent = "0" + hr_spent;
+        }
+        if (hr_spent > 0) {
+            return (hr_spent + ": " + min_spent + ": " + seconds_spent);
+        } else {
+            if (min_spent > 0) {
+                return (min_spent + ": " + seconds_spent);
+            } else {
+                return (seconds_spent);
+            }
+        }
     }
 
     const date = new Date();
@@ -338,9 +371,9 @@ function showTimeSpent() {
     ctx.fillText("Time Spent: ", 1250, 135)
 
     // time spent display
-    ctx.font = "100px Arial";
+    ctx.font = "60px Arial";
     ctx.fillStyle = 'rgb(255, 255, 255)';
-    ctx.fillText(formatted_time, 1200, 250);
+    ctx.fillText(formatted_time, 1220, 200);
 
 }
 
@@ -1322,11 +1355,6 @@ function draw_Background () {
         // more designs
         ctx.fillStyle = 'rgba(249, 249, 249, 0.5)';
         ctx.fillRect(1000, 100, 200, 600);
-
-        ctx.fillStyle = 'rgba(3, 3, 3, 0.5)';
-        ctx.fillRect(1196, 96, 308, 208);
-        ctx.fillStyle = 'rgba(7, 116, 146, 0.5)';
-        ctx.fillRect(1200, 100, 300, 200);
     }
 
 }
