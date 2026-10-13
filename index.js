@@ -117,7 +117,7 @@ function store_big_books_sessionally () {
 
     // articles
     sessionStorage.setItem('articles_does_science_uphold_the_bible', JSON.stringify(articles_does_science_uphold_the_bible));
-    sessionStorage.setItem('articles_why_does_God_hate_divorce', JSON.stringify(articles_why_does_God_hate_divorce));
+    sessionStorage.setItem('articles_why_God_hates_divorce', JSON.stringify(articles_why_God_hates_divorce));
     sessionStorage.setItem('articles_heaven_and_hell', JSON.stringify(articles_heaven_and_hell));
     sessionStorage.setItem('articles_the_most_important_thing', JSON.stringify(articles_the_most_important_thing));
     sessionStorage.setItem('articles_the_abomination_of_desolation', JSON.stringify(articles_the_abomination_of_desolation));
@@ -50970,7 +50970,7 @@ Isaac Newton, one of the greatest scientists of all time even said that “in th
 
 `
 
-var articles_why_does_God_hate_divorce = `
+var articles_why_God_hates_divorce = `
 Why God hates divorce
 God hates divorce, but why? In the book of Matthew 19, Jesus had a lengthy talk about divorce with the Pharisees. The Pharisees came to Jesus and asked him if it was okay for them to put away their wives for any cause. And Jesus answered and said “but from the beginning it was not so. Whosoever shall put away his wife, except it be for fornication, and shall marry another, committeth adultery: and whoso marrieth her which is put away doth commit adultery. ” 
 If a husband is abusing his wife, or if a wife is abusing the husband, then they should separate, leave the house and call for help. But the majority of divorces that happen in the world aren’t because of abuse or adultery, it is because of petty excuses. Such as, “I don’t like my wife” or “my husband is so annoying” many people rush into marriage and chaos erupts and they run out. First of all, you should never rush into marriage. If you are in a hurry, and things aren’t set up properly, be rest assured that you will encounter many problems. But really, why does God hate divorce?
