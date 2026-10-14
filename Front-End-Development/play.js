@@ -2318,6 +2318,7 @@ var height_of_grid_background = 460;
  * inside the function, draw_game_grid
  *  */ 
 var wedge_height = 3;
+
 function draw_grid_background () {
     // grid background
     var gradient = ctx.createLinearGradient(0, 0, 0, height_of_grid_background);
