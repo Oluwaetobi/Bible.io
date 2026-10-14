@@ -1829,14 +1829,14 @@ function displayLevels() {
         ctx.font = "20px Arial";
         if ((i+1) == level) {
             // ctx.fillStyle = 'rgb(245, 186, 77)';
-            ctx.fillStyle = 'rgb(245, 95, 14)';
+            ctx.fillStyle = 'rgb(22, 245, 14)';
         } else {
             ctx.fillStyle = 'rgb(254, 253, 253)';
         }
         if (mouseX > 1278 && mouseX < 1458) {
             var spacing_between_level_boxes = 59.5
             if (mouseY > (116 + (i * spacing_between_level_boxes)) && mouseY < (159 + (i*spacing_between_level_boxes))) {
-                ctx.fillStyle = 'rgb(170, 112, 4)';
+                ctx.fillStyle = 'rgb(251, 255, 0)';
             }
         }
         ctx.fillRect(1280, 120 + (i * spacing_x), 180, 40);
