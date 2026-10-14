@@ -2121,7 +2121,7 @@ function connectPlayers () {
     function write_Out_Text_And_Boxes() {
         var baseline_y = 570;
         var baseline_x = 520;
-        ctx.fillStyle = 'rgb(243, 244, 245)';
+        ctx.fillStyle = 'rgba(243, 244, 245, 0.95)';
         ctx.fillRect(baseline_x, baseline_y, 400, 50);
     
         ctx.font = "30px Arial";
@@ -2215,7 +2215,7 @@ function display_Game_Time (time_alloted_for_each_game) {
 
     // dark black background back layer
     ctx.fillStyle = 'rgb(0,0,0)';
-    ctx.fillRect(x_baseline - 53, 0, 400, 450);
+    ctx.fillRect(x_baseline - 53, 0, 400, height_of_grid_background);
 
     // clock background also edge of the game screen
     var gradient = ctx.createLinearGradient(x_baseline - 50, 0, canvas.width, 0);
@@ -2224,7 +2224,7 @@ function display_Game_Time (time_alloted_for_each_game) {
     gradient.addColorStop(1, 'rgb(10, 122, 144)');    // End color (100%)
     ctx.fillStyle = gradient;
     // ctx.fillStyle = 'rgb(10, 122, 144)';
-    ctx.fillRect(x_baseline - 50, 0, canvas.width, 450);
+    ctx.fillRect(x_baseline - 50, 0, canvas.width, height_of_grid_background);
     
     var x_over = 0;
     if (game_time < 10) {
@@ -2282,15 +2282,25 @@ function display_Game_Time (time_alloted_for_each_game) {
 
 }
 
+var height_of_grid_background = 460;
+
 function draw_game_grid () {
     // grid background
-    var gradient = ctx.createLinearGradient(0, 0, 0, canvas.height);
+
+    var gradient = ctx.createLinearGradient(0, 0, 0, height_of_grid_background);
     gradient.addColorStop(0, 'rgb(10, 132, 250)');     // Start color (0%)
-    gradient.addColorStop(0.5, 'rgb(45, 244, 244)');
-    gradient.addColorStop(1, 'rgb(9, 174, 240)');    // End color (100%)
+    gradient.addColorStop(0.5, 'rgb(45, 201, 244)');
+    gradient.addColorStop(1, 'rgb(0, 255, 247)');    // End color (100%)
     ctx.fillStyle = gradient;
     // ctx.fillStyle = 'rgb(10, 132, 193)';
-    ctx.fillRect(0, 0, canvas.width, 450);
+    ctx.fillRect(0, 0, canvas.width, height_of_grid_background);
+
+
+    // white wedge between end of grid and questions background
+    var weight_height = 3;
+    ctx.fillStyle = 'rgb(255, 255, 255)';
+    ctx.fillRect(0, height_of_grid_background, canvas.width, weight_height);
+
 
     /**Let's not pretend that hackers don't exist, if they somehow do manage to hack the game
      * I still want it to look pretty, right? That's why I set amount_of_ticks to 1000!
@@ -2302,7 +2312,7 @@ function draw_game_grid () {
     for (let i = 0; i < amount_of_ticks; i++) {
         var x_baseline = 341;
         ctx.fillStyle = 'rgb(253, 252, 252)';
-        ctx.fillRect(x_baseline + ((i * 500)/x_bar_divider), 0, grid_size, 450);
+        ctx.fillRect(x_baseline + ((i * 500)/x_bar_divider), 0, grid_size, height_of_grid_background);
     }
 }
 
@@ -4449,13 +4459,13 @@ function check_if_answer_is_correct(my_answer_html) {
 
 
 function questions_background() {
-    var gradient = ctx.createLinearGradient(0, 0, 0, canvas.height);
+    var gradient = ctx.createLinearGradient(0, height_of_grid_background, 0, canvas.height);
     gradient.addColorStop(0, 'rgb(72, 99, 108)');     // Start color (0%)
     gradient.addColorStop(0.5, 'rgb(26, 101, 101)');
     gradient.addColorStop(1, 'rgb(141, 146, 150)');    // End color (100%)
     ctx.fillStyle = gradient;
     // ctx.fillStyle = 'rgb(72, 99, 108)';
-    ctx.fillRect(0, 0, canvas.width, canvas.height)
+    ctx.fillRect(0, height_of_grid_background, canvas.width, canvas.height)
 }
 
 function spectatorMode() {
