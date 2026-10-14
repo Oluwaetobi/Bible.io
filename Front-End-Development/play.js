@@ -1958,6 +1958,7 @@ function show_or_hide_html_elements () {
     }
 }
 
+var day_time = true;
 function extra_info_and_images () {
     flag_size_x = 250;
     ctx.drawImage(img_racing_flags, 625, 250, flag_size_x, (flag_size_x)/1.8);
@@ -2051,7 +2052,35 @@ function extra_info_and_images () {
 
     if (hours > 11) {
         time_of_day = "PM";
+    } else {
+        time_of_day = "AM";
     }
+
+    function determine_whether_dark_outside_or_not_dark () {
+        /* this only runs when home_page is 1, and it is used to determine whether the gradient colors
+        for in the inner game to should be daylight or night light, don't want that changing mid game, that
+        would look really weird
+        */
+        if (hours > 11) {
+            // PM
+            if (hours >= 22) {
+                // 10 PM or after
+                day_time = false;
+            } else {
+                day_time = true;
+            }
+        } else {
+            // AM
+            if (hours < 7) {
+                // before 7AM, it is still dark
+                day_time = false;
+            } else {
+                day_time = true;
+            }
+        }
+    }
+
+    determine_whether_dark_outside_or_not_dark();
 
     function getDateDisplay() {
         var display_date = (day_of_the_week + ", " + month_in_text + " " +  day_of_month + ", " + year + " | " + real_hours + ":" + extra_zero + minutes + " " + time_of_day)
@@ -2283,19 +2312,70 @@ function display_Game_Time (time_alloted_for_each_game) {
 }
 
 var height_of_grid_background = 460;
-
-function draw_game_grid () {
+/**
+ * just declaring it outside here, so it can be accessible for the highscore bar,
+ *  note whatever number is here doesn't matter because it might be changed 
+ * inside the function, draw_game_grid
+ *  */ 
+var wedge_height = 3;
+function draw_grid_background () {
     // grid background
-
     var gradient = ctx.createLinearGradient(0, 0, 0, height_of_grid_background);
-    gradient.addColorStop(0, 'rgb(10, 132, 250)');     // Start color (0%)
-    gradient.addColorStop(0.5, 'rgb(45, 201, 244)');
-    gradient.addColorStop(1, 'rgb(0, 255, 247)');    // End color (100%)
+
+    if (day_time == true) {
+        gradient.addColorStop(0, 'rgb(10, 132, 250)');     // Start color (0%)
+        gradient.addColorStop(0.5, 'rgb(45, 201, 244)');
+        gradient.addColorStop(1, 'rgb(0, 255, 247)');    // End color (100%)
+    } else {
+        gradient.addColorStop(0, 'rgb(41, 0, 124)');     // Start color (0%)
+        gradient.addColorStop(0.5, 'rgb(110, 0, 194)');
+        gradient.addColorStop(1, 'rgb(255, 0, 247)');    // End color (100%)
+
+    }
     ctx.fillStyle = gradient;
     // ctx.fillStyle = 'rgb(10, 132, 193)';
     ctx.fillRect(0, 0, canvas.width, height_of_grid_background);
+    
+
+    // moon or sun depending on time of day
+    var cirle_size = 200;
+
+     // black shadow add
+    ctx.shadowColor = "black";
+    ctx.shadowBlur = 3;
+    ctx.shadowOffsetX = 0;
+    ctx.shadowOffsetY = 0;
+    
+    function draw_sun_or_moon () {
+        ctx.beginPath();
+        // x, y, radius, start point circumference, end point circumference
+        ctx.arc(1180, 20, cirle_size, 0, 2 * Math.PI);
+        if (day_time == true) {
+            ctx.fillStyle = 'rgba(242, 255, 2, 0.99)';             // Set fill color
+        } else {
+            ctx.fillStyle = 'rgba(251, 251, 251, 0.99)';             // Set fill color
+        }
+        ctx.strokeStyle = 'rgba(0, 0, 0, 0.9)';          // Set outline color
+        ctx.lineWidth = 1;                     // Set outline thickness
+        ctx.fill();  
+        ctx.stroke();
+    }
+
+    // draw_sun_or_moon();
+    
 
 
+    // black shadow remove
+    ctx.shadowColor = "white";
+    ctx.shadowBlur = 0;
+    ctx.shadowOffsetX = 0;
+    ctx.shadowOffsetY = 0;
+
+
+}
+function draw_game_grid () {
+
+    draw_grid_background();
     
     
     /**Let's not pretend that hackers don't exist, if they somehow do manage to hack the game
@@ -2312,7 +2392,7 @@ function draw_game_grid () {
     }
     
     // white wedge between end of grid and questions background
-    var wedge_height = 3;
+    wedge_height = 3;
     ctx.fillStyle = 'rgb(1, 1, 1)';
     ctx.fillRect(0, height_of_grid_background - wedge_height, canvas.width, wedge_height);
 
@@ -2328,7 +2408,7 @@ function draw_beat_highscore_bar (start_x, move_x) {
     ctx.shadowOffsetY = 0;
     
     ctx.fillStyle = 'rgb(119, 255, 0)';
-    ctx.fillRect(start_x + move_x, 0, size_of_bar, 450);
+    ctx.fillRect(start_x + move_x, 0, size_of_bar, height_of_grid_background - wedge_height);
 
     // black shadow remove
     ctx.shadowColor = "white";
@@ -4519,7 +4599,7 @@ function questions_Display() {
 
     ctx.font = "20px Arial";
     ctx.fillStyle = 'rgb(255, 255, 255)';
-    ctx.fillText("Your Points: " + this_game_points, 1100, 650);
+    ctx.fillText("Your Points: " + this_game_points, 1100, 660);
 
     ctx.font = "18px Arial";
     ctx.fillStyle = 'rgb(255, 255, 255)';
@@ -5502,6 +5582,7 @@ function drawGame() {
         // loadingBox();
         myBibletar();
     } else if (home_page == 3) {
+        draw_All_Players();
         if (kicked_out == true) {
             if (game_finished == false) {
                 spectatorMode();
@@ -5512,7 +5593,6 @@ function drawGame() {
         if (game_finished == true) {
             broadcast_game_is_over(60);
         }
-        draw_All_Players();
         display_Game_Time(60);
     } else if (home_page == 4) {
         show_results();

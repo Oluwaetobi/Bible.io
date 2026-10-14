@@ -227,10 +227,10 @@ a:hover {
     font-size: large;
     
     /* right or left, down or up, blur radius, color, - shadow */
-    text-shadow: 2px 2px 2px rgb(6, 6, 6);
+    text-shadow: 1px 1px 2px rgb(6, 6, 6);
     border-radius: 20px;
-    background: linear-gradient(180deg, rgba(0, 5, 5, 0.9), rgba(0, 5, 9, 0.9));
-    box-shadow: inset 0px 0px 10px black;
+    background: linear-gradient(180deg, rgba(249, 250, 250, 0.2), rgba(0, 5, 9, 0.2));
+    box-shadow: inset 0px 0px 5px rgba(0, 0, 1, 0.7);
     /* top, right, bottom, left */
     padding: 0px 20px 0px 20px;
 }
@@ -239,7 +239,11 @@ a:hover {
     box-sizing: border-box;
     border-radius: 7px 7px;
     /* slightly transparent */
-    background-color: rgba(252, 251, 251, 0.5);
+    /* background-color: rgba(252, 251, 251, 0.5); */
+    background-color: rgba(255, 255, 255, 0.5);
+    /* border: 2px solid rgba(0, 0, 0, 0.3); */
+    box-shadow: #000000 1px 1px 5px;
+    /* background: linear-gradient(180deg, rgba(249, 250, 250, 0.3), rgba(0, 5, 9, 0.2)); */
     padding: 5px 20px;
     cursor: pointer;
 }
@@ -257,23 +261,11 @@ form {
     position: absolute;
     z-index: 1;
 }
-form label {
-    flex-shrink: 0;
-    height: 50px;
-    width: 30px;
-    background-color: var(--accent-color);
-    fill: var(--base-color);
-    color: var(--base-color);
-    border-radius: 10px 10 10 10px;
-    display: flex;
-    font-size: 1.5rem;
-    font-weight: 500;
-}
 form input {
     box-sizing: border-box;
     flex-grow: 1;
     min-width: 0;
-    height: 100px;
+    max-height: 100px;
     width: 200px;
     padding: 1em;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -282,7 +274,7 @@ form input {
     border-left:none;
     background-color: var(--input-color);
     transition: 150ms ease;
-    font-size: 30px;
+    font-size: 60px;
 }
 form input:hover {
     border-color: var(--accent-color);
@@ -300,7 +292,7 @@ form input::placeholder {
     white-space: pre-line;
     /* max-width: 200px; */
     /* Makes the placeholder text for my form go slightly up */
-    transform: translateY(-13px);
+    transform: translateY(-35px);
 }
 
 
