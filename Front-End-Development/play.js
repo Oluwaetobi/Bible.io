@@ -2296,24 +2296,26 @@ function draw_game_grid () {
     ctx.fillRect(0, 0, canvas.width, height_of_grid_background);
 
 
-    // white wedge between end of grid and questions background
-    var weight_height = 3;
-    ctx.fillStyle = 'rgb(255, 255, 255)';
-    ctx.fillRect(0, height_of_grid_background, canvas.width, weight_height);
-
-
+    
+    
     /**Let's not pretend that hackers don't exist, if they somehow do manage to hack the game
      * I still want it to look pretty, right? That's why I set amount_of_ticks to 1000!
-     */
-    var amount_of_ticks = 1000;
-
-    // grid line ticks
-    var grid_size = 2.5;
-    for (let i = 0; i < amount_of_ticks; i++) {
-        var x_baseline = 341;
-        ctx.fillStyle = 'rgb(253, 252, 252)';
-        ctx.fillRect(x_baseline + ((i * 500)/x_bar_divider), 0, grid_size, height_of_grid_background);
+    */
+   var amount_of_ticks = 1000;
+   
+   // grid line ticks
+   var grid_size = 2.5;
+   for (let i = 0; i < amount_of_ticks; i++) {
+       var x_baseline = 341;
+       ctx.fillStyle = 'rgb(253, 252, 252)';
+       ctx.fillRect(x_baseline + ((i * 500)/x_bar_divider), 0, grid_size, height_of_grid_background);
     }
+    
+    // white wedge between end of grid and questions background
+    var wedge_height = 3;
+    ctx.fillStyle = 'rgb(1, 1, 1)';
+    ctx.fillRect(0, height_of_grid_background - wedge_height, canvas.width, wedge_height);
+
 }
 
 function draw_beat_highscore_bar (start_x, move_x) {
@@ -4199,7 +4201,7 @@ function broadcast_game_is_over (time_alloted_for_each_game) {
 
     ctx.font = "80px Arial";
     ctx.strokeStyle = 'rgb(0, 0, 0)';
-    ctx.strokeText(end_game_message, 100, egm_pos_y);
+    // ctx.strokeText(end_game_message, 100, egm_pos_y);
     ctx.fillStyle = 'rgb(0, 0, 0)';
     ctx.fillText(end_game_message, 100, egm_pos_y);
 
@@ -4460,9 +4462,9 @@ function check_if_answer_is_correct(my_answer_html) {
 
 function questions_background() {
     var gradient = ctx.createLinearGradient(0, height_of_grid_background, 0, canvas.height);
-    gradient.addColorStop(0, 'rgb(72, 99, 108)');     // Start color (0%)
-    gradient.addColorStop(0.5, 'rgb(26, 101, 101)');
-    gradient.addColorStop(1, 'rgb(141, 146, 150)');    // End color (100%)
+    gradient.addColorStop(0, 'rgb(5, 193, 255)');     // Start color (0%)
+    // gradient.addColorStop(0.5, 'rgb(26, 101, 101)');
+    gradient.addColorStop(1, 'rgb(4, 90, 151)');    // End color (100%)
     ctx.fillStyle = gradient;
     // ctx.fillStyle = 'rgb(72, 99, 108)';
     ctx.fillRect(0, height_of_grid_background, canvas.width, canvas.height)
