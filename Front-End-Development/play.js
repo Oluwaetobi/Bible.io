@@ -4635,9 +4635,9 @@ function choose_Random_Question () {
 
     // Return a random integer between 1 and 10 (both included): Math.floor(Math.random() * 10) + 1;
 
-    var amount_of_question_in_level_1 = 36;
-    var amount_of_question_in_level_2 = 46;
-    var amount_of_question_in_level_3 = 30;
+    var amount_of_question_in_level_1 = 37;
+    var amount_of_question_in_level_2 = 47;
+    var amount_of_question_in_level_3 = 31;
 
 
     if (level == 1) {
@@ -4938,6 +4938,14 @@ function level_1_Questions () {
         answer3.innerText += `Joshua `;
         answer4.innerText += `Gideon `;
         correct_answer = 3;
+    }
+    if (randomQuestion == 37) {
+        question.innerText = `When is Jesus Christ coming back?   `;
+        answer1.innerText += `in the year 2050 `;
+        answer2.innerText += `in the year 2072 `;
+        answer3.innerText += `in the year 2100 `;
+        answer4.innerText += `Nobody knows `;
+        correct_answer = 4;
     }
 }
 
@@ -5311,6 +5319,14 @@ function level_2_Questions () {
         answer4.innerText += `sword and shield `;
         correct_answer = 2;
     }
+    if (randomQuestion == 47) {
+        question.innerText = `What was wrong with the Israelite army before they entered into war against the Midianites?   `;
+        answer1.innerText += `they didn't put their trust in God `;
+        answer2.innerText += `they had sinned and offended Almighty God`;
+        answer3.innerText += `the size of their army was too large  `;
+        answer4.innerText += `there weren't enough soldiers `;
+        correct_answer = 3;
+    }
 }
 
 function level_3_Questions () {
@@ -5556,6 +5572,14 @@ function level_3_Questions () {
         answer3.innerText += `1 Corinthians 13:5 `;
         answer4.innerText += `1 Corinthians 13:8 `;
         correct_answer = 3;
+    }
+    if (randomQuestion == 31) {
+        question.innerText = `Search me, O God, and know my heart: try me, and know my thoughts `;
+        answer1.innerText += `Psalm 139:23 `;
+        answer2.innerText += `Psalms 108:16 `;
+        answer3.innerText += `Psalms 148:38 `;
+        answer4.innerText += `Psalms 42:5 `;
+        correct_answer = 1;
     }
     
 }
