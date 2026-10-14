@@ -2273,7 +2273,7 @@ function bibleMaker_background () {
 
     var x_shift_glory_to_God_text = 605;
     ctx.font = "25px Arial";
-    ctx.strokeStyle = 'rgb(250, 250, 249)';
+    ctx.strokeStyle = 'rgba(250, 250, 249, 0.4)';
     ctx.strokeText("Creator | Divine | Awesome | Loving | Supreme | Jesus | Good Father | Prince of Peace | Mighty God | Holy", (((canvas.width)/2) - x_shift_glory_to_God_text), 220);
     ctx.fillStyle = 'rgb(252, 252, 251)';
     ctx.fillText("Creator | Divine | Awesome | Loving | Supreme | Jesus | Good Father | Prince of Peace | Mighty God | Holy", (((canvas.width)/2) - x_shift_glory_to_God_text), 220);

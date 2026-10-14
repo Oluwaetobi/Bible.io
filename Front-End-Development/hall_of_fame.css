@@ -200,7 +200,7 @@ header {
     border-radius: 0px 0px;
 }
 
-.hall-of-fame-middle h1 {
+.hall-of-fame-middle #fame-title {
     /* background-color: rgba(28, 226, 244, 0.9); */
     /* background: linear-gradient(135deg, #11998e, #38ef7d); */
     /* background: linear-gradient(0deg, #11998e, #38ef7d); */
@@ -214,6 +214,27 @@ header {
     border-radius: 10px 10px;
     padding: 5px 50px;
     font-weight: bold;
+}
+
+.bible-day-contest {
+    text-align: left;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.bible-day-contest p {
+    text-indent: 40px;
+    white-space: pre-wrap;
+}
+
+.hall-of-fame-middle #bible-day-contest {
+    background: linear-gradient(0deg, rgba(182, 182, 182, 0.9), rgba(233, 233, 233, 0.9));
+    font-size: 40px;
+    border-radius: 10px;
+    padding: 5px 50px;
+    font-weight: bold;
+    box-shadow: inset 0px 0px 10px #000000;
+    text-align: center;
 }
 
 #top-players-text {
