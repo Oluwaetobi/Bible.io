@@ -4763,8 +4763,8 @@ function choose_Random_Question () {
 
     // Return a random integer between 1 and 10 (both included): Math.floor(Math.random() * 10) + 1;
 
-    var amount_of_question_in_level_1 = 37;
-    var amount_of_question_in_level_2 = 47;
+    var amount_of_question_in_level_1 = 38;
+    var amount_of_question_in_level_2 = 48;
     var amount_of_question_in_level_3 = 31;
 
 
@@ -5075,6 +5075,14 @@ function level_1_Questions () {
         answer4.innerText += `Nobody knows `;
         correct_answer = 4;
     }
+    if (randomQuestion == 38) {
+        question.innerText = `How many animals died Noah's flood?  `;
+        answer1.innerText += `No animals died `;
+        answer2.innerText += `Some of the animals died`;
+        answer3.innerText += `Most of the animals died  `;
+        answer4.innerText += `All of the animals died `;
+        correct_answer = 3;
+    }  
 }
 
 function level_2_Questions () {
@@ -5455,6 +5463,14 @@ function level_2_Questions () {
         answer4.innerText += `there weren't enough soldiers `;
         correct_answer = 3;
     }
+    if (randomQuestion == 48) {
+        question.innerText = `How many people died in the flood, in the book of Genesis?  `;
+        answer1.innerText += `No one died `;
+        answer2.innerText += `Some of them died`;
+        answer3.innerText += `Most of them died  `;
+        answer4.innerText += `Everyone died `;
+        correct_answer = 3;
+    }    
 }
 
 function level_3_Questions () {
