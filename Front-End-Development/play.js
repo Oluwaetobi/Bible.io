@@ -4574,24 +4574,48 @@ function show_results() {
         if (i == 1) {
             // 1st place
             ctx.fillStyle = 'rgb(9, 124, 5)';
+            ctx.strokeStyle = 'rgb(9, 124, 5)';
         } else if (i == 2) {
             // 2nd place
             ctx.fillStyle = 'rgb(229, 255, 0)';
+            ctx.strokeStyle = 'rgb(229, 255, 0)';
         } else if (i == 3) {
             // 3rd place
             ctx.fillStyle = 'rgb(255, 145, 0)';
+            ctx.strokeStyle = 'rgb(255, 145, 0)';
         } else {
             // 4th place
             ctx.fillStyle = 'rgb(255, 0, 0)';
+            ctx.strokeStyle = 'rgb(255, 0, 0)';
         }
-        ctx.fillText(possible_places[i], 30, 110 + (i * y_bibletars_box_spacing));
+        ctx.strokeText(possible_places[i], 15, 150 + (i * y_bibletars_box_spacing));
+        ctx.fillText(possible_places[i], 15, 150 + (i * y_bibletars_box_spacing));
+
+
+
+        // Top box heading display for results
+        ctx.fillStyle = 'rgba(0, 82, 154, 0.9)';
+        ctx.fillRect(10, 10, 700, 60);
+
+        // white back overlay
+        ctx.fillStyle = 'rgba(255, 255, 255, 0.85)';
+        ctx.fillRect(380, 15, 500, 50);
+
+        ctx.font = "50px Arial";
+        ctx.fillStyle = 'rgb(255, 225, 0)';
+        ctx.fillText("Game Results: ", 30, 55);
+
+        ctx.font = "40px Arial";
+        ctx.fillStyle = 'rgb(0, 0, 0)';
+        ctx.fillText("Level: " + level, 400, 40);
+        ctx.fillText("|  Highscore: " + my_highscores[level - 1], 550, 50)
 
         // black shadow remove
         ctx.shadowColor = "white";
         ctx.shadowBlur = 0;
         ctx.shadowOffsetX = 0;
         ctx.shadowOffsetY = 0;
-        
+
     }
     
     
@@ -4615,7 +4639,7 @@ function show_results() {
     ctx.fillStyle = 'rgb(0, 0, 0)';
     ctx.fillText(year + " Bibleio | Bible.io Corporation", 1050, canvas.height - 20);
 
-    results_information();
+    // results_information();
 }
 
 
