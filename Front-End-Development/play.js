@@ -4292,22 +4292,22 @@ function broadcast_game_is_over (time_alloted_for_each_game) {
     ctx.fillRect(78, 468, 924, 174);
     // box display
     var gradient = ctx.createLinearGradient(0, 470, 0, 470 + 170);
-    gradient.addColorStop(0, 'rgb(250, 248, 248)');     // Start color (0%)
-    gradient.addColorStop(0.5, 'rgb(255, 254, 254)');
-    gradient.addColorStop(1, 'rgb(241, 241, 241)');    // End color (100%)
+    gradient.addColorStop(0, 'rgb(0, 53, 99)');     // Start color (0%)
+    gradient.addColorStop(0.5, 'rgb(5, 125, 210)');
+    gradient.addColorStop(1, 'rgb(0, 81, 169)');    // End color (100%)
     // ctx.fillStyle = 'rgb(249, 247, 247)';
     ctx.fillStyle = gradient;
     ctx.fillRect(80, 470, 920, 170);
 
 
     ctx.font = "80px Arial";
-    ctx.strokeStyle = 'rgb(0, 0, 0)';
+    ctx.strokeStyle = 'rgb(255, 0, 0)';
     // ctx.strokeText(end_game_message, 100, egm_pos_y);
-    ctx.fillStyle = 'rgb(0, 0, 0)';
+    ctx.fillStyle = 'rgb(255, 0, 0)';
     ctx.fillText(end_game_message, 100, egm_pos_y);
 
     ctx.font = "30px Arial";
-    ctx.fillStyle = 'rgb(244, 8, 8)';
+    ctx.fillStyle = 'rgb(255, 255, 255)';
     ctx.fillText("Your results will soon be displayed on the next page", 100, egm_pos_y + 50);
         
     // black shadow remove
@@ -4595,7 +4595,7 @@ function show_results() {
 
         // Top box heading display for results
         ctx.fillStyle = 'rgba(0, 82, 154, 0.9)';
-        ctx.fillRect(10, 10, 700, 60);
+        ctx.fillRect(10, 10, 900, 60);
 
         // white back overlay
         ctx.fillStyle = 'rgba(255, 255, 255, 0.85)';
@@ -4605,17 +4605,18 @@ function show_results() {
         ctx.fillStyle = 'rgb(255, 225, 0)';
         ctx.fillText("Game Results: ", 30, 55);
 
-        ctx.font = "40px Arial";
-        ctx.fillStyle = 'rgb(0, 0, 0)';
-        ctx.fillText("Level: " + level, 400, 40);
-        ctx.fillText("|  Highscore: " + my_highscores[level - 1], 550, 50)
-
+        
         // black shadow remove
         ctx.shadowColor = "white";
         ctx.shadowBlur = 0;
         ctx.shadowOffsetX = 0;
         ctx.shadowOffsetY = 0;
-
+        
+        ctx.font = "40px Arial";
+        ctx.fillStyle = 'rgb(0, 0, 0)';
+        ctx.fillText("Level: " + level, 400, 50);
+        ctx.fillText("|  Highscore: " + my_highscores[level - 1], 550, 50)
+        
     }
     
     
