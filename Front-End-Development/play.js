@@ -4426,6 +4426,7 @@ function results_information() {
 
 }
 
+// variables need global scope
 var results_shift_x = 0;
 var results_shift_y = 0;
 
@@ -4473,7 +4474,7 @@ function show_results() {
     var y_bibletars_box_spacing = 110
     var y_baseline = 20;
 
-    results_shift_x = 60;
+    results_shift_x = 70;
     results_shift_y = 70;
 
 
@@ -4545,6 +4546,52 @@ function show_results() {
         
         /**Draw everyone's bibletars on top of the box displays */
         draw_players_bibletars(players_places_organized[i], i);
+
+
+
+        // write places left of bibletar displays
+        var possible_places = ["1st", "2nd", "3rd", "4th"];
+        // boxes rank black back layer
+        ctx.fillStyle = 'rgb(0, 0, 0)';
+        ctx.fillRect(7, 87 + (i* y_bibletars_box_spacing), 106, 106);
+        var gradient2 = ctx.createLinearGradient(10, 0, 102, 0);
+        gradient2.addColorStop(0, 'rgb(237, 237, 237)');     // Start color (0%)
+        gradient2.addColorStop(1, 'rgb(201, 201, 201)');    // End color (100%)
+        ctx.fillStyle = gradient2;
+        ctx.fillRect(10, 90 + (i * y_bibletars_box_spacing), 100, 100);
+
+
+
+        // black shadow add
+        ctx.shadowColor = "black";
+        ctx.shadowBlur = 3;
+        ctx.shadowOffsetX = 2;
+        ctx.shadowOffsetY = 2;
+        
+        
+        // text
+        ctx.font = "50px Arial";
+        if (i == 1) {
+            // 1st place
+            ctx.fillStyle = 'rgb(9, 124, 5)';
+        } else if (i == 2) {
+            // 2nd place
+            ctx.fillStyle = 'rgb(229, 255, 0)';
+        } else if (i == 3) {
+            // 3rd place
+            ctx.fillStyle = 'rgb(255, 145, 0)';
+        } else {
+            // 4th place
+            ctx.fillStyle = 'rgb(255, 0, 0)';
+        }
+        ctx.fillText(possible_places[i], 30, 110 + (i * y_bibletars_box_spacing));
+
+        // black shadow remove
+        ctx.shadowColor = "white";
+        ctx.shadowBlur = 0;
+        ctx.shadowOffsetX = 0;
+        ctx.shadowOffsetY = 0;
+        
     }
     
     
