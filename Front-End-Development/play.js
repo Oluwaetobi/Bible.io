@@ -760,7 +760,7 @@ function friendsBoard() {
         ctx.drawImage(img_countries_sources_friends[i], 120 + friends_info_x_alignment, (i*friends_y_spacing) + 155 + friends.scroll_y, 60, 30);
         // ctx.drawImage(img_countries, 130, 100, 100, 50);
         
-        draw_players_bibletars(i);
+        draw_players_bibletars(i, 0);
         
         // behind friend's name box, slightly transparent
         var move_names_up = -2;
@@ -2564,7 +2564,7 @@ function draw_points_as_bar_graph(y_bibletars_box_spacing, y_baseline) {
 
 var object_to_use = my_game;
 
-function draw_players_bibletars(index_loop) {
+function draw_players_bibletars(index_loop, unchanged_loop) {
     /** This function draws the background, face, shirt, eyes, and etc for each player that playing
      * in my game
      */
@@ -4120,7 +4120,15 @@ function draw_players_bibletars(index_loop) {
     */
    
    var shift_bibletar_x_over = -930;
-   var shift_bibletar_y_over = -80 + (index_loop * 110);
+   var shift_bibletar_y_over = 0;
+   if (home_page == 4) {
+    /** Because it is already being organized in show_results, I will use unchanged loop, instead
+     * of drawing it based off of the organized loop
+     */
+        shift_bibletar_y_over = -80 + (unchanged_loop * 110);
+   } else {
+       shift_bibletar_y_over = -80 + (index_loop * 110);
+   }
 
    if (home_page == 1) {
     shift_bibletar_x_over = -970;
@@ -4231,7 +4239,7 @@ function draw_All_Players () {
 
 
         /**Draw everyone's bibletars on top of the box displays */
-        draw_players_bibletars(i);
+        draw_players_bibletars(i, 0);
     }
 
 
@@ -4529,7 +4537,7 @@ function show_results() {
     // console.log("Players places organized: " + players_places_organized);
     for (let i = 0; i < my_game.online; i++) {
         /**Draw everyone's bibletars on top of the box displays */
-        draw_players_bibletars(players_places_organized[i]);
+        draw_players_bibletars(players_places_organized[i], i);
         // draw_players_bibletars(i);
     }
     
