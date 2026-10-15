@@ -4423,6 +4423,38 @@ function show_results() {
     
 
 
+    var players_places_organized = [];
+    var all_p_points_recreated = [];
+
+    function order_players_indexes_from_highest_points_to_lowest_points () {
+        // first of all, add all the data
+        for (let i = 0; i < my_game.online; i++) {
+            players_places_organized.push(i);
+            all_p_points_recreated.push(my_game.everyones_points[i]);
+        }
+    
+        // use selection sort to organize the data
+        var temp_place = 0;
+        var temp_p_recreated = 0;
+        for (let i = 0; i < my_game.online; i++) {
+            for (let j = i+1; j < my_game.online; j++) {
+                if (all_p_points_recreated[i] < all_p_points_recreated[j]) {
+                    // swap
+                    temp_p_recreated = all_p_points_recreated[i];
+                    all_p_points_recreated[i] = all_p_points_recreated[j];
+                    all_p_points_recreated[j] = temp_p_recreated;
+                    
+                    temp_place = players_places_organized[i];
+                    players_places_organized[i] = players_places_organized[j];
+                    players_places_organized[j] = temp_place;
+                }
+            }
+        }
+    }
+
+    order_players_indexes_from_highest_points_to_lowest_points();
+
+
     var y_bibletars_box_spacing = 110
     var y_baseline = 20;
 
@@ -4445,11 +4477,11 @@ function show_results() {
 
         // set player's name
         var players_name = my_name;
-        players_name = my_game.everyones_names[i];
+        players_name = my_game.everyones_names[players_places_organized[i]];
 
         ctx.fillText(players_name, 173 + 5, y_baseline + 20 + (i * y_bibletars_box_spacing));
         ctx.font = "15px Arial";
-        ctx.fillText("Points: " + Math.round(my_game.everyones_points[i]), 173 + 3, y_baseline + 40 + (i * y_bibletars_box_spacing));
+        ctx.fillText("Points: " + Math.round(my_game.everyones_points[players_places_organized[i]]), 173 + 3, y_baseline + 40 + (i * y_bibletars_box_spacing));
 
        function loadCountryData() {
             img_countries = new Image();
@@ -4467,7 +4499,7 @@ function show_results() {
         ctx.shadowOffsetX = 0;
         ctx.shadowOffsetY = 0;
 
-        ctx.drawImage(img_countries_sources_game[i], 175 + 5, y_baseline + 60 + 8 + (i * y_bibletars_box_spacing), 60, 30);
+        ctx.drawImage(img_countries_sources_game[players_places_organized[i]], 175 + 5, y_baseline + 60 + 8 + (i * y_bibletars_box_spacing), 60, 30);
 
         // black shadow remove
         ctx.shadowColor = "white";
@@ -4481,7 +4513,7 @@ function show_results() {
         ctx.shadowOffsetX = 2;
         ctx.shadowOffsetY = 2;
         var wrong_x_spacing = 25;
-        for (let j = 0; j < my_game.questions_wrong[i]; j++) {
+        for (let j = 0; j < my_game.questions_wrong[players_places_organized[i]]; j++) {
             ctx.drawImage(img_wrong, 175 + (j * wrong_x_spacing), y_baseline + 40 + 2 + (i * y_bibletars_box_spacing), 20, 20);
         }
         // black shadow remove
@@ -4491,9 +4523,16 @@ function show_results() {
         ctx.shadowOffsetY = 0;
 
         
-        /**Draw everyone's bibletars on top of the box displays */
-        draw_players_bibletars(i);
     }
+    
+    
+    // console.log("Players places organized: " + players_places_organized);
+    for (let i = 0; i < my_game.online; i++) {
+        /**Draw everyone's bibletars on top of the box displays */
+        draw_players_bibletars(players_places_organized[i]);
+        // draw_players_bibletars(i);
+    }
+    
 
 
     /** Accomplishment display */
