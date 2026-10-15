@@ -2063,7 +2063,7 @@ function extra_info_and_images () {
         */
         if (hours > 11) {
             // PM
-            if (hours >= 22) {
+            if (hours >= 21) {
                 // 10 PM or after
                 day_time = false;
             } else {
@@ -2078,6 +2078,7 @@ function extra_info_and_images () {
                 day_time = true;
             }
         }
+        // console.log(hours);
     }
 
     determine_whether_dark_outside_or_not_dark();
@@ -2328,8 +2329,8 @@ function draw_grid_background () {
         gradient.addColorStop(0.5, 'rgb(45, 201, 244)');
         gradient.addColorStop(1, 'rgb(0, 255, 247)');    // End color (100%)
     } else {
-        gradient.addColorStop(0, 'rgb(41, 0, 124)');     // Start color (0%)
-        gradient.addColorStop(0.5, 'rgb(110, 0, 194)');
+        gradient.addColorStop(0, 'rgb(21, 0, 63)');     // Start color (0%)
+        gradient.addColorStop(0.5, 'rgb(71, 0, 125)');
         gradient.addColorStop(1, 'rgb(255, 0, 247)');    // End color (100%)
 
     }
