@@ -2122,9 +2122,17 @@ function draw_Background () {
     } else if (home_page == 2) {
         ctx.fillStyle = 'rgb(144, 175, 184)';
         ctx.fillRect(0, 0, canvas.width, canvas.height);
-    } else {
+    } else if (home_page == 3) {
         ctx.fillStyle = 'rgb(129, 130, 132)';
         ctx.fillRect(0, 0, canvas.width, canvas.height);
+    } else if (home_page == 4) {
+        var gradient = ctx.createLinearGradient(0, 0, 0, canvas.height);
+        gradient.addColorStop(0, 'rgb(138, 139, 139)');     // Start color (0%)
+        gradient.addColorStop(0.5, 'rgb(163, 163, 163)');
+        gradient.addColorStop(1, 'rgb(223, 226, 228)');    // End color (100%)
+        ctx.fillStyle = gradient;
+        // ctx.fillStyle = 'rgb(72, 99, 108)';
+        ctx.fillRect(0, 0, canvas.width, canvas.height)
     }
 
 }
@@ -4123,10 +4131,13 @@ function draw_players_bibletars(index_loop, unchanged_loop) {
    var shift_bibletar_y_over = 0;
    if (home_page == 4) {
     /** Because it is already being organized in show_results, I will use unchanged loop, instead
-     * of drawing it based off of the organized loop
+     * of drawing it based off of the organized loop, unchanged loop is consecutive numbers
      */
         shift_bibletar_y_over = -80 + (unchanged_loop * 110);
+        shift_bibletar_x_over += results_shift_x;
+        shift_bibletar_y_over += results_shift_y;
    } else {
+    // default
        shift_bibletar_y_over = -80 + (index_loop * 110);
    }
 
@@ -4415,19 +4426,15 @@ function results_information() {
 
 }
 
+var results_shift_x = 0;
+var results_shift_y = 0;
+
 function show_results() {
     /**Shows who won and places, questions I got wrong, as well as gives me the option to play
      * again or go back to the main page in the play section of Bible.io
      */
 
-    // background
-    var gradient = ctx.createLinearGradient(0, 0, 0, canvas.height);
-    gradient.addColorStop(0, 'rgb(138, 139, 139)');     // Start color (0%)
-    gradient.addColorStop(0.5, 'rgb(163, 163, 163)');
-    gradient.addColorStop(1, 'rgb(223, 226, 228)');    // End color (100%)
-    ctx.fillStyle = gradient;
-    // ctx.fillStyle = 'rgb(72, 99, 108)';
-    ctx.fillRect(0, 0, canvas.width, canvas.height)
+    
     
 
 
@@ -4466,19 +4473,23 @@ function show_results() {
     var y_bibletars_box_spacing = 110
     var y_baseline = 20;
 
+    results_shift_x = 60;
+    results_shift_y = 70;
+
 
     for (let i = 0; i < my_game.online; i++) {
         ctx.fillStyle = 'rgb(0,0,0)';
-        ctx.fillRect(44, y_baseline - 2 + (i * y_bibletars_box_spacing), 302, 106);
+        ctx.fillRect(44 + results_shift_x, y_baseline - 3 + (i * y_bibletars_box_spacing) + results_shift_y, 302, 106);
         // back box
         var gradient = ctx.createLinearGradient(0, 0, 0, canvas.height);
         gradient.addColorStop(0, 'rgb(157, 147, 124)');     // Start color (0%)
         gradient.addColorStop(1, 'rgb(223, 226, 228)');    // End color (100%)
         ctx.fillStyle = gradient;
-        ctx.fillRect(45, y_baseline - 2 + (i * y_bibletars_box_spacing), 300, 104);
+        ctx.fillRect(45 + results_shift_x, y_baseline - 2 + (i * y_bibletars_box_spacing) + results_shift_y, 300, 104);
 
+        // bibletar box placeholder
         ctx.fillStyle = 'rgb(66, 66, 66)';
-        ctx.fillRect(50, y_baseline + (i * y_bibletars_box_spacing), 100, 100);
+        ctx.fillRect(50 + results_shift_x, y_baseline + (i * y_bibletars_box_spacing) + results_shift_y, 100, 100);
 
         ctx.font = "20px Arial";
         ctx.fillStyle = 'rgb(8, 8, 8)';
@@ -4487,9 +4498,9 @@ function show_results() {
         var players_name = my_name;
         players_name = my_game.everyones_names[players_places_organized[i]];
 
-        ctx.fillText(players_name, 173 + 5, y_baseline + 20 + (i * y_bibletars_box_spacing));
+        ctx.fillText(players_name, 173 + 5 + results_shift_x, y_baseline + 20 + (i * y_bibletars_box_spacing) + results_shift_y);
         ctx.font = "15px Arial";
-        ctx.fillText("Points: " + Math.round(my_game.everyones_points[players_places_organized[i]]), 173 + 3, y_baseline + 40 + (i * y_bibletars_box_spacing));
+        ctx.fillText("Points: " + Math.round(my_game.everyones_points[players_places_organized[i]]), 173 + 3 + results_shift_x, y_baseline + 40 + (i * y_bibletars_box_spacing) + results_shift_y);
 
        function loadCountryData() {
             img_countries = new Image();
@@ -4507,7 +4518,7 @@ function show_results() {
         ctx.shadowOffsetX = 0;
         ctx.shadowOffsetY = 0;
 
-        ctx.drawImage(img_countries_sources_game[players_places_organized[i]], 175 + 5, y_baseline + 60 + 8 + (i * y_bibletars_box_spacing), 60, 30);
+        ctx.drawImage(img_countries_sources_game[players_places_organized[i]], 175 + 5 + results_shift_x, y_baseline + 60 + 8 + (i * y_bibletars_box_spacing) + results_shift_y, 60, 30);
 
         // black shadow remove
         ctx.shadowColor = "white";
@@ -4522,7 +4533,7 @@ function show_results() {
         ctx.shadowOffsetY = 2;
         var wrong_x_spacing = 25;
         for (let j = 0; j < my_game.questions_wrong[players_places_organized[i]]; j++) {
-            ctx.drawImage(img_wrong, 175 + (j * wrong_x_spacing), y_baseline + 40 + 2 + (i * y_bibletars_box_spacing), 20, 20);
+            ctx.drawImage(img_wrong, 175 + (j * wrong_x_spacing) + results_shift_x, y_baseline + 40 + 2 + (i * y_bibletars_box_spacing) + results_shift_y, 20, 20);
         }
         // black shadow remove
         ctx.shadowColor = "white";
@@ -4531,15 +4542,12 @@ function show_results() {
         ctx.shadowOffsetY = 0;
 
         
-    }
-    
-    
-    // console.log("Players places organized: " + players_places_organized);
-    for (let i = 0; i < my_game.online; i++) {
+        
         /**Draw everyone's bibletars on top of the box displays */
         draw_players_bibletars(players_places_organized[i], i);
-        // draw_players_bibletars(i);
     }
+    
+    
     
 
 
