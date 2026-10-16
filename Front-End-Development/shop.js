@@ -2065,6 +2065,14 @@ function bibletarShopPage () {
     ctx.fillRect(200, 50, 1150, 40);
 
 
+    
+    // black shadow add
+    ctx.shadowColor = 'rgb(8, 8, 8)';
+    ctx.shadowBlur = 3;
+    ctx.shadowOffsetX = 1;
+    ctx.shadowOffsetY = 1;
+
+
     ctx.font = "25px Arial";
     ctx.strokeStyle = 'rgb(255, 255, 255)';
     if (i_am_a_boy == true) {
@@ -2082,6 +2090,13 @@ function bibletarShopPage () {
             ctx.fillText("Girls' Bibletar SHOP", 210, 77);
         }
     }
+
+
+    // black shadow remove
+    ctx.shadowColor = "white";
+    ctx.shadowBlur = 0;
+    ctx.shadowOffsetX = 0;
+    ctx.shadowOffsetY = 0;
 
     if(i_am_a_boy == true) {
         shop_page_background_mens_or_womens.src = "./images/shop_page_background_mens.svg"
@@ -2177,6 +2192,12 @@ function bibletarMakerHome() {
 
 
 
+    // black shadow add
+    ctx.shadowColor = 'rgb(8, 8, 8)';
+    ctx.shadowBlur = 3;
+    ctx.shadowOffsetX = 1;
+    ctx.shadowOffsetY = 1;
+
     ctx.font = "25px Arial";
     ctx.strokeStyle = 'rgb(255, 255, 255)';
     if (i_am_a_boy == true) {
@@ -2194,6 +2215,13 @@ function bibletarMakerHome() {
             ctx.fillText("Girls' Bibletar Maker - My Closet", 210, 77);
         }
     }
+
+    // black shadow remove
+    ctx.shadowColor = "white";
+    ctx.shadowBlur = 0;
+    ctx.shadowOffsetX = 0;
+    ctx.shadowOffsetY = 0;
+
 
     // Choose whether to display boys' hair logo or girls' hair logo
     if (i_am_a_boy == true) {
