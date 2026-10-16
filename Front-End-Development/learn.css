@@ -652,7 +652,32 @@ table takes up the full width of it's parent the scrollable table */
 }
 
 
+/* Reading Tools */
+.reading-tools {
+    z-index: 1;
+    position: fixed;
+    top: 90px;
+    left: 20px;
+    padding: 5px 20px;
+    /* background-color: rgba(0, 0, 1, 0.1); */
+}
 
+.reading-tools button {
+    border-radius: 20px;
+    font-size: 30px;
+    transition: 0.3s;
+    background-color: #023a7f;
+    color:white;
+    font-weight: bold;
+    padding: 3px;
+    text-shadow: #000000 1px 1px 1px;
+}
+
+.reading-tools button:hover {
+    cursor: pointer;
+    filter: brightness(150%);
+    padding: 7px;
+}
 
 
 

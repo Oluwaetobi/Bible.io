@@ -132,9 +132,9 @@ function displayMouseX_and_MouseY () {
     if (i_am_a_developer == true) {
         ctx.font = "30px Arial";
         ctx.strokeStyle = 'rgb(190, 36, 36)';
-        ctx.strokeText("MouseX: " + mouseX + " MouseY: " + mouseY, 10, 30);
+        ctx.strokeText("MouseX: " + mouseX + " MouseY: " + mouseY, canvas.width - 600, 30);
         ctx.fillStyle = 'rgb(190, 36, 36)';
-        ctx.fillText("MouseX: " + mouseX + " MouseY: " + mouseY, 10, 30);
+        ctx.fillText("MouseX: " + mouseX + " MouseY: " + mouseY, canvas.width - 600, 30);
     }
 
 }
@@ -246,11 +246,13 @@ function show_table_or_hide_table() {
         document.getElementById('learning-materials-box').style.display = "flex";
         document.getElementById('books_reading_mode').style.display = "none";
         document.getElementById('advertisements').style.display = "flex";
+        document.getElementById('reading-tools').style.display = "none";
     }
     if (learn_page == 2) {
         document.getElementById('learning-materials-box').style.display = "none";
         document.getElementById('books_reading_mode').style.display = "block";
         document.getElementById('advertisements').style.display = "none";
+        document.getElementById('reading-tools').style.display = "block";
     }
 }
 
@@ -306,6 +308,30 @@ function loadingBox() {
         box_x_pos = -100;
     }
 
+}
+
+var default_text_size = 20;
+var default_text_size_in_string = (default_text_size + "px");
+
+default_size_reading_text();
+function default_size_reading_text () {
+    document.getElementById('text-to-read').style.fontSize = default_text_size_in_string;
+}
+
+function make_text_smaller() {
+    if (default_text_size > 6) {
+        default_text_size += -5;
+    } else {
+        default_text_size -= 0.1;
+    }
+    default_text_size_in_string = (default_text_size + "px");
+    document.getElementById('text-to-read').style.fontSize = default_text_size_in_string;
+}
+
+function make_text_bigger() {
+    default_text_size += 5;
+    default_text_size_in_string = (default_text_size + "px");
+    document.getElementById('text-to-read').style.fontSize = default_text_size_in_string;
 }
 
 function drawGameAssets () {
