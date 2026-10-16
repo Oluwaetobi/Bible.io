@@ -1813,11 +1813,15 @@ function Christian_Articles_DataBase () {
 }
 
 const lawless_one_is_comin_stories = JSON.parse(sessionStorage.getItem('stories_lawless_one_is_comin'));
+const pilgrims_progress_stories = JSON.parse(sessionStorage.getItem('stories_pilgrims_progress'));
 
 function Christian_Novels_Database () {
     // Novels and Short Short Stories Database
     if (book_clicked == 1) {
         text_to_read.innerText = lawless_one_is_comin_stories;
+    }
+    if (book_clicked == 2) {
+        text_to_read.innerText = pilgrims_progress_stories;
     }
 }
 

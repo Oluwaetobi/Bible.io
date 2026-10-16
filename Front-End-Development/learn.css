@@ -499,7 +499,7 @@ table takes up the full width of it's parent the scrollable table */
 
 /* Sections for NOVELS */
 .scrollable-table-novels {
-    min-height: 150px;
+    min-height: 200px;
     width: 700px;
     /* aspect-ratio: 1 / 1;   */
     /* overflow-y makes only the y coordinates scrollable */
@@ -527,6 +527,8 @@ table takes up the full width of it's parent the scrollable table */
     font-size: large;
     padding-top: 10px;
     padding-bottom: 10px;
+    text-align: center;
+    justify-content: center;
 }
 
 /* Scrollable table class takes precedence over table class
