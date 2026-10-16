@@ -120,14 +120,14 @@ var acquired_stuff_closet = [
      * can't wait till I get to use splice and slice on my arrays
      */
     [1, 2, 3],
-    [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17],
+    [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16],
     [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14],
     [1, 2, 3],
     [1, 2, 3],
-    [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32],
+    [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30],
     [1, 2, 3, 4, 5, 6, 7],
-    [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13],
-    [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13],
+    [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+    [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
     [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104],
 ];
 
@@ -625,11 +625,19 @@ function updateClosetSection (closet_section_html) {
         j+=1;
     }
 
+    // console.log(acquired_stuff_closet[closet_section_html - 1].length);
     images.forEach((img, index)=> {
         if(newSources[index]) {
             img.src = newSources[index];
             img.alt = newSources[index];
             // console.log("newSources[index]: " +  newSources[index]);
+
+            // hides no image display, when there is no image that is supposed to be displayed
+            if ((index + 1) > (acquired_stuff_closet[closet_section_html - 1].length)) {
+                img.style.display = "none";
+            } else {
+                img.style.display = "block";
+            }
         }
     });
 }
@@ -675,6 +683,7 @@ function updateShopSection (shop_section_html) {
     // CHANGES IMAGES DISPLAY IN SHOP SECTION WHEN DIFFERENT SECTION IS CHOSEN
     const images = document.querySelectorAll('#choose_shop_stuff img');
     const costs_display = document.querySelectorAll('#costs_of_items td');
+    const putting_on_items = document.querySelectorAll('#buy_and_try_items button');
 
     var newSources = [];
     /*NO 's' after men!!!! Also it is just background, eyes, noses, and mouths that don't differ that
@@ -729,6 +738,13 @@ function updateShopSection (shop_section_html) {
             img.src = newSources[index];
             img.alt = newSources[index];
             // console.log("newSources[index]: " +  newSources[index]);
+
+            // hides no image display, when there is no image that is supposed to be displayed
+            if ((index + 1) > (not_acquired_stuff_shop[shop_section_html - 1].length)) {
+                img.style.display = "none";
+            } else {
+                img.style.display = "block";
+            }
         }
     });
 
@@ -742,6 +758,23 @@ function updateShopSection (shop_section_html) {
              * more it costs
              */
             td.textContent = "Cost: $" + ((cost_of_item_html * not_acquired_stuff_shop[shop_section - 1][(Math.ceil((index/2) - 1))]));
+            
+
+            // hides no cost display, when there is no cost that is supposed to be displayed
+            if ((index + 1) > ((not_acquired_stuff_shop[shop_section_html - 1].length) * 2)) {
+                td.style.display = "none";
+            } else {
+                td.style.display = "block";
+            }
+        }
+    })
+
+    putting_on_items.forEach((img, index)=> {
+        // hides no button display, when there is no button that is supposed to be displayed
+        if ((index + 1) > ((not_acquired_stuff_shop[shop_section_html - 1].length) * 2)) {
+            img.style.display = "none";
+        } else {
+            img.style.display = "block";
         }
     })
 }
