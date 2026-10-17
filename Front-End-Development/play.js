@@ -4764,8 +4764,8 @@ function choose_Random_Question () {
     // Return a random integer between 1 and 10 (both included): Math.floor(Math.random() * 10) + 1;
 
     var amount_of_question_in_level_1 = 38;
-    var amount_of_question_in_level_2 = 48;
-    var amount_of_question_in_level_3 = 31;
+    var amount_of_question_in_level_2 = 50;
+    var amount_of_question_in_level_3 = 32;
 
 
     if (level == 1) {
@@ -5470,7 +5470,23 @@ function level_2_Questions () {
         answer3.innerText += `Most of them died  `;
         answer4.innerText += `Everyone died `;
         correct_answer = 3;
-    }    
+    }
+    if (randomQuestion == 49) {
+        question.innerText = `What was the name of Gideon's servant?  `;
+        answer1.innerText += `Phurah `;
+        answer2.innerText += `Ozni `;
+        answer3.innerText += `Neriah  `;
+        answer4.innerText += `Abdiel `;
+        correct_answer = 1;
+    }
+    if (randomQuestion == 50) {
+        question.innerText = `What was Gideon's other name?  `;
+        answer1.innerText += `Adonikam `;
+        answer2.innerText += `Jerubbaal `;
+        answer3.innerText += `Gemariah  `;
+        answer4.innerText += `Elzaphan `;
+        correct_answer = 2;
+    }
 }
 
 function level_3_Questions () {
@@ -5724,6 +5740,14 @@ function level_3_Questions () {
         answer3.innerText += `Psalms 148:38 `;
         answer4.innerText += `Psalms 42:5 `;
         correct_answer = 1;
+    }
+    if (randomQuestion == 32) {
+        question.innerText = `Study to shew thyself approved unto God, a workman that needeth not to be ashamed, rightly dividing the word of truth `;
+        answer1.innerText += `Romans 12:18 `;
+        answer2.innerText += `2 Corinthians 9:12 `;
+        answer3.innerText += `1 Timothy 6:8 `;
+        answer4.innerText += `2 Timothy 2:15 `;
+        correct_answer = 4;
     }
     
 }
