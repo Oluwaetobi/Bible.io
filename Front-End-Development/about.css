@@ -199,6 +199,10 @@ header {
     border-radius: 20px 20px;
 }
 
+.environmental-applications #side-left img:hover {
+    filter: contrast(150%);
+}
+
 .environmental-applications #side-right{
     background-color: rgba(225, 225, 225, 0.8);
     box-shadow: inset 0px 0px 25px rgba(255, 255, 255, 0.9);
