@@ -4301,9 +4301,9 @@ function broadcast_game_is_over (time_alloted_for_each_game) {
 
 
     ctx.font = "80px Arial";
-    ctx.strokeStyle = 'rgb(255, 0, 0)';
+    ctx.strokeStyle = 'rgb(255, 255, 255)';
     // ctx.strokeText(end_game_message, 100, egm_pos_y);
-    ctx.fillStyle = 'rgb(255, 0, 0)';
+    ctx.fillStyle = 'rgb(255, 255, 255)';
     ctx.fillText(end_game_message, 100, egm_pos_y);
 
     ctx.font = "30px Arial";
