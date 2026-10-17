@@ -4571,15 +4571,15 @@ function show_results() {
         
         // text
         ctx.font = "50px Arial";
-        if (i == 1) {
+        if (i == 0) {
             // 1st place
             ctx.fillStyle = 'rgb(9, 124, 5)';
             ctx.strokeStyle = 'rgb(9, 124, 5)';
-        } else if (i == 2) {
+        } else if (i == 1) {
             // 2nd place
             ctx.fillStyle = 'rgb(229, 255, 0)';
             ctx.strokeStyle = 'rgb(229, 255, 0)';
-        } else if (i == 3) {
+        } else if (i == 2) {
             // 3rd place
             ctx.fillStyle = 'rgb(255, 145, 0)';
             ctx.strokeStyle = 'rgb(255, 145, 0)';
