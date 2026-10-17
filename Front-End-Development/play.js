@@ -5487,6 +5487,14 @@ function level_2_Questions () {
         answer4.innerText += `Elzaphan `;
         correct_answer = 2;
     }
+    if (randomQuestion == 51) {
+        question.innerText = `What was the name of the first river in Genesis chapter 2?  `;
+        answer1.innerText += `Euphrates `;
+        answer2.innerText += `Hiddekel `;
+        answer3.innerText += `Pishon  `;
+        answer4.innerText += `Gihon `;
+        correct_answer = 3;
+    }
 }
 
 function level_3_Questions () {
