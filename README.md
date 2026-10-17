@@ -1,4 +1,5 @@
 <h1>Bible.io</h1>
+<p>It's Educational Christian Software that Empowers the Next Generation</p>
 <h2>It's online, it's massive, it's global, it's fun, it's Bible.io</h2>
 
 <img width="696" height="531" alt="1  Bible io New Thumbnanil 9" src="https://github.com/user-attachments/assets/9bf03cab-3425-4969-915e-e7d1d6462c39" />
