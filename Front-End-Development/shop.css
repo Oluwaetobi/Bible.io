@@ -492,6 +492,10 @@ table takes up the full width of it's parent the scrollable table */
     border: 1px solid black;  */
 }
 
+.table-background td img {
+    filter: drop-shadow(0px 0px 2px rgba(0, 1, 0, 0.9));
+}
+
 .table-background td:hover {
     filter: brightness(150%);
     cursor:pointer;
@@ -631,6 +635,10 @@ table takes up the full width of it's parent the scrollable table */
     /* font-size: 15px;
     border: 1px solid black;  */
     font-size:large;
+}
+
+.table-shop td img {
+    filter: drop-shadow(0px 0px 2px rgba(0, 1, 0, 0.9));
 }
 
 .table-shop tr {
