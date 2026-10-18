@@ -572,6 +572,7 @@ function updateClosetSection (closet_section_html) {
 
     // CHANGES IMAGES DISPLAY IN CLOSET SECTION WHEN DIFFERENT SECTION IS CHOSEN
     const images = document.querySelectorAll('#choose_bibletar_stuff img');
+    const td_containers = document.querySelectorAll('#choose_bibletar_stuff td');
 
     var newSources = [];
     /*NO 's' after men!!!! Also it is just background, eyes, noses, and mouths that don't differ that
@@ -628,15 +629,24 @@ function updateClosetSection (closet_section_html) {
     // console.log(acquired_stuff_closet[closet_section_html - 1].length);
     images.forEach((img, index)=> {
         if(newSources[index]) {
+            // sets the images to the right sources
             img.src = newSources[index];
             img.alt = newSources[index];
             // console.log("newSources[index]: " +  newSources[index]);
-
-            // hides no image display, when there is no image that is supposed to be displayed
-            if ((index + 1) > (acquired_stuff_closet[closet_section_html - 1].length)) {
-                img.style.display = "none";
+        }
+    });
+    // getting rid of the actual td cell holder as well
+    var tr_length = 4;
+    td_containers.forEach((td, index)=> {
+        if(newSources[index]) {
+            /* hides no image display, when there is no image that is supposed to be displayed, 
+            targets td the outer cell instead of the inner img, more accurate, saves more real time background space
+            then just targetting the img cell */
+            if ((index + 1) > Math.ceil((acquired_stuff_closet[closet_section_html - 1].length))) {
+                td.style.display = "none";
             } else {
-                img.style.display = "block";
+                /** A td cell's default style display is "table-cell" NOT block */
+                td.style.display = "table-cell";
             }
         }
     });
@@ -681,9 +691,10 @@ function updateShopSection (shop_section_html) {
 
 
     // CHANGES IMAGES DISPLAY IN SHOP SECTION WHEN DIFFERENT SECTION IS CHOSEN
-    const images = document.querySelectorAll('#choose_shop_stuff img');
+    const td_images_sources = document.querySelectorAll('#choose_shop_stuff img');
+    const td_images_and_cost = document.querySelectorAll('#choose_shop_stuff td');
     const costs_display = document.querySelectorAll('#costs_of_items td');
-    const putting_on_items = document.querySelectorAll('#buy_and_try_items button');
+    const putting_on_items = document.querySelectorAll('#buy_and_try_items td');
 
     var newSources = [];
     /*NO 's' after men!!!! Also it is just background, eyes, noses, and mouths that don't differ that
@@ -733,17 +744,25 @@ function updateShopSection (shop_section_html) {
         j+=1;
     }
 
-    images.forEach((img, index)=> {
+    td_images_sources.forEach((img, index)=> {
         if(newSources[index]) {
             img.src = newSources[index];
             img.alt = newSources[index];
-            // console.log("newSources[index]: " +  newSources[index]);
+        }
+    });
 
-            // hides no image display, when there is no image that is supposed to be displayed
-            if ((index + 1) > (not_acquired_stuff_shop[shop_section_html - 1].length)) {
-                img.style.display = "none";
+
+    /** The trick to getting rid of all of the space 100% is by targeting the outer cell which is td
+     * instead of just the inner cells known as img
+     */
+    td_images_and_cost.forEach((td, index)=> {
+        if(newSources[index]) {
+            // hides no image and cost display, when there is no image or cost that is supposed to be displayed
+            if ((index + 1) > (not_acquired_stuff_shop[shop_section_html - 1].length) *2) {
+                td.style.display = "none";
             } else {
-                img.style.display = "block";
+                /** A td cell's default style display is "table-cell" */
+                td.style.display = "table-cell";
             }
         }
     });
@@ -758,23 +777,16 @@ function updateShopSection (shop_section_html) {
              * more it costs
              */
             td.textContent = "Cost: $" + ((cost_of_item_html * not_acquired_stuff_shop[shop_section - 1][(Math.ceil((index/2) - 1))]));
-            
-
-            // hides no cost display, when there is no cost that is supposed to be displayed
-            if ((index + 1) > ((not_acquired_stuff_shop[shop_section_html - 1].length) * 2)) {
-                td.style.display = "none";
-            } else {
-                td.style.display = "block";
-            }
         }
     })
 
-    putting_on_items.forEach((img, index)=> {
-        // hides no button display, when there is no button that is supposed to be displayed
+    putting_on_items.forEach((td, index)=> {
+        // hides no button display, when there is no button that is supposed to be displayed, namely "try" and "buy"
         if ((index + 1) > ((not_acquired_stuff_shop[shop_section_html - 1].length) * 2)) {
-            img.style.display = "none";
+            td.style.display = "none";
         } else {
-            img.style.display = "block";
+            /** A td cell's default style display is "table-cell" */
+            td.style.display = "table-cell";
         }
     })
 }
