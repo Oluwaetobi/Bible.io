@@ -31,16 +31,17 @@ window.addEventListener("load", () => {
 
 const username_input = document.getElementById('username-input');
 const error_message = document.getElementById('error-message');
-
+const form = document.getElementById('form');
 
 form.addEventListener('submit', (e) => {
-
+    
     let errors = [];
     errors = getCreateNameFormErrors(username_input.value)
+    console.log("errors length: " + errors.length)
     
     if (errors.length > 0) {
         // If there are any errors, prevent the form from being submitted
-        e.preventDefault()
+        e.preventDefault();
         error_message.innerText = errors.join(". ")
     }
     
@@ -49,12 +50,10 @@ form.addEventListener('submit', (e) => {
 function getCreateNameFormErrors (username) {
     let errors = []
     if(username === '' || username == null) {
-        errors.push('Username is required!')
-        username_input.parentElement.classList.add(`You didn't enter anything`);
+        errors.push('Username is required!');
     }
     if(username.length < 2) {
-        errors.push('Your name is too short!')
-        username_input.parentElement.classList.add(`Your name is too short`);
+        errors.push('Your name is too short!');
     }
     return errors;
 }

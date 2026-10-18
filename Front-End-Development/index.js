@@ -49,6 +49,8 @@ form.addEventListener('submit', (e) => {
 function getSignupFormErrors(email, username, password, repeatPassword) {
     let errors = []
 
+    errors.push('STOP trying to sign up, this Website is still under HEAVY CONSTRUCTION!');
+
     if(email === '' || email == null) {
         errors.push('Email name is required!')
         email_input.parentElement.classList.add('incorrect');
@@ -83,6 +85,9 @@ function getSignupFormErrors(email, username, password, repeatPassword) {
 
 function getLoginFormErrors (username, password) {
     let errors = []
+
+    errors.push('STOP trying to sign up, this Website is still under HEAVY CONSTRUCTION!');
+    
     if(username === '' || username == null) {
         errors.push('Username is required!')
         username_input.parentElement.classList.add('incorrect');

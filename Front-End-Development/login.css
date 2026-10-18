@@ -155,7 +155,8 @@ header {
     background-color: rgba(252, 251, 251, 0.9);
 
     /* Pushes stuff at the bottom of the wrapper dive 40 pixels down */
-    margin-bottom: 40px;
+    margin-top: 95px;
+    margin-bottom: 95px;
     box-shadow: inset 0px 0px 10px black;
 
 }
@@ -327,6 +328,33 @@ to the parent assuming the parent is position relative */
         transform: translateX(-100%);
     }
 }
+
+
+.footer-page {
+    background-color: rgba(11, 11, 11, 1);
+    position: static;
+    width: 100%;
+}
+.footer-text {
+    text-align: center;
+    white-space: pre-wrap;
+    color:#fefefe;
+    margin: 0;
+    /* width: min(100%, 80rem); */
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 10px 10px;
+}
+
+.footer-text h1 {
+    text-align: center;
+}
+
+.footer-text p {
+    font-size: 20px;
+}
+
+
 
 /* I hate default scroll bars, they look ugly and are to skinny, so I made my own custom scroll bars */
 ::-webkit-scrollbar {
