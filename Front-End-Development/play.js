@@ -5076,7 +5076,7 @@ function level_1_Questions () {
         correct_answer = 4;
     }
     if (randomQuestion == 38) {
-        question.innerText = `How many animals died Noah's flood?  `;
+        question.innerText = `How many animals died in Noah's flood?  `;
         answer1.innerText += `No animals died `;
         answer2.innerText += `Some of the animals died`;
         answer3.innerText += `Most of the animals died  `;
