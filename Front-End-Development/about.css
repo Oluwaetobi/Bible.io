@@ -151,6 +151,7 @@ header {
     /* Helps text flow around the image */
     margin-left: 10px;
     float: right;
+    border-radius: 30px;
 }
 
 .head-down img:hover {
@@ -228,14 +229,19 @@ header {
 
 .bibletar-meme {
     /* Syntax: offset-x | offset-y | blur-radius | spread-radius | color | transparency */
-    box-shadow: 0px 0px 3px 20px rgba(0, 0, 0, 0.4);
     box-sizing: border-box;
-    border-radius: 5px 5px;
+    /* border-radius: 15px; */
+}
+
+.bibletar-meme img {
+    border-radius: 15px;
+    box-shadow: 0px 0px 0px 5px rgba(0, 0, 0, 0.4);
 }
 
 .bibletar-meme img:hover {
-    filter: brightness(120%);
-    padding: 10px 10px;
+    filter: brightness(125%);
+    /* filter: contrast(150%); */
+    /* padding: 10px 10px; */
 }
 
 .bibletar-short-story {
