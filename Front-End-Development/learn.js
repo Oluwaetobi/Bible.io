@@ -1448,8 +1448,29 @@ function all_Text_Database () {
             // christian poems
             Christian_Poems_Database();
         }
+
+
+        // text is missing, alert and message from Bible.io
+        missing_text_alert();
+
+        // prevents text from be readded and erased, this helps allows for copying and pasting of text
         stop_re_adding_text(1);
     } 
+}
+
+function missing_text_alert() {
+    // default
+    if (text_to_read.innerText.trim() === "" || text_to_read.innerText.length < 5) {
+        // there's no text in it
+        text_to_read.innerText = `
+        If you are seeing this message, it means we are missing a book from the Bible or some other piece of writing or literature, and it was incorrectly inputted on the storage of our site.
+        This could be due to a corrupted website link, human error, or some other form of evitable or inevitable incidence
+
+        Please report this to Bible.io, including the name of the book, novel, story, or piece of literature that is missing, thank you!
+        
+        
+        - A Message from the Bible.io Team | Bible.io Corporation `
+    }
 }
 
 // 66 books from the Bible
@@ -1530,13 +1551,6 @@ function Bible_DataBase () {
      * of God. So I've taken laws in my own hands and we're storing the Bible, the entire thing, here,
      * in our code.
      */
-    
-    
-    // default
-    text_to_read.innerText = `
-    If you are seeing this message, it means we are missing a book of the bible, and it was incorrectly inputted on the storage of our site, please report this to Bible.io including the name of the book that is missing, thank you!
-    
-    - A Message from the Bible.io Team | Bible.io Corporation `
 
 
     if (book_clicked == 1) {
