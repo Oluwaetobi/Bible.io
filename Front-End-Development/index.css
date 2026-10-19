@@ -138,16 +138,6 @@ header {
     background-color: rgba(252, 251, 251, 0.9);
 }
 
-#under-construction {
-    color:#9d0505;
-    font-weight: bold;
-}
-
-#legacy-version {
-    font-size: medium;
-        /* right or left, down or up, blur radius, color, you can also add more than one shadow */
-    text-shadow: 2px 2px 20px rgb(243, 232, 18);
-}
 
 .quickfo-info{
     /*z-index moves forwards or backward however many layers you want depending on whether the number is
