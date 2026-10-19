@@ -161,17 +161,6 @@ header {
 
 }
 
-.wrapper #under-construction {
-    color:#9d0505;
-    font-weight: bold;
-    text-align: center;
-}
-
-.wrapper #legacy-version {
-    text-align: center;
-    /* right or left, down or up, blur radius, color */
-    text-shadow: 2px 2px 20px rgb(243, 232, 18);
-}
 
 .wrapper h1{
     font-size: 3rem;
