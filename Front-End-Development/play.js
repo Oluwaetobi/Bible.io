@@ -4764,7 +4764,7 @@ function choose_Random_Question () {
     // Return a random integer between 1 and 10 (both included): Math.floor(Math.random() * 10) + 1;
 
     var amount_of_question_in_level_1 = 38;
-    var amount_of_question_in_level_2 = 50;
+    var amount_of_question_in_level_2 = 52;
     var amount_of_question_in_level_3 = 32;
 
 
@@ -5494,6 +5494,14 @@ function level_2_Questions () {
         answer3.innerText += `Pishon  `;
         answer4.innerText += `Gihon `;
         correct_answer = 3;
+    }
+    if (randomQuestion == 52) {
+        question.innerText = `In Genesis chapter 2, in which land did the Bible say the gold was good?  `;
+        answer1.innerText += `Ethiopia `;
+        answer2.innerText += `Assyria `;
+        answer3.innerText += `Eden  `;
+        answer4.innerText += `Havilah `;
+        correct_answer = 4;
     }
 }
 
