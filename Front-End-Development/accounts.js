@@ -51,12 +51,28 @@ function getCreateNameFormErrors (username) {
     let errors = []
     if(username === '' || username == null) {
         errors.push('Username is required!');
+        username_input.parentElement.classList.add('incorrect');
     }
     if(username.length < 2) {
         errors.push('Your name is too short!');
+        username_input.parentElement.classList.add('incorrect');
     }
     return errors;
 }
+
+/** removes classList which is called incorrect, this helps with it displaying 
+ * the label as red when there's an error */
+// only filters it out if there's more than one thing to filter
+const allInputs = [username_input].filter(input => input!= null);
+
+allInputs.forEach (input => {
+    input.addEventListener('input', () => {
+        if(input.parentElement.classList.contains('incorrect')) {
+            input.parentElement.classList.remove('incorrect')
+            error_message.innerText = ''
+        }
+    })
+})
 
 var i_am_a_boy = true;
 var i_am_a_girl = false;
