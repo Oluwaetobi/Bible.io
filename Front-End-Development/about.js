@@ -35,11 +35,17 @@ function write_in_bibletar_short_story() {
 }
 
 function missing_text_alert() {
+    /** NOTE:
+     * don't try to save this message in session storage or else the purpose of it will be defeated because
+     * storing it there can cost it to be lost in case of giving someone a corrupted link that doesn't
+     * properly save all text upon the loading of the website */
+
+    
     // default
     if (bibletar_story_text.innerText.trim() === "" || bibletar_story_text.innerText.length < 5) {
         // there's no text in it
         bibletar_story_text.innerText = `
-        If you are seeing this message, it means we are missing a book from the Bible or some other piece of writing or literature, and it was incorrectly inputted on the storage of our site.
+        If you are seeing this message, it means we are missing a book from the Bible or some other piece of writing or literature, and it was incorrectly inputted onto the storage of our site.
         This could be due to a corrupted website link, human error, or some other form of evitable or inevitable incidence
         
         Please report this to Bible.io, including the name of the book, novel, story, or piece of literature that is missing, thank you!
