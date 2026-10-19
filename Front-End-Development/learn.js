@@ -1468,8 +1468,11 @@ function missing_text_alert() {
 
         Please report this to Bible.io, including the name of the book, novel, story, or piece of literature that is missing, thank you!
         
-        
+
         - A Message from the Bible.io Team | Bible.io Corporation `
+        
+        text_to_read.style.color = 'rgb(181, 0, 0)';
+        text_to_read.style.fontWeight = "bold";
     }
 }
 

@@ -25,5 +25,31 @@ document.getElementById('bibleio-info-year').innerText = info_year_write;
 
 // write short story into bibletar short story box
 const bibletar_wordiness_a_word_or_not_stories = JSON.parse(sessionStorage.getItem('stories_bibletar_wordiness_a_word_or_not'));
+const bibletar_story_text = document.getElementById('bibletar-short-story');
 
-document.getElementById('bibletar-short-story').innerText = bibletar_wordiness_a_word_or_not_stories;
+
+function write_in_bibletar_short_story() {
+    bibletar_story_text.innerText = bibletar_wordiness_a_word_or_not_stories;
+    missing_text_alert();
+    
+}
+
+function missing_text_alert() {
+    // default
+    if (bibletar_story_text.innerText.trim() === "" || bibletar_story_text.innerText.length < 5) {
+        // there's no text in it
+        bibletar_story_text.innerText = `
+        If you are seeing this message, it means we are missing a book from the Bible or some other piece of writing or literature, and it was incorrectly inputted on the storage of our site.
+        This could be due to a corrupted website link, human error, or some other form of evitable or inevitable incidence
+        
+        Please report this to Bible.io, including the name of the book, novel, story, or piece of literature that is missing, thank you!
+        
+        
+        - A Message from the Bible.io Team | Bible.io Corporation `
+        
+        bibletar_story_text.style.color = 'rgb(181, 0, 0)';
+        bibletar_story_text.style.fontWeight = "bold";
+    }
+}
+
+write_in_bibletar_short_story();
