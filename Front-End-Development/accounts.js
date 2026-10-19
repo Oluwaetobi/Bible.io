@@ -43,6 +43,8 @@ form.addEventListener('submit', (e) => {
         // If there are any errors, prevent the form from being submitted
         e.preventDefault();
         error_message.innerText = errors.join(". ")
+    } else {
+        saveName();
     }
     
 })
