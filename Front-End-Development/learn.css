@@ -258,12 +258,14 @@ a:hover {
 .title-bible {
     font-size: 30px;
     /* border: 2px solid black; */
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgb(1, 1, 1, 0.6);
     box-shadow: inset 0px 0px 3px rgba(0, 0, 0, 1);
     padding: 5px 0px 0px 0px;
     font-weight: bold;
     /* text-decoration: underline; */
+    text-shadow: black 1px 1px 1px;
     margin: 10px;
+    color: white;
 }
 
 .scrollable-table-bible {
@@ -283,8 +285,10 @@ a:hover {
     background-color: #fbfbfb;
     display: grid;
     grid-template-columns: 30% 70%;
-    border: 6px solid black;
-    border-radius: 20px 20px;
+    border: 2px solid black;
+    /* border-radius: 20px 20px; */
+    color: black;
+    text-shadow: none;
 }
 
 /* Scrollable table class takes precedence over table class
@@ -343,10 +347,12 @@ table takes up the full width of it's parent the scrollable table */
 .title-christians {
     font-size: 30px;
     /* border: 2px solid black; */
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.6);
     box-shadow: inset 0px 0px 3px rgba(0, 0, 0, 1);
     padding: 5px 0px 0px 0px;
     font-weight: bold;
+    color: white;
+    text-shadow: 1px 1px 1px black;
     /* text-decoration: underline; */
     margin: 10px;
 }
@@ -368,8 +374,11 @@ table takes up the full width of it's parent the scrollable table */
     background-color: #fbfbfb;
     display: grid;
     grid-template-columns: 30% 70%;
-    border: 6px solid black;
-    border-radius: 20px 20px;
+    border: 2px solid black;
+    font-weight: normal;
+    text-shadow: none;
+    color: black;
+    /* border-radius: 20px 20px; */
 }
 
 /* Scrollable table class takes precedence over table class
