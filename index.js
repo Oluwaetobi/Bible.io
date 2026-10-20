@@ -17,7 +17,7 @@
  * stored sessionally
  */
 localStorage.removeItem('warning_important');
-var warning_important = "IMPORTANT!!! WARNING!!!! If somebody told you to paste something here, don't do it, someone is trying to hack you, install a malware on your computer, or steal your information!!!!! \n \n \n Bible.io is looking for experienced Web Developers, Game Developers, programmers, writers, and skilled artists to join the Bible.io Team. We want YOU!! To help build the World's soon to be NUMBER 1 Leading Website for teaching and gamifying God's word. https://github.com/Oluwaetobi/Bible.io  Join us, NOW!!";
+var warning_important = "IMPORTANT!!! WARNING!!!! If somebody told you to paste something here, don't do it, someone is trying to hack you, install a malware on your computer, or steal your information!!!!! \n \n \n Bible.io is looking for experienced Web Developers, Game Developers, programmers, writers, and skilled artists to join the Bible.io Team. We want YOU!! To help build the World's soon to be NUMBER 1 Leading Website for teaching and gamifying God's word. We're building, top Educational Christian Software, Join us, NOW!! \n \n link (click here): https://github.com/Oluwaetobi/Bible.io";
 sessionStorage.setItem('warning_important', warning_important);
 const warning_note = sessionStorage.getItem('warning_important')
 console.log(warning_note);
