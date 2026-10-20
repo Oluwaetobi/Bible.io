@@ -393,7 +393,21 @@ function drawGameAssets () {
             ctx.drawImage(what_to_draw, x_pos_ribp, y_pos_ribp, pixel_size_width, pixel_size_height);
         }
     }
+
+    // black shadow add
+    ctx.shadowColor = "black";
+    ctx.shadowBlur = 3;
+    ctx.shadowOffsetX = 1;
+    ctx.shadowOffsetY = 1;
+
     resizeGameAssets(img_sunday_school_teacher, 950, 150, 200, 350, 1);
+    
+    // black shadow remove
+    ctx.shadowColor = "white";
+    ctx.shadowBlur = 0;
+    ctx.shadowOffsetX = 0;
+    ctx.shadowOffsetY = 0;
+    ctx.font = "25px Arial";
 }
 
 var new_second = 0;
