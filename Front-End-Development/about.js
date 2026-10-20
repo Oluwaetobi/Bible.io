@@ -1,5 +1,25 @@
-const warning_note = localStorage.getItem('warning_important')
-console.log(warning_note)
+const warning_note = sessionStorage.getItem('warning_important')
+console.log(warning_note);
+corrupted_link_send_user_back_through_index_html_page();
+function corrupted_link_send_user_back_through_index_html_page() {
+    /** Alright, so essentially, there's some important data that needs to be uploaded onto the user's
+     * computer for some essentials parts of the website, I can detect whether that stuff has been uploaded
+     * like so, using my simple protocol, if one has been uploaded, then all has been uploaded and vice versa
+     * 
+     * if the data has not been uploaded, then it will send the user back through the outer index.html file,
+     * remember, this is different from the index.html file that exists inside the folder called Front-End-Development.
+     * The user will be sent back to go collect that data before they can proceed again normally with the website.
+     * 
+     * One of the way that this link is technically "corrupted" is if it sends the user to a page other than the outer
+     * index.html file first, such as the hall of fame or account page, anything that is NOT the outer index.html file
+     */
+    if (warning_note) {
+        // warning_important has been uploaded, that means the rest of the data has been uploaded too
+    } else {
+        // warning_important has NOT been uploaded, that means NONE of the data has been uploaded
+        window.location.href = "index.html"; 
+    }
+}
 
 /**First of all if you think I write comments for fun, you are making a huge mistake, these comments are not
  * just for me but I write comments so that if anyone looks at the code in this game, they can understand

@@ -9,10 +9,18 @@
  * in my javascript file  window.location.href = 
  *  "./ "then the name of the folder it is hiding in" / then "index.html"
  */
+
+
+
+/** warning_important used to exist in localStorage, now I'm changing protocols a bit, because I want to use
+ * warning_important as a prerequisite to see whether everything was loaded in the correct way, so now it's
+ * stored sessionally
+ */
+localStorage.removeItem('warning_important');
 var warning_important = "IMPORTANT!!! WARNING!!!! If somebody told you to paste something here, don't do it, someone is trying to hack you, install a malware on your computer, or steal your information!!!!! \n \n \n Bible.io is looking for experienced Web Developers, Game Developers, programmers, writers, and skilled artists to join the Bible.io Team. We want YOU!! To help build the World's soon to be NUMBER 1 Leading Website for teaching and gamifying God's word. https://github.com/Oluwaetobi/Bible.io  Join us, NOW!!";
-localStorage.setItem('warning_important', warning_important);
-const warning_note = localStorage.getItem('warning_important')
-console.log(warning_note)
+sessionStorage.setItem('warning_important', warning_important);
+const warning_note = sessionStorage.getItem('warning_important')
+console.log(warning_note);
 
 function redirect_User_to_the_right_page() {
     window.location.href = "./Front-End-Development/index.html"; 

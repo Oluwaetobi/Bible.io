@@ -1,7 +1,40 @@
-/** Function to make logos slide  */
-const warning_note = localStorage.getItem('warning_important')
-console.log(warning_note)
+const warning_note = sessionStorage.getItem('warning_important')
+console.log(warning_note);
+corrupted_link_send_user_back_through_index_html_page();
+function corrupted_link_send_user_back_through_index_html_page() {
+    /** Alright, so essentially, there's some important data that needs to be uploaded onto the user's
+     * computer for some essentials parts of the website, I can detect whether that stuff has been uploaded
+     * like so, using my simple protocol, if one has been uploaded, then all has been uploaded and vice versa
+     * 
+     * if the data has not been uploaded, then it will send the user back through the outer index.html file,
+     * remember, this is different from the index.html file that exists inside the folder called Front-End-Development.
+     * The user will be sent back to go collect that data before they can proceed again normally with the website.
+     * 
+     * One of the way that this link is technically "corrupted" is if it sends the user to a page other than the outer
+     * index.html file first, such as the hall of fame or account page, anything that is NOT the outer index.html file
+     */
+    if (warning_note) {
+        // warning_important has been uploaded, that means the rest of the data has been uploaded too
+    } else {
+        // warning_important has NOT been uploaded, that means NONE of the data has been uploaded
+        window.location.href = "index.html"; 
+    }
+}
 
+
+/**First of all if you think I write comments for fun, you are making a huge mistake, these comments are not
+ * just for me but I write comments so that if anyone looks at the code in this game, they can understand
+ * things that won't come to mind initially, PLEASE READ THE COMMENTS, they explain some of the methods
+ * I'm using, and why I am doing what I am doing, no matter how good you are at coding, you willl always
+ * forget why you did something a particular way, every good coder, writes good comments, a wise man once said
+ * the faintest pen is better than the sharpest memory, and why is that, because even if you write something
+ * faintly as long as you know how to read, it is engraved forever and can always be read, but no matter
+ * how good your memory is, you always forget it at some point so START WRITING COMMENTS WHEN YOU CODE!!
+ */
+
+
+
+/** Function to make logos slide  */
 const logos = document.querySelector(".sliding-logos__track").cloneNode(true)
 document.querySelector(".sliding-logos").appendChild(logos)
 
