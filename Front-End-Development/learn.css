@@ -255,8 +255,19 @@ a:hover {
     filter: brightness(130%);
 }
 
+.title-bible {
+    font-size: 30px;
+    /* border: 2px solid black; */
+    background-color: rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0px 0px 3px rgba(0, 0, 0, 1);
+    padding: 5px 0px 0px 0px;
+    font-weight: bold;
+    /* text-decoration: underline; */
+    margin: 10px;
+}
+
 .scrollable-table-bible {
-    min-height: 230px;
+    max-height: 230px;
     width: 700px;
     /* aspect-ratio: 1 / 1;   */
     /* overflow-y makes only the y coordinates scrollable */
@@ -268,7 +279,7 @@ a:hover {
     /* translate: -50%; */
     z-index: 1;
     /* top: 0px; */
-    margin: 10px;
+    /* margin: 10px; */
     background-color: #fbfbfb;
     display: grid;
     grid-template-columns: 30% 70%;
@@ -329,8 +340,19 @@ table takes up the full width of it's parent the scrollable table */
     display: block;
 }
 
+.title-christians {
+    font-size: 30px;
+    /* border: 2px solid black; */
+    background-color: rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0px 0px 3px rgba(0, 0, 0, 1);
+    padding: 5px 0px 0px 0px;
+    font-weight: bold;
+    /* text-decoration: underline; */
+    margin: 10px;
+}
+
 .scrollable-table-christians {
-    min-height: 225px;
+    max-height: 225px;
     width: 700px;
     /* aspect-ratio: 1 / 1;   */
     /* overflow-y makes only the y coordinates scrollable */
@@ -338,7 +360,7 @@ table takes up the full width of it's parent the scrollable table */
     /* background-color: #7f2e2e; */
     /* scroll-snap-type: y mandatory; */
     position: static;
-    margin: 10px;
+    /* margin: 10px; */
     /* left: 100px; */
     /* translate: -50%; */
     z-index: 1;
@@ -408,15 +430,44 @@ table takes up the full width of it's parent the scrollable table */
     display: block;
 }
 
+.title-newton {
+    font-size: 30px;
+    /* border: 2px solid black; */
+    background-color: rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0px 0px 3px rgba(0, 0, 0, 1);
+    padding: 5px 0px 0px 0px;
+    font-weight: bold;
+    /* text-decoration: underline; */
+    margin: 10px;
+}
+
 .famous-quotes-newton {
     position: static;
     text-align: left;
     width: 700px;
     margin: 20px;
+    font-size: 15px;
+    font-weight: normal;
 }
 
 .famous-quotes-newton img {
     float: right;
+    margin-left: 20px;
+}
+
+.title-articles {
+    font-size: 30px;
+    color: white;
+    /* border: 2px solid black; */
+    background-color: rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0px 0px 3px rgba(0, 0, 0, 1);
+    border: 2px solid rgba(0, 0, 0, 0.9);
+    padding: 5px 0px 0px 0px;
+    font-weight: bold;
+    /* text-decoration: underline; */
+    margin: 10px;
+    background-color: rgb(2, 176, 195);
+    text-shadow: black 1px 1px 2px;
 }
 
 .scrollable-table-articles {
@@ -428,15 +479,18 @@ table takes up the full width of it's parent the scrollable table */
     /* background-color: #7f2e2e; */
     position: static;
     /* left: 100px; */
-    margin: 10px;
+    /* margin: 10px; */
     /* translate: -50%; */
     z-index: 1;
     /* top: 580px; */
     background-color: #fbfbfb;
     display: grid;
     grid-template-columns: 30% 70%;
-    border: 6px solid black;
-    border-radius: 20px 20px;
+    border: 2px solid black;
+    /* border-radius: 20px 20px; */
+    color: black;
+    font-weight: normal;
+    text-shadow: none;
 }
 
 .scrollable-table-articles caption {
@@ -498,6 +552,21 @@ table takes up the full width of it's parent the scrollable table */
 
 
 /* Sections for NOVELS */
+.title-novels {
+    font-size: 30px;
+    color: white;
+    /* border: 2px solid black; */
+    background-color: rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0px 0px 3px rgba(0, 0, 0, 1);
+    border: 2px solid rgba(0, 0, 0, 0.9);
+    padding: 5px 0px 0px 0px;
+    font-weight: bold;
+    /* text-decoration: underline; */
+    margin: 10px;
+    background-color: rgb(195, 2, 2);
+    text-shadow: black 1px 1px 2px;
+}
+
 .scrollable-table-novels {
     min-height: 200px;
     width: 700px;
@@ -507,15 +576,18 @@ table takes up the full width of it's parent the scrollable table */
     /* background-color: #7f2e2e; */
     position: static;
     /* left: 100px; */
-    margin: 10px;
+    /* margin: 10px; */
     /* translate: -50%; */
     z-index: 1;
     /* top: 580px; */
     background-color: #fbfbfb;
     display: grid;
     grid-template-columns: 30% 70%;
-    border: 6px solid black;
-    border-radius: 20px 20px;
+    border: 2px solid black;
+    /* border-radius: 20px 20px; */
+    color: black;
+    font-weight: normal;
+    text-shadow: none;
 }
 
 .scrollable-table-novels caption {
@@ -578,6 +650,22 @@ table takes up the full width of it's parent the scrollable table */
 
 
 /* Sections for POEMS */
+.title-poems {
+    font-size: 30px;
+    color: white;
+    /* border: 2px solid black; */
+    background-color: rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0px 0px 3px rgba(0, 0, 0, 1);
+    border: 2px solid rgba(0, 0, 0, 0.9);
+    /* box-shadow: black 0px 0px 3px; */
+    padding: 5px 0px 0px 0px;
+    font-weight: bold;
+    /* text-decoration: underline; */
+    margin: 10px;
+    background-color: rgb(195, 2, 166);
+    text-shadow: black 1px 1px 2px;
+}
+
 .scrollable-table-poems {
     min-height: 250px;
     width: 700px;
@@ -587,15 +675,18 @@ table takes up the full width of it's parent the scrollable table */
     /* background-color: #7f2e2e; */
     position: static;
     /* left: 100px; */
-    margin: 10px;
+    /* margin: 10px; */
     /* translate: -50%; */
     z-index: 1;
     /* top: 580px; */
     background-color: #fbfbfb;
     display: grid;
     grid-template-columns: 30% 70%;
-    border: 6px solid black;
-    border-radius: 20px 20px;
+    border: 2px solid black;
+    /* border-radius: 20px 20px; */
+    font-weight: normal;
+    text-shadow: none;
+    color: black;
 }
 
 .scrollable-table-poems caption {
