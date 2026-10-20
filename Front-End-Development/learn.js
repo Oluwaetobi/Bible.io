@@ -327,14 +327,27 @@ function goBackSign () {
         ctx.fillStyle = 'rgb(12, 12, 12)';
         ctx.fillRect(1130 -53, 52, 146, 36);
         if (mouseX > 1077 && mouseX < 1227 && mouseY < 83 && mouseY > 50) {
-            ctx.fillStyle = 'rgb(243, 129, 8)';
+            ctx.fillStyle = 'rgb(255, 132, 0)';
         } else {
-            ctx.fillStyle = 'rgb(154, 82, 6)';
+            ctx.fillStyle = 'rgb(110, 57, 0)';
         }
         ctx.fillRect(1130 -50, 55, 140, 30);
-        ctx.font = "25px Arial";
+
+        // black shadow add
+        ctx.shadowColor = "black";
+        ctx.shadowBlur = 3;
+        ctx.shadowOffsetX = 2;
+        ctx.shadowOffsetY = 2;
+
         ctx.fillStyle = 'rgb(252, 250, 250)';
-        ctx.fillText("Go Back", 1150 -50, 77);
+        ctx.fillText("Go Back", 1150 -57, 79);
+        
+        // black shadow remove
+        ctx.shadowColor = "white";
+        ctx.shadowBlur = 0;
+        ctx.shadowOffsetX = 0;
+        ctx.shadowOffsetY = 0;
+        ctx.font = "25px Arial";
     }
 }
 
