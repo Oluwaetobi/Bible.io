@@ -459,6 +459,10 @@ table takes up the full width of it's parent the scrollable table */
     font-weight: normal;
 }
 
+.famous-quotes-newton p {
+    white-space: pre-wrap;
+}
+
 .famous-quotes-newton img {
     float: right;
     margin-left: 20px;
