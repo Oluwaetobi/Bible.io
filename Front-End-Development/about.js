@@ -1,7 +1,16 @@
-const warning_note = sessionStorage.getItem('warning_important')
-console.log(warning_note);
 corrupted_link_send_user_back_through_index_html_page();
 function corrupted_link_send_user_back_through_index_html_page() {
+    // This is supposed to be the FIRST function that runs in the entire JavaScript file program, because it is 
+    // very important and crucial, read notes for more information
+
+    // warning notes (DON'T get hacked through Self-XXS) and recruit developer note (Bible.io Team recruitment)
+    const warning_note = sessionStorage.getItem('warning_important')
+    console.log(warning_note);
+    /** NOTE: This function should be implemented in every JavaScript file EXCEPT for the outer index.js,
+     * note there are 2 index.js files, one inside the Front-End-Development folder and one outside of it,
+     * which is known as the "outer index.js"
+     */
+
     /** Alright, so essentially, there's some important data that needs to be uploaded onto the user's
      * computer for some essentials parts of the website, I can detect whether that stuff has been uploaded
      * like so, using my simple protocol, if one has been uploaded, then all has been uploaded and vice versa
@@ -20,6 +29,7 @@ function corrupted_link_send_user_back_through_index_html_page() {
         window.location.href = "index.html"; 
     }
 }
+
 
 /**First of all if you think I write comments for fun, you are making a huge mistake, these comments are not
  * just for me but I write comments so that if anyone looks at the code in this game, they can understand
