@@ -5543,6 +5543,22 @@ function level_2_Questions () {
         answer4.innerText += `Havilah `;
         correct_answer = 4;
     }
+    if (randomQuestion == 53) {
+        question.innerText = `Which river did the Bible say would dry up?  `;
+        answer1.innerText += `The Jordan `;
+        answer2.innerText += `Kidron `;
+        answer3.innerText += `The Nile  `;
+        answer4.innerText += `Euphrates `;
+        correct_answer = 4;
+    }
+    if (randomQuestion == 54) {
+        question.innerText = `Which river in Genesis chapter 2 went towards Assyria?  `;
+        answer1.innerText += `Gihon `;
+        answer2.innerText += `Hiddekel `;
+        answer3.innerText += `PIshon  `;
+        answer4.innerText += `Jabbok `;
+        correct_answer = 2;
+    }
 }
 
 function level_3_Questions () {
