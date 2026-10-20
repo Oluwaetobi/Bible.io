@@ -26,7 +26,13 @@ function corrupted_link_send_user_back_through_index_html_page() {
         // warning_important has been uploaded, that means the rest of the data has been uploaded too
     } else {
         // warning_important has NOT been uploaded, that means NONE of the data has been uploaded
-        window.location.href = "index.html"; 
+        window.location.href = "/index.html"; 
+        /**IMPORTANT NOTE, there's a different between /index.html and index.html, /index.html is the root folder
+         * which is the root directory of the current domain, this is called the "absolute path"
+         * while index.html instructs the browser to start looking for the index.html file relative to the 
+         * current folder path your are in. And remember I don't want that, I want it to go to the index.html file
+         * outside of all the folders, the absolute path, to the root directory of the current domain.
+         */
     }
 }
 
