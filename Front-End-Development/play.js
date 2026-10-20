@@ -1868,7 +1868,6 @@ function displayLevels() {
         var spacing_x = 60;
         ctx.font = "20px Arial";
         if ((i+1) == level) {
-            // ctx.fillStyle = 'rgb(245, 186, 77)';
             ctx.fillStyle = 'rgb(22, 245, 14)';
         } else {
             ctx.fillStyle = 'rgb(254, 253, 253)';
@@ -1876,7 +1875,13 @@ function displayLevels() {
         if (mouseX > 1278 && mouseX < 1458) {
             var spacing_between_level_boxes = 59.5
             if (mouseY > (116 + (i * spacing_between_level_boxes)) && mouseY < (159 + (i*spacing_between_level_boxes))) {
-                ctx.fillStyle = 'rgb(251, 255, 0)';
+                // mouse is on level buttons then change color
+                if ((level - 1) == i) {
+                    // if your mouse is hovering over a selected level button, the color will barely change
+                    ctx.fillStyle = 'rgb(102, 255, 0)';
+                } else {
+                    ctx.fillStyle = 'rgb(251, 255, 0)';
+                }
             }
         }
         ctx.fillRect(1280, 120 + (i * spacing_x), 180, 40);
