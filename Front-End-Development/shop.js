@@ -2411,6 +2411,8 @@ function bibleMaker_background () {
     var center_gender_section_text_x = 220;
 
     ctx.font = "35px Arial";
+    ctx.fillStyle = 'rgb(0, 0, 0)';
+    ctx.fillText("Boy", (((canvas.width)/2) - center_gender_section_text_x) + 0 +10, 582);
     ctx.strokeStyle = 'rgb(5, 5, 5)';
     ctx.strokeText("Boy", (((canvas.width)/2) - center_gender_section_text_x) + 1 +10, 581);
     ctx.strokeStyle = 'rgb(33, 0, 153)';
@@ -2419,6 +2421,8 @@ function bibleMaker_background () {
     ctx.fillText("Boy", (((canvas.width)/2) - center_gender_section_text_x) + 2 +10, 580);
 
     ctx.font = "35px Arial";
+    ctx.fillStyle = 'rgb(0, 0, 0)';
+    ctx.fillText("Girl",  (((canvas.width)/2) - center_gender_section_text_x) + 417 +35, 582);
     ctx.strokeStyle = 'rgb(13, 13, 13)';
     ctx.strokeText("Girl", (((canvas.width)/2) - center_gender_section_text_x) + 418 +35, 581);
     ctx.strokeStyle = 'rgb(244, 15, 190)';
