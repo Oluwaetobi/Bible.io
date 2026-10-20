@@ -32,6 +32,11 @@ function corrupted_link_send_user_back_through_index_html_page() {
          * while index.html instructs the browser to start looking for the index.html file relative to the 
          * current folder path your are in. And remember I don't want that, I want it to go to the index.html file
          * outside of all the folders, the absolute path, to the root directory of the current domain.
+         * 
+         * Extra note: if you are running this program directly from your Hard Drive, NOT Local Host!! But your hard
+         * drive such as (file://) or C:/ or you run this program without debugging from VSCode, if this function
+         * tries to redirect you to the root index.html file, it will crash, because the web address will end
+         * up being just /index.html and since there is no domain on the hard drive, it will end up crashing
          */
     }
 }
