@@ -450,6 +450,10 @@ table takes up the full width of it's parent the scrollable table */
     margin: 10px;
 }
 
+#title-newton {
+    text-decoration: underline;
+}
+
 .famous-quotes-newton {
     position: static;
     text-align: left;
@@ -457,6 +461,7 @@ table takes up the full width of it's parent the scrollable table */
     margin: 20px;
     font-size: 15px;
     font-weight: normal;
+    
 }
 
 .famous-quotes-newton p {
