@@ -318,6 +318,7 @@ it blends in with the short story rounded edge box display */
     margin-bottom: 30px;
     border: 2px solid black;
     box-shadow: #000000 0px 0px 20px;
+    max-height: 400px;
     
 }
 
@@ -338,7 +339,6 @@ it blends in with the short story rounded edge box display */
 }
 
 .special-thanks #thanks-right {
-    max-height: 400px;
     overflow-y: auto;
     background-color:rgba(224, 224, 224, 0.9);
     padding: 20px 20px;
