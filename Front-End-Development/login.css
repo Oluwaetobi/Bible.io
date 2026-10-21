@@ -197,7 +197,7 @@ form label {
     font-weight: 500;
 }
 form label:hover {
-    background-color: rgba(254, 254, 254, 0.6);
+    background-color: rgba(254, 254, 254, 0.9);
 }
 form input {
     box-sizing: border-box;

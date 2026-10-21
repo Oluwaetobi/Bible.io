@@ -228,6 +228,9 @@ form label {
     font-size: 1.5rem;
     font-weight: bold;
 }
+form label:hover {
+    background-color: rgba(254, 254, 254, 0.9);
+}
 form input {
     box-sizing: border-box;
     flex-grow: 1;
@@ -243,6 +246,7 @@ form input {
 }
 form input:hover {
     border-color: var(--accent-color);
+    filter: contrast(180%);
 }
 
 form input:focus {
