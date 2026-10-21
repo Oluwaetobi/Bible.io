@@ -5816,7 +5816,7 @@ function level_3_Questions () {
         correct_answer = 2;
     }
     if (randomQuestion == 27) {
-        question.innerText = `Thou coveredst it with the deep as with a garment: the waters stood above the mountains.  7At thy rebuke they fled; at the voice of thy thunder they hasted away. `;
+        question.innerText = `Thou coveredst it with the deep as with a garment: the waters stood above the mountains. At thy rebuke they fled; at the voice of thy thunder they hasted away. `;
         answer1.innerText += `Job 28:8-9 `;
         answer2.innerText += `Job 40:25-26 `;
         answer3.innerText += `Psalm 80:19-20 `;
