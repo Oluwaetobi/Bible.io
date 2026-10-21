@@ -4838,8 +4838,8 @@ function choose_Random_Question () {
     // Return a random integer between 1 and 10 (both included): Math.floor(Math.random() * 10) + 1;
 
     var amount_of_question_in_level_1 = 38;
-    var amount_of_question_in_level_2 = 52;
-    var amount_of_question_in_level_3 = 32;
+    var amount_of_question_in_level_2 = 55;
+    var amount_of_question_in_level_3 = 33;
 
 
     if (level == 1) {
@@ -5593,6 +5593,14 @@ function level_2_Questions () {
         answer4.innerText += `Jabbok `;
         correct_answer = 2;
     }
+    if (randomQuestion == 55) {
+        question.innerText = `How many Israelites did Moses lead out of Egypt?  `;
+        answer1.innerText += `more than ten thousand `;
+        answer2.innerText += `more than one hundred thousand `;
+        answer3.innerText += `more than 1 million  `;
+        answer4.innerText += `more than 10 million `;
+        correct_answer = 3;
+    }
 }
 
 function level_3_Questions () {
@@ -5854,6 +5862,14 @@ function level_3_Questions () {
         answer3.innerText += `1 Timothy 6:8 `;
         answer4.innerText += `2 Timothy 2:15 `;
         correct_answer = 4;
+    }
+    if (randomQuestion == 33) {
+        question.innerText = `He that sitteth in the heavens shall laugh: the Lord shall have them in derision. `;
+        answer1.innerText += `Psalms 2:8 `;
+        answer2.innerText += `Psalms 2:4 `;
+        answer3.innerText += `Psalms 10:11 `;
+        answer4.innerText += `Psalms 10:24 `;
+        correct_answer = 2;
     }
     
 }
