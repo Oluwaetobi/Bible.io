@@ -2,7 +2,7 @@
 :root {
     --accent-color: #0e004042;
     /* I want it to be transparent for now */
-    /* --base-color: white; */
+    --base-color: black;
     --text-color: #2E2B41;
     --input-color: #F3F0FF;
     --icon-color: white;
@@ -196,6 +196,9 @@ form label {
     font-size: 1.5rem;
     font-weight: 500;
 }
+form label:hover {
+    background-color: rgba(254, 254, 254, 0.6);
+}
 form input {
     box-sizing: border-box;
     flex-grow: 1;
@@ -211,6 +214,7 @@ form input {
 }
 form input:hover {
     border-color: var(--accent-color);
+    filter: contrast(180%);
 }
 
 form input:focus {
