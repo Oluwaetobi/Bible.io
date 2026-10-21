@@ -329,14 +329,12 @@ table takes up the full width of it's parent the scrollable table */
     top: 0px;
     /* justify-content: center;
     align-items: center; */
-}
-
-.table th {
     padding: 2px 6px;
     font-weight: normal;
     font-size: 15px;
-    border-collapse: collapse
+    border-collapse: collapse;
 }
+
 .table td {
     /* top right bottom left */
     padding: 20px 20px;
@@ -481,14 +479,12 @@ table takes up the full width of it's parent the scrollable table */
     top: 0px;
     /* justify-content: center;
     align-items: center; */
-}
-
-.table-background th {
     padding: 2px 6px;
     font-weight: normal;
     font-size: 15px;
-    border-collapse: collapse
+    border-collapse: collapse;
 }
+
 .table-background td {
     /* top right bottom left */
     /* padding: 20px 20px 20px 20px; */
@@ -624,6 +620,7 @@ table takes up the full width of it's parent the scrollable table */
     text-align: center;
     font-size: 20px;
     font-weight: bold;
+    z-index: 4;
 }
 
 .table-shop th:hover {
@@ -814,14 +811,12 @@ table takes up the full width of it's parent the scrollable table */
     top: 0px;
     /* justify-content: center;
     align-items: center; */
-}
-
-.table-extra th {
     padding: 2px 6px;
     font-weight: normal;
     font-size: 15px;
-    border-collapse: collapse
+    border-collapse: collapse;
 }
+
 .table-extra td {
     /* top right bottom left */
     /* padding: 20px 20px 20px 20px; */
