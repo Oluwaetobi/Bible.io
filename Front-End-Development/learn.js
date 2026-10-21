@@ -332,6 +332,8 @@ function goBackSign () {
             ctx.fillStyle = 'rgb(110, 57, 0)';
         }
         ctx.fillRect(1130 -50, 55, 140, 30);
+        
+        ctx.font = "30px Arial";
 
         // black shadow add
         ctx.shadowColor = "black";
@@ -347,7 +349,6 @@ function goBackSign () {
         ctx.shadowBlur = 0;
         ctx.shadowOffsetX = 0;
         ctx.shadowOffsetY = 0;
-        ctx.font = "25px Arial";
     }
 }
 
