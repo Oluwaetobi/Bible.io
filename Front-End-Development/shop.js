@@ -705,8 +705,16 @@ function updateShopSection (shop_section_html) {
         /** I have these 2 if statements because shop_section_html isn't completely consecutive following
          * with the buttons, it goes 1,3,4,5
          */
+        var color_to_use;
+        if (i_am_a_boy == true) {
+            color_to_use = 'rgb(84, 138, 255)';
+        } else {
+            if (i_am_a_girl == true) {
+                color_to_use = 'rgb(163, 3, 166)'
+            }
+        }
         const pressed_color = 'rgb(107, 107, 107)';
-        const not_pressed_color = 'rgb(84, 138, 255)';
+        const not_pressed_color = color_to_use;
         if (index == 0) {
             if((index + 1) == shop_section_html) {
                 // background
@@ -2197,9 +2205,26 @@ function bibletarMakerHome() {
             gradient.addColorStop(1, 'rgb(152, 1, 114)');    // End color (100%)
         }
     }
+
+
     
     ctx.fillStyle = gradient;
     ctx.fillRect(0, 0, canvas.width, canvas.height);
+    
+
+    // other closet color chaanges
+    var color_to_use;
+    if (i_am_a_boy == true) {
+        color_to_use = 'rgb(7, 97, 153)';
+    } else {
+        if (i_am_a_girl  == true) {
+            color_to_use = 'rgb(168, 3, 174)';
+        }
+    }
+    document.getElementById('bibletar_designs').querySelector('caption').style.backgroundColor = color_to_use;
+    document.getElementById('choose_bibletar_stuff').querySelector('caption').style.backgroundColor = color_to_use;
+    document.getElementById('title-extra').style.backgroundColor = color_to_use;
+    // document.getElementById('choose_bibletar_extra').querySelector('caption').style.backgroundColor = color_to_use;
 
 
     // back layer background for engine chooser
@@ -2472,6 +2497,7 @@ function drawSomething() {
         // none for display means hidden or invisible
         document.getElementById('bibletar_designs').style.display = "none";
         document.getElementById('choose_bibletar_stuff').style.display = "none";
+        document.getElementById('title-extra').style.display = "none";
         document.getElementById('choose_bibletar_extra').style.display = "none";
         document.getElementById('shop_page_background').style.display = "none";
         document.getElementById('choose_shop_stuff').style.display = "none";
@@ -2481,6 +2507,7 @@ function drawSomething() {
         // block in display means visible, in simple words, YOU CAN SEE IT!!!
         document.getElementById('bibletar_designs').style.display = "block";
         document.getElementById('choose_bibletar_stuff').style.display = "block";
+        document.getElementById('title-extra').style.display = "block";
         document.getElementById('choose_bibletar_extra').style.display = "block";
         document.getElementById('shop_page_background').style.display = "none";
         document.getElementById('choose_shop_stuff').style.display = "none";
@@ -2488,6 +2515,7 @@ function drawSomething() {
         // none for display means hidden or invisible
         document.getElementById('bibletar_designs').style.display = "none";
         document.getElementById('choose_bibletar_stuff').style.display = "none";
+        document.getElementById('title-extra').style.display = "none";
         document.getElementById('choose_bibletar_extra').style.display = "none";
         document.getElementById('shop_page_background').style.display = "block";
         document.getElementById('choose_shop_stuff').style.display = "block";

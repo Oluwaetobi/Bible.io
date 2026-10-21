@@ -294,6 +294,7 @@ a:hover {
 
 
 .scrollable-table caption {
+    /* background color is controlled via JavaScript */
     background-color: #000000;
     color:#f9f7f7;
     position: sticky;
@@ -303,6 +304,7 @@ a:hover {
     z-index: 4;
     padding: 5px 0px;
     border-radius: 5px 5px;
+    text-shadow: black 0px 0px 2px;
     /* padding-bottom: 10px; */
 }
 
@@ -444,10 +446,13 @@ JAVASCRIPT FILE*/
     font-size: large;
     font-weight: bold;
     color: #fbf9f9;
+    /* background color is controlled via JavaScript */
     background-color: #000000;
     position: sticky;
     top: 0px;
+    padding-top: 5px;
     padding-bottom: 5px;
+    text-shadow: black 0px 0px 2px;
     /* border-collapse: collapse; */
     z-index: 4;
 }
@@ -697,24 +702,48 @@ table takes up the full width of it's parent the scrollable table */
     display: none;
 }
 
+.title-extra {
+    font-size: 20px;
+    color: black;
+    /* background color is controlled from JavaScript */
+    background-color: #023a7f;
+    /* padding: 20px; */
+    text-align: center;
+    position: fixed;
+    top: 660px;
+    left:510px;
+    z-index: 1;
+    width: 460px;
+    max-height: 115px;
+    border: 2px solid black;
+    justify-content: center;
+    color: white;
+    text-shadow: black 0px 0px 2px;
+    border-radius: 10px;
+    overflow: hidden;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
 .scrollable-table-extra {
-    height: 120px;
-    width: 450px;
-    aspect-ratio: 1 / 1;  
+    /* aspect-ratio: 1 / 1;   */
+    max-width: 459px;
+    min-height: 100px;
     /* overflow-y makes only the y coordinates scrollable */
     overflow-y: auto;
     /* background-color: #7f2e2e; */
     scroll-snap-type: y mandatory;
-    position: fixed;
-    left: 510px;
+    /* position: absolute; */
+    /* left: 510px; */
     /* translate: -50%; */
     z-index: 1;
-    top: 660px;
+    /* top: 660px; */
     background-color: #fbfbfb;
     display: grid;
     grid-template-columns: 30% 70%;
-    border: 6px solid black;
-    border-radius: 20px 20px;
+    border: 2px solid black;
+    color: black;
+    /* border-radius: 20px 20px; */
 }
 
 .scrollable-table-extra::-webkit-scrollbar {
@@ -748,6 +777,7 @@ table takes up the full width of it's parent the scrollable table */
 .scrollable-table-extra caption {
     /* top right bottom left */
     padding: 10px;
+    /* background color is controlled via JavaScript */
     background-color: #1e9bc9;
     color:#fbf9f9;
     position: sticky;
@@ -756,6 +786,8 @@ table takes up the full width of it's parent the scrollable table */
     font-size: large;
     text-align: left;
     z-index: 4;
+    text-shadow: black 0px 0px 2px;
+    margin-bottom: 10px;
 }
 
 /* Scrollable table class takes precedence over table class
