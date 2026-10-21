@@ -307,7 +307,7 @@ form div.incorrect input {
 
 /* I hate default scroll bars, they look ugly and are to skinny, so I made my own custom scroll bars */
 ::-webkit-scrollbar {
-    /* This way the scrollbar never becomes to spall unlike all those new stupid modern scrollbars that are single
+    /* This way the scrollbar never becomes too small unlike all those new stupid modern scrollbars that are a single
     pixel wide and tall */
     min-width: 22px;
     min-height: 22px;
@@ -328,6 +328,11 @@ form div.incorrect input {
     background: #5d5c5c;
     border: 3px solid #f8f9f9;
     border-radius: 15px;
+
+    /* sets a minimum height and width for the thumb of the scrollbar, this prevents the scrollbar from becoming
+    so thin like all those stupid modern default scrollbars used on computers these days */
+    min-width: 42px;
+    min-height: 42px;
     
     /* I created to inner shadow, inset means inside, by default it's set to the outside */
     box-shadow: inset 1.5px 1.5px 1px #282828, inset -1.5px -1.5px 1px #222222;
