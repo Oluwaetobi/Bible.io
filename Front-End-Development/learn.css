@@ -984,7 +984,10 @@ table takes up the full width of it's parent the scrollable table */
 
 /* I hate default scroll bars, they look ugly and are to skinny, so I made my own custom scroll bars */
 ::-webkit-scrollbar {
-    width: 22px;
+    /* This way the scrollbar never becomes to spall unlike all those new stupid modern scrollbars that are single
+    pixel wide and tall */
+    min-width: 22px;
+    min-height: 22px;
 }
 
 ::-webkit-scrollbar-track {
@@ -1002,6 +1005,8 @@ table takes up the full width of it's parent the scrollable table */
     background: #5d5c5c;
     border: 3px solid #f8f9f9;
     border-radius: 15px;
+    min-width: 42px;
+    min-height: 42px;
     
     /* I created to inner shadow, inset means inside, by default it's set to the outside */
     box-shadow: inset 1.5px 1.5px 1px #282828, inset -1.5px -1.5px 1px #222222;

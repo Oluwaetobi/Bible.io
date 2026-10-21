@@ -418,7 +418,10 @@ because they are not theh same thing, at least the parameters aren't */
 
 /* I hate default scroll bars, they look ugly and are to skinny, so I made my own custom scroll bars */
 ::-webkit-scrollbar {
-    width: 22px;
+    /* This way the scrollbar never becomes to spall unlike all those new stupid modern scrollbars that are single
+    pixel wide and tall */
+    min-width: 22px;
+    min-height: 22px;
 }
 
 ::-webkit-scrollbar-track {
