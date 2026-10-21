@@ -2285,6 +2285,34 @@ function display_other_game_information () {
     ctx.shadowOffsetY = 0;
 }
 
+function christian_cross_symbol (x, y) {
+    var move_cross_y = -20;
+    var move_cross_x = 0;
+
+    // black shadow add
+    ctx.shadowColor = "black";
+    ctx.shadowBlur = 3;
+    ctx.shadowOffsetX = 0;
+    ctx.shadowOffsetY = 0;
+    
+    ctx.fillStyle = 'rgb(200, 144, 2)';
+    ctx.fillRect(x + 50 + move_cross_x, y + 0 + move_cross_y, 25, 180);
+    ctx.fillRect(x + 0 + move_cross_x, y + 40 + move_cross_y, 120, 25);
+    
+    ctx.font = "15px Arial";
+    ctx.fillStyle = 'rgb(255, 255, 255)';
+    ctx.fillText("Christ has set me free!", x -30, 450);
+
+
+    // black shadow remove
+    ctx.shadowColor = "white";
+    ctx.shadowBlur = 0;
+    ctx.shadowOffsetX = 0;
+    ctx.shadowOffsetY = 0;
+
+
+}
+
 function display_Game_Time (time_alloted_for_each_game) {
     var game_time = (time_alloted_for_each_game-timer);
 
@@ -2362,6 +2390,7 @@ function display_Game_Time (time_alloted_for_each_game) {
         ctx.shadowOffsetY = 0;
 
     display_other_game_information();
+    christian_cross_symbol(x_baseline + 150, y_baseline + 160);
 
 }
 
