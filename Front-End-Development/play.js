@@ -1847,7 +1847,7 @@ function displayLevels() {
 
     // background box for levels
     ctx.fillStyle = 'rgb(124, 116, 119)';
-    ctx.fillRect(1250, 100, 240, 300);
+    ctx.fillRect(1250, 100, 240, 240);
 
     // black shadow remove
     ctx.shadowColor = "white";
@@ -1893,9 +1893,56 @@ function displayLevels() {
         ctx.shadowOffsetY = 0;
 
         // Levels text display
+        ctx.font = "20px Arial";
         ctx.fillStyle = 'rgb(6, 6, 6)';
         ctx.fillText("Level " + (i + 1), 1330, 145 + (i * spacing_x));
     }
+
+    // level type display
+    function display_mode_type(x, y) {
+        var mode_difficulty_text_display = ["Easy", "Medium", "Hard"];
+
+        // black shadow add
+        ctx.shadowColor = "black";
+        ctx.shadowBlur = 2;
+        ctx.shadowOffsetX = 0;
+        ctx.shadowOffsetY = 0;
+
+        if (level == 1) {
+            ctx.fillStyle = 'rgba(18, 184, 6, 0.9)';
+        } else if (level == 2) {
+            ctx.fillStyle = 'rgba(250, 250, 0, 0.7)';
+        } else {
+            ctx.fillStyle = 'rgba(148, 17, 17, 0.9)';
+        }
+        // ctx.fillStyle = 'rgba(177, 175, 175, 0.9)';
+        ctx.fillRect(x - 30, y - 20, 150, 30);
+
+        // black shadow remove
+        ctx.shadowColor = "white";
+        ctx.shadowBlur = 0;
+        ctx.shadowOffsetX = 0;
+        ctx.shadowOffsetY = 0;
+
+
+        // black shadow add
+        ctx.shadowColor = "black";
+        ctx.shadowBlur = 2;
+        ctx.shadowOffsetX = 1;
+        ctx.shadowOffsetY = 1;
+
+        ctx.font = "17px Arial";
+        ctx.fillStyle = 'rgb(255, 255, 255)'
+        ctx.fillText(mode_difficulty_text_display[level - 1] + " mode", x, y);
+
+        // black shadow remove
+        ctx.shadowColor = "white";
+        ctx.shadowBlur = 0;
+        ctx.shadowOffsetX = 0;
+        ctx.shadowOffsetY = 0;
+    }
+
+    display_mode_type(1319, 310);
 }
 
 function challenge_box_display () {
