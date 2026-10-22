@@ -5156,6 +5156,22 @@ function level_1_Questions () {
         answer3.innerText += `Most of the animals died  `;
         answer4.innerText += `All of the animals died `;
         correct_answer = 3;
+    } 
+    if (randomQuestion == 39) {
+        question.innerText = `What's the last word in the Bible?  `;
+        answer1.innerText += `Yeshua `;
+        answer2.innerText += `Amen `;
+        answer3.innerText += `Come!  `;
+        answer4.innerText += `Omega `;
+        correct_answer = 2;
+    }  
+    if (randomQuestion == 40) {
+        question.innerText = `What do we call the angels who rebelled against God?  `;
+        answer1.innerText += `Demons `;
+        answer2.innerText += `Nephilim `;
+        answer3.innerText += `Goblins!  `;
+        answer4.innerText += `Ghosts `;
+        correct_answer = 1;
     }  
 }
 
@@ -5600,6 +5616,22 @@ function level_2_Questions () {
         answer3.innerText += `more than 1 million  `;
         answer4.innerText += `more than 10 million `;
         correct_answer = 3;
+    }
+    if (randomQuestion == 56) {
+        question.innerText = `Jannes and Jambres resisted which man?  `;
+        answer1.innerText += `Moses `;
+        answer2.innerText += `Elijah `;
+        answer3.innerText += `Gideon  `;
+        answer4.innerText += `Cyrus `;
+        correct_answer = 1;
+    }
+    if (randomQuestion == 57) {
+        question.innerText = `How many children did Job beget?  `;
+        answer1.innerText += `five `;
+        answer2.innerText += `ten `;
+        answer3.innerText += `fifteen  `;
+        answer4.innerText += `twenty `;
+        correct_answer = 4;
     }
 }
 
