@@ -753,7 +753,7 @@ function titleText() {
     // Bible.io Live Text
     if (play_front_page_text[0] == 0) {
         // When I keep erasing and rewriting it, I can't copy and paste the text, that's why I'm doing this
-        big_text.innerText = 'Bible.io Live';
+        big_text.innerText = 'Bible.io LIVE';
         play_front_page_text[0] +=1;
     } else {
         // do nothing
@@ -885,11 +885,15 @@ function friendsBoard() {
     ctx.fillRect(0, 0, width_of_friends_bar_rect, height_of_friends_bar_rect);
 
 
+    // transparent black overlay
+    ctx.fillStyle = 'rgba(1, 0, 0, 0.1)';
+    ctx.fillRect(0, 0, width_of_friends_bar_rect, height_of_friends_bar_rect)
+
     // black shadow add
     ctx.shadowColor = "black";
-    ctx.shadowBlur = 1;
-    ctx.shadowOffsetX = 2;
-    ctx.shadowOffsetY = 2;
+    ctx.shadowBlur = 2;
+    ctx.shadowOffsetX = 1;
+    ctx.shadowOffsetY = 1;
 
     var x_friends = 68;
     var y_friends = 50;
@@ -900,7 +904,6 @@ function friendsBoard() {
     ctx.fillStyle = 'rgb(254, 251, 251)';
     ctx.fillText("Friends", x_friends, y_friends);
 
-    ctx.drawImage(img_friends_star, 7, 7, 50, 50);
     // ctx.drawImage()
     
     
@@ -909,7 +912,22 @@ function friendsBoard() {
     ctx.shadowBlur = 0;
     ctx.shadowOffsetX = 0;
     ctx.shadowOffsetY = 0;
+    
 
+
+    // black shadow add
+    ctx.shadowColor = "black";
+    ctx.shadowBlur = 4;
+    ctx.shadowOffsetX = 0;
+    ctx.shadowOffsetY = 0;
+
+    ctx.drawImage(img_friends_star, 7, 7, 50, 50);
+
+    // black shadow remove
+    ctx.shadowColor = "white";
+    ctx.shadowBlur = 0;
+    ctx.shadowOffsetX = 0;
+    ctx.shadowOffsetY = 0;
     
 
 }
