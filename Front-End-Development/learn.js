@@ -466,14 +466,40 @@ function showTimeSpent() {
     ctx.fillStyle = 'rgb(14, 53, 77)';
     ctx.fillRect(1200, 100, 300, 50);
 
+    // black shadow add
+    ctx.shadowColor = "black";
+    ctx.shadowBlur = 3;
+    ctx.shadowOffsetX = 2;
+    ctx.shadowOffsetY = 2;
+
     ctx.font = "35px Arial";
     ctx.fillStyle = 'rgb(255, 255, 255)';
     ctx.fillText("Time Spent: ", 1250, 135)
 
+    // black shadow remove
+    ctx.shadowColor = "white";
+    ctx.shadowBlur = 0;
+    ctx.shadowOffsetX = 0;
+    ctx.shadowOffsetY = 0;
+
     // time spent display
+
+    // black shadow add
+    ctx.shadowColor = "black";
+    ctx.shadowBlur = 3;
+    ctx.shadowOffsetX = 2;
+    ctx.shadowOffsetY = 2;
+
+
     ctx.font = "60px Arial";
     ctx.fillStyle = 'rgb(255, 255, 255)';
     ctx.fillText(formatted_time, 1220, 200);
+
+    // black shadow remove
+    ctx.shadowColor = "white";
+    ctx.shadowBlur = 0;
+    ctx.shadowOffsetX = 0;
+    ctx.shadowOffsetY = 0;
 
 }
 
