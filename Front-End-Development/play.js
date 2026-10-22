@@ -704,11 +704,43 @@ function figure_out_whether_i_am_a_boy_or_a_girl () {
     }
 }
 
-function displayMouseX_and_MouseY () {
+function displayMouseX_and_MouseY (x, y) {
     if (i_am_a_developer == true) {
+
+        // black shadow add
+        ctx.shadowColor = "black";
+        ctx.shadowBlur = 1;
+        ctx.shadowOffsetX = 2;
+        ctx.shadowOffsetY = 2;
+
+        ctx.fillStyle = 'rgba(0, 0, 0, 0.9)';
+        ctx.fillRect(x - 16, y - 29, 342, 42);
+        ctx.fillStyle = 'rgba(253, 251, 251, 0.9)';
+        ctx.fillRect(x - 15, y - 28, 340, 40);
+    
+    
+        // black shadow remove
+        ctx.shadowColor = "white";
+        ctx.shadowBlur = 0;
+        ctx.shadowOffsetX = 0;
+        ctx.shadowOffsetY = 0;
+
+
+        // black shadow add
+        ctx.shadowColor = "black";
+        ctx.shadowBlur = 1;
+        ctx.shadowOffsetX = 1;
+        ctx.shadowOffsetY = 1;
+
         ctx.font = "25px Arial";
         ctx.fillStyle = 'rgb(190, 36, 36)';
-        ctx.fillText("MouseX: " + mouseX + " MouseY: " + mouseY, 10, canvas.height - 20);
+        ctx.fillText("MouseX: " + mouseX + " MouseY: " + mouseY, x, y);
+
+        // black shadow remove
+        ctx.shadowColor = "white";
+        ctx.shadowBlur = 0;
+        ctx.shadowOffsetX = 0;
+        ctx.shadowOffsetY = 0;
     }
 
 }
@@ -5991,7 +6023,7 @@ function drawGame() {
     } else if (home_page == 4) {
         show_results();
     }
-    displayMouseX_and_MouseY();
+    displayMouseX_and_MouseY(20, canvas.height - 20);
     show_or_hide_html_elements();
     start_timer();
 
