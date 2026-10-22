@@ -2244,7 +2244,47 @@ function extra_info_and_images () {
     ctx.fillText("Jesus Loves You", 660, 675);
 
     ctx.font = "30px Arial";
-    ctx.fillText("World's Bible Day Contest - July 1st to July 31st", 410, 620);
+    ctx.fillText("World's Bible Day Contest - July 1st to July 31st", 410, 610);
+
+    function live_text_display(x, y, messages) {
+        var amount_of_messages = messages.length;
+        const get_right_number = 60/amount_of_messages;
+        
+        const date = new Date();
+        const seconds = date.getSeconds();
+
+        if (seconds % 3 == 0) {
+            ctx.fillStyle = 'rgb(255, 5, 5)';
+        } else if (seconds % 3 == 1) {
+            ctx.fillStyle = 'rgb(222, 222, 0)';
+        } else {
+            ctx.fillStyle = 'rgb(0, 209, 7)';
+        }
+        ctx.fillRect(x + 100, y - 22, 200, 30);
+        
+        
+        // black shadow add
+        ctx.shadowColor = "black";
+        ctx.shadowBlur = 1.5;
+        ctx.shadowOffsetX = 1.2;
+        ctx.shadowOffsetY = 1.2;
+        
+        ctx.font = "20px Arial";
+        ctx.fillStyle = 'rgb(255, 255, 255)';
+        // this algorithm proportinates my messages to automatically switch evenly space out in a 60 second interval
+        ctx.fillText(messages[Math.floor((seconds/get_right_number))], x + 110, y);
+
+        // black shadow remove
+        ctx.shadowColor = "white";
+        ctx.shadowBlur = 0;
+        ctx.shadowOffsetX = 0;
+        ctx.shadowOffsetY = 0;
+        
+        // console.log(seconds)
+    }
+    
+    var fill_in_text_messages = ["A Global Race", "Fun Competition", "Bible Geeks", "Saving Grace", "Powerful Word"];
+    live_text_display(530, 645, fill_in_text_messages);
 
 
 }
