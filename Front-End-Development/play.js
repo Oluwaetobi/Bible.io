@@ -913,7 +913,13 @@ function friendsBoard() {
     var x_friends = 68;
     var y_friends = 50;
 
+    
     ctx.font = "50px Arial";
+    var bolden_text = 6;
+    for (let i = 0; i < bolden_text; i++) {
+        ctx.fillStyle = 'rgb(0, 0, 0)';
+        ctx.fillText("Friends", x_friends, y_friends);
+    }
     ctx.strokeStyle = 'rgb(252, 249, 249)';
     ctx.strokeText("Friends", x_friends, y_friends);
     ctx.fillStyle = 'rgb(254, 251, 251)';
@@ -935,6 +941,11 @@ function friendsBoard() {
     ctx.shadowBlur = 4;
     ctx.shadowOffsetX = 0;
     ctx.shadowOffsetY = 0;
+
+    var bolden_text = 1;
+    for (let i = 0; i < bolden_text; i++) {
+        ctx.drawImage(img_friends_star, 7, 7, 50, 50);
+    }
 
     ctx.drawImage(img_friends_star, 7, 7, 50, 50);
 
@@ -1977,29 +1988,42 @@ function displayLevels() {
         if (level == 1) {
             ctx.fillStyle = 'rgba(18, 184, 6, 0.9)';
         } else if (level == 2) {
-            ctx.fillStyle = 'rgba(250, 250, 0, 0.7)';
+            ctx.fillStyle = 'rgba(250, 250, 0, 0.9)';
         } else {
-            ctx.fillStyle = 'rgba(148, 17, 17, 0.9)';
+            ctx.fillStyle = 'rgba(223, 5, 5, 0.9)';
         }
         // ctx.fillStyle = 'rgba(177, 175, 175, 0.9)';
         ctx.fillRect(x - 30, y - 20, 150, 30);
-
+        
         // black shadow remove
         ctx.shadowColor = "white";
         ctx.shadowBlur = 0;
         ctx.shadowOffsetX = 0;
         ctx.shadowOffsetY = 0;
-
-
+        
+        
         // black shadow add
         ctx.shadowColor = "black";
         ctx.shadowBlur = 2;
         ctx.shadowOffsetX = 1;
         ctx.shadowOffsetY = 1;
+        
+        var mode_shift_x = 0;
+        if (level == 2) {
+            mode_shift_x -= 10;
+        }
 
         ctx.font = "17px Arial";
-        ctx.fillStyle = 'rgb(255, 255, 255)'
-        ctx.fillText(mode_difficulty_text_display[level - 1] + " mode", x, y);
+        /** Because I have the shadow effect working hear, by repeatedly drawing the text
+         * over again, I can create a bolder blacker black shadow text cast behind it
+         */
+        var bolden_text = 5;
+        for (let i = 0; i < bolden_text; i++) {
+            ctx.fillStyle = 'rgb(0, 0, 0)';
+            ctx.fillText(mode_difficulty_text_display[level - 1] + " mode", x + mode_shift_x, y);
+        }
+        ctx.fillStyle = 'rgb(255, 255, 255)';
+        ctx.fillText(mode_difficulty_text_display[level - 1] + " mode", x + mode_shift_x, y);
 
         // black shadow remove
         ctx.shadowColor = "white";
