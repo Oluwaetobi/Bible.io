@@ -171,6 +171,17 @@ const my_game = {
         [1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1],
         [1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1],
     ],
+
+    /** I receive data from the room on my server, people who press go at the same time will have the
+     * same room number, then I fetch their points, bibletars, and other data and place them inside this object,
+     * I will also have to push my information into the server
+     */
+    my_room: 1,
+    /** Amount of time to wait before the game starts, can change depending on how many people
+     * have joined your room, there should also be a max wait time of 30 seconds, that way it doesn't
+     * keep searching the world for too long if there's no players
+     */
+    new_game_wait_time: 10,
 };
 
 var i_got_first_place = true;
@@ -2394,7 +2405,7 @@ function connectPlayers () {
     
         ctx.font = "30px Arial";
         ctx.fillStyle = 'rgb(6, 6, 6)';
-        ctx.fillText("Connecting Players...", baseline_x + 50, baseline_y + 30);
+        ctx.fillText("Connecting Players...", baseline_x + 50, baseline_y + 33);
     }
 
     function draw_World_Map () {
@@ -2425,9 +2436,9 @@ function start_timer() {
     }
 
     if (home_page == 2) {
-        if (timer >= 10) {
+        if (timer >= my_game.new_game_wait_time) {
             choose_Random_Question();
-            home_page = 3;
+            startGame();
             timer = 0;
         }
     }
