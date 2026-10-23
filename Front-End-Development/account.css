@@ -187,6 +187,8 @@ a:hover {
     z-index: 1;
     overflow-y: auto;
     min-height: 500px;
+    box-shadow: inset black 1px 1px 5px;
+    border: 2px solid rgba(0, 0, 0, 0.5);
 
 
     /* I wanted to get the Bible.io Thumbnail on the side, but I'm really struggling with that */
@@ -194,9 +196,10 @@ a:hover {
 
 .wrapper h1{
     font-size: 40px;
-    font-weight: bold;
+    font-weight: bolder;
     text-transform: uppercase;
     text-align: center;
+    text-shadow: #010101 0px 0px 1px;
 
 }
 

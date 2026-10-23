@@ -2021,9 +2021,9 @@ function displayLevels() {
         ctx.shadowOffsetX = 1;
         ctx.shadowOffsetY = 1;
         
-        var mode_shift_x = 0;
+        var mode_shift_x = 1.5;
         if (level == 2) {
-            mode_shift_x -= 10;
+            mode_shift_x -= 11;
         }
 
         ctx.font = "17px Arial";
@@ -2045,7 +2045,7 @@ function displayLevels() {
         ctx.shadowOffsetY = 0;
     }
 
-    display_mode_type(1319, 310);
+    display_mode_type(1325, 310);
 }
 
 function challenge_box_display () {

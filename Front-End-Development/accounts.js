@@ -1535,7 +1535,7 @@ function displayMouseX_and_MouseY (x, y) {
 
     ctx.fillStyle = 'rgba(0, 0, 0, 0.9)';
     ctx.fillRect(x - 16, y - 29, background_box_x_size + 2, 42);
-    ctx.fillStyle = 'rgba(138, 138, 138, 0.9)';
+    ctx.fillStyle = 'rgba(253, 253, 253, 0.9)';
     ctx.fillRect(x - 15, y - 28, background_box_x_size, 40);
     
     
