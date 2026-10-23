@@ -2049,20 +2049,37 @@ function displayLevels() {
 }
 
 function challenge_box_display () {
-    ctx.fillStyle = 'rgb(15, 15, 15)';
-    ctx.fillRect(challenge_box_x -2, 527, 74, 24);
-    ctx.fillStyle = 'rgb(25, 203, 79)';
-    ctx.fillRect(challenge_box_x, 529, 70, 20);
+
+    // black shadow add
+    ctx.shadowColor = 'rgb(246, 255, 0)';
+    ctx.shadowBlur = 20;
+    ctx.shadowOffsetX = 0;
+    ctx.shadowOffsetY = 0;
+
+
+    // ctx.fillStyle = 'rgb(15, 15, 15)';
+    // ctx.fillRect(challenge_box_x -1, 528, 72, 22);
+    var bolden_text = 30;
+    for (let i = 0; i < bolden_text; i++) {
+        ctx.fillStyle = 'rgba(255, 255, 0, 0.5)';
+        ctx.fillRect(challenge_box_x, 529, 70, 20);
+    }
+
+    // black shadow remove
+    ctx.shadowColor = "white";
+    ctx.shadowBlur = 0;
+    ctx.shadowOffsetX = 0;
+    ctx.shadowOffsetY = 0;
 
     var speed_x = 10;
 
     if (type_of_challenge == 1) {
-        if (challenge_box_x > 417) {
+        if (challenge_box_x > 419) {
             challenge_box_x -= speed_x;
         }
     }
     if (type_of_challenge == 2){
-        if (challenge_box_x < 965) {
+        if (challenge_box_x < 940) {
             challenge_box_x += speed_x;
         }
     }
@@ -2072,8 +2089,8 @@ function otherTextDisplay() {
     var baseline_y = 310
     ctx.font = "20px Arial";
     ctx.fillStyle = 'rgb(6, 6, 6)';
-    ctx.fillText("Go Global", 405, baseline_y);
-    ctx.fillText("Verse Friends", 945, baseline_y);
+    ctx.fillText("Go Global", 400, baseline_y);
+    ctx.fillText("Verse Friends", 915, baseline_y);
 }
 
 function showBuildingFaithInSocietyInformation () {
