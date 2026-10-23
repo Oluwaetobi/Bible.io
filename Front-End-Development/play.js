@@ -1884,14 +1884,15 @@ function myBibletar () {
 }
 
 function onlineDisplay() {
+    var online_x_shift = 80;
     ctx.font = "30px Arial";
     ctx.fillStyle = 'rgb(4, 4, 4)';
     // ctx.fillText("Online: " + online, ((canvas.width)/2) - 60, 100);
-    ctx.fillText("Online: " + online, (static_width/2) - 60, 100);
+    ctx.fillText("Online: " + online, (static_width/2) - online_x_shift, 100);
 }
 
 function myScoresDisplay () {
-    var x_shift = -50;
+    var x_shift = -60;
     ctx.font = "20px Arial";
     ctx.fillStyle = 'rgb(6, 6, 6)';
     ctx.fillText("Points: " + my_points, (((static_width)/2) + x_shift) - 150, 130);
