@@ -1358,10 +1358,14 @@ function displayTextInfo () {
     ctx.shadowOffsetX = 1;
     ctx.shadowOffsetY = 1;
 
-    var x_shift_back = 230;
+    var verse_x_pos = 500;
+    var verse_y_pos = 700;
+    if (canvas.height > verse_y_pos) {
+        verse_y_pos = canvas.height - 20;
+    }
     ctx.font = "15px Arial";
     ctx.fillStyle = 'rgb(252, 252, 251)';
-    ctx.fillText(` Revelation 22:12 "And, behold, I come quickly; and my reward is with me, to give every man according as his work shall be." `, (((canvas.width)/2) - x_shift_back), canvas.height - 20);
+    ctx.fillText(` Revelation 22:12 "And, behold, I come quickly; and my reward is with me, to give every man according as his work shall be." `, verse_x_pos, verse_y_pos);
 
     // black shadow remove
     ctx.shadowColor = "white";
@@ -1392,9 +1396,15 @@ function draw_account_background() {
 
 function display_my_progress_info() {
 
+    var rec_width = 430;
+
     // translucent rectangle left side of account page
     ctx.fillStyle = "rgba(12, 12, 12, 0.3)"; 
-    ctx.fillRect(0, 0, 430, canvas.height);
+    ctx.fillRect(0, 0, rec_width, canvas.height);
+
+    var rec_x_pos = rec_width;
+    ctx.fillStyle = 'rgb(0, 0, 0)';
+    ctx.fillRect(rec_x_pos, 0, 3, canvas.height);
 
     // black shadow add
     ctx.shadowColor = 'rgb(8, 8, 8)';

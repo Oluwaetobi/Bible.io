@@ -2050,7 +2050,7 @@ function displayLevels() {
 
 function challenge_box_display () {
 
-    // black shadow add
+    // yellow shadow add
     ctx.shadowColor = 'rgb(246, 255, 0)';
     ctx.shadowBlur = 20;
     ctx.shadowOffsetX = 0;
@@ -2065,7 +2065,7 @@ function challenge_box_display () {
         ctx.fillRect(challenge_box_x, 529, 70, 20);
     }
 
-    // black shadow remove
+    // yellow shadow remove
     ctx.shadowColor = "white";
     ctx.shadowBlur = 0;
     ctx.shadowOffsetX = 0;
@@ -2291,6 +2291,7 @@ function extra_info_and_images () {
             }
         }
         // console.log(hours);
+
     }
 
     determine_whether_dark_outside_or_not_dark();
@@ -2637,38 +2638,64 @@ function draw_grid_background () {
     
 
     // moon or sun depending on time of day
-    var cirle_size = 200;
+    var cirle_size = 50;
 
-     // black shadow add
-    ctx.shadowColor = "black";
-    ctx.shadowBlur = 3;
-    ctx.shadowOffsetX = 0;
-    ctx.shadowOffsetY = 0;
+    function finish_sun_or_moon_drawing () {
+        // ctx.strokeStyle = 'rgba(0, 0, 0, 0.9)';          // Set outline color
+        ctx.lineWidth = 1;                     // Set outline thickness
+        ctx.fill();  
+        // ctx.stroke();
+    }
+
     
     function draw_sun_or_moon () {
         ctx.beginPath();
         // x, y, radius, start point circumference, end point circumference
         ctx.arc(1180, 20, cirle_size, 0, 2 * Math.PI);
         if (day_time == true) {
-            ctx.fillStyle = 'rgba(242, 255, 2, 0.99)';             // Set fill color
+            // yellow shadow add
+           ctx.shadowColor = 'rgb(242, 255, 2)';
+           ctx.shadowBlur = 70;
+           ctx.shadowOffsetX = 0;
+           ctx.shadowOffsetY = 0;
+           
+           var bolden_text = 30;
+            for (let i = 0; i < bolden_text; i++) {
+                ctx.fillStyle = 'rgba(242, 255, 2, 0.1)';
+                finish_sun_or_moon_drawing();
+            }
+
+            // black shadow remove
+            ctx.shadowColor = "white";
+            ctx.shadowBlur = 0;
+            ctx.shadowOffsetX = 0;
+            ctx.shadowOffsetY = 0;
         } else {
-            ctx.fillStyle = 'rgba(251, 251, 251, 0.99)';             // Set fill color
+            // yellow shadow add
+           ctx.shadowColor = 'rgb(251, 251, 251)';
+           ctx.shadowBlur = 70;
+           ctx.shadowOffsetX = 0;
+           ctx.shadowOffsetY = 0;
+
+           var bolden_text = 30;
+            for (let i = 0; i < bolden_text; i++) {
+                ctx.fillStyle = 'rgba(251, 251, 251, 0.1)';
+                finish_sun_or_moon_drawing();
+            }
+
+
+            // shadow remove
+            ctx.shadowColor = "white";
+            ctx.shadowBlur = 0;
+            ctx.shadowOffsetX = 0;
+            ctx.shadowOffsetY = 0;
         }
-        ctx.strokeStyle = 'rgba(0, 0, 0, 0.9)';          // Set outline color
-        ctx.lineWidth = 1;                     // Set outline thickness
-        ctx.fill();  
-        ctx.stroke();
     }
 
-    // draw_sun_or_moon();
+    draw_sun_or_moon();
     
 
 
-    // black shadow remove
-    ctx.shadowColor = "white";
-    ctx.shadowBlur = 0;
-    ctx.shadowOffsetX = 0;
-    ctx.shadowOffsetY = 0;
 
 
 }
