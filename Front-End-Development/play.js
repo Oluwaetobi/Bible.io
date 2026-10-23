@@ -861,10 +861,19 @@ function friendsBoard() {
 
     }
     
-    // if the friends scroll down to low, it brings it up
+    // if the friends scroll up too high, it brings it back down
     for (let i = 0; i < 100; i++) {
         if (friends.scroll_y > 20) {
             friends.scroll_y += -1;
+        } else {
+            break;
+        }
+    }
+    // if friends scroll down is too low, it brings it back up
+    var leniency_y_size = 300;
+    for(let i = 0; i < 100; i++) {
+        if (friends.scroll_y - leniency_y_size < (-1 * (friends.name.length * friends_y_spacing))) {
+            friends.scroll_y += 1;
         } else {
             break;
         }
@@ -2253,6 +2262,9 @@ function extra_info_and_images () {
         const date = new Date();
         const seconds = date.getSeconds();
 
+        // black background overlay
+        ctx.fillStyle = 'rgb(0, 0, 0)';
+        ctx.fillRect(x + 99, y - 23, 162, 32)
         if (seconds % 3 == 0) {
             ctx.fillStyle = 'rgb(255, 5, 5)';
         } else if (seconds % 3 == 1) {
@@ -2260,7 +2272,7 @@ function extra_info_and_images () {
         } else {
             ctx.fillStyle = 'rgb(0, 209, 7)';
         }
-        ctx.fillRect(x + 100, y - 22, 200, 30);
+        ctx.fillRect(x + 100, y - 22, 160, 30);
         
         
         // black shadow add
@@ -2272,7 +2284,7 @@ function extra_info_and_images () {
         ctx.font = "20px Arial";
         ctx.fillStyle = 'rgb(255, 255, 255)';
         // this algorithm proportinates my messages to automatically switch evenly space out in a 60 second interval
-        ctx.fillText(messages[Math.floor((seconds/get_right_number))], x + 110, y);
+        ctx.fillText(messages[Math.floor((seconds/get_right_number))], x + 115, y);
 
         // black shadow remove
         ctx.shadowColor = "white";
@@ -2283,8 +2295,8 @@ function extra_info_and_images () {
         // console.log(seconds)
     }
     
-    var fill_in_text_messages = ["A Global Race", "Fun Competition", "Bible Geeks", "Saving Grace", "Powerful Word"];
-    live_text_display(530, 645, fill_in_text_messages);
+    var fill_in_text_messages = ["A Global Race", "Match on!", "You ready?", "Game on!"];
+    live_text_display(545, 645, fill_in_text_messages);
 
 
 }
