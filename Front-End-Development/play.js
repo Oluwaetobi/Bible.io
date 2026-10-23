@@ -788,13 +788,19 @@ function friendsBoard() {
         }
     }
     
+    var board_x_size = 260;
+
+    // board back black overlay
+    ctx.fillStyle = 'rgb(0, 0, 0)';
+    ctx.fillRect(0, 0, board_x_size + 1, canvas.height);
+
     var gradient = ctx.createLinearGradient(0, 0, 260, 0);
     gradient.addColorStop(0, 'rgb(240, 238, 238)');     // Start color (0%)
     gradient.addColorStop(0.5, 'rgba(255, 255, 255, 0.8)');
     gradient.addColorStop(1, 'rgb(220, 216, 216)');
     ctx.fillStyle = gradient;
     // ctx.fillStyle = 'rgb(250, 251, 252)';
-    ctx.fillRect(0, 60, 260, canvas.height);
+    ctx.fillRect(0, 60, board_x_size, canvas.height);
 
     var friends_y_spacing = 130;
     var friends_info_x_alignment = 20;
@@ -2112,7 +2118,7 @@ function show_or_hide_html_elements () {
 var day_time = true;
 function extra_info_and_images () {
     flag_size_x = 250;
-    ctx.drawImage(img_racing_flags, 625, 250, flag_size_x, (flag_size_x)/1.8);
+    ctx.drawImage(img_racing_flags, 600, 250, flag_size_x, (flag_size_x)/1.8);
 
     const date = new Date();
     const month = date.getMonth();
@@ -2284,7 +2290,12 @@ function extra_info_and_images () {
         ctx.font = "20px Arial";
         ctx.fillStyle = 'rgb(255, 255, 255)';
         // this algorithm proportinates my messages to automatically switch evenly space out in a 60 second interval
-        ctx.fillText(messages[Math.floor((seconds/get_right_number))], x + 115, y);
+        var message_to_choose = Math.floor((seconds/get_right_number)); 
+        var message_x = 0;
+        if (message_to_choose != 0) {
+            message_x += 10;
+        }
+        ctx.fillText(messages[message_to_choose], x + 115 + message_x, y);
 
         // black shadow remove
         ctx.shadowColor = "white";

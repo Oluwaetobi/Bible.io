@@ -202,13 +202,23 @@ a:hover {
 }
 
 .modes_assets img {
-    /* padding-left: 50px; */
-    margin-left: 50px;
     cursor: pointer;
 }
 
 .modes_assets img:hover {
     filter: brightness(120%);
+}
+
+.modes_assets #choice1 {
+    margin-left: 50px;
+}
+
+.modes_assets #choice2 {
+    margin-left: 25px;
+}
+
+.modes_assets #choice3 {
+    margin-left: 50px;
 }
 
 .modes_assets #choice2:hover {
