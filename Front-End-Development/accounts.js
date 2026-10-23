@@ -1394,7 +1394,7 @@ function display_my_progress_info() {
 
     // translucent rectangle left side of account page
     ctx.fillStyle = "rgba(12, 12, 12, 0.3)"; 
-    ctx.fillRect(0, 0, 430, 800);
+    ctx.fillRect(0, 0, 430, canvas.height);
 
     // black shadow add
     ctx.shadowColor = 'rgb(8, 8, 8)';
@@ -1460,7 +1460,59 @@ function display_my_progress_info() {
 
 }
 
-function displayMouseX_and_MouseY () {
+function display_update_and_development_info () {
+    /** Always remember that even if you create a Local Variable in JavaScript with the same name
+     * as a global variable, local variables always take precedence
+     */
+    var x_pos = 10;
+    var y_pos = 650;
+    var box_size_x = 405;
+    var box_size_y = 76;
+    
+    if (canvas.height > y_pos) {
+        // the update display can never go higher than 650pixels
+        y_pos = canvas.height - (box_size_y + 20);
+    }
+    
+    // black shadow add
+    ctx.shadowColor = "black";
+    ctx.shadowBlur = 10;
+    ctx.shadowOffsetX = 0;
+    ctx.shadowOffsetY = 0;
+
+    // back white background overlay
+    var bolden_opacity = 2;
+    for (let i = 0; i < bolden_opacity; i++) {
+        ctx.fillStyle = 'rgba(255, 255, 255, 0.9)';
+        ctx.fillRect(x_pos - 1, y_pos - 1, box_size_x + 2, box_size_y + 2);
+    }
+    
+    // black shadow remove
+    ctx.shadowColor = "white";
+    ctx.shadowBlur = 0;
+    ctx.shadowOffsetX = 0;
+    ctx.shadowOffsetY = 0;
+
+
+    ctx.fillStyle = 'rgba(1, 0, 0, 0.9)';
+    ctx.fillRect(x_pos, y_pos, box_size_x, box_size_y);
+
+
+    ctx.font = "20px Arial";
+    ctx.fillStyle = "rgb(255, 255, 255)";
+    ctx.fillText("This is the Latest Version of Bible.io", x_pos + 40, y_pos + 20);
+    ctx.fillText("This website is Under Massive Construction", x_pos + 10, y_pos + 45);
+
+    ctx.font = "20px Arial";
+    ctx.fillStyle = 'rgb(169, 3, 3)';
+    ctx.fillText("Stay Tuned!", x_pos + 20, y_pos + 67);
+
+    ctx.font = "20px Arial";
+    ctx.fillStyle = 'rgb(3, 169, 6)';
+    ctx.fillText("New Updates Underway...", x_pos + 145, y_pos + 67);
+}
+
+function displayMouseX_and_MouseY (x, y) {
     if (i_am_a_developer == true) {
 
         // black shadow add
@@ -1469,14 +1521,19 @@ function displayMouseX_and_MouseY () {
     ctx.shadowOffsetX = 1;
     ctx.shadowOffsetY = 1;
 
+    var background_box_x_size = 420;
 
+    ctx.fillStyle = 'rgba(0, 0, 0, 0.9)';
+    ctx.fillRect(x - 16, y - 29, background_box_x_size + 2, 42);
+    ctx.fillStyle = 'rgba(138, 138, 138, 0.9)';
+    ctx.fillRect(x - 15, y - 28, background_box_x_size, 40);
     
     
     ctx.font = "30px Arial";
     ctx.strokeStyle = 'rgb(190, 36, 36)';
-    ctx.strokeText("MouseX: " + mouseX + " MouseY: " + mouseY, 10, 30);
+    ctx.strokeText("MouseX: " + mouseX + " MouseY: " + mouseY, x, y);
     ctx.fillStyle = 'rgb(190, 36, 36)';
-    ctx.fillText("MouseX: " + mouseX + " MouseY: " + mouseY, 10, 30);
+    ctx.fillText("MouseX: " + mouseX + " MouseY: " + mouseY, x, y);
     
     // black shadow remove
     ctx.shadowColor = "white";
@@ -1505,7 +1562,8 @@ function drawGame() {
     myBibletar();
     show_my_country();
     displayTextInfo();
-    displayMouseX_and_MouseY();
+    displayMouseX_and_MouseY(10, 30);
+    display_update_and_development_info()
 
 }
 

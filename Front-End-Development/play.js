@@ -724,10 +724,12 @@ function displayMouseX_and_MouseY (x, y) {
         ctx.shadowOffsetX = 2;
         ctx.shadowOffsetY = 2;
 
+        var background_box_x_size = 360;
+
         ctx.fillStyle = 'rgba(0, 0, 0, 0.9)';
-        ctx.fillRect(x - 16, y - 29, 342, 42);
+        ctx.fillRect(x - 16, y - 29, background_box_x_size + 2, 42);
         ctx.fillStyle = 'rgba(253, 251, 251, 0.9)';
-        ctx.fillRect(x - 15, y - 28, 340, 40);
+        ctx.fillRect(x - 15, y - 28, background_box_x_size, 40);
     
     
         // black shadow remove
