@@ -2435,6 +2435,7 @@ function bibleMaker_background () {
 
     var center_gender_section_text_x = 220;
 
+    
     ctx.font = "35px Arial";
     ctx.fillStyle = 'rgb(0, 0, 0)';
     ctx.fillText("Boy", (((canvas.width)/2) - center_gender_section_text_x) + 0 +10, 582);

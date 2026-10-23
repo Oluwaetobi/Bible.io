@@ -384,6 +384,11 @@ function myBibletar () {
 
     
     ctx.font = "40px Arial";
+    var bolden_text = 2;
+    for (let i = 0; i < bolden_text; i++) {
+        ctx.fillStyle = 'rgb(0, 0, 0)';
+        ctx.strokeText(my_name, 50, name_y_pos);
+    }
     ctx.strokeStyle = 'rgb(255, 255, 255)';
     ctx.strokeText(my_name, 50, name_y_pos);
     ctx.fillStyle = 'rgb(255, 255, 255)';
@@ -1401,12 +1406,22 @@ function display_my_progress_info() {
     var score_and_goal_xpos = 170;
 
     ctx.font = "30px Arial";
+    var bolden_text = 2;
+    for (let i = 0; i < bolden_text; i++) {
+        ctx.fillStyle = 'rgb(0, 0, 0)';
+        ctx.fillText("Points: " + my_points, score_and_goal_xpos, score_and_goal_y_pos);
+    }
     ctx.fillStyle = 'rgb(253, 253, 253)';
     ctx.fillText("Points: " + my_points, score_and_goal_xpos, score_and_goal_y_pos);
 
     var goal_points = 100;
 
     ctx.font = "20px Arial";
+    var bolden_text = 2;
+    for (let i = 0; i < bolden_text; i++) {
+        ctx.fillStyle = 'rgb(0, 0, 0)';
+        ctx.fillText("Try to reach " + goal_points + " points!", score_and_goal_xpos, score_and_goal_y_pos + 30);
+    }
     ctx.fillStyle = 'rgb(253, 253, 253)';
     ctx.fillText("Try to reach " + goal_points + " points!", score_and_goal_xpos, score_and_goal_y_pos + 30);
 
