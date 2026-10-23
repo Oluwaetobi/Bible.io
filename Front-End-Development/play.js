@@ -5415,6 +5415,14 @@ function level_1_Questions () {
         answer4.innerText += `Ghosts `;
         correct_answer = 1;
     }  
+    if (randomQuestion == 41) {
+        question.innerText = `God put his rainbow up in the sky, but what does it mean?  `;
+        answer1.innerText += `to remind us that the leprechaun's gold will be there `;
+        answer2.innerText += `his promise to never destroy the Earth again with a flood `;
+        answer3.innerText += `a time to celebrate the creation of the world!  `;
+        answer4.innerText += `a time for immense resting and peace `;
+        correct_answer = 2;
+    }  
 }
 
 function level_2_Questions () {
@@ -5874,6 +5882,14 @@ function level_2_Questions () {
         answer3.innerText += `fifteen  `;
         answer4.innerText += `twenty `;
         correct_answer = 4;
+    }
+    if (randomQuestion == 58) {
+        question.innerText = `Upon which mountain did Noah's ark rest upon after the flood?  `;
+        answer1.innerText += `Moriah `;
+        answer2.innerText += `Ararat `;
+        answer3.innerText += `Halak  `;
+        answer4.innerText += `Zalmon  `;
+        correct_answer = 2;
     }
 }
 

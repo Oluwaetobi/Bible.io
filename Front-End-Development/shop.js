@@ -2179,9 +2179,25 @@ function bibletarShopPage () {
         ctx.fillStyle = 'rgb(147, 6, 154)';
     }
     ctx.fillRect(1130 -350, 55, 170, 30);
+
+    // black shadow add
+    ctx.shadowColor = "black";
+    ctx.shadowBlur = 1;
+    ctx.shadowOffsetX = -1;
+    ctx.shadowOffsetY = 1;
+    
     ctx.font = "25px Arial";
     ctx.fillStyle = 'rgb(252, 250, 250)';
     ctx.fillText("Leave Shop", 1150 -350, 77);
+    
+    
+    // black shadow remove
+    ctx.shadowColor = "white";
+    ctx.shadowBlur = 0;
+    ctx.shadowOffsetX = 0;
+    ctx.shadowOffsetY = 0;
+
+
 
     drawUsersBibletar();
 }
@@ -2250,10 +2266,23 @@ function bibletarMakerHome() {
     ctx.fillRect(980, 55 + 610, 130, 30);
     ctx.font = "25px Arial";
     ctx.fillStyle = 'rgb(252, 250, 250)';
+    
+    // black shadow add
+    ctx.shadowColor = "black";
+    ctx.shadowBlur = 1;
+    ctx.shadowOffsetX = -1;
+    ctx.shadowOffsetY = 1;
+    
     /**I had to move leave and save and exit down because once you get a really big hat, it is going to cover
      * these button, meaning the user will not be able to leave or save their bibletar
      */
     ctx.fillText("Cancel", 1005, 687);
+
+    // black shadow remove
+    ctx.shadowColor = "white";
+    ctx.shadowBlur = 0;
+    ctx.shadowOffsetX = 0;
+    ctx.shadowOffsetY = 0;
 
     // Save and Exit
     if (mouseX > 1127 && mouseX < 1326 && mouseY > 663 && mouseY < 691) {
@@ -2262,9 +2291,22 @@ function bibletarMakerHome() {
         ctx.fillStyle = 'rgb(6, 154, 8)';
     }
     ctx.fillRect(1130, 55 + 610, 200, 30);
+
+    // black shadow add
+    ctx.shadowColor = "black";
+    ctx.shadowBlur = 1;
+    ctx.shadowOffsetX = -1;
+    ctx.shadowOffsetY = 1;
+
     ctx.font = "25px Arial";
     ctx.fillStyle = 'rgb(252, 250, 250)';
     ctx.fillText("Save and Exit", 1150, 687);
+
+     // black shadow remove
+    ctx.shadowColor = "white";
+    ctx.shadowBlur = 0;
+    ctx.shadowOffsetX = 0;
+    ctx.shadowOffsetY = 0;
 
 
 
@@ -2325,14 +2367,26 @@ function bibletarMakerHome() {
     } else {
         ctx.fillStyle = 'rgb(157, 16, 8)';
     }
+
+    // black shadow add
+    ctx.shadowColor = "black";
+    ctx.shadowBlur = 1;
+    ctx.shadowOffsetX = -1;
+    ctx.shadowOffsetY = 1;
+    
     ctx.fillRect(1084, 500, 150, 65);
     ctx.font = "40px Arial";
     ctx.strokeStyle = 'rgb(250, 249, 249)';
     ctx.strokeText("SHOP", 1100, 545);
     ctx.fillStyle = 'rgb(247, 243, 243)';
     ctx.fillText("SHOP", 1100, 545);
-
-
+    
+    // black shadow remove
+    ctx.shadowColor = "white";
+    ctx.shadowBlur = 0;
+    ctx.shadowOffsetX = 0;
+    ctx.shadowOffsetY = 0;
+    
 
 }
 
@@ -2409,6 +2463,12 @@ function bibleMaker_background () {
     ctx.fillText("Click to go to your section", (((canvas.width)/2) - x_shift_text), (y_baseline - 3));
 
 
+    // black shadow add
+    ctx.shadowColor = "black";
+    ctx.shadowBlur = 2;
+    ctx.shadowOffsetX = 0;
+    ctx.shadowOffsetY = 0;
+    
     var x_shift_glory_to_God_text = 605;
     ctx.font = "25px Arial";
     ctx.strokeStyle = 'rgba(250, 250, 249, 0.4)';
@@ -2425,6 +2485,11 @@ function bibleMaker_background () {
     ctx.fillText("John 3:16 “For God so loved the world, that he gave his only begotten Son, that whosoever believeth in him should not perish, but have everlasting life.”", (((canvas.width)/2) - x_shift_john_3_16_verse), canvas.height - 20);
 
 
+    // black shadow remove
+    ctx.shadowColor = "white";
+    ctx.shadowBlur = 0;
+    ctx.shadowOffsetX = 0;
+    ctx.shadowOffsetY = 0;
 
     // white shadow add
     ctx.shadowColor = "white";
