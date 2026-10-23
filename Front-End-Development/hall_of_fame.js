@@ -318,6 +318,8 @@ function loadingBox() {
 
 var player_clicked = 1;
 
+// needs to be called at least once at the start as well as to also set all the even and odd colors
+change_top_player_display(1);
 function change_top_player_display(player_click_html) {
     player_clicked = player_click_html;
     /** Changes the display of the Top Player display to the correct one */
@@ -328,6 +330,24 @@ function change_top_player_display(player_click_html) {
     player_Clicked_Name = hall_of_fame.everyones_names[player_click_html - 1];
     players_points = hall_of_fame.everyones_points[player_click_html - 1];
     img_country.src = ("./images/country_" + hall_of_fame.countries[player_click_html - 1] + ".svg");
+
+    const hof_td_background = document.querySelectorAll('#hall-of-fame-design tr');
+
+    hof_td_background.forEach((tr, index)=> {
+        const pressed_color = 'rgba(71, 206, 255, 0.7)';
+        
+        if (index % 2 == 0) {
+            // even colors
+            tr.style.backgroundColor = 'rgb(255, 255, 255)';
+        }
+        if (index % 2 == 1) {
+            // odd colors
+            tr.style.backgroundColor = 'rgb(198, 198, 198)';
+        }
+        if (index == player_click_html) {
+            tr.style.backgroundColor = pressed_color;
+        }
+    })
 }
 
 var players_points = hall_of_fame.everyones_points[0];
