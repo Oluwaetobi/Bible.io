@@ -99,6 +99,10 @@ function getCreateNameFormErrors (username) {
         errors.push('Your name is too short!');
         username_input.parentElement.classList.add('incorrect');
     }
+    if(username.length > 18) {
+        errors.push('Your name is too long!');
+        username_input.parentElement.classList.add('incorrect');
+    }
     return errors;
 }
 
