@@ -51,12 +51,19 @@ const http = require('http');
 
 const PORT = 3000;
 
+/** More Notes:
+ * Because I've now installed nodemon for node.js, which automatically restarts my server everytime I save a change
+ * instead of me manually doing that which is time consuming, instead of typing "npm start" in the terminal, now
+ * in order to start it up I type "npx nodemon start". Now everything will restart automatically whenever I press ctrl+s
+ * but I still have to press F5 or press the refresh button on localhost:3000 or whatever the port number is, cool right?
+ */
+
 const server = http.createServer((req, res) => {
     res.statusCode = 200;
     res.setHeader('Content-Type', 'text/plain');
-    res.end('Hello, World! Your server is working.');
+    res.end('Hello, World! Your server is working. Automatic');
 });
 
 server.listen(PORT, () => {
-    console.log(`Server is running and listening on port ${PORT}`);
+    console.log(`Server is running and listening on port localhost:${PORT}`);
 });
