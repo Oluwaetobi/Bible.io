@@ -45,3 +45,18 @@
  * It's one thing to know how to code, it's another thing to have the money and the cash.
  * Because let's be honest with ourselves. Nothing goes for nothing. And there ain't NOTHIN' that's free!!
  */
+
+// 1. Import the built-in HTTP module
+const http = require('http');
+
+const PORT = 3000;
+
+const server = http.createServer((req, res) => {
+    res.statusCode = 200;
+    res.setHeader('Content-Type', 'text/plain');
+    res.end('Hello, World! Your server is working.');
+});
+
+server.listen(PORT, () => {
+    console.log(`Server is running and listening on port ${PORT}`);
+});

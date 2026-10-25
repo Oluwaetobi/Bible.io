@@ -1,0 +1,26 @@
+{
+  "name": "bible.io-code",
+  "version": "1.0.0",
+  "description": "multiplayer connection for Bible.io Live",
+  "keywords": [
+    "bibleio",
+    "backend",
+    "nodejs"
+  ],
+  "homepage": "https://github.com/Oluwaetobi/Bible.io#readme",
+  "bugs": {
+    "url": "https://github.com/Oluwaetobi/Bible.io/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Oluwaetobi/Bible.io.git"
+  },
+  "license": "MIT",
+  "author": "omoOlorun1",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./Back-End-Development/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
