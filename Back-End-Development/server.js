@@ -13,6 +13,7 @@
 
 // 1. Import the built-in HTTP module
 const http = require('http');
+const { type } = require('os');
 
 const PORT = 3000;
 
@@ -23,22 +24,84 @@ const PORT = 3000;
  * but I still have to press F5 or press the refresh button on localhost:3000 or whatever the port number is, cool right?
  */
 
-const server = http.createServer((req, res) => {
+const around_the_world = {
+    online: 0,
+    name: "Unknown Player",
+    points: 0,
+    bibletar: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+    room: 0,
+    country: "America",
+    new_game_wait_time: 10,
+};
 
-    const around_the_world = {
-        online: 0,
-        name: "Unknown Player",
-        points: 0,
-        bibletar: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
-        room: 0,
-        country: "America",
-        new_game_wait_time: 10,
-    };
+const server = http.createServer((req, res) => {
+  /** The Bible.io server is able to handle POST requests which act as PATCH requests and it is also
+   * able to handle GET requests
+   * 
+   * IMPORTANT NOTES: Some legacy corporate firewalls, proxies, or older infrastructure block or 
+   * strip out PATCH or PUT requests entirely. POST is universally allowed everywhere
+   * 
+   * so I guess it's just better to stick with POST instead of PUT or PATCH, only problem is that
+   * POST takes up more energy than PATCH, and I want to conserve server energy, so I'm going to use
+   * PATCH instead
+   */
 
     res.statusCode = 200;
     res.setHeader('Content-Type', 'text/plain');
+
+    if(req.method == "PATCH") {
+      let body = "";
+
+        req.on("data", chunk=> {
+          // console.log("Chunk: " + typeof(JSON.parse(chunk)[0]))
+          // console.log("Chunk: " + (JSON.parse(chunk)[1]))
+          const decoded_name = JSON.parse(chunk)[0];
+          var decoded_value = JSON.parse(chunk)[1];
+
+          if (decoded_name == "online") {
+            around_the_world.online = decoded_value;
+          }
+          if (decoded_name == "name") {
+            around_the_world.name = decoded_value;
+          }
+          if (decoded_name == "points") {
+            around_the_world.points = decoded_value;
+          }
+          if (decoded_name == "bibletar") {
+            around_the_world.bibletar = decoded_value;
+          }
+          if (decoded_name == "room") {
+            around_the_world.room = decoded_value;
+          }
+          if (decoded_name == "country") {
+            around_the_world.country = decoded_value;
+          }
+          if (decoded_name == "new_game_wait_time") {
+            around_the_world.new_game_wait_time = decoded_value;
+          }
+        });
+
+      req.on("end", ()=>{
+          // console.log("received data: ", around_the_world);
+
+          res.writeHead(200, {'content-type':"application/json"});
+          res.end(JSON.stringify({message: "Data Received", data:around_the_world}));
+      })
+
+    } else if(req.method == "GET") {
+
+      // 3. Send a 200 OK status code and set the content type to JSON
+      res.writeHead(200, { 'Content-Type': 'application/json' });
+      // res.end(JSON.stringify({message: "Data Received", data:around_the_world})); // Convert JS object to JSON string
+      res.end(JSON.stringify(around_the_world)); // Convert JS object to JSON string
+    } else {
+        res.writeHead(404, {'content-type':'text/plain'});
+        res.end(JSON.stringify(around_the_world));
+    }
+
+
     // 4. Convert the object to a string and send it to the client
-    res.end(JSON.stringify(around_the_world));
+    // res.end(JSON.stringify(around_the_world));
     // res.end('The Bible.io server is running... Automatic \n');
 });
 
@@ -67,9 +130,18 @@ DELETE	Remove a resource. (Example: Deleting a specific post or comment.)
  * properly, obviously this will be sort of tricky and take time to learn but it will be worth it in the end.
  */
 
+const server_source = 'http://localhost:3000/api/data';
+
 async function getData() {
+  /** This function is used to retrieve data on the Bible.io server */
+  const url = server_source;
   try {
-    const response = await fetch('http://localhost:3000/api/data');
+    const response = await fetch(url, {
+      method: 'GET', // Specify the HTTP method
+      headers: {
+          'Content-Type': 'application/json' // Inform the server about the data format
+      },
+    });
     
     
     if (!response.ok) {
@@ -77,10 +149,53 @@ async function getData() {
     }
 
     const data = await response.json();
-    console.log('Data received:', data);
+    // console.log('Data received:', data.bibletar);
+    console.log("Date Received: " , data);
   } catch (error) {
     console.error('Fetch failed:', error);
   }
+
+
 }
 
-getData();
+// getData();
+
+
+
+async function makePost_or_Patch_Request() {
+  /** This function is used to change data on the Bible.io server */
+
+  /** MORE IMPORTANT NOTES:
+   * Don't ever place this in requestanimationframe loop, this will overwhelm the server, you can call this,
+   * max every 3 seconds
+   */
+  const url = server_source;
+  // const data = {
+  //   online: 42
+  // };
+
+
+  // element 1 tell the server which part of the object to change, element 2 tells the server what to change it to
+  var data = ["online", "1"];
+
+  try {
+    const response = await fetch(url, {
+      method: 'PATCH', // Specify the HTTP method
+      headers: {
+        'Content-Type': 'application/json' // Inform the server about the data format
+      },
+      body: JSON.stringify(data) // Convert the JavaScript object into a JSON string
+    });
+
+    if (!response.ok) {
+      throw new Error(`Response status: ${response.status}`);
+    }
+
+    const json = await response.json(); // Parse the JSON response from the server
+    console.log(json);
+  } catch (error) {
+    console.error('Error making POST request:', error.message);
+  }
+}
+
+makePost_or_Patch_Request();
