@@ -1,6 +1,6 @@
 /** Remember, if you are editing this code, it's your job to install Node.js on your computer
  * 
- * Now that I've got Node.js up and running I can hook my Node.js application up to a database such as MongoDB
+ * Now that I've got Node.js up and running I can hook my Node.js application up to a database such as MongoDB or MySQL
  * if I really wanted to, that way I can start storing data and remember information, this will help with storing
  * think like player's accounts such as passwords, usernames, emails, friends, friend's requests, the hall of fame,
  * and all other types of information that needs to be up and ready 24/7. MongoDB is free, though they have higher
