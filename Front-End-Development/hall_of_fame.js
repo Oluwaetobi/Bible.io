@@ -103,9 +103,11 @@ const hall_of_fame = {
         [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
         [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
     ],
-    server_source: 'https://bible-io-backend-server.onrender.com',
+    // server_source: 'https://bible-io-backend-server.onrender.com',
 }
-
+var server_source = 'https://bible-io-backend-server.onrender.com';
+// gets important data that I need such as inputting data for whether I am a developer
+localStorageAndSessionStorageData();
 localhostsource_server_if_i_am_a_developer();
 function localhostsource_server_if_i_am_a_developer () {
     /**Alright, so essentially what this function does it sets the server_source url to localhost instead
@@ -116,7 +118,7 @@ function localhostsource_server_if_i_am_a_developer () {
      * of i_am_a_developer
      */
     if (i_am_a_developer == true) {
-        hall_of_fame.server_source = 'http://localhost:3000'
+        server_source = 'http://localhost:3000';
     } else {
         // if the person is not a developer do nothing it is already set to the actual server by default
     }

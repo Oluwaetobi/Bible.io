@@ -15,7 +15,7 @@
 
 // 1. Import the built-in HTTP module
 const http = require('http');
-const { type } = require('os');
+// const { type } = require('os');
 
 const PORT = 3000;
 
@@ -290,7 +290,7 @@ const server = http.createServer((req, res) => {
 });
 
 server.listen(PORT, () => {
-    console.log(`The Bible.io server is running and listening on port localhost:${PORT}`);
+    console.log(`The Bible.io server is running on ${server_source} and listening on port ${PORT}`);
 });
 
 
@@ -320,8 +320,8 @@ DELETE	Remove a resource. (Example: Deleting a specific post or comment.)
 var server_source = 'http://localhost:3000';
 
 
-async function getData() {
-  /** This function is used to retrieve data on the Bible.io server */
+async function makeA_Get_Request() {
+  /** This function is used to retrieve data on the Bible.io server, that way I can display it on Bible.io (website) */
   const url = server_source;
   try {
     const response = await fetch(url, {
@@ -340,35 +340,32 @@ async function getData() {
     // console.log('Data received:', data.bibletar);
     console.log("Date Received: " , data);
   } catch (error) {
-    console.error('Fetch failed:', error);
+    console.error('Error making GET request:', error);
   }
 
 
 }
 
-// getData();
+// makeA_Get_Request();
 
 
 
 async function makePost_or_Patch_Request() {
-  /** This function is used to change data on the Bible.io server */
-
+  /** This function is used to make request to the Bible.io server to change/edit data on the Bible.io server */
+  
   /** MORE IMPORTANT NOTES:
    * Don't ever place this in requestanimationframe loop, this will overwhelm the server, you can call this,
    * max every 3 seconds
-   */
-  const url = server_source;
-  // const data = {
-  //   online: 42
-  // };
-
-
+  */
+ const url = server_source;
+  
+  
   /* element 1 tells the server which part of the object to change, element 2 tells the server what to change it to,
   you can have as many elements as you want that are necessary, but remember if you are not changing the amount
   of people online or requesting to clean up the room, player's room must come first, then player's spot, 
   and then all other additional information, */
-  var data = ["online", 5];
-
+  var data = ["online", 1];
+  
   try {
     const response = await fetch(url, {
       method: 'PATCH', // Specify the HTTP method
@@ -377,15 +374,15 @@ async function makePost_or_Patch_Request() {
       },
       body: JSON.stringify(data) // Convert the JavaScript object into a JSON string
     });
-
+    
     if (!response.ok) {
       throw new Error(`Response status: ${response.status}`);
     }
-
-    const json = await response.json(); // Parse the JSON response from the server
-    console.log(json);
+    
+    const data = await response.json(); // Parse the JSON response from the server
+    console.log(data);
   } catch (error) {
-    console.error('Error making POST request:', error.message);
+    console.error('Error making PATCH request:', error.message);
   }
 }
 

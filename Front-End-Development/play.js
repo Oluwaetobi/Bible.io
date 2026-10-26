@@ -188,9 +188,12 @@ const my_game = {
     room_closed: 0,
 
 
-    server_source: 'https://bible-io-backend-server.onrender.com',
+    // server_source: 'https://bible-io-backend-server.onrender.com',
 };
+var server_source = 'https://bible-io-backend-server.onrender.com';
 
+// gets important data that I need such as inputting data for whether I am a developer
+localStorageAndSessionStorageData();
 localhostsource_server_if_i_am_a_developer();
 function localhostsource_server_if_i_am_a_developer () {
     /**Alright, so essentially what this function does it sets the server_source url to localhost instead
@@ -201,7 +204,7 @@ function localhostsource_server_if_i_am_a_developer () {
      * of i_am_a_developer
      */
     if (i_am_a_developer == true) {
-        hall_of_fame.server_source = 'http://localhost:3000'
+        server_source = 'http://localhost:3000';
     } else {
         // if the person is not a developer do nothing it is already set to the actual server by default
     }
@@ -423,25 +426,23 @@ function update_Data_And_Continue_Game() {
     home_page = 1;
 }
 
-async function makePost_or_Patch_Request() {
-  /** This function is used to change data on the Bible.io server */
 
+async function makePost_or_Patch_Request() {
+  /** This function is used to make request to the Bible.io server to change/edit data on the Bible.io server */
+  
   /** MORE IMPORTANT NOTES:
    * Don't ever place this in requestanimationframe loop, this will overwhelm the server, you can call this,
    * max every 3 seconds
-   */
-  const url = server_source;
-  // const data = {
-  //   online: 42
-  // };
-
-
+  */
+ const url = server_source;
+  
+  
   /* element 1 tells the server which part of the object to change, element 2 tells the server what to change it to,
   you can have as many elements as you want that are necessary, but remember if you are not changing the amount
   of people online or requesting to clean up the room, player's room must come first, then player's spot, 
   and then all other additional information, */
-  var data = ["online", 5];
-
+  var data = ["online", 1];
+  
   try {
     const response = await fetch(url, {
       method: 'PATCH', // Specify the HTTP method
@@ -450,19 +451,25 @@ async function makePost_or_Patch_Request() {
       },
       body: JSON.stringify(data) // Convert the JavaScript object into a JSON string
     });
-
+    
     if (!response.ok) {
-      throw new Error(`Response status: ${response.status}`);
+        throw new Error(`Response status: ${response.status}`);
     }
-
-    const json = await response.json(); // Parse the JSON response from the server
-    console.log(json);
-  } catch (error) {
-    console.error('Error making POST request:', error.message);
+    
+    const data = await response.json(); // Parse the JSON response from the server
+    console.log(data);
+    online - data.online;
+} catch (error) {
+    console.error('Error making PATCH request:', error.message);
   }
 }
 
+console.log(server_source);
 makePost_or_Patch_Request();
+
+
+
+
 
 
 function randomRobotModes() {
@@ -674,8 +681,8 @@ function save_Data_to_Local_or_Session_Storage() {
 
     localStorage.setItem('my_cash', JSON.stringify(my_cash));
 }
-
 localStorageAndSessionStorageData();
+
 function localStorageAndSessionStorageData () {
 
     /* If you don't know what these 4 lines of code, here's a reference
