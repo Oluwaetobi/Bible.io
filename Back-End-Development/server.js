@@ -32,6 +32,20 @@ const around_the_world = {
     room: 0,
     country: "America",
     new_game_wait_time: 10,
+    hall_of_fame: [
+      /**For now I will only do the top 10 */
+      // country, name, points, bibletar
+      ["America", "Unknown Player", 0, [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]],
+      ["America", "Unknown Player", 0, [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]],
+      ["America", "Unknown Player", 0, [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]],
+      ["America", "Unknown Player", 0, [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]],
+      ["America", "Unknown Player", 0, [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]],
+      ["America", "Unknown Player", 0, [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]],
+      ["America", "Unknown Player", 0, [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]],
+      ["America", "Unknown Player", 0, [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]],
+      ["America", "Unknown Player", 0, [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]],
+      ["America", "Unknown Player", 0, [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]],
+    ],
 };
 
 const server = http.createServer((req, res) => {
@@ -55,40 +69,55 @@ const server = http.createServer((req, res) => {
         req.on("data", chunk=> {
           // console.log("Chunk: " + typeof(JSON.parse(chunk)[0]))
           // console.log("Chunk: " + (JSON.parse(chunk)[1]))
-          const decoded_name = JSON.parse(chunk)[0];
-          var decoded_value = JSON.parse(chunk)[1];
+          // const decoded_name = JSON.parse(chunk)[0];
+          // var decoded_value = JSON.parse(chunk)[1];
+          if (JSON.parse(chunk)[0] == "hall_of_fame") {
+            // Hall of fame data
 
-          if (decoded_name == "online") {
-            around_the_world.online = decoded_value;
+          } else {
+            // Bible.io LIVE Data
+            for (let i = 0; i < Math.ceil((chunk.length)/2); i++) {
+              const decoded_name = JSON.parse(chunk)[i * 2];
+              var decoded_value = JSON.parse(chunk)[(i * 2)+ 1];
+              if (decoded_name == "online") {
+                around_the_world.online = decoded_value;
+              }
+              if (decoded_name == "name") {
+                around_the_world.name = decoded_value;
+              }
+              if (decoded_name == "points") {
+                around_the_world.points = decoded_value;
+              }
+              if (decoded_name == "bibletar") {
+                around_the_world.bibletar = decoded_value;
+              }
+              if (decoded_name == "room") {
+                around_the_world.room = decoded_value;
+              }
+              if (decoded_name == "country") {
+                around_the_world.country = decoded_value;
+              }
+              if (decoded_name == "new_game_wait_time") {
+                around_the_world.new_game_wait_time = decoded_value;
+              }
+            }
+
           }
-          if (decoded_name == "name") {
-            around_the_world.name = decoded_value;
-          }
-          if (decoded_name == "points") {
-            around_the_world.points = decoded_value;
-          }
-          if (decoded_name == "bibletar") {
-            around_the_world.bibletar = decoded_value;
-          }
-          if (decoded_name == "room") {
-            around_the_world.room = decoded_value;
-          }
-          if (decoded_name == "country") {
-            around_the_world.country = decoded_value;
-          }
-          if (decoded_name == "new_game_wait_time") {
-            around_the_world.new_game_wait_time = decoded_value;
-          }
+
         });
 
       req.on("end", ()=>{
           // console.log("received data: ", around_the_world);
 
+          /** RESPONSE: Send them back all the data, this is after changes have been applied */
+
           res.writeHead(200, {'content-type':"application/json"});
           res.end(JSON.stringify({message: "Data Received", data:around_the_world}));
       })
 
-    } else if(req.method == "GET") {
+    } else if (req.method == "GET") {
+
+      /** RESPONSE: Sends them all the data they asked for that stored on the server */
 
       // 3. Send a 200 OK status code and set the content type to JSON
       res.writeHead(200, { 'Content-Type': 'application/json' });
@@ -111,7 +140,7 @@ server.listen(PORT, () => {
 
 /** FETCH
  * 
- * Methods: POST, PUT, PATCH, DELTE
+ * Methods: POST, PUT, PATCH, DELETE
  * 
  * 
 POST	Create a brand-new resource (Example: Submitting a new signup form.)

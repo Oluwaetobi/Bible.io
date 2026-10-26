@@ -208,7 +208,29 @@ function wipeOutEntireScreen() {
 }
 
 function saveCountry() {
-    const countryInputValue = document.getElementById('country-input').value;
+    var countryInputValue = document.getElementById('country-input').value;
+
+    /**Since country is a string I don't need to edit it, unless the name
+     * of the country has two words such as South Korea, I will have to set it
+     * from "South Korea" to "South_Korea" that way I can access the correct file name for the image
+     */
+
+    if (countryInputValue == "South Africa") {
+        countryInputValue == "South_Africa"
+    }
+    if (countryInputValue == "United Arab Emirates") {
+        countryInputValue == "United_Arab_Emirates"
+    }
+    if (countryInputValue == "South Korea") {
+        countryInputValue == "South_Korea"
+    }
+    if (countryInputValue == "United Kingdom") {
+        countryInputValue == "United_Kingdom"
+    }
+    if (countryInputValue == "New Zealand") {
+        countryInputValue == "New_Zealand"
+    }
+
     console.log(countryInputValue);
     localStorage.setItem('my_country', countryInputValue);
 }
@@ -1314,27 +1336,27 @@ function myBibletar () {
 
 function show_my_country() {
     var country_svg = my_country;
-
-    /**Since country is a string I don't need to edit it, unless the name
-     * of the country has two words such as South Korea, I will have to set it
-     * from "South Korea" to "South_Korea"
+    
+    /** Instead of having to apply these rules everywhere all over my code, I'm doing it once in the
+     * save_country function, that way I don't have to apply this again in different .js files when I need
+     * to access the correct country file 
      */
 
-    if (my_country == "South Africa") {
-        country_svg == "South_Africa"
-    }
-    if (my_country == "United Arab Emirates") {
-        country_svg == "United_Arab_Emirates"
-    }
-    if (my_country == "South Korea") {
-        country_svg == "South_Korea"
-    }
-    if (my_country == "United Kingdom") {
-        country_svg == "United_Kingdom"
-    }
-    if (my_country == "New Zealand") {
-        country_svg == "New_Zealand"
-    }
+    // if (my_country == "South Africa") {
+    //     country_svg == "South_Africa"
+    // }
+    // if (my_country == "United Arab Emirates") {
+    //     country_svg == "United_Arab_Emirates"
+    // }
+    // if (my_country == "South Korea") {
+    //     country_svg == "South_Korea"
+    // }
+    // if (my_country == "United Kingdom") {
+    //     country_svg == "United_Kingdom"
+    // }
+    // if (my_country == "New Zealand") {
+    //     country_svg == "New_Zealand"
+    // }
 
 
     // black shadow add
