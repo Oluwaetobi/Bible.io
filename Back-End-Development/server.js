@@ -25,13 +25,76 @@ const PORT = 3000;
  */
 
 const around_the_world = {
+  // We will work with 10 rooms
+
+    // How many people are online globally
     online: 0,
-    name: "Unknown Player",
-    points: 0,
-    bibletar: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+
+
+    name: [
+      // names of players in all rooms
+      [["Unknown Player"], ["Unknown Player"], ["Unknown Player"], ["Unknown Player"],],
+      [["Unknown Player"], ["Unknown Player"], ["Unknown Player"], ["Unknown Player"],],
+      [["Unknown Player"], ["Unknown Player"], ["Unknown Player"], ["Unknown Player"],],
+      [["Unknown Player"], ["Unknown Player"], ["Unknown Player"], ["Unknown Player"],],
+      [["Unknown Player"], ["Unknown Player"], ["Unknown Player"], ["Unknown Player"],],
+      [["Unknown Player"], ["Unknown Player"], ["Unknown Player"], ["Unknown Player"],],
+      [["Unknown Player"], ["Unknown Player"], ["Unknown Player"], ["Unknown Player"],],
+      [["Unknown Player"], ["Unknown Player"], ["Unknown Player"], ["Unknown Player"],],
+      [["Unknown Player"], ["Unknown Player"], ["Unknown Player"], ["Unknown Player"],],
+      [["Unknown Player"], ["Unknown Player"], ["Unknown Player"], ["Unknown Player"],],
+    ],
+    points: [
+      // points of all players in all rooms
+      [0, 0, 0, 0],
+      [0, 0, 0, 0],
+      [0, 0, 0, 0],
+      [0, 0, 0, 0],
+      [0, 0, 0, 0],
+      [0, 0, 0, 0],
+      [0, 0, 0, 0],
+      [0, 0, 0, 0],
+      [0, 0, 0, 0],
+      [0, 0, 0, 0],
+    ],
+    countries: [
+      // countries of all players in each room
+      ["America", "America", "America", "America",],
+      ["America", "America", "America", "America",],
+      ["America", "America", "America", "America",],
+      ["America", "America", "America", "America",],
+      ["America", "America", "America", "America",],
+      ["America", "America", "America", "America",],
+      ["America", "America", "America", "America",],
+      ["America", "America", "America", "America",],
+      ["America", "America", "America", "America",],
+      ["America", "America", "America", "America",],
+    ],
+    bibletar: [
+      // bibletars of all players for each room
+      [[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]],
+      [[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]],
+      [[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]],
+      [[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]],
+      [[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]],
+      [[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]],
+      [[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]],
+      [[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]],
+      [[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]],
+      [[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]],
+    ],
+    // tells me which rooms are closed or open, 1 represents true meaning it's closed, 0 represent false which means it's open
+    closed_rooms: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    // tells me how many people are in each room
+    amount_of_people_in_room: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    // represents worldwide room that's currently open, and has less than 4 players, rooms close when their game starts
     room: 0,
     country: "America",
+    // max wait time before game starts, once the room closes, that means the game will start
     new_game_wait_time: 10,
+
+
+
     hall_of_fame: [
       /**For now I will only do the top 10 */
       // country, name, points, bibletar

@@ -172,7 +172,7 @@ const my_game = {
         [1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1],
     ],
 
-    /** I receive data from the room on my server, people who press go at the same time will have the
+    /** I receive data from the room on the Bible.io server, people who press go at around the same time will have the
      * same room number, then I fetch their points, bibletars, and other data and place them inside this object,
      * I will also have to push my information into the server
      */
@@ -182,6 +182,8 @@ const my_game = {
      * keep searching the world for too long if there's no players
      */
     new_game_wait_time: 10,
+    // tells me whether my room is closed or open, 1 is true means room is closed, 0 is false means room is still open
+    room_closed: 0,
 };
 
 var i_got_first_place = true;
