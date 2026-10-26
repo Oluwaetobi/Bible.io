@@ -24,11 +24,63 @@ const PORT = 3000;
  */
 
 const server = http.createServer((req, res) => {
+
+    const around_the_world = {
+        online: 0,
+        name: "Unknown Player",
+        points: 0,
+        bibletar: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+        room: 0,
+        country: "America",
+        new_game_wait_time: 10,
+    };
+
     res.statusCode = 200;
     res.setHeader('Content-Type', 'text/plain');
-    res.end('Hello, World! Your server is working. Automatic');
+    // 4. Convert the object to a string and send it to the client
+    res.end(JSON.stringify(around_the_world));
+    // res.end('The Bible.io server is running... Automatic \n');
 });
 
 server.listen(PORT, () => {
-    console.log(`Server is running and listening on port localhost:${PORT}`);
+    console.log(`The Bible.io server is running and listening on port localhost:${PORT}`);
 });
+
+/** FETCH
+ * 
+ * Methods: POST, PUT, PATCH, DELTE
+ * 
+ * 
+POST	Create a brand-new resource (Example: Submitting a new signup form.)
+
+PUT	Replace an entire existing resource. (Example: Overwriting a user's whole profile payload)
+
+PATCH	Partially update specific fields of an existing resource. (Example: Updating just a single value, like incrementing a "likes" count.)
+
+DELETE	Remove a resource. (Example: Deleting a specific post or comment.)
+
+ * 
+ * So I can use the fetch api to send requests to my server, although none of it should exist in the backend
+ * I'm only testing it here in the backend via localhost, but once I've done all the testing and it works sufficiently,
+ * then Ic can start implementing the fetch api in the front end which will send requests to my server which is being
+ * deployed with Render. Then since my I have my server, I just need to write all the necessary code that will respond
+ * properly, obviously this will be sort of tricky and take time to learn but it will be worth it in the end.
+ */
+
+async function getData() {
+  try {
+    const response = await fetch('http://localhost:3000/api/data');
+    
+    
+    if (!response.ok) {
+      throw new Error(`HTTP error! Status: ${response.status}`);
+    }
+
+    const data = await response.json();
+    console.log('Data received:', data);
+  } catch (error) {
+    console.error('Fetch failed:', error);
+  }
+}
+
+getData();
