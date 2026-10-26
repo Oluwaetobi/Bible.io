@@ -94,7 +94,7 @@ const around_the_world = {
     // room number of player who sent the request, not really useful here, maybe if I need to audit the server
     players_room: 1,
 
-    // max wait time before game starts, once the room closes, that means the game will start
+    // max wait time before game starts, once the room closes, that means the game will start, DEFAULT, might set it to 20 idk
     new_game_wait_time: 10,
 
 
@@ -159,10 +159,12 @@ const server = http.createServer((req, res) => {
             if (JSON.parse(chunk).length > 2) {
               // room number must be included first as their request
               players_room = JSON.parse(chunk)[1];
+              players_room -= 1;
             }
             if (JSON.parse(chunk).length > 4) {
               // spot must be included as second thing in their request
               players_spot = JSON.parse(chunk)[3];
+              players_spot -= 1;
             }
 
             // Bible.io LIVE Data
@@ -175,25 +177,30 @@ const server = http.createServer((req, res) => {
                 around_the_world.online = decoded_value;
               }
               if (decoded_name == "names") {
-                around_the_world.names = decoded_value;
+                around_the_world.names[0][players_room][players_spot] = decoded_value;
               }
               if (decoded_name == "points") {
-                around_the_world.points = decoded_value;
+                around_the_world.points[0][players_room][players_spot] = decoded_value;
               }
               if (decoded_name == "countries") {
-                around_the_world.countries = decoded_value;
+                around_the_world.countries[0][players_room][players_spot] = decoded_value;
               }
               if (decoded_name == "bibletars") {
-                around_the_world.bibletars = decoded_value;
+                for (let j = 0; j < 11; j++) {
+                  around_the_world.bibletars[0][players_room][players_spot][j] = decoded_value[j];
+                }
               }
               if (decoded_name == "closed_rooms") {
-                around_the_world.closed_rooms = decoded_value;
+                /* when there's 4 players or when the game starts, the 4th player to join will set the room
+                to closed, and again, when the game starts everyone will issue a request to set the room to 
+                closed as well */
+                around_the_world.closed_rooms[players_room] = decoded_value;
               }
               if (decoded_name == "amount_of_people_in_room") {
                 around_the_world.amount_of_people_in_room = decoded_value;
               }
               if (decoded_name == "room") {
-                // around_the_world.room = decoded_value;
+                // automatically sets the worldwide room to the first room that is open
                 for (let i = 0; i < around_the_world.bibleio_server_rooms_count; i++) {
                   if (around_the_world.closed_rooms[i] == 0) {
                     // if the room is open, set the worldwide room that is currently open to i, then break;
@@ -207,6 +214,11 @@ const server = http.createServer((req, res) => {
                 around_the_world.players_room = decoded_value;
               }
               if (decoded_name == "new_game_wait_time") {
+                /* this will probably never even be issued as the max game wait time will probably never change and
+                will probably stay at the default value, because people's counting time will be different
+                depending on when they join the room, and the most important factor will be if the room closed
+                then that means the game has started, the max game wait time will only come in most handy when
+                you've been waiting for too long or there's no one online and you're about to verse robots */
                 around_the_world.new_game_wait_time = decoded_value;
               }
 
@@ -362,4 +374,4 @@ async function makePost_or_Patch_Request() {
   }
 }
 
-makePost_or_Patch_Request();
+// makePost_or_Patch_Request();
