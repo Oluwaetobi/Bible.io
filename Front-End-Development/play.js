@@ -427,6 +427,7 @@ function update_Data_And_Continue_Game() {
 }
 
 
+
 async function makePost_or_Patch_Request() {
   /** This function is used to make request to the Bible.io server to change/edit data on the Bible.io server */
   
@@ -441,7 +442,7 @@ async function makePost_or_Patch_Request() {
   you can have as many elements as you want that are necessary, but remember if you are not changing the amount
   of people online or requesting to clean up the room, player's room must come first, then player's spot, 
   and then all other additional information, */
-  var data = ["online", 1];
+  const req_data = ["online", 1];
   
   try {
     const response = await fetch(url, {
@@ -449,25 +450,21 @@ async function makePost_or_Patch_Request() {
       headers: {
         'Content-Type': 'application/json' // Inform the server about the data format
       },
-      body: JSON.stringify(data) // Convert the JavaScript object into a JSON string
+      body: JSON.stringify(req_data) // Convert the JavaScript object into a JSON string
     });
     
     if (!response.ok) {
-        throw new Error(`Response status: ${response.status}`);
+      throw new Error(`Response status: ${response.status}`);
     }
     
     const data = await response.json(); // Parse the JSON response from the server
     console.log(data);
-    online = data.online;
-} catch (error) {
+  } catch (error) {
     console.error('Error making PATCH request:', error.message);
   }
 }
 
-console.log(server_source);
 makePost_or_Patch_Request();
-
-
 
 
 

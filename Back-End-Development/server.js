@@ -17,6 +17,25 @@
 const http = require('http');
 // const { type } = require('os');
 
+/** Because access to fetch has been blocked by CORS policy, I can change that, I already did npm install cors
+ * which apparently is only used for things like express and connect which I am not using, since I'm using
+ * http.CreateServer all I need is this
+ * res.setHeader('Access-Control-Allow-Origin', '*');
+  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
+  res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
+  which I have already put in my http.CreateServer
+
+ * Now, I'm allowing my server to be accessible via fetch with origins that are different from it's domain,
+ * Why is the CORS Policy important, google it? It's for safety reasons, but I don't actually have sensitive
+ * information stored on this server, so it's actually hindering the fetch in the frontend
+ * 
+ * Watch this video for more information: https://youtu.be/rYVGbOMV8Ng?si=skCOO1irqo1IqNI-&t=466  also you might want to
+ * restart from the BEGINNING of the VIDEO
+ */
+
+  // I technically don't need this since it's for express and connect which I am not using
+// const cors = require('cors');
+
 const PORT = 3000;
 
 /** More Notes:
@@ -128,6 +147,16 @@ const server = http.createServer((req, res) => {
    * POST takes up more energy than PATCH, and I want to conserve server energy, so I'm going to use
    * PATCH instead
    */
+
+  /* tells the web server to include a CORS (Cross-Origin Resource Sharing) header that allows any
+   website or domain (*) to read the response data from your server
+   the asterisk means allow all origins or you can replace '*' with a specific origin like 'http://localhost:3000' but
+   I don't want to, I want to allow it for all origins
+   
+   server.use(cors()); only work for things like express or connect but not for http.createServer*/
+  res.setHeader('Access-Control-Allow-Origin', '*');
+  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
+  res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization', 'true');
 
     res.statusCode = 200;
     res.setHeader('Content-Type', 'text/plain');
@@ -289,6 +318,8 @@ const server = http.createServer((req, res) => {
     // res.end('The Bible.io server is running... Automatic \n');
 });
 
+// server.use(cors()); // Enable CORS globally for all routes and origins
+
 server.listen(PORT, () => {
     console.log(`The Bible.io server is running on ${server_source} and listening on port ${PORT}`);
 });
@@ -364,7 +395,7 @@ async function makePost_or_Patch_Request() {
   you can have as many elements as you want that are necessary, but remember if you are not changing the amount
   of people online or requesting to clean up the room, player's room must come first, then player's spot, 
   and then all other additional information, */
-  var data = ["online", 1];
+  const req_data = ["online", 1];
   
   try {
     const response = await fetch(url, {
@@ -372,7 +403,7 @@ async function makePost_or_Patch_Request() {
       headers: {
         'Content-Type': 'application/json' // Inform the server about the data format
       },
-      body: JSON.stringify(data) // Convert the JavaScript object into a JSON string
+      body: JSON.stringify(req_data) // Convert the JavaScript object into a JSON string
     });
     
     if (!response.ok) {
