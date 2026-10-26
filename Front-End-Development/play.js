@@ -459,12 +459,13 @@ async function makePost_or_Patch_Request() {
     
     const data = await response.json(); // Parse the JSON response from the server
     console.log(data);
+    online = data.online;
   } catch (error) {
     console.error('Error making PATCH request:', error.message);
   }
 }
 
-makePost_or_Patch_Request();
+// makePost_or_Patch_Request();
 
 
 

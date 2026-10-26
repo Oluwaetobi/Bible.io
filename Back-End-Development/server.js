@@ -155,7 +155,7 @@ const server = http.createServer((req, res) => {
    
    server.use(cors()); only work for things like express or connect but not for http.createServer*/
   res.setHeader('Access-Control-Allow-Origin', '*');
-  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
+  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, PATCH, OPTIONS');
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization', 'true');
 
     res.statusCode = 200;
@@ -296,7 +296,8 @@ const server = http.createServer((req, res) => {
           /** RESPONSE: Send them back all the data, this is after changes have been applied */
 
           res.writeHead(200, {'content-type':"application/json"});
-          res.end(JSON.stringify({message: "Data Received", data:around_the_world}));
+          // res.end(JSON.stringify({message: "Data Received", data:around_the_world}));
+          res.end(JSON.stringify(around_the_world));
       })
 
     } else if (req.method == "GET") {
@@ -308,8 +309,16 @@ const server = http.createServer((req, res) => {
       // res.end(JSON.stringify({message: "Data Received", data:around_the_world})); // Convert JS object to JSON string
       res.end(JSON.stringify(around_the_world)); // Convert JS object to JSON string
     } else {
-        res.writeHead(404, {'content-type':'text/plain'});
-        res.end(JSON.stringify(around_the_world));
+        // should be 404 not 
+        if (req.method == 'OPTIONS'){
+          // If I don't do this for some reason it will send a 404 error, and I don't know why
+          res.writeHead(200, {'content-type':'text/plain'});
+          res.end(JSON.stringify(around_the_world));
+
+        } else {
+          res.writeHead(404, {'content-type':'text/plain'});
+          res.end(JSON.stringify(around_the_world));
+        }
     }
 
 
