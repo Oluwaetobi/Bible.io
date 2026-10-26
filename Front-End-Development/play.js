@@ -94,7 +94,7 @@ var mouseY = 0;
 
 var type_of_challenge = 1;
 var challenge_box_x = 740;
-var online = 1;
+var online = 0;
 
 /** Home page is important, because it tells us whether, we are in the main page of play, or the searching for opponents
  * page, or the game page, or the last page for showing correct answers, scores, and etc. And then we go back all the 
@@ -422,6 +422,48 @@ function update_Data_And_Continue_Game() {
     // set home page back to main screen
     home_page = 1;
 }
+
+async function makePost_or_Patch_Request() {
+  /** This function is used to change data on the Bible.io server */
+
+  /** MORE IMPORTANT NOTES:
+   * Don't ever place this in requestanimationframe loop, this will overwhelm the server, you can call this,
+   * max every 3 seconds
+   */
+  const url = server_source;
+  // const data = {
+  //   online: 42
+  // };
+
+
+  /* element 1 tells the server which part of the object to change, element 2 tells the server what to change it to,
+  you can have as many elements as you want that are necessary, but remember if you are not changing the amount
+  of people online or requesting to clean up the room, player's room must come first, then player's spot, 
+  and then all other additional information, */
+  var data = ["online", 5];
+
+  try {
+    const response = await fetch(url, {
+      method: 'PATCH', // Specify the HTTP method
+      headers: {
+        'Content-Type': 'application/json' // Inform the server about the data format
+      },
+      body: JSON.stringify(data) // Convert the JavaScript object into a JSON string
+    });
+
+    if (!response.ok) {
+      throw new Error(`Response status: ${response.status}`);
+    }
+
+    const json = await response.json(); // Parse the JSON response from the server
+    console.log(json);
+  } catch (error) {
+    console.error('Error making POST request:', error.message);
+  }
+}
+
+makePost_or_Patch_Request();
+
 
 function randomRobotModes() {
     /** I scrapped rounding points, that's done in the final display of the text. This upgrade actually
@@ -1947,8 +1989,24 @@ function myScoresDisplay () {
     ctx.fillStyle = 'rgb(6, 6, 6)';
     ctx.fillText("Highscore: " + my_highscores[level - 1], (((static_width)/2) + x_shift) + 150, 130);
 
-    ctx.fillStyle = 'rgb(114, 4, 4)';
-    ctx.fillText("Under Construction - Not Online Yet!", (((static_width)/2) + x_shift - 280) + 150, 160);
+
+    // black shadow add
+    ctx.shadowColor = "white";
+    ctx.shadowBlur = 20;
+    ctx.shadowOffsetX = 0;
+    ctx.shadowOffsetY = 0;
+
+    var bolden_text = 5;
+    for (let i = 0; i < bolden_text; i++) {
+        ctx.fillStyle = 'rgb(15, 104, 5)';
+        ctx.fillText("Under Construction - Online Sometimes!", (((static_width)/2) + x_shift - 280) + 150, 160);
+    }
+
+    // black shadow remove
+    ctx.shadowColor = "white";
+    ctx.shadowBlur = 0;
+    ctx.shadowOffsetX = 0;
+    ctx.shadowOffsetY = 0;
 }
 
 function displayLevels() {

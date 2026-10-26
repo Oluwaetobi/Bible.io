@@ -2,13 +2,15 @@
  * 
  * Now that I've got Node.js up and running I can hook my Node.js application up to a database such as MongoDB or MySQL
  * if I really wanted to, that way I can start storing data and remember information, this will help with storing
- * think like player's accounts such as passwords, usernames, emails, friends, friend's requests, the hall of fame,
- * and all other types of information that needs to be up and ready 24/7. MongoDB is free, though they have higher
- * tier plans and well, to get the good stuff you need money. Same with render, I've actually good my backend server
- * up and running on Render, but I'm using the free plan right now. And it doesn't store information, it only helps with
- * deploying my backend code on a server, where I can send requests and I can receive responses which only helps with
- * live connection such as around the world competitions, but it won't store any information. Upon spin down, all data
- * will be wiped off the server.
+ * things like player's accounts such as passwords, usernames, emails, friends, friend's requests, the hall of fame,
+ * and all other types of information that needs to be up and ready 24/7. Although it is technically possible to
+ * hook up the hall_of_fame with just Node.js without MongoDB. MongoDB is free, though they have higher
+ * tier plans and well, to get the good stuff you need money. Same with Render, I've actually good my backend server
+ * up and running on Render, but I'm using the free plan right now. And it doesn't store information indefinitely, it
+ * only stores it while the server is currently in use, and it spins down with inactivity, I can send requests 
+ * to it via JavaScript and the server will send a response back it mostly helpful with  live connection such as around 
+ * the world competitions, but it won't store any information forever, upon spin down, all data
+ * will be wiped off the server, which happens when the server becomes inactive, meaning nobody is using it.
  */
 
 // 1. Import the built-in HTTP module
@@ -145,6 +147,20 @@ const server = http.createServer((req, res) => {
 
           } else {
 
+            function set_world_wide_room_to_correct_room () {
+              /* automatically sets the worldwide room to the first room that is open, should always be updated
+                anytime time a request to the server is made
+              */
+                for (let i = 0; i < around_the_world.bibleio_server_rooms_count; i++) {
+                  if (around_the_world.closed_rooms[i] == 0) {
+                    // if the room is open, set the worldwide room that is currently open to i, then break;
+                    around_the_world.room = i;
+                    break;
+                  }
+                }
+            }
+            set_world_wide_room_to_correct_room();
+
             /** Helps the server to know where to apply the player's request in the right spot on the server's 
              * object data reserve */
             var players_room = 1;
@@ -200,14 +216,7 @@ const server = http.createServer((req, res) => {
                 around_the_world.amount_of_people_in_room = decoded_value;
               }
               if (decoded_name == "room") {
-                // automatically sets the worldwide room to the first room that is open
-                for (let i = 0; i < around_the_world.bibleio_server_rooms_count; i++) {
-                  if (around_the_world.closed_rooms[i] == 0) {
-                    // if the room is open, set the worldwide room that is currently open to i, then break;
-                    around_the_world.room = i;
-                    break;
-                  }
-                }
+                // see set_world_wide_room_to_correct_room function
               }
               if (decoded_name == "players_room") {
                 // I don't actually really need to do this, might only be useful if I'm auditing the server
@@ -284,6 +293,8 @@ server.listen(PORT, () => {
     console.log(`The Bible.io server is running and listening on port localhost:${PORT}`);
 });
 
+
+
 /** FETCH
  * 
  * Methods: POST, PUT, PATCH, DELETE
@@ -298,11 +309,12 @@ PATCH	Partially update specific fields of an existing resource. (Example: Updati
 DELETE	Remove a resource. (Example: Deleting a specific post or comment.)
 
  * 
- * So I can use the fetch api to send requests to my server, although none of it should exist in the backend
+ * So I can use the fetch api to send requests to my server, although NONE of it should be called in the backend
  * I'm only testing it here in the backend via localhost, but once I've done all the testing and it works sufficiently,
- * then Ic can start implementing the fetch api in the front end which will send requests to my server which is being
- * deployed with Render. Then since my I have my server, I just need to write all the necessary code that will respond
- * properly, obviously this will be sort of tricky and take time to learn but it will be worth it in the end.
+ * then I can start implementing the fetch api in the front end which will send requests to my server which is being
+ * deployed with Render. 
+ * 
+ * EVERYTHING BELOW IS THE FETCH API
  */
 
 var server_source = 'http://localhost:3000';
@@ -351,8 +363,11 @@ async function makePost_or_Patch_Request() {
   // };
 
 
-  // element 1 tell the server which part of the object to change, element 2 tells the server what to change it to
-  var data = ["online", 5, "name", ];
+  /* element 1 tells the server which part of the object to change, element 2 tells the server what to change it to,
+  you can have as many elements as you want that are necessary, but remember if you are not changing the amount
+  of people online or requesting to clean up the room, player's room must come first, then player's spot, 
+  and then all other additional information, */
+  var data = ["online", 5];
 
   try {
     const response = await fetch(url, {
