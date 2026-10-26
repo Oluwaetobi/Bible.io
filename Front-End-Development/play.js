@@ -177,6 +177,8 @@ const my_game = {
      * I will also have to push my information into the server
      */
     my_room: 1,
+    // tells me my spot which is equivalent to how many people joined before I did, plus 1
+    my_spot: 1,
     /** Amount of time to wait before the game starts, can change depending on how many people
      * have joined your room, there should also be a max wait time of 30 seconds, that way it doesn't
      * keep searching the world for too long if there's no players
@@ -184,7 +186,26 @@ const my_game = {
     new_game_wait_time: 10,
     // tells me whether my room is closed or open, 1 is true means room is closed, 0 is false means room is still open
     room_closed: 0,
+
+
+    server_source: 'https://bible-io-backend-server.onrender.com',
 };
+
+localhostsource_server_if_i_am_a_developer();
+function localhostsource_server_if_i_am_a_developer () {
+    /**Alright, so essentially what this function does it sets the server_source url to localhost instead
+     * of the actual server, because I mean, if I am a developer I will want to use localhost and not drain
+     * out the actual server with requests for practice sessions, software editing or data tweaks
+     * 
+     * IMPORTANT NOTE: if you are a developer set it to true via, inspect, then application, then change the value
+     * of i_am_a_developer
+     */
+    if (i_am_a_developer == true) {
+        hall_of_fame.server_source = 'http://localhost:3000'
+    } else {
+        // if the person is not a developer do nothing it is already set to the actual server by default
+    }
+}
 
 var i_got_first_place = true;
 

@@ -103,6 +103,23 @@ const hall_of_fame = {
         [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
         [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
     ],
+    server_source: 'https://bible-io-backend-server.onrender.com',
+}
+
+localhostsource_server_if_i_am_a_developer();
+function localhostsource_server_if_i_am_a_developer () {
+    /**Alright, so essentially what this function does it sets the server_source url to localhost instead
+     * of the actual server, because I mean, if I am a developer I will want to use localhost and not drain
+     * out the actual server with requests for practice sessions, software editing or data tweaks
+     * 
+     * IMPORTANT NOTE: if you are a developer set it to true via, inspect, then application, then change the value
+     * of i_am_a_developer
+     */
+    if (i_am_a_developer == true) {
+        hall_of_fame.server_source = 'http://localhost:3000'
+    } else {
+        // if the person is not a developer do nothing it is already set to the actual server by default
+    }
 }
 
 var img_country = new Image();
