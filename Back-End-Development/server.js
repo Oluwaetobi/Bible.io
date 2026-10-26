@@ -219,7 +219,7 @@ const server = http.createServer((req, res) => {
               var decoded_value = JSON.parse(chunk)[(i * 2)+ 1];
 
               if (decoded_name == "online") {
-                around_the_world.online = decoded_value;
+                around_the_world.online += decoded_value;
               }
               if (decoded_name == "names") {
                 around_the_world.names[0][players_room][players_spot] = decoded_value;
