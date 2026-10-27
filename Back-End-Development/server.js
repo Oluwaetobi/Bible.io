@@ -127,6 +127,45 @@ const around_the_world = {
       [0, 0, 0, 0],
       [0, 0, 0, 0],
     ],
+
+    questions_wrong: [
+      // amounts of questions wrong of all players in all rooms for level 1
+      [0, 0, 0, 0],
+      [0, 0, 0, 0],
+      [0, 0, 0, 0],
+      [0, 0, 0, 0],
+      [0, 0, 0, 0],
+      [0, 0, 0, 0],
+      [0, 0, 0, 0],
+      [0, 0, 0, 0],
+      [0, 0, 0, 0],
+      [0, 0, 0, 0],
+
+      // amounts of questions wrong of all players in all rooms for level 2
+      [0, 0, 0, 0],
+      [0, 0, 0, 0],
+      [0, 0, 0, 0],
+      [0, 0, 0, 0],
+      [0, 0, 0, 0],
+      [0, 0, 0, 0],
+      [0, 0, 0, 0],
+      [0, 0, 0, 0],
+      [0, 0, 0, 0],
+      [0, 0, 0, 0],
+
+      // amounts of questions wrong of all players in all rooms for level 3
+      [0, 0, 0, 0],
+      [0, 0, 0, 0],
+      [0, 0, 0, 0],
+      [0, 0, 0, 0],
+      [0, 0, 0, 0],
+      [0, 0, 0, 0],
+      [0, 0, 0, 0],
+      [0, 0, 0, 0],
+      [0, 0, 0, 0],
+      [0, 0, 0, 0],
+    ],
+
     countries: [
       // countries of all players in each room for level 1
       ["America", "America", "America", "America",],
@@ -546,6 +585,9 @@ const server = http.createServer((req, res) => {
               if (decoded_name == "points") {
                 around_the_world.points[players_room][players_spot] = decoded_value;
               }
+              if (decoded_name == "questions_wrong") {
+                around_the_world.questions_wrong[players_room][players_spot] = decoded_value;
+              }
               if (decoded_name == "countries") {
                 around_the_world.countries[players_room][players_spot] = decoded_value;
               }
@@ -562,7 +604,7 @@ const server = http.createServer((req, res) => {
                 around_the_world.closed_rooms[players_room] = decoded_value;
               }
               if (decoded_name == "amount_of_people_in_room") {
-                around_the_world.amount_of_people_in_room = decoded_value;
+                around_the_world.amount_of_people_in_room[players_room] = decoded_value;
               }
               if (decoded_name == "room") {
                 // this has become OBSOLETE, see set_world_wide_room_to_correct_room function, is handled AUTOMATICALLY
@@ -596,6 +638,7 @@ const server = http.createServer((req, res) => {
                 for (let i = 0; i < 4; i++) {
                   around_the_world.names[players_room][i] = "Unknown Player";
                   around_the_world.points[players_room][i] = 0;
+                  around_the_world.questions_wrong[players_room][i] = 0;
                   around_the_world.countries[players_room][i] = "America";
                   for (let j = 0; j < 11; j++) {
                     around_the_world.bibletars[players_room][i][j] = 1;

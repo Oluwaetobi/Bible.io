@@ -2790,9 +2790,17 @@ async function makePost_or_Patch_Request_in_game_data_edits() {
 
     var my_room = (my_game.my_room - 1);
     var my_spot = (my_game.spot - 1);
+    // set counter to 1 so it's not changing my score
+    var counter = 1;
     for (let i = 0; i < 4; i++) {
-        // copy everyone's points into our game object
-        my_game.everyones_points[i] = data.points[my_room][i];
+        if (i != my_spot) {
+            /* copy everyone's points and amount of questiosn wrong except my score and my # questions wrong 
+            into our game object           
+            */
+           my_game.everyones_points[counter] = data.points[my_room][i];
+           my_game.questions_wrong[counter] = data.questions_wrong[my_room][i];
+            counter += 1;
+        }
     }
     
 
@@ -2826,8 +2834,29 @@ async function makeA_Get_Request_to_see_waiting_room_data_frequently() {
     online = data.online;
 
     var my_room = (my_game.my_room - 1);
+    var my_spot = (my_game.my_spot - 1);
     my_game.num_of_people_in_room = data.amount_of_people_in_room[my_room];
     my_game.room_closed = data.closed_rooms[my_room];
+    
+    // sets my counter to 1 that way I don't overwrite my own data, because my data is always written in index 0
+    var counter = 1;
+    const standard_bibletar_length = 11;
+    if (my_game.num_of_people_in_room > 1) {
+        // only do this if there's more than one person in my room
+        for (let i = 0; i < 4; i++) {
+            if (i != my_spot) {
+                // fill in everyone's data into our game object
+                my_game.questions_wrong[counter] = data.questions_wrong[my_room][i];
+                my_game.everyones_points[counter] = data.points[my_room][i];
+                my_game.everyones_names[counter] = data.points[my_room][i];
+                for (let j = 0; j < standard_bibletar_length; j++) {
+                    my_game.bibletar[counter][k] = data.bibletars[my_room][i][k];
+                }
+                counter += 1;
+            }
+        }
+    }
+
     
   } catch (error) {
     console.error('Error making GET request:', error);
@@ -2903,11 +2932,18 @@ function start_timer() {
             // every three seconds during the game, edit data on the server
             if ((time_alloted_for_each_game - timer) >= 0) {
                 if (home_page == 3) {
-                    makePost_or_Patch_Request_in_game_data_edits();
+                    if (my_game.num_of_people_in_room > 1) {
+                        /* only if there's more than one person online my room, should I actually verse 
+                        real people, push my data and get there's, otherwise I'll be versing robots and
+                         this function will always reset the robot's scores */
+                        makePost_or_Patch_Request_in_game_data_edits();
+                    }
                 }
             }
-            /* every three seconds in the waiting room check whether the room is closed and check how many people
-            are in your room and set data accordingly into our game object */
+        }
+        if (timer % 1 == 0) {
+            /* make a get request every second in the waiting room to check whether the room is closed and check 
+            how many people are in your room and set other game start up data accordingly into our game object */
             if (home_page == 2) {
                 makeA_Get_Request_to_see_waiting_room_data_frequently();
             }
@@ -2936,6 +2972,7 @@ function robotPlayers(time_alloted_for_each_game) {
     if (game_time > 0) {
         for (let i = 1; i < my_game.everyones_points.length; i++) {
             my_game.everyones_points[i] += robot_modes[i-1];
+            // console.log("Robot Player" + i + "'s Points: " + my_game.everyones_points[i])
         }
     } else {
 
