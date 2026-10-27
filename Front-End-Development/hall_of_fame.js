@@ -300,6 +300,7 @@ function update_hall_of_fame () {
             // points
             td.textContent = hall_of_fame.everyones_points[consecutive_numbers - 1];
         }
+        
     })
 
 
@@ -323,7 +324,7 @@ async function makeA_Get_Request() {
     }
     const data = await response.json();
     // console.log('Data received:', data.bibletar);
-    console.log("Date Received: " , data.names[0][0]);
+    console.log("Date Received: " , data.hall_of_fame[0][1]);
 
     const default_bibletar_length = hall_of_fame.bibletar[0].length;
 
@@ -344,8 +345,6 @@ async function makeA_Get_Request() {
             hall_of_fame.bibletar[i][j] = data.hall_of_fame[i][3][j];
         }
     }
-    console.log("First player's name: " + data.hall_of_fame[0][i][1])
-    console.log("hello")
 
   } catch (error) {
     console.error('Error making GET request:', error);

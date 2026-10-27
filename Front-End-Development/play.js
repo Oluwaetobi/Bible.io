@@ -426,11 +426,51 @@ function update_Data_And_Continue_Game() {
     home_page = 1;
 
     // send my data to the hall_of_fame_section of the Bible.io Server
+        
+    async function makePost_or_Patch_Request_hall_of_fame() {
+    /** This function is used to make request to the Bible.io server to change/edit data on the Bible.io server */
+    
+    /** MORE IMPORTANT NOTES:
+     * Don't ever place this in requestanimationframe loop, this will overwhelm the server, you can call this,
+     * max every 3 seconds
+     */
+    const url = server_source;
+    
+    
+    /* element 1 tells the server which part of the object to change, element 2 tells the server what to change it to,
+    you can have as many elements as you want that are necessary, but remember if you are not changing the amount
+    of people online or requesting to clean up the room, player's room must come first, then player's spot, 
+    and then all other additional information, */
+    const req_data = ["hall_of_fame", my_country, my_name, my_points, my_bibletar_svg];
+    
+    try {
+        const response = await fetch(url, {
+        method: 'PATCH', // Specify the HTTP method
+        headers: {
+            'Content-Type': 'application/json' // Inform the server about the data format
+        },
+        body: JSON.stringify(req_data) // Convert the JavaScript object into a JSON string
+        });
+        
+        if (!response.ok) {
+        throw new Error(`Response status: ${response.status}`);
+        }
+        
+        const data = await response.json(); // Parse the JSON response from the server
+        console.log(data);
+        online = data.online;
+    } catch (error) {
+        console.error('Error making PATCH request:', error.message);
+    }
+    }
+
+    makePost_or_Patch_Request_hall_of_fame();
+
 }
 
 
 
-async function makePost_or_Patch_Request() {
+async function makePost_or_Patch_Request_online() {
   /** This function is used to make request to the Bible.io server to change/edit data on the Bible.io server */
   
   /** MORE IMPORTANT NOTES:
@@ -467,7 +507,7 @@ async function makePost_or_Patch_Request() {
   }
 }
 
-makePost_or_Patch_Request();
+makePost_or_Patch_Request_online();
 
 
 
