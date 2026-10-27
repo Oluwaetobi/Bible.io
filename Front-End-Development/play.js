@@ -2789,7 +2789,7 @@ async function makePost_or_Patch_Request_in_game_data_edits() {
     console.log(data);
 
     var my_room = (my_game.my_room - 1);
-    var my_spot = (my_game.spot - 1);
+    var my_spot = (my_game.my_spot - 1);
     // set counter to 1 so it's not changing my score
     var counter = 1;
     for (let i = 0; i < 4; i++) {
