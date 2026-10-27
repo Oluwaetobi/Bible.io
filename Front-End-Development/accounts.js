@@ -74,6 +74,11 @@ const error_message = document.getElementById('error-message');
 const form = document.getElementById('form');
 
 form.addEventListener('submit', (e) => {
+    /** Prevents form from submitting by default, because the latter part for the function for 
+     * getCreateNameFormErrors, when checking for innappropriate names, there's a for loop which takes
+     * too long, so the original method didn't work and now i have to create work arounds
+     */
+    e.preventDefault();
     
     let errors = [];
     errors = getCreateNameFormErrors(username_input.value)
@@ -81,13 +86,17 @@ form.addEventListener('submit', (e) => {
     
     if (errors.length > 0) {
         // If there are any errors, prevent the form from being submitted
-        e.preventDefault();
         error_message.innerText = errors.join(". ")
     } else {
         saveName();
+        form.reset();
+        window.location.reload();
+        
     }
     
 })
+
+var innappropriate_names = ["sex", "fuck", "bitch", "islam", "muslim", "LGBTQ", "Motherfucker", "satan", "Asshole", "Arsehole", "penis", "dick", "shit", "prick", "crap", "intercourse", "kill", "breasts"]
 
 function getCreateNameFormErrors (username) {
     let errors = []
@@ -102,6 +111,34 @@ function getCreateNameFormErrors (username) {
     if(username.length > 18) {
         errors.push('Your name is too long!');
         username_input.parentElement.classList.add('incorrect');
+    }
+    // check if the name is appropriate, rejects bad names
+    for (let i = 0; i < innappropriate_names.length; i++) {
+        var split_name = username.split("");
+        var split_name_check = innappropriate_names[i].split("");
+        var bad_name = true;
+
+        /* find the shortest length, that way it isn't comparing against undefined values 
+        for elements that don't exist */
+        var length_of_shortest = split_name_check.length;
+        if (split_name.length < split_name_check.length) {
+            length_of_shortest = split_name.length
+        }
+        for (let j = 0; j < length_of_shortest; j++) {
+            if (split_name[j].toLowerCase() != split_name_check[j].toLowerCase()) {
+                // converts everything to lowercase too, this makes comparison not case sensitive which is more accurate
+                // not the same as the innappropriate name, the name is appropriate
+                bad_name = false;
+            }
+        }
+        if (bad_name == true) {
+            // if the name is bad for any of the iterations then reject it
+            errors.push("That name is NOT appropriate, please change it!!!")
+            username_input.parentElement.classList.add('incorrect');
+            console.log("Bad word match: " + innappropriate_names[i]);
+            console.log(i);
+            break;
+        }
     }
     return errors;
 }
