@@ -98,6 +98,9 @@ var different_second = 0;
 var my_points = 0;
 var my_cash = 0;
 var my_bibletar_svg = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
+var my_country = "America";
+
+var server_source = 'https://bible-io-backend-server.onrender.com';
 
 var img_sunday_school_teacher = new Image();
 img_sunday_school_teacher.src = "./images/sunday_school_teacher.svg"; // Set source URL
@@ -156,13 +159,71 @@ window.addEventListener('mousemove', (event) => {
     mouseY -= top_border;
 })
 
+/** needs to be called at least once before localstroage need to be called at least once before localhost */
+localStorageAndSessionStorageData();
+localhostsource_server_if_i_am_a_developer();
+function localhostsource_server_if_i_am_a_developer () {
+    /**Alright, so essentially what this function does it sets the server_source url to localhost instead
+     * of the actual server, because I mean, if I am a developer I will want to use localhost and not drain
+     * out the actual server with requests for practice sessions, software editing or data tweaks
+     * 
+     * IMPORTANT NOTE: if you are a developer set it to true via, inspect, then application, then change the value
+     * of i_am_a_developer
+     */
+    if (i_am_a_developer == true) {
+        server_source = 'http://localhost:3000';
+    } else {
+        // if the person is not a developer do nothing it is already set to the actual server by default
+    }
+}
+
+async function makePost_or_Patch_Request_hall_of_fame() {
+/** This function is used to make request to the Bible.io server to change/edit data on the Bible.io server */
+
+/** MORE IMPORTANT NOTES:
+ * Don't ever place this in requestanimationframe loop, this will overwhelm the server, you can call this,
+ * max every 3 seconds
+ */
+const url = server_source;
+
+
+/* element 1 tells the server which part of the object to change, element 2 tells the server what to change it to,
+you can have as many elements as you want that are necessary, but remember if you are not changing the amount
+of people online or requesting to clean up the room, player's room must come first, then player's spot, 
+and then all other additional information, */
+const req_data = ["hall_of_fame", my_country, my_name, my_points, my_bibletar_svg];
+
+try {
+    const response = await fetch(url, {
+    method: 'PATCH', // Specify the HTTP method
+    headers: {
+        'Content-Type': 'application/json' // Inform the server about the data format
+    },
+    body: JSON.stringify(req_data) // Convert the JavaScript object into a JSON string
+    });
+    
+    if (!response.ok) {
+    throw new Error(`Response status: ${response.status}`);
+    }
+    
+    const data = await response.json(); // Parse the JSON response from the server
+    console.log(data);
+} catch (error) {
+    console.error('Error making PATCH request:', error.message);
+}
+}
+
 function mouseDetections () {
     document.addEventListener("click", function (event) {
         if (learn_page == 2) {
             if (mouseX > 1075 && mouseX < 1221 && mouseY > 51 && mouseY < 83) {
+                // Go Back button
                 learn_page = 1;
                 show_or_hide_text[1] = 0;
                 show_or_hide_text[0] = 0;
+                
+                // update hall of fame, because I earned points
+                makePost_or_Patch_Request_hall_of_fame();
             }
         }
     });
@@ -222,6 +283,7 @@ function localStorageAndSessionStorageData () {
     const backup_savedPoints = JSON.parse(sessionStorage.getItem('backup_my_points'));
     const saved_bibletar_svg = JSON.parse(localStorage.getItem('my_bibletar_svg'));
     const saved_cash = JSON.parse(localStorage.getItem('my_cash'));
+    const saved_country = localStorage.getItem('my_country');
     const developer_tools = JSON.parse(localStorage.getItem('i_am_a_developer'));
 
     var savedPoints = cookies.my_points;    
@@ -258,6 +320,11 @@ function localStorageAndSessionStorageData () {
 
     if (saved_cash) {
         my_cash = saved_cash;
+    } else {
+        // do nothing, has already been created and set to default
+    }
+    if (saved_country) {
+        my_country = saved_country;
     } else {
         // do nothing, has already been created and set to default
     }

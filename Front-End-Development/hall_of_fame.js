@@ -129,7 +129,7 @@ img_country.alt = "country";
 
 var box_x_pos = 1;
 var gameOn = false;
-var online = 1;
+var online = 0;
 var members = 1000;
 /* Being able to copy and paste text by using HTML is super important, especially when the text is super long,
 that's one thing I like about HTML. As well as it's the core foundation to building websites. */
@@ -192,6 +192,7 @@ function figure_out_whether_hall_of_fame_click_is_a_boy_or_a_girl () {
         hall_of_fame_clicked_is_a_boy = false;
     }
 }
+
 
 function wipeOutEntireScreen() {
     ctx.clearRect(0,0, canvas.width, canvas.height);
@@ -324,10 +325,11 @@ async function makeA_Get_Request() {
     }
     const data = await response.json();
     // console.log('Data received:', data.bibletar);
-    console.log("Date Received: " , data.hall_of_fame[0][1]);
+    // console.log("Date Received: " , data.online);
     
     const default_bibletar_length = hall_of_fame.bibletar[0].length;
     
+    online = data.online;
     // input at all data into the hall of fame object from server
     
     /** Remember it's important to do hall_of_fame.length and NOT data.hall_of_fame.length because
@@ -345,6 +347,7 @@ async function makeA_Get_Request() {
             hall_of_fame.bibletar[i][j] = data.hall_of_fame[i][3][j];
         }
     }
+
     
   } catch (error) {
     console.error('Error making GET request:', error);
