@@ -47,14 +47,38 @@ const PORT = 3000;
 
 const around_the_world = {
   // We will work with 10 rooms
-    bibleio_server_rooms_count: 10,
+    bibleio_server_rooms_count_for_each_level: 10,
 
     // How many people are online globally
     online: 0,
 
 
     names: [
-      // names of players in all rooms
+      // names of players in all rooms for level 1
+      [["Unknown Player"], ["Unknown Player"], ["Unknown Player"], ["Unknown Player"],],
+      [["Unknown Player"], ["Unknown Player"], ["Unknown Player"], ["Unknown Player"],],
+      [["Unknown Player"], ["Unknown Player"], ["Unknown Player"], ["Unknown Player"],],
+      [["Unknown Player"], ["Unknown Player"], ["Unknown Player"], ["Unknown Player"],],
+      [["Unknown Player"], ["Unknown Player"], ["Unknown Player"], ["Unknown Player"],],
+      [["Unknown Player"], ["Unknown Player"], ["Unknown Player"], ["Unknown Player"],],
+      [["Unknown Player"], ["Unknown Player"], ["Unknown Player"], ["Unknown Player"],],
+      [["Unknown Player"], ["Unknown Player"], ["Unknown Player"], ["Unknown Player"],],
+      [["Unknown Player"], ["Unknown Player"], ["Unknown Player"], ["Unknown Player"],],
+      [["Unknown Player"], ["Unknown Player"], ["Unknown Player"], ["Unknown Player"],],
+
+      // names of players in all rooms for level 2
+      [["Unknown Player"], ["Unknown Player"], ["Unknown Player"], ["Unknown Player"],],
+      [["Unknown Player"], ["Unknown Player"], ["Unknown Player"], ["Unknown Player"],],
+      [["Unknown Player"], ["Unknown Player"], ["Unknown Player"], ["Unknown Player"],],
+      [["Unknown Player"], ["Unknown Player"], ["Unknown Player"], ["Unknown Player"],],
+      [["Unknown Player"], ["Unknown Player"], ["Unknown Player"], ["Unknown Player"],],
+      [["Unknown Player"], ["Unknown Player"], ["Unknown Player"], ["Unknown Player"],],
+      [["Unknown Player"], ["Unknown Player"], ["Unknown Player"], ["Unknown Player"],],
+      [["Unknown Player"], ["Unknown Player"], ["Unknown Player"], ["Unknown Player"],],
+      [["Unknown Player"], ["Unknown Player"], ["Unknown Player"], ["Unknown Player"],],
+      [["Unknown Player"], ["Unknown Player"], ["Unknown Player"], ["Unknown Player"],],
+
+      // names of players in all rooms for level 3
       [["Unknown Player"], ["Unknown Player"], ["Unknown Player"], ["Unknown Player"],],
       [["Unknown Player"], ["Unknown Player"], ["Unknown Player"], ["Unknown Player"],],
       [["Unknown Player"], ["Unknown Player"], ["Unknown Player"], ["Unknown Player"],],
@@ -67,7 +91,31 @@ const around_the_world = {
       [["Unknown Player"], ["Unknown Player"], ["Unknown Player"], ["Unknown Player"],],
     ],
     points: [
-      // points of all players in all rooms
+      // points of all players in all rooms for level 1
+      [0, 0, 0, 0],
+      [0, 0, 0, 0],
+      [0, 0, 0, 0],
+      [0, 0, 0, 0],
+      [0, 0, 0, 0],
+      [0, 0, 0, 0],
+      [0, 0, 0, 0],
+      [0, 0, 0, 0],
+      [0, 0, 0, 0],
+      [0, 0, 0, 0],
+
+      // points of all players in all rooms for level 2
+      [0, 0, 0, 0],
+      [0, 0, 0, 0],
+      [0, 0, 0, 0],
+      [0, 0, 0, 0],
+      [0, 0, 0, 0],
+      [0, 0, 0, 0],
+      [0, 0, 0, 0],
+      [0, 0, 0, 0],
+      [0, 0, 0, 0],
+      [0, 0, 0, 0],
+
+      // points of all players in all rooms for level 3
       [0, 0, 0, 0],
       [0, 0, 0, 0],
       [0, 0, 0, 0],
@@ -80,7 +128,31 @@ const around_the_world = {
       [0, 0, 0, 0],
     ],
     countries: [
-      // countries of all players in each room
+      // countries of all players in each room for level 1
+      ["America", "America", "America", "America",],
+      ["America", "America", "America", "America",],
+      ["America", "America", "America", "America",],
+      ["America", "America", "America", "America",],
+      ["America", "America", "America", "America",],
+      ["America", "America", "America", "America",],
+      ["America", "America", "America", "America",],
+      ["America", "America", "America", "America",],
+      ["America", "America", "America", "America",],
+      ["America", "America", "America", "America",],
+
+      // countries of all players in each room for level 2
+      ["America", "America", "America", "America",],
+      ["America", "America", "America", "America",],
+      ["America", "America", "America", "America",],
+      ["America", "America", "America", "America",],
+      ["America", "America", "America", "America",],
+      ["America", "America", "America", "America",],
+      ["America", "America", "America", "America",],
+      ["America", "America", "America", "America",],
+      ["America", "America", "America", "America",],
+      ["America", "America", "America", "America",],
+
+      // countries of all players in each room for level 3
       ["America", "America", "America", "America",],
       ["America", "America", "America", "America",],
       ["America", "America", "America", "America",],
@@ -93,7 +165,31 @@ const around_the_world = {
       ["America", "America", "America", "America",],
     ],
     bibletars: [
-      // bibletars of all players for each room
+      // bibletars of all players for each room in level 1
+      [[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]],
+      [[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]],
+      [[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]],
+      [[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]],
+      [[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]],
+      [[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]],
+      [[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]],
+      [[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]],
+      [[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]],
+      [[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]],
+
+      // bibletars of all players for each room in level 2
+      [[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]],
+      [[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]],
+      [[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]],
+      [[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]],
+      [[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]],
+      [[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]],
+      [[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]],
+      [[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]],
+      [[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]],
+      [[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]],
+
+      // bibletars of all players for each room in level 3
       [[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]],
       [[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]],
       [[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]],
@@ -106,11 +202,14 @@ const around_the_world = {
       [[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]],
     ],
     // tells me which rooms are closed or open, 1 represents true meaning it's closed, 0 represent false which means it's open
-    closed_rooms: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    closed_rooms: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,],
     // tells me how many people are in each room
-    amount_of_people_in_room: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-    // represents worldwide room that's currently open, and has less than 4 players, rooms close when their game starts
-    room: 1,
+    amount_of_people_in_room: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,],
+    /* represents worldwide room for each level that is currently open, and has less than 4 players, 
+    rooms close when their game starts */
+    room_level1: 1,
+    room_level2: 1,
+    room_level3: 1,
 
     // room number of player who sent the request, not really useful here, maybe if I need to audit the server
     players_room: 1,
@@ -359,9 +458,11 @@ const server = http.createServer((req, res) => {
               /** IMPORTANT NOTE: This function is called twice, once before data is edited and once after
                * it has been edited
               */
+             const levels_in_bibleio = 3;
+             const amount_of_rooms = around_the_world.bibleio_server_rooms_count_for_each_level;
              
              // updates closed_rooms, helps server know which rooms are full and which ones are not
-             for (let i = 0; i < around_the_world.bibleio_server_rooms_count; i++) {
+             for (let i = 0; i < (around_the_world.bibleio_server_rooms_count_for_each_level * levels_in_bibleio); i++) {
                if (around_the_world.amount_of_people_in_room[i] >= 4) {
                  // set room to closed
                  around_the_world.closed_rooms[i] = 1;
@@ -371,14 +472,36 @@ const server = http.createServer((req, res) => {
                }
              }
 
-              /* automatically sets the worldwide room to the first room that is open, should always be updated
-                anytime time a request to the server is made, also edits, closed_rooms, and amount_of_people_in_room
+              /* automatically sets the worldwide room for each level to the first room that is open, should always be updated
+                anytime time a request to the server is made
               */
-                for (let i = 0; i < around_the_world.bibleio_server_rooms_count; i++) {
+
+                // level 1 iteration
+                for (let i = 0; i < (around_the_world.bibleio_server_rooms_count_for_each_level * 1); i++) {
                   if (around_the_world.closed_rooms[i] == 0) {
                     // if the room is open, set the worldwide room that is currently open to i, then break;
                     //  this helps users who are joining to join to an open room
-                    around_the_world.room = (i + 1);
+                    around_the_world.room_level1 = (i + 1);
+                    break;
+                  }
+                }
+
+                // level 2 iteration
+                for (let i = amount_of_rooms; i < (around_the_world.bibleio_server_rooms_count_for_each_level * 2); i++) {
+                  if (around_the_world.closed_rooms[i] == 0) {
+                    // if the room is open, set the worldwide room that is currently open to i, then break;
+                    //  this helps users who are joining to join to an open room
+                    around_the_world.room_level2 = (i + 1);
+                    break;
+                  }
+                }
+
+                // level 3 iteration
+                for (let i = (amount_of_rooms * 2); i < (around_the_world.bibleio_server_rooms_count_for_each_level  * 3); i++) {
+                  if (around_the_world.closed_rooms[i] == 0) {
+                    // if the room is open, set the worldwide room that is currently open to i, then break;
+                    //  this helps users who are joining to join to an open room
+                    around_the_world.room_level3 = (i + 1);
                     break;
                   }
                 }
@@ -470,15 +593,14 @@ const server = http.createServer((req, res) => {
                * than 1 other person there who have joined
               */
               if (decoded_name == "clean_room") {
-                var world_wide_room = (around_the_world.room - 1);
                 for (let i = 0; i < 4; i++) {
-                  around_the_world.names[world_wide_room][i] = "Unknown Player";
-                  around_the_world.points[world_wide_room][i] = 0;
-                  around_the_world.countries[world_wide_room][i] = "America";
+                  around_the_world.names[players_room][i] = "Unknown Player";
+                  around_the_world.points[players_room][i] = 0;
+                  around_the_world.countries[players_room][i] = "America";
                   for (let j = 0; j < 11; j++) {
-                    around_the_world.bibletars[world_wide_room][i][j] = 1;
+                    around_the_world.bibletars[players_room][i][j] = 1;
                   }
-                  around_the_world.amount_of_people_in_room[world_wide_room] = 0;
+                  around_the_world.amount_of_people_in_room[players_room] = 0;
                 }
                 // the room has been successfully cleaned
               }

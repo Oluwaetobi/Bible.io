@@ -641,7 +641,13 @@ async function makeA_Get_Request_entered_waiting_room_data() {
     // can leave this, after all, I want the amount of people online to always be accurate
     online = data.online;
 
-    my_game.my_room = data.room;
+    if (level == 1) {
+        my_game.my_room = data.room_level1;
+    } else if (level == 2) {
+        my_game.my_room = data.room_level2;
+    } else if (level == 3) {
+        my_game.my_room = data.room_level3;
+    }
     var my_room = (my_game.room - 1);
     my_game.my_spot = (data.amount_of_people_in_room[my_room] + 1);
 
@@ -2138,7 +2144,7 @@ function myScoresDisplay () {
     for (let i = 0; i < bolden_text; i++) {
         if (online < 1) {
             x_shift = -130;
-            ctx.fillStyle = 'rgb(104, 5, 5)';
+            ctx.fillStyle = 'rgb(174, 4, 4)';
             ctx.fillText("You are offline, unable to connect to the Bible.io Server!", (((static_width)/2) + x_shift - 280) + 150, 160);
         } else {
             x_shift = 27;
@@ -2724,7 +2730,7 @@ async function makePost_or_Patch_Request_issue_clean() {
   you can have as many elements as you want that are necessary, but remember if you are not changing the amount
   of people online or requesting to clean up the room, player's room must come first, then player's spot, 
   and then all other additional information, */
-  const req_data = ["clean_room"];
+  const req_data = ["players_room", my_game.room, "players_spot", my_game.my_spot, "clean_room", "nan"];
   
   try {
     const response = await fetch(url, {
