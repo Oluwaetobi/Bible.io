@@ -1380,6 +1380,11 @@ function playerClickedBibletar () {
 
 }
 
+/** For some reason, the person in first place isn't showing upon the onloading of the hall of fame page
+ * these variables help with that
+ */
+var get_first_place_person_to_show = 0;
+const dont_overwhelm_site = 10;
 
 function drawGame() {
     // blue background
@@ -1393,7 +1398,15 @@ function drawGame() {
     update_hall_of_fame();
     live_Display_Slider();
 
+    if(get_first_place_person_to_show < dont_overwhelm_site) {
+        change_top_player_display(1);
+    }
+    if (get_first_place_person_to_show < dont_overwhelm_site) {
+        get_first_place_person_to_show += 1;
+    }
+
 }
+
 
 function resizeCanvas() {
     // Sets the internal drawing resolution to the exact window bounds
