@@ -2849,6 +2849,7 @@ async function makeA_Get_Request_to_see_waiting_room_data_frequently() {
                 my_game.questions_wrong[counter] = data.questions_wrong[my_room][i];
                 my_game.everyones_points[counter] = data.points[my_room][i];
                 my_game.everyones_names[counter] = data.names[my_room][i];
+                my_game.countries[counter] = data.countries[my_room][i];
                 for (let j = 0; j < standard_bibletar_length; j++) {
                     my_game.bibletar[counter][k] = data.bibletars[my_room][i][k];
                 }
