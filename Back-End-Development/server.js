@@ -632,7 +632,7 @@ const server = http.createServer((req, res) => {
                * not first place, but spot, so you will have to get the data first and check,
                * if it isn't, that means that the room has already been cleaned and someone else has joined, so don't
                *  this way you don't make a request and set it to 0 again when there's already at least someone else or more
-               * than 1 other person there who have joined
+               * than 1 other person there who have joined for a new game in that room
               */
               if (decoded_name == "clean_room") {
                 for (let i = 0; i < 4; i++) {
@@ -769,7 +769,7 @@ async function makePost_or_Patch_Request() {
   
   /* element 1 tells the server which part of the object to change, element 2 tells the server what to change it to,
   you can have as many elements as you want that are necessary, but remember if you are not changing the amount
-  of people online or requesting to clean up the room, player's room must come first, then player's spot, 
+  of people online the player's room must come first, then player's spot, 
   and then all other additional information, */
   const req_data = ["online", 1];
   

@@ -2676,7 +2676,7 @@ function connectPlayers () {
 }
 
 async function makeA_Get_Request_check_whether_to_clean_room() {
-    /** Tells server to clean up the room, game has finished */
+    /** Figures out whether I need to tell the server to clean up the room when the game has finished */
   
   const url = server_source;
   try {
@@ -2703,6 +2703,7 @@ async function makeA_Get_Request_check_whether_to_clean_room() {
         the room needs to cleaned */
         if (data.names[my_room][0] == my_game.everyones_names[i])  {
             makePost_or_Patch_Request_issue_clean();
+            break;
         }
     }
     
