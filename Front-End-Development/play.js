@@ -2770,7 +2770,7 @@ async function makePost_or_Patch_Request_in_game_data_edits() {
   you can have as many elements as you want that are necessary, but remember if you are not changing the amount
   of people online or requesting to clean up the room, player's room must come first, then player's spot, 
   and then all other additional information, */
-  const req_data = ["players_room", my_game.my_room, "players_spot", my_game.my_spot, "points", my_game.everyones_points[0]];
+  const req_data = ["players_room", my_game.my_room, "players_spot", my_game.my_spot, "points", my_game.everyones_points[0], "questions_wrong", my_game.questions_wrong[0]];
   
   try {
     const response = await fetch(url, {
