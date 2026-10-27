@@ -648,7 +648,7 @@ async function makeA_Get_Request_entered_waiting_room_data() {
     } else if (level == 3) {
         my_game.my_room = data.room_level3;
     }
-    var my_room = (my_game.room - 1);
+    var my_room = (my_game.my_room - 1);
     my_game.my_spot = (data.amount_of_people_in_room[my_room] + 1);
 
     makePost_or_Patch_Request_waiting_room_edits();
@@ -679,7 +679,7 @@ async function makePost_or_Patch_Request_waiting_room_edits() {
   of people online or requesting to clean up the room, player's room must come first, then player's spot, 
   and then all other additional information, */
   const req_data = ["players_room", my_game.my_room, "players_spot", my_game.my_spot, "names", my_name, "countries", my_country, "bibletars", my_bibletar_svg, "amount_of_people_in_room", my_game.my_spot];
-  
+
   try {
     const response = await fetch(url, {
       method: 'PATCH', // Specify the HTTP method
@@ -2730,7 +2730,7 @@ async function makePost_or_Patch_Request_issue_clean() {
   you can have as many elements as you want that are necessary, but remember if you are not changing the amount
   of people online or requesting to clean up the room, player's room must come first, then player's spot, 
   and then all other additional information, */
-  const req_data = ["players_room", my_game.room, "players_spot", my_game.my_spot, "clean_room", "nan"];
+  const req_data = ["players_room", my_game.my_room, "players_spot", my_game.my_spot, "clean_room", "nan"];
   
   try {
     const response = await fetch(url, {
@@ -2788,7 +2788,7 @@ async function makePost_or_Patch_Request_in_game_data_edits() {
     const data = await response.json(); // Parse the JSON response from the server
     console.log(data);
 
-    var my_room = (my_game.room - 1);
+    var my_room = (my_game.my_room - 1);
     var my_spot = (my_game.spot - 1);
     for (let i = 0; i < 4; i++) {
         // copy everyone's points into our game object
