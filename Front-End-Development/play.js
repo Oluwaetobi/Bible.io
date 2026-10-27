@@ -424,6 +424,8 @@ function update_Data_And_Continue_Game() {
     erase_bibletar_objects_from_my_array();
     // set home page back to main screen
     home_page = 1;
+
+    // send my data to the hall_of_fame_section of the Bible.io Server
 }
 
 
@@ -2003,8 +2005,16 @@ function myScoresDisplay () {
 
     var bolden_text = 5;
     for (let i = 0; i < bolden_text; i++) {
-        ctx.fillStyle = 'rgb(15, 104, 5)';
-        ctx.fillText("Under Construction - Online Sometimes!", (((static_width)/2) + x_shift - 280) + 150, 160);
+        if (online < 1) {
+            x_shift = -130;
+            ctx.fillStyle = 'rgb(104, 5, 5)';
+            ctx.fillText("You are offline, unable to connect to the Bible.io Server!", (((static_width)/2) + x_shift - 280) + 150, 160);
+        } else {
+            x_shift = 27;
+            // if online is greater than zero that means you are connected to the Bible.io server and are online
+            ctx.fillStyle = 'rgb(15, 104, 5)';
+            ctx.fillText("You are online!", (((static_width)/2) + x_shift - 280) + 150, 160);
+        }
     }
 
     // black shadow remove
@@ -2449,7 +2459,10 @@ function extra_info_and_images () {
     }
     
     var fill_in_text_messages = ["A Global Race", "Match on!", "You ready?", "Game on!"];
-    live_text_display(545, 645, fill_in_text_messages);
+    if (online > 0) {
+        // if online is greater than zero that means you are connected to the Bible.io server and are online
+        live_text_display(545, 645, fill_in_text_messages);
+    }
 
 
 }
