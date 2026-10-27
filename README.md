@@ -11,9 +11,8 @@
 <p>Bible.io was originally built with a website called Scratch, and then after that we switched to Turbowarp
 meaning it was run with only JavaScript. Now we're moving forward and developing our own website right from
 scratch, with languages that drive not only the Web, but the Internet itself. Languages like HTML/CSS, 
-Full-Stack JavaScript, (Node.js) and maybe more. Since We might be working with Full-Stack JavaScript, we will be able to use
-JavaScript not only for Front-End Development but as well as Back-End Development with frameworks such
-as Node.js | Development will take years but every step of the way is an oppurtunity to learn. If you would like to be a contributor to this project please state so in the discussions.</p>
+Full-Stack JavaScript, and maybe more. Since We might be working with Full-Stack JavaScript, we will be able to use
+JavaScript not only for Front-End Development but as well as Back-End Development with with the help of Node.js | Development will take years but every step of the way is an oppurtunity to learn. If you would like to be a contributor to this project please state so in the discussions.</p>
 
 <h2>How Bible.io Works</h2>
 <p>Bible.io works by connecting people from around the globe and making use of online competition and faith based learning. 
@@ -72,3 +71,7 @@ https://youtu.be/VbfvQzCoiQc?si=8VPFvPASEGJTg8d3
 <h2>Bugs in Bible.io Code</h2>
 <p>Please don't report bugs on HackerOne, LOL. If you find any bugs, please just report them on "issues"
 https://github.com/Oluwaetobi/Bible.io/issues</p>
+
+<h1>The Bible.io Server</h1>
+<p>The Bible.io Server is configured with Node, and built with Node.js, it is also important to note that the server
+spins down with inactivity, and is sometimes shutdown.</p>
