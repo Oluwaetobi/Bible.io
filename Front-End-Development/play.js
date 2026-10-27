@@ -430,7 +430,9 @@ function update_Data_And_Continue_Game() {
     // send my data to the hall_of_fame_section of the Bible.io Server
         
     async function makePost_or_Patch_Request_hall_of_fame() {
-    /** This function is used to make request to the Bible.io server to change/edit data on the Bible.io server */
+    /** Upon finishing the game, if save & continue is pressed this will Send the Bible.io Server data
+     *  for the hall of fame including my points, name
+     * country, and bibletar, now I might be on the hall of fame */
     
     /** MORE IMPORTANT NOTES:
      * Don't ever place this in requestanimationframe loop, this will overwhelm the server, you can call this,
@@ -618,7 +620,8 @@ function erase_bibletar_objects_from_my_array () {
 }
 
 async function makeA_Get_Request_entered_waiting_room_data() {
-    // is called only once upon the FIRST TIME YOU ENTERED THE ROOM!
+    /* is called only once upon the FIRST TIME YOU ENTERED THE ROOM! Figures out which room I'm in as well as 
+    my spot too */
   
   const url = server_source;
   try {
@@ -654,7 +657,8 @@ async function makeA_Get_Request_entered_waiting_room_data() {
 
 
 async function makePost_or_Patch_Request_waiting_room_edits() {
-  /** edits data for waiting room upon joining, send your info to the Bible.io Server
+  /** edits data for waiting room upon joining, send your info to the Bible.io Server, such as name, country,
+   * bibletar, and amoount of people in your room
    */
   
   /** MORE IMPORTANT NOTES:
@@ -717,7 +721,8 @@ function prepare_the_game () {
         my_game.everyone_animate_bar_x[i] = 0;
     }
     
-    randomRobotModes();
+
+    // randomRobotModes();
     
     x_bar_divider = 1;
     bar_graph_rendered_loop = 0;
@@ -740,6 +745,10 @@ function prepare_the_game () {
 
 function startGame() {
     home_page = 3;
+
+    if (my_game.num_of_people_in_room <= 1) {
+        randomRobotModes();
+    }
 }
 
 function wipeOutEntireScreen() {
@@ -2661,6 +2670,7 @@ function connectPlayers () {
 }
 
 async function makeA_Get_Request_check_whether_to_clean_room() {
+    /** Tells server to clean up the room, game has finished */
   
   const url = server_source;
   try {
@@ -2740,7 +2750,7 @@ async function makePost_or_Patch_Request_issue_clean() {
 }
 
 async function makePost_or_Patch_Request_in_game_data_edits() {
-  /** edits data for everyone's points, during game
+  /** edits data for everyone's points, during game, well specifically mine, everyone will do this on their side
    */
   
   /** MORE IMPORTANT NOTES:
@@ -2821,7 +2831,7 @@ async function makeA_Get_Request_to_see_waiting_room_data_frequently() {
 }
 
 async function makePost_or_Patch_Request_set_room_to_closed() {
-  /** sets room to closed
+  /** sets room to closed upon a real game starting
    */
   
   /** MORE IMPORTANT NOTES:
@@ -2878,7 +2888,9 @@ function start_timer() {
 
         /** Only called once every second, so when the timer increments by 1 */
         if (home_page == 3) {
-            robotPlayers(60);
+            if (my_game.num_of_people_in_room <= 1) {
+                robotPlayers(60);
+            }
         }
 
         if (timer % 3 == 0) {
@@ -2890,7 +2902,9 @@ function start_timer() {
             }
             /* every three seconds in the waiting room check whether the room is closed and check how many people
             are in your room and set data accordingly into our game object */
-            makeA_Get_Request_to_see_waiting_room_data_frequently();
+            if (home_page == 2) {
+                makeA_Get_Request_to_see_waiting_room_data_frequently();
+            }
         }
         
         if ((time_alloted_for_each_game - timer) < 0) {
@@ -2906,6 +2920,7 @@ function start_timer() {
             startGame();
             timer = 0;
             // set your room to closed
+            makePost_or_Patch_Request_set_room_to_closed();
         }
     }
 }
