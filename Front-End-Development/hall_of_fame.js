@@ -1384,7 +1384,8 @@ function playerClickedBibletar () {
  * these variables help with that
  */
 var get_first_place_person_to_show = 0;
-const dont_overwhelm_site = 10;
+//  the thing is kind of stubbon so I'm setting it to 100
+const dont_overwhelm_site = 100;
 
 function drawGame() {
     // blue background
