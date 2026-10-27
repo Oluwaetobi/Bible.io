@@ -409,7 +409,7 @@ const server = http.createServer((req, res) => {
             }
 
             // Bible.io LIVE Data
-            for (let i = 0; i < Math.ceil((chunk.length)/2); i++) {
+            for (let i = 0; i < Math.ceil((JSON.parse(chunk).length)/2); i++) {
 
               const decoded_name = JSON.parse(chunk)[i * 2];
               var decoded_value = JSON.parse(chunk)[(i * 2)+ 1];
