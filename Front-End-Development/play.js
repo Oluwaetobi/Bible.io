@@ -179,6 +179,8 @@ const my_game = {
     my_room: 1,
     // tells me my spot which is equivalent to how many people joined before I did, plus 1
     my_spot: 1,
+    // amount of people in your room
+    num_of_people_in_room: 1,
     /** Amount of time to wait before the game starts, can change depending on how many people
      * have joined your room, there should also be a max wait time of 30 seconds, that way it doesn't
      * keep searching the world for too long if there's no players
@@ -471,7 +473,7 @@ function update_Data_And_Continue_Game() {
 
 
 async function makePost_or_Patch_Request_online() {
-  /** This function is used to make request to the Bible.io server to change/edit data on the Bible.io server */
+  /** increment online players by 1 */
   
   /** MORE IMPORTANT NOTES:
    * Don't ever place this in requestanimationframe loop, this will overwhelm the server, you can call this,
@@ -615,6 +617,82 @@ function erase_bibletar_objects_from_my_array () {
     img_hair_sources.length = 0;
 }
 
+async function makeA_Get_Request_waiting_room_data() {
+  
+  const url = server_source;
+  try {
+    const response = await fetch(url, {
+      method: 'GET', // Specify the HTTP method
+      headers: {
+          'Content-Type': 'application/json' // Inform the server about the data format
+      },
+    });
+    
+    
+    if (!response.ok) {
+      throw new Error(`HTTP error! Status: ${response.status}`);
+    }
+    const data = await response.json();
+    
+    // can leave this, after all, I want the amount of people online to always be accurate
+    online = data.online;
+
+    my_game.my_room = data.room;
+    var my_room = (my_game.room - 1);
+    my_game.my_spot = data.amount_of_people_in_room[my_room];
+
+    
+    
+  } catch (error) {
+    console.error('Error making GET request:', error);
+  }
+
+
+}
+
+
+async function makePost_or_Patch_Request_waiting_room_edits() {
+  /** edits data for waiting room
+   */
+  
+  /** MORE IMPORTANT NOTES:
+   * Don't ever place this in requestanimationframe loop, this will overwhelm the server, you can call this,
+   * max every 3 seconds
+  */
+ const url = server_source;
+  
+  
+  /* element 1 tells the server which part of the object to change, element 2 tells the server what to change it to,
+  you can have as many elements as you want that are necessary, but remember if you are not changing the amount
+  of people online or requesting to clean up the room, player's room must come first, then player's spot, 
+  and then all other additional information, */
+  const req_data = ["players_room", my_game.my_room, "players_spot", my_game.my_spot, "points", my_game.everyones_points[0]];
+  
+  try {
+    const response = await fetch(url, {
+      method: 'PATCH', // Specify the HTTP method
+      headers: {
+        'Content-Type': 'application/json' // Inform the server about the data format
+      },
+      body: JSON.stringify(req_data) // Convert the JavaScript object into a JSON string
+    });
+    
+    if (!response.ok) {
+      throw new Error(`Response status: ${response.status}`);
+    }
+    
+    const data = await response.json(); // Parse the JSON response from the server
+    console.log(data);
+
+    
+    
+
+
+  } catch (error) {
+    console.error('Error making PATCH request:', error.message);
+  }
+}
+
 function prepare_the_game () {
     add_you_got_nothing_wrong = true;
     i_got_first_place = true;
@@ -654,6 +732,8 @@ function prepare_the_game () {
     for (let i = 0; i < my_game.bibletar[0].length; i++) {
         my_game.bibletar[0][i] = my_bibletar_svg[i];
     }
+
+    makeA_Get_Request_waiting_room_data();
 }
 
 function startGame() {
@@ -2578,7 +2658,135 @@ function connectPlayers () {
 
 }
 
+async function makeA_Get_Request_check_whether_to_clean_room() {
+  
+  const url = server_source;
+  try {
+    const response = await fetch(url, {
+      method: 'GET', // Specify the HTTP method
+      headers: {
+          'Content-Type': 'application/json' // Inform the server about the data format
+      },
+    });
+    
+    
+    if (!response.ok) {
+      throw new Error(`HTTP error! Status: ${response.status}`);
+    }
+    const data = await response.json();
+    
+    // can leave this, after all, I want the amount of people online to always be accurate
+    online = data.online;
+
+    var my_room = (my_game.my_room - 1);
+
+    for (let i = 0; i < my_game.everyones_names.length; i++) {
+        /* if the first person in that room equals any of the names in my game room, that means
+        the room needs to cleaned */
+        if (data.names[my_room][0] == my_game.everyones_names[i])  {
+            makePost_or_Patch_Request_issue_clean();
+        }
+    }
+    
+  } catch (error) {
+    console.error('Error making GET request:', error);
+  }
+
+
+}
+
+
+async function makePost_or_Patch_Request_issue_clean() {
+  /** issue clean to Bible.io server if necessary, resets points, bibletars, and other data to 0 or default
+   * values
+   */
+  
+  /** MORE IMPORTANT NOTES:
+   * Don't ever place this in requestanimationframe loop, this will overwhelm the server, you can call this,
+   * max every 3 seconds
+  */
+ const url = server_source;
+  
+  
+  /* element 1 tells the server which part of the object to change, element 2 tells the server what to change it to,
+  you can have as many elements as you want that are necessary, but remember if you are not changing the amount
+  of people online or requesting to clean up the room, player's room must come first, then player's spot, 
+  and then all other additional information, */
+  const req_data = ["clean_room"];
+  
+  try {
+    const response = await fetch(url, {
+      method: 'PATCH', // Specify the HTTP method
+      headers: {
+        'Content-Type': 'application/json' // Inform the server about the data format
+      },
+      body: JSON.stringify(req_data) // Convert the JavaScript object into a JSON string
+    });
+    
+    if (!response.ok) {
+      throw new Error(`Response status: ${response.status}`);
+    }
+    
+    const data = await response.json(); // Parse the JSON response from the server
+    console.log(data);
+    
+
+
+  } catch (error) {
+    console.error('Error making PATCH request:', error.message);
+  }
+}
+
+async function makePost_or_Patch_Request_in_game_data_edits() {
+  /** edits data for everyone's points, during game
+   */
+  
+  /** MORE IMPORTANT NOTES:
+   * Don't ever place this in requestanimationframe loop, this will overwhelm the server, you can call this,
+   * max every 3 seconds
+  */
+ const url = server_source;
+  
+  
+  /* element 1 tells the server which part of the object to change, element 2 tells the server what to change it to,
+  you can have as many elements as you want that are necessary, but remember if you are not changing the amount
+  of people online or requesting to clean up the room, player's room must come first, then player's spot, 
+  and then all other additional information, */
+  const req_data = ["players_room", my_game.my_room, "players_spot", my_game.my_spot, "points", my_game.everyones_points[0]];
+  
+  try {
+    const response = await fetch(url, {
+      method: 'PATCH', // Specify the HTTP method
+      headers: {
+        'Content-Type': 'application/json' // Inform the server about the data format
+      },
+      body: JSON.stringify(req_data) // Convert the JavaScript object into a JSON string
+    });
+    
+    if (!response.ok) {
+      throw new Error(`Response status: ${response.status}`);
+    }
+    
+    const data = await response.json(); // Parse the JSON response from the server
+    console.log(data);
+
+    var my_room = (my_game.room - 1);
+    var my_spot = (my_game.spot - 1);
+    for (let i = 0; i < 4; i++) {
+        // copy everyone's points into our game object
+        my_game.everyones_points[i] = data.points[my_room][i];
+    }
+    
+
+
+  } catch (error) {
+    console.error('Error making PATCH request:', error.message);
+  }
+}
+
 function start_timer() {
+    const time_alloted_for_each_game = 60;
+
     const date = new Date();
     const hours = date.getHours();
     const minutes = date.getMinutes();
@@ -2591,6 +2799,17 @@ function start_timer() {
         /** Only called once every second, so when the timer increments by 1 */
         if (home_page == 3) {
             robotPlayers(60);
+        }
+
+        if (timer % 3) {
+            // every three seconds during the game, edit data on the server
+            if ((time_alloted_for_each_game - timer) >= 0) {
+                makePost_or_Patch_Request_in_game_data_edits();
+            }
+        }
+        
+        if ((time_alloted_for_each_game - timer) < 0) {
+            makeA_Get_Request_check_whether_to_clean_room();
         }
     }
 

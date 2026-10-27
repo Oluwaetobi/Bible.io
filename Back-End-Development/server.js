@@ -356,16 +356,33 @@ const server = http.createServer((req, res) => {
           } else {
 
             function set_world_wide_room_to_correct_room () {
+              /** IMPORTANT NOTE: This function is called twice, once before data is edited and once after
+               * it has been edited
+              */
+             
+             // updates closed_rooms, helps server know which rooms are full and which ones are not
+             for (let i = 0; i < around_the_world.bibleio_server_rooms_count; i++) {
+               if (around_the_world.amount_of_people_in_room[i] >= 4) {
+                 // room is closed
+                 around_the_world.closed_rooms[i] = 1;
+               } else {
+                 // room is open
+                 around_the_world.closed_rooms[i] = 0;
+               }
+             }
+
               /* automatically sets the worldwide room to the first room that is open, should always be updated
-                anytime time a request to the server is made
+                anytime time a request to the server is made, also edits, closed_rooms, and amount_of_people_in_room
               */
                 for (let i = 0; i < around_the_world.bibleio_server_rooms_count; i++) {
                   if (around_the_world.closed_rooms[i] == 0) {
                     // if the room is open, set the worldwide room that is currently open to i, then break;
+                    //  this helps users who are joining to join to an open room
                     around_the_world.room = i;
                     break;
                   }
                 }
+
             }
             set_world_wide_room_to_correct_room();
 
@@ -415,9 +432,8 @@ const server = http.createServer((req, res) => {
                 }
               }
               if (decoded_name == "closed_rooms") {
-                /* when there's 4 players or when the game starts, the 4th player to join will set the room
-                to closed, and again, when the game starts everyone will issue a request to set the room to 
-                closed as well */
+                /* this has become OBSOLETE due to the set_world_wide_room_to_correct_room function which
+                which applies changes to this variable automatically */
                 around_the_world.closed_rooms[players_room] = decoded_value;
               }
               if (decoded_name == "amount_of_people_in_room") {
@@ -441,10 +457,10 @@ const server = http.createServer((req, res) => {
 
 
               // clean up room after game finishes
-              /** Alright, so when a room is open and there's less than 4 people in the room, and the user is the
-               * first person to join the room, then they will issue a clean, rooms open after the game finishes
+              /**  issue a clean  after the game finishes
                * and when the game finishes the amount of people in the room will be set to 0 only if, the
-               * name of the first person in the room is currenetly the same as the first person in your 
+               * name of the first person in the room is currenetly the same as the first, second, third, or fourth
+               *  person in your game room,
                * not first place, but spot, so you will have to get the data first and check,
                * if it isn't, that means that the room has already been cleaned and someone else has joined, so don't
                *  this way you don't make a request and set it to 0 again when there's already at least someone else or more
@@ -463,7 +479,11 @@ const server = http.createServer((req, res) => {
                 }
                 // the room has been successfully cleaned
               }
+
             }
+
+            // called again after data has been edited
+            set_world_wide_room_to_correct_room();
 
           }
 
