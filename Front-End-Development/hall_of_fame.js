@@ -325,15 +325,15 @@ async function makeA_Get_Request() {
     const data = await response.json();
     // console.log('Data received:', data.bibletar);
     console.log("Date Received: " , data.hall_of_fame[0][1]);
-
+    
     const default_bibletar_length = hall_of_fame.bibletar[0].length;
-
+    
     // input at all data into the hall of fame object from server
-
+    
     /** Remember it's important to do hall_of_fame.length and NOT data.hall_of_fame.length because
      * data.hall_of_fame.length has one extra pivot point make 101
      */
-    for (let i = 0; i < hall_of_fame.length; i++) {
+    for (let i = 0; i < hall_of_fame.everyones_points.length; i++) {
         // country
         hall_of_fame.countries[i] = data.hall_of_fame[i][0];
         // name
@@ -345,7 +345,7 @@ async function makeA_Get_Request() {
             hall_of_fame.bibletar[i][j] = data.hall_of_fame[i][3][j];
         }
     }
-
+    
   } catch (error) {
     console.error('Error making GET request:', error);
   }

@@ -321,6 +321,7 @@ const server = http.createServer((req, res) => {
            var temp_bibletar = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
             for (let i = 0; i < around_the_world.hall_of_fame.length; i++) {
               for (let j = i+1; j  < around_the_world.hall_of_fame.length; j++) {
+                // if score less than score below them then swap
                 if (around_the_world.hall_of_fame[i][2] < around_the_world.hall_of_fame[j][2]) {
                   // set temp
                   temp_country = around_the_world.hall_of_fame[i][0];
@@ -341,8 +342,8 @@ const server = http.createServer((req, res) => {
                   }
 
                   around_the_world.hall_of_fame[j][0] = temp_country;
-                  around_the_world.hall_of_fame[j][0] = temp_name;
-                  around_the_world.hall_of_fame[j][0] = temp_points;
+                  around_the_world.hall_of_fame[j][1] = temp_name;
+                  around_the_world.hall_of_fame[j][2] = temp_points;
                   for (let k = 0; k < standard_bibletar_length; k++) {
                     around_the_world.hall_of_fame[j][3][k] = temp_bibletar[k];
                   }
