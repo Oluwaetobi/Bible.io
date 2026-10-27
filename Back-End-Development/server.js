@@ -171,6 +171,7 @@ const server = http.createServer((req, res) => {
           // var decoded_value = JSON.parse(chunk)[1];
           if (JSON.parse(chunk)[0] == "hall_of_fame") {
             // Hall of fame data
+            var players_name = JSON.parse(chunk)[1]
 
             // use selection sort to organize the hall of fame, after adding the user's name, score, points, and bibletar
 
@@ -222,17 +223,17 @@ const server = http.createServer((req, res) => {
                 around_the_world.online += decoded_value;
               }
               if (decoded_name == "names") {
-                around_the_world.names[0][players_room][players_spot] = decoded_value;
+                around_the_world.names[players_room][players_spot] = decoded_value;
               }
               if (decoded_name == "points") {
-                around_the_world.points[0][players_room][players_spot] = decoded_value;
+                around_the_world.points[players_room][players_spot] = decoded_value;
               }
               if (decoded_name == "countries") {
-                around_the_world.countries[0][players_room][players_spot] = decoded_value;
+                around_the_world.countries[players_room][players_spot] = decoded_value;
               }
               if (decoded_name == "bibletars") {
                 for (let j = 0; j < 11; j++) {
-                  around_the_world.bibletars[0][players_room][players_spot][j] = decoded_value[j];
+                  around_the_world.bibletars[players_room][players_spot][j] = decoded_value[j];
                 }
               }
               if (decoded_name == "closed_rooms") {
@@ -274,11 +275,11 @@ const server = http.createServer((req, res) => {
               if (decoded_name == "clean_room") {
                 var world_wide_room = (around_the_world.room - 1);
                 for (let i = 0; i < 4; i++) {
-                  around_the_world.names[0][world_wide_room][i] = "Unknown Player";
-                  around_the_world.points[0][world_wide_room][i] = 0;
-                  around_the_world.countries[0][world_wide_room][i] = "America";
+                  around_the_world.names[world_wide_room][i] = "Unknown Player";
+                  around_the_world.points[world_wide_room][i] = 0;
+                  around_the_world.countries[world_wide_room][i] = "America";
                   for (let j = 0; j < 11; j++) {
-                    around_the_world.bibletars[0][world_wide_room][i][j] = 1;
+                    around_the_world.bibletars[world_wide_room][i][j] = 1;
                   }
                   around_the_world.amount_of_people_in_room[world_wide_room] = 0;
                 }

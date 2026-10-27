@@ -106,8 +106,7 @@ const hall_of_fame = {
     // server_source: 'https://bible-io-backend-server.onrender.com',
 }
 var server_source = 'https://bible-io-backend-server.onrender.com';
-// gets important data that I need such as inputting data for whether I am a developer
-localStorageAndSessionStorageData();
+
 localhostsource_server_if_i_am_a_developer();
 function localhostsource_server_if_i_am_a_developer () {
     /**Alright, so essentially what this function does it sets the server_source url to localhost instead
@@ -234,6 +233,9 @@ for (let i = 0; i < 5; i++) {
 }
 var end_of_screen_benchmark  = (liveDisplay_Text_Spacing * -1);
 
+// update_hall_fame and push in all default values before retrieving data from server
+update_hall_of_fame();
+makeA_Get_Request();
 function update_hall_of_fame () {
 
     /** Able to keep trach of the top 100 players in the entire world, now I need to also fetch it from
@@ -242,16 +244,24 @@ function update_hall_of_fame () {
      */
     var amount_of_players_tracked = 100;
     if (hall_of_fame.bibletar.length <= amount_of_players_tracked) {
-        hall_of_fame.bibletar.push([1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]);
+        for (let i = 0; i < amount_of_players_tracked; i++) {
+            hall_of_fame.bibletar.push([1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]);
+        }
     }
     if (hall_of_fame.countries.length <= amount_of_players_tracked) {
-        hall_of_fame.countries.push("America");
+        for (let i = 0; i < amount_of_players_tracked; i++) {
+            hall_of_fame.countries.push("America");
+        }
     }
     if (hall_of_fame.everyones_points.length <= amount_of_players_tracked) {
-        hall_of_fame.everyones_points.push(0);
+        for (let i = 0; i < amount_of_players_tracked; i++) {
+            hall_of_fame.everyones_points.push(0);
+        }
     }
     if (hall_of_fame.everyones_names.length <= amount_of_players_tracked) {
-        hall_of_fame.everyones_names.push("Unknown Player");
+        for (let i = 0; i < amount_of_players_tracked; i++) {
+            hall_of_fame.everyones_names.push("Unknown Player");
+        }
     }
 
     const images = document.querySelectorAll('#hall-of-fame-design img');
@@ -291,6 +301,51 @@ function update_hall_of_fame () {
             td.textContent = hall_of_fame.everyones_points[consecutive_numbers - 1];
         }
     })
+
+
+}
+
+
+async function makeA_Get_Request() {
+  /** This function is used to retrieve data on the Bible.io server, that way I can display it on Bible.io (website) */
+  const url = server_source;
+  try {
+    const response = await fetch(url, {
+      method: 'GET', // Specify the HTTP method
+      headers: {
+          'Content-Type': 'application/json' // Inform the server about the data format
+      },
+    });
+    
+    
+    if (!response.ok) {
+      throw new Error(`HTTP error! Status: ${response.status}`);
+    }
+    const data = await response.json();
+    // console.log('Data received:', data.bibletar);
+    console.log("Date Received: " , data.names[0][0]);
+
+    const default_bibletar_length = hall_of_fame.bibletar[0].length;
+
+    // input at all data into the hall of fame object from server
+    for (let i = 0; i < data.hall_of_fame.length; i++) {
+        // country
+        hall_of_fame.countries[i] = data.hall_of_fame[i][0];
+        // name
+        hall_of_fame.everyones_names[i] = data.hall_of_fame[i][1];
+        // points
+        hall_of_fame.everyones_points[i] = data.hall_of_fame[i][2];
+        // bibletars
+        for (let j = 0; j < default_bibletar_length; j++) {
+            hall_of_fame.bibletar[i][j] = data.hall_of_fame[i][3][j];
+        }
+    }
+    console.log("First player's name: " + data.hall_of_fame[0][i][1])
+    console.log("hello")
+
+  } catch (error) {
+    console.error('Error making GET request:', error);
+  }
 
 
 }
