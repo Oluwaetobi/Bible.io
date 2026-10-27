@@ -363,10 +363,10 @@ const server = http.createServer((req, res) => {
              // updates closed_rooms, helps server know which rooms are full and which ones are not
              for (let i = 0; i < around_the_world.bibleio_server_rooms_count; i++) {
                if (around_the_world.amount_of_people_in_room[i] >= 4) {
-                 // room is closed
+                 // set room to closed
                  around_the_world.closed_rooms[i] = 1;
                } else {
-                 // room is open
+                 // set room to open
                  around_the_world.closed_rooms[i] = 0;
                }
              }
@@ -378,7 +378,7 @@ const server = http.createServer((req, res) => {
                   if (around_the_world.closed_rooms[i] == 0) {
                     // if the room is open, set the worldwide room that is currently open to i, then break;
                     //  this helps users who are joining to join to an open room
-                    around_the_world.room = i;
+                    around_the_world.room = (i + 1);
                     break;
                   }
                 }
@@ -433,17 +433,20 @@ const server = http.createServer((req, res) => {
               }
               if (decoded_name == "closed_rooms") {
                 /* this has become OBSOLETE due to the set_world_wide_room_to_correct_room function which
-                which applies changes to this variable automatically */
+                which applies changes to this variable AUTOMATICALLY, the only time it needs to be called
+                from the user is when they the game starts and perhaps sometimes there's less than 4 players
+                so it isn't completely obsolete  */
                 around_the_world.closed_rooms[players_room] = decoded_value;
               }
               if (decoded_name == "amount_of_people_in_room") {
                 around_the_world.amount_of_people_in_room = decoded_value;
               }
               if (decoded_name == "room") {
-                // see set_world_wide_room_to_correct_room function
+                // this has become OBSOLETE, see set_world_wide_room_to_correct_room function, is handled AUTOMATICALLY
               }
               if (decoded_name == "players_room") {
-                // I don't actually really need to do this, might only be useful if I'm auditing the server
+                /* I don't actually really need to do this, might only be useful if I'm auditing the server | OBSOLETE
+                 because it refers the room of the player who made the request */
                 around_the_world.players_room = decoded_value;
               }
               if (decoded_name == "new_game_wait_time") {

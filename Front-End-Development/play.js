@@ -617,7 +617,8 @@ function erase_bibletar_objects_from_my_array () {
     img_hair_sources.length = 0;
 }
 
-async function makeA_Get_Request_waiting_room_data() {
+async function makeA_Get_Request_entered_waiting_room_data() {
+    // is called only once upon the FIRST TIME YOU ENTERED THE ROOM!
   
   const url = server_source;
   try {
@@ -639,8 +640,9 @@ async function makeA_Get_Request_waiting_room_data() {
 
     my_game.my_room = data.room;
     var my_room = (my_game.room - 1);
-    my_game.my_spot = data.amount_of_people_in_room[my_room];
+    my_game.my_spot = (data.amount_of_people_in_room[my_room] + 1);
 
+    makePost_or_Patch_Request_waiting_room_edits();
     
     
   } catch (error) {
@@ -652,7 +654,7 @@ async function makeA_Get_Request_waiting_room_data() {
 
 
 async function makePost_or_Patch_Request_waiting_room_edits() {
-  /** edits data for waiting room
+  /** edits data for waiting room upon joining, send your info to the Bible.io Server
    */
   
   /** MORE IMPORTANT NOTES:
@@ -666,7 +668,7 @@ async function makePost_or_Patch_Request_waiting_room_edits() {
   you can have as many elements as you want that are necessary, but remember if you are not changing the amount
   of people online or requesting to clean up the room, player's room must come first, then player's spot, 
   and then all other additional information, */
-  const req_data = ["players_room", my_game.my_room, "players_spot", my_game.my_spot, "points", my_game.everyones_points[0]];
+  const req_data = ["players_room", my_game.my_room, "players_spot", my_game.my_spot, "names", my_name, "countries", my_country, "bibletars", my_bibletar_svg, "amount_of_people_in_room", my_game.my_spot];
   
   try {
     const response = await fetch(url, {
@@ -733,7 +735,7 @@ function prepare_the_game () {
         my_game.bibletar[0][i] = my_bibletar_svg[i];
     }
 
-    makeA_Get_Request_waiting_room_data();
+    makeA_Get_Request_entered_waiting_room_data();
 }
 
 function startGame() {
@@ -2784,6 +2786,83 @@ async function makePost_or_Patch_Request_in_game_data_edits() {
   }
 }
 
+
+async function makeA_Get_Request_to_see_waiting_room_data_frequently() {
+    /* frequently called about every 3 seconds, to check what data on the server for my room 
+    and enter in details onto our game object */
+
+  const url = server_source;
+  try {
+    const response = await fetch(url, {
+      method: 'GET', // Specify the HTTP method
+      headers: {
+          'Content-Type': 'application/json' // Inform the server about the data format
+      },
+    });
+    
+    
+    if (!response.ok) {
+      throw new Error(`HTTP error! Status: ${response.status}`);
+    }
+    const data = await response.json();
+    
+    // can leave this, after all, I want the amount of people online to always be accurate
+    online = data.online;
+
+    var my_room = (my_game.my_room - 1);
+    my_game.num_of_people_in_room = data.amount_of_people_in_room[my_room];
+    my_game.room_closed = data.closed_rooms[my_room];
+    
+  } catch (error) {
+    console.error('Error making GET request:', error);
+  }
+
+
+}
+
+async function makePost_or_Patch_Request_set_room_to_closed() {
+  /** sets room to closed
+   */
+  
+  /** MORE IMPORTANT NOTES:
+   * Don't ever place this in requestanimationframe loop, this will overwhelm the server, you can call this,
+   * max every 3 seconds
+  */
+ const url = server_source;
+  
+  
+  /* element 1 tells the server which part of the object to change, element 2 tells the server what to change it to,
+  you can have as many elements as you want that are necessary, but remember if you are not changing the amount
+  of people online or requesting to clean up the room, player's room must come first, then player's spot, 
+  and then all other additional information, */
+  const req_data = ["players_room", my_game.my_room, "players_spot", my_game.my_spot, "closed_rooms", 1];
+  
+  try {
+    const response = await fetch(url, {
+      method: 'PATCH', // Specify the HTTP method
+      headers: {
+        'Content-Type': 'application/json' // Inform the server about the data format
+      },
+      body: JSON.stringify(req_data) // Convert the JavaScript object into a JSON string
+    });
+    
+    if (!response.ok) {
+      throw new Error(`Response status: ${response.status}`);
+    }
+    
+    const data = await response.json(); // Parse the JSON response from the server
+    console.log(data);
+    
+
+
+  } catch (error) {
+    console.error('Error making PATCH request:', error.message);
+  }
+}
+
+
+
+
 function start_timer() {
     const time_alloted_for_each_game = 60;
 
@@ -2793,6 +2872,7 @@ function start_timer() {
     const seconds = date.getSeconds();
     // console.log(seconds);
     if (seconds != different_second) {
+        //  all this stuff is called every 1 second
         different_second = seconds;
         timer += 1;
 
@@ -2801,23 +2881,31 @@ function start_timer() {
             robotPlayers(60);
         }
 
-        if (timer % 3) {
+        if (timer % 3 == 0) {
             // every three seconds during the game, edit data on the server
             if ((time_alloted_for_each_game - timer) >= 0) {
-                makePost_or_Patch_Request_in_game_data_edits();
+                if (home_page == 3) {
+                    makePost_or_Patch_Request_in_game_data_edits();
+                }
             }
+            /* every three seconds in the waiting room check whether the room is closed and check how many people
+            are in your room and set data accordingly into our game object */
+            makeA_Get_Request_to_see_waiting_room_data_frequently();
         }
         
         if ((time_alloted_for_each_game - timer) < 0) {
-            makeA_Get_Request_check_whether_to_clean_room();
+            if (home_page == 3) {
+                makeA_Get_Request_check_whether_to_clean_room();
+            }
         }
     }
 
     if (home_page == 2) {
-        if (timer >= my_game.new_game_wait_time) {
+        if (timer >= my_game.new_game_wait_time || my_game.room_closed == 1) {
             choose_Random_Question();
             startGame();
             timer = 0;
+            // set your room to closed
         }
     }
 }
