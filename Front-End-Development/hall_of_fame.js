@@ -1394,6 +1394,7 @@ function drawGame() {
     backgroundColorScreen();
     update_HTML_Text_And_Data_Information();
     loadingBox();
+    figure_out_whether_hall_of_fame_click_is_a_boy_or_a_girl();
     playerClickedBibletar();
     update_hall_of_fame();
     live_Display_Slider();
