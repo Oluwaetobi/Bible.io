@@ -429,7 +429,13 @@ function update_Data_And_Continue_Game() {
 
     // send my data to the hall_of_fame_section of the Bible.io Server
         
-    async function makePost_or_Patch_Request_hall_of_fame() {
+    
+
+    makePost_or_Patch_Request_hall_of_fame();
+
+}
+
+async function makePost_or_Patch_Request_hall_of_fame() {
     /** Upon finishing the game, if save & continue is pressed this will Send the Bible.io Server data
      *  for the hall of fame including my points, name
      * country, and bibletar, now I might be on the hall of fame */
@@ -466,10 +472,6 @@ function update_Data_And_Continue_Game() {
     } catch (error) {
         console.error('Error making PATCH request:', error.message);
     }
-    }
-
-    makePost_or_Patch_Request_hall_of_fame();
-
 }
 
 
