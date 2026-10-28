@@ -528,7 +528,7 @@ function randomRobotModes() {
      * controls their difficulty level, I think 13 is the sweet spot
      */
     const play_easier = 13;
-    const robot_game_mode = play_easier *level;
+    const robot_game_mode = play_easier * level;
     if (level == 1) {
         // robot_modes[0] = ((Math.floor(Math.random() * 5) + 1)/10);
         // robot_modes[1] = ((Math.floor(Math.random() * 5) + 1)/10);
@@ -3269,7 +3269,7 @@ function draw_points_as_bar_graph(y_bibletars_box_spacing, y_baseline) {
         var animate_each_point = my_game.everyone_animate_bar_x[i];
 
         /** 0.035, is the ORIGINAL and sweet spot for the animate_bar_x_speed variable */
-        var animate_bar_x_speed = 0.050;
+        var animate_bar_x_speed = 0.100;
 
         /** This deals with the bar number animation stuff */
         if (my_game.everyone_animate_bar_x[i] < each_players_points) {
@@ -3376,13 +3376,14 @@ function draw_points_as_bar_graph(y_bibletars_box_spacing, y_baseline) {
 
 
         var size_of_bar = ((animate_each_point * bar_speed_x) / x_bar_divider);
-        if (size_of_bar > 837) {
+        const end_of_game_screen_bar_mark = 857;
+        if (size_of_bar > end_of_game_screen_bar_mark) {
             /* send bar graph back to half it's size when it passes the end of game screen land mark 
             it's 0.01 divided by amount of people in the game, to make it as close to 0.01 after the for
             loop since there is a for loop*/
 
             // faster was originally 1;
-            const faster = 8;
+            const faster = 1;
             x_bar_divider += (((0.01)/my_game.online) * faster);
         }
 
@@ -3390,11 +3391,13 @@ function draw_points_as_bar_graph(y_bibletars_box_spacing, y_baseline) {
     }
     /* IMPORTANT NOTE:
      should be outside the for loop, and loop_bar_graph_back must be a multiple of 100, was ORIGINALLY 200 */
-    var loop_bar_graph_back = 400; 
+    var loop_bar_graph_back = 100; 
 
     if (Number.isInteger(x_bar_divider) == false) {
         /** the decimal things isn't working so I have to add an extra protocol called bar_graph_rendered_loop */
-        x_bar_divider += 0.01;
+        // real faster was originally 1
+        const real_faster = 3;
+        x_bar_divider += (0.01 * real_faster);
         bar_graph_rendered_loop += 1;
         // console.log(x_bar_divider);
         if (bar_graph_rendered_loop % loop_bar_graph_back === 0) {
