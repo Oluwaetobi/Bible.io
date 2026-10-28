@@ -475,6 +475,39 @@ async function makePost_or_Patch_Request_hall_of_fame() {
 }
 
 
+async function makeA_Get_Request_figure_out_how_many_people_are_online() {
+  /** This function is used to retrieve data on the Bible.io server, that way I can display it on Bible.io (website) */
+  const url = server_source;
+  try {
+    const response = await fetch(url, {
+      method: 'GET', // Specify the HTTP method
+      headers: {
+          'Content-Type': 'application/json' // Inform the server about the data format
+      },
+    });
+    
+    
+    if (!response.ok) {
+      throw new Error(`HTTP error! Status: ${response.status}`);
+    }
+
+    const data = await response.json();
+    // console.log('Data received:', data.bibletar);
+    console.log("Date Received: " , data);
+    online = data.online;
+    /** I have to put this function in here, that way I am actually waiting until I get the online number
+     * before I proceed with the measures and calculations, that's what await means, it pauses any other 
+     * code inside the function until it receives a response that is what response.ok does, I mean apart
+     * from it failing due to network failure with fetch already does on it's own, it also fails if there
+     * is a server error represented by a http status of 500-599 and a client error of 400-499
+     */
+    online_measures_and_rules();
+  } catch (error) {
+    console.error('Error making GET request:', error);
+  }
+
+
+}
 
 async function makePost_or_Patch_Request_online() {
   /** increment online players by 1 */
@@ -513,7 +546,43 @@ async function makePost_or_Patch_Request_online() {
   }
 }
 
-makePost_or_Patch_Request_online();
+function allowed_to_increment_online_if_the_user_is_not_spamming() {
+    /** It's easy to repress the play buttton in the header multiple times and spam increment the online num, 
+     * my job is to prevent that from happening
+     */
+    makePost_or_Patch_Request_online();
+    spamming_online = 1;
+    sessionStorage.setItem('spamming_online', JSON.stringify(spamming_online));
+}
+
+function reset_spamming_online_to_false () {
+    /** Sometimes the server might shutdown randomly or just disconnect, that way if you've been
+     * on the website for sometime, and you repress on play again the online number will increment
+     * because whenever the server shutdown or is down, the online number gets set back to 0 by default
+     */
+    spamming_online = 0;
+    sessionStorage.setItem('spamming_online', JSON.stringify(spamming_online));
+}
+
+var spamming_online = JSON.parse(sessionStorage.getItem('spamming_online'));
+makeA_Get_Request_figure_out_how_many_people_are_online();
+function online_measures_and_rules () {
+    if (spamming_online) {
+        // if the variable has a value
+        console.log(online);
+        if (online > 0) {
+            if (spamming_online == 0 || spamming_online < 0) {
+                allowed_to_increment_online_if_the_user_is_not_spamming();
+            } else {
+                // the user is spamming the online number, 0 represents false, 1 represents true
+            }
+        } else {
+            allowed_to_increment_online_if_the_user_is_not_spamming();
+        }
+    } else {
+        allowed_to_increment_online_if_the_user_is_not_spamming();
+    }
+}
 
 
 
@@ -2151,9 +2220,9 @@ function myScoresDisplay () {
     var bolden_text = 5;
     for (let i = 0; i < bolden_text; i++) {
         if (online < 1) {
-            x_shift = -130;
+            x_shift = -163;
             ctx.fillStyle = 'rgb(174, 4, 4)';
-            ctx.fillText("You are offline, unable to connect to the Bible.io Server!", (((static_width)/2) + x_shift - 280) + 150, 160);
+            ctx.fillText("You are offline, Bible.io was unable to connect you to the Server!", (((static_width)/2) + x_shift - 280) + 150, 160);
         } else {
             x_shift = 27;
             // if online is greater than zero that means you are connected to the Bible.io server and are online
@@ -5102,6 +5171,7 @@ function kick_me_out_of_the_game () {
 var add_you_got_nothing_wrong = true;
 
 function broadcast_game_is_over (time_alloted_for_each_game) {
+    reset_spamming_online_to_false();
     questions_background();
 
     if(question_I_got_wrong.length == 0 && add_you_got_nothing_wrong == true) {
