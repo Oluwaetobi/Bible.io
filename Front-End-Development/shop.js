@@ -2454,11 +2454,12 @@ function bibleMaker_background () {
     // ctx.fillText("Click to go to your section", 457, 163);
     ctx.fillText("Click to go to your section", (((canvas.width)/2) - (x_shift_text - x_backdrop_increment)), y_baseline);
 
+    const click_go_section_color = 'rgb(255, 238, 0)';
     ctx.font = "50px Arial";
-    ctx.strokeStyle = 'rgb(228, 206, 2)';
+    ctx.strokeStyle = click_go_section_color;
     // ctx.strokeText("Click to go to your section", 460, 160);
     ctx.strokeText("Click to go to your section", (((canvas.width)/2) - x_shift_text), (y_baseline - 3));
-    ctx.fillStyle = 'rgb(228, 206, 2)';
+    ctx.fillStyle = click_go_section_color;
     // ctx.fillText("Click to go to your section", 460, 160);
     ctx.fillText("Click to go to your section", (((canvas.width)/2) - x_shift_text), (y_baseline - 3));
 
