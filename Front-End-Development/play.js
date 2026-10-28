@@ -521,27 +521,33 @@ function randomRobotModes() {
      * benefits the game and increases a gives a higher probability of different possibilities
      * and outcomes, yay!!!
      */
+
+    /** The higher the variable play_easier, the easier it is to beat the robot players, this variable
+     * controls their difficulty level
+     */
+    const play_easier = 20;
+    const robot_game_mode = play_easier *level;
     if (level == 1) {
         // robot_modes[0] = ((Math.floor(Math.random() * 5) + 1)/10);
         // robot_modes[1] = ((Math.floor(Math.random() * 5) + 1)/10);
         // robot_modes[2] = ((Math.floor(Math.random() * 5) + 1)/10);
-        robot_modes[0] = (((Math.random() * 5) + 1)/10);
-        robot_modes[1] = (((Math.random() * 5) + 1)/10);
-        robot_modes[2] = (((Math.random() * 5) + 1)/10);
+        robot_modes[0] = (((Math.random() * 5) + 1)/robot_game_mode);
+        robot_modes[1] = (((Math.random() * 5) + 1)/robot_game_mode);
+        robot_modes[2] = (((Math.random() * 5) + 1)/robot_game_mode);
     } else if (level == 2) {
         // robot_modes[0] = ((Math.floor(Math.random() * 5) + 1)/20);
         // robot_modes[1] = ((Math.floor(Math.random() * 5) + 1)/20);
         // robot_modes[2] = ((Math.floor(Math.random() * 5) + 1)/20);
-        robot_modes[0] = (((Math.random() * 5) + 1)/20);
-        robot_modes[1] = (((Math.random() * 5) + 1)/20);
-        robot_modes[2] = (((Math.random() * 5) + 1)/20);
+        robot_modes[0] = (((Math.random() * 5) + 1)/robot_game_mode);
+        robot_modes[1] = (((Math.random() * 5) + 1)/robot_game_mode);
+        robot_modes[2] = (((Math.random() * 5) + 1)/robot_game_mode);
     } else if (level == 3) {
         // robot_modes[0] = ((Math.floor(Math.random() * 5) + 1)/30);
         // robot_modes[1] = ((Math.floor(Math.random() * 5) + 1)/30);
         // robot_modes[2] = ((Math.floor(Math.random() * 5) + 1)/30);
-        robot_modes[0] = (((Math.random() * 5) + 1)/30);
-        robot_modes[1] = (((Math.random() * 5) + 1)/30);
-        robot_modes[2] = (((Math.random() * 5) + 1)/30);
+        robot_modes[0] = (((Math.random() * 5) + 1)/robot_game_mode);
+        robot_modes[1] = (((Math.random() * 5) + 1)/robot_game_mode);
+        robot_modes[2] = (((Math.random() * 5) + 1)/robot_game_mode);
     }
 
     
