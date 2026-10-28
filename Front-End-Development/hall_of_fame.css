@@ -214,6 +214,7 @@ header {
     border-radius: 10px 10px;
     padding: 5px 50px;
     font-weight: bold;
+    font-size: 52px;
 }
 
 .bible-day-contest {
@@ -238,7 +239,8 @@ header {
 }
 
 #top-players-text {
-    color: #d31e0d;
+    color: #fefefe;
+    text-shadow: black 1px 1px 2px;
     font-weight: bold;
 }
 
@@ -248,12 +250,23 @@ header {
     text-decoration:none;
     margin-right: 10px;
     margin-left: 10px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
 }
 
 #top-hundred-head {
     display: flex;
     gap: 20px;
     margin-bottom: 10px;
+    background-color: rgba(1, 166, 255, 0.5);
+    border-radius: 30px;
+    padding: 5px;
+    box-shadow: black 0px 0px 10px;
+}
+
+#top-hundred-head:hover {
+    filter: brightness(150%);
+    cursor: pointer;
 }
 
 a {
@@ -264,6 +277,8 @@ a:hover {
     text-decoration: underline;
     color: #ffb700;
 }
+
+/* Scrollable table for the hall of fame */
 
 .scrollable-table {
     min-height: 370px;
@@ -279,6 +294,8 @@ a:hover {
     border-radius: 5px 5px;
 
     z-index: 1;
+    /* border: 3px solid black; */
+    box-shadow: black 0px 0px 20px;
 }
 
 /* Scrollable table class takes precedence over table class

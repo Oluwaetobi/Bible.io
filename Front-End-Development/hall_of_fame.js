@@ -435,11 +435,18 @@ var players_points = hall_of_fame.everyones_points[0];
 function playerClickedBibletar () {
 
     // translucent rectangle right side of hall of fame
+    var translucent_rec_y_size = 800;
+    var translucent_rec_x_size = 430;
     ctx.fillStyle = "rgba(12, 12, 12, 0.5)"; 
-    ctx.fillRect(1080, 0, 500, 800);
+    ctx.fillRect(1080, 0, translucent_rec_x_size, translucent_rec_y_size);
+
+    // opaque black border
+    const t_border_width = 3;
+    ctx.fillStyle = 'rgb(0, 0, 0)';
+    ctx.fillRect(1080, 0, t_border_width, translucent_rec_y_size)
 
     // WRITE Player Clicked's NAME
-    var shift_name_y_over = -100;
+    var shift_name_y_over = 430;
     var x_shift_over = 1100;
 
     // black shadow add
@@ -452,15 +459,15 @@ function playerClickedBibletar () {
     var text_name_to_display = (player_clicked + ". " + player_Clicked_Name);
     ctx.font = "40px Arial";
     ctx.strokeStyle = 'rgb(251, 250, 250)';
-    ctx.strokeText(text_name_to_display, x_shift_over, 500 + shift_name_y_over);
+    ctx.strokeText(text_name_to_display, x_shift_over, shift_name_y_over);
     ctx.fillStyle = 'rgb(252, 248, 248)';
-    ctx.fillText(text_name_to_display, x_shift_over, 500 + shift_name_y_over);
+    ctx.fillText(text_name_to_display, x_shift_over, shift_name_y_over);
     
     // country and points
     ctx.font = "35px Arial";
     ctx.fillStyle = 'rgb(250, 250, 250)';
-    ctx.drawImage(img_country, 1100, 420, 70, 35);
-    ctx.fillText("Points: " + players_points, 1190, 450);
+    ctx.drawImage(img_country, 1100, shift_name_y_over + 15, 70, 35);
+    ctx.fillText("Points: " + players_points, 1190, shift_name_y_over + 45);
 
     ctx.font = "16px Arial";
     ctx.fillStyle = 'rgb(246, 242, 242)';
@@ -1365,7 +1372,7 @@ function playerClickedBibletar () {
      */
 
     var shift_bibletar_x_over = 130;
-    var shift_bibletar_y_over = -50;
+    var shift_bibletar_y_over = -15;
 
     resizeImageByPixels_and_draw(img_background, 980 + shift_bibletar_x_over, 100 + shift_bibletar_y_over, 300, 1);
     resizeImageByPixels_and_draw(img_face, 1067.5 + shift_bibletar_x_over, 145 + shift_bibletar_y_over, 175, 2);
