@@ -3008,8 +3008,8 @@ function start_timer() {
         }
 
         if (timer % 3 == 0) {
-            // every three seconds during the game, edit data on the server
-            if ((time_alloted_for_each_game - timer) >= 0) {
+            // every two seconds during the game, edit data on the server
+            if ((time_alloted_for_each_game - timer) >= -3) {
                 if (home_page == 3) {
                     if (my_game.num_of_people_in_room > 1) {
                         /* only if there's more than one person online my room, should I actually verse 
@@ -3028,8 +3028,9 @@ function start_timer() {
             }
         }
         
-        if ((time_alloted_for_each_game - timer) < 0) {
+        if ((time_alloted_for_each_game - timer) < -4) {
             if (home_page == 3) {
+                // must happen after all makePost_or_Patch_Request_in_game_data_edits function calls have been done
                 makeA_Get_Request_check_whether_to_clean_room();
             }
         }
@@ -5224,7 +5225,8 @@ function broadcast_game_is_over (time_alloted_for_each_game) {
 
     check_if_I_got_first_place();
     
-    if (game_time < -3) {
+    if (game_time < -5) {
+        // must happen after makeA_Get_Request_check_whether_to_clean_room function call has been done
         home_page = 4;
     }
 
