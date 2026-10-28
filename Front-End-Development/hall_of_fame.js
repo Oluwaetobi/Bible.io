@@ -275,6 +275,7 @@ function update_hall_of_fame () {
         if(hall_of_fame.countries[index] != null) {
             img.src = ("./images/country_" + hall_of_fame.countries[index] + ".svg");
             img.alt = "Unknown country";
+            img.width = 40;
             // console.log("newSources[index]: " +  newSources[index]);
         }
     });

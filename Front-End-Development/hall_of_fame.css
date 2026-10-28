@@ -281,7 +281,7 @@ a:hover {
 /* Scrollable table for the hall of fame */
 
 .scrollable-table {
-    min-height: 370px;
+    min-height: 360px;
     width: 600px;
     /* overflow-y makes only the y coordinates scrollable */
     overflow-y: auto;
@@ -325,13 +325,13 @@ table takes up the full width of it's parent the scrollable table */
     font-weight: bold;
     z-index: 3;
     text-shadow: black 0px 0px 2px;
+    padding: 4px 6px;
 }
 
-.table th,
 .table td {
-    padding: 6px 8px;
+    padding: 2px;
     font-weight: normal;
-    font-size: 15px;
+    font-size: 18px;
 }
 
 .table tr {

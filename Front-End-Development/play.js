@@ -525,9 +525,9 @@ function randomRobotModes() {
      */
 
     /** The higher the variable play_easier, the easier it is to beat the robot players, this variable
-     * controls their difficulty level
+     * controls their difficulty level, I think 13 is the sweet spot
      */
-    const play_easier = 20;
+    const play_easier = 13;
     const robot_game_mode = play_easier *level;
     if (level == 1) {
         // robot_modes[0] = ((Math.floor(Math.random() * 5) + 1)/10);
@@ -3269,7 +3269,7 @@ function draw_points_as_bar_graph(y_bibletars_box_spacing, y_baseline) {
         var animate_each_point = my_game.everyone_animate_bar_x[i];
 
         /** 0.035, is the ORIGINAL and sweet spot for the animate_bar_x_speed variable */
-        var animate_bar_x_speed = 0.035;
+        var animate_bar_x_speed = 0.050;
 
         /** This deals with the bar number animation stuff */
         if (my_game.everyone_animate_bar_x[i] < each_players_points) {
@@ -3380,14 +3380,17 @@ function draw_points_as_bar_graph(y_bibletars_box_spacing, y_baseline) {
             /* send bar graph back to half it's size when it passes the end of game screen land mark 
             it's 0.01 divided by amount of people in the game, to make it as close to 0.01 after the for
             loop since there is a for loop*/
-            x_bar_divider += ((0.01)/my_game.online);
+
+            // faster was originally 1;
+            const faster = 8;
+            x_bar_divider += (((0.01)/my_game.online) * faster);
         }
 
         // makes smooth camera bar graph go back
     }
     /* IMPORTANT NOTE:
-     should be outside the for loop, and loop_bar_graph_back must be a multiple of 100 */
-    var loop_bar_graph_back = 200;
+     should be outside the for loop, and loop_bar_graph_back must be a multiple of 100, was ORIGINALLY 200 */
+    var loop_bar_graph_back = 400; 
 
     if (Number.isInteger(x_bar_divider) == false) {
         /** the decimal things isn't working so I have to add an extra protocol called bar_graph_rendered_loop */
