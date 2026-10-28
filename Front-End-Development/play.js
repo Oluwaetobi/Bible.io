@@ -3008,7 +3008,7 @@ function start_timer() {
         }
 
         if (timer % 3 == 0) {
-            // every two seconds during the game, edit data on the server
+            // every three seconds during the game, edit data on the server
             if ((time_alloted_for_each_game - timer) >= -3) {
                 if (home_page == 3) {
                     if (my_game.num_of_people_in_room > 1) {
