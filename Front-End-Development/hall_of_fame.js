@@ -127,6 +127,9 @@ var img_country = new Image();
 img_country.src = "./images/country_America.svg"; // Sets default source url
 img_country.alt = "country";
 
+let mouseX = 0;
+let mouseY = 0;
+
 var box_x_pos = 1;
 var gameOn = false;
 var online = 0;
@@ -180,6 +183,47 @@ var img_hair = new Image();
 img_hair.src = "./images/hair_men1.svg"; // Set source URL
 img_hair.alt = "hair image";
 
+
+window.addEventListener('mousemove', (event) => {
+    mouseX = event.clientX;
+    mouseY = event.clientY;
+    // This is to counter for where the canvas is actually created on the screen
+    mouseX -= side_border;
+    mouseY -= top_border;
+})
+
+function displayMouseX_and_MouseY (x, y) {
+    if (i_am_a_developer == true) {
+
+        // black shadow add
+    ctx.shadowColor = 'rgb(8, 8, 8)';
+    ctx.shadowBlur = 3;
+    ctx.shadowOffsetX = 1;
+    ctx.shadowOffsetY = 1;
+
+    var background_box_x_size = 420;
+
+    ctx.fillStyle = 'rgba(0, 0, 0, 0.9)';
+    ctx.fillRect(x - 16, y - 29, background_box_x_size + 2, 42);
+    ctx.fillStyle = 'rgba(253, 253, 253, 0.9)';
+    ctx.fillRect(x - 15, y - 28, background_box_x_size, 40);
+    
+    
+    ctx.font = "30px Arial";
+    ctx.strokeStyle = 'rgb(190, 36, 36)';
+    ctx.strokeText("MouseX: " + mouseX + " MouseY: " + mouseY, x, y);
+    ctx.fillStyle = 'rgb(190, 36, 36)';
+    ctx.fillText("MouseX: " + mouseX + " MouseY: " + mouseY, x, y);
+    
+    // black shadow remove
+    ctx.shadowColor = "white";
+    ctx.shadowBlur = 0;
+    ctx.shadowOffsetX = 0;
+    ctx.shadowOffsetY = 0;
+    
+    }
+
+}
 
 
 figure_out_whether_hall_of_fame_click_is_a_boy_or_a_girl();
@@ -1388,6 +1432,47 @@ function playerClickedBibletar () {
 
 }
 
+function additional_text_display () {
+
+    // white shadow add
+    ctx.shadowColor = "black";
+    ctx.shadowBlur = 10;
+    ctx.shadowOffsetX = 0;
+    ctx.shadowOffsetY = 0;
+
+    var bolden_text = 2;
+    for (let i = 0; i < bolden_text; i++) {
+        const message_1 = "Congrats, you're on the podium";
+        const message_2 = "A message from the Bible.io Team";
+        const fill_color_1 = 'rgb(255, 200, 0)';
+        const fill_color_2 = 'rgb(0, 251, 255)';
+        const x_pos_1 = 1120;
+        const x_pos_2 = 1170;
+        const y_pos_1 = 55;
+        const y_pos_2 = 75;
+        ctx.font = "23px Arial";
+        ctx.strokeStyle = 'rgb(0, 0, 0)';
+        ctx.strokeText(message_1, x_pos_1, y_pos_1);
+        ctx.fillStyle = fill_color_1;
+        ctx.fillText(message_1, x_pos_1, y_pos_1);
+    
+        ctx.font = "15px Arial";
+        ctx.strokeStyle = 'rgb(0, 0, 0)';
+        ctx.strokeText(message_2, x_pos_2, y_pos_2);
+        ctx.fillStyle = fill_color_2;
+        ctx.fillText(message_2, x_pos_2, y_pos_2);
+        
+    }
+
+
+
+    // white shadow remove
+    ctx.shadowColor = "white";
+    ctx.shadowBlur = 0;
+    ctx.shadowOffsetX = 0;
+    ctx.shadowOffsetY = 0;
+}
+
 /** For some reason, the person in first place isn't showing upon the onloading of the hall of fame page
  * these variables help with that
  */
@@ -1407,6 +1492,8 @@ function drawGame() {
     playerClickedBibletar();
     update_hall_of_fame();
     live_Display_Slider();
+    additional_text_display();
+    displayMouseX_and_MouseY(20, canvas.height - 30);
 
     if(get_first_place_person_to_show < dont_overwhelm_site) {
         change_top_player_display(1);
