@@ -394,16 +394,16 @@ const server = http.createServer((req, res) => {
       let body = "";
 
         req.on("data", chunk=> {
-          // console.log("Chunk: " + typeof(JSON.parse(chunk)[0]))
-          // console.log("Chunk: " + (JSON.parse(chunk)[1]))
-          // const decoded_name = JSON.parse(chunk)[0];
-          // var decoded_value = JSON.parse(chunk)[1];
-          if (JSON.parse(chunk)[0] == "hall_of_fame") {
+          /* I'm using this variable in order to save server space, parsing it several 
+          times will slow my server down and require more energy, increase the garbage collector 
+          as well as overhead */
+          var parsed_chunk = JSON.parse(chunk);
+          if (parsed_chunk[0] == "hall_of_fame") {
             // Hall of fame data
-            var players_country = JSON.parse(chunk)[1];
-            var players_name = JSON.parse(chunk)[2];
-            var players_points = JSON.parse(chunk)[3];
-            var players_bibletar = JSON.parse(chunk)[4];
+            var players_country = parsed_chunk[1];
+            var players_name = parsed_chunk[2];
+            var players_points = parsed_chunk[3];
+            var players_bibletar = parsed_chunk[4];
 
             /** Loop through the all the hall of fame data, and check if there name already exists
              * if it does, if their points is lower discard it, if it's higher than replace it, the
@@ -422,7 +422,7 @@ const server = http.createServer((req, res) => {
                 // if their points are less than their current points, then replace all data
                 for (let i = 0; i < 4; i++) {
                   if (i < 3) {
-                    around_the_world.hall_of_fame[already_exists_index][i] = JSON.parse(chunk)[i + 1];
+                    around_the_world.hall_of_fame[already_exists_index][i] = parsed_chunk[i + 1];
                   } else {
                     // bibletar
                     const standard_bibletar_length = 11;
@@ -436,7 +436,7 @@ const server = http.createServer((req, res) => {
               // set their data to the last thing in the hall of fame database
               for (let i = 0; i < 4; i++) {
                 if (i < 3) {
-                    around_the_world.hall_of_fame[around_the_world.hall_of_fame.length - 1][i] = JSON.parse(chunk)[i + 1];
+                    around_the_world.hall_of_fame[around_the_world.hall_of_fame.length - 1][i] = parsed_chunk[i + 1];
                   } else {
                     // bibletar
                     const standard_bibletar_length = 11;
@@ -559,22 +559,22 @@ const server = http.createServer((req, res) => {
              in the connecting stage, and if they're not, the only things that will actually be updated is
              their points in the game, which will happen every 4 seconds or 5 seconds in order to conserve 
              server energy */
-            if (JSON.parse(chunk).length > 2) {
+            if (parsed_chunk.length > 2) {
               // room number must be included first as their request
-              players_room = JSON.parse(chunk)[1];
+              players_room = parsed_chunk[1];
               players_room -= 1;
             }
-            if (JSON.parse(chunk).length > 4) {
+            if (parsed_chunk.length > 4) {
               // spot must be included as second thing in their request
-              players_spot = JSON.parse(chunk)[3];
+              players_spot = parsed_chunk[3];
               players_spot -= 1;
             }
 
             // Bible.io LIVE Data
-            for (let i = 0; i < Math.ceil((JSON.parse(chunk).length)/2); i++) {
+            for (let i = 0; i < Math.ceil((parsed_chunk.length)/2); i++) {
 
-              const decoded_name = JSON.parse(chunk)[i * 2];
-              var decoded_value = JSON.parse(chunk)[(i * 2)+ 1];
+              const decoded_name = parsed_chunk[i * 2];
+              var decoded_value = parsed_chunk[(i * 2)+ 1];
 
               if (decoded_name == "online") {
                 around_the_world.online += decoded_value;
