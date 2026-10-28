@@ -11,8 +11,8 @@
 <p>Bible.io was originally built with a website called Scratch, and then after that we switched to Turbowarp
 meaning it was run with only JavaScript. Now we're moving forward and developing our own website right from
 scratch, with languages that drive not only the Web, but the Internet itself. Languages like HTML/CSS, 
-Full-Stack JavaScript, and maybe more. Since We might be working with Full-Stack JavaScript, we will be able to use
-JavaScript not only for Front-End Development but as well as Back-End Development with with the help of Node.js | Development will take years but every step of the way is an oppurtunity to learn. If you would like to be a contributor to this project please state so in the discussions.</p>
+Full-Stack JavaScript, and maybe more. Since we're working with Full-Stack JavaScript, JavaScript is used not only for Front-End Development but as well as Back-End Development with with the help of Node.js | 
+If you would like to be a contributor to this project please state so in the discussions.</p>
 
 <h2>How Bible.io Works</h2>
 <p>Bible.io works by connecting people from around the globe and making use of online competition and faith based learning. 
@@ -25,22 +25,30 @@ Christian Articles, Novels, Short Stories, writings on different Amazing Christi
 where you can answer questions, such as questions related to the Bible, real-life scenarios, books, and more
 while at the end of the day tying it back to Biblical Beliefs and Christian Principles</p>
 
-<p>The Bible.io Hall of Fame is an automatic leaderboard which will display top highscores on the
-different Bible.io Levels for the day and reset every 24 hours, this leaderboard will not just include
-the top highscores for different levels, but also the most points racked in 24 hours as well. We will
-also be featuring the leaderboard for the World's Bible Day Contest which takes place every year
-from July 1st to July 31st. The Hall of Fame will also be clickable allowing you to see the bibletars
-of the top players on the Bible.io Hall of Fame. 
+<p>The Bible.io Hall of Fame is an automatic leaderboard which display the most points racked in 24 hours
+by the top 100 players around the world. The leaderboard will also be on display during World's Bible Day Contest,
+it's a special month, so be there! The World's Bible Day Contest takes place every year on Bible.io
+from July 1st to July 31st. The Hall of Fame is clickable, allowing you to see the bibletars
+of all the top players featured on the Bible.io Hall of Fame. 
 Keep in mind, that this all just for fun and is supposed to engage younger people
 such as kids and perhaps evens teens and whoever else is interested. If you are an older person such as a
 teenager or an adult, such things may not be at all interesting to you, which is why we will have diverse
 things for diverse age groups and people.</p>
 
-<p>The Shop section is where people can style their bibletar. There is a section for boys, and a section
+<p>The Shop section is where people can style their bibletars. There is a section for boys, and a section
 for girls. There are free basic shirts, hats, clothes, and etc that are provided to each user, player,
 or guest player in their closet. And there is a shop where you can buy stuff with the money you've
 earned from the game. Some of the clothes, and accessories might be very cheap, and other expensive. 
 Reminder: Money is earned through the GAME, not real money from real life. </p>
+
+<h2>Levels</h2>
+<p>
+There are 3 levels on Bible.io, level 1, level 2, and level 3, which goes in ranges of easy, medium, and hard.
+Level 1 is supposed to be nice and easy, especially for kids who are new to the Bible, and want some cheap practice, level 2
+is fair game, which also includes some very hard to remember questions, you might want to bring a Bible with you, that's if you
+can read it fast enough, LOL. Level 3 is game mode cranked up to the MAX. It's more of a memory verse game, if you know the verse
+and you're spot on, you could WIN BIG!!
+</p>
 
 <h2>Account information, Login, and Sign Ups</h2>
 <p>Well there's is obviously a problem with storing everyone's account information on Bible.io Servers, such

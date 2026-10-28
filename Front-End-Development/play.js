@@ -6481,6 +6481,14 @@ function level_2_Questions () {
         answer4.innerText += `Zalmon  `;
         correct_answer = 2;
     }
+    if (randomQuestion == 59) {
+        question.innerText = `In which chapter of Genesis does it talk about God's rainbow?  `;
+        answer1.innerText += `Chapter 6 `;
+        answer2.innerText += `Chapter 7 `;
+        answer3.innerText += `Chapter 8  `;
+        answer4.innerText += `Chapter 9  `;
+        correct_answer = 4;
+    }
 }
 
 function level_3_Questions () {
