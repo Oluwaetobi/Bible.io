@@ -418,7 +418,7 @@ const server = http.createServer((req, res) => {
               }
             }
             if (already_exists == true) {
-              if(around_the_world.hall_of_fame[i][2] < players_points) {
+              if(around_the_world.hall_of_fame[already_exists_index][2] < players_points) {
                 // if their points are less than their current points, then replace all data
                 for (let i = 0; i < 4; i++) {
                   if (i < 3) {
@@ -435,7 +435,7 @@ const server = http.createServer((req, res) => {
             } else {
               // set their data to the last thing in the hall of fame database
               for (let i = 0; i < 4; i++) {
-                  if (i < 3) {
+                if (i < 3) {
                     around_the_world.hall_of_fame[around_the_world.hall_of_fame.length - 1][i] = JSON.parse(chunk)[i + 1];
                   } else {
                     // bibletar
