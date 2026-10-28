@@ -241,10 +241,16 @@ header {
 }
 
 #top-players-text {
-    color: #800000;
+    color: #fcfbfb;
     text-shadow: rgb(255, 255, 255) 1px 1px 1px;
     font-weight: bold;
     font-size: 20px;
+    background-color: rgba(62, 236, 56, 0.1);
+    border-radius: 10px;
+    padding: 1px 3px;
+    /* border: 2px solid black; */
+    text-shadow: #000000 1px 1px 1px;
+    /* box-shadow: inset black 0px 0px 10px; */
 }
 
 #sub-title {
