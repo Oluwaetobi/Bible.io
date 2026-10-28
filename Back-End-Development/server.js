@@ -397,7 +397,7 @@ const server = http.createServer((req, res) => {
           /* I'm using this variable in order to save server space, parsing it several 
           times will slow my server down and require more energy, increase the garbage collector 
           as well as overhead */
-          var parsed_chunk = JSON.parse(chunk);
+          const parsed_chunk = JSON.parse(chunk);
           if (parsed_chunk[0] == "hall_of_fame") {
             // Hall of fame data
             var players_country = parsed_chunk[1];
