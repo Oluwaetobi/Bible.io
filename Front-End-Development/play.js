@@ -5630,9 +5630,16 @@ function show_results() {
     const date = new Date();
     const year = date.getFullYear();
 
+    var corporation_text_y_pos = 705;
+    if ((canvas.height - 20) < 705) {
+        // nothing
+    } else {
+        corporation_text_y_pos = (canvas.height - 20);
+    }
+
     ctx.font = "15px Arial";
     ctx.fillStyle = 'rgb(0, 0, 0)';
-    ctx.fillText(year + " Bibleio | Bible.io Corporation", 1050, canvas.height - 20);
+    ctx.fillText(year + " Bibleio | Bible.io Corporation", 1050, corporation_text_y_pos);
 
     // results_information();
 }
@@ -6862,6 +6869,54 @@ function level_3_Questions () {
         answer3.innerText += `Proverbs 7:4 `;
         answer4.innerText += `Proverbs 6:13 `;
         correct_answer = 3;
+    }
+    if (randomQuestion == 35) {
+        question.innerText = `Woe unto him that saith to the wood, Awake; to the dumb stone, Arise, it shall teach! Behold, it is laid over with gold and silver, and there is no breath at all in the midst of it. `;
+        answer1.innerText += `Habakkuk 2:19 `;
+        answer2.innerText += `Jeremiah 10:14 `;
+        answer3.innerText += `Jeremiah 11:12 `;
+        answer4.innerText += `Habakkuk 3:6 `;
+        correct_answer = 1;
+    }
+    if (randomQuestion == 36) {
+        question.innerText = `Woe unto him that saith to the wood, Awake; to the dumb stone, Arise, it shall teach! Behold, it is laid over with gold and silver, and there is no breath at all in the midst of it. `;
+        answer1.innerText += `Habakkuk 2:19 `;
+        answer2.innerText += `Jeremiah 10:14 `;
+        answer3.innerText += `Jeremiah 11:12 `;
+        answer4.innerText += `Habakkuk 3:6 `;
+        correct_answer = 1;
+    }
+    if (randomQuestion == 37) {
+        question.innerText = `For the vision is yet for an appointed time, but at the end it shall speak, and not lie: though it tarry, wait for it; because it will surely come, it will not tarry. `;
+        answer1.innerText += `Habakkuk 1:26 `;
+        answer2.innerText += `Habakkuk 2:3 `;
+        answer3.innerText += `Habakkuk 4:6 `;
+        answer4.innerText += `Hebakkuk 2:15 `;
+        correct_answer = 2;
+    }
+    if (randomQuestion == 38) {
+        question.innerText = `For the preaching of the cross is to them that perish foolishness; but unto us which are saved it is the power of God. `;
+        answer1.innerText += `1 Corinthians 1:18 `;
+        answer2.innerText += `1 Corinthians 1:11 `;
+        answer3.innerText += `Romans 8:6 `;
+        answer4.innerText += `Romans 10:12 `;
+        correct_answer = 1;
+    }
+    if (randomQuestion == 39) {
+        question.innerText = `For it is written, I will destroy the wisdom of the wise, and will bring to nothing the understanding of the prudent. `;
+        answer1.innerText += `1 Corinthians 1:14 `;
+        answer2.innerText += `1 Corinthians 1:19 `;
+        answer3.innerText += `Romans 9:6 `;
+        answer4.innerText += `Romans 5:8 `;
+        correct_answer = 2;
+    }
+    if (randomQuestion == 40) {
+        question.innerText = `The Lord is not slack concerning his promise, as some men count slackness; but is longsuffering to us-ward, not willing that any should perish, but that all should come to repentance. `;
+        answer1.innerText += `2 Peter 2:2 `;
+        answer2.innerText += `2 Peter 2:1 `;
+        answer3.innerText += `2 Peter 3:4 `;
+        answer4.innerText += `2 Peter 3:9 `;
+        correct_answer = 4;
     }
     
 }
