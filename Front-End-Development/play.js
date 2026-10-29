@@ -2775,7 +2775,7 @@ function connectPlayers () {
         ctx.shadowOffsetX = 1;
         ctx.shadowOffsetY = 1;
 
-        var connection_color = ['rgba(243, 244, 245, 0.96)', 'rgba(4, 255, 0, 0.95)', 'rgba(238, 255, 0, 0.96)', 'rgba(255, 0, 0, 0.96)']
+        var connection_color = ['rgba(243, 244, 245, 0.96)', 'rgba(4, 255, 0, 0.95)', 'rgba(251, 255, 0, 0.96)', 'rgba(255, 0, 0, 0.96)']
 
         var bolden_text = 10;
         for (let i = 0; i < bolden_text; i++) {
