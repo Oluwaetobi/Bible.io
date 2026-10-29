@@ -2768,16 +2768,47 @@ function connectPlayers () {
     function write_Out_Text_And_Boxes() {
         var baseline_y = 570;
         var baseline_x = 520;
-        ctx.fillStyle = 'rgba(243, 244, 245, 0.95)';
-        ctx.fillRect(baseline_x, baseline_y, 400, 50);
+
+        // black shadow add
+        ctx.shadowColor = 'rgb(8, 8, 8)';
+        ctx.shadowBlur = 10;
+        ctx.shadowOffsetX = 1;
+        ctx.shadowOffsetY = 1;
+
+        var connection_color = ['rgba(243, 244, 245, 0.96)', 'rgba(4, 255, 0, 0.95)', 'rgba(238, 255, 0, 0.96)', 'rgba(255, 0, 0, 0.96)']
+
+        var bolden_text = 10;
+        for (let i = 0; i < bolden_text; i++) {
+            ctx.fillStyle = connection_color[timer % connection_color.length];
+            ctx.fillRect(baseline_x, baseline_y, 400, 50);
+        }
+
+        // black shadow remove
+        ctx.shadowColor = "white";
+        ctx.shadowBlur = 0;
+        ctx.shadowOffsetX = 0;
+        ctx.shadowOffsetY = 0;
+
+        var connection_message = ["connecting Players.", "connecting Players..", "connecting Players..."]
     
         ctx.font = "30px Arial";
         ctx.fillStyle = 'rgb(6, 6, 6)';
-        ctx.fillText("Connecting Players...", baseline_x + 50, baseline_y + 33);
+        ctx.fillText(connection_message[timer % connection_message.length], baseline_x + 50, baseline_y + 33);
+
+        const online_display_x_pos = 4;
+        const online_display_y_pos = 2;
+
+        ctx.fillStyle = 'rgba(255, 255, 255, 0.9)';
+        ctx.fillRect(online_display_x_pos - 2, online_display_y_pos - 2, 254, 49);
+        ctx.fillStyle = 'rgba(0, 0, 0, 0.9)';
+        ctx.fillRect(online_display_x_pos, online_display_y_pos, 250, 45);
+
+        ctx.font = "25px Arial";
+        ctx.fillStyle = 'rgb(255, 255, 255)';
+        ctx.fillText("People Online: " + online, online_display_x_pos + 20, online_display_y_pos + 30);
     }
 
     function draw_World_Map () {
-        img_world_map
         ctx.drawImage(img_world_map, 218, 0, 1000, 600);
     }
     draw_World_Map();
