@@ -447,6 +447,75 @@ because they are not theh same thing, at least the parameters aren't */
     overflow: hidden;
 }
 
+.world-records-title {
+    background-color: #010101;
+    padding: 0px 20px;
+    border-radius: 100px;
+    margin-bottom: 20px;
+}
+
+#world-records-title {
+    font-size: 40px;
+    /* text-decoration: underline; */
+    background: linear-gradient(
+        90deg,
+        /* rgb(8, 166, 29), */
+        rgb(215, 26, 26),
+        rgb(219, 184, 7),
+        rgb(246, 255, 0)
+    );
+    background-clip: text;
+    color: transparent;
+    background-size: 200% auto;
+    animation: gradientAnimation 3s linear infinite;
+    border-radius: 10px;
+    /* font-weight: bold; */
+}
+
+@keyframes gradientAnimation  {
+    0% {
+        background-position: 200% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.world-records-outerbox {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.world-records-box {
+    padding: 15px 10px;
+    background-color: #8bb2ba;
+    border-radius: 10px;
+    width: 180px;
+    max-height: 160px;
+    border: 2px ridge black;
+    box-shadow: inset rgb(255, 255, 255) 0px 0px 10px;
+    /* overflow: auto; */
+}
+
+.world-records-box:hover {
+    filter: brightness(120%);
+    cursor: pointer;
+}
+
+.world-records-score {
+    font-size: 70px;
+}
+
+.world-records-level {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.world-records-name {
+    font-size: 20px;
+}
+
 #myCanvas {
     position: fixed;
     left: 0px;
