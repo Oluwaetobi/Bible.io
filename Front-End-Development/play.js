@@ -2797,15 +2797,16 @@ function connectPlayers () {
 
         const online_display_x_pos = 4;
         const online_display_y_pos = 2;
+        const online_rect_width = 260;
 
         ctx.fillStyle = 'rgba(255, 255, 255, 0.9)';
-        ctx.fillRect(online_display_x_pos - 2, online_display_y_pos - 2, 254, 49);
+        ctx.fillRect(online_display_x_pos - 2, online_display_y_pos - 2, online_rect_width + 4, 49);
         ctx.fillStyle = 'rgba(0, 0, 0, 0.9)';
-        ctx.fillRect(online_display_x_pos, online_display_y_pos, 250, 45);
+        ctx.fillRect(online_display_x_pos, online_display_y_pos, online_rect_width, 45);
 
         ctx.font = "25px Arial";
         ctx.fillStyle = 'rgb(255, 255, 255)';
-        ctx.fillText("People Online: " + online, online_display_x_pos + 20, online_display_y_pos + 30);
+        ctx.fillText("People Online: " + online, online_display_x_pos + 10, online_display_y_pos + 30);
     }
 
     function draw_World_Map () {
@@ -2976,6 +2977,7 @@ async function makeA_Get_Request_to_see_waiting_room_data_frequently() {
     
     // can leave this, after all, I want the amount of people online to always be accurate
     online = data.online;
+    // the new_game_wait_time could change if more people are online all of sudden, so I need to have this here
     my_game.new_game_wait_time = data.new_game_wait_time;
 
     var my_room = (my_game.my_room - 1);
