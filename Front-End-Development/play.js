@@ -673,7 +673,27 @@ function randomRobotModes() {
             }
         }
     }
+    function put_robots_data_and_info_back_into_game_object () {
+        /** Controls names and countries of Robot players, replaces the data in the game object
+         * each game, obviously because this function is in randomRobotModes() which is only
+         *  called when no one is online, so, all this stuff only happens when you're the only one online
+         */
+        var robot_numbers = [];
+        const starting_number = 200;
+        const ending_number = 10000;
+
+        for (let i = 0; i < 3; i++) {
+            robot_numbers.push(Math.round((Math.random() * ending_number) + starting_number));
+        }
+
+        for (let i = 1; i < 4; i++) {
+            my_game.countries[i] = "America";
+            my_game.everyones_names[i] = ("Robot " + robot_numbers[i - 1].toString());
+
+        }
+    }
     randomRobotBibletars();
+    put_robots_data_and_info_back_into_game_object();
 }
 
 /** Needs to happen at the start, key to helping with display of friends */
