@@ -6868,7 +6868,22 @@ function draw_clock_red_ticker(x, y, width, height, degrees) {
     ctx.restore();
 }
 
-// Usage: Draw a 100x50 rectangle at x=100, y=100, rotated by 45 degrees
+var rotate_page_1_world = 0;
+var rotate_page_1_friends = 0;
+function rotate_world_and_friend_challenge () {
+    
+
+
+    const rotate_world = document.getElementById('choice1');
+    const rotate_friends = document.getElementById('choice3');
+
+    rotate_page_1_world += 1;
+    rotate_page_1_friends += 0.02;
+    const degree_friends_can_rotate_up = 14;
+
+    rotate_world.style.transform = `rotate(${rotate_page_1_world}deg)`;
+    rotate_friends.style.transform = `rotate(${Math.sin(rotate_page_1_friends) * degree_friends_can_rotate_up}deg)`;
+}
 
 function drawGame() {
     
@@ -6885,6 +6900,7 @@ function drawGame() {
         challenge_box_display();
         myBibletar();
         extra_info_and_images();
+        rotate_world_and_friend_challenge();
     } else if (home_page == 2) {
         connectPlayers();
         /** declared loadingbox inside connectPlayers() function, that way it doesn't go on top

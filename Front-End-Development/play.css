@@ -195,10 +195,7 @@ a:hover {
 .modes_assets {
     text-decoration: none;
     display: flex;
-    left: 250px;
-    top: 400px;
     z-index: 1;
-    position: absolute;
 }
 
 .modes_assets img {
@@ -210,15 +207,48 @@ a:hover {
 }
 
 .modes_assets #choice1 {
-    margin-left: 50px;
+    position: fixed;
+    /* margin-left: 50px; */
+    left: 300px;
+    top: 400px;
+    z-index: 1;
+}
+
+/* when the image gets bigger, the x and y coordinates need to change by half the size which the image enlarges by */
+.modes_assets #choice1:hover {
+    width: 320px;
+    left: 290px;
+    top: 390px;
 }
 
 .modes_assets #choice2 {
-    margin-left: 25px;
+    position: fixed;
+    /* margin-left: 25px; */
+    left: 625px;
+    top: 425px;
+    z-index: 1;
+}
+
+/* when the image gets bigger, the x and y coordinates need to change by half the size which the image enlarges by */
+.modes_assets #choice2:hover {
+    width: 220px;
+    left: 615px;
+    top: 415px;
 }
 
 .modes_assets #choice3 {
-    margin-left: 50px;
+    position: fixed;
+    /* margin-left: 50px; */
+    left: 870px;
+    top: 410px;
+    z-index: 1;
+}
+
+/* when the image gets bigger, the x and y coordinates need to change by half the size which the image enlarges by */
+.modes_assets #choice3:hover {
+    width: 220px;
+    left: 860px;
+    top: 400px;
 }
 
 .modes_assets #choice2:hover {
