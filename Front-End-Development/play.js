@@ -5758,8 +5758,8 @@ function choose_Random_Question () {
     // Return a random integer between 1 and 10 (both included): Math.floor(Math.random() * 10) + 1;
 
     var amount_of_question_in_level_1 = 41;
-    var amount_of_question_in_level_2 = 58;
-    var amount_of_question_in_level_3 = 33;
+    var amount_of_question_in_level_2 = 60;
+    var amount_of_question_in_level_3 = 34;
 
 
     if (level == 1) {
@@ -6577,6 +6577,14 @@ function level_2_Questions () {
         answer4.innerText += `Chapter 9  `;
         correct_answer = 4;
     }
+    if (randomQuestion == 60) {
+        question.innerText = `Which of Noah's sons saw his nakedness?  `;
+        answer1.innerText += `Shem  `;
+        answer2.innerText += `Ham  `;
+        answer3.innerText += `Japheth  `;
+        answer4.innerText += `Gomer  `;
+        correct_answer = 2;
+    }
 }
 
 function level_3_Questions () {
@@ -6846,6 +6854,14 @@ function level_3_Questions () {
         answer3.innerText += `Psalms 10:11 `;
         answer4.innerText += `Psalms 10:24 `;
         correct_answer = 2;
+    }
+    if (randomQuestion == 34) {
+        question.innerText = `Say unto wisdom, Thou art my sister; and call understanding thy kinswoman: `;
+        answer1.innerText += `Proverbs 10:9 `;
+        answer2.innerText += `Proverbs 11:12 `;
+        answer3.innerText += `Proverbs 7:4 `;
+        answer4.innerText += `Proverbs 6:13 `;
+        correct_answer = 3;
     }
     
 }
