@@ -506,8 +506,18 @@ const server = http.createServer((req, res) => {
                  // set room to closed
                  around_the_world.closed_rooms[i] = 1;
                } else {
-                 // set room to open
-                 around_the_world.closed_rooms[i] = 0;
+                 // does NOT set room to open, in fact NOTHING happens here
+                 /** Alright so the reason why we aren't supposed to set the room to open, is because, a room
+                  * can still be closed if there less than 4 players, a room might even be closed with only 1 player
+                  * there, why? Because the person was waiting but no one joined his room, so his game will start
+                  * and no one else should be able to join, besides remember, once the game starts players send a
+                  * request to the server to close their room, if I open the room because there's less than 4 players
+                  * there will be problems, people shouldn't be able to join you're room half way into the game just
+                  * because you have less than 4 players, but obviously if you do have more than 4 players, then
+                  * you're room should be closed, that's why it's okay to keep the top statement but not this bottom
+                  * one
+                  */
+                //  around_the_world.closed_rooms[i] = 0;
                }
              }
 

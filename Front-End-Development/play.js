@@ -761,7 +761,7 @@ async function makeA_Get_Request_entered_waiting_room_data() {
 
 async function makePost_or_Patch_Request_waiting_room_edits() {
   /** edits data for waiting room upon joining, send your info to the Bible.io Server, such as name, country,
-   * bibletar, and amoount of people in your room
+   * bibletar, and amoount of people in your room, also sets max wait time in waiting room too
    */
   
   /** MORE IMPORTANT NOTES:
@@ -775,7 +775,22 @@ async function makePost_or_Patch_Request_waiting_room_edits() {
   you can have as many elements as you want that are necessary, but remember if you are not changing the amount
   of people online or requesting to clean up the room, player's room must come first, then player's spot, 
   and then all other additional information, */
-  const req_data = ["players_room", my_game.my_room, "players_spot", my_game.my_spot, "names", my_name, "countries", my_country, "bibletars", my_bibletar_svg, "amount_of_people_in_room", my_game.my_spot];
+  var req_data = ["players_room", my_game.my_room, "players_spot", my_game.my_spot, "names", my_name, "countries", my_country, "bibletars", my_bibletar_svg, "amount_of_people_in_room", my_game.my_spot];
+    
+    var seconds_to_wait_in_room = 10;
+    if (online >= 2) {
+        /** If there's people online apart from me, then I want to wait to have an extra maximum wait time to 
+         * try and connect with them */
+        seconds_to_wait_in_room = 20;
+    } else {
+        /** If I'm the only one online, there's not point of waiting a long time to connect, because there's
+         * nobody to connect with
+         */
+        seconds_to_wait_in_room = 6;
+    }
+
+    req_data.push("new_game_wait_time");
+    req_data.push(seconds_to_wait_in_room);
 
   try {
     const response = await fetch(url, {
@@ -2910,7 +2925,7 @@ async function makePost_or_Patch_Request_in_game_data_edits() {
 
 
 async function makeA_Get_Request_to_see_waiting_room_data_frequently() {
-    /* frequently called about every 3 seconds, to check what data on the server for my room 
+    /* frequently called about every single second, to check what data on the server for my room 
     and enter in details onto our game object */
 
   const url = server_source;
@@ -2930,6 +2945,7 @@ async function makeA_Get_Request_to_see_waiting_room_data_frequently() {
     
     // can leave this, after all, I want the amount of people online to always be accurate
     online = data.online;
+    my_game.new_game_wait_time = data.new_game_wait_time;
 
     var my_room = (my_game.my_room - 1);
     var my_spot = (my_game.my_spot - 1);
