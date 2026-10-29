@@ -3144,17 +3144,30 @@ function display_Game_Time (time_alloted_for_each_game) {
 
     ctx.drawImage(clock, x_baseline - 25, y_baseline -75, 115, 115);
 
+    const clock_ticker_x_pos = 1281;
+    const clock_ticker_y_pos = 47.5;
+    const clock_ticker_width = 3;
+    const clock_ticker_height = 70;
+
+    const date = new Date();
+    const milisecond = date.getMilliseconds();
+    if (game_time >= 0) {
+        draw_clock_red_ticker(clock_ticker_x_pos, clock_ticker_y_pos, clock_ticker_width, clock_ticker_height, game_time * 6);
+    } else {
+        draw_clock_red_ticker(clock_ticker_x_pos, clock_ticker_y_pos, clock_ticker_width, clock_ticker_height, 0);
+    }
+
     ctx.font = "60px Arial";
     
 
-    // drop shadow behind timer
-    ctx.fillStyle = 'rgb(0, 0, 0)';
-    if (game_time >= 0) {
-        ctx.fillText(game_time, (x_baseline - 3) + x_over, (y_baseline + 3));
-    } else {
-        /* there's no point of displaying negative times, just let it be zero, negative numbers should be hidden */
-        ctx.fillText(0, (x_baseline - 3) + x_over, (y_baseline + 3));
-    }
+    // // drop shadow behind timer
+    // ctx.fillStyle = 'rgb(0, 0, 0)';
+    // if (game_time >= 0) {
+    //     ctx.fillText(game_time, (x_baseline - 3) + x_over, (y_baseline + 3));
+    // } else {
+    //     /* there's no point of displaying negative times, just let it be zero, negative numbers should be hidden */
+    //     ctx.fillText(0, (x_baseline - 3) + x_over, (y_baseline + 3));
+    // }
 
     if (game_time > 20) {
         ctx.fillStyle = 'rgb(7, 239, 11)';
@@ -3171,16 +3184,20 @@ function display_Game_Time (time_alloted_for_each_game) {
 
         // black shadow add
         ctx.shadowColor = "black";
-        ctx.shadowBlur = 3;
+        ctx.shadowBlur = 2;
         ctx.shadowOffsetX = 0;
         ctx.shadowOffsetY = 0;
 
-        if (game_time >= 0) {
-            ctx.fillText(game_time, x_baseline + x_over, y_baseline + 3);
-        } else {
-            /* there's no point of displaying negative times, just let it be zero, negative numbers should be hidden */
-            ctx.fillText(0, x_baseline + x_over, y_baseline + 3);
+        var bolden_text = 6;
+        for (let i = 0; i < bolden_text; i++) {
+            if (game_time >= 0) {
+                ctx.fillText(game_time, x_baseline + x_over, y_baseline + 3);
+            } else {
+                /* there's no point of displaying negative times, just let it be zero, negative numbers should be hidden */
+                ctx.fillText(0, x_baseline + x_over, y_baseline + 3);
+            }
         }
+
         
         
         // black shadow remove
@@ -6764,11 +6781,31 @@ function level_3_Questions () {
     
 }
 
-function drawGame() {
+function draw_clock_red_ticker(x, y, width, height, degrees) {
+    // 1. Save the current state of the canvas context
+    ctx.save();
 
+    // 2. Move the canvas origin (0,0) to the center of where the rectangle will be
+    ctx.translate(x + width/2, y + height/2);
+
+    // 3. Rotate the canvas grid (Convert degrees to radians)
+    ctx.rotate((degrees * Math.PI) / 180);
+
+    // 4. Draw the rectangle centered on the new (0,0) origin
+    ctx.fillStyle = 'rgb(231, 14, 14)';
+    ctx.fillRect(-width / 2, -height / 2, width, height);
+
+    // 5. Restore the context to its original state so future drawings aren't rotated
+    ctx.restore();
+}
+
+// Usage: Draw a 100x50 rectangle at x=100, y=100, rotated by 45 degrees
+
+function drawGame() {
+    
     
     draw_Background();
-
+    
     if (home_page == 1) {
         titleText();
         friendsBoard();
