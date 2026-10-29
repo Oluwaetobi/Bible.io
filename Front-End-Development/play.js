@@ -5733,7 +5733,13 @@ function questions_Display() {
 
     ctx.font = "18px Arial";
     ctx.fillStyle = 'rgb(255, 255, 255)';
-    ctx.fillText("You can click the answer or enter the answer with your keyboard", canvas.width - 550, canvas.height - 20);
+    var click_or_type_message_y_pos = 696;
+    if ((canvas.height - 20) < click_or_type_message_y_pos) {
+        // nothing
+    } else {
+        click_or_type_message_y_pos = (canvas.height - 20);
+    }
+    ctx.fillText("You can click the answer or enter the answer with your keyboard", 983, click_or_type_message_y_pos);
 
     // black shadow remove
     ctx.shadowColor = "white";
