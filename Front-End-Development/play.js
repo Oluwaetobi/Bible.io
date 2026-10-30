@@ -2794,47 +2794,53 @@ function connectPlayers () {
     ctx.fillRect(0, 0, canvas.width, canvas.height)
 
     function write_Out_Text_And_Boxes() {
-        var baseline_y = 570;
-        var baseline_x = 520;
-
-        // black shadow add
-        ctx.shadowColor = 'rgb(8, 8, 8)';
-        ctx.shadowBlur = 10;
-        ctx.shadowOffsetX = 1;
-        ctx.shadowOffsetY = 1;
-
-        var connection_color = ['rgba(243, 244, 245, 0.96)', 'rgba(4, 255, 0, 0.95)', 'rgba(251, 255, 0, 0.96)', 'rgba(255, 0, 0, 0.96)']
-
-        var bolden_text = 10;
-        for (let i = 0; i < bolden_text; i++) {
-            ctx.fillStyle = connection_color[timer % connection_color.length];
-            ctx.fillRect(baseline_x, baseline_y, 400, 50);
+        function searching_for_players_display() {
+            var baseline_y = 570;
+            var baseline_x = 520;
+    
+            // black shadow add
+            ctx.shadowColor = 'rgb(8, 8, 8)';
+            ctx.shadowBlur = 10;
+            ctx.shadowOffsetX = 1;
+            ctx.shadowOffsetY = 1;
+    
+            var connection_color = ['rgba(243, 244, 245, 0.96)', 'rgba(4, 255, 0, 0.95)', 'rgba(251, 255, 0, 0.96)', 'rgba(255, 0, 0, 0.96)']
+    
+            var bolden_text = 10;
+            for (let i = 0; i < bolden_text; i++) {
+                ctx.fillStyle = connection_color[timer % connection_color.length];
+                ctx.fillRect(baseline_x, baseline_y, 400, 50);
+            }
+    
+            // black shadow remove
+            ctx.shadowColor = "white";
+            ctx.shadowBlur = 0;
+            ctx.shadowOffsetX = 0;
+            ctx.shadowOffsetY = 0;
+    
+            var connection_message = ["Searching for players.", "Searching for players..", "Searching for players..."]
+            ctx.font = "30px Arial";
+            ctx.fillStyle = 'rgb(6, 6, 6)';
+            ctx.fillText(connection_message[timer % connection_message.length], baseline_x + 46, baseline_y + 33);
         }
 
-        // black shadow remove
-        ctx.shadowColor = "white";
-        ctx.shadowBlur = 0;
-        ctx.shadowOffsetX = 0;
-        ctx.shadowOffsetY = 0;
-
-        var connection_message = ["connecting Players.", "connecting Players..", "connecting Players..."]
+        function people_online_display() {
     
-        ctx.font = "30px Arial";
-        ctx.fillStyle = 'rgb(6, 6, 6)';
-        ctx.fillText(connection_message[timer % connection_message.length], baseline_x + 50, baseline_y + 33);
-
-        const online_display_x_pos = 4;
-        const online_display_y_pos = 2;
-        const online_rect_width = 260;
-
-        ctx.fillStyle = 'rgba(255, 255, 255, 0.9)';
-        ctx.fillRect(online_display_x_pos - 2, online_display_y_pos - 2, online_rect_width + 4, 49);
-        ctx.fillStyle = 'rgba(0, 0, 0, 0.9)';
-        ctx.fillRect(online_display_x_pos, online_display_y_pos, online_rect_width, 45);
-
-        ctx.font = "25px Arial";
-        ctx.fillStyle = 'rgb(255, 255, 255)';
-        ctx.fillText("People Online: " + online, online_display_x_pos + 10, online_display_y_pos + 30);
+            const online_display_x_pos = 590;
+            const online_display_y_pos = 625;
+            const online_rect_width = 260;
+    
+            ctx.fillStyle = 'rgba(0, 0, 0, 0.9)';
+            ctx.fillRect(online_display_x_pos - 2, online_display_y_pos - 2, online_rect_width + 4, 49);
+            ctx.fillStyle = 'rgba(0, 0, 0, 0.9)';
+            ctx.fillRect(online_display_x_pos, online_display_y_pos, online_rect_width, 45);
+    
+            ctx.font = "25px Arial";
+            ctx.fillStyle = 'rgb(255, 255, 255)';
+            ctx.fillText("People Online: " + online, online_display_x_pos + 10, online_display_y_pos + 27);
+        }
+        people_online_display();
+        searching_for_players_display();
     }
 
     const end_of_world_right_side = 2800;
@@ -2842,13 +2848,14 @@ function connectPlayers () {
     const end_of_world_bottom_side = 1700;
     const end_of_world_top_side = -50;
     if (world_size_x < 4000) {
-        world_size_x += world_speed_x;
-        world_size_y += (world_speed_y/1.67);
+        // increase the size of the world until it's big enough
+        world_size_x += world_size_increase_speed;
+        world_size_y += (world_size_increase_speed/1.67);
         
-        world_x_pos += (world_speed_x/2);
-        // world_y_pos -= (world_speed/3.3);
-        world_y_pos += (world_speed_y/5);
+        world_x_pos += (world_size_increase_speed/2);
+        world_y_pos += (world_size_increase_speed/5);
     } else {
+        // start searching around the world
         world_x_pos += world_speed_x;
         world_y_pos += world_speed_y;
         // for x coorindates
@@ -2876,11 +2883,17 @@ function connectPlayers () {
         ctx.drawImage(img_world_map, (world_x_pos * -1), (world_y_pos *-1 ), world_size_x, world_size_y);
     }
     draw_World_Map();
-    loadingBox();
+    if (i_am_a_developer == true) {
+        /* sometimes, the speed at which the computer runs my code is faster and sometimes it's slower, this loading box
+        helps me know when that's happening */
+        loadingBox();
+    }
     write_Out_Text_And_Boxes();
     
     
 }
+// controls the speed at which the size of the world increases by
+const world_size_increase_speed = 5;
 var world_speed_x;
 var world_speed_y;
 const smaller_world = 1;
@@ -2889,12 +2902,25 @@ var world_size_y = (600/smaller_world);
 var world_x_pos;
 var world_y_pos;
 function reset_size_of_world_coordinates() {
+    // reset the size of the world
     world_size_x = (1000/smaller_world);
     world_size_y = (600/smaller_world);
     world_x_pos = -218;
     world_y_pos = 0;
-    world_speed_x = 20;
-    world_speed_y = 20;
+    /*  controls the initial seed for speeds at which the world move left, up, right, and down during searching for players
+    */
+    // fastest the speed can ever go
+    var w_max_speed = 5;
+    var w_min_speed = (w_max_speed * -1);
+    function random_speed_based_of_initial_seed () {
+        world_speed_x = ((Math.random() * w_max_speed) + w_min_speed);
+        world_speed_y = ((Math.random() * w_max_speed) + w_min_speed);
+    }
+    random_speed_based_of_initial_seed();
+    while (world_speed_x == 0 || world_speed_y == 0) {
+        // the speeds should never equal 0 if it does, we need to generate a different speed
+        random_speed_based_of_initial_seed();
+    }
 }
 
 async function makeA_Get_Request_check_whether_to_clean_room() {
