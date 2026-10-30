@@ -184,12 +184,24 @@ a:hover {
 }
 
 .big-text {
-    position: relative;
+    position: fixed;
     top: 30px;
+    /* height: 60px; */
     /* z index pushs it forward 1 layer */
     z-index: 1;
+    left: 540px;
+}
+
+.big-text #big-text {
+    background-color: rgb(182, 0, 0);
+    border-radius: 20px;
+    padding: 3px 8px;
     font-size: 60px;
-    left: 560px;
+    color: white;
+    font-weight: bold;
+    text-shadow: black 1px 1px 3px;
+    box-shadow: inset white 0px 0px 10px;
+    border: 2px solid black;
 }
 
 .modes_assets {
@@ -338,7 +350,7 @@ form input::placeholder {
 
 .questions-wrong-rectangle {
     display: none;
-    top: 110px;
+    top: 173px;
     left: 450px;
     background-color: aliceblue;
     /* overflow-x: hidden; */

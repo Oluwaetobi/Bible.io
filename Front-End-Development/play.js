@@ -2229,21 +2229,23 @@ function myBibletar () {
 }
 
 function onlineDisplay() {
-    var online_x_shift = 80;
+    var online_x_shift = 90;
     ctx.font = "30px Arial";
     ctx.fillStyle = 'rgb(4, 4, 4)';
     // ctx.fillText("Online: " + online, ((canvas.width)/2) - 60, 100);
-    ctx.fillText("Online: " + online, (static_width/2) - online_x_shift, 100);
+    ctx.fillText("Online: " + online, (static_width/2) - online_x_shift, 110);
 }
 
 function myScoresDisplay () {
-    var x_shift = -60;
+    // for home page 1
+    var x_shift = -80;
+    const display_y_pos = 135;
     ctx.font = "20px Arial";
     ctx.fillStyle = 'rgb(6, 6, 6)';
-    ctx.fillText("Points: " + my_points, (((static_width)/2) + x_shift) - 150, 130);
+    ctx.fillText("Points: " + my_points, (((static_width)/2) + x_shift) - 150, display_y_pos);
 
     ctx.fillStyle = 'rgb(6, 6, 6)';
-    ctx.fillText("Highscore: " + my_highscores[level - 1], (((static_width)/2) + x_shift) + 150, 130);
+    ctx.fillText("Highscore: " + my_highscores[level - 1], (((static_width)/2) + x_shift) + 150, display_y_pos);
 
 
     // black shadow add
@@ -2252,17 +2254,19 @@ function myScoresDisplay () {
     ctx.shadowOffsetX = 0;
     ctx.shadowOffsetY = 0;
 
+    const server_message_y_pos = 165;
+
     var bolden_text = 5;
     for (let i = 0; i < bolden_text; i++) {
         if (online < 1) {
-            x_shift = -163;
+            x_shift = -178;
             ctx.fillStyle = 'rgb(174, 4, 4)';
-            ctx.fillText("You are offline, Bible.io was unable to connect you to the Server!", (((static_width)/2) + x_shift - 280) + 150, 160);
+            ctx.fillText("You are offline, Bible.io was unable to connect you to the Server!", (((static_width)/2) + x_shift - 280) + 150, server_message_y_pos);
         } else {
             x_shift = 27;
             // if online is greater than zero that means you are connected to the Bible.io server and are online
             ctx.fillStyle = 'rgb(15, 104, 5)';
-            ctx.fillText("You are online!", (((static_width)/2) + x_shift - 280) + 150, 160);
+            ctx.fillText("You are online!", (((static_width)/2) + x_shift - 280) + 150, server_message_y_pos);
         }
     }
 
@@ -2452,6 +2456,7 @@ function show_or_hide_html_elements () {
         document.getElementById('choice2').style.display = "flex";
         document.getElementById('choice3').style.display = "flex";
         document.getElementById('building-faith').style.display = "block";
+        document.getElementById('big-text').style.display = "block";
 
         form.style.display = "none";
         question.style.display = "none";
@@ -2467,6 +2472,7 @@ function show_or_hide_html_elements () {
         document.getElementById('choice2').style.display = "none";
         document.getElementById('choice3').style.display = "none";
         document.getElementById('building-faith').style.display = "none";
+        document.getElementById('big-text').style.display = "none";
 
         form.style.display = "none";
         question.style.display = "none";
@@ -2501,6 +2507,7 @@ function show_or_hide_html_elements () {
         document.getElementById('questions-i-got-wrong').style.display = "none";
         document.getElementById('continue-button').style.display = "none";
         document.getElementById('building-faith').style.display = "none";
+        document.getElementById('big-text').style.display = "none";
     } else if (home_page == 4) {
         form.style.display = "none";
         question.style.display = "none";
@@ -2508,6 +2515,7 @@ function show_or_hide_html_elements () {
         answer2.style.display = "none";
         answer3.style.display = "none";
         answer4.style.display = "none";
+        document.getElementById('big-text').style.display = "none";
 
         document.getElementById('questions-i-got-wrong').style.display = "block";
         document.getElementById('continue-button').style.display = "block";
@@ -2719,15 +2727,23 @@ function extra_info_and_images () {
 function draw_Background () {
     /** Logic used to change backgrounds for different home pages within the play section of Bible.io */
     if (home_page == 1) {
-        // gradient.addColorStop(0, 'red');     // Start color (0%)
-        // gradient.addColorStop(0.5, 'yellow'); // Middle color (50%)
-        // gradient.addColorStop(1, 'blue');    // End color (100%)
         var gradient = ctx.createLinearGradient(0, 0, 0, canvas.height);
+        // gradient.addColorStop(0, 'rgb(255, 255, 255)');     // Start color (0%)
+        // gradient.addColorStop(0.5, 'rgb(31, 223, 223)');
+        // gradient.addColorStop(1, 'rgb(45, 134, 250)');    // End color (100%)
         gradient.addColorStop(0, 'rgb(219, 237, 249)');     // Start color (0%)
         gradient.addColorStop(0.5, 'rgb(31, 223, 223)');
         gradient.addColorStop(1, 'rgb(45, 134, 250)');    // End color (100%)
         ctx.fillStyle = gradient;
         ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+        // var gradient2 = ctx.createLinearGradient(0, 0, 0, canvas.height);
+        // gradient2.addColorStop(0, 'rgba(255, 255, 255, 0.1)'); 
+        // gradient2.addColorStop(0.5, 'rgba(255, 255, 255, 0.4)');
+        // gradient2.addColorStop(1, 'rgba(255, 255, 255, 0.1)');
+        // ctx.fillStyle = gradient2;
+        // ctx.fillRect(0, 0, canvas.width, canvas.height);
+
     } else if (home_page == 2) {
         ctx.fillStyle = 'rgb(144, 175, 184)';
         ctx.fillRect(0, 0, canvas.width, canvas.height);
@@ -3142,7 +3158,7 @@ function display_other_game_information () {
     ctx.font = "20px Arial";
     ctx.fillStyle = 'rgb(255, 255, 255)';
     ctx.fillText("Level: " + level, 1225, 150 + y_space_over);
-    ctx.fillText("Online: " + online, 1225, 180 + y_space_over);
+    ctx.fillText("Online: " + online, 1220, 180 + y_space_over);
     /** remember arrays start at zero so minus 1 for level */
     ctx.fillText("Highscore: " + my_highscores[level - 1], 1225, 210 + y_space_over);
     ctx.fillText("Total Points: " + my_points, 1225, 240 + y_space_over);
@@ -3220,10 +3236,12 @@ function display_Game_Time (time_alloted_for_each_game) {
 
     const date = new Date();
     const milisecond = date.getMilliseconds();
+    const minute = date.getMinutes();
+    const hour = date.getHours();
     if (game_time >= 0) {
-        draw_clock_red_ticker(clock_ticker_x_pos, clock_ticker_y_pos, clock_ticker_width, clock_ticker_height, game_time * 6);
+        draw_clock_red_ticker(clock_ticker_x_pos, clock_ticker_y_pos, clock_ticker_width, clock_ticker_height, game_time * 6, (minute - 1) * 6, (hour - 1) * 15);
     } else {
-        draw_clock_red_ticker(clock_ticker_x_pos, clock_ticker_y_pos, clock_ticker_width, clock_ticker_height, 0);
+        draw_clock_red_ticker(clock_ticker_x_pos, clock_ticker_y_pos, clock_ticker_width, clock_ticker_height, game_time * 6, (minute - 1) * 6, (hour - 1) * 15);
     }
 
     ctx.font = "60px Arial";
@@ -6927,22 +6945,101 @@ function level_3_Questions () {
     
 }
 
-function draw_clock_red_ticker(x, y, width, height, degrees) {
-    // 1. Save the current state of the canvas context
-    ctx.save();
+function draw_clock_red_ticker(x, y, width, height, degrees_second, degrees_minute, degrees_hour) {
 
-    // 2. Move the canvas origin (0,0) to the center of where the rectangle will be
-    ctx.translate(x + width/2, y + height/2);
+    function second_hand() {
+        // 1. Save the current state of the canvas context
+        ctx.save();
+        // 2. Move the canvas origin (0,0) to the center of where the rectangle will be
+        ctx.translate(x + width/2, y + height/2);
+        // 3. Rotate the canvas grid (Convert degrees to radians)
+        ctx.rotate((degrees_second * Math.PI) / 180);
+        // black shadow add
+        ctx.shadowColor = "black";
+        ctx.shadowBlur = 2;
+        ctx.shadowOffsetX = 0;
+        ctx.shadowOffsetY = 0;
+        // 4. Draw the rectangle centered on the new (0,0) origin
+        ctx.fillStyle = 'rgb(231, 14, 14)';
+        ctx.fillRect(-width / 1.5, -height / 1.5, width, height/1.1);
+        // black shadow remove
+        ctx.shadowColor = "white";
+        ctx.shadowBlur = 0;
+        ctx.shadowOffsetX = 0;
+        ctx.shadowOffsetY = 0;
+        // 5. Restore the context to its original state so future drawings aren't rotated
+        ctx.restore();
+    }
 
-    // 3. Rotate the canvas grid (Convert degrees to radians)
-    ctx.rotate((degrees * Math.PI) / 180);
+    function minute_hand() {
+        // 1. Save the current state of the canvas context
+        ctx.save();
+        // 2. Move the canvas origin (0,0) to the center of where the rectangle will be
+        ctx.translate(x + width/2, y + height/2);
+        // 3. Rotate the canvas grid (Convert degrees to radians)
+        ctx.rotate((degrees_minute * Math.PI) / 180);
+        // black shadow add
+        ctx.shadowColor = "black";
+        ctx.shadowBlur = 2;
+        ctx.shadowOffsetX = 0;
+        ctx.shadowOffsetY = 0;
+        // 4. Draw the rectangle centered on the new (0,0) origin
+        ctx.fillStyle = 'rgba(0, 0, 0, 0.8)';
+        ctx.fillRect(-width / 2, -height / 2, width/2, height/1.6);
+        // black shadow remove
+        ctx.shadowColor = "white";
+        ctx.shadowBlur = 0;
+        ctx.shadowOffsetX = 0;
+        ctx.shadowOffsetY = 0;
+        // 5. Restore the context to its original state so future drawings aren't rotated
+        ctx.restore();
+    }
 
-    // 4. Draw the rectangle centered on the new (0,0) origin
-    ctx.fillStyle = 'rgb(231, 14, 14)';
-    ctx.fillRect(-width / 2, -height / 2, width, height);
+    function hour_hand() {
+        // 1. Save the current state of the canvas context
+        ctx.save();
+        // 2. Move the canvas origin (0,0) to the center of where the rectangle will be
+        ctx.translate(x + width/2, y + height/2);
+        // 3. Rotate the canvas grid (Convert degrees to radians)
+        ctx.rotate((degrees_hour * Math.PI) / 180);
+        // black shadow add
+        ctx.shadowColor = "black";
+        ctx.shadowBlur = 2;
+        ctx.shadowOffsetX = 0;
+        ctx.shadowOffsetY = 0;
+        // 4. Draw the rectangle centered on the new (0,0) origin
+        ctx.fillStyle = 'rgba(0, 0, 0, 0.8)';
+        ctx.fillRect(-width /2.5, -height / 2.5, width/2, height/1.8);
+        // black shadow remove
+        ctx.shadowColor = "white";
+        ctx.shadowBlur = 0;
+        ctx.shadowOffsetX = 0;
+        ctx.shadowOffsetY = 0;
+        // 5. Restore the context to its original state so future drawings aren't rotated
+        ctx.restore();
+    }
 
-    // 5. Restore the context to its original state so future drawings aren't rotated
-    ctx.restore();
+
+    function white_top_ticker_circle() {
+        // inner white circle over lay over ticker
+        var tick_circle_size = 2;
+        ctx.beginPath();
+        // x, y, radius, start point circumference, end point circumference
+        ctx.arc(1282.5, 82.5, tick_circle_size, 0, 2 * Math.PI);
+        ctx.fillStyle = 'rgb(255, 255, 255)';
+        ctx.fill();  
+        // ctx.strokeStyle = 'rgba(0, 0, 0, 0.9)';          // Set outline color
+        ctx.lineWidth = 1;                     // Set outline thickness
+        // ctx.stroke();
+    }
+
+
+    minute_hand();
+    hour_hand();
+    second_hand();
+    white_top_ticker_circle();
+
+
 }
 
 var rotate_page_1_world = 0;
@@ -6955,7 +7052,7 @@ function rotate_world_and_friend_challenge () {
     const rotate_friends = document.getElementById('choice3');
 
     rotate_page_1_world += 1;
-    rotate_page_1_friends += 0.02;
+    rotate_page_1_friends += 0.01;
     const degree_friends_can_rotate_up = 14;
 
     rotate_world.style.transform = `rotate(${rotate_page_1_world}deg)`;
