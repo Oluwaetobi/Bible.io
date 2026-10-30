@@ -2844,9 +2844,9 @@ function connectPlayers () {
     }
 
     const end_of_world_right_side = 2800;
-    const end_of_world_left_side = -500;
-    const end_of_world_bottom_side = 1700;
-    const end_of_world_top_side = -50;
+    const end_of_world_left_side = -300;
+    const end_of_world_bottom_side = 1650;
+    const end_of_world_top_side = 0;
     if (world_size_x < 4000) {
         // increase the size of the world until it's big enough
         world_size_x += world_size_increase_speed;
