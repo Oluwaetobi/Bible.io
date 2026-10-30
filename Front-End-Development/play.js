@@ -2543,7 +2543,7 @@ function extra_info_and_images () {
 
     var month_in_text = "January";
     var day_of_the_week = "Sunday";
-    var real_hours = hours;
+    var real_hours = (hours + 1);
     var extra_zero = "";
     var time_of_day = "AM";
 
@@ -2608,6 +2608,7 @@ function extra_info_and_images () {
     }
 
     if (hours > 12) {
+        // console.log(hours)
         real_hours -= 12;
     }
 
@@ -3237,11 +3238,15 @@ function display_Game_Time (time_alloted_for_each_game) {
     const date = new Date();
     const milisecond = date.getMilliseconds();
     const minute = date.getMinutes();
-    const hour = date.getHours();
+    var hour = ((date.getHours() + (minute/60)) + 1);
+    if (hour > 12) {
+        hour -= 12;
+    }
+    // console.log(hour);
     if (game_time >= 0) {
-        draw_clock_red_ticker(clock_ticker_x_pos, clock_ticker_y_pos, clock_ticker_width, clock_ticker_height, game_time * 6, (minute - 1) * 6, (hour - 1) * 15);
+        draw_clock_red_ticker(clock_ticker_x_pos, clock_ticker_y_pos, clock_ticker_width, clock_ticker_height, game_time * 6, minute * 6, hour * 30);
     } else {
-        draw_clock_red_ticker(clock_ticker_x_pos, clock_ticker_y_pos, clock_ticker_width, clock_ticker_height, game_time * 6, (minute - 1) * 6, (hour - 1) * 15);
+        draw_clock_red_ticker(clock_ticker_x_pos, clock_ticker_y_pos, clock_ticker_width, clock_ticker_height, 0, minute * 6, hour * 30);
     }
 
     ctx.font = "60px Arial";
