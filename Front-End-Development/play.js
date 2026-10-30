@@ -2837,31 +2837,43 @@ function connectPlayers () {
         ctx.fillText("People Online: " + online, online_display_x_pos + 10, online_display_y_pos + 30);
     }
 
-    var world_speed = 10;
-    const end_of_world_right_side = 3000;
-    const end_of_world_left_side = 1300;
+    const end_of_world_right_side = 2800;
+    const end_of_world_left_side = -500;
+    const end_of_world_bottom_side = 1700;
+    const end_of_world_top_side = -50;
     if (world_size_x < 4000) {
-        world_size_x += world_speed;
-        world_size_y += (world_speed/1.67);
-
-        world_x_pos -= (world_speed/2);
+        world_size_x += world_speed_x;
+        world_size_y += (world_speed_y/1.67);
+        
+        world_x_pos += (world_speed_x/2);
         // world_y_pos -= (world_speed/3.3);
-        world_y_pos -= (world_speed/5);
+        world_y_pos += (world_speed_y/5);
     } else {
-        world_x_pos += world_speed;
-        // console.log(world_x_pos)
-        // if (world_x_pos > (end_of_world_right_side)) {
-        //     world_speed *= -1;
-        //     world_x_pos += world_speed;
-        //     // console.log("end of world")
-        // }
-        if (world_x_pos < (end_of_world_left_side * -1)) {
-            world_speed *= -1;
-            world_x_pos += world_speed;
+        world_x_pos += world_speed_x;
+        world_y_pos += world_speed_y;
+        // for x coorindates
+        if (world_x_pos > (end_of_world_right_side) && world_speed_x > 0) {
+                world_speed_x *= -1;
+                world_x_pos += world_speed_x;
+                // console.log("end of world")
+            }
+            if (world_x_pos < (end_of_world_left_side) && world_speed_x < 0) {
+                world_speed_x *= -1;
+                world_x_pos += world_speed_x;
+        }
+        // for y coordinates
+        if (world_y_pos > (end_of_world_bottom_side) && world_speed_y > 0) {
+                world_speed_y *= -1;
+                world_y_pos += world_speed_y;
+                // console.log("end of world")
+            }
+            if (world_y_pos < (end_of_world_top_side) && world_speed_y < 0) {
+                world_speed_y *= -1;
+                world_y_pos += world_speed_y;
         }
     }
     function draw_World_Map () {
-        ctx.drawImage(img_world_map, world_x_pos, world_y_pos, world_size_x, world_size_y);
+        ctx.drawImage(img_world_map, (world_x_pos * -1), (world_y_pos *-1 ), world_size_x, world_size_y);
     }
     draw_World_Map();
     loadingBox();
@@ -2869,17 +2881,20 @@ function connectPlayers () {
     
     
 }
+var world_speed_x;
+var world_speed_y;
 const smaller_world = 1;
 var world_size_x = (1000/smaller_world);
 var world_size_y = (600/smaller_world);
-var world_x_pos = 218;
-var world_y_pos = 0;
-
+var world_x_pos;
+var world_y_pos;
 function reset_size_of_world_coordinates() {
     world_size_x = (1000/smaller_world);
     world_size_y = (600/smaller_world);
-    world_x_pos = 218;
+    world_x_pos = -218;
     world_y_pos = 0;
+    world_speed_x = 20;
+    world_speed_y = 20;
 }
 
 async function makeA_Get_Request_check_whether_to_clean_room() {
