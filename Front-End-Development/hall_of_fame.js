@@ -431,10 +431,25 @@ function live_Display_Slider () {
     var speed_drift = 1;
 
     for (let i = 0; i < liveDisplayPositions.length; i++) {
+        // black shadow add
+        ctx.shadowColor = "black";
+        ctx.shadowBlur = 1.7;
+        ctx.shadowOffsetX = 0;
+        ctx.shadowOffsetY = 0;
+
         ctx.font = "20px Arial";
-        ctx.fillStyle = 'rgb(252, 250, 250)';
-        ctx.fillText(liveDisplayText[0], liveDisplayPositions[i], 20);
+        var bolden_text = 3;
+        for (let i = 0; i < bolden_text; i++) {
+            ctx.fillStyle = 'rgb(252, 250, 250)';
+            ctx.fillText(liveDisplayText[0], liveDisplayPositions[i], 20);
+        }
         liveDisplayPositions[i] -= speed_drift;
+
+        // black shadow remove
+        ctx.shadowColor = "white";
+        ctx.shadowBlur = 0;
+        ctx.shadowOffsetX = 0;
+        ctx.shadowOffsetY = 0;
 
         if (liveDisplayPositions[i] < end_of_screen_benchmark) {
             /* if the text has slidden of the screen place it about 20 pixels behind the last text in our array */

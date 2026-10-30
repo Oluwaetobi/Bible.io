@@ -245,9 +245,10 @@ header {
     text-shadow: rgb(255, 255, 255) 1px 1px 1px;
     font-weight: bold;
     font-size: 20px;
-    background-color: rgba(62, 236, 56, 0.1);
-    border-radius: 10px;
-    padding: 1px 3px;
+    background: linear-gradient(180deg, rgb(255, 230, 0), rgb(194, 175, 0));
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 3px 6px;
     /* border: 2px solid black; */
     text-shadow: #000000 1px 1px 1px;
     /* box-shadow: inset black 0px 0px 10px; */
@@ -275,7 +276,7 @@ header {
 }
 
 #top-hundred-head:hover {
-    filter: brightness(150%);
+    filter: brightness(120%);
     cursor: pointer;
 }
 

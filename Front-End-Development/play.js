@@ -2549,7 +2549,7 @@ function extra_info_and_images () {
 
     var month_in_text = "January";
     var day_of_the_week = "Sunday";
-    var real_hours = (hours + 1);
+    var real_hours = hours;
     var extra_zero = "";
     var time_of_day = "AM";
 
@@ -2613,9 +2613,13 @@ function extra_info_and_images () {
         month_in_text = "December";
     }
 
-    if (hours > 12) {
-        // console.log(hours)
-        real_hours -= 12;
+    if (hours == 0) {
+        real_hours = 1;
+    } else {
+        if (hours > 12) {
+            // console.log(hours)
+            real_hours -= 12;
+        }
     }
 
     if (minutes < 10) {
@@ -3244,9 +3248,14 @@ function display_Game_Time (time_alloted_for_each_game) {
     const date = new Date();
     const milisecond = date.getMilliseconds();
     const minute = date.getMinutes();
-    var hour = ((date.getHours() + (minute/60)) + 1);
-    if (hour > 12) {
-        hour -= 12;
+    var hour = ((date.getHours() + (minute/60)));
+    // console.log(date.getHours());
+    if (hour == 0) {
+        hour = 12;
+    } else {
+        if (hour > 12) {
+            hour -= 12;
+        }
     }
     // console.log(hour);
     if (game_time >= 0) {
