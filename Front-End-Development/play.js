@@ -6182,7 +6182,7 @@ function level_1_Questions () {
         correct_answer = 2;
     }
     if (randomQuestion == 36) {
-        question.innerText = `Who fought the battle of Jericho  `;
+        question.innerText = `Who fought the battle of Jericho?  `;
         answer1.innerText += `Barak `;
         answer2.innerText += `Samson `;
         answer3.innerText += `Joshua `;
@@ -6242,7 +6242,7 @@ function level_2_Questions () {
         correct_answer = 2;
     }
     if (randomQuestion == 2) {
-        question.innerText = `What was the name of the man who was an instructor of every craftsman in bronze and iron `;
+        question.innerText = `What was the name of the man who was an instructor of every craftsman in bronze and iron? `;
         answer1.innerText += `Ethan `;
         answer2.innerText += `Jubal `;
         answer3.innerText += `Tubal-Cain `;
@@ -6322,7 +6322,7 @@ function level_2_Questions () {
         correct_answer = 2;
     }
     if (randomQuestion == 12) {
-        question.innerText = `What was the name of the man Apostle Paul healed in Melita `;
+        question.innerText = `What was the name of the man Apostle Paul healed in Melita? `;
         answer1.innerText += `Augusta `;
         answer2.innerText += `Tiberius `;
         answer3.innerText += `Gaius `;
@@ -6378,7 +6378,7 @@ function level_2_Questions () {
         correct_answer = 1;
     }
     if (randomQuestion == 19) {
-        question.innerText = `What was Queen Esther's other name `;
+        question.innerText = `What was Queen Esther's other name? `;
         answer1.innerText += `Talia `;
         answer2.innerText += `Hadassah `;
         answer3.innerText += `Menucha `;
@@ -6386,7 +6386,7 @@ function level_2_Questions () {
         correct_answer = 2;
     }
     if (randomQuestion == 20) {
-        question.innerText = `When Jesus died on the cross, in how many languages was the sign over his head written in `;
+        question.innerText = `When Jesus died on the cross, in how many languages was the sign over his head written in? `;
         answer1.innerText += `1 language `;
         answer2.innerText += `2 languages `;
         answer3.innerText += `3 languages `;
