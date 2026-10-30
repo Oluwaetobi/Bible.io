@@ -3169,7 +3169,7 @@ function display_other_game_information () {
     ctx.font = "20px Arial";
     ctx.fillStyle = 'rgb(255, 255, 255)';
     ctx.fillText("Level: " + level, 1225, 150 + y_space_over);
-    ctx.fillText("Online: " + online, 1220, 180 + y_space_over);
+    ctx.fillText("Online: " + online, 1225, 180 + y_space_over);
     /** remember arrays start at zero so minus 1 for level */
     ctx.fillText("Highscore: " + my_highscores[level - 1], 1225, 210 + y_space_over);
     ctx.fillText("Total Points: " + my_points, 1225, 240 + y_space_over);
