@@ -2880,7 +2880,22 @@ function connectPlayers () {
         }
     }
     function draw_World_Map () {
+     // black shadow add
+    ctx.shadowColor = 'rgba(8, 8, 8, 0.1)';
+    ctx.shadowBlur = 200;
+    ctx.shadowOffsetX = 1;
+    ctx.shadowOffsetY = 1;
+
+    var bolden_text = 15;
+    for (let i = 0; i < bolden_text; i++) {
         ctx.drawImage(img_world_map, (world_x_pos * -1), (world_y_pos *-1 ), world_size_x, world_size_y);
+    }
+
+    // black shadow remove
+    ctx.shadowColor = "white";
+    ctx.shadowBlur = 0;
+    ctx.shadowOffsetX = 0;
+    ctx.shadowOffsetY = 0;
     }
     draw_World_Map();
     if (i_am_a_developer == true) {
