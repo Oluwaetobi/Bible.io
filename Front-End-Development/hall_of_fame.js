@@ -311,6 +311,7 @@ function update_hall_of_fame () {
 
     const images = document.querySelectorAll('#hall-of-fame-design img');
     const hof_text_display = document.querySelectorAll('#hall-of-fame-design td');
+    const hof_header_display = document.querySelectorAll('#hall-of-fame-design th');
 
     /** Able to replace all image countries data in the hall of fame with the data in
      * the hall of fame object in the top of my program/file
@@ -341,10 +342,32 @@ function update_hall_of_fame () {
         if(index % 4 == 2) {
             // name
             td.textContent = hall_of_fame.everyones_names[consecutive_numbers - 1];
+            td.style.textAlign = "left";
+            td.style.paddingLeft = "20px";
         }
         if(index % 4 == 3) {
             // points
             td.textContent = hall_of_fame.everyones_points[consecutive_numbers - 1];
+            td.style.textAlign = "left";
+            td.style.paddingLeft = "20px";
+        }
+        
+    })
+
+    hof_header_display.forEach((th, index)=> {
+        if(index % 4 == 0) {
+            // country
+        }
+        if(index % 4 == 1) {
+            // rank
+        }
+        if(index % 4 == 2) {
+            // name
+            th.style.paddingLeft = "20px";
+        }
+        if(index % 4 == 3) {
+            // points
+            th.style.paddingLeft = "10px";
         }
         
     })

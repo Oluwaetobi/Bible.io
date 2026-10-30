@@ -342,7 +342,15 @@ table takes up the full width of it's parent the scrollable table */
     padding: 2px;
     font-weight: normal;
     font-size: 18px;
+    text-align: center;
 }
+
+.table td img {
+    box-shadow: black 0px 0px 3px;
+    /* border: 1px groove black; */
+    /* border-radius: 1px; */
+}
+
 
 .table tr {
     scroll-snap-align: start;

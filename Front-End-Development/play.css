@@ -407,6 +407,19 @@ form input::placeholder {
     padding: 10px;
 }
 
+.sermon-on-the-mount {
+    position: fixed;
+    left: 1000px;
+    top: 175px;
+    z-index: 1;
+    border: 10px ridge black;
+    box-shadow: black 0px 0px 10px;
+}
+
+.sermon-on-the-mount:hover {
+    filter: contrast(110%);
+}
+
 /* Custom Aler Box */
 .custom-alert-box {
     position: fixed;
