@@ -2927,8 +2927,12 @@ function reset_size_of_world_coordinates() {
     /*  controls the initial seed for speeds at which the world move left, up, right, and down during searching for players
     */
     // fastest the speed can ever go, ORIGINAL max speed was 5
-    var w_max_speed = 5;
-    var w_min_speed = (w_max_speed * -1);
+    /** Alright so the way Math.random() works is by default it is range 0 to whatever you multiply it to, in our
+     * case it is w_max_speed, let's say that w_max_speed equals 8, so it is range 0 to 8, then w_min_speed is w_max_speed
+     * negated divided by 2 so it will be -4, so range 0 to 8 minus 4 is range -4 to positive 4
+     */
+    var w_max_speed = 6;
+    var w_min_speed = ((w_max_speed * -1)/2);
     function random_speed_based_of_initial_seed () {
         world_speed_x = ((Math.random() * w_max_speed) + w_min_speed);
         world_speed_y = ((Math.random() * w_max_speed) + w_min_speed);
@@ -7201,7 +7205,12 @@ function let_it_snow () {
     const bottom_of_screen = canvas.height;
     
     function choose_random_snow_speed() {
-        random_x_speed = ((Math.random() * max_snow_speed_allowed) + (max_snow_speed_allowed * -1));
+        /** Alright so the way Math.random() works is by default it is range 0 to whatever you multiply it to, in our
+         * case it is max_snow_speed_allowed, let's say that max_snow_speed_allowed equals 8, so it is range 0 to 8,
+         *  then max_snow_speed_allowed is max_snow_speed_allowed
+         * negated divided by 2 so it will be -4, so range 0 to 8 minus 4 is range -4 to positive 4
+         */
+        random_x_speed = ((Math.random() * max_snow_speed_allowed) + ((max_snow_speed_allowed * -1)/2));
         random_y_speed = ((Math.random() * max_snow_speed_allowed) + 0);
         while (random_x_speed == 0 || random_y_speed <= min_snow_speed_allowed) {
             // if any of the speeds equal zero, choose again
@@ -7221,6 +7230,7 @@ function let_it_snow () {
         // ctx.stroke();
     }
 
+    // ORIGINAL was month >= 10 || month <= 1 because month in JavaScript goes from 0 to 11
     if (month >= 10 || month <= 1) {
         /* IMPORTANT: only if the month is November, December, January, and February, then it can snow */
         if (snow_x_pos.length < amount_of_snow_allowed) {
