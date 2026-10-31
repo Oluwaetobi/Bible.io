@@ -96,7 +96,7 @@ form.addEventListener('submit', (e) => {
     
 })
 
-var innappropriate_names = ["sex", "fuck", "bitch", "islam", "muslim", "LGBTQ", "Motherfucker", "satan", "Asshole", "Arsehole", "penis", "dick", "shit", "prick", "crap", "intercourse", "kill", "breasts"]
+var innappropriate_names = ["sex", "fuck", "bitch", "islam", "muslim", "LGBTQ", "Motherfucker", "satan", "Asshole", "Arsehole", "penis", "dick", "shit", "prick", "crap", "intercourse", "kill", "breasts", "allahu"];
 
 function getCreateNameFormErrors (username) {
     let errors = []
