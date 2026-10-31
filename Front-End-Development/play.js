@@ -2843,11 +2843,12 @@ function connectPlayers () {
         searching_for_players_display();
     }
 
-    const end_of_world_right_side = 2800;
+    const end_of_world_right_side = 3300;
     const end_of_world_left_side = -300;
-    const end_of_world_bottom_side = 1650;
+    const end_of_world_bottom_side = 2300;
     const end_of_world_top_side = 0;
-    if (world_size_x < 4000) {
+    const max_world_size = 5000;
+    if (world_size_x < max_world_size) {
         // increase the size of the world until it's big enough
         world_size_x += world_size_increase_speed;
         world_size_y += (world_size_increase_speed/1.67);
@@ -2908,6 +2909,7 @@ function connectPlayers () {
     
 }
 // controls the speed at which the size of the world increases by
+// original speed was 5
 const world_size_increase_speed = 5;
 var world_speed_x;
 var world_speed_y;
@@ -2924,7 +2926,7 @@ function reset_size_of_world_coordinates() {
     world_y_pos = 0;
     /*  controls the initial seed for speeds at which the world move left, up, right, and down during searching for players
     */
-    // fastest the speed can ever go
+    // fastest the speed can ever go, ORIGINAL max speed was 5
     var w_max_speed = 5;
     var w_min_speed = (w_max_speed * -1);
     function random_speed_based_of_initial_seed () {
@@ -3495,7 +3497,7 @@ function draw_grid_background () {
     draw_sun_or_moon();
     
 
-
+    let_it_snow();
 
 
 }
@@ -7177,6 +7179,76 @@ function rotate_world_and_friend_challenge () {
 
     rotate_world.style.transform = `rotate(${rotate_page_1_world}deg)`;
     rotate_friends.style.transform = `rotate(${Math.sin(rotate_page_1_friends) * degree_friends_can_rotate_up}deg)`;
+}
+
+var snow_x_pos = [];
+var snow_y_pos = [];
+var snow_x_speed = [];
+var snow_y_speed = [];
+function let_it_snow () {
+    const date = new Date();
+    const month = date.getMonth();
+    // maximum amount of snow that is allowed to appear on the screen
+    const amount_of_snow_allowed = 100;
+    const end_of_screen = canvas.width;
+    const start_of_screen = 0;
+    var random_x_speed = 0;
+    var random_y_speed = 0;
+    // fastest the snow can fall
+    const max_snow_speed_allowed = 5;
+    // slowest that the snow can fall
+    const min_snow_speed_allowed = 2;
+    const bottom_of_screen = canvas.height;
+    
+    function choose_random_snow_speed() {
+        random_x_speed = ((Math.random() * max_snow_speed_allowed) + (max_snow_speed_allowed * -1));
+        random_y_speed = ((Math.random() * max_snow_speed_allowed) + 0);
+        while (random_x_speed == 0 || random_y_speed <= min_snow_speed_allowed) {
+            // if any of the speeds equal zero, choose again
+            choose_random_snow_speed();
+        }
+    }
+    function draw_all_snow(index) {
+         // inner white circle over lay over ticker
+        const snow_size = 4;
+        ctx.beginPath();
+        // x, y, radius, start point circumference, end point circumference
+        ctx.arc(snow_x_pos[index], snow_y_pos[index], snow_size, 0, 2 * Math.PI);
+        ctx.fillStyle = 'rgba(255, 255, 255,0.4)';
+        ctx.fill();  
+        // ctx.strokeStyle = 'rgba(0, 0, 0, 0.9)';          // Set outline color
+        ctx.lineWidth = 1;                     // Set outline thickness
+        // ctx.stroke();
+    }
+
+    if (month >= 10 || month <= 1) {
+        /* IMPORTANT: only if the month is November, December, January, and February, then it can snow */
+        if (snow_x_pos.length < amount_of_snow_allowed) {
+            for (let i = 0; i < amount_of_snow_allowed; i++) {
+                choose_random_snow_speed();
+                // randomly set initial snows' x positions all over the place
+                snow_x_pos.push(((Math.random() * end_of_screen) + start_of_screen));
+                // randomly set initial snows' y positions above the top of the screen
+                snow_y_pos.push((Math.random() * canvas.height) * -1);
+                snow_x_speed.push(random_x_speed);
+                snow_y_speed.push(random_y_speed);
+            }
+        }
+
+        // change their positions
+        for (let i = 0; i < amount_of_snow_allowed; i++) {
+            snow_x_pos[i] += snow_x_speed[i];
+            snow_y_pos[i] += snow_y_speed[i];
+
+            // if snow goes below the screen height, reset it on top of the screen randomly
+            if (snow_y_pos[i] > bottom_of_screen) {
+                snow_y_pos[i] = ((Math.random() * canvas.height) * -1);
+                snow_x_pos[i] = ((Math.random() * end_of_screen) + start_of_screen);
+            }
+            draw_all_snow(i);
+        }
+        // console.log(snow_y_pos)
+    }
 }
 
 function drawGame() {
