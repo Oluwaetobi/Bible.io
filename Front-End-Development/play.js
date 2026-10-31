@@ -5906,9 +5906,9 @@ function choose_Random_Question () {
 
     // Return a random integer between 1 and 10 (both included): Math.floor(Math.random() * 10) + 1;
 
-    var amount_of_question_in_level_1 = 41;
-    var amount_of_question_in_level_2 = 60;
-    var amount_of_question_in_level_3 = 34;
+    var amount_of_question_in_level_1 = 42;
+    var amount_of_question_in_level_2 = 63;
+    var amount_of_question_in_level_3 = 41;
 
 
     if (level == 1) {
@@ -6248,6 +6248,14 @@ function level_1_Questions () {
         answer2.innerText += `his promise to never destroy the Earth again with a flood `;
         answer3.innerText += `a time to celebrate the creation of the world!  `;
         answer4.innerText += `a time for immense resting and peace `;
+        correct_answer = 2;
+    }  
+    if (randomQuestion == 42) {
+        question.innerText = `During Abraham's life, when there was a famine in the land, to which country did he go down to?  `;
+        answer1.innerText += `Moab `;
+        answer2.innerText += `Egypt `;
+        answer3.innerText += `Ur of the Chaldeans  `;
+        answer4.innerText += `Israel `;
         correct_answer = 2;
     }  
 }
@@ -6742,6 +6750,22 @@ function level_2_Questions () {
         answer4.innerText += `950 years  `;
         correct_answer = 4;
     }
+    if (randomQuestion == 62) {
+        question.innerText = `In Genesis 12, which land did the Bible say was east of Bethel?  `;
+        answer1.innerText += `Ai  `;
+        answer2.innerText += `Luz  `;
+        answer3.innerText += `Beth Aven  `;
+        answer4.innerText += `Gilgal  `;
+        correct_answer = 1;
+    }
+    if (randomQuestion == 63) {
+        question.innerText = `Which man did God tell not to go down to Egypt?  `;
+        answer1.innerText += `Abraham   `;
+        answer2.innerText += `Isaac  `;
+        answer3.innerText += `Jacob  `;
+        answer4.innerText += `Saul  `;
+        correct_answer = 2;
+    }
 }
 
 function level_3_Questions () {
@@ -7067,6 +7091,14 @@ function level_3_Questions () {
         answer3.innerText += `2 Peter 3:4 `;
         answer4.innerText += `2 Peter 3:9 `;
         correct_answer = 4;
+    }
+    if (randomQuestion == 41) {
+        question.innerText = `But I say unto you which hear, Love your enemies, do good to them which hate you, `;
+        answer1.innerText += `Matthew 16:8 `;
+        answer2.innerText += `Mark 13:3 `;
+        answer3.innerText += `Luke 6:27 `;
+        answer4.innerText += `Matthew 14:3 `;
+        correct_answer = 3;
     }
     
 }
