@@ -96,7 +96,7 @@ form.addEventListener('submit', (e) => {
     
 })
 
-var innappropriate_names = ["sex", "fuck", "bitch", "islam", "muslim", "LGBTQ", "Motherfucker", "satan", "Asshole", "Arsehole", "penis", "dick", "shit", "prick", "crap", "intercourse", "kill", "breasts", "allahu"];
+var innappropriate_names = ["sex", "fuck", "bitch", "islam", "muslim", "LGBTQ", "Motherfucker", "satan", "Asshole", "Arsehole", "penis", "dick", "shit", "prick", "crap", "intercourse", "kill", "breasts", "allah", "piss", "cunt", "cocksucker", "tits", "motherfucker", "Bastard", "crap", "heck", "bastard", "die", "death"];
 
 function getCreateNameFormErrors (username) {
     let errors = []
@@ -118,26 +118,42 @@ function getCreateNameFormErrors (username) {
         var split_name_check = innappropriate_names[i].split("");
         var bad_name = true;
 
-        /* find the shortest length, that way it isn't comparing against undefined values 
-        for elements that don't exist */
         var length_of_shortest = split_name_check.length;
         if (split_name.length < split_name_check.length) {
             length_of_shortest = split_name.length
         }
-        for (let j = 0; j < length_of_shortest; j++) {
-            if (split_name[j].toLowerCase() != split_name_check[j].toLowerCase()) {
-                // converts everything to lowercase too, this makes comparison not case sensitive which is more accurate
-                // not the same as the innappropriate name, the name is appropriate
-                bad_name = false;
+        /* the length of the person's name cannot be less than the length of the innappropriate name, or
+        else it must skip it, that way we aren't rejecting names that are things like ad, which if 
+        you add more words than it becomes a bad name */
+        if (split_name.length < split_name_check.length) {
+            bad_name = false;
+        } else {
+            // check if the word is contained anywhere in their name | EXTRA LAYER OF PROTECTION
+            for (let k = 0; k <= (split_name.length - split_name_check.length); k++) {
+                // goes through the entire word at an incremented index to see if it is contained in the word
+                for (let j = 0; j < split_name_check.length; j++) {
+                    // goes through the entire word
+                    if (split_name[j + k].toLowerCase() != split_name_check[j].toLowerCase()) {
+                        // converts everything to lowercase too, this makes comparison not case sensitive which is more accurate
+                        // not the same as the innappropriate name, the name is appropriate
+                        bad_name = false;
+                    } 
+                }
+                // at the end of each check, check if it is a bad name
+                is_it_bad_or_not();
             }
         }
-        if (bad_name == true) {
-            // if the name is bad for any of the iterations then reject it
-            errors.push("That name is NOT appropriate, please change it!!!")
-            username_input.parentElement.classList.add('incorrect');
-            console.log("Bad word match: " + innappropriate_names[i]);
-            console.log(i);
-            break;
+        
+        function is_it_bad_or_not () {
+            if (bad_name == true) {
+                // if the name is bad for any of the word iterations then reject it
+                errors.push("That name is NOT appropriate, please change it!!!")
+                username_input.parentElement.classList.add('incorrect');
+                console.log("Bad word match: " + innappropriate_names[i]);
+                console.log(i);
+            }
+            // reset bad_name to true so I can have a clean slate for the next iteration
+            bad_name = true;
         }
     }
     return errors;
