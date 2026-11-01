@@ -2939,9 +2939,10 @@ function random_speed_based_of_initial_seed () {
     world_speed_y = ((Math.random() * w_max_speed) + w_min_speed);
 }
 function get_random_speed_and_prevent_no_speed () {
+    const speed_too_slow = 0.5;
     random_speed_based_of_initial_seed();
-    while (world_speed_x == 0 || world_speed_y == 0) {
-        // the speeds should never equal 0 if it does, we need to generate a different speed
+    while (world_speed_x <= speed_too_slow && world_speed_x >= (speed_too_slow * -1) || world_speed_y <= speed_too_slow && world_speed_y >= (speed_too_slow * -1)) {
+        /* the speeds should never equal 0 if it does, we need to generate a different speed as well as if the speeds are too slow */
         random_speed_based_of_initial_seed();
     }
 }
