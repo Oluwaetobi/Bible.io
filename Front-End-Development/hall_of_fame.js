@@ -350,6 +350,7 @@ function update_hall_of_fame () {
             td.textContent = hall_of_fame.everyones_points[consecutive_numbers - 1];
             td.style.textAlign = "left";
             td.style.paddingLeft = "20px";
+            td.style.color = 'rgb(0, 113, 19)';
         }
         
     })
@@ -1511,13 +1512,39 @@ function additional_text_display () {
     ctx.shadowOffsetY = 0;
 }
 
+const time_left_text = document.getElementById('time-left-text');
+function show_time_left () {
+    const date = new Date();
+    // 0 to 23
+    const hour = date.getHours();
+    // 0 to 59
+    const minute = date.getMinutes();
+    // 0 to 59
+    const second = date.getSeconds();
+
+    function format_time_correctly () {
+        var hours_left = (24 - (hour + 1));
+        var minutes_left = (60 - (minute + 1));
+        var seconds_left = (60 - (second + 1));
+        if (minutes_left < 10) {
+            minutes_left = "0" + minutes_left;
+        }
+        if (seconds_left < 10) {
+            seconds_left = "0" + seconds_left;
+        }
+        return (hours_left + ": " + minutes_left + ": " + seconds_left);
+    }
+
+    time_left_text.innerText = format_time_correctly();
+
+}
+
 /** For some reason, the person in first place isn't showing upon the onloading of the hall of fame page
  * these variables help with that
  */
 var get_first_place_person_to_show = 0;
 //  the thing is kind of stubbon so I'm setting it to 100
 const dont_overwhelm_site = 100;
-
 function drawGame() {
     // blue background
     ctx.fillStyle = 'rgb(189, 189, 190)';
@@ -1531,6 +1558,7 @@ function drawGame() {
     update_hall_of_fame();
     live_Display_Slider();
     additional_text_display();
+    show_time_left();
     displayMouseX_and_MouseY(20, canvas.height - 30);
 
     if(get_first_place_person_to_show < dont_overwhelm_site) {

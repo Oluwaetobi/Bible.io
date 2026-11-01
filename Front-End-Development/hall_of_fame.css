@@ -264,6 +264,17 @@ header {
     border-radius: 5px;
 }
 
+.side-to-side {
+    display: flex;
+    gap: 10px;
+}
+
+#time-left-box {
+    background-color: rgba(101, 100, 100, 0.9);
+    padding: 5px;
+    border-radius: 5px;
+}
+
 #top-hundred-head {
     display: flex;
     gap: 20px;
