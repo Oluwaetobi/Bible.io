@@ -7283,9 +7283,9 @@ function let_it_snow () {
     var random_x_speed = 0;
     var random_y_speed = 0;
     // fastest the snow can fall
-    const max_snow_speed_allowed = 5;
+    const max_snow_speed_allowed = 4;
     // slowest that the snow can fall
-    const min_snow_speed_allowed = 2;
+    const min_snow_speed_allowed = 0.5;
     const bottom_of_screen = canvas.height;
     
     function choose_random_snow_speed() {
