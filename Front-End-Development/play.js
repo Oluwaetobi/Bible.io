@@ -5926,9 +5926,9 @@ function choose_Random_Question () {
 
     // Return a random integer between 1 and 10 (both included): Math.floor(Math.random() * 10) + 1;
 
-    var amount_of_question_in_level_1 = 42;
-    var amount_of_question_in_level_2 = 63;
-    var amount_of_question_in_level_3 = 41;
+    var amount_of_question_in_level_1 = 44;
+    var amount_of_question_in_level_2 = 64;
+    var amount_of_question_in_level_3 = 42;
 
 
     if (level == 1) {
@@ -6277,6 +6277,22 @@ function level_1_Questions () {
         answer3.innerText += `Ur of the Chaldeans  `;
         answer4.innerText += `Israel `;
         correct_answer = 2;
+    }  
+    if (randomQuestion == 43) {
+        question.innerText = `What did Ahraham fear would happen to him if he went down to Egypt?  `;
+        answer1.innerText += `the Egyptians would kill him `;
+        answer2.innerText += `the famine would be there too `;
+        answer3.innerText += `he would lose his first born son  `;
+        answer4.innerText += `he wouldn't be able to make good investments `;
+        correct_answer = 1;
+    }  
+    if (randomQuestion == 44) {
+        question.innerText = `During Abraham's lifetime, why did God plague Pharoah's house?  `;
+        answer1.innerText += `Pharoah has disregarded Jehovah's laws `;
+        answer2.innerText += `Pharoah refused to let the Israelites go `;
+        answer3.innerText += `because Pharoah took Abraham's wife  `;
+        answer4.innerText += `Pharoah pronounced a curse upon Abraham `;
+        correct_answer = 3;
     }  
 }
 
@@ -6786,6 +6802,14 @@ function level_2_Questions () {
         answer4.innerText += `Saul  `;
         correct_answer = 2;
     }
+    if (randomQuestion == 64) {
+        question.innerText = `How many times was Abraham's wife taken away from him because of her great beauty?  `;
+        answer1.innerText += `once   `;
+        answer2.innerText += `twice  `;
+        answer3.innerText += `thrice  `;
+        answer4.innerText += `four times  `;
+        correct_answer = 2;
+    }
 }
 
 function level_3_Questions () {
@@ -7119,6 +7143,14 @@ function level_3_Questions () {
         answer3.innerText += `Luke 6:27 `;
         answer4.innerText += `Matthew 14:3 `;
         correct_answer = 3;
+    }
+    if (randomQuestion == 42) {
+        question.innerText = `A man shall not be established by wickedness: but the root of the righteous shall not be moved. `;
+        answer1.innerText += `Proverbs 12:15 `;
+        answer2.innerText += `Proverbs 12:3  `;
+        answer3.innerText += `Proverbs 12:9 `;
+        answer4.innerText += `Proverbs 13:4 `;
+        correct_answer = 2;
     }
     
 }
