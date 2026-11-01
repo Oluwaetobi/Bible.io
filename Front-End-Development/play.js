@@ -2644,15 +2644,15 @@ function extra_info_and_images () {
         if (hours > 11) {
             // PM
             if (hours >= 21) {
-                // 10 PM or after
+                // at 9 PM or after, it is dark (night time)
                 day_time = false;
             } else {
                 day_time = true;
             }
         } else {
             // AM
-            if (hours < 7) {
-                // before 7AM, it is still dark
+            if (hours < 8) {
+                // before 8 AM, it is still dark (night time)
                 day_time = false;
             } else {
                 day_time = true;
