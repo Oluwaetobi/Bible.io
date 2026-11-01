@@ -778,7 +778,10 @@ async function makePost_or_Patch_Request_waiting_room_edits() {
   var req_data = ["players_room", my_game.my_room, "players_spot", my_game.my_spot, "names", my_name, "countries", my_country, "bibletars", my_bibletar_svg, "amount_of_people_in_room", my_game.my_spot];
     
     var seconds_to_wait_in_room = 10;
-    if (online >= 2) {
+    if (online >= 10) {
+        /** If there's lots of people online then I will wait extra maximum wait time to  try and connect with them */
+        seconds_to_wait_in_room = 30;
+    } else if (online >= 2) {
         /** If there's people online apart from me, then I want to wait to have an extra maximum wait time to 
          * try and connect with them */
         seconds_to_wait_in_room = 20;
@@ -2861,21 +2864,25 @@ function connectPlayers () {
         world_y_pos += world_speed_y;
         // for x coorindates
         if (world_x_pos > (end_of_world_right_side) && world_speed_x > 0) {
+                get_random_speed_and_prevent_no_speed();
                 world_speed_x *= -1;
                 world_x_pos += world_speed_x;
                 // console.log("end of world")
             }
             if (world_x_pos < (end_of_world_left_side) && world_speed_x < 0) {
+                get_random_speed_and_prevent_no_speed();
                 world_speed_x *= -1;
                 world_x_pos += world_speed_x;
         }
         // for y coordinates
         if (world_y_pos > (end_of_world_bottom_side) && world_speed_y > 0) {
+                get_random_speed_and_prevent_no_speed();
                 world_speed_y *= -1;
                 world_y_pos += world_speed_y;
                 // console.log("end of world")
             }
             if (world_y_pos < (end_of_world_top_side) && world_speed_y < 0) {
+                get_random_speed_and_prevent_no_speed();
                 world_speed_y *= -1;
                 world_y_pos += world_speed_y;
         }
@@ -2918,12 +2925,7 @@ var world_size_x = (1000/smaller_world);
 var world_size_y = (600/smaller_world);
 var world_x_pos;
 var world_y_pos;
-function reset_size_of_world_coordinates() {
-    // reset the size of the world
-    world_size_x = (1000/smaller_world);
-    world_size_y = (600/smaller_world);
-    world_x_pos = -218;
-    world_y_pos = 0;
+function random_speed_based_of_initial_seed () {
     /*  controls the initial seed for speeds at which the world move left, up, right, and down during searching for players
     */
     // fastest the speed can ever go, ORIGINAL max speed was 5
@@ -2933,15 +2935,23 @@ function reset_size_of_world_coordinates() {
      */
     var w_max_speed = 6;
     var w_min_speed = ((w_max_speed * -1)/2);
-    function random_speed_based_of_initial_seed () {
-        world_speed_x = ((Math.random() * w_max_speed) + w_min_speed);
-        world_speed_y = ((Math.random() * w_max_speed) + w_min_speed);
-    }
+    world_speed_x = ((Math.random() * w_max_speed) + w_min_speed);
+    world_speed_y = ((Math.random() * w_max_speed) + w_min_speed);
+}
+function get_random_speed_and_prevent_no_speed () {
     random_speed_based_of_initial_seed();
     while (world_speed_x == 0 || world_speed_y == 0) {
         // the speeds should never equal 0 if it does, we need to generate a different speed
         random_speed_based_of_initial_seed();
     }
+}
+function reset_size_of_world_coordinates() {
+    // reset the size of the world
+    world_size_x = (1000/smaller_world);
+    world_size_y = (600/smaller_world);
+    world_x_pos = -218;
+    world_y_pos = 0;
+    get_random_speed_and_prevent_no_speed();
 }
 
 async function makeA_Get_Request_check_whether_to_clean_room() {
@@ -3228,6 +3238,14 @@ function start_timer() {
                 makeA_Get_Request_check_whether_to_clean_room();
             }
         }
+
+        if (timer % 4 == 0) {
+            // every four seconds move the searching world in a new random direction
+            if (home_page == 2) {
+                get_random_speed_and_prevent_no_speed();
+            }
+        }
+        // end of stuff happening each second, WARNING!!
     }
 
     if (home_page == 2) {
