@@ -674,7 +674,7 @@ function randomRobotModes() {
         }
     }
     function put_robots_data_and_info_back_into_game_object () {
-        /** Controls names and countries of Robot players, replaces the data in the game object
+        /** Controls names, countries, and other data for Robot players, replaces the data in the game object
          * each game, obviously because this function is in randomRobotModes() which is only
          *  called when no one is online, so, all this stuff only happens when you're the only one online
          */
@@ -689,6 +689,7 @@ function randomRobotModes() {
         for (let i = 1; i < 4; i++) {
             my_game.countries[i] = "America";
             my_game.everyones_names[i] = ("Robot " + robot_numbers[i - 1].toString());
+            my_game.questions_wrong[i] = 0;
 
         }
     }
