@@ -5929,8 +5929,8 @@ function choose_Random_Question () {
     // Return a random integer between 1 and 10 (both included): Math.floor(Math.random() * 10) + 1;
 
     var amount_of_question_in_level_1 = 44;
-    var amount_of_question_in_level_2 = 64;
-    var amount_of_question_in_level_3 = 42;
+    var amount_of_question_in_level_2 = 66;
+    var amount_of_question_in_level_3 = 44;
 
 
     if (level == 1) {
@@ -6812,6 +6812,22 @@ function level_2_Questions () {
         answer4.innerText += `four times  `;
         correct_answer = 2;
     }
+    if (randomQuestion == 65) {
+        question.innerText = `In which chapter of Genesis did God call Abraham a prophet?  `;
+        answer1.innerText += `Chapter 20   `;
+        answer2.innerText += `Chapter 23  `;
+        answer3.innerText += `Chapter 25  `;
+        answer4.innerText += `God never called Abraham a prophet  `;
+        correct_answer = 1;
+    }
+    if (randomQuestion == 66) {
+        question.innerText = `In Genesis 13, after Abraham and Lot left Egypt, in which direction did they go?  `;
+        answer1.innerText += `North    `;
+        answer2.innerText += `East   `;
+        answer3.innerText += `South   `;
+        answer4.innerText += `West  `;
+        correct_answer = 3;
+    }
 }
 
 function level_3_Questions () {
@@ -7153,6 +7169,22 @@ function level_3_Questions () {
         answer3.innerText += `Proverbs 12:9 `;
         answer4.innerText += `Proverbs 13:4 `;
         correct_answer = 2;
+    }
+    if (randomQuestion == 43) {
+        question.innerText = `“And lo a voice from heaven, saying, This is my beloved Son, in whom I am well pleased.” `;
+        answer1.innerText += `Matthew 3:17  `;
+        answer2.innerText += `Matthew 3:19  `;
+        answer3.innerText += `Luke 3:21 `;
+        answer4.innerText += `Luke 3:23 `;
+        correct_answer = 1;
+    }
+    if (randomQuestion == 44) {
+        question.innerText = `How long wilt thou sleep, O sluggard? when wilt thou arise out of thy sleep?   `;
+        answer1.innerText += `Proverbs 5:18  `;
+        answer2.innerText += `Proverbs 5:27  `;
+        answer3.innerText += `Proverbs 6:7 `;
+        answer4.innerText += `Proverbs 6:9 `;
+        correct_answer = 4;
     }
     
 }

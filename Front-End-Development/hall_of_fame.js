@@ -519,14 +519,22 @@ var players_points = hall_of_fame.everyones_points[0];
 function playerClickedBibletar () {
 
     // translucent rectangle right side of hall of fame
+    var translucent_x_pos = 1080;
     var translucent_rec_y_size = 800;
     var translucent_rec_x_size = 430;
-    ctx.fillStyle = "rgba(12, 12, 12, 0.5)"; 
-    ctx.fillRect(1080, 0, translucent_rec_x_size, translucent_rec_y_size);
+
+    var gradient = ctx.createLinearGradient(translucent_x_pos, 0, translucent_rec_x_size, 0);
+    gradient.addColorStop(0, 'rgba(255, 255, 255, 0.1)');     // Start color (0%)
+    // gradient.addColorStop(0.5, 'rgba(45, 201, 244, 0.5)');
+    gradient.addColorStop(1, 'rgba(255, 255, 255, .9)');    // End color (100%)
+
+    // ctx.fillStyle = "rgba(12, 12, 12, 0.1)"; 
+    ctx.fillStyle = gradient; 
+    ctx.fillRect(translucent_x_pos, 0, translucent_rec_x_size, translucent_rec_y_size);
 
     // opaque black border
     const t_border_width = 3;
-    ctx.fillStyle = 'rgb(0, 0, 0)';
+    ctx.fillStyle = 'rgb(255, 255, 255)';
     ctx.fillRect(1080, 0, t_border_width, translucent_rec_y_size)
 
     // WRITE Player Clicked's NAME
