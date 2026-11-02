@@ -270,7 +270,8 @@ header {
 }
 
 #time-left-box {
-    background-color: rgba(197, 197, 197, 0.9);
+    /* background-color: rgba(197, 197, 197, 0.9); */
+    background-color: rgba(255, 248, 145, 0.3);
     padding: 5px 10px;
     border-radius: 5px;
     border: 2px solid black;
