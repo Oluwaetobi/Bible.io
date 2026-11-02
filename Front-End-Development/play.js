@@ -2619,7 +2619,8 @@ function extra_info_and_images () {
     }
 
     if (hours == 0) {
-        real_hours = 1;
+        // that's 12 AM the start of a new day
+        real_hours = 12;
     } else {
         if (hours > 12) {
             // console.log(hours)
@@ -3369,6 +3370,7 @@ function display_Game_Time (time_alloted_for_each_game) {
     var hour = ((date.getHours() + (minute/60)));
     // console.log(date.getHours());
     if (hour == 0) {
+        // that's 12 AM the start of a new day
         hour = 12;
     } else {
         if (hour > 12) {
