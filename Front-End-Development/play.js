@@ -3312,7 +3312,7 @@ function christian_cross_symbol (x, y) {
     
     ctx.fillStyle = 'rgb(200, 144, 2)';
     ctx.fillRect(x + 50 + move_cross_x, y + 0 + move_cross_y, 25, 180);
-    ctx.fillRect(x + 0 + move_cross_x, y + 40 + move_cross_y, 120, 25);
+    ctx.fillRect(x + 2 + move_cross_x, y + 40 + move_cross_y, 120, 25);
     
     ctx.font = "15px Arial";
     ctx.fillStyle = 'rgb(255, 255, 255)';
