@@ -468,7 +468,8 @@ async function makePost_or_Patch_Request_hall_of_fame() {
         
         const data = await response.json(); // Parse the JSON response from the server
         console.log(data);
-        online = data.online;
+        // data.online is not accessible
+        // online = data.online;
     } catch (error) {
         console.error('Error making PATCH request:', error.message);
     }
@@ -3115,13 +3116,14 @@ async function makeA_Get_Request_to_see_waiting_room_data_frequently() {
     
     // can leave this, after all, I want the amount of people online to always be accurate
     online = data.online;
-    // the new_game_wait_time could change if more people are online all of sudden, so I need to have this here
-    my_game.new_game_wait_time = data.new_game_wait_time;
-
+    
     var my_room = (my_game.my_room - 1);
     var my_spot = (my_game.my_spot - 1);
     my_game.num_of_people_in_room = data.amount_of_people_in_room[my_room];
     my_game.room_closed = data.closed_rooms[my_room];
+    
+    // the new_game_wait_time could change if more people are online all of sudden, so I need to have this here
+    my_game.new_game_wait_time = data.new_game_wait_time[my_room];
     
     // sets my counter to 1 that way I don't overwrite my own data, because my data is always written in index 0
     var counter = 1;

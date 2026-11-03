@@ -254,7 +254,7 @@ const around_the_world = {
     players_room: 1,
 
     // max wait time before game starts, once the room closes, that means the game will start, DEFAULT, might set it to 20 idk
-    new_game_wait_time: 10,
+    new_game_wait_time: [10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, ],
 
 
 
@@ -401,14 +401,23 @@ const server = http.createServer((req, res) => {
     res.statusCode = 200;
     res.setHeader('Content-Type', 'text/plain');
 
+    
     if(req.method == "PATCH") {
       let body = "";
+      
+      // trying to reduce overhead, and I need these variables to be accessible in req.on("end", ()=>{{})
+      var global_parsed_chunk;
+      /** Helps the server to know where to apply the player's request in the right spot on the server's 
+       * object data reserve */
+      var players_room = 1;
+      var players_spot = 1;
 
         req.on("data", chunk=> {
           /* I'm using this variable in order to save server space, parsing it several 
           times will slow my server down and require more energy, increase the garbage collector 
           as well as overhead */
           const parsed_chunk = JSON.parse(chunk);
+          global_parsed_chunk = parsed_chunk;
           if (parsed_chunk[0] == "hall_of_fame") {
             // Hall of fame data
             var players_country = parsed_chunk[1];
@@ -569,10 +578,6 @@ const server = http.createServer((req, res) => {
             }
             set_world_wide_room_to_correct_room();
 
-            /** Helps the server to know where to apply the player's request in the right spot on the server's 
-             * object data reserve */
-            var players_room = 1;
-            var players_spot = 1;
             
             /* this stuff helps the server to know where to put their data, which room, and in which spot
              side note, anytime stuff like this is issue, length of the chunk request will always be greater
@@ -641,7 +646,7 @@ const server = http.createServer((req, res) => {
                 depending on when they join the room, and the most important factor will be if the room closed
                 then that means the game has started, the max game wait time will only come in most handy when
                 you've been waiting for too long or there's no one online and you're about to verse robots */
-                around_the_world.new_game_wait_time = decoded_value;
+                around_the_world.new_game_wait_time[players_room] = decoded_value;
               }
 
 
@@ -683,14 +688,37 @@ const server = http.createServer((req, res) => {
 
           /** RESPONSE: Send them back all the data, this is after changes have been applied */
 
+
+          /* In an attempt to reduce overhead and bandwidth, I'll only send the player data that is needed, so I'll create a new
+          object with the exact same name that will point to the values of the original object */
+          const {online, names, points, questions_wrong, countries, bibletars, closed_rooms, amount_of_people_in_room, room_level1, room_level2, room_level3, new_game_wait_time} = around_the_world;
+          const around_the_world = {online, names, points, questions_wrong, countries, bibletars, closed_rooms, amount_of_people_in_room, room_level1, room_level2, room_level3, new_game_wait_time};
+          // the minus 1 for players_room has already been applied in req.on("data", cunk=>{})
+          around_the_world.names = around_the_world.names[players_room];
+          around_the_world.points = around_the_world.points[players_room];
+          around_the_world.questions_wrong = around_the_world.questions_wrong[players_room];
+          around_the_world.countries = around_the_world.countries[players_room];
+          around_the_world.bibletars = around_the_world.countries[players_room];
+          around_the_world.closed_rooms = around_the_world.closed_rooms[players_room];
+          around_the_world.amount_of_people_in_room = around_the_world.amount_of_people_in_room[players_room];
+          around_the_world.new_game_wait_time = around_the_world.new_game_wait_time[players_room];
+
           res.writeHead(200, {'content-type':"application/json"});
           // res.end(JSON.stringify({message: "Data Received", data:around_the_world}));
-          res.end(JSON.stringify(around_the_world));
+
+          if (global_parsed_chunk[0] == "hall_of_fame") {
+            /* I don't need to send them back data for a patch_request for hall of fame 
+            because they are only editing the data that's on the leaderboard */
+            // res.end(JSON.stringify(around_the_world.hall_of_fame));
+          } else {
+            // For every other patch request send them the only important condensed data
+              res.end(JSON.stringify(around_the_world));
+          }
       })
 
     } else if (req.method == "GET") {
 
-      /** RESPONSE: Sends them all the data they asked for that stored on the server */
+      /** RESPONSE: Sends them all the data that's stored on the server */
 
       // 3. Send a 200 OK status code and set the content type to JSON
       res.writeHead(200, { 'Content-Type': 'application/json' });
