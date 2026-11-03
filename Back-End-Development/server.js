@@ -383,6 +383,14 @@ const server = http.createServer((req, res) => {
    I don't want to, I want to allow it for all origins
    
    server.use(cors()); only work for things like express or connect but not for http.createServer*/
+
+
+   /*  server will automatically close the connection if the client goes completely silent for 5 seconds, helps to reduce
+   overhead and bandwidth  */
+  res.setHeader('Connection', 'keep-alive');
+  res.setHeader('Keep-Alive', 'timeout=5, max=100'); // stays open for 5s, max 100 requests
+
+
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, PATCH, OPTIONS');
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization', 'true');
@@ -703,6 +711,17 @@ const server = http.createServer((req, res) => {
     // res.end(JSON.stringify(around_the_world));
     // res.end('The Bible.io server is running... Automatic \n');
 });
+
+
+/* Enforce the exact same rules on the Node.js TCP socket */
+// Ensure the server keeps the socket alive and drops it after 5 seconds of inactivity
+server.keepAliveTimeout = 5000; 
+// Max 100 requests per TCP connection, prevents DDOS attacks
+server.maxRequestsPerSocket = 100;
+/* Max timeout one game never last for more than 120 seconds, so if any requests takes longer
+ than 120 seconds it rejects it, this helps to prevent against DDOS attacks */
+server.headersTimeout = 120000; // Must be slightly higher than keepAliveTimeout
+
 
 // server.use(cors()); // Enable CORS globally for all routes and origins
 
