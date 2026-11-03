@@ -987,6 +987,29 @@ table takes up the full width of it's parent the scrollable table */
     cursor: pointer;
 }
 
+.go-back {
+    position: fixed;
+    top: 100px;
+    left: 1350px;
+    font-size: 35px;
+    background-color: #7f1302;
+    z-index: 1;
+    padding: 6px;
+    border-radius: 5px;
+    color: white;
+    border: 2px solid black;
+    box-shadow: rgb(0, 0, 0) 0px 0px 5px;
+    transition: 0.3s;
+}
+
+.go-back:hover {
+    cursor: pointer;
+    filter: brightness(200%);
+    padding: 8px;
+}
+
+
+
 /* I hate default scroll bars, they look ugly and are to skinny, so I made my own custom scroll bars */
 ::-webkit-scrollbar {
     /* This way the scrollbar never becomes too small unlike all those new stupid modern scrollbars that are a single

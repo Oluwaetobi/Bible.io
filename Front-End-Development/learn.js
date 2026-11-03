@@ -216,17 +216,20 @@ try {
 function mouseDetections () {
     document.addEventListener("click", function (event) {
         if (learn_page == 2) {
-            if (mouseX > 1075 && mouseX < 1221 && mouseY > 51 && mouseY < 83) {
-                // Go Back button
-                learn_page = 1;
-                show_or_hide_text[1] = 0;
-                show_or_hide_text[0] = 0;
-                
-                // update hall of fame, because I earned points
-                makePost_or_Patch_Request_hall_of_fame();
-            }
+            
         }
     });
+}
+
+
+function go_back_to_learn_page () {
+    // Go Back button
+    learn_page = 1;
+    show_or_hide_text[1] = 0;
+    show_or_hide_text[0] = 0;
+
+    // update hall of fame, because I earned points
+    makePost_or_Patch_Request_hall_of_fame();
 }
 
 function displayMouseX_and_MouseY () {
@@ -1552,6 +1555,16 @@ function draw_Background () {
 
 }
 
+function show_or_hide_html_elements() {
+    const go_back_button = document.getElementById('go-back');
+
+    if (learn_page == 1) {
+        go_back_button.style.display = "none";
+    } else if (learn_page == 2) {
+        go_back_button.style.display = "block";
+    }
+}
+
 function drawGame() {
     draw_Background();
 
@@ -1563,8 +1576,9 @@ function drawGame() {
     loadingBox();
     titleText();
     show_table_or_hide_table();
-    goBackSign();
+    // goBackSign();
     takeCareOfText();
+    show_or_hide_html_elements();
     if (learn_page == 2) {
         drawGameAssets();
         showTimeSpent();
