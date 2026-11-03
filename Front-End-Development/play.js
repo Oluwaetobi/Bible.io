@@ -748,7 +748,7 @@ async function makeA_Get_Request_entered_waiting_room_data() {
         my_game.my_room = data.room_level3;
     }
     var my_room = (my_game.my_room - 1);
-    my_game.my_spot = (data.amount_of_people_in_room[my_room] + 1);
+    my_game.my_spot = (data.amount_of_people_in_room + 1);
 
     makePost_or_Patch_Request_waiting_room_edits();
     
@@ -2984,7 +2984,7 @@ async function makeA_Get_Request_check_whether_to_clean_room() {
     for (let i = 0; i < my_game.everyones_names.length; i++) {
         /* if the first person in that room equals any of the names in my game room, that means
         the room needs to cleaned */
-        if (data.names[my_room][0] == my_game.everyones_names[i])  {
+        if (data.names[0] == my_game.everyones_names[i])  {
             makePost_or_Patch_Request_issue_clean();
             break;
         }
@@ -3081,8 +3081,8 @@ async function makePost_or_Patch_Request_in_game_data_edits() {
             /* copy everyone's points and amount of questiosn wrong except my score and my # questions wrong 
             into our game object           
             */
-           my_game.everyones_points[counter] = data.points[my_room][i];
-           my_game.questions_wrong[counter] = data.questions_wrong[my_room][i];
+           my_game.everyones_points[counter] = data.points[i];
+           my_game.questions_wrong[counter] = data.questions_wrong[i];
             counter += 1;
         }
     }
@@ -3119,11 +3119,11 @@ async function makeA_Get_Request_to_see_waiting_room_data_frequently() {
     
     var my_room = (my_game.my_room - 1);
     var my_spot = (my_game.my_spot - 1);
-    my_game.num_of_people_in_room = data.amount_of_people_in_room[my_room];
-    my_game.room_closed = data.closed_rooms[my_room];
+    my_game.num_of_people_in_room = data.amount_of_people_in_room;
+    my_game.room_closed = data.closed_rooms;
     
     // the new_game_wait_time could change if more people are online all of sudden, so I need to have this here
-    my_game.new_game_wait_time = data.new_game_wait_time[my_room];
+    my_game.new_game_wait_time = data.new_game_wait_time;
     
     // sets my counter to 1 that way I don't overwrite my own data, because my data is always written in index 0
     var counter = 1;
@@ -3133,12 +3133,12 @@ async function makeA_Get_Request_to_see_waiting_room_data_frequently() {
         for (let i = 0; i < 4; i++) {
             if (i != my_spot) {
                 // fill in everyone's data into our game object
-                my_game.questions_wrong[counter] = data.questions_wrong[my_room][i];
-                my_game.everyones_points[counter] = data.points[my_room][i];
-                my_game.everyones_names[counter] = data.names[my_room][i];
-                my_game.countries[counter] = data.countries[my_room][i];
+                my_game.questions_wrong[counter] = data.questions_wrong[i];
+                my_game.everyones_points[counter] = data.points[i];
+                my_game.everyones_names[counter] = data.names[i];
+                my_game.countries[counter] = data.countries[i];
                 for (let j = 0; j < standard_bibletar_length; j++) {
-                    my_game.bibletar[counter][j] = data.bibletars[my_room][i][j];
+                    my_game.bibletar[counter][j] = data.bibletars[i][j];
                 }
                 counter += 1;
             }

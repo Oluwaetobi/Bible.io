@@ -55,40 +55,40 @@ const around_the_world = {
 
     names: [
       // names of players in all rooms for level 1
-      [["Unknown Player"], ["Unknown Player"], ["Unknown Player"], ["Unknown Player"],],
-      [["Unknown Player"], ["Unknown Player"], ["Unknown Player"], ["Unknown Player"],],
-      [["Unknown Player"], ["Unknown Player"], ["Unknown Player"], ["Unknown Player"],],
-      [["Unknown Player"], ["Unknown Player"], ["Unknown Player"], ["Unknown Player"],],
-      [["Unknown Player"], ["Unknown Player"], ["Unknown Player"], ["Unknown Player"],],
-      [["Unknown Player"], ["Unknown Player"], ["Unknown Player"], ["Unknown Player"],],
-      [["Unknown Player"], ["Unknown Player"], ["Unknown Player"], ["Unknown Player"],],
-      [["Unknown Player"], ["Unknown Player"], ["Unknown Player"], ["Unknown Player"],],
-      [["Unknown Player"], ["Unknown Player"], ["Unknown Player"], ["Unknown Player"],],
-      [["Unknown Player"], ["Unknown Player"], ["Unknown Player"], ["Unknown Player"],],
+      ["Unknown Player", "Unknown Player", "Unknown Player", "Unknown Player"],
+      ["Unknown Player", "Unknown Player", "Unknown Player", "Unknown Player"],
+      ["Unknown Player", "Unknown Player", "Unknown Player", "Unknown Player"],
+      ["Unknown Player", "Unknown Player", "Unknown Player", "Unknown Player"],
+      ["Unknown Player", "Unknown Player", "Unknown Player", "Unknown Player"],
+      ["Unknown Player", "Unknown Player", "Unknown Player", "Unknown Player"],
+      ["Unknown Player", "Unknown Player", "Unknown Player", "Unknown Player"],
+      ["Unknown Player", "Unknown Player", "Unknown Player", "Unknown Player"],
+      ["Unknown Player", "Unknown Player", "Unknown Player", "Unknown Player"],
+      ["Unknown Player", "Unknown Player", "Unknown Player", "Unknown Player"],
 
       // names of players in all rooms for level 2
-      [["Unknown Player"], ["Unknown Player"], ["Unknown Player"], ["Unknown Player"],],
-      [["Unknown Player"], ["Unknown Player"], ["Unknown Player"], ["Unknown Player"],],
-      [["Unknown Player"], ["Unknown Player"], ["Unknown Player"], ["Unknown Player"],],
-      [["Unknown Player"], ["Unknown Player"], ["Unknown Player"], ["Unknown Player"],],
-      [["Unknown Player"], ["Unknown Player"], ["Unknown Player"], ["Unknown Player"],],
-      [["Unknown Player"], ["Unknown Player"], ["Unknown Player"], ["Unknown Player"],],
-      [["Unknown Player"], ["Unknown Player"], ["Unknown Player"], ["Unknown Player"],],
-      [["Unknown Player"], ["Unknown Player"], ["Unknown Player"], ["Unknown Player"],],
-      [["Unknown Player"], ["Unknown Player"], ["Unknown Player"], ["Unknown Player"],],
-      [["Unknown Player"], ["Unknown Player"], ["Unknown Player"], ["Unknown Player"],],
+      ["Unknown Player", "Unknown Player", "Unknown Player", "Unknown Player"],
+      ["Unknown Player", "Unknown Player", "Unknown Player", "Unknown Player"],
+      ["Unknown Player", "Unknown Player", "Unknown Player", "Unknown Player"],
+      ["Unknown Player", "Unknown Player", "Unknown Player", "Unknown Player"],
+      ["Unknown Player", "Unknown Player", "Unknown Player", "Unknown Player"],
+      ["Unknown Player", "Unknown Player", "Unknown Player", "Unknown Player"],
+      ["Unknown Player", "Unknown Player", "Unknown Player", "Unknown Player"],
+      ["Unknown Player", "Unknown Player", "Unknown Player", "Unknown Player"],
+      ["Unknown Player", "Unknown Player", "Unknown Player", "Unknown Player"],
+      ["Unknown Player", "Unknown Player", "Unknown Player", "Unknown Player"],
 
       // names of players in all rooms for level 3
-      [["Unknown Player"], ["Unknown Player"], ["Unknown Player"], ["Unknown Player"],],
-      [["Unknown Player"], ["Unknown Player"], ["Unknown Player"], ["Unknown Player"],],
-      [["Unknown Player"], ["Unknown Player"], ["Unknown Player"], ["Unknown Player"],],
-      [["Unknown Player"], ["Unknown Player"], ["Unknown Player"], ["Unknown Player"],],
-      [["Unknown Player"], ["Unknown Player"], ["Unknown Player"], ["Unknown Player"],],
-      [["Unknown Player"], ["Unknown Player"], ["Unknown Player"], ["Unknown Player"],],
-      [["Unknown Player"], ["Unknown Player"], ["Unknown Player"], ["Unknown Player"],],
-      [["Unknown Player"], ["Unknown Player"], ["Unknown Player"], ["Unknown Player"],],
-      [["Unknown Player"], ["Unknown Player"], ["Unknown Player"], ["Unknown Player"],],
-      [["Unknown Player"], ["Unknown Player"], ["Unknown Player"], ["Unknown Player"],],
+      ["Unknown Player", "Unknown Player", "Unknown Player", "Unknown Player"],
+      ["Unknown Player", "Unknown Player", "Unknown Player", "Unknown Player"],
+      ["Unknown Player", "Unknown Player", "Unknown Player", "Unknown Player"],
+      ["Unknown Player", "Unknown Player", "Unknown Player", "Unknown Player"],
+      ["Unknown Player", "Unknown Player", "Unknown Player", "Unknown Player"],
+      ["Unknown Player", "Unknown Player", "Unknown Player", "Unknown Player"],
+      ["Unknown Player", "Unknown Player", "Unknown Player", "Unknown Player"],
+      ["Unknown Player", "Unknown Player", "Unknown Player", "Unknown Player"],
+      ["Unknown Player", "Unknown Player", "Unknown Player", "Unknown Player"],
+      ["Unknown Player", "Unknown Player", "Unknown Player", "Unknown Player"],
     ],
     points: [
       // points of all players in all rooms for level 1
@@ -691,17 +691,41 @@ const server = http.createServer((req, res) => {
 
           /* In an attempt to reduce overhead and bandwidth, I'll only send the player data that is needed, so I'll create a new
           object with the exact same name that will point to the values of the original object */
-          const {online, names, points, questions_wrong, countries, bibletars, closed_rooms, amount_of_people_in_room, room_level1, room_level2, room_level3, new_game_wait_time} = around_the_world;
-          const around_the_world = {online, names, points, questions_wrong, countries, bibletars, closed_rooms, amount_of_people_in_room, room_level1, room_level2, room_level3, new_game_wait_time};
-          // the minus 1 for players_room has already been applied in req.on("data", cunk=>{})
-          around_the_world.names = around_the_world.names[players_room];
-          around_the_world.points = around_the_world.points[players_room];
-          around_the_world.questions_wrong = around_the_world.questions_wrong[players_room];
-          around_the_world.countries = around_the_world.countries[players_room];
-          around_the_world.bibletars = around_the_world.countries[players_room];
-          around_the_world.closed_rooms = around_the_world.closed_rooms[players_room];
-          around_the_world.amount_of_people_in_room = around_the_world.amount_of_people_in_room[players_room];
-          around_the_world.new_game_wait_time = around_the_world.new_game_wait_time[players_room];
+          // const {online, names, points, questions_wrong, countries, bibletars, closed_rooms, amount_of_people_in_room, room_level1, room_level2, room_level3, new_game_wait_time} = around_the_world;
+          
+          // unfortunately this mutates the original object because those equal signs act as a pointer
+          // const around_the_world_reduced_bandwidth = {online, names, points, questions_wrong, countries, bibletars, closed_rooms, amount_of_people_in_room, room_level1, room_level2, room_level3, new_game_wait_time};
+          // // the minus 1 for players_room has already been applied in req.on("data", chunk=>{})
+          // around_the_world_reduced_bandwidth.names = around_the_world.names[players_room];
+          // around_the_world_reduced_bandwidth.points = around_the_world.points[players_room];
+          // around_the_world_reduced_bandwidth.questions_wrong = around_the_world.questions_wrong[players_room];
+          // around_the_world_reduced_bandwidth.countries = around_the_world.countries[players_room];
+          // around_the_world_reduced_bandwidth.bibletars = around_the_world.bibletars[players_room];
+          // around_the_world_reduced_bandwidth.closed_rooms = around_the_world.closed_rooms[players_room];
+          // around_the_world_reduced_bandwidth.amount_of_people_in_room = around_the_world.amount_of_people_in_room[players_room];
+          // around_the_world_reduced_bandwidth.new_game_wait_time = around_the_world.new_game_wait_time[players_room];
+
+          var players_room = 1;
+          // Safely isolate the specific room's data
+          const around_the_world_reduced_bandwidth = {
+              online: around_the_world.online,
+              
+              // Grabbing the specific room data directly
+              names: around_the_world.names[players_room],
+              points: around_the_world.points[players_room],
+              questions_wrong: around_the_world.questions_wrong[players_room],
+              countries: around_the_world.countries[players_room],
+              bibletars: around_the_world.bibletars[players_room],
+              closed_rooms: around_the_world.closed_rooms[players_room],
+              amount_of_people_in_room: around_the_world.amount_of_people_in_room[players_room],
+              
+              room_level1: around_the_world.room_level1,
+              room_level2: around_the_world.room_level2,
+              room_level3: around_the_world.room_level3,
+              
+              new_game_wait_time: around_the_world.new_game_wait_time[players_room],
+              
+          };
 
           res.writeHead(200, {'content-type':"application/json"});
           // res.end(JSON.stringify({message: "Data Received", data:around_the_world}));
@@ -712,7 +736,7 @@ const server = http.createServer((req, res) => {
             // res.end(JSON.stringify(around_the_world.hall_of_fame));
           } else {
             // For every other patch request send them the only important condensed data
-              res.end(JSON.stringify(around_the_world));
+              res.end(JSON.stringify(around_the_world_reduced_bandwidth));
           }
       })
 
