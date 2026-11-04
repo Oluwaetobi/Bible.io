@@ -475,15 +475,24 @@ async function makePost_or_Patch_Request_hall_of_fame() {
 }
 
 
-async function makeA_Get_Request_figure_out_how_many_people_are_online() {
-  /** This function is used to retrieve data on the Bible.io server, that way I can display it on Bible.io (website) */
+async function makeA_Patch_Request_figure_out_how_many_people_are_online() {
+  /** This function is used to retrieve figure out how many people are online, it was ORIGINALLY
+   * A GET REQUEST, but it was consuming too much overhead and bandwidth, and I was barely even
+   * using any of the data I sent back over the internet
+   */
   const url = server_source;
+
+    /* don't write "online" or else the server will attempt to add to the online based off of our code
+    write, "get_online" instead */
+    const req_data = ["get_online"];
+
   try {
     const response = await fetch(url, {
-      method: 'GET', // Specify the HTTP method
+      method: 'PATCH', // Specify the HTTP method
       headers: {
           'Content-Type': 'application/json' // Inform the server about the data format
       },
+      body: JSON.stringify(req_data) // Convert the JavaScript object into a JSON string
     });
     
     
@@ -565,7 +574,7 @@ function reset_spamming_online_to_false () {
 }
 
 var spamming_online = JSON.parse(sessionStorage.getItem('spamming_online'));
-makeA_Get_Request_figure_out_how_many_people_are_online();
+makeA_Patch_Request_figure_out_how_many_people_are_online();
 function online_measures_and_rules () {
     if (spamming_online) {
         // if the variable has a value
@@ -2957,16 +2966,23 @@ function reset_size_of_world_coordinates() {
     get_random_speed_and_prevent_no_speed();
 }
 
-async function makeA_Get_Request_check_whether_to_clean_room() {
-    /** Figures out whether I need to tell the server to clean up the room when the game has finished */
+async function makeA_Patch_Request_check_whether_to_clean_room() {
+    /** Figures out whether I need to tell the server to clean up the room when the game has finished,
+     * it was ORIGINALLY A GET REQUEST, but because that takes up too much overhead and bandwidth and
+     * since I'm barely even using the data, I'm just going to go with PATCH
+     */
   
   const url = server_source;
+
+  const req_data = [];
+
   try {
     const response = await fetch(url, {
-      method: 'GET', // Specify the HTTP method
+      method: 'PATCH', // Specify the HTTP method
       headers: {
           'Content-Type': 'application/json' // Inform the server about the data format
       },
+      body: JSON.stringify(req_data) // Convert the JavaScript object into a JSON string
     });
     
     
@@ -2983,7 +2999,7 @@ async function makeA_Get_Request_check_whether_to_clean_room() {
     for (let i = 0; i < my_game.everyones_names.length; i++) {
         /* if the first person in that room equals any of the names in my game room, that means
         the room needs to cleaned */
-        if (data.names[my_room][0] == my_game.everyones_names[i])  {
+        if (data.names[0] == my_game.everyones_names[i])  {
             makePost_or_Patch_Request_issue_clean();
             break;
         }
@@ -3071,6 +3087,8 @@ async function makePost_or_Patch_Request_in_game_data_edits() {
     const data = await response.json(); // Parse the JSON response from the server
     console.log(data);
 
+    online = data.online;
+
     var my_room = (my_game.my_room - 1);
     var my_spot = (my_game.my_spot - 1);
     // set counter to 1 so it's not changing my score
@@ -3094,17 +3112,23 @@ async function makePost_or_Patch_Request_in_game_data_edits() {
 }
 
 
-async function makeA_Get_Request_to_see_waiting_room_data_frequently() {
+async function makeA_Patch_Request_to_see_waiting_room_data_frequently() {
     /* frequently called about every single second, to check what data on the server for my room 
-    and enter in details onto our game object */
+    and enter in details onto our game object, was ORIGINALLY A GET REQUEST, but the GET
+    Requests consume to much overhead and bandwidth, and I barely even use the data sent
+    over the internet in the GET Request */
 
   const url = server_source;
+
+
+  const req_data = ["players_room", my_game.my_room, "players_spot", my_game.my_spot, "Nan", "Nan"];
   try {
     const response = await fetch(url, {
-      method: 'GET', // Specify the HTTP method
+      method: 'PATCH', // Specify the HTTP method
       headers: {
           'Content-Type': 'application/json' // Inform the server about the data format
       },
+      body: JSON.stringify(req_data) // Convert the JavaScript object into a JSON string
     });
     
     
@@ -3118,11 +3142,11 @@ async function makeA_Get_Request_to_see_waiting_room_data_frequently() {
     
     var my_room = (my_game.my_room - 1);
     var my_spot = (my_game.my_spot - 1);
-    my_game.num_of_people_in_room = data.amount_of_people_in_room[my_room];
-    my_game.room_closed = data.closed_rooms[my_room];
+    my_game.num_of_people_in_room = data.amount_of_people_in_room;
+    my_game.room_closed = data.closed_rooms;
     
     // the new_game_wait_time could change if more people are online all of sudden, so I need to have this here
-    my_game.new_game_wait_time = data.new_game_wait_time[my_room];
+    my_game.new_game_wait_time = data.new_game_wait_time;
     
     // sets my counter to 1 that way I don't overwrite my own data, because my data is always written in index 0
     var counter = 1;
@@ -3132,12 +3156,12 @@ async function makeA_Get_Request_to_see_waiting_room_data_frequently() {
         for (let i = 0; i < 4; i++) {
             if (i != my_spot) {
                 // fill in everyone's data into our game object
-                my_game.questions_wrong[counter] = data.questions_wrong[my_room][i];
-                my_game.everyones_points[counter] = data.points[my_room][i];
-                my_game.everyones_names[counter] = data.names[my_room][i];
-                my_game.countries[counter] = data.countries[my_room][i];
+                my_game.questions_wrong[counter] = data.questions_wrong[i];
+                my_game.everyones_points[counter] = data.points[i];
+                my_game.everyones_names[counter] = data.names[i];
+                my_game.countries[counter] = data.countries[i];
                 for (let j = 0; j < standard_bibletar_length; j++) {
-                    my_game.bibletar[counter][j] = data.bibletars[my_room][i][j];
+                    my_game.bibletar[counter][j] = data.bibletars[i][j];
                 }
                 counter += 1;
             }
@@ -3229,17 +3253,17 @@ function start_timer() {
             }
         }
         if (timer % 1 == 0) {
-            /* make a get request every second in the waiting room to check whether the room is closed and check 
+            /* make a PATCH request every second in the waiting room to check whether the room is closed and check 
             how many people are in your room and set other game start up data accordingly into our game object */
             if (home_page == 2) {
-                makeA_Get_Request_to_see_waiting_room_data_frequently();
+                makeA_Patch_Request_to_see_waiting_room_data_frequently();
             }
         }
         
         if ((time_alloted_for_each_game - timer) < -4) {
             if (home_page == 3) {
                 // must happen after all makePost_or_Patch_Request_in_game_data_edits function calls have been done
-                makeA_Get_Request_check_whether_to_clean_room();
+                makeA_Patch_Request_check_whether_to_clean_room();
             }
         }
 
@@ -5471,7 +5495,7 @@ function broadcast_game_is_over (time_alloted_for_each_game) {
     check_if_I_got_first_place();
     
     if (game_time < -5) {
-        // must happen after makeA_Get_Request_check_whether_to_clean_room function call has been done
+        // must happen after makeA_Patch_Request_check_whether_to_clean_room function call has been done
         home_page = 4;
     }
 

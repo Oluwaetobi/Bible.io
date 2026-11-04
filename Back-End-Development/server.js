@@ -385,10 +385,13 @@ const server = http.createServer((req, res) => {
    server.use(cors()); only work for things like express or connect but not for http.createServer*/
 
 
+   /** Keep Alive is PROHIBITED in  HTTP/3 and doesn't even help because HTTP/2 as well as later releases
+ *  already natively maintains persistent multilplexed connection for all traffic
+ */
    /*  server will automatically close the connection if the client goes completely silent for 5 seconds, helps to reduce
    overhead and bandwidth  */
-  res.setHeader('Connection', 'keep-alive');
-  res.setHeader('Keep-Alive', 'timeout=5, max=100'); // stays open for 5s, max 100 requests
+  // res.setHeader('Connection', 'keep-alive');
+  // res.setHeader('Keep-Alive', 'timeout=5, max=100'); // stays open for 5s, max 100 requests
 
 
   res.setHeader('Access-Control-Allow-Origin', '*');
@@ -689,33 +692,40 @@ const server = http.createServer((req, res) => {
 
           /** RESPONSE: Send them back all the data, this is after changes have been applied */
 
-          const around_the_world_reduced_bandwidth = {
-              online: around_the_world.online,
-              
-              // Grabbing the specific room data directly
-              names: around_the_world.names[players_room],
-              points: around_the_world.points[players_room],
-              questions_wrong: around_the_world.questions_wrong[players_room],
-              countries: around_the_world.countries[players_room],
-              bibletars: around_the_world.bibletars[players_room],
-              closed_rooms: around_the_world.closed_rooms[players_room],
-              amount_of_people_in_room: around_the_world.amount_of_people_in_room[players_room],
-              
-              room_level1: around_the_world.room_level1,
-              room_level2: around_the_world.room_level2,
-              room_level3: around_the_world.room_level3,
-              
-              new_game_wait_time: around_the_world.new_game_wait_time[players_room],
-              
-          };
-
           res.writeHead(200, {'content-type':"application/json"});
           // res.end(JSON.stringify({message: "Data Received", data:around_the_world}));
 
           if (global_parsed_chunk[0] == "hall_of_fame") {
             /* I don't need to send them back data for a patch_request for hall of fame 
             because they are only editing the data that's on the leaderboard */
+          } else if (global_parsed_chunk[0] == "get_online") {
+              const around_the_world_reduced_bandwidth = {
+                online: around_the_world.online,              
+              };
+              res.end(JSON.stringify(around_the_world_reduced_bandwidth)); // Convert JS object to JSON string
+
           } else {
+              const around_the_world_reduced_bandwidth = {
+                online: around_the_world.online,
+                
+                /* Grabbing the specific room data directly, avoid previous mistake 
+                of destroying original values by turning things into a pointer with an equal sign!!!! */
+                names: around_the_world.names[players_room],
+                points: around_the_world.points[players_room],
+                questions_wrong: around_the_world.questions_wrong[players_room],
+                countries: around_the_world.countries[players_room],
+                bibletars: around_the_world.bibletars[players_room],
+                closed_rooms: around_the_world.closed_rooms[players_room],
+                amount_of_people_in_room: around_the_world.amount_of_people_in_room[players_room],
+                
+                room_level1: around_the_world.room_level1,
+                room_level2: around_the_world.room_level2,
+                room_level3: around_the_world.room_level3,
+                
+                new_game_wait_time: around_the_world.new_game_wait_time[players_room],
+                
+            };
+
             res.end(JSON.stringify(around_the_world_reduced_bandwidth)); // Convert JS object to JSON string
           }
       })
@@ -745,17 +755,33 @@ const server = http.createServer((req, res) => {
     // 4. Convert the object to a string and send it to the client
     // res.end(JSON.stringify(around_the_world));
     // res.end('The Bible.io server is running... Automatic \n');
+
+    /** Extra notes for myself in talking about WebSockets and HTTP Responses, the lowest possible it is to 
+     *  reduce overhead and bandwidth to is 0.3 kB, I've successfully done it to 0.4kB and generally speaking
+     * it is 0.8kB, they say with WebSockets you can reduce it to as little as 5 to 10 bytes per request,
+     * while there are some downsides to using WebSockets, evenn if I did use WebSockets I could only get rid
+     * of the extra 0.3 kB, so 0.8 kB minus 0.3 kB is 0.5 kB, which is not even up to a 50 percent reduction
+     * so I don't think it's really worth it, especially because to send quite a bit of data over the internet
+     * such as the players bibletars, points, and countries, yes I did figure out a cool technique to reduce
+     * the amount of that data I'm sending such as sending only the bibletars in a specific room instead of all
+     * the room, same thing for countries, points, names, and all other important data, overall. I don't think
+     * the switch to WebSockets will ever happen, because of the downsides as well as it has very little 
+     * improvement on the overall bandwidth and overhead data reduction.
+     */
 });
 
 
+/** Keep Alive is PROHIBITED in  HTTP/3 and doesn't even help because HTTP/2 as well as later releases
+ *  already natively maintains persistent multilplexed connection for all traffic
+ */
 /* Enforce the exact same rules on the Node.js TCP socket */
 // Ensure the server keeps the socket alive and drops it after 5 seconds of inactivity
-server.keepAliveTimeout = 5000; 
+// server.keepAliveTimeout = 5000; 
 // Max 100 requests per TCP connection, prevents DDOS attacks
-server.maxRequestsPerSocket = 100;
+// server.maxRequestsPerSocket = 100;
 /* Max timeout one game never last for more than 120 seconds, so if any requests takes longer
  than 120 seconds it rejects it, this helps to prevent against DDOS attacks */
-server.headersTimeout = 120000; // Must be slightly higher than keepAliveTimeout
+// server.headersTimeout = 120000; // Must be slightly higher than keepAliveTimeout
 
 
 // server.use(cors()); // Enable CORS globally for all routes and origins
