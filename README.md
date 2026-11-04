@@ -8,7 +8,7 @@
 <p>Our goal is to make the Bible fun again, for kids, teens, adults, and people of all ages</p>
 
 <h2>Journey</h2>
-<p>Bible.io was originally built with a website called Scratch, and then after that we switched to Turbowarp
+<p>Bible.io was originally built with a block-based visual programming language, and then after that we switched to Turbowarp
 meaning it was run with only JavaScript. Now we're moving forward and developing our own website right from
 scratch, with languages that drive not only the Web, but the Internet itself. Languages like HTML/CSS, 
 Full-Stack JavaScript, and maybe more. Since we're working with Full-Stack JavaScript, JavaScript is used not only for Front-End Development but as well as Back-End Development with with the help of Node.js | 
