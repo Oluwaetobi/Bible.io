@@ -385,13 +385,10 @@ const server = http.createServer((req, res) => {
    server.use(cors()); only work for things like express or connect but not for http.createServer*/
 
 
-   /** Keep Alive is PROHIBITED in  HTTP/3 and doesn't even help because HTTP/2 as well as later releases
- *  already natively maintains persistent multilplexed connection for all traffic
- */
    /*  server will automatically close the connection if the client goes completely silent for 5 seconds, helps to reduce
    overhead and bandwidth  */
-  // res.setHeader('Connection', 'keep-alive');
-  // res.setHeader('Keep-Alive', 'timeout=5, max=100'); // stays open for 5s, max 100 requests
+  res.setHeader('Connection', 'keep-alive');
+  res.setHeader('Keep-Alive', 'timeout=5, max=100'); // stays open for 5s, max 100 requests
 
 
   res.setHeader('Access-Control-Allow-Origin', '*');
@@ -401,16 +398,15 @@ const server = http.createServer((req, res) => {
     res.statusCode = 200;
     res.setHeader('Content-Type', 'text/plain');
 
-    
-    if(req.method == "PATCH") {
-      let body = "";
-      
-      // trying to reduce overhead, and I need these variables to be accessible in req.on("end", ()=>{{})
+    // trying to reduce overhead, and I need these variables to be accessible in req.on("end", ()=>{{})
       var global_parsed_chunk;
       /** Helps the server to know where to apply the player's request in the right spot on the server's 
        * object data reserve */
       var players_room = 1;
       var players_spot = 1;
+
+    if(req.method == "PATCH") {
+      let body = "";
 
         req.on("data", chunk=> {
           /* I'm using this variable in order to save server space, parsing it several 
@@ -578,6 +574,11 @@ const server = http.createServer((req, res) => {
             }
             set_world_wide_room_to_correct_room();
 
+            /** Helps the server to know where to apply the player's request in the right spot on the server's 
+             * object data reserve */
+            players_room = 1;
+            players_spot = 1;
+            
             
             /* this stuff helps the server to know where to put their data, which room, and in which spot
              side note, anytime stuff like this is issue, length of the chunk request will always be greater
@@ -688,25 +689,6 @@ const server = http.createServer((req, res) => {
 
           /** RESPONSE: Send them back all the data, this is after changes have been applied */
 
-
-          /* In an attempt to reduce overhead and bandwidth, I'll only send the player data that is needed, so I'll create a new
-          object with the exact same name that will point to the values of the original object */
-          // const {online, names, points, questions_wrong, countries, bibletars, closed_rooms, amount_of_people_in_room, room_level1, room_level2, room_level3, new_game_wait_time} = around_the_world;
-          
-          // unfortunately this mutates the original object because those equal signs act as a pointer
-          // const around_the_world_reduced_bandwidth = {online, names, points, questions_wrong, countries, bibletars, closed_rooms, amount_of_people_in_room, room_level1, room_level2, room_level3, new_game_wait_time};
-          // // the minus 1 for players_room has already been applied in req.on("data", chunk=>{})
-          // around_the_world_reduced_bandwidth.names = around_the_world.names[players_room];
-          // around_the_world_reduced_bandwidth.points = around_the_world.points[players_room];
-          // around_the_world_reduced_bandwidth.questions_wrong = around_the_world.questions_wrong[players_room];
-          // around_the_world_reduced_bandwidth.countries = around_the_world.countries[players_room];
-          // around_the_world_reduced_bandwidth.bibletars = around_the_world.bibletars[players_room];
-          // around_the_world_reduced_bandwidth.closed_rooms = around_the_world.closed_rooms[players_room];
-          // around_the_world_reduced_bandwidth.amount_of_people_in_room = around_the_world.amount_of_people_in_room[players_room];
-          // around_the_world_reduced_bandwidth.new_game_wait_time = around_the_world.new_game_wait_time[players_room];
-
-          var players_room = 1;
-          // Safely isolate the specific room's data
           const around_the_world_reduced_bandwidth = {
               online: around_the_world.online,
               
@@ -733,22 +715,21 @@ const server = http.createServer((req, res) => {
           if (global_parsed_chunk[0] == "hall_of_fame") {
             /* I don't need to send them back data for a patch_request for hall of fame 
             because they are only editing the data that's on the leaderboard */
-            // res.end(JSON.stringify(around_the_world.hall_of_fame));
           } else {
-            // For every other patch request send them the only important condensed data
-              res.end(JSON.stringify(around_the_world_reduced_bandwidth));
+            res.end(JSON.stringify(around_the_world_reduced_bandwidth)); // Convert JS object to JSON string
           }
       })
 
     } else if (req.method == "GET") {
 
-      /** RESPONSE: Sends them all the data that's stored on the server */
+      /** RESPONSE: Sends them all the data they asked for that stored on the server */
 
       // 3. Send a 200 OK status code and set the content type to JSON
       res.writeHead(200, { 'Content-Type': 'application/json' });
       // res.end(JSON.stringify({message: "Data Received", data:around_the_world})); // Convert JS object to JSON string
       res.end(JSON.stringify(around_the_world)); // Convert JS object to JSON string
     } else {
+        // should be 404 not 
         if (req.method == 'OPTIONS'){
           // If I don't do this for some reason it will send a 404 error, and I don't know why
           res.writeHead(200, {'content-type':'text/plain'});
@@ -767,17 +748,14 @@ const server = http.createServer((req, res) => {
 });
 
 
-/** Keep Alive is PROHIBITED in  HTTP/3 and doesn't even help because HTTP/2 as well as later releases
- *  already natively maintains persistent multilplexed connection for all traffic
- */
 /* Enforce the exact same rules on the Node.js TCP socket */
 // Ensure the server keeps the socket alive and drops it after 5 seconds of inactivity
-// server.keepAliveTimeout = 5000; 
+server.keepAliveTimeout = 5000; 
 // Max 100 requests per TCP connection, prevents DDOS attacks
-// server.maxRequestsPerSocket = 100;
+server.maxRequestsPerSocket = 100;
 /* Max timeout one game never last for more than 120 seconds, so if any requests takes longer
  than 120 seconds it rejects it, this helps to prevent against DDOS attacks */
-// server.headersTimeout = 120000; // Must be slightly higher than keepAliveTimeout
+server.headersTimeout = 120000; // Must be slightly higher than keepAliveTimeout
 
 
 // server.use(cors()); // Enable CORS globally for all routes and origins
