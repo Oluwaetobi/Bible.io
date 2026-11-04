@@ -397,6 +397,7 @@ function check_if_I_got_first_place () {
 }
 
 function update_Data_And_Continue_Game() {
+    timer = 1;
     // update my highscore for the level
     if (this_game_points > my_highscores[level - 1]) {
         // if I beat my highscore then don't forget to give me extra cash
@@ -3296,12 +3297,19 @@ function start_timer() {
     }
 
     if (home_page == 2) {
-        if (timer >= my_game.new_game_wait_time || my_game.room_closed == 1) {
-            choose_Random_Question();
-            startGame();
-            timer = 0;
-            // set your room to closed
-            makePost_or_Patch_Request_set_room_to_closed();
+        if (timer >= 1) {
+            /* at least one second must pass before the game can start, the reason being is because
+            important data needs to be processed first, because of the way code works, it could be as
+            soon as I press the go button, next stuff to be executed would be this stuff, and that
+            would be problematic for the game, be my_game.room still needs to be updated
+            as well as my_game.new_game_wait_time and it could already be holding incorrect data */
+            if (timer >= my_game.new_game_wait_time || my_game.room_closed == 1) {
+                choose_Random_Question();
+                startGame();
+                timer = 0;
+                // set your room to closed
+                makePost_or_Patch_Request_set_room_to_closed();
+            }
         }
     }
 }
