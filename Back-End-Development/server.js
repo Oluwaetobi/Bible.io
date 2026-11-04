@@ -525,7 +525,13 @@ const server = http.createServer((req, res) => {
                  // set room to closed
                  around_the_world.closed_rooms[i] = 1;
                } else {
-                 // does NOT set room to open, in fact NOTHING happens here
+                 /* does NOT set room to open, in fact NOTHING happens here UNLESS amount of people in room
+                  equals 0, that's the only way to be sure that the room is open, READ BELOW for further 
+                  notes
+                 */
+                if (around_the_world.amount_of_people_in_room[i] == 0) {
+                  around_the_world.closed_rooms[i] = 0;
+                }
                  /** Alright so the reason why we aren't supposed to set the room to open, is because, a room
                   * can still be closed if there less than 4 players, a room might even be closed with only 1 player
                   * there, why? Because the person was waiting but no one joined his room, so his game will start
@@ -713,6 +719,30 @@ const server = http.createServer((req, res) => {
             };
 
             res.end(JSON.stringify(around_the_world_reduced_bandwidth)); // Convert JS object to JSON string
+
+          } else if (global_parsed_chunk[0] == "get_room_ASAP") {
+            const around_the_world_reduced_bandwidth = {
+                online: around_the_world.online,
+                
+                /* Grabbing the specific room data directly, avoid previous mistake 
+                of destroying original values by turning things into a pointer with an equal sign,
+                when you turned a variable into a pointer and set a different value to it,
+                it will modify the original variable or object as well, BE CAREFUL, this one
+                doesn't because it's not an "=" it's an ":"  !!!! */
+
+                /* WARNING, this specific, amount_of_people_in_room does not include the usual
+                element selector at the end with [players_room], because the server doesn't yet know
+                which room the user is in, so they just give them the raw data as it is */
+                amount_of_people_in_room: around_the_world.amount_of_people_in_room,
+                
+                room_level1: around_the_world.room_level1,
+                room_level2: around_the_world.room_level2,
+                room_level3: around_the_world.room_level3,
+                
+            };
+
+            res.end(JSON.stringify(around_the_world_reduced_bandwidth)); // Convert JS object to JSON string
+
 
           } else if (global_parsed_chunk[0] == "get_online") {
               const around_the_world_reduced_bandwidth = {

@@ -468,7 +468,9 @@ async function makePost_or_Patch_Request_hall_of_fame() {
         
         const data = await response.json(); // Parse the JSON response from the server
         console.log(data);
-        online = data.online;
+        /* I don't know why, but for some reason, data.online cannot be accessed 
+        in the hall of fame patch request call */
+        // online = data.online;
     } catch (error) {
         console.error('Error making PATCH request:', error.message);
     }
@@ -726,17 +728,26 @@ function erase_bibletar_objects_from_my_array () {
     img_hair_sources.length = 0;
 }
 
-async function makeA_Get_Request_entered_waiting_room_data() {
+async function makeA_Patch_Request_entered_waiting_room_data() {
     /* is called only once upon the FIRST TIME YOU ENTERED THE ROOM! Figures out which room I'm in as well as 
-    my spot too */
+    my spot too, this was ORIGINALLY a GET REQUEST, but I changed it to a PATCH requeste because
+    the GET REQUEST is taking too much overhead and bandwidth and takes too long to respond, and the
+    data here is crucial for subsequent function calls in the waiting room. As soon as I click the 
+    go button I need to know ASAP which room I'm in, an delay can cause wrong information to be passed
+    across the internet and cause rooms to be jambled and set up with the wrong people inside */
   
   const url = server_source;
+
+  // get the room number as quickly as possible CRUCIAL DATA
+  var req_data = ["get_room_ASAP"];
+
   try {
     const response = await fetch(url, {
-      method: 'GET', // Specify the HTTP method
+      method: 'PATCH', // Specify the HTTP method
       headers: {
           'Content-Type': 'application/json' // Inform the server about the data format
       },
+      body: JSON.stringify(req_data) // Convert the JavaScript object into a JSON string
     });
     
     
@@ -872,7 +883,7 @@ function prepare_the_game () {
         my_game.bibletar[0][i] = my_bibletar_svg[i];
     }
 
-    makeA_Get_Request_entered_waiting_room_data();
+    makeA_Patch_Request_entered_waiting_room_data();
 }
 
 function startGame() {
@@ -2974,7 +2985,10 @@ async function makeA_Patch_Request_check_whether_to_clean_room() {
   
   const url = server_source;
 
-  const req_data = [];
+  /* for every patch request that is not "get_online" or "get_hall_of_fame" in req_data, for them
+ to work properly, it needs my room and spot, and has to have a length that's longer than 4, for
+ my_room and my_spot have the right value in the server */
+  const req_data = ["players_room", my_game.my_room, "players_spot", my_game.my_spot, "Nan", "Nan"];
 
   try {
     const response = await fetch(url, {
@@ -3120,7 +3134,9 @@ async function makeA_Patch_Request_to_see_waiting_room_data_frequently() {
 
   const url = server_source;
 
-
+/* for every patch request that is not "get_online" or "get_hall_of_fame" in req_data, for them
+ to work properly, it needs my room and spot, and has to have a length that's longer than 4, for
+ my_room and my_spot have the right value in the server */
   const req_data = ["players_room", my_game.my_room, "players_spot", my_game.my_spot, "Nan", "Nan"];
   try {
     const response = await fetch(url, {
@@ -3153,6 +3169,7 @@ async function makeA_Patch_Request_to_see_waiting_room_data_frequently() {
     const standard_bibletar_length = 11;
     if (my_game.num_of_people_in_room > 1) {
         // only do this if there's more than one person in my room
+        /* This pulls in everyone's data from the server and writes it into our room */
         for (let i = 0; i < 4; i++) {
             if (i != my_spot) {
                 // fill in everyone's data into our game object
