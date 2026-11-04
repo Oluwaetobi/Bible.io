@@ -85,7 +85,7 @@ form.addEventListener('submit', (e) => {
     
 })
 
-var accounts_creation_underway_message = "STOP trying to sign up, this Website is still under HEAVY CONSTRUCTION! Feel free to play Bible.io with a guess account :) ";
+var accounts_creation_underway_message = "STOP trying to sign up, this Website is still under HEAVY CONSTRUCTION! Feel free to play Bible.io with a GUEST ACCOUNT";
 
 function getSignupFormErrors(email, username, password, repeatPassword) {
     let errors = []
