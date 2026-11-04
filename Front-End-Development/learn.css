@@ -160,21 +160,24 @@ a:hover {
 }
 
 .big-text {
-    position: relative;
+    position: fixed;
     top: 30px;
+    left: 400px;
     /* z index pushs it forward 1 layer */
     z-index: 1;
     color:#fefefe;
     font-weight: bold;
     font-size: 60px;
-    text-align: center;
+    /* text-align: center; */
     text-shadow: #000000 1px 1px 1px;
     background-color: rgba(1, 1, 1, 0.1);
+    padding: 0px 300px;
 }
 
 .small-text {
-    position: relative;
-    top: -30px;
+    position: fixed;
+    top: 150px;
+    left: 550px;
     padding: 0px 20px;
     /* z index pushs it forward 1 layer */
     z-index: 1;
@@ -182,7 +185,7 @@ a:hover {
     text-align: center;
     color: rgb(251, 249, 249);
     text-shadow: #010101 1px 1px 1px;
-    background-color: rgba(1, 1, 1, 0.1);
+    /* background-color: rgba(1, 1, 1, 0.1); */
     padding: 0px 0px 5px 0px;
 }
 
@@ -202,11 +205,12 @@ a:hover {
 .learning-materials {
     display: flex;
     flex-direction: column;
-    position: relative;
+    position: fixed;
+    top:210px;
+    left: 50px;
     z-index: 1;
     /* box-sizing: border-box; */
 
-    top:-40px;
     max-height: 500px;
     /* width: 500px; */
     text-align: center;
@@ -218,7 +222,6 @@ a:hover {
     /* justify-content: center; */
     align-items: center;
     border-radius: 30px 30px;
-    left: 50px;
     padding: 20px 20px;
     overflow-y:auto;
     /* flex-grow: 1; */
