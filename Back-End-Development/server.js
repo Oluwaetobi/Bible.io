@@ -730,9 +730,11 @@ const server = http.createServer((req, res) => {
                 it will modify the original variable or object as well, BE CAREFUL, this one
                 doesn't because it's not an "=" it's an ":"  !!!! */
 
-                /* WARNING, this specific, amount_of_people_in_room does not include the usual
+                /* WARNING, this specific, amount_of_people_in_room and closed_rooms 
+                does not include the usual
                 element selector at the end with [players_room], because the server doesn't yet know
                 which room the user is in, so they just give them the raw data as it is */
+                closed_rooms: around_the_world.closed_rooms,
                 amount_of_people_in_room: around_the_world.amount_of_people_in_room,
                 
                 room_level1: around_the_world.room_level1,

@@ -769,6 +769,8 @@ async function makeA_Patch_Request_entered_waiting_room_data() {
     var my_room = (my_game.my_room - 1);
     my_game.my_spot = (data.amount_of_people_in_room[my_room] + 1);
 
+    my_game.room_closed = data.closed_rooms[my_room];
+
     makePost_or_Patch_Request_waiting_room_edits();
     
     
