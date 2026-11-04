@@ -76,6 +76,7 @@ const canvas = document.getElementById('myCanvas');
 const ctx = canvas.getContext('2d');
 var i_am_a_developer = false;
 const big_text = document.getElementById('big-text');
+const small_text = document.getElementById('small-text');
 const text_to_read = document.getElementById('text-to-read');
 const top_border = 90;
 const side_border = 2;
@@ -1560,8 +1561,12 @@ function show_or_hide_html_elements() {
 
     if (learn_page == 1) {
         go_back_button.style.display = "none";
+        big_text.style.display = "block";
+        small_text.style.display = "block";
     } else if (learn_page == 2) {
         go_back_button.style.display = "block";
+        big_text.style.display = "none";
+        small_text.style.display = "none";
     }
 }
 
