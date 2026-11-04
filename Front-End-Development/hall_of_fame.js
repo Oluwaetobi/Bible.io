@@ -280,7 +280,7 @@ var end_of_screen_benchmark  = (liveDisplay_Text_Spacing * -1);
 
 // update_hall_fame and push in all default values before retrieving data from server
 update_hall_of_fame();
-makeA_Get_Request();
+makeA_Patch_Request();
 function update_hall_of_fame () {
 
     /** Able to keep trach of the top 100 players in the entire world, now I need to also fetch it from
@@ -377,15 +377,21 @@ function update_hall_of_fame () {
 }
 
 
-async function makeA_Get_Request() {
-  /** This function is used to retrieve data on the Bible.io server, that way I can display it on Bible.io (website) */
+async function makeA_Patch_Request() {
+  /** This function is used to the data on the Bible.io Hall of Fame, it was ORIGINALLY A GET REQUEST
+   * but since that is consuming too much overhead and bandwidth and since I'm barely even using the
+   * data I'm changing it to a PATCH request
+   */
   const url = server_source;
+
+  var req_data = ["get_hall_of_fame"];
   try {
     const response = await fetch(url, {
-      method: 'GET', // Specify the HTTP method
+      method: 'PATCH', // Specify the HTTP method
       headers: {
           'Content-Type': 'application/json' // Inform the server about the data format
       },
+      body: JSON.stringify(req_data) // Convert the JavaScript object into a JSON string
     });
     
     

@@ -695,9 +695,25 @@ const server = http.createServer((req, res) => {
           res.writeHead(200, {'content-type':"application/json"});
           // res.end(JSON.stringify({message: "Data Received", data:around_the_world}));
 
-          if (global_parsed_chunk[0] == "hall_of_fame") {
-            /* I don't need to send them back data for a patch_request for hall of fame 
-            because they are only editing the data that's on the leaderboard */
+          if (global_parsed_chunk[0] == "get_hall_of_fame") {
+            /* I don't need to send them back data for a patch_request in play.js for hall of fame 
+            because they are only editing the data that's on the leaderboard, but I do for the one
+            that's in hall_of_fame.js which is requesting for the hall of fame data to be displayed
+            as well as how many people are online on Bible.io */
+            const around_the_world_reduced_bandwidth = {
+                online: around_the_world.online,
+                
+                /* Grabbing the specific room data directly, avoid previous mistake 
+                of destroying original values by turning things into a pointer with an equal sign,
+                when you turned a variable into a pointer and set a different value to it,
+                it will modify the original variable or object as well, BE CAREFUL, this one
+                doesn't because it's not an "=" it's an ":"  !!!! */
+                hall_of_fame: around_the_world.hall_of_fame,
+                
+            };
+
+            res.end(JSON.stringify(around_the_world_reduced_bandwidth)); // Convert JS object to JSON string
+
           } else if (global_parsed_chunk[0] == "get_online") {
               const around_the_world_reduced_bandwidth = {
                 online: around_the_world.online,              
@@ -709,7 +725,10 @@ const server = http.createServer((req, res) => {
                 online: around_the_world.online,
                 
                 /* Grabbing the specific room data directly, avoid previous mistake 
-                of destroying original values by turning things into a pointer with an equal sign!!!! */
+                of destroying original values by turning things into a pointer with an equal sign,
+                when you turned a variable into a pointer and set a different value to it,
+                it will modify the original variable or object as well, BE CAREFUL, this one
+                doesn't because it's not an "=" it's an ":"  !!!! */
                 names: around_the_world.names[players_room],
                 points: around_the_world.points[players_room],
                 questions_wrong: around_the_world.questions_wrong[players_room],
