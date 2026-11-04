@@ -90,10 +90,12 @@ form.addEventListener('submit', (e) => {
     
 })
 
+var accounts_creation_underway_message = "STOP trying to sign up, this Website is still under HEAVY CONSTRUCTION! Feel free to play Bible.io with a guess account :) ";
+
 function getSignupFormErrors(email, username, password, repeatPassword) {
     let errors = []
 
-    errors.push('STOP trying to sign up, this Website is still under HEAVY CONSTRUCTION!');
+    errors.push(accounts_creation_underway_message);
 
     if(email === '' || email == null) {
         errors.push('Email name is required!')
@@ -130,7 +132,7 @@ function getSignupFormErrors(email, username, password, repeatPassword) {
 function getLoginFormErrors (username, password) {
     let errors = []
 
-    errors.push('STOP trying to login in, this Website is still under HEAVY CONSTRUCTION!');
+    errors.push(accounts_creation_underway_message);
     
     if(username === '' || username == null) {
         errors.push('Username is required!')
