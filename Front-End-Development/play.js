@@ -3297,7 +3297,9 @@ function start_timer() {
     }
 
     if (home_page == 2) {
-        if (timer >= 1) {
+        /* YES I wrote 2 on purpose, because the timer += 1 happens at the 
+        very top, so it's kind of like the timer is already just set to 1 at the start */
+        if (timer >= 2) {
             /* at least one second must pass before the game can start, the reason being is because
             important data needs to be processed first, because of the way code works, it could be as
             soon as I press the go button, next stuff to be executed would be this stuff, and that
