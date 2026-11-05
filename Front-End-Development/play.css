@@ -447,9 +447,8 @@ form input::placeholder {
 
 .custom-alert-box button {
     border: none;
-    padding: 20px 60px;
+    padding: 0px 40px;
     border-radius: 20px;
-    font-weight: 700;
     cursor: pointer;
     transition: 0.3s;
     background-color:#0991c7;
@@ -457,9 +456,14 @@ form input::placeholder {
     /* right or left, down or up, blur radius, color, - shadow */
     text-shadow: 2px 2px 2px rgb(6, 6, 6);
     right: 50%;
-    font-size: 30px;
     /* margin: 0 auto; */
 }
+
+.custom-alert-box button p {
+    font-size: 25px;
+    font-weight: bold;
+}
+
 
 
 .custom-alert-box button:hover {

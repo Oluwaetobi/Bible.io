@@ -5546,6 +5546,8 @@ alertButton.addEventListener("click", function() {
     alertBox.style.display = "none";
 })
 
+
+
 var show_accomplishment = true;
 var bonus_money = 0;
 
@@ -5982,9 +5984,9 @@ function choose_Random_Question () {
 
     // Return a random integer between 1 and 10 (both included): Math.floor(Math.random() * 10) + 1;
 
-    var amount_of_question_in_level_1 = 44;
+    var amount_of_question_in_level_1 = 45;
     var amount_of_question_in_level_2 = 66;
-    var amount_of_question_in_level_3 = 44;
+    var amount_of_question_in_level_3 = 45;
 
 
     if (level == 1) {
@@ -6349,6 +6351,14 @@ function level_1_Questions () {
         answer3.innerText += `because Pharoah took Abraham's wife  `;
         answer4.innerText += `Pharoah pronounced a curse upon Abraham `;
         correct_answer = 3;
+    }
+    if (randomQuestion == 45) {
+        question.innerText = `Abraham was rich in...   `;
+        answer1.innerText += `cattle, olives, and vineyards `;
+        answer2.innerText += `sheep, camels, and bronze `;
+        answer3.innerText += `wool, silk, and linen  `;
+        answer4.innerText += `cattle, silver, and gold `;
+        correct_answer = 4;
     }  
 }
 
@@ -7239,6 +7249,14 @@ function level_3_Questions () {
         answer3.innerText += `Proverbs 6:7 `;
         answer4.innerText += `Proverbs 6:9 `;
         correct_answer = 4;
+    }
+    if (randomQuestion == 45) {
+        question.innerText = `And seek the peace of the city whither I have caused you to be carried away captives, and pray unto the LORD for it: for in the peace thereof shall ye have peace.   `;
+        answer1.innerText += `Jeremiah 29:7  `;
+        answer2.innerText += `Jeremiah 32:3  `;
+        answer3.innerText += `Jeremiah 35:19`;
+        answer4.innerText += `Jeremiah 40:16 `;
+        correct_answer = 1;
     }
     
 }

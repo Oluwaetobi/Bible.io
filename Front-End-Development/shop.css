@@ -861,18 +861,34 @@ table takes up the full width of it's parent the scrollable table */
 
 .custom-alert-box button {
     border: none;
-    padding: 20px 60px;
+    padding: 0px 30px;
     border-radius: 20px;
-    font-weight: 700;
     cursor: pointer;
     transition: 0.3s;
     background-color:#c72209;
-    color: #000000;
+    color: #ffffff;
     right: 50%;
-    font-size: 30px;
     /* margin: 0 auto; */
+    box-shadow: black 0px 0px 10px;
 }
 
+.custom-alert-box button p {
+    font-size: 25px;
+    font-weight: bold;
+    text-shadow: black 1px 1px 2px;
+}
+
+#money-to-side {
+    display: flex;
+    gap: 60px;
+}
+
+#money-symbol {
+    color:#00871f;
+    font-weight: bold;
+    font-size: 25px;
+    text-decoration: underline;
+}
 
 .custom-alert-box button:hover {
     filter: brightness(150%);
