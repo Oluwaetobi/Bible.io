@@ -6359,6 +6359,14 @@ function level_1_Questions () {
         answer3.innerText += `wool, silk, and linen  `;
         answer4.innerText += `cattle, silver, and gold `;
         correct_answer = 4;
+    }
+    if (randomQuestion == 46) {
+        question.innerText = `How many plagues did God plague Egypt with?   `;
+        answer1.innerText += `three `;
+        answer2.innerText += `six `;
+        answer3.innerText += `ten  `;
+        answer4.innerText += `thirteen `;
+        correct_answer = 3;
     }  
 }
 
@@ -6892,6 +6900,15 @@ function level_2_Questions () {
         answer4.innerText += `West  `;
         correct_answer = 3;
     }
+    if (randomQuestion == 67) {
+        question.innerText = `What was the first plague with which God plagued Egypt?  `;
+        answer1.innerText += `Frogs    `;
+        answer2.innerText += `Darkness that could be felt   `;
+        answer3.innerText += `Turning their water into blood   `;
+        answer4.innerText += `Turning their rods into snakes  `;
+        correct_answer = 3;
+    }
+    
 }
 
 function level_3_Questions () {
@@ -7256,6 +7273,14 @@ function level_3_Questions () {
         answer2.innerText += `Jeremiah 32:3  `;
         answer3.innerText += `Jeremiah 35:19`;
         answer4.innerText += `Jeremiah 40:16 `;
+        correct_answer = 1;
+    }
+    if (randomQuestion == 46) {
+        question.innerText = `Dead flies cause the ointment of the apothecary to send forth a stinking savour: so doth a little folly him that is in reputation for wisdom and honour.   `;
+        answer1.innerText += `Ecclesiastes 10:1  `;
+        answer2.innerText += `Ecclesiastes 10:7  `;
+        answer3.innerText += `Ecclesiastes 10:14  `;
+        answer4.innerText += `Ecclesiastes 10:20 `;
         correct_answer = 1;
     }
     
