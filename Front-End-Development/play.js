@@ -6677,7 +6677,7 @@ function level_2_Questions () {
         correct_answer = 2;
     }
     if (randomQuestion == 39) {
-        question.innerText = `Jabin was the king of which country?   `;
+        question.innerText = `Jabin was the king of which region?   `;
         answer1.innerText += `Babylon `;
         answer2.innerText += `Assyria `;
         answer3.innerText += `Hazor  `;
@@ -6800,7 +6800,7 @@ function level_2_Questions () {
         question.innerText = `Which river in Genesis chapter 2 went towards Assyria?  `;
         answer1.innerText += `Gihon `;
         answer2.innerText += `Hiddekel `;
-        answer3.innerText += `PIshon  `;
+        answer3.innerText += `Pishon  `;
         answer4.innerText += `Jabbok `;
         correct_answer = 2;
     }
