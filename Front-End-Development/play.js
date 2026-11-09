@@ -643,7 +643,7 @@ function randomRobotModes() {
                     my_game.bibletar[i][j] = (Math.floor(Math.random() *2) + 1);
                 }
                 if (j == 1) {
-                    // bakcground
+                    // background
                     my_game.bibletar[i][j] = (Math.floor(Math.random() *3) + 1);
                 }
                 if (j == 2) {
