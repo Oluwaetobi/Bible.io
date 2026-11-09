@@ -644,7 +644,7 @@ function randomRobotModes() {
                 }
                 if (j == 1) {
                     // bakcground
-                    my_game.bibletar[i][j] = (Math.floor(Math.random() *8) + 1);
+                    my_game.bibletar[i][j] = (Math.floor(Math.random() *3) + 1);
                 }
                 if (j == 2) {
                     // face
@@ -5985,7 +5985,7 @@ function choose_Random_Question () {
     // Return a random integer between 1 and 10 (both included): Math.floor(Math.random() * 10) + 1;
 
     var amount_of_question_in_level_1 = 46;
-    var amount_of_question_in_level_2 = 67;
+    var amount_of_question_in_level_2 = 76;
     var amount_of_question_in_level_3 = 46;
 
 
@@ -6907,6 +6907,78 @@ function level_2_Questions () {
         answer3.innerText += `Turning their water into blood   `;
         answer4.innerText += `Turning their rods into snakes  `;
         correct_answer = 3;
+    }
+    if (randomQuestion == 68) {
+        question.innerText = `What was the second plague with which God plagued Egypt?  `;
+        answer1.innerText += `Frogs    `;
+        answer2.innerText += `Darkness that could be felt   `;
+        answer3.innerText += `Turning their water into blood   `;
+        answer4.innerText += `Turning their rods into snakes  `;
+        correct_answer = 1;
+    }
+    if (randomQuestion == 69) {
+        question.innerText = `What was the third plague with which God plagued Egypt?  `;
+        answer1.innerText += `Frogs    `;
+        answer2.innerText += `flies   `;
+        answer3.innerText += `lice   `;
+        answer4.innerText += `turning their water into blood  `;
+        correct_answer = 3;
+    }
+    if (randomQuestion == 70) {
+        question.innerText = `What was the fourth plague with which God plagued Egypt?  `;
+        answer1.innerText += `Frogs    `;
+        answer2.innerText += `flies   `;
+        answer3.innerText += `lice   `;
+        answer4.innerText += `turning their water into blood  `;
+        correct_answer = 2;
+    }
+    if (randomQuestion == 71) {
+        question.innerText = `What was the fifth plague with which God plagued Egypt?  `;
+        answer1.innerText += `body sores    `;
+        answer2.innerText += `flies   `;
+        answer3.innerText += `lice   `;
+        answer4.innerText += `the death of their livestock  `;
+        correct_answer = 4;
+    }
+    if (randomQuestion == 72) {
+        question.innerText = `What was the sixth plague with which God plagued Egypt?  `;
+        answer1.innerText += `body sores    `;
+        answer2.innerText += `flies   `;
+        answer3.innerText += `lice   `;
+        answer4.innerText += `the death of their livestock  `;
+        correct_answer = 1;
+    }
+    if (randomQuestion == 73) {
+        question.innerText = `What was the seventh plague with which God plagued Egypt?  `;
+        answer1.innerText += `body sores    `;
+        answer2.innerText += `flies   `;
+        answer3.innerText += `hail and fire   `;
+        answer4.innerText += `the death of their livestock  `;
+        correct_answer = 3;
+    }
+    if (randomQuestion == 74) {
+        question.innerText = `What was the eighth plague with which God plagued Egypt?  `;
+        answer1.innerText += `the deaths of their firstborn, both man and beast    `;
+        answer2.innerText += `darkness that could be felt   `;
+        answer3.innerText += `hail and fire   `;
+        answer4.innerText += `locusts  `;
+        correct_answer = 4;
+    }
+    if (randomQuestion == 75) {
+        question.innerText = `What was the ninth plague with which God plagued Egypt?  `;
+        answer1.innerText += `the deaths of their firstborn, both man and beast    `;
+        answer2.innerText += `darkness that could be felt   `;
+        answer3.innerText += `hail and fire   `;
+        answer4.innerText += `locusts  `;
+        correct_answer = 2;
+    }
+    if (randomQuestion == 76) {
+        question.innerText = `What was the tenth plague with which God plagued Egypt?  `;
+        answer1.innerText += `the deaths of their firstborn, both man and beast    `;
+        answer2.innerText += `darkness that could be felt   `;
+        answer3.innerText += `hail and fire   `;
+        answer4.innerText += `locusts  `;
+        correct_answer = 1;
     }
     
 }
