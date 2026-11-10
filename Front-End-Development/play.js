@@ -5985,7 +5985,7 @@ function choose_Random_Question () {
     // Return a random integer between 1 and 10 (both included): Math.floor(Math.random() * 10) + 1;
 
     var amount_of_question_in_level_1 = 46;
-    var amount_of_question_in_level_2 = 76;
+    var amount_of_question_in_level_2 = 86;
     var amount_of_question_in_level_3 = 46;
 
 
@@ -6979,6 +6979,86 @@ function level_2_Questions () {
         answer3.innerText += `hail and fire   `;
         answer4.innerText += `locusts  `;
         correct_answer = 1;
+    }
+    if (randomQuestion == 77) {
+        question.innerText = `When the Lord God plagued Egypt, what was the name of the land that was not plagued?  `;
+        answer1.innerText += `Avaris    `;
+        answer2.innerText += `Goshen   `;
+        answer3.innerText += `Noph   `;
+        answer4.innerText += `Zoan  `;
+        correct_answer = 2;
+    }
+    if (randomQuestion == 78) {
+        question.innerText = `How many nights did Daniel spend in the lion's den?  `;
+        answer1.innerText += `1 night    `;
+        answer2.innerText += `2 nights   `;
+        answer3.innerText += `3 nights   `;
+        answer4.innerText += `6 nights  `;
+        correct_answer = 1;
+    }
+    if (randomQuestion == 79) {
+        question.innerText = `When God plagued Egypt with darkness, for how many days were they not able to move around?  `;
+        answer1.innerText += `1 day    `;
+        answer2.innerText += `2 days   `;
+        answer3.innerText += `3 days   `;
+        answer4.innerText += `6 days  `;
+        correct_answer = 3;
+    }
+    if (randomQuestion == 80) {
+        question.innerText = `On which day did God create light?  `;
+        answer1.innerText += `day one    `;
+        answer2.innerText += `day two   `;
+        answer3.innerText += `day three   `;
+        answer4.innerText += `day four  `;
+        correct_answer = 1;
+    }
+    if (randomQuestion == 81) {
+        question.innerText = `On which day did God create the heavens?  `;
+        answer1.innerText += `day one    `;
+        answer2.innerText += `day two   `;
+        answer3.innerText += `day three   `;
+        answer4.innerText += `day four  `;
+        correct_answer = 2;
+    }
+    if (randomQuestion == 82) {
+        question.innerText = `On which day did God create the land and the seas?  `;
+        answer1.innerText += `day one    `;
+        answer2.innerText += `day two   `;
+        answer3.innerText += `day three   `;
+        answer4.innerText += `day four  `;
+        correct_answer = 3;
+    }
+    if (randomQuestion == 83) {
+        question.innerText = `On which day did God create plants and trees?  `;
+        answer1.innerText += `day three    `;
+        answer2.innerText += `day four   `;
+        answer3.innerText += `day five   `;
+        answer4.innerText += `day six  `;
+        correct_answer = 1;
+    }
+    if (randomQuestion == 84) {
+        question.innerText = `On which day did God create the Sun, moon and stars?  `;
+        answer1.innerText += `day three    `;
+        answer2.innerText += `day four   `;
+        answer3.innerText += `day five   `;
+        answer4.innerText += `day six  `;
+        correct_answer = 2;
+    }
+    if (randomQuestion == 85) {
+        question.innerText = `On which day did God create the birds and sea mammals?  `;
+        answer1.innerText += `day three    `;
+        answer2.innerText += `day four   `;
+        answer3.innerText += `day five   `;
+        answer4.innerText += `day six  `;
+        correct_answer = 3;
+    }
+    if (randomQuestion == 86) {
+        question.innerText = `On which day did God create the land animals and humans?  `;
+        answer1.innerText += `day three    `;
+        answer2.innerText += `day four   `;
+        answer3.innerText += `day five   `;
+        answer4.innerText += `day six  `;
+        correct_answer = 4;
     }
     
 }
