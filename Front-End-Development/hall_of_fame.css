@@ -539,6 +539,8 @@ because they are not theh same thing, at least the parameters aren't */
 
 .world-records-name {
     font-size: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
 }
 
 #myCanvas {

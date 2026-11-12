@@ -6367,6 +6367,14 @@ function level_1_Questions () {
         answer3.innerText += `ten  `;
         answer4.innerText += `thirteen `;
         correct_answer = 3;
+    }
+    if (randomQuestion == 47) {
+        question.innerText = `What did God make man out of?   `;
+        answer1.innerText += `dust `;
+        answer2.innerText += `meat `;
+        answer3.innerText += `heavenly material  `;
+        answer4.innerText += `water `;
+        correct_answer = 1;
     }  
 }
 
@@ -7059,6 +7067,14 @@ function level_2_Questions () {
         answer3.innerText += `day five   `;
         answer4.innerText += `day six  `;
         correct_answer = 4;
+    }
+    if (randomQuestion == 87) {
+        question.innerText = `Before God caused it to rain on the Earth in the beginning, what watered the ground?  `;
+        answer1.innerText += `a mist    `;
+        answer2.innerText += `an angel   `;
+        answer3.innerText += `the river of Eden   `;
+        answer4.innerText += `the ground din't need watering yet  `;
+        correct_answer = 1;
     }
     
 }
