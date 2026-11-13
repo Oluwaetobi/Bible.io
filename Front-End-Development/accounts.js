@@ -1651,12 +1651,12 @@ function display_update_and_development_info () {
      * as a global variable, local variables always take precedence
      */
     var x_pos = 10;
-    var y_pos = 650;
+    var y_pos = 620;
     var box_size_x = 405;
     var box_size_y = 76;
     
     if ((canvas.height - box_size_y) > y_pos) {
-        // the update display can never go higher than 650pixels
+        // the update display can never go higher than 620pixels
         y_pos = canvas.height - (box_size_y + 20);
     }
     
