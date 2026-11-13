@@ -96,6 +96,9 @@ var type_of_challenge = 1;
 var challenge_box_x = 740;
 var online = 0;
 
+var games_won = 0;
+var games_played = 0;
+
 /** Home page is important, because it tells us whether, we are in the main page of play, or the searching for opponents
  * page, or the game page, or the last page for showing correct answers, scores, and etc. And then we go back all the 
  * way to page 1, if they choose to go back, or page 2, if they choose to play again
@@ -398,6 +401,7 @@ function check_if_I_got_first_place () {
 
 function update_Data_And_Continue_Game() {
     timer = 1;
+    games_played += 1;
     // update my highscore for the level
     if (this_game_points > my_highscores[level - 1]) {
         // if I beat my highscore then don't forget to give me extra cash
@@ -415,6 +419,7 @@ function update_Data_And_Continue_Game() {
     if (i_got_first_place == true) {
         my_cash += 10;
         bonus_money = 10;
+        games_won += 1;
     }
 
     // updates my total points
@@ -956,7 +961,11 @@ function save_Data_to_Local_or_Session_Storage() {
     sessionStorage.setItem('backup_my_points', JSON.stringify(my_points));
     sessionStorage.setItem('backup_my_highscores', JSON.stringify(my_highscores));
 
-    localStorage.setItem('my_cash', JSON.stringify(my_cash));
+    localStorage.setItem('games_won', JSON.stringify(games_won));
+    localStorage.setItem('games_played', JSON.stringify(games_played));
+
+
+    // localStorage.setItem('my_cash', JSON.stringify(my_cash));
 }
 localStorageAndSessionStorageData();
 
@@ -1006,6 +1015,8 @@ function localStorageAndSessionStorageData () {
     const saved_bibletar_svg = JSON.parse(localStorage.getItem('my_bibletar_svg'));
     const saved_cash = JSON.parse(localStorage.getItem('my_cash'));
     const saved_country = localStorage.getItem('my_country');
+    const saved_games_won = JSON.parse(localStorage.getItem('games_won'));
+    const saved_games_played = JSON.parse(localStorage.getItem("games_played"));
     const developer_tools = JSON.parse(localStorage.getItem('i_am_a_developer'));
 
     if (developer_tools) {
@@ -1047,6 +1058,18 @@ function localStorageAndSessionStorageData () {
         my_country = saved_country;
         // console.log("my_country: " + (typeof my_country));
         // console.log("my_country: " + my_country);
+    } else {
+        // do nothing, has already been created and set to default
+    }
+
+    if (saved_games_won) {
+        games_won = saved_games_won;
+    } else {
+        // do nothing, has already been created and set to default
+    }
+
+    if (saved_games_played) {
+        games_played = saved_games_played;
     } else {
         // do nothing, has already been created and set to default
     }

@@ -198,6 +198,8 @@ var my_highscores = [0, 0, 0];
 var my_cash = 0;
 var my_bibletar_svg = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
 
+var games_won = 0;
+var games_played = 0;
 
 
 var img_background = new Image();
@@ -359,10 +361,10 @@ function localStorageAndSessionStorageData () {
     const backup_savedPoints = JSON.parse(sessionStorage.getItem('backup_my_points'));
     
     /* if the cookies exist, then parse them, if not then don't
-     if I parse cookies that don't exist it will crash the program because this is a syntax error 
-     
-     note: instead of having constants I have variables, because I need to be able to reassign them in this case since 
-     they are cookies and the need to be parsed that is if they even exist */
+    if I parse cookies that don't exist it will crash the program because this is a syntax error 
+    
+    note: instead of having constants I have variables, because I need to be able to reassign them in this case since 
+    they are cookies and the need to be parsed that is if they even exist */
     var savedHighscores = cookies.my_highscores;
     var savedPoints = cookies.my_points;
     if (savedHighscores) {
@@ -379,12 +381,14 @@ function localStorageAndSessionStorageData () {
             savedPoints = backup_savedPoints;
         }
     }
-
+    
     const saved_bibletar_svg = JSON.parse(localStorage.getItem('my_bibletar_svg'));
     const saved_cash = JSON.parse(localStorage.getItem('my_cash'));
     const saved_country = localStorage.getItem('my_country');
+    const saved_games_won = JSON.parse(localStorage.getItem('games_won'));
+    const saved_games_played = JSON.parse(localStorage.getItem("games_played"));
     const developer_tools = JSON.parse(localStorage.getItem('i_am_a_developer'));
-
+    
     if (developer_tools) {
         i_am_a_developer = developer_tools;
     }
@@ -425,6 +429,18 @@ function localStorageAndSessionStorageData () {
     } else {
         // do nothing, has already been created and set to default
     }
+
+    if (saved_games_won) {
+        games_won = saved_games_won;
+    } else {
+        // do nothing, has already been created and set to default
+    }
+
+    if (saved_games_played) {
+        games_played = saved_games_played;
+    } else {
+        // do nothing, has already been created and set to default
+    }
 }
 
 figure_out_whether_i_am_a_boy_or_a_girl();
@@ -453,7 +469,7 @@ function loadingBox() {
 function myBibletar () {
 
     // WRITE Player Clicked's NAME
-    var name_y_pos = 445;
+    var name_y_pos = 440;
 
     // black shadow add
     ctx.shadowColor = 'rgb(8, 8, 8)';
@@ -1420,7 +1436,7 @@ function show_my_country() {
 
     // Don't touch this
     img_my_country.src = "./images/country_" + country_svg + ".svg";
-    ctx.drawImage(img_my_country, 50, 465, 100, 50);
+    ctx.drawImage(img_my_country, 50, 455, 100, 50);
 
     // black shadow remove
     ctx.shadowColor = "white";
@@ -1473,6 +1489,11 @@ function draw_account_background() {
     ctx.fillRect(0, 0, canvas.width, canvas.height);
 }
 
+function figure_out_my_level () {
+
+    return 1;
+}
+
 function display_my_progress_info() {
 
     var rec_width = 430;
@@ -1491,7 +1512,7 @@ function display_my_progress_info() {
     ctx.shadowOffsetX = 1;
     ctx.shadowOffsetY = 1;
 
-    var score_and_goal_y_pos = 485;
+    var score_and_goal_y_pos = 477;
     var score_and_goal_xpos = 170;
 
     ctx.font = "30px Arial";
@@ -1509,10 +1530,19 @@ function display_my_progress_info() {
     var bolden_text = 2;
     for (let i = 0; i < bolden_text; i++) {
         ctx.fillStyle = 'rgb(0, 0, 0)';
-        ctx.fillText("Try to reach " + goal_points + " points!", score_and_goal_xpos, score_and_goal_y_pos + 30);
+        ctx.fillText("Try to reach " + goal_points + " points!", score_and_goal_xpos, score_and_goal_y_pos + 25);
     }
     ctx.fillStyle = 'rgb(253, 253, 253)';
-    ctx.fillText("Try to reach " + goal_points + " points!", score_and_goal_xpos, score_and_goal_y_pos + 30);
+    ctx.fillText("Try to reach " + goal_points + " points!", score_and_goal_xpos, score_and_goal_y_pos + 25);
+
+    ctx.font = "25px Arial";
+    ctx.fillStyle = 'rgb(253, 253, 253)';
+    var win_rate = ((games_won/games_played) * 100);
+    var players_level_display = ["Take me to church!", "Bible Speedster", "Verse Memorizer", "Angelic Wisdom", "Supernatural Wisdom"];
+    ctx.fillText("Races: " + games_played + "  |  Win Rate: " + win_rate + "%", 40, 580);
+    var my_level = figure_out_my_level();
+    ctx.font = "20px Arial";
+    ctx.fillText("My Level: " + players_level_display[my_level - 1], 40, 610);
 
     // black shadow remove
     ctx.shadowColor = "white";
@@ -1521,7 +1551,9 @@ function display_my_progress_info() {
     ctx.shadowOffsetY = 0;
 
     var bar_x_size = 300;
-    var bar_y_pos = 535;
+    var bar_y_height = 30;
+    var bar_y_pos = 520;
+    var bar_x_pos = 40;
 
     // black shadow add
     ctx.shadowColor = 'rgb(8, 8, 8)';
@@ -1531,7 +1563,7 @@ function display_my_progress_info() {
 
     // goal to reach 100 points
     ctx.fillStyle = 'rgb(245, 6, 6)';
-    ctx.fillRect(50, bar_y_pos, bar_x_size, 30);
+    ctx.fillRect(bar_x_pos, bar_y_pos, bar_x_size, bar_y_height);
 
     // black shadow remove
     ctx.shadowColor = "white";
@@ -1541,10 +1573,10 @@ function display_my_progress_info() {
 
     ctx.fillStyle = 'rgb(12, 166, 4)';
     if (my_points <= 100) {
-        ctx.fillRect(50, bar_y_pos, (my_points * (bar_x_size/goal_points)), 30);
+        ctx.fillRect(bar_x_pos, bar_y_pos, (my_points * (bar_x_size/goal_points)), bar_y_height);
     } else {
         // goal has been reached
-        ctx.fillRect(50, bar_y_pos, (goal_points * (bar_x_size/goal_points)), 30);
+        ctx.fillRect(bar_x_pos, bar_y_pos, (goal_points * (bar_x_size/goal_points)), bar_y_height);
     }
 
 }
