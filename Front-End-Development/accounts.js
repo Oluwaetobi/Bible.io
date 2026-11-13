@@ -200,6 +200,7 @@ var my_bibletar_svg = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
 
 var games_won = 0;
 var games_played = 0;
+var win_rate;
 
 
 var img_background = new Image();
@@ -1489,9 +1490,27 @@ function draw_account_background() {
     ctx.fillRect(0, 0, canvas.width, canvas.height);
 }
 
-function figure_out_my_level () {
+function figure_out_my_level (amount_of_levels) {
+    /** Figures out my level in the game based off of my win rate, automatically evenly distributes
+     * out levels display based off of how many level names I have created or exist
+     */
+    var level_to_return = 1;
 
-    return 1;
+    // the highest win rate you can have is 100%
+    level_to_return = Math.ceil((((Math.ceil(win_rate))/100) * amount_of_levels));
+
+    if (Number.isInteger(level_to_return)) {
+        // do nothing
+    } else {
+        // if there's some sort of bug, which there shouldn't be, then set level to return to 1
+        level_to_return = 1;
+    }
+
+    if (level_to_return <= 0) {
+        level_to_return = 1;
+    }
+
+    return level_to_return;
 }
 
 function display_my_progress_info() {
@@ -1535,12 +1554,17 @@ function display_my_progress_info() {
     ctx.fillStyle = 'rgb(253, 253, 253)';
     ctx.fillText("Try to reach " + goal_points + " points!", score_and_goal_xpos, score_and_goal_y_pos + 25);
 
+    win_rate = ((games_won/games_played) * 100);
+
+    /* These are the levels that exist right now, I can add more if I want, figure_out_level will
+    automatically adjust by itself, I think 5 levels for now are fine */
+    var players_level_display = ["Take me to church!", "Bible Speedster", "Verse Memorizer", "Angelic Wisdom", "Supernatural Wisdom"];
+    var my_level = figure_out_my_level(players_level_display.length);
+    
     ctx.font = "25px Arial";
     ctx.fillStyle = 'rgb(253, 253, 253)';
-    var win_rate = ((games_won/games_played) * 100);
-    var players_level_display = ["Take me to church!", "Bible Speedster", "Verse Memorizer", "Angelic Wisdom", "Supernatural Wisdom"];
     ctx.fillText("Races: " + games_played + "  |  Win Rate: " + win_rate + "%", 40, 580);
-    var my_level = figure_out_my_level();
+    
     ctx.font = "20px Arial";
     ctx.fillText("My Level: " + players_level_display[my_level - 1], 40, 610);
 
@@ -1579,6 +1603,38 @@ function display_my_progress_info() {
         ctx.fillRect(bar_x_pos, bar_y_pos, (goal_points * (bar_x_size/goal_points)), bar_y_height);
     }
 
+}
+
+function rotate_box(x, y, width, height, degrees) {
+    // 1. Save the current state of the canvas context
+    ctx.save();
+    // 2. Move the canvas origin (0,0) to the center of where the rectangle will be
+    ctx.translate(x + width/2, y + height/2);
+    // 3. Rotate the canvas grid (Convert degrees to radians)
+    ctx.rotate((degrees * Math.PI) / 180);
+    // black shadow add
+    ctx.shadowColor = "black";
+    ctx.shadowBlur = 2;
+    ctx.shadowOffsetX = 0;
+    ctx.shadowOffsetY = 0;
+    // 4. Draw the rectangle centered on the new (0,0) origin
+    ctx.fillStyle = 'rgb(231, 14, 14)';
+    ctx.fillRect(-width/2, -height/2, width, height);
+    // black shadow remove
+    ctx.shadowColor = "white";
+    ctx.shadowBlur = 0;
+    ctx.shadowOffsetX = 0;
+    ctx.shadowOffsetY = 0;
+    // 5. Restore the context to its original state so future drawings aren't rotated
+    ctx.restore();
+
+
+}
+
+var degrees_turn = 0;
+function animated_rotation () {
+    degrees_turn += 1;
+    rotate_box(370, 517, 35, 35, degrees_turn);
 }
 
 function display_update_and_development_info () {
@@ -1685,6 +1741,8 @@ function drawGame() {
     displayTextInfo();
     displayMouseX_and_MouseY(10, 30);
     display_update_and_development_info()
+
+    animated_rotation();
 
 }
 
