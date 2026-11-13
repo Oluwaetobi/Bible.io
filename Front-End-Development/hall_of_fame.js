@@ -526,7 +526,7 @@ function playerClickedBibletar () {
 
     // translucent rectangle right side of hall of fame
     var translucent_x_pos = 1080;
-    var translucent_rec_y_size = 800;
+    var translucent_rec_y_size = 740;
     var translucent_rec_x_size = 430;
 
     var gradient = ctx.createLinearGradient(translucent_x_pos, 0, (translucent_x_pos + translucent_rec_x_size), 0);
@@ -1556,6 +1556,7 @@ function show_time_left () {
     time_left_text.innerText = format_time_correctly();
 
 }
+
 
 /** For some reason, the person in first place isn't showing upon the onloading of the hall of fame page
  * these variables help with that

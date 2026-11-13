@@ -5984,8 +5984,8 @@ function choose_Random_Question () {
 
     // Return a random integer between 1 and 10 (both included): Math.floor(Math.random() * 10) + 1;
 
-    var amount_of_question_in_level_1 = 46;
-    var amount_of_question_in_level_2 = 86;
+    var amount_of_question_in_level_1 = 48;
+    var amount_of_question_in_level_2 = 89;
     var amount_of_question_in_level_3 = 46;
 
 
@@ -6376,6 +6376,14 @@ function level_1_Questions () {
         answer4.innerText += `water `;
         correct_answer = 1;
     }  
+    if (randomQuestion == 48) {
+        question.innerText = `Which woman followed Barak to war?   `;
+        answer1.innerText += `Yael `;
+        answer2.innerText += `Hadassah `;
+        answer3.innerText += `Deborah  `;
+        answer4.innerText += `No woman went to war with Barak `;
+        correct_answer = 3;
+    }
 }
 
 function level_2_Questions () {
@@ -6733,7 +6741,7 @@ function level_2_Questions () {
         correct_answer = 4;
     }
     if (randomQuestion == 45) {
-        question.innerText = `Which woman followed Barak to war against the king of Canaan?   `;
+        question.innerText = `Which man went to war against the king of Canaan?   `;
         answer1.innerText += `Barak `;
         answer2.innerText += `Korah`;
         answer3.innerText += `Jabez  `;
@@ -7074,6 +7082,22 @@ function level_2_Questions () {
         answer2.innerText += `an angel   `;
         answer3.innerText += `the river of Eden   `;
         answer4.innerText += `the ground din't need watering yet  `;
+        correct_answer = 1;
+    }
+    if (randomQuestion == 88) {
+        question.innerText = `How many wives did Elkanah have?  `;
+        answer1.innerText += `1 wife    `;
+        answer2.innerText += `2 wives   `;
+        answer3.innerText += `3 wives   `;
+        answer4.innerText += `4 wives  `;
+        correct_answer = 2;
+    }
+    if (randomQuestion == 89) {
+        question.innerText = `Which of Elkanah's wives kept making fun of Hannah?  `;
+        answer1.innerText += `Peninnah    `;
+        answer2.innerText += `Aviva   `;
+        answer3.innerText += `Elisheva   `;
+        answer4.innerText += `Hadassah  `;
         correct_answer = 1;
     }
     
