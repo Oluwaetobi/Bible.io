@@ -1606,6 +1606,10 @@ function display_my_progress_info() {
 }
 
 function rotate_box(x, y, width, height, degrees) {
+
+    const date = new Date();
+    const second = date.getSeconds();
+    
     // 1. Save the current state of the canvas context
     ctx.save();
     // 2. Move the canvas origin (0,0) to the center of where the rectangle will be
@@ -1618,7 +1622,12 @@ function rotate_box(x, y, width, height, degrees) {
     ctx.shadowOffsetX = 0;
     ctx.shadowOffsetY = 0;
     // 4. Draw the rectangle centered on the new (0,0) origin
-    ctx.fillStyle = 'rgb(231, 14, 14)';
+    if (second % 2 == 0) {
+        // switches color every second
+        ctx.fillStyle = 'rgb(231, 14, 14)';
+    } else {
+        ctx.fillStyle = 'rgb(25, 231, 14)';
+    }
     ctx.fillRect(-width/2, -height/2, width, height);
     // black shadow remove
     ctx.shadowColor = "white";
@@ -1633,7 +1642,7 @@ function rotate_box(x, y, width, height, degrees) {
 
 var degrees_turn = 0;
 function animated_rotation () {
-    degrees_turn += 1;
+    degrees_turn += 0.8;
     rotate_box(370, 517, 35, 35, degrees_turn);
 }
 
