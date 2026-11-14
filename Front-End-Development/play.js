@@ -380,7 +380,7 @@ window.addEventListener('click', (event) => {
     }
     if (home_page == 3) {
         const time_alloted_for_each_game = 60;
-        if ((time_alloted_for_each_game - timer) <= 60 && (time_alloted_for_each_game - timer) >= 0) {
+        if ((time_alloted_for_each_game - timer) <= 60 && (time_alloted_for_each_game - timer) >= 1) {
             // if inside the input is pressed, set it to true or else false
             if (mouseX >= 1100 && mouseX <= 1300 && mouseY >= 510 && mouseY <= 630) {
                 // turns on mobile keyboard
@@ -397,7 +397,7 @@ function set_mobile_keyboard_to_off() {
     // called from HTML file as well as JavaScript file namely, play.html and play.js
     const time_alloted_for_each_game = 60;
     // don't erase these extra constraints because it's also called from HTML and the constraints aren't there
-    if ((time_alloted_for_each_game - timer) <= 60 && (time_alloted_for_each_game - timer) >= 0) {
+    if ((time_alloted_for_each_game - timer) <= 60 && (time_alloted_for_each_game - timer) >= 1) {
         automatic_mobile_keyboard_pop_up = false;
     }
 }
