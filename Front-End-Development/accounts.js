@@ -1503,6 +1503,7 @@ function figure_out_my_level (amount_of_levels) {
         // do nothing
     } else {
         // if there's some sort of bug, which there shouldn't be, then set level to return to 1
+        // example, 0 divided by 0 causes undefined behaviour
         level_to_return = 1;
     }
 
@@ -1554,11 +1555,11 @@ function display_my_progress_info() {
     ctx.fillStyle = 'rgb(253, 253, 253)';
     ctx.fillText("Try to reach " + goal_points + " points!", score_and_goal_xpos, score_and_goal_y_pos + 25);
 
-    win_rate = ((games_won/games_played) * 100);
+    win_rate = (Math.round(((games_won/games_played) * 100) * 100))/100;
 
     /* These are the levels that exist right now, I can add more if I want, figure_out_level will
     automatically adjust by itself, I think 5 levels for now are fine */
-    var players_level_display = ["Take me to church!", "Bible Speedster", "Verse Memorizer", "Angelic Wisdom", "Supernatural Wisdom"];
+    var players_level_display = ["Take me to church!", "Bible Speedster", "Verse Memorizer", "Angelic Wisdom", "Heavenly Knowledge"];
     var my_level = figure_out_my_level(players_level_display.length);
     
     ctx.font = "25px Arial";
