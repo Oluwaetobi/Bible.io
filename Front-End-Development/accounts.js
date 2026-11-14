@@ -1555,6 +1555,7 @@ function display_my_progress_info() {
     ctx.fillStyle = 'rgb(253, 253, 253)';
     ctx.fillText("Try to reach " + goal_points + " points!", score_and_goal_xpos, score_and_goal_y_pos + 25);
 
+    // win rate is showed up to 2 decimal places
     win_rate = (Math.round(((games_won/games_played) * 100) * 100))/100;
 
     /* These are the levels that exist right now, I can add more if I want, figure_out_level will

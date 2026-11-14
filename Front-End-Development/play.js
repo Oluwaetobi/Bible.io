@@ -367,6 +367,8 @@ window.addEventListener('wheel', (event) => {
      */
 })
 
+var automatic_mobile_keyboard_pop_up = true;
+
 window.addEventListener('click', (event) => {
     if (mouseX > 1278 && mouseX < 1458) {
         for (let i = 0; i < 3; i++) {
@@ -376,7 +378,29 @@ window.addEventListener('click', (event) => {
             }
         }
     }
+    if (home_page == 3) {
+        const time_alloted_for_each_game = 60;
+        if ((time_alloted_for_each_game - timer) <= 60 && (time_alloted_for_each_game - timer) >= 0) {
+            // if inside the input is pressed, set it to true or else false
+            if (mouseX >= 1100 && mouseX <= 1300 && mouseY >= 510 && mouseY <= 630) {
+                // turns on mobile keyboard
+                automatic_mobile_keyboard_pop_up = true;
+            } else {
+                // turns off mobile keyboard
+                set_mobile_keyboard_to_off();
+            }
+        } 
+    }
 })
+
+function set_mobile_keyboard_to_off() {
+    // called from HTML file as well as JavaScript file namely, play.html and play.js
+    const time_alloted_for_each_game = 60;
+    // don't erase these extra constraints because it's also called from HTML and the constraints aren't there
+    if ((time_alloted_for_each_game - timer) <= 60 && (time_alloted_for_each_game - timer) >= 0) {
+        automatic_mobile_keyboard_pop_up = false;
+    }
+}
 
 function change_type_of_challenge(type_of_challenge_html) {
     type_of_challenge = type_of_challenge_html;
@@ -2549,7 +2573,11 @@ function show_or_hide_html_elements () {
         } else {
             form.style.display = "block";
             /** makes the form typable without the user having to click on it first */
-            document.getElementById('my-answer').focus();
+            if (automatic_mobile_keyboard_pop_up == true) {
+                document.getElementById('my-answer').focus();
+            } else {
+                document.getElementById('my-answer').blur();
+            }
             question.style.display = "block";
             answer1.style.display = "block";
             answer2.style.display = "block";
