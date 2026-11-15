@@ -412,6 +412,11 @@ function change_type_of_challenge(type_of_challenge_html) {
 }
 
 function store_most_recent_games_won_and_played_in_array () {
+    /** Important Notes:
+     * It is essential and important that you remember, you push to the end and delete from the front,
+     * otherwise it won't even be recent anymore, if you push and delete fromt he same side, nothing will
+     * be recent, I'm not sure how to explain that, I think it's sort of just common sense
+     */
     // maximum amount of information we'll store in the arrays
     const max_amount_of_storage = 300;
     
