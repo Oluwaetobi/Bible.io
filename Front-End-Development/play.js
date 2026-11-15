@@ -96,8 +96,13 @@ var type_of_challenge = 1;
 var challenge_box_x = 740;
 var online = 0;
 
-var games_won = 0;
+// games played in player's lifetime, also known as "races"
 var games_played = 0;
+
+var recent_games_won = 0;
+var recent_games_played = 0;
+var store_recent_games_played = [0];
+var store_recent_games_won = [0];
 
 /** Home page is important, because it tells us whether, we are in the main page of play, or the searching for opponents
  * page, or the game page, or the last page for showing correct answers, scores, and etc. And then we go back all the 
@@ -406,6 +411,27 @@ function change_type_of_challenge(type_of_challenge_html) {
     type_of_challenge = type_of_challenge_html;
 }
 
+function store_most_recent_games_won_and_played_in_array () {
+    // maximum amount of information we'll store in the arrays
+    const max_amount_of_storage = 300;
+    
+    store_recent_games_played.push(1);
+
+    if (i_got_first_place == true) {
+        store_recent_games_won.push(1);
+    } else {
+        store_recent_games_won.push(0);
+    }
+
+    // get rid of the first elements if you are storing too much information
+    if (store_recent_games_played.length > max_amount_of_storage) {
+        store_recent_games_played.splice(0, 1);
+    }
+    if (store_recent_games_won.length > max_amount_of_storage) {
+        store_recent_games_won.splice(0, 1);
+    }
+}
+
 function check_if_I_got_first_place () {
     // check if I got first place in the game
     for (let i = 1; i < my_game.online; i++) {
@@ -426,6 +452,9 @@ function check_if_I_got_first_place () {
 function update_Data_And_Continue_Game() {
     timer = 1;
     games_played += 1;
+
+    store_most_recent_games_won_and_played_in_array();
+
     // update my highscore for the level
     if (this_game_points > my_highscores[level - 1]) {
         // if I beat my highscore then don't forget to give me extra cash
@@ -443,7 +472,6 @@ function update_Data_And_Continue_Game() {
     if (i_got_first_place == true) {
         my_cash += 10;
         bonus_money = 10;
-        games_won += 1;
     }
 
     // updates my total points
@@ -985,8 +1013,9 @@ function save_Data_to_Local_or_Session_Storage() {
     sessionStorage.setItem('backup_my_points', JSON.stringify(my_points));
     sessionStorage.setItem('backup_my_highscores', JSON.stringify(my_highscores));
 
-    localStorage.setItem('games_won', JSON.stringify(games_won));
     localStorage.setItem('games_played', JSON.stringify(games_played));
+    localStorage.setItem('store_recent_games_played', JSON.stringify(store_recent_games_played));
+    localStorage.setItem('store_recent_games_won', JSON.stringify(store_recent_games_won));
 
 
     // localStorage.setItem('my_cash', JSON.stringify(my_cash));
@@ -1039,8 +1068,9 @@ function localStorageAndSessionStorageData () {
     const saved_bibletar_svg = JSON.parse(localStorage.getItem('my_bibletar_svg'));
     const saved_cash = JSON.parse(localStorage.getItem('my_cash'));
     const saved_country = localStorage.getItem('my_country');
-    const saved_games_won = JSON.parse(localStorage.getItem('games_won'));
     const saved_games_played = JSON.parse(localStorage.getItem("games_played"));
+    const saved_recent_games_played = JSON.parse(localStorage.getItem('store_recent_games_played'));
+    const saved_recent_games_won = JSON.parse(localStorage.getItem('store_recent_games_won'));
     const developer_tools = JSON.parse(localStorage.getItem('i_am_a_developer'));
 
     if (developer_tools) {
@@ -1086,14 +1116,20 @@ function localStorageAndSessionStorageData () {
         // do nothing, has already been created and set to default
     }
 
-    if (saved_games_won) {
-        games_won = saved_games_won;
+    if (saved_games_played) {
+        games_played = saved_games_played;
     } else {
         // do nothing, has already been created and set to default
     }
 
-    if (saved_games_played) {
-        games_played = saved_games_played;
+    if (saved_recent_games_played) {
+        store_recent_games_played = saved_recent_games_played;
+    } else {
+        // do nothing, has already been created and set to default
+    }
+
+    if (saved_recent_games_won) {
+        store_recent_games_won = saved_recent_games_won;
     } else {
         // do nothing, has already been created and set to default
     }

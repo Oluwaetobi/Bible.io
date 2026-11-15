@@ -198,9 +198,14 @@ var my_highscores = [0, 0, 0];
 var my_cash = 0;
 var my_bibletar_svg = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
 
-var games_won = 0;
+// games played in player's lifetime, also known as "races"
 var games_played = 0;
 var win_rate;
+
+var recent_games_won = 0;
+var recent_games_played = 0;
+var store_recent_games_played = [0];
+var store_recent_games_won = [0];
 
 
 var img_background = new Image();
@@ -386,8 +391,9 @@ function localStorageAndSessionStorageData () {
     const saved_bibletar_svg = JSON.parse(localStorage.getItem('my_bibletar_svg'));
     const saved_cash = JSON.parse(localStorage.getItem('my_cash'));
     const saved_country = localStorage.getItem('my_country');
-    const saved_games_won = JSON.parse(localStorage.getItem('games_won'));
     const saved_games_played = JSON.parse(localStorage.getItem("games_played"));
+    const saved_recent_games_played = JSON.parse(localStorage.getItem('store_recent_games_played'));
+    const saved_recent_games_won = JSON.parse(localStorage.getItem('store_recent_games_won'));
     const developer_tools = JSON.parse(localStorage.getItem('i_am_a_developer'));
     
     if (developer_tools) {
@@ -431,14 +437,20 @@ function localStorageAndSessionStorageData () {
         // do nothing, has already been created and set to default
     }
 
-    if (saved_games_won) {
-        games_won = saved_games_won;
+    if (saved_games_played) {
+        games_played = saved_games_played;
     } else {
         // do nothing, has already been created and set to default
     }
 
-    if (saved_games_played) {
-        games_played = saved_games_played;
+    if (saved_recent_games_played) {
+        store_recent_games_played = saved_recent_games_played;
+    } else {
+        // do nothing, has already been created and set to default
+    }
+
+    if (saved_recent_games_won) {
+        store_recent_games_won = saved_recent_games_won;
     } else {
         // do nothing, has already been created and set to default
     }
@@ -1514,6 +1526,25 @@ function figure_out_my_level (amount_of_levels) {
     return level_to_return;
 }
 
+function figure_out_my_recent_games_won_and_played () {
+    /* The reason we are doing it like this is because imagine if someone has played like 10,000
+    games when they were bad, and suddenly they all of sudden start winning all the time, I want
+    the win rate to be as accurate possible right, which is why we changed protocols a bit. Yes
+    I still display the total amount of games they've played in their lifetime which is just called
+    races, but their win rate is not based off of lifetime games won and played, but recent games
+    won and played. Remember, add to the end of the array, delete from the start of the array, that's
+    what I'm doing in the play.js file */
+    // reset variables
+    recent_games_played = 0;
+    recent_games_won = 0;
+    for (let i = 0; i < store_recent_games_played.length; i++) {
+        recent_games_played += store_recent_games_played[i];
+    }
+    for (let i = 0; i < store_recent_games_won.length; i++) {
+        recent_games_won += store_recent_games_won[i];
+    }
+}
+
 function display_my_progress_info() {
 
     var rec_width = 430;
@@ -1556,7 +1587,8 @@ function display_my_progress_info() {
     ctx.fillText("Try to reach " + goal_points + " points!", score_and_goal_xpos, score_and_goal_y_pos + 25);
 
     // win rate is showed up to 2 decimal places
-    win_rate = (Math.round(((games_won/games_played) * 100) * 100))/100;
+    figure_out_my_recent_games_won_and_played();
+    win_rate = (Math.round(((recent_games_won/recent_games_played) * 100) * 100))/100;
 
     /* These are the levels that exist right now, I can add more if I want, figure_out_level will
     automatically adjust by itself, I think 5 levels for now are fine */
