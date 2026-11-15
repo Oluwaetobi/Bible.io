@@ -424,10 +424,10 @@ function store_most_recent_games_won_and_played_in_array () {
     }
 
     // get rid of the first elements if you are storing too much information
-    if (store_recent_games_played.length > max_amount_of_storage) {
+    while (store_recent_games_played.length > max_amount_of_storage) {
         store_recent_games_played.splice(0, 1);
     }
-    if (store_recent_games_won.length > max_amount_of_storage) {
+    while (store_recent_games_won.length > max_amount_of_storage) {
         store_recent_games_won.splice(0, 1);
     }
 }
