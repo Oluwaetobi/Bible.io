@@ -6076,9 +6076,9 @@ function choose_Random_Question () {
 
     // Return a random integer between 1 and 10 (both included): Math.floor(Math.random() * 10) + 1;
 
-    var amount_of_question_in_level_1 = 48;
+    var amount_of_question_in_level_1 = 54;
     var amount_of_question_in_level_2 = 89;
-    var amount_of_question_in_level_3 = 46;
+    var amount_of_question_in_level_3 = 48;
 
 
     if (level == 1) {
