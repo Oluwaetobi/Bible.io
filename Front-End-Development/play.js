@@ -6476,6 +6476,63 @@ function level_1_Questions () {
         answer4.innerText += `No woman went to war with Barak `;
         correct_answer = 3;
     }
+    if (randomQuestion == 49) {
+        question.innerText = `Which animal did the Bible say was the slyest?   `;
+        answer1.innerText += `The fox `;
+        answer2.innerText += `The baboon `;
+        answer3.innerText += `The serpent  `;
+        answer4.innerText += `The weasel `;
+        correct_answer = 3;
+    }
+    if (randomQuestion == 50) {
+        question.innerText = `What punishment did God give the serpent for deceiving Adam and Eve?   `;
+        answer1.innerText += `It lost it's ability to talk `;
+        answer2.innerText += `Crawling on it's belly and eating dust `;
+        answer3.innerText += `Loss of hearing  `;
+        answer4.innerText += `Blindness `;
+        correct_answer = 2;
+    }
+    if (randomQuestion == 51) {
+        question.innerText = `What punishment did God give Eve for eating of the forbidden fruit?   `;
+        answer1.innerText += `Pain in child birth `;
+        answer2.innerText += `tilling the ground `;
+        answer3.innerText += `eating potatoes  `;
+        answer4.innerText += `hard labor in the garden `;
+        correct_answer = 1;
+    }
+    if (randomQuestion == 52) {
+        question.innerText = `What punishment did God give Adam for eating of the forbidden fruit?   `;
+        answer1.innerText += `Pain in child birth `;
+        answer2.innerText += `tilling the ground `;
+        answer3.innerText += `eating potatoes  `;
+        answer4.innerText += `hard labor in the garden `;
+        correct_answer = 2;
+    }
+    if (randomQuestion == 53) {
+        question.innerText = `Who did Adam blame when God confronted him after eating the forbidden fruit?   `;
+        answer1.innerText += `himself `;
+        answer2.innerText += `Eve `;
+        answer3.innerText += `the serpent  `;
+        answer4.innerText += `God `;
+        correct_answer = 2;
+    }
+    if (randomQuestion == 53) {
+        question.innerText = `Who did Eve blame when God confronted her after eating the forbidden fruit?   `;
+        answer1.innerText += `herself `;
+        answer2.innerText += `Adam`;
+        answer3.innerText += `the serpent  `;
+        answer4.innerText += `God `;
+        correct_answer = 3;
+    }
+    if (randomQuestion == 54) {
+        question.innerText = `Who did the serpent blame when God confronted him for his deception?   `;
+        answer1.innerText += `Adam `;
+        answer2.innerText += `Eve `;
+        answer3.innerText += `God  `;
+        answer4.innerText += `He never got a chance to talk `;
+        correct_answer = 4;
+    }
+    
 }
 
 function level_2_Questions () {
@@ -7566,6 +7623,22 @@ function level_3_Questions () {
         answer3.innerText += `Ecclesiastes 10:14  `;
         answer4.innerText += `Ecclesiastes 10:20 `;
         correct_answer = 1;
+    }
+    if (randomQuestion == 47) {
+        question.innerText = `And I will put enmity between thee and the woman, and between thy seed and her seed; it shall bruise thy head, and thou shalt bruise his heel.   `;
+        answer1.innerText += `Genesis 3:8  `;
+        answer2.innerText += `Genesis 3:15  `;
+        answer3.innerText += `Revelation 12:2  `;
+        answer4.innerText += `Revelation 12:13  `;
+        correct_answer = 2;
+    }
+    if (randomQuestion == 48) {
+        question.innerText = `Thorns also and thistles shall it bring forth to thee; and thou shalt eat the herb of the field;   `;
+        answer1.innerText += `Genesis 3:2  `;
+        answer2.innerText += `Genesis 3:13  `;
+        answer3.innerText += `Genesis 3:18  `;
+        answer4.innerText += `Genesis 3:24  `;
+        correct_answer = 3;
     }
     
 }
