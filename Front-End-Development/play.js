@@ -5430,7 +5430,11 @@ function draw_players_bibletars(index_loop, unchanged_loop) {
         if (what_to_draw && what_to_draw.complete && what_to_draw.naturalWidth > 0) {
             ctx.drawImage(what_to_draw, x_pos_ribp, y_pos_ribp, my_pixels_width, my_pixels_height);
         } else {
-            console.warn("ALERT!! This image is still loading, or it is broken (That means the image might NOT EXIST or the link is corrupted): ", what_to_draw.src);
+            const time_alloted_for_each_game = 60;
+            if ((time_alloted_for_each_game - timer) >= 60) {
+                // only print this at the start of the game, to many console.logs can eventually crash the website and waste memory
+                console.warn("ALERT!! This image is still loading, or it is broken (That means the image might NOT EXIST or the link is corrupted): ", what_to_draw.src);
+            }
         }
         /**Don't run the printMeOutSvgFileNumber function for to long, or else it will crash your computer
          */
