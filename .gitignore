@@ -1,5 +1,6 @@
-# Here in gitignore, I can tell git to ignore all of these files, files that contain perhaps passwords, or sensitive
+# Here in gitignore, I can tell git to ignore all of these files, files that contain perhaps passwords,
+# or other sensitive information such as 
 # dependencies such as node_modules, and etc. Also PS, node_modules updates whenever I call npm install or npm update
 # in the terminal
-# no need to create it yourself
+# no need to create it yourself (the average node_modules is 300 to 500 MB in size, that would be brutal!!)
 node_modules/
