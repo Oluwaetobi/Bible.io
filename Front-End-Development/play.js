@@ -5416,8 +5416,22 @@ function draw_players_bibletars(index_loop, unchanged_loop) {
             }
         }
 
+        /* why did I add these constraints, well sometimes a player chooses images that don't exist, which is
+        still possible do to some bad practices in client side scripting that I'm using, or sometimes
+        when somebody switches from a boy bibletar to a girl bibletar, the file number for the image
+        for the girl may not exist, so when the user is racing other players from around the world, the
+        script will crash, because it is trying to draw an image that doesn't exist, in the console
+        it will have an error like this:
+        Uncaught InvalidStateError: Failed to execute 'drawImage' on 'CanvasRenderingContext2D': The HTMLImageElement provided is in the 'broken' state.
 
-        ctx.drawImage(what_to_draw, x_pos_ribp, y_pos_ribp, my_pixels_width, my_pixels_height);
+        and in order to safe guard against this, I will only draw the image if it has finished loading, if it exists,
+        and this is not necessary but I could also add if it's naturalWidth is greater than 0
+        */
+        if (what_to_draw && what_to_draw.complete && what_to_draw.naturalWidth > 0) {
+            ctx.drawImage(what_to_draw, x_pos_ribp, y_pos_ribp, my_pixels_width, my_pixels_height);
+        } else {
+            console.warn("ALERT!! This image is still loading, or it is broken (That means the image might NOT EXIST or the link is corrupted): ", what_to_draw.src);
+        }
         /**Don't run the printMeOutSvgFileNumber function for to long, or else it will crash your computer
          */
         // printMeOutSvgFileNumber();
