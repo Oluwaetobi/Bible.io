@@ -1,3 +1,5 @@
+# This file helps to automate deployments for my WEBSITE hosted on github pages, I was initially using this when I had a bug with broken image file links that I didn't know how to solve, so I stopped using cloudflare pages for frontend deployment, but once I solved the bug I reverted back to cloudflare pages, cloudflare pages is superior to Github pages because you get unlimited bandwidth on Github Pages you get a maximum monthly bandwidth of 100 GB and repository size of 1 GB we give God all the glory. #
+
 # Simple workflow for deploying static content to GitHub Pages
 name: Deploy static content to Pages
 
