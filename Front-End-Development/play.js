@@ -241,6 +241,9 @@ var static_width = 1511;
 const sound = new Audio();
 sound.src = "./sounds/sound_incorrect.mp3";
 
+const sound_game_over = new Audio();
+sound_game_over.src = "./sounds/sound_incorrect_game_over.mp3";
+
 var img_world_map = new Image();
 img_world_map.src = "./images/world_map.svg"; // Set source URL
 img_world_map.alt = "world map image";
@@ -5801,7 +5804,7 @@ function show_results() {
 
         ctx.fillText(players_name, 173 + 5 + results_shift_x, y_baseline + 20 + (i * y_bibletars_box_spacing) + results_shift_y);
         ctx.font = "15px Arial";
-        ctx.fillText("Points: " + Math.round(my_game.everyones_points[players_places_organized[i]]), 173 + 3 + results_shift_x, y_baseline + 40 + (i * y_bibletars_box_spacing) + results_shift_y);
+        ctx.fillText("Points: " + Math.round(my_game.everyones_points[players_places_organized[i]]), 173 + 3 + results_shift_x, y_baseline + 36 + (i * y_bibletars_box_spacing) + results_shift_y);
 
        function loadCountryData() {
             img_countries = new Image();
@@ -5955,21 +5958,26 @@ function check_if_answer_is_correct(my_answer_html) {
     if (my_answer_html == correct_answer) {
         this_game_points += 1;
     } else {
-        // play incorrect sound
-        sound.play();
         /**Push questions into array, I don't think I need to JSON.stringify it because
          * it is already text and should be a string. But once home_page = 4, which means the game is
          * over I'll be able to display the questions the player got wrong and they
          * can go figure the answers themselves, this forces users to go study the Bible
          * instead of me just giving the answers straight up to them
-         */
-        question_I_got_wrong.push(question.innerText);
-        questions_wrong_text.innerText += (question_I_got_wrong.length + ". " + question.innerText);
-        // I'm trying to get it to go onto a new line, but it's not working
-        questions_wrong_text.innerText += "  -  \n";
-        my_game.questions_wrong[0] += 1;
-        if (my_game.questions_wrong[0] >= 5) {
-            kick_me_out_of_the_game();
+        */
+       question_I_got_wrong.push(question.innerText);
+       questions_wrong_text.innerText += (question_I_got_wrong.length + ". " + question.innerText);
+       // I'm trying to get it to go onto a new line, but it's not working
+       questions_wrong_text.innerText += "  -  \n";
+       my_game.questions_wrong[0] += 1;
+       if (my_game.questions_wrong[0] >= 5) {
+           kick_me_out_of_the_game();
+
+           // play incorrect sound
+            sound_game_over.play();
+
+        } else {
+            // play incorrect sound
+            sound.play();
         }
 
     }
@@ -6516,7 +6524,7 @@ function level_1_Questions () {
         answer4.innerText += `God `;
         correct_answer = 2;
     }
-    if (randomQuestion == 53) {
+    if (randomQuestion == 54) {
         question.innerText = `Who did Eve blame when God confronted her after eating the forbidden fruit?   `;
         answer1.innerText += `herself `;
         answer2.innerText += `Adam`;
@@ -6524,7 +6532,7 @@ function level_1_Questions () {
         answer4.innerText += `God `;
         correct_answer = 3;
     }
-    if (randomQuestion == 54) {
+    if (randomQuestion == 55) {
         question.innerText = `Who did the serpent blame when God confronted him for his deception?   `;
         answer1.innerText += `Adam `;
         answer2.innerText += `Eve `;
