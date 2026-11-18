@@ -277,6 +277,8 @@ form div.incorrect input {
 }
 #error-message {
     color: rgb(175, 0, 0);
+    text-align: center;
+    text-shadow: 0px 0px 2px rgb(255, 255, 255);
 }
 
 /* It is important to note how to you position relative and absolute, absolute sets the child element relative

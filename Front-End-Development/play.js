@@ -499,6 +499,10 @@ function update_Data_And_Continue_Game() {
 
     makePost_or_Patch_Request_hall_of_fame();
 
+    // free up log memory
+    console.clear();
+    console.warn("The console was cleared to free up memory space");
+
 }
 
 async function makePost_or_Patch_Request_hall_of_fame() {

@@ -90,7 +90,7 @@ form.addEventListener('submit', (e) => {
     
 })
 
-var accounts_creation_underway_message = "STOP trying to sign up, this Website is still under HEAVY CONSTRUCTION! Feel free to play Bible.io with a GUEST ACCOUNT";
+var accounts_creation_underway_message = "Account registration is temporarily disabled while Bible.io is under active development. In the meantime, you are welcome to explore and play Bible.io using a Guest Account.";
 
 function getSignupFormErrors(email, username, password, repeatPassword) {
     let errors = []
