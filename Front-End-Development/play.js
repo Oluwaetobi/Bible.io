@@ -7863,6 +7863,23 @@ function let_it_snow () {
     }
 }
 
+let scale = 1;
+function scale_web_size_based_on_users_pc_or_mobile_width () {
+    /** The goal of this function is to automatically scale the screen size of the user's device
+     * to the default average size that it should be for the Bible.io on PC, in landscape mode, however
+     * users are still free to zoom in and out via their devices
+     */
+    var width_of_screen_size = window.innerWidth;
+    /* do 2 - scale so that scale acts as 1 at the start and increases, 
+    since I'm no longer do += I'm doing -= */
+    if ((width_of_screen_size*(2 - scale)) < 2000) {
+        scale -= 0.1;
+        // console.log(window.innerWidth);
+    }
+
+    document.body.style.zoom = scale;
+}
+
 function drawGame() {
     
     
@@ -7905,6 +7922,7 @@ function drawGame() {
     displayMouseX_and_MouseY(20, canvas.height - 20);
     show_or_hide_html_elements();
     start_timer();
+    scale_web_size_based_on_users_pc_or_mobile_width();
 
 }
 
