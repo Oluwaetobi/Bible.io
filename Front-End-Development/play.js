@@ -7863,21 +7863,78 @@ function let_it_snow () {
     }
 }
 
+var scaled_screen_size = false;
+var width_of_screen_size;
 let scale = 1;
+/* checks at the start, otherwise will jitter when user tries to zoom in or out, and makes 
+zooming in or out impossible */
+var zoom_in;
+if (window.innerWidth <= 1540) {
+    zoom_in = false;
+} else {
+    zoom_in = true;
+}
 function scale_web_size_based_on_users_pc_or_mobile_width () {
     /** The goal of this function is to automatically scale the screen size of the user's device
      * to the default average size that it should be for the Bible.io on PC, in landscape mode, however
-     * users are still free to zoom in and out via their devices
-     */
-    var width_of_screen_size = window.innerWidth;
+     * users are still free to zoom in and out via their devices if they want to and if deemed necessary
+    */
+   width_of_screen_size = window.innerWidth;
+   
+   
     /* do 2 - scale so that scale acts as 1 at the start and increases, 
     since I'm no longer do += I'm doing -= */
-    if ((width_of_screen_size*(2 - scale)) < 2000) {
-        scale -= 0.1;
-        // console.log(window.innerWidth);
+    // 1533 
+    if (zoom_in == false) {
+        // zoom out
+        if (scaled_screen_size == false) {
+            // does it only once upon screen loading, that way zoom in and out on their computer doesn't get broken
+            
+            // do it while the screen size is smaller than the standard bible.io screen length
+            while ((width_of_screen_size*(2 - scale)) < 1533) {
+                scale -= 0.1;
+                // console.log(window.innerWidth);
+            }
+        }
+        canvas.width = (width_of_screen_size*(2 - scale));
+        canvas.height = (canvas.width / 2.1) + 5;
+        // console.log(scale)
+    }
+    
+    if (zoom_in == true) {
+        // zoom in
+        // plus 10 just to give it a bit of leniency so that it doesn't jitter forever
+        if (scaled_screen_size == false) {
+            // does it only once upon screen loading, that way zoom in and out on their computer doesn't get broken
+            
+            // do it while the screen size is bigger than the standard bible.io screen length
+            while (width_of_screen_size*(2 - scale) > (1533 + 10)) {
+                // when I increase scale, the screen for body zooms in
+                scale += 0.1;
+            }
+        }
+        canvas.width = (width_of_screen_size*scale);
+        canvas.height = (canvas.width / 2.1);
+        
     }
 
+    scaled_screen_size = true;
+
     document.body.style.zoom = scale;
+
+    /* 
+    I want to further explain this function, there are lots of things that I am doing here that can be
+    very confusing especially when zooming in and out, you have to be mindful of the fact this function 
+    is logical, and works highly accurately, but the way the logic is presented can be confusing. First of
+    all, remember that the zooming in and out and scaling the screen size based off of there user's
+    screen width is done at the very start, if not then the screen would jitter when they tried zooming
+    in or out, when a user zooms out, it is believed that the user has a big computer, so Bible.io will
+    scale the screen accordingly and will make the screen size larger, when a user zooms in, it is believed
+    that the user has a small screen so it will zoom out accordingly, this is why when a user zooms in or
+    out and refreshes it looks like all their efforts to zoom in or out are ignored. Sometimes you have
+    to sacrifice one thing to have the other, and in this case after talking with my friend CuzT I might leave
+    things like this depending on whether I get complaints or not, God bless and stay blessed.
+    */
 }
 
 function drawGame() {
@@ -7900,9 +7957,9 @@ function drawGame() {
         connectPlayers();
         /** declared loadingbox inside connectPlayers() function, that way it doesn't go on top
          * of the box that says connect players on computers with smaller screen dimensions
-         */
-        // loadingBox();
-        myBibletar();
+        */
+       // loadingBox();
+       myBibletar();
     } else if (home_page == 3) {
         draw_All_Players();
         if (kicked_out == true) {
@@ -7922,15 +7979,17 @@ function drawGame() {
     displayMouseX_and_MouseY(20, canvas.height - 20);
     show_or_hide_html_elements();
     start_timer();
-    scale_web_size_based_on_users_pc_or_mobile_width();
-
+    
 }
 
 function resizeCanvas() {
     // Sets the internal drawing resolution to the exact window bounds
-    canvas.width = window.innerWidth -2;
-    canvas.height = window.innerHeight -90;
+    // canvas.width = window.innerWidth -2;
+    // canvas.height = window.innerHeight -90;
 
+    // canvas size must be set before anything is drawn on the screen
+    scale_web_size_based_on_users_pc_or_mobile_width();
+    
     /* Note: Changing the canvas size clears the context state. 
     Redraw or call your render function*/
 }
