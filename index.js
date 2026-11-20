@@ -53,17 +53,18 @@ when people run Bible.io on the Web, the bookmark bar is there, so I have to acc
 so I have to add an extra 80 pixels to the standard bibleio_screen_width_size
 
 What does this mean, this means henceforth, when ever I'm coding I don't ever have to treat the Website
-with the minus 80 pixels, I can assume that the way it appears on my screen from run without debugging is
-the exact same way it will appear on a player's screen regardless of how big or small their monitor is,
-yay!! This is a very big accomplishment, we give God all the glory, we have an automatic rescaler
-called scale_web_size_based_on_users_pc_or_mobile_width that rescales the size of the website on pages
-that have the canvas as well as this, we give God all the glory.
+with the minus 40 pixels of height, I can assume that the way it appears on my screen from 
+"run without debugging" is the exact same way it will appear on a player's screen regardless
+ of how big or small their monitor is, yay!! This is a very big accomplishment, we give God 
+ all the glory, we have an automatic rescaler called 
+ scale_web_size_based_on_users_pc_or_mobile_width function that rescales the size of the website on pages
+that have a canvas built with JavaScript as well as this, we give God all the glory.
 */
 var standard_bibleio_screen_width_size;
 if (i_am_a_developer == true) {
      standard_bibleio_screen_width_size = 1536;
 } else {
-     standard_bibleio_screen_width_size = 1610;
+     standard_bibleio_screen_width_size = 1570;
 }
 sessionStorage.setItem('standard_bibleio_screen_width_size', JSON.stringify(standard_bibleio_screen_width_size));
 
