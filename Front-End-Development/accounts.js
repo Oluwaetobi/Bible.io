@@ -1828,9 +1828,13 @@ function reset_zoom_data_because_user_switched_mobile_or_device_into_portrait_or
     scaled_screen_size = false;
     // reset scale to default number which is one
     scale = 1;
+    /* IMPORTANT!!!!
+    only set it to window.innerWidth, if you need to run tests, otherwise it should equal window.screen.width
+    */
+    width_of_screen_size = window.screen.width;
     /* checks at the start, otherwise will jitter when user tries to zoom in or out, and makes 
 zooming in or out impossible */
-    if (window.innerWidth <= standard_bibleio_screen_width_size) {
+    if (width_of_screen_size <= standard_bibleio_screen_width_size) {
         zoom_in = false;
     } else {
         zoom_in = true;
@@ -1866,13 +1870,14 @@ function scale_web_size_based_on_users_pc_or_mobile_width () {
             I need to run more tests because of complaints for users
             */
             // do it while the screen size is smaller than the standard bible.io screen length
-            while ((width_of_screen_size*(2 - scale)) < standard_bibleio_screen_width_size) {
+            while ((width_of_screen_size*(1/scale)) < standard_bibleio_screen_width_size) {
                 // when I decrease the scale, the screen for the body zooms out
-                scale -= 0.1;
+                // 0.01 is more accurate than 0.1
+                scale -= 0.01;
                 // console.log(width_of_screen_size);
             }
         }
-        canvas.width = (width_of_screen_size*(2 - scale));
+        canvas.width = (width_of_screen_size*(1/scale));
         canvas.height = (canvas.width / convert_height_based_off_width);
         // console.log(scale)
     }
@@ -1891,10 +1896,11 @@ function scale_web_size_based_on_users_pc_or_mobile_width () {
             
             while (width_of_screen_size*(2 - scale) > standard_bibleio_screen_width_size) {
                 // when I increase scale, the screen for body zooms in
-                scale += 0.1;
+                // 0.01 makes it more accurate than 0.1
+                scale += 0.01;
             }
         }
-        canvas.width = (width_of_screen_size*scale);
+        canvas.width = (width_of_screen_size*(2 - scale));
         canvas.height = (canvas.width / convert_height_based_off_width);
         
     }
@@ -1902,6 +1908,12 @@ function scale_web_size_based_on_users_pc_or_mobile_width () {
     // set to true at the end so that the zoom in only happens at the very start of the screen loading
     scaled_screen_size = true;
 
+
+    /* Take note 
+    The zoom property accepts positive numbers (where 1 is 100%, 1.5 is 150%, 0.5 is 50%) 
+    or percentages (like 150%), plus keywords. A negative number like -3 is out of range, so 
+    the style declaration is discarded or falls back to 1, which is why is use multiplication
+    for zoom ins, and division for zoom zoom out*/
     document.body.style.zoom = scale;
 
     // console.log(window.screen.width/window.screen.height);
