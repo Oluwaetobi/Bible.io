@@ -38,6 +38,10 @@ if (developer_tools) {
     localStorage.setItem('i_am_a_developer', JSON.stringify(i_am_a_developer));
 }
 
+/* standard Bible.io width size is supposed to be 1536 */
+var standard_bibleio_screen_width_size = 1536;
+sessionStorage.setItem('standard_bibleio_screen_width_size', JSON.stringify(standard_bibleio_screen_width_size));
+
 
 
 function store_big_books_sessionally () {

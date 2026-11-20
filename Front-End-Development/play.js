@@ -7863,13 +7863,14 @@ function let_it_snow () {
     }
 }
 
+const standard_bibleio_screen_width_size = JSON.parse(sessionStorage.getItem('standard_bibleio_screen_width_size'));
 var scaled_screen_size = false;
 var width_of_screen_size;
 let scale = 1;
 /* checks at the start, otherwise will jitter when user tries to zoom in or out, and makes 
 zooming in or out impossible */
 var zoom_in;
-if (window.innerWidth <= 1540) {
+if (window.innerWidth <= standard_bibleio_screen_width_size) {
     zoom_in = false;
 } else {
     zoom_in = true;
@@ -7879,7 +7880,7 @@ function scale_web_size_based_on_users_pc_or_mobile_width () {
      * to the default average size that it should be for the Bible.io on PC, in landscape mode, however
      * users are still free to zoom in and out via their devices if they want to and if deemed necessary
     */
-   width_of_screen_size = window.innerWidth;
+   width_of_screen_size = window.screen.width;
    
    
     /* do 2 - scale so that scale acts as 1 at the start and increases, 
@@ -7891,7 +7892,7 @@ function scale_web_size_based_on_users_pc_or_mobile_width () {
             // does it only once upon screen loading, that way zoom in and out on their computer doesn't get broken
             
             // do it while the screen size is smaller than the standard bible.io screen length
-            while ((width_of_screen_size*(2 - scale)) < 1533) {
+            while ((width_of_screen_size*(2 - scale)) < standard_bibleio_screen_width_size) {
                 scale -= 0.1;
                 // console.log(window.innerWidth);
             }
@@ -7903,12 +7904,12 @@ function scale_web_size_based_on_users_pc_or_mobile_width () {
     
     if (zoom_in == true) {
         // zoom in
-        // plus 10 just to give it a bit of leniency so that it doesn't jitter forever
         if (scaled_screen_size == false) {
             // does it only once upon screen loading, that way zoom in and out on their computer doesn't get broken
             
             // do it while the screen size is bigger than the standard bible.io screen length
-            while (width_of_screen_size*(2 - scale) > (1533 + 10)) {
+            // plus 10 just to give it a bit of leniency so that it doesn't jitter forever
+            while (width_of_screen_size*(2 - scale) > (standard_bibleio_screen_width_size + 10)) {
                 // when I increase scale, the screen for body zooms in
                 scale += 0.1;
             }
@@ -7922,6 +7923,8 @@ function scale_web_size_based_on_users_pc_or_mobile_width () {
 
     document.body.style.zoom = scale;
 
+    // console.log(window.screen.width);
+
     /* 
     I want to further explain this function, there are lots of things that I am doing here that can be
     very confusing especially when zooming in and out, you have to be mindful of the fact this function 
@@ -7931,9 +7934,16 @@ function scale_web_size_based_on_users_pc_or_mobile_width () {
     in or out, when a user zooms out, it is believed that the user has a big computer, so Bible.io will
     scale the screen accordingly and will make the screen size larger, when a user zooms in, it is believed
     that the user has a small screen so it will zoom out accordingly, this is why when a user zooms in or
-    out and refreshes it looks like all their efforts to zoom in or out are ignored. Sometimes you have
-    to sacrifice one thing to have the other, and in this case after talking with my friend CuzT I might leave
-    things like this depending on whether I get complaints or not, God bless and stay blessed.
+    out and refreshes it looks like all their efforts to zoom in or out are ignored. READ THE NEXT LINE
+    IT IS VERY IMPORTANT
+    however that has changed because in javascript there are 2 things called
+    window.screen.width and window.innerWidth
+    window.screen.width measures the total width of the user's physical monitor, whereas
+     window.innerWidth measures the width of the browser's viewable content area (the viewport)
+
+     in simple words this means, window.screen.width is not affected when a user zooms in or out
+     while window.innerWidth is affected by it that's the trick, since I have tested everything
+     and I know that it works, I can change window.innerWidth to window.screen.width
     */
 }
 
@@ -7984,6 +7994,8 @@ function drawGame() {
 
 function resizeCanvas() {
     // Sets the internal drawing resolution to the exact window bounds
+
+    // I commented out this because I'm using the scale_web_size function down below
     // canvas.width = window.innerWidth -2;
     // canvas.height = window.innerHeight -90;
 
