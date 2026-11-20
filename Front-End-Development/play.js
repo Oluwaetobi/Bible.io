@@ -356,7 +356,8 @@ function form_input_answer_by_clicking (answer_entered_html) {
 window.addEventListener('mousemove', (event) => {
     mouseX = event.clientX;
     mouseY = event.clientY;
-    // account for the automatic zoom in and zoom out function called scale_web_size_based_on_users_pc_or_mobile_width
+    /* account for the automatic zoom in and zoom out function called
+     scale_web_size_based_on_users_pc_or_mobile_width */
     mouseX /= scale;
     mouseY /= scale;
     // This is to counter for where the canvas is actually created on the screen
