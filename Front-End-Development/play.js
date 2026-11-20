@@ -7990,6 +7990,9 @@ function scale_web_size_based_on_users_pc_or_mobile_width () {
 
     document.body.style.zoom = scale;
 
+    // console.log(window.screen.width/window.screen.height);
+    // console.log(canvas.height);
+
     // console.log(window.screen.width);
 
     /* 
