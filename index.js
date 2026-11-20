@@ -38,7 +38,13 @@ if (developer_tools) {
     localStorage.setItem('i_am_a_developer', JSON.stringify(i_am_a_developer));
 }
 
-/* standard Bible.io width size is supposed to be 1536 */
+/* standard Bible.io width size is supposed to be 1536, if you change it to something higher, Bible.io
+will automatically try to resize everyone's screen accordingly and it's highly accurately, but it will
+only do it on account.js, hall_of_fame.js, learn.js, play.js, and shop.js, because those pages
+have canvas built with JavaScript, yes all files are built with JavaScript but
+not all the files have a canvas, therefore there will be no need to rescale anything, the website
+can be handled differently just using HTML and CSS, but we will NOT need to rescale a canvas or the
+body to zoom it in, because there is NO canvas and it is NOT needed */
 var standard_bibleio_screen_width_size = 1536;
 sessionStorage.setItem('standard_bibleio_screen_width_size', JSON.stringify(standard_bibleio_screen_width_size));
 
