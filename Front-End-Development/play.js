@@ -7990,14 +7990,14 @@ function scale_web_size_based_on_users_pc_or_mobile_width () {
             I need to run more tests because of complaints for users
             */
             // do it while the screen size is smaller than the standard bible.io screen length
-            while ((width_of_screen_size*(2 - scale)) < standard_bibleio_screen_width_size) {
+            while ((width_of_screen_size*(1/scale)) < standard_bibleio_screen_width_size) {
                 // when I decrease the scale, the screen for the body zooms out
                 // 0.01 is more accurate than 0.1
                 scale -= 0.01;
                 // console.log(width_of_screen_size);
             }
         }
-        canvas.width = (width_of_screen_size*(2 - scale));
+        canvas.width = (width_of_screen_size*(1/scale));
         canvas.height = (canvas.width / convert_height_based_off_width);
         // console.log(scale)
     }
@@ -8028,6 +8028,12 @@ function scale_web_size_based_on_users_pc_or_mobile_width () {
     // set to true at the end so that the zoom in only happens at the very start of the screen loading
     scaled_screen_size = true;
 
+
+    /* Take note 
+    The zoom property accepts positive numbers (where 1 is 100%, 1.5 is 150%, 0.5 is 50%) 
+    or percentages (like 150%), plus keywords. A negative number like -3 is out of range, so 
+    the style declaration is discarded or falls back to 1, which is why is use multiplication
+    for zoom ins, and division for zoom zoom out*/
     document.body.style.zoom = scale;
 
     // console.log(window.screen.width/window.screen.height);
