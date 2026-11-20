@@ -7867,6 +7867,7 @@ const standard_bibleio_screen_width_size = JSON.parse(sessionStorage.getItem('st
 var scaled_screen_size = false;
 var width_of_screen_size;
 let scale = 1;
+const convert_height_based_off_width = 2.1;
 /* checks at the start, otherwise will jitter when user tries to zoom in or out, and makes 
 zooming in or out impossible */
 var zoom_in;
@@ -7880,45 +7881,63 @@ function scale_web_size_based_on_users_pc_or_mobile_width () {
      * to the default average size that it should be for the Bible.io on PC, in landscape mode, however
      * users are still free to zoom in and out via their devices if they want to and if deemed necessary
     */
-   width_of_screen_size = window.screen.width;
+
+    /* IMPORTANT!!!!
+    only set it to window.innerWidth, if you need to run tests, otherwise it should equal window.screen.width
+    */
+    width_of_screen_size = window.screen.width;
    
    
-    /* do 2 - scale so that scale acts as 1 at the start and increases, 
+    /* do 2 - scale so that scale acts as 1 at the start and increases the left side of the operator comparison, 
     since I'm no longer do += I'm doing -= */
-    // 1533 
     if (zoom_in == false) {
         // zoom out
         if (scaled_screen_size == false) {
-            // does it only once upon screen loading, that way zoom in and out on their computer doesn't get broken
-            
+            /* does it only once upon screen loading, 
+            that way zoom in and out on their computer doesn't get broken, but it doesn't matter 
+            anymore even if I removed it, unless I changed width_of_screen_size to equal window.innerWidth
+            then it would be broken, but I am going to keep it here just in case for some reason
+            I need to run more tests because of complaints for users
+            */
             // do it while the screen size is smaller than the standard bible.io screen length
             while ((width_of_screen_size*(2 - scale)) < standard_bibleio_screen_width_size) {
+                // when I decrease the scale, the screen for the body zooms out
                 scale -= 0.1;
                 // console.log(window.innerWidth);
             }
         }
         canvas.width = (width_of_screen_size*(2 - scale));
-        canvas.height = (canvas.width / 2.1) + 5;
+        canvas.height = (canvas.width / convert_height_based_off_width) + 5;
         // console.log(scale)
     }
     
     if (zoom_in == true) {
         // zoom in
         if (scaled_screen_size == false) {
-            // does it only once upon screen loading, that way zoom in and out on their computer doesn't get broken
+            /* does it only once upon screen loading, 
+            that way zoom in and out on their computer doesn't get broken but it doesn't matter 
+            anymore even if I removed it, unless I changed width_of_screen_size to equal window.innerWidth
+            then it would be broken, but I am going to keep it here just in case for some reason
+            I need to run more tests because of complaints for users
+            */
             
             // do it while the screen size is bigger than the standard bible.io screen length
-            // plus 10 just to give it a bit of leniency so that it doesn't jitter forever
+            
+            /* plus 10 just to give it a bit of leniency so that it doesn't jitter forever although it doesn't
+             really matter anymore because this thing only runs once upon screen loading and I have 
+             2 if statements one for zoom_in == true and one for zoom_in == false which is done
+             at the very start of the screen loading*/
             while (width_of_screen_size*(2 - scale) > (standard_bibleio_screen_width_size + 10)) {
                 // when I increase scale, the screen for body zooms in
                 scale += 0.1;
             }
         }
         canvas.width = (width_of_screen_size*scale);
-        canvas.height = (canvas.width / 2.1);
+        canvas.height = (canvas.width / convert_height_based_off_width);
         
     }
 
+    // set to true at the end so that the zoom in only happens at the very start of the screen loading
     scaled_screen_size = true;
 
     document.body.style.zoom = scale;
