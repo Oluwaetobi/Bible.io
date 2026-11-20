@@ -55,11 +55,11 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: rgb(215, 215, 215);
+    background-color: black;
+    /* background-color: rgb(215, 215, 215); */
     scroll-behavior: smooth;
     /* align-items: center; */
-    overflow-x: hidden;
-    background-color: black;
+    overflow: hidden;
 }
 
 .container {
