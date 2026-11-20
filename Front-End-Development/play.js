@@ -8009,7 +8009,7 @@ function scale_web_size_based_on_users_pc_or_mobile_width () {
             
             // do it while the screen size is bigger than the standard bible.io screen length
             
-            while (width_of_screen_size*(2 - scale) > standard_bibleio_screen_width_size) {
+            while (width_of_screen_size*scale > standard_bibleio_screen_width_size) {
                 // when I increase scale, the screen for body zooms in
                 scale += 0.1;
             }
