@@ -4,7 +4,7 @@
     position: fixed;
     top: 0px;
     left: 0px;
-    /* want it to take up the entire screen, since I'm using a function called 
+    /* I want it to take up the entire screen, since I'm using a function called 
     scale_web_size_based_on_users_pc_or_mobile_width in JavaScript for my canvas, I have to do
     100% and not 100vh */
     width: 100%;
