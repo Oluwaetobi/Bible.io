@@ -7992,7 +7992,8 @@ function scale_web_size_based_on_users_pc_or_mobile_width () {
             // do it while the screen size is smaller than the standard bible.io screen length
             while ((width_of_screen_size*(2 - scale)) < standard_bibleio_screen_width_size) {
                 // when I decrease the scale, the screen for the body zooms out
-                scale -= 0.1;
+                // 0.01 is more accurate than 0.1
+                scale -= 0.01;
                 // console.log(width_of_screen_size);
             }
         }
@@ -8015,7 +8016,8 @@ function scale_web_size_based_on_users_pc_or_mobile_width () {
             
             while (width_of_screen_size*(2 - scale) > standard_bibleio_screen_width_size) {
                 // when I increase scale, the screen for body zooms in
-                scale += 0.1;
+                // 0.01 makes it more accurate than 0.1
+                scale += 0.01;
             }
         }
         canvas.width = (width_of_screen_size*(2 - scale));
