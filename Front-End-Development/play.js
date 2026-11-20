@@ -7909,12 +7909,12 @@ function drawGame() {
     
 }
 
+// AUTOMATIC SCALE AND WEB ZOOMS FUNCTIONS AND DATA
 const standard_bibleio_screen_width_size = JSON.parse(sessionStorage.getItem('standard_bibleio_screen_width_size'));
 var scaled_screen_size = false;
 var width_of_screen_size;
 let scale = 1;
-// the converter should be 2.1
-const convert_height_based_off_width = 2.1;
+const convert_height_based_off_width = JSON.parse(sessionStorage.getItem('convert_height_based_off_width'));
 /* checks at the start, otherwise will jitter when user tries to zoom in or out, and makes 
 zooming in or out impossible */
 var zoom_in;
@@ -7935,6 +7935,7 @@ function scale_web_size_based_on_users_pc_or_mobile_width () {
     */
     width_of_screen_size = window.screen.width;
    
+    // console.log((window.innerWidth - 2)/(window.innerHeight - 90));  
    
     /* do 2 - scale so that scale acts as 1 at the start and increases the left side of the operator comparison, 
     since I'm no longer do += I'm doing -= */
@@ -7955,7 +7956,7 @@ function scale_web_size_based_on_users_pc_or_mobile_width () {
             }
         }
         canvas.width = (width_of_screen_size*(2 - scale));
-        canvas.height = (canvas.width / convert_height_based_off_width) + 5;
+        canvas.height = (canvas.width / convert_height_based_off_width);
         // console.log(scale)
     }
     

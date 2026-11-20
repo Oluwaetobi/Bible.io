@@ -64,7 +64,9 @@ to leave that as a const
 */
 const standard_bibleio_screen_width_size = 1536;
 sessionStorage.setItem('standard_bibleio_screen_width_size', JSON.stringify(standard_bibleio_screen_width_size));
-
+// the converter should be 2.085 | the exact proportional relationship was a division of 2.0842391304347827
+const convert_height_based_off_width = 2.085;
+sessionStorage.setItem('convert_height_based_off_width', convert_height_based_off_width);
 
 
 function store_big_books_sessionally () {
