@@ -57,15 +57,16 @@ with the minus 40 pixels of height (due to the bookmark toolbar)? I can assume t
 appears on my screen from 
 "run without debugging" is the exact same way it will appear on a player's screen.
 
-NO IT DOES NOT, yes, I do have a function called scale_web_size_based_on_users_pc_or_mobile_width that
-rescales everything based off of the size of the user's monitor but the extra 40 pixels of height cannot
-be accounted for with the variable standard_bibleio_screen_width_size, because it is based off of width
-not height, if I ignore that and go ahead and set it to 1500 because I assume I have less space, it
-will cause width problems, because it's assuming there a 2.1 proportional division relationship betwee
-the width and the height, so unfortunately, I cannot do that. User's might have to press the zoom out
-button once
+Yes it sort of does, which is why I am
 */
-var standard_bibleio_screen_width_size = 1536;
+var standard_bibleio_screen_width_size;
+if (i_am_a_developer == true) {
+    standard_bibleio_screen_width_size = 1536;
+} else {
+    /* account for bookmark bar on player's page which takes up extra height, set width to a smaller
+    height so that the user's computer zooms out a bit */
+    standard_bibleio_screen_width_size = 1500;
+}
 sessionStorage.setItem('standard_bibleio_screen_width_size', JSON.stringify(standard_bibleio_screen_width_size));
 
 
