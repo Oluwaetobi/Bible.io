@@ -51,6 +51,13 @@ is 1536, I am going to change it to 1580 because, when you're running Bible.io f
 via file:///C:/ or LocalHost, there is no bookmark bar meaning 40px of height is not covered, however
 when people run Bible.io on the Web, the bookmark bar is there, so I have to account for that in the width
 so I have to add an extra 80 pixels to the standard bibleio_screen_width_size
+
+What does this mean, this means henceforth, when ever I'm coding I don't ever have to treat the Website
+with the minus 80 pixels, I can assume that the way it appears on my screen from run without debugging is
+the exact same way it will appear on a player's screen regardless of how big or small their monitor is,
+yay!! This is a very big accomplishment, we give God all the glory, we have an automatic rescaler
+called scale_web_size_based_on_users_pc_or_mobile_width that rescales the size of the website on pages
+that have the canvas as well as this, we give God all the glory.
 */
 var standard_bibleio_screen_width_size;
 if (i_am_a_developer == true) {
