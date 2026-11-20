@@ -1469,7 +1469,7 @@ function displayTextInfo () {
     var verse_x_pos = 500;
     var verse_y_pos = 700;
     if (canvas.height > verse_y_pos) {
-        verse_y_pos = canvas.height - 40;
+        verse_y_pos = canvas.height - 30;
     }
     ctx.font = "15px Arial";
     ctx.fillStyle = 'rgb(252, 252, 251)';

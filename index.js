@@ -66,7 +66,7 @@ if (i_am_a_developer == true) {
 } else {
     /* account for bookmark bar on player's page which takes up extra height, set width to a higher
     width so that the user's computer zooms out a bit */
-    standard_bibleio_screen_width_size = 1620;
+    standard_bibleio_screen_width_size = 1536;
 }
 sessionStorage.setItem('standard_bibleio_screen_width_size', JSON.stringify(standard_bibleio_screen_width_size));
 
