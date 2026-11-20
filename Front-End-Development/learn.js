@@ -2064,6 +2064,7 @@ const standard_bibleio_screen_width_size = JSON.parse(sessionStorage.getItem('st
 var scaled_screen_size = false;
 var width_of_screen_size;
 let scale = 1;
+// the converter should be 2.1
 const convert_height_based_off_width = 2.1;
 /* checks at the start, otherwise will jitter when user tries to zoom in or out, and makes 
 zooming in or out impossible */

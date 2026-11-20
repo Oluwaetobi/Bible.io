@@ -44,8 +44,15 @@ only do it on account.js, hall_of_fame.js, learn.js, play.js, and shop.js, becau
 have canvas built with JavaScript, yes all files are built with JavaScript but
 not all the files have a canvas, therefore there will be no need to rescale anything, the website
 can be handled differently just using HTML and CSS, but we will NOT need to rescale a canvas or the
-body to zoom it in, because there is NO canvas and it is NOT needed */
-var standard_bibleio_screen_width_size = 1536;
+body to zoom it in, because there is NO canvas and it is NOT needed 
+
+Extra Notes: however while it is true that the standard width size that Bible.io was initially built with
+is 1536, I am going to change it to 1580 because, when you're running Bible.io from your Hard Drive
+via file:///C:/ or LocalHost, there is no bookmark bar meaning 40px of height is not covered, however
+when people run Bible.io on the Web, the bookmark bar is there, so I have to account for that in the width
+so I have to add an extra 80 pixels to the standard bibleio_screen_width_size
+*/
+var standard_bibleio_screen_width_size = 1610;
 sessionStorage.setItem('standard_bibleio_screen_width_size', JSON.stringify(standard_bibleio_screen_width_size));
 
 
