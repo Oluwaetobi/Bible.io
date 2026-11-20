@@ -57,18 +57,10 @@ with the minus 40 pixels of height (due to the bookmark toolbar)? I can assume t
 appears on my screen from 
 "run without debugging" is the exact same way it will appear on a player's screen.
 
-almost, not quite, just try not to put anything at the very bottom of the screen I guess, 
-also that is why I am reducing the standard_bibleio_screen_width_size when i_am_a_developer
-= false
+No, not anymore, there are too many problems when I try to change the standard bibleio screen width size
+to a different number that is slightly bigger, for example, some of the text is shifted into the wrong places
 */
-var standard_bibleio_screen_width_size;
-if (i_am_a_developer == true) {
-    standard_bibleio_screen_width_size = 1536;
-} else {
-    /* account for bookmark bar on player's page which takes up extra height, set width to a higher
-    width so that the user's computer zooms out a bit */
-    standard_bibleio_screen_width_size = 1555;
-}
+var standard_bibleio_screen_width_size = 1536;
 sessionStorage.setItem('standard_bibleio_screen_width_size', JSON.stringify(standard_bibleio_screen_width_size));
 
 
