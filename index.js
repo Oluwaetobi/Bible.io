@@ -59,8 +59,10 @@ appears on my screen from
 
 No, not anymore, there are too many problems when I try to change the standard bibleio screen width size
 to a different number that is slightly bigger, for example, some of the text is shifted into the wrong places
+also apprently changing the number also cuz some weird bug and glitches in my code, WOW!!!, guess I'll have
+to leave that as a const
 */
-var standard_bibleio_screen_width_size = 1536;
+const standard_bibleio_screen_width_size = 1536;
 sessionStorage.setItem('standard_bibleio_screen_width_size', JSON.stringify(standard_bibleio_screen_width_size));
 
 
