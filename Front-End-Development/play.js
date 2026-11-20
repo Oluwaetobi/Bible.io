@@ -7948,9 +7948,13 @@ function reset_zoom_data_because_user_switched_mobile_or_device_into_portrait_or
     scaled_screen_size = false;
     // reset scale to default number which is one
     scale = 1;
+    /* IMPORTANT!!!!
+    only set it to window.innerWidth, if you need to run tests, otherwise it should equal window.screen.width
+    */
+    width_of_screen_size = window.screen.width;
     /* checks at the start, otherwise will jitter when user tries to zoom in or out, and makes 
 zooming in or out impossible */
-    if (window.innerWidth <= standard_bibleio_screen_width_size) {
+    if (width_of_screen_size <= standard_bibleio_screen_width_size) {
         zoom_in = false;
     } else {
         zoom_in = true;
