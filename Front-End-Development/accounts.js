@@ -264,6 +264,17 @@ window.addEventListener('mousemove', (event) => {
     mouseY -= top_border;
 })
 
+const portraitQuery = window.matchMedia("(orientation: portrait");
+portraitQuery.addEventListener("change", (event) => {
+    if (event.matches) {
+        console.log("You switched your mobile/device into Portrait Mode");
+    } else {
+        console.log("You switched your mobile/device into to Landscape Mode")
+    }
+    // the user changed his or her device into portrait or landscape mode
+    reset_zoom_data_because_user_switched_mobile_or_device_into_portrait_or_landscape_mode();
+});
+
 function wipeOutEntireScreen() {
     ctx.clearRect(0,0, canvas.width, canvas.height);
     if (gameOn != false) {
@@ -1807,6 +1818,28 @@ if (window.innerWidth <= standard_bibleio_screen_width_size) {
 } else {
     zoom_in = true;
 }
+
+function reset_zoom_data_because_user_switched_mobile_or_device_into_portrait_or_landscape_mode () {
+    /* Alright, so why do I have to do this, the reason being is because I noticed that when you
+    switch your mobile into portrait or landscape mode, you actually need to rescale the 
+    zoom because both window.scren.width and window.innerWidth will change making
+    the previous zoom inaccurate */
+    // reset scaled_screen_size to false
+    scaled_screen_size = false;
+    // reset scale to default number which is one
+    scale = 1;
+    /* checks at the start, otherwise will jitter when user tries to zoom in or out, and makes 
+zooming in or out impossible */
+    if (window.innerWidth <= standard_bibleio_screen_width_size) {
+        zoom_in = false;
+    } else {
+        zoom_in = true;
+    }
+    /* reset necessary data, ok now you can re call the scale_web_size_based_on_users_pc_or_mobile_width
+    function */
+    scale_web_size_based_on_users_pc_or_mobile_width();
+}
+
 function scale_web_size_based_on_users_pc_or_mobile_width () {
     // this function was originally made in play.js
     /** The goal of this function is to automatically scale the screen size of the user's device

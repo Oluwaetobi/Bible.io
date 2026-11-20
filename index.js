@@ -39,28 +39,19 @@ if (developer_tools) {
 }
 
 /* standard Bible.io width size is supposed to be 1536, if you change it to something higher, Bible.io
-will automatically try to resize everyone's screen accordingly and it's highly accurately, but it will
-only do it on account.js, hall_of_fame.js, learn.js, play.js, and shop.js, because those pages
-have canvas built with JavaScript, yes all files are built with JavaScript but
-not all the files have a canvas, therefore there will be no need to rescale anything, the website
-can be handled differently just using HTML and CSS, but we will NOT need to rescale a canvas or the
-body to zoom it in, because there is NO canvas and it is NOT needed 
-
-Extra Notes: however while it is true that the standard width size that Bible.io was initially built with
-is 1536, I am going to change it to 1580 because, when you're running Bible.io from your Hard Drive
-via file:///C:/ or LocalHost, there is no bookmark bar meaning 40px of height is not covered, however
-when people run Bible.io on the Web, the bookmark bar is there, so I have to account for that in the width
-so I have to add an extra 80 pixels to the standard bibleio_screen_width_size
+will automatically try to resize everyone's screen accordingly and it's highly accurately, it used to
+only do it for account.js, hall_of_fame.js, learn.js, play.js, and shop.js, but now it does it for all
+pages, because I've realized that if someone is playing this on their TV or phone, they don't just
+need it to resize the games or built in canvas powered with JavaScript but all the pages including
+the login pages, about page and etc.
 
 Does this also mean that when ever I'm coding I don't ever have to treat the Website
 with the minus 40 pixels of height (due to the bookmark toolbar)? I can assume that the way it 
 appears on my screen from 
 "run without debugging" is the exact same way it will appear on a player's screen.
 
-No, not anymore, there are too many problems when I try to change the standard bibleio screen width size
-to a different number that is slightly bigger, for example, some of the text is shifted into the wrong places
-also apprently changing the number also cuz some weird bug and glitches in my code, WOW!!!, guess I'll have
-to leave that as a const
+No, because it's confusing and slightly problematic, I'm just going to leave it as 1536 whether the
+user is a developer or not.
 */
 const standard_bibleio_screen_width_size = 1536;
 sessionStorage.setItem('standard_bibleio_screen_width_size', JSON.stringify(standard_bibleio_screen_width_size));
