@@ -7971,11 +7971,7 @@ function scale_web_size_based_on_users_pc_or_mobile_width () {
             
             // do it while the screen size is bigger than the standard bible.io screen length
             
-            /* plus 10 just to give it a bit of leniency so that it doesn't jitter forever although it doesn't
-             really matter anymore because this thing only runs once upon screen loading and I have 
-             2 if statements one for zoom_in == true and one for zoom_in == false which is done
-             at the very start of the screen loading*/
-            while (width_of_screen_size*(2 - scale) > (standard_bibleio_screen_width_size + 10)) {
+            while (width_of_screen_size*(2 - scale) > standard_bibleio_screen_width_size) {
                 // when I increase scale, the screen for body zooms in
                 scale += 0.1;
             }
