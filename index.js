@@ -52,20 +52,20 @@ via file:///C:/ or LocalHost, there is no bookmark bar meaning 40px of height is
 when people run Bible.io on the Web, the bookmark bar is there, so I have to account for that in the width
 so I have to add an extra 80 pixels to the standard bibleio_screen_width_size
 
-What does this mean, this means henceforth, when ever I'm coding I don't ever have to treat the Website
-with the minus 40 pixels of height, I can assume that the way it appears on my screen from 
-"run without debugging" is the exact same way it will appear on a player's screen regardless
- of how big or small their monitor is, yay!! This is a very big accomplishment, we give God 
- all the glory, we have an automatic rescaler called 
- scale_web_size_based_on_users_pc_or_mobile_width function that rescales the size of the website on pages
-that have a canvas built with JavaScript as well as this, we give God all the glory.
+Does this also mean that when ever I'm coding I don't ever have to treat the Website
+with the minus 40 pixels of height (due to the bookmark toolbar)? I can assume that the way it 
+appears on my screen from 
+"run without debugging" is the exact same way it will appear on a player's screen.
+
+NO IT DOES NOT, yes, I do have a function called scale_web_size_based_on_users_pc_or_mobile_width that
+rescales everything based off of the size of the user's monitor but the extra 40 pixels of height cannot
+be accounted for with the variable standard_bibleio_screen_width_size, because it is based off of width
+not height, if I ignore that and go ahead and set it to 1500 because I assume I have less space, it
+will cause width problems, because it's assuming there a 2.1 proportional division relationship betwee
+the width and the height, so unfortunately, I cannot do that. User's might have to press the zoom out
+button once
 */
-var standard_bibleio_screen_width_size;
-if (i_am_a_developer == true) {
-     standard_bibleio_screen_width_size = 1536;
-} else {
-     standard_bibleio_screen_width_size = 1570;
-}
+var standard_bibleio_screen_width_size = 1536;
 sessionStorage.setItem('standard_bibleio_screen_width_size', JSON.stringify(standard_bibleio_screen_width_size));
 
 
