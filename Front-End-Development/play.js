@@ -7863,6 +7863,52 @@ function let_it_snow () {
     }
 }
 
+
+function drawGame() {
+    
+    
+    draw_Background();
+    
+    if (home_page == 1) {
+        titleText();
+        friendsBoard();
+        onlineDisplay();
+        myScoresDisplay();
+        displayLevels();
+        otherTextDisplay();
+        challenge_box_display();
+        myBibletar();
+        extra_info_and_images();
+        rotate_world_and_friend_challenge();
+    } else if (home_page == 2) {
+        connectPlayers();
+        /** declared loadingbox inside connectPlayers() function, that way it doesn't go on top
+         * of the box that says connect players on computers with smaller screen dimensions
+        */
+       // loadingBox();
+       myBibletar();
+    } else if (home_page == 3) {
+        draw_All_Players();
+        if (kicked_out == true) {
+            if (game_finished == false) {
+                spectatorMode();
+            }
+        } else {
+            questions_Display();
+        }
+        if (game_finished == true) {
+            broadcast_game_is_over(60);
+        }
+        display_Game_Time(60);
+    } else if (home_page == 4) {
+        show_results();
+    }
+    displayMouseX_and_MouseY(20, canvas.height - 20);
+    show_or_hide_html_elements();
+    start_timer();
+    
+}
+
 const standard_bibleio_screen_width_size = JSON.parse(sessionStorage.getItem('standard_bibleio_screen_width_size'));
 var scaled_screen_size = false;
 var width_of_screen_size;
@@ -7877,6 +7923,7 @@ if (window.innerWidth <= standard_bibleio_screen_width_size) {
     zoom_in = true;
 }
 function scale_web_size_based_on_users_pc_or_mobile_width () {
+    // this function was originally made in play.js
     /** The goal of this function is to automatically scale the screen size of the user's device
      * to the default average size that it should be for the Bible.io on PC, in landscape mode, however
      * users are still free to zoom in and out via their devices if they want to and if deemed necessary
@@ -7903,7 +7950,7 @@ function scale_web_size_based_on_users_pc_or_mobile_width () {
             while ((width_of_screen_size*(2 - scale)) < standard_bibleio_screen_width_size) {
                 // when I decrease the scale, the screen for the body zooms out
                 scale -= 0.1;
-                // console.log(window.innerWidth);
+                // console.log(width_of_screen_size);
             }
         }
         canvas.width = (width_of_screen_size*(2 - scale));
@@ -7964,51 +8011,6 @@ function scale_web_size_based_on_users_pc_or_mobile_width () {
      while window.innerWidth is affected by it that's the trick, since I have tested everything
      and I know that it works, I can change window.innerWidth to window.screen.width
     */
-}
-
-function drawGame() {
-    
-    
-    draw_Background();
-    
-    if (home_page == 1) {
-        titleText();
-        friendsBoard();
-        onlineDisplay();
-        myScoresDisplay();
-        displayLevels();
-        otherTextDisplay();
-        challenge_box_display();
-        myBibletar();
-        extra_info_and_images();
-        rotate_world_and_friend_challenge();
-    } else if (home_page == 2) {
-        connectPlayers();
-        /** declared loadingbox inside connectPlayers() function, that way it doesn't go on top
-         * of the box that says connect players on computers with smaller screen dimensions
-        */
-       // loadingBox();
-       myBibletar();
-    } else if (home_page == 3) {
-        draw_All_Players();
-        if (kicked_out == true) {
-            if (game_finished == false) {
-                spectatorMode();
-            }
-        } else {
-            questions_Display();
-        }
-        if (game_finished == true) {
-            broadcast_game_is_over(60);
-        }
-        display_Game_Time(60);
-    } else if (home_page == 4) {
-        show_results();
-    }
-    displayMouseX_and_MouseY(20, canvas.height - 20);
-    show_or_hide_html_elements();
-    start_timer();
-    
 }
 
 function resizeCanvas() {
