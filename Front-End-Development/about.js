@@ -100,3 +100,110 @@ function missing_text_alert() {
 }
 
 write_in_bibletar_short_story();
+
+// AUTOMATIC SCALE AND WEB ZOOMS FUNCTIONS AND DATA
+const standard_bibleio_screen_width_size = JSON.parse(sessionStorage.getItem('standard_bibleio_screen_width_size'));
+var scaled_screen_size = false;
+var width_of_screen_size;
+let scale = 1;
+const convert_height_based_off_width = JSON.parse(sessionStorage.getItem('convert_height_based_off_width'));
+/* checks at the start, otherwise will jitter when user tries to zoom in or out, and makes 
+zooming in or out impossible */
+var zoom_in;
+if (window.innerWidth <= standard_bibleio_screen_width_size) {
+    zoom_in = false;
+} else {
+    zoom_in = true;
+}
+function scale_web_size_based_on_users_pc_or_mobile_width () {
+    // this function was originally made in play.js
+    /** The goal of this function is to automatically scale the screen size of the user's device
+     * to the default average size that it should be for the Bible.io on PC, in landscape mode, however
+     * users are still free to zoom in and out via their devices if they want to and if deemed necessary
+    */
+
+    /* IMPORTANT!!!!
+    only set it to window.innerWidth, if you need to run tests, otherwise it should equal window.screen.width
+    */
+    width_of_screen_size = window.screen.width;
+   
+    // console.log((window.innerWidth - 2)/(window.innerHeight - 90));  
+   
+    /* do 2 - scale so that scale acts as 1 at the start and increases the left side of the operator comparison, 
+    since I'm no longer do += I'm doing -= */
+    if (zoom_in == false) {
+        // zoom out
+        if (scaled_screen_size == false) {
+            /* does it only once upon screen loading, 
+            that way zoom in and out on their computer doesn't get broken, but it doesn't matter 
+            anymore even if I removed it, unless I changed width_of_screen_size to equal window.innerWidth
+            then it would be broken, but I am going to keep it here just in case for some reason
+            I need to run more tests because of complaints for users
+            */
+            // do it while the screen size is smaller than the standard bible.io screen length
+            while ((width_of_screen_size*(2 - scale)) < standard_bibleio_screen_width_size) {
+                // when I decrease the scale, the screen for the body zooms out
+                scale -= 0.1;
+                // console.log(width_of_screen_size);
+            }
+        }
+        // canvas.width = (width_of_screen_size*(2 - scale));
+        // canvas.height = (canvas.width / convert_height_based_off_width);
+        // console.log(scale)
+    }
+    
+    if (zoom_in == true) {
+        // zoom in
+        if (scaled_screen_size == false) {
+            /* does it only once upon screen loading, 
+            that way zoom in and out on their computer doesn't get broken but it doesn't matter 
+            anymore even if I removed it, unless I changed width_of_screen_size to equal window.innerWidth
+            then it would be broken, but I am going to keep it here just in case for some reason
+            I need to run more tests because of complaints for users
+            */
+            
+            // do it while the screen size is bigger than the standard bible.io screen length
+            
+            while (width_of_screen_size*(2 - scale) > standard_bibleio_screen_width_size) {
+                // when I increase scale, the screen for body zooms in
+                scale += 0.1;
+            }
+        }
+        // canvas.width = (width_of_screen_size*scale);
+        // canvas.height = (canvas.width / convert_height_based_off_width);
+        
+    }
+
+    // set to true at the end so that the zoom in only happens at the very start of the screen loading
+    scaled_screen_size = true;
+
+    document.body.style.zoom = scale;
+
+    // console.log(window.screen.width/window.screen.height);
+    // console.log(canvas.height);
+
+    // console.log(window.screen.width);
+
+    /* 
+    I want to further explain this function, there are lots of things that I am doing here that can be
+    very confusing especially when zooming in and out, you have to be mindful of the fact this function 
+    is logical, and works highly accurately, but the way the logic is presented can be confusing. First of
+    all, remember that the zooming in and out and scaling the screen size based off of there user's
+    screen width is done at the very start, if not then the screen would jitter when they tried zooming
+    in or out, when a user zooms out, it is believed that the user has a big computer, so Bible.io will
+    scale the screen accordingly and will make the screen size larger, when a user zooms in, it is believed
+    that the user has a small screen so it will zoom out accordingly, this is why when a user zooms in or
+    out and refreshes it looks like all their efforts to zoom in or out are ignored. READ THE NEXT LINE
+    IT IS VERY IMPORTANT
+    however that has changed because in javascript there are 2 things called
+    window.screen.width and window.innerWidth
+    window.screen.width measures the total width of the user's physical monitor, whereas
+     window.innerWidth measures the width of the browser's viewable content area (the viewport)
+
+     in simple words this means, window.screen.width is not affected when a user zooms in or out
+     while window.innerWidth is affected by it that's the trick, since I have tested everything
+     and I know that it works, I can change window.innerWidth to window.screen.width
+    */
+}
+
+scale_web_size_based_on_users_pc_or_mobile_width();
