@@ -2483,7 +2483,7 @@ function bibleMaker_background () {
     // ctx.strokeStyle = 'rgb(250, 250, 249)';
     // ctx.strokeText("John 3:16 “For God so loved the world, that he gave his only begotten Son, that whosoever believeth in him should not perish, but have everlasting life.”", 180, 700);
     ctx.fillStyle = 'rgb(252, 252, 251)';
-    ctx.fillText("John 3:16 “For God so loved the world, that he gave his only begotten Son, that whosoever believeth in him should not perish, but have everlasting life.”", (((canvas.width)/2) - x_shift_john_3_16_verse), canvas.height - 20);
+    ctx.fillText("John 3:16 “For God so loved the world, that he gave his only begotten Son, that whosoever believeth in him should not perish, but have everlasting life.”", (((canvas.width)/2) - x_shift_john_3_16_verse), canvas.height - 30);
 
 
     // black shadow remove

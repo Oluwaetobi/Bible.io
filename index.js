@@ -57,7 +57,8 @@ with the minus 40 pixels of height (due to the bookmark toolbar)? I can assume t
 appears on my screen from 
 "run without debugging" is the exact same way it will appear on a player's screen.
 
-Yes it sort of does, which is why I am reducing the standard_bibleio_screen_width_size when i_am_a_developer
+almost, not quite, just try not to put anything at the very bottom of the screen I guess, 
+also that is why I am reducing the standard_bibleio_screen_width_size when i_am_a_developer
 = false
 */
 var standard_bibleio_screen_width_size;

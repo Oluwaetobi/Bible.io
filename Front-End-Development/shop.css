@@ -168,7 +168,8 @@ a:hover {
     /* z index pushs it forward 1 layer */
     z-index: 2;
     font-size: 60px;
-    text-align: center;
+    /* text-align: center; */
+    left: 360px;
     color:#ffe600;
     font-weight: bolder;
     text-shadow: -4px 4px 1px #060606;
@@ -192,8 +193,9 @@ a:hover {
     /* padding: 0px 0px 0px 200px;  */
     display: flex;
     gap: 140px;
-    left: 50%;
-    translate: -37%;
+    /* left: 50%;
+    translate: -37%; */
+    left: 440px;
     /* right: 20%; */
     max-width: 900px;
     overflow-x: hidden;
