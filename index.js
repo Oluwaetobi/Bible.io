@@ -52,7 +52,12 @@ via file:///C:/ or LocalHost, there is no bookmark bar meaning 40px of height is
 when people run Bible.io on the Web, the bookmark bar is there, so I have to account for that in the width
 so I have to add an extra 80 pixels to the standard bibleio_screen_width_size
 */
-var standard_bibleio_screen_width_size = 1610;
+var standard_bibleio_screen_width_size;
+if (i_am_a_developer == true) {
+     standard_bibleio_screen_width_size = 1536;
+} else {
+     standard_bibleio_screen_width_size = 1610;
+}
 sessionStorage.setItem('standard_bibleio_screen_width_size', JSON.stringify(standard_bibleio_screen_width_size));
 
 
