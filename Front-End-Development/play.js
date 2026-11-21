@@ -7940,7 +7940,7 @@ function drawGame() {
 const standard_bibleio_screen_width_size = JSON.parse(sessionStorage.getItem('standard_bibleio_screen_width_size'));
 var scaled_screen_size = false;
 var width_of_screen_size;
-let scale = 1;
+var scale = 1;
 const convert_height_based_off_width = JSON.parse(sessionStorage.getItem('convert_height_based_off_width'));
 /* checks at the start, otherwise will jitter when user tries to zoom in or out, and makes 
 zooming in or out impossible */
@@ -7963,7 +7963,11 @@ function reset_zoom_data_because_user_switched_mobile_or_device_into_portrait_or
     /* IMPORTANT!!!!
     only set it to window.innerWidth, if you need to run tests, otherwise it should equal window.screen.width
     */
-    width_of_screen_size = window.screen.width;
+   if (landscape_mode == true) {
+       width_of_screen_size = window.screen.width;
+   } else {
+        width_of_screen_size = window.screen.height;
+   }
     /* checks at the start, otherwise will jitter when user tries to zoom in or out, and makes 
 zooming in or out impossible */
     if (width_of_screen_size <= standard_bibleio_screen_width_size) {
@@ -7986,7 +7990,11 @@ function scale_web_size_based_on_users_pc_or_mobile_width () {
     /* IMPORTANT!!!!
     only set it to window.innerWidth, if you need to run tests, otherwise it should equal window.screen.width
     */
-    width_of_screen_size = window.screen.width;
+    if (landscape_mode == true) {
+       width_of_screen_size = window.screen.width;
+   } else {
+        width_of_screen_size = window.screen.height;
+   }
    
     // console.log((window.innerWidth - 2)/(window.innerHeight - 90));  
    
