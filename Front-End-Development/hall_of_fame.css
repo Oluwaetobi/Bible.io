@@ -50,7 +50,9 @@ body {
     /* background-color: rgb(215, 215, 215); */
     scroll-behavior: smooth;
     /* align-items: center; */
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: rgba(252, 251, 251, 0.95);
 }
 
 .container {
@@ -401,7 +403,7 @@ because they are not theh same thing, at least the parameters aren't */
 
 .top-left {
     z-index: 2;
-    position: fixed;
+    position: absolute;
     left: 20px;
     /* background-color: rgba(252, 251, 251, 0.9); */
     background: linear-gradient(180deg, #eae9e8, #dededd);
@@ -457,7 +459,7 @@ because they are not theh same thing, at least the parameters aren't */
 
 .bottom-right {
     z-index: 2;
-    position: fixed;
+    position: absolute;
     left: 1100px;
     background-color: rgba(252, 251, 251, 0.9);
     box-sizing: border-box;
@@ -546,8 +548,62 @@ because they are not theh same thing, at least the parameters aren't */
     border-radius: 10px;
 }
 
+.news {
+    /* background-color: #bebebe; */
+    position: static;
+    margin-top: 100px;
+    padding: 100px;
+    z-index: 1;
+    text-align: center;
+    align-items: center;
+    place-items: center;
+}
+.news h1 {
+    font-size: 50px;
+}
+
+.news p {
+    text-align: center;
+}
+
+#vid-from-youtube-2 {
+    background-color: rgba(0, 0, 0, 0.9);
+    box-sizing: border-box;
+    border-radius: 20px 20px;
+    overflow: hidden;
+    border-style: groove;
+    border-color: #908f8f;
+    /* top right bottom left */
+    /* padding: 0px 0px 0px 0px; */
+
+}
+
+.footer-page {
+    background-color: rgba(11, 11, 11, 1);
+    position: static;
+    width: 100%;
+}
+.footer-text {
+    text-align: center;
+    white-space: pre-wrap;
+    color:#fefefe;
+    margin: 0;
+    /* width: min(100%, 80rem); */
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 10px 10px;
+}
+
+.footer-text h1 {
+    text-align: center;
+}
+
+.footer-text p {
+    font-size: 20px;
+}
+
 #myCanvas {
-    position: fixed;
+    position:absolute;
     left: 0px;
     top: 86px;
     border: 1px solid #000000;

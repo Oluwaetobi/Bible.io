@@ -1593,7 +1593,7 @@ function drawGame() {
     live_Display_Slider();
     additional_text_display();
     show_time_left();
-    displayMouseX_and_MouseY(20, canvas.height - 30);
+    displayMouseX_and_MouseY(20, canvas.height - 10);
 
     if(get_first_place_person_to_show < dont_overwhelm_site) {
         change_top_player_display(1);
