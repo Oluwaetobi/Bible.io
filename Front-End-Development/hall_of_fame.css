@@ -594,14 +594,26 @@ because they are not theh same thing, at least the parameters aren't */
     margin-left: 50px;
     margin-right: 50px;
     padding: 10px 10px;
+    font-size: 20px;
 }
 
 .footer-text h1 {
     text-align: center;
 }
 
-.footer-text p {
-    font-size: 20px;
+.footer-page #hyper-links {
+    justify-content: center;
+    display: flex;
+    gap: 20px;
+    /* background-color: rgba(0, 0, 0, 0.1); */
+    font-size:17px;
+}
+
+.footer-page #hype-link-each:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    filter: brightness(150%);
+    color:#7f7502;
 }
 
 #myCanvas {
