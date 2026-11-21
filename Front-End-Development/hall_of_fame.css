@@ -565,7 +565,7 @@ because they are not theh same thing, at least the parameters aren't */
 .news #news-text {
     text-align: center;
     font-size: 20px;
-    font-weight: bold;
+    /* font-weight: bold; */
 }
 
 #vid-from-youtube-2 {
