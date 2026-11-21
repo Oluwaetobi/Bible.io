@@ -70,16 +70,29 @@ const password_input = document.getElementById('password-input');
 const repeat_password_input = document.getElementById('repeat-password-input');
 const error_message = document.getElementById('error-message');
 
-const portraitQuery = window.matchMedia("(orientation: portrait");
-portraitQuery.addEventListener("change", (event) => {
+/* Unfortunately, when mobile switches from portrait mode to landscape mode and vice versa
+window.screen.width doesn't change so I have to calculate everything based off of 
+window.screen.height when landscape_mode = false and when it's in landscape mode then
+I calculate it based off of window.screen.width */
+var landscape_mode = true;
+const portraitQuery = window.matchMedia("(orientation: portrait)");
+function handle_device_rotation_change_mode (event) {
     if (event.matches) {
         console.log("You switched your mobile/device into Portrait Mode");
+        landscape_mode = false;
     } else {
-        console.log("You switched your mobile/device into to Landscape Mode")
+        console.log("You switched your mobile/device into to Landscape Mode");
+        landscape_mode = true;
     }
     // the user changed his or her device into portrait or landscape mode
     reset_zoom_data_because_user_switched_mobile_or_device_into_portrait_or_landscape_mode();
-});
+}
+// does it upon the initial loading of the screen
+window.addEventListener('load', ()=> handle_device_rotation_change_mode(portraitQuery));
+// does it when the user changes the mobile to landscape or portrait
+portraitQuery.addEventListener("change", handle_device_rotation_change_mode);
+
+
 
 form.addEventListener('submit', (e) => {
 

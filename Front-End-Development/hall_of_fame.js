@@ -66,7 +66,7 @@ window.addEventListener("load", () => {
         document.body.removeChild(loader);
         // we removed the loader class, yay!
     })
-})
+});
 
 var hall_of_fame_clicked_is_a_boy = true;
 var hall_of_fame_clicked_is_a_girl = false;
@@ -196,16 +196,28 @@ window.addEventListener('mousemove', (event) => {
     mouseY -= top_border;
 })
 
-const portraitQuery = window.matchMedia("(orientation: portrait");
-portraitQuery.addEventListener("change", (event) => {
+/* Unfortunately, when mobile switches from portrait mode to landscape mode and vice versa
+window.screen.width doesn't change so I have to calculate everything based off of 
+window.screen.height when landscape_mode = false and when it's in landscape mode then
+I calculate it based off of window.screen.width */
+var landscape_mode = true;
+const portraitQuery = window.matchMedia("(orientation: portrait)");
+function handle_device_rotation_change_mode (event) {
     if (event.matches) {
         console.log("You switched your mobile/device into Portrait Mode");
+        landscape_mode = false;
     } else {
-        console.log("You switched your mobile/device into to Landscape Mode")
+        console.log("You switched your mobile/device into to Landscape Mode");
+        landscape_mode = true;
     }
     // the user changed his or her device into portrait or landscape mode
     reset_zoom_data_because_user_switched_mobile_or_device_into_portrait_or_landscape_mode();
-});
+}
+// does it upon the initial loading of the screen
+window.addEventListener('load', ()=> handle_device_rotation_change_mode(portraitQuery));
+// does it when the user changes the mobile to landscape or portrait
+portraitQuery.addEventListener("change", handle_device_rotation_change_mode);
+
 
 function displayMouseX_and_MouseY (x, y) {
     if (i_am_a_developer == true) {
@@ -1608,7 +1620,7 @@ function drawGame() {
 const standard_bibleio_screen_width_size = JSON.parse(sessionStorage.getItem('standard_bibleio_screen_width_size'));
 var scaled_screen_size = false;
 var width_of_screen_size;
-let scale = 1;
+var scale = 1;
 const convert_height_based_off_width = JSON.parse(sessionStorage.getItem('convert_height_based_off_width'));
 /* checks at the start, otherwise will jitter when user tries to zoom in or out, and makes 
 zooming in or out impossible */
@@ -1631,7 +1643,11 @@ function reset_zoom_data_because_user_switched_mobile_or_device_into_portrait_or
     /* IMPORTANT!!!!
     only set it to window.innerWidth, if you need to run tests, otherwise it should equal window.screen.width
     */
-    width_of_screen_size = window.screen.width;
+   if (landscape_mode == true) {
+       width_of_screen_size = window.screen.width;
+   } else {
+        width_of_screen_size = window.screen.height;
+   }
     /* checks at the start, otherwise will jitter when user tries to zoom in or out, and makes 
 zooming in or out impossible */
     if (width_of_screen_size <= standard_bibleio_screen_width_size) {
@@ -1654,7 +1670,11 @@ function scale_web_size_based_on_users_pc_or_mobile_width () {
     /* IMPORTANT!!!!
     only set it to window.innerWidth, if you need to run tests, otherwise it should equal window.screen.width
     */
-    width_of_screen_size = window.screen.width;
+    if (landscape_mode == true) {
+       width_of_screen_size = window.screen.width;
+   } else {
+        width_of_screen_size = window.screen.height;
+   }
    
     // console.log((window.innerWidth - 2)/(window.innerHeight - 90));  
    
