@@ -360,29 +360,36 @@ form input::placeholder {
     position: relative;
     z-index: 1;
     box-sizing: border-box;
-    border-radius: 30px 30px;
+    /* border-radius: 30px 30px; */
     border: 2px #000000 solid;
     background-color: #013782;
     font-size: 30px;
     color: white;
     font-weight: bold;
-    width: 470px;
-    height: 450px;
     text-align: center;
-    overflow: hidden;
-    gap: 13px;
+    width: 470px;
+    /* Unfortunately I can't use overflow:hidden; in here meaning that I can't
+    have a border-radius greater than 0, if I want rounded edges and I want things
+    to appear properly because I need overflow-y: auto in class inner-wrong-rectangle
+    which is a child element of this parent class, meaning I sort of have to mimick
+    perfection and create a really good illusion */
+}
+
+.questions-wrong-rectangle h1 {
+    font-size: 30px;
 }
 
 .inner-wrong-rectangle {
     background-color: white;
-    width: 470px;
-    height: 450px;
+    width: 466px;
+    height: 400px;
     /* makes it scrollable on the y */
     overflow-y: auto;
     color: black;
     text-align: left;
     font-weight: normal;
     font-size: 15px;
+    border: 2px solid black;
 }
 
 #wrong-text {
