@@ -351,7 +351,6 @@ form input::placeholder {
     transform: translateY(-35px);
 }
 
-
 .questions-wrong-rectangle {
     display: none;
     top: 173px;
@@ -371,20 +370,7 @@ form input::placeholder {
     height: 450px;
     text-align: center;
     overflow: hidden;
-    padding: 7px 0px;
-}
-
-.questions-wrong-rectangle caption {
-    background-color: #013782;
-    color:#f9f8f8;
-    position: sticky;
-    top: 0px;
-    font-weight: bold;
-    font-size: large;
-    text-align: center;
-    place-self: center;
-    padding: 10px 40px;
-    font-size: 24px;
+    gap: 13px;
 }
 
 .inner-wrong-rectangle {
@@ -396,15 +382,12 @@ form input::placeholder {
     color: black;
     text-align: left;
     font-weight: normal;
-}
-
-.questions-wrong-rectangle td {
-    padding: 10px 10px;
     font-size: 15px;
 }
 
 #wrong-text {
     white-space: pre-line;
+    padding: 0px 10px;
 }
 
 .end-of-game-continue-button {
