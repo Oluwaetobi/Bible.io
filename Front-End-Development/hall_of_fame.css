@@ -609,6 +609,10 @@ because they are not theh same thing, at least the parameters aren't */
     font-size:17px;
 }
 
+.footer-page a {
+    color: white;
+}
+
 .footer-page #hype-link-each:hover {
     text-decoration: underline;
     cursor: pointer;

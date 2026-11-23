@@ -370,6 +370,10 @@ a:hover {
     /* background-color: rgba(0, 0, 0, 0.1); */
 }
 
+.footer-page a {
+    color: white;
+}
+
 .footer-page #hype-link-each:hover {
     text-decoration: underline;
     cursor: pointer;

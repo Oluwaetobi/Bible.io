@@ -2617,6 +2617,7 @@ function show_or_hide_html_elements () {
 
         document.getElementById('questions-i-got-wrong').style.display = "none";
         document.getElementById('continue-button').style.display = "none";
+        document.getElementById('message-on-results-page').style.display = "none";
         document.getElementById('sermon-on-the-mount').style.display = "none";
     } else if (home_page == 2) {
         document.getElementById('big-text').style.display = "none";
@@ -2634,6 +2635,7 @@ function show_or_hide_html_elements () {
 
         document.getElementById('questions-i-got-wrong').style.display = "none";
         document.getElementById('continue-button').style.display = "none";
+        document.getElementById('message-on-results-page').style.display = "none";
         document.getElementById('sermon-on-the-mount').style.display = "none";
 
     } else if (home_page == 3) {
@@ -2665,6 +2667,7 @@ function show_or_hide_html_elements () {
         document.getElementById('questions-i-got-wrong').style.display = "none";
         document.getElementById('continue-button').style.display = "none";
         document.getElementById('building-faith').style.display = "none";
+        document.getElementById('message-on-results-page').style.display = "none";
         document.getElementById('sermon-on-the-mount').style.display = "none";
     } else if (home_page == 4) {
         document.getElementById('big-text').style.display = "none";
@@ -2679,6 +2682,7 @@ function show_or_hide_html_elements () {
         document.getElementById('questions-i-got-wrong').style.display = "block";
         document.getElementById('continue-button').style.display = "block";
         document.getElementById('building-faith').style.display = "none";
+        document.getElementById('message-on-results-page').style.display = "block";
         document.getElementById('sermon-on-the-mount').style.display = "block";
     }
 }
@@ -7955,7 +7959,13 @@ function drawGame() {
     } else if (home_page == 4) {
         show_results();
     }
-    displayMouseX_and_MouseY(20, canvas.height - 20);
+
+    if (home_page == 4) {
+        displayMouseX_and_MouseY(1000, 35);
+    } else {
+        displayMouseX_and_MouseY(20, canvas.height - 20);
+    }
+
     show_or_hide_html_elements();
     start_timer();
     

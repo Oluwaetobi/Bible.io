@@ -411,6 +411,21 @@ form input::placeholder {
     padding: 10px;
 }
 
+#message-on-results-page {
+    position: fixed;
+    z-index: 1;
+    left: 50px;
+    top: 785px;
+    color: black;
+    font-size: 15px;
+}
+
+#message-on-results-page:hover {
+    color: rgb(255, 204, 0);
+    text-shadow: black 0.5px 0.5px 1.7px;
+    cursor: pointer;
+}
+
 .sermon-on-the-mount {
     position: fixed;
     left: 1000px;
