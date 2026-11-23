@@ -386,6 +386,10 @@ form input::placeholder {
     padding: 10px 10px;
 }
 
+#wrong-text {
+    white-space: pre-line;
+}
+
 .end-of-game-continue-button {
     display: none;
     position: fixed;

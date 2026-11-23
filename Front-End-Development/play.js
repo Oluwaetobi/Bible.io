@@ -952,7 +952,7 @@ function prepare_the_game () {
     my_game.everyones_names[0] = my_name;
     kicked_out = false;
     game_finished = false;
-    questions_wrong_text.innerText = ``;
+    questions_wrong_text.textContent = ``;
     // resets it each game
     question_I_got_wrong = [];
     my_game.questions_wrong[0] = 0;
@@ -3242,7 +3242,7 @@ async function makePost_or_Patch_Request_in_game_data_edits() {
     var counter = 1;
     for (let i = 0; i < 4; i++) {
         if (i != my_spot) {
-            /* copy everyone's points and amount of questiosn wrong except my score and my # questions wrong 
+            /* copy everyone's points and amount of questions wrong except my score and my # questions wrong 
             into our game object           
             */
            my_game.everyones_points[counter] = data.points[i];
@@ -5623,7 +5623,7 @@ function broadcast_game_is_over (time_alloted_for_each_game) {
     questions_background();
 
     if(question_I_got_wrong.length == 0 && add_you_got_nothing_wrong == true) {
-        questions_wrong_text.innerText += `Congrats! You got nothing wrong! Psalms 107:20 says, "He sent his word, and healed them, and delivered them from their destructions." `;
+        questions_wrong_text.textContent += `Congrats! You got nothing wrong! Psalms 107:20 says, "He sent his word, and healed them, and delivered them from their destructions." `;
         add_you_got_nothing_wrong = false;
     }
 
@@ -6018,10 +6018,10 @@ function check_if_answer_is_correct(my_answer_html) {
          * can go figure the answers themselves, this forces users to go study the Bible
          * instead of me just giving the answers straight up to them
         */
-       question_I_got_wrong.push(question.innerText);
-       questions_wrong_text.innerText += (question_I_got_wrong.length + ". " + question.innerText);
+       question_I_got_wrong.push(question.textContent);
+       questions_wrong_text.textContent += (question_I_got_wrong.length + ". " + question.innerText);
        // I'm trying to get it to go onto a new line, but it's not working
-       questions_wrong_text.innerText += "  -  \n";
+       questions_wrong_text.textContent += "  \n";
        my_game.questions_wrong[0] += 1;
        if (my_game.questions_wrong[0] >= 5) {
            kick_me_out_of_the_game();
