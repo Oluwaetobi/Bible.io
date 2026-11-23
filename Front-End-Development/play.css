@@ -415,15 +415,20 @@ form input::placeholder {
     position: fixed;
     z-index: 1;
     left: 50px;
-    top: 785px;
+    top: 789px;
     color: black;
-    font-size: 15px;
+    font-size: 18px;
 }
 
-#message-on-results-page:hover {
+#message-on-results-page a {
+    color: black;
+}
+
+#message-on-results-page a:hover {
     color: rgb(255, 204, 0);
     text-shadow: black 0.5px 0.5px 1.7px;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .sermon-on-the-mount {
