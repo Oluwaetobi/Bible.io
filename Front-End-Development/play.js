@@ -5530,14 +5530,15 @@ function draw_All_Players () {
         ctx.fillStyle = 'rgb(0,0,0)';
         ctx.fillRect(44, y_baseline - 2 + (i * y_bibletars_box_spacing), 302, 106);
         // back box
-        var gradient = ctx.createLinearGradient(0, 0, 0, canvas.height);
-        gradient.addColorStop(0, 'rgb(157, 147, 124)');     // Start color (0%)
-        gradient.addColorStop(1, 'rgb(223, 226, 228)');    // End color (100%)
+        var gradient = ctx.createLinearGradient(0, y_baseline - 2 + (i * y_bibletars_box_spacing), 0, y_baseline - 2 + (i * y_bibletars_box_spacing) + 104);
+        gradient.addColorStop(0, 'rgb(223, 226, 228)');     // Start color (0%)
+        gradient.addColorStop(1, 'rgb(157, 147, 124)');    // End color (100%)
         ctx.fillStyle = gradient;
         ctx.fillRect(45, y_baseline - 2 + (i * y_bibletars_box_spacing), 300, 104);
         
-        ctx.fillStyle = 'rgb(66, 66, 66)';
-        ctx.fillRect(50, y_baseline + (i * y_bibletars_box_spacing), 100, 100);
+        // bibletar box placeholder
+        // ctx.fillStyle = 'rgb(66, 66, 66)';
+        // ctx.fillRect(50, y_baseline + (i * y_bibletars_box_spacing), 100, 100);
         
         // black shadow remove
         ctx.shadowColor = "white";
@@ -5834,15 +5835,15 @@ function show_results() {
         ctx.fillStyle = 'rgb(0,0,0)';
         ctx.fillRect(44 + results_shift_x, y_baseline - 3 + (i * y_bibletars_box_spacing) + results_shift_y, 302, 106);
         // back box
-        var gradient = ctx.createLinearGradient(0, 0, 0, canvas.height);
-        gradient.addColorStop(0, 'rgb(157, 147, 124)');     // Start color (0%)
-        gradient.addColorStop(1, 'rgb(223, 226, 228)');    // End color (100%)
+        var gradient = ctx.createLinearGradient(0, y_baseline - 2 + (i * y_bibletars_box_spacing) + results_shift_y, 0, y_baseline - 2 + (i * y_bibletars_box_spacing) + results_shift_y + 104);
+        gradient.addColorStop(0, 'rgb(223, 226, 228)');     // Start color (0%)
+        gradient.addColorStop(1, 'rgb(157, 147, 124)');    // End color (100%)
         ctx.fillStyle = gradient;
         ctx.fillRect(45 + results_shift_x, y_baseline - 2 + (i * y_bibletars_box_spacing) + results_shift_y, 300, 104);
 
         // bibletar box placeholder
-        ctx.fillStyle = 'rgb(66, 66, 66)';
-        ctx.fillRect(50 + results_shift_x, y_baseline + (i * y_bibletars_box_spacing) + results_shift_y, 100, 100);
+        // ctx.fillStyle = 'rgb(66, 66, 66)';
+        // ctx.fillRect(50 + results_shift_x, y_baseline + (i * y_bibletars_box_spacing) + results_shift_y, 100, 100);
 
         ctx.font = "20px Arial";
         ctx.fillStyle = 'rgb(8, 8, 8)';
@@ -6092,7 +6093,7 @@ function questions_Display() {
 
     ctx.font = "20px Arial";
     ctx.fillStyle = 'rgb(255, 255, 255)';
-    ctx.fillText("Your Points: " + this_game_points, 1100, 660);
+    ctx.fillText("Your Points: " + this_game_points, 1123, 663);
 
     ctx.font = "18px Arial";
     ctx.fillStyle = 'rgb(255, 255, 255)';
