@@ -389,7 +389,7 @@ form input::placeholder {
     text-align: left;
     font-weight: normal;
     font-size: 15px;
-    border: 2px solid black;
+    box-shadow: black 0px 0px 2px;
 }
 
 #wrong-text {
