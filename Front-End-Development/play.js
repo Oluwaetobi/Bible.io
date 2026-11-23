@@ -6134,8 +6134,8 @@ function choose_Random_Question () {
     // Return a random integer between 1 and 10 (both included): Math.floor(Math.random() * 10) + 1;
 
     var amount_of_question_in_level_1 = 54;
-    var amount_of_question_in_level_2 = 89;
-    var amount_of_question_in_level_3 = 48;
+    var amount_of_question_in_level_2 = 91;
+    var amount_of_question_in_level_3 = 49;
 
 
     if (level == 1) {
@@ -7306,6 +7306,22 @@ function level_2_Questions () {
         answer4.innerText += `Hadassah  `;
         correct_answer = 1;
     }
+    if (randomQuestion == 90) {
+        question.innerText = `Why did Peninnah keep making fun of Hannah?  `;
+        answer1.innerText += `Because she was fat    `;
+        answer2.innerText += `Because she was blind   `;
+        answer3.innerText += `Because she was barren   `;
+        answer4.innerText += `Because she was lame  `;
+        correct_answer = 3;
+    }
+    if (randomQuestion == 91) {
+        question.innerText = `How many siblings did Samuel have?  `;
+        answer1.innerText += `He didn't have any siblings    `;
+        answer2.innerText += `1 sibling   `;
+        answer3.innerText += `3 siblings   `;
+        answer4.innerText += `5 siblings  `;
+        correct_answer = 4;
+    }
     
 }
 
@@ -7696,6 +7712,14 @@ function level_3_Questions () {
         answer3.innerText += `Genesis 3:18  `;
         answer4.innerText += `Genesis 3:24  `;
         correct_answer = 3;
+    }
+    if (randomQuestion == 49) {
+        question.innerText = `The grass withereth, the flower fadeth: but the word of our God shall stand for ever.   `;
+        answer1.innerText += `Isaiah 40:8 `;
+        answer2.innerText += `Isaiah 40:15  `;
+        answer3.innerText += `Isaiah 40:31  `;
+        answer4.innerText += `Isaiah 40:52  `;
+        correct_answer = 1;
     }
     
 }
