@@ -360,13 +360,18 @@ form input::placeholder {
     /* overflow-x: hidden; */
     position: relative;
     z-index: 1;
-    width: 470px;
-    height: 450px;
-    /* makes it scrollable on the y */
-    overflow-y: auto;
     box-sizing: border-box;
     border-radius: 30px 30px;
     border: 2px #000000 solid;
+    background-color: #013782;
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+    width: 470px;
+    height: 450px;
+    text-align: center;
+    overflow: hidden;
+    padding: 7px 0px;
 }
 
 .questions-wrong-rectangle caption {
@@ -382,8 +387,20 @@ form input::placeholder {
     font-size: 24px;
 }
 
+.inner-wrong-rectangle {
+    background-color: white;
+    width: 470px;
+    height: 450px;
+    /* makes it scrollable on the y */
+    overflow-y: auto;
+    color: black;
+    text-align: left;
+    font-weight: normal;
+}
+
 .questions-wrong-rectangle td {
     padding: 10px 10px;
+    font-size: 15px;
 }
 
 #wrong-text {

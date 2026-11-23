@@ -580,7 +580,6 @@ table takes up the full width of it's parent the scrollable table */
     font-size: 30px;
     color: white;
     /* border: 2px solid black; */
-    background-color: rgba(0, 0, 0, 0.1);
     box-shadow: inset 0px 0px 3px rgba(0, 0, 0, 1);
     border: 2px solid rgba(0, 0, 0, 0.9);
     padding: 5px 0px 0px 0px;

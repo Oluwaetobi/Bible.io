@@ -6020,8 +6020,8 @@ function check_if_answer_is_correct(my_answer_html) {
         */
        question_I_got_wrong.push(question.textContent);
        questions_wrong_text.textContent += (question_I_got_wrong.length + ". " + question.innerText);
-       // I'm trying to get it to go onto a new line, but it's not working
-       questions_wrong_text.textContent += "  \n";
+       // double spaced between each questions that is wrong
+       questions_wrong_text.textContent += "  \n\n";
        my_game.questions_wrong[0] += 1;
        if (my_game.questions_wrong[0] >= 5) {
            kick_me_out_of_the_game();
