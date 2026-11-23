@@ -984,12 +984,25 @@ table takes up the full width of it's parent the scrollable table */
     max-height: 200px;
     background-color: #000000;
 }
+
+.ads2 a {
+    color: white;
+    text-align: center;
+    place-items: center;
+    max-width: 170px;
+}
+
+.ads2 a:hover {
+    text-decoration: none;
+    color: orange;
+}
+
 .ads2 img {
-    max-width: 180px;
+    max-width: 160px;
 }
 .ads2 img:hover {
     filter: brightness(160%);
-    padding: 10px 10px;
+    /* padding: 10px 10px; */
     cursor: pointer;
 }
 

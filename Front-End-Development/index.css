@@ -479,6 +479,12 @@ to the parent assuming the parent is position relative */
     text-align: center;
 }
 
+.footer-text a {
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
 #who-we-are {
     font-size: 20px;
 }
