@@ -6138,8 +6138,8 @@ function choose_Random_Question () {
 
     // Return a random integer between 1 and 10 (both included): Math.floor(Math.random() * 10) + 1;
 
-    var amount_of_question_in_level_1 = 54;
-    var amount_of_question_in_level_2 = 91;
+    var amount_of_question_in_level_1 = 61;
+    var amount_of_question_in_level_2 = 95;
     var amount_of_question_in_level_3 = 49;
 
 
@@ -6593,6 +6593,54 @@ function level_1_Questions () {
         answer3.innerText += `God  `;
         answer4.innerText += `He never got a chance to talk `;
         correct_answer = 4;
+    }
+    if (randomQuestion == 56) {
+        question.innerText = `Cain built a city, but which of his sons did he name it after?   `;
+        answer1.innerText += `Enoch `;
+        answer2.innerText += `Irad `;
+        answer3.innerText += `Eden  `;
+        answer4.innerText += `Cain never built a city `;
+        correct_answer = 1;
+    }
+    if (randomQuestion == 57) {
+        question.innerText = `If Cain was killed, he would be avenged ___________   `;
+        answer1.innerText += `2 fold `;
+        answer2.innerText += `5 fold `;
+        answer3.innerText += `7 fold  `;
+        answer4.innerText += `17 fold `;
+        correct_answer = 3;
+    }
+    if (randomQuestion == 58) {
+        question.innerText = `If Lamech was killed, he would be avenged ___________   `;
+        answer1.innerText += `20 fold `;
+        answer2.innerText += `77 fold `;
+        answer3.innerText += `90 fold  `;
+        answer4.innerText += `100 fold `;
+        correct_answer = 2;
+    }
+    if (randomQuestion == 59) {
+        question.innerText = `How many wives did Lamech have?   `;
+        answer1.innerText += `1 wife `;
+        answer2.innerText += `2 wives `;
+        answer3.innerText += `3 wives  `;
+        answer4.innerText += `4 wives `;
+        correct_answer = 2;
+    }
+    if (randomQuestion == 60) {
+        question.innerText = `What were the names of Lamech's wives?   `;
+        answer1.innerText += `Chana and Aviva `;
+        answer2.innerText += `Shoshana and Romi `;
+        answer3.innerText += `Yale and Eliana  `;
+        answer4.innerText += `Adah and Zillah `;
+        correct_answer = 4;
+    }
+    if (randomQuestion == 61) {
+        question.innerText = `Who said this? "for I have slain a man to my wounding, and a young man to my hurt."   `;
+        answer1.innerText += `Cain `;
+        answer2.innerText += `Lamech `;
+        answer3.innerText += `Nimrod  `;
+        answer4.innerText += `Mehujael `;
+        correct_answer = 2;
     }
     
 }
@@ -7326,6 +7374,38 @@ function level_2_Questions () {
         answer3.innerText += `3 siblings   `;
         answer4.innerText += `5 siblings  `;
         correct_answer = 4;
+    }
+    if (randomQuestion == 92) {
+        question.innerText = `After Cain killed his brother Abel, and became a fugitive, in which land did he dwell?  `;
+        answer1.innerText += `Nod    `;
+        answer2.innerText += `Cush   `;
+        answer3.innerText += `Haran   `;
+        answer4.innerText += `Mesopotamia  `;
+        correct_answer = 1;
+    }
+    if (randomQuestion == 93) {
+        question.innerText = `Nod was ______ of Eden  `;
+        answer1.innerText += `North    `;
+        answer2.innerText += `East   `;
+        answer3.innerText += `South   `;
+        answer4.innerText += `West  `;
+        correct_answer = 2;
+    }
+    if (randomQuestion == 94) {
+        question.innerText = `Who was the father of all who dwell in tents and have cattle?  `;
+        answer1.innerText += `Jabal    `;
+        answer2.innerText += `Jubal   `;
+        answer3.innerText += `Tubal-Cain   `;
+        answer4.innerText += `Chalcol  `;
+        correct_answer = 1;
+    }
+    if (randomQuestion == 95) {
+        question.innerText = `Who was the father of all who handle the harp and organ?  `;
+        answer1.innerText += `Jabal    `;
+        answer2.innerText += `Jubal   `;
+        answer3.innerText += `Tubal-Cain   `;
+        answer4.innerText += `Chalcol  `;
+        correct_answer = 2;
     }
     
 }
