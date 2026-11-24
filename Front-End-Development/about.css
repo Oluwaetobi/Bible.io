@@ -152,6 +152,8 @@ header {
     margin-left: 10px;
     float: right;
     border-radius: 30px;
+    border: 2px solid rgb(0, 0, 0);
+    box-shadow: black 0px 0px 20px;
 }
 
 .head-down img:hover {
@@ -169,19 +171,19 @@ header {
     position: static;
     width: min(95%, 80rem);
     margin: 40px;
-    background-color: rgba(62, 138, 175, 0.9);
+    background-color: rgba(255, 255, 255, 0.1);
     padding: 20px 20px;
     white-space: pre-wrap;
     display: flex;
     flex-direction: column;
     border-radius: 40px 40px;
-    box-shadow: 0px 0px 10px black;
+    /* box-shadow: 0px 0px 10px black; */
 }
 
 .environmental-applications #applications-title {
     text-align: center;
     font-size: 30px;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, 0.1);
     box-shadow: inset 0px 0px 3px black;
     border-radius: 20px 20px;
     font-weight: bold;
@@ -206,7 +208,8 @@ header {
 }
 
 .environmental-applications #side-right{
-    background-color: rgba(225, 225, 225, 0.8);
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 2px solid rgba(0, 0, 0, 0.2);
     box-shadow: inset 0px 0px 25px rgba(255, 255, 255, 0.9);
     padding: 20px 20px;
     /* max-width: 1000px; */

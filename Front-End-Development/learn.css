@@ -804,7 +804,7 @@ table takes up the full width of it's parent the scrollable table */
 }
 
 .scrollable-table-reading {
-    height: 640px;
+    height: 590px;
     width: 900px;
     /* aspect-ratio: 1 / 1;   */
     /* overflow-y makes only the y coordinates scrollable */
