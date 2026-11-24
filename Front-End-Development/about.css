@@ -223,6 +223,25 @@ header {
 
 }
 
+.reception-and-thoughts {
+    position: static;
+    max-width: 1000px;
+    text-align: center;
+    margin: 40px;
+}
+
+#comments-box {
+    text-align: left;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    white-space: pre-line;
+    /* increases space between lines */
+    line-height: 2;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    max-height: 300px;
+    overflow-y: auto;
+}
+
 .bibletar-side-to-side {
     display: flex;
     position: static;
