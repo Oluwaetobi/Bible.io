@@ -2597,8 +2597,11 @@ function hideBuildingFaithInSocietyInformation () {
     document.getElementById('building-faith-text').style.display = "none";
 }
 
-var show_play_info = false;
+// starts as true, because it is once run at the start which sets it too false
+var show_play_info = true;
 const how_it_works_text = document.getElementById('play-info');
+// run it once so that color comes into effect
+show_or_hide_play_info();
 function show_or_hide_play_info () {
     if (show_play_info == false) {
         show_play_info = true;
@@ -2607,10 +2610,21 @@ function show_or_hide_play_info () {
     }
     
     if (show_play_info == true) {
+        document.getElementById('play-info-box').style.display = "block";
+        console.log("show");
+    } else {
+        document.getElementById('play-info-box').style.display = "none";
+        console.log("hide");
+    }
+
+    if (show_play_info == true) {
         how_it_works_text.textContent = "Close How it works";
+        how_it_works_text.style.backgroundColor = 'rgb(225, 0, 0)'
     } else {
         how_it_works_text.textContent = "How it works";
+        how_it_works_text.style.backgroundColor = 'rgb(0, 225, 23)'
     }
+
 }
 
 function show_or_hide_html_elements () {
@@ -2620,6 +2634,7 @@ function show_or_hide_html_elements () {
         document.getElementById('choice2').style.display = "flex";
         document.getElementById('choice3').style.display = "flex";
         document.getElementById('building-faith').style.display = "block";
+        document.getElementById('play-info').style.display = "block";
 
         form.style.display = "none";
         question.style.display = "none";
@@ -2638,6 +2653,7 @@ function show_or_hide_html_elements () {
         document.getElementById('choice2').style.display = "none";
         document.getElementById('choice3').style.display = "none";
         document.getElementById('building-faith').style.display = "none";
+        document.getElementById('play-info').style.display = "none";
 
         form.style.display = "none";
         question.style.display = "none";
@@ -2676,6 +2692,7 @@ function show_or_hide_html_elements () {
         }
 
         document.getElementById('big-text').style.display = "none";
+        document.getElementById('play-info').style.display = "none";
 
         document.getElementById('questions-i-got-wrong').style.display = "none";
         document.getElementById('continue-button').style.display = "none";
@@ -2684,6 +2701,7 @@ function show_or_hide_html_elements () {
         document.getElementById('sermon-on-the-mount').style.display = "none";
     } else if (home_page == 4) {
         document.getElementById('big-text').style.display = "none";
+        document.getElementById('play-info').style.display = "none";
 
         form.style.display = "none";
         question.style.display = "none";

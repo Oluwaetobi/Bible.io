@@ -219,6 +219,9 @@ a:hover {
     background-color: rgba(255, 255, 255, 0.5);
     padding: 3px 6px;
     border-radius: 10px;
+    color: white;
+    text-shadow: black 0px 0px 2px;
+    box-shadow: black 0px 0px 5px;
 }
 
 .play-info:hover {
@@ -227,20 +230,30 @@ a:hover {
 }
 
 .play-info-display {
+    display: none;
     position: fixed;
-    background-color: #b5b5b5;
+    /* background-color: #b5b5b5; */
+    background: linear-gradient(180deg, rgb(45, 198, 228), rgb(113, 153, 173));
+    box-shadow: black 0px 0px 20px;
     top: 230px;
     left: 300px;
-    color:white;
-    z-index: 1;
+    z-index: 2;
     width: 800px;
     height: 500px;
     border-radius: 20px;
     padding: 20px;
+    color:white;
+    text-shadow: black 0px 0px 2px;
+    font-size: 25px;
+    font-weight: bold;
+    overflow-y: auto;
 }
 
 .play-info-display h1 {
     text-align: center;
+    text-shadow: black 0px 0px 2px;
+    font-weight: bold;
+    color:rgb(255, 255, 255);
 }
 
 .modes_assets {
