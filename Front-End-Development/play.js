@@ -227,17 +227,6 @@ var bar_graph_rendered_loop = 0;
 
 var robot_modes = [0, 0, 0]
 
-/** I initiated the use of static_width because I don't want to work on making
- * the text go directly in the middle of the screen, depending on computer size, because
- * I've realized that if someone's screen is too small and everything is anchored on that
- * everything will smush together and I don't want to dedicated too much of my time to figuring
- * out the min-width, it's too many calculations. I'm just going to set everything to a 
- * standard size based off of the size of the laptop I had when I first began construction which is 1533px
- * but for the sake of how the screen elements work I'll do 1511 pixels wide. Although this is not
- * to say that this is what I'm implementing on all pages of Bible.io, Developer's discretion is advised!
- */
-var static_width = 1511;
-
 const sound = new Audio();
 sound.src = "./sounds/sound_incorrect.mp3";
 
@@ -2379,23 +2368,25 @@ function myBibletar () {
 }
 
 function onlineDisplay() {
-    var online_x_shift = 90;
     ctx.font = "30px Arial";
     ctx.fillStyle = 'rgb(4, 4, 4)';
     // ctx.fillText("Online: " + online, ((canvas.width)/2) - 60, 100);
-    ctx.fillText("Online: " + online, (static_width/2) - online_x_shift, 110);
+    ctx.fillText("Online: " + online, 630, 50);
 }
 
 function myScoresDisplay () {
     // for home page 1
     var x_shift = -80;
-    const display_y_pos = 135;
+    const display_x_pos = 820;
+    const display_y_pos = 33;
+    const display_vertical_space_between = 25;
+
     ctx.font = "20px Arial";
     ctx.fillStyle = 'rgb(6, 6, 6)';
-    ctx.fillText("Points: " + my_points, (((static_width)/2) + x_shift) - 150, display_y_pos);
+    ctx.fillText("Points: " + my_points, display_x_pos, display_y_pos);
 
     ctx.fillStyle = 'rgb(6, 6, 6)';
-    ctx.fillText("Highscore: " + my_highscores[level - 1], (((static_width)/2) + x_shift) + 150, display_y_pos);
+    ctx.fillText("Highscore: " + my_highscores[level - 1], display_x_pos, display_y_pos + display_vertical_space_between);
 
 
     // black shadow add
@@ -2404,19 +2395,24 @@ function myScoresDisplay () {
     ctx.shadowOffsetX = 0;
     ctx.shadowOffsetY = 0;
 
-    const server_message_y_pos = 165;
+    const server_message_y_pos = 105;
+
+    ctx.fillStyle = 'rgb(0, 0, 0)';
 
     var bolden_text = 5;
     for (let i = 0; i < bolden_text; i++) {
         if (online < 1) {
+            const date = new Date();
+            const seconds = date.getSeconds();
+            var dots_animate = [".", "..", "..."];
             x_shift = -178;
             ctx.fillStyle = 'rgb(174, 4, 4)';
-            ctx.fillText("You are offline, Bible.io was unable to connect you to the Server!", (((static_width)/2) + x_shift - 280) + 150, server_message_y_pos);
+            ctx.fillText("Checking server connection" + dots_animate[(seconds % dots_animate.length)] + "  validating host session", 290, server_message_y_pos);
         } else {
             x_shift = 27;
             // if online is greater than zero that means you are connected to the Bible.io server and are online
             ctx.fillStyle = 'rgb(15, 104, 5)';
-            ctx.fillText("You are online!", (((static_width)/2) + x_shift - 280) + 150, server_message_y_pos);
+            ctx.fillText("You are online!", 660, server_message_y_pos);
         }
     }
 
@@ -2901,9 +2897,14 @@ function draw_Background () {
         // gradient.addColorStop(0, 'rgb(255, 255, 255)');     // Start color (0%)
         // gradient.addColorStop(0.5, 'rgb(31, 223, 223)');
         // gradient.addColorStop(1, 'rgb(45, 134, 250)');    // End color (100%)
-        gradient.addColorStop(0, 'rgb(219, 237, 249)');     // Start color (0%)
-        gradient.addColorStop(0.5, 'rgb(31, 223, 223)');
-        gradient.addColorStop(1, 'rgb(45, 134, 250)');    // End color (100%)
+        // gradient.addColorStop(0, 'rgb(219, 237, 249)');     // Start color (0%)
+        // gradient.addColorStop(0.5, 'rgb(31, 223, 223)');
+        // gradient.addColorStop(1, 'rgb(45, 134, 250)');    // End color (100%)
+        
+        gradient.addColorStop(0, 'rgb(255, 255, 255)');
+        gradient.addColorStop(1, 'rgb(0, 191, 249)')
+        
+        
         ctx.fillStyle = gradient;
         ctx.fillRect(0, 0, canvas.width, canvas.height);
 

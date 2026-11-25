@@ -22,7 +22,8 @@
     display:flex;
     justify-content:center;
     align-items: center;
-    background-color: #09c736;
+    /* background-color: #9bd7ff; */
+    background: linear-gradient(180deg, #00c3ff, #ffffff);
     transition: opacity 0.75s, visibility 0.75s;
     z-index: 4;
 }
@@ -36,8 +37,8 @@
     content: "";
     width: 75px;
     height: 75px;
-    border: 10px solid #a3a3a3;
-    border-top-color: #a50dd3;
+    border: 10px solid #bcbcbc;
+    border-top-color: #0da1d3;
     /* turns it into a circle */
     border-radius: 50%;
     animation: loading 0.75s ease infinite;
@@ -188,18 +189,18 @@ a:hover {
 
 .big-text {
     position: fixed;
-    top: 30px;
+    top: 40px;
     /* height: 60px; */
     /* z index pushs it forward 1 layer */
     z-index: 1;
-    left: 540px;
+    left: 280px;
 }
 
 .big-text #big-text {
     background-color: rgb(182, 0, 0);
     border-radius: 20px;
     padding: 3px 8px;
-    font-size: 60px;
+    font-size: 50px;
     color: white;
     font-weight: bold;
     text-shadow: black 1px 1px 3px;
