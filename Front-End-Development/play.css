@@ -233,7 +233,7 @@ a:hover {
     display: none;
     position: fixed;
     /* background-color: #b5b5b5; */
-    background: linear-gradient(180deg, rgb(45, 198, 228), rgb(113, 153, 173));
+    background: linear-gradient(180deg, rgb(140, 141, 141), rgb(113, 153, 173));
     box-shadow: black 0px 0px 20px;
     top: 230px;
     left: 300px;
@@ -247,6 +247,11 @@ a:hover {
     font-size: 25px;
     font-weight: bold;
     overflow-y: auto;
+}
+
+.play-info-display p {
+    white-space: pre-line;
+    line-height: 1.3;
 }
 
 .play-info-display h1 {
