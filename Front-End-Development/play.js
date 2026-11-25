@@ -2405,7 +2405,7 @@ function myScoresDisplay () {
         if (online < 1) {
             const date = new Date();
             const seconds = date.getSeconds();
-            var dots_animate = [".", "..", "..."];
+            var dots_animate = ["", ".", "..", "..."];
             x_shift = -178;
             ctx.fillStyle = 'rgb(174, 4, 4)';
             ctx.fillText("Checking server connection" + dots_animate[(seconds % dots_animate.length)] + "  validating host session", 490, server_message_y_pos);
@@ -2611,17 +2611,15 @@ function show_or_hide_play_info () {
     
     if (show_play_info == true) {
         document.getElementById('play-info-box').style.display = "block";
-        console.log("show");
     } else {
         document.getElementById('play-info-box').style.display = "none";
-        console.log("hide");
     }
 
     if (show_play_info == true) {
-        how_it_works_text.textContent = "Close How it works";
+        how_it_works_text.textContent = "Close - How it works";
         how_it_works_text.style.backgroundColor = 'rgb(225, 0, 0)'
     } else {
-        how_it_works_text.textContent = "How it works";
+        how_it_works_text.textContent = "Open - How it works";
         how_it_works_text.style.backgroundColor = 'rgb(0, 225, 23)'
     }
 
@@ -3012,7 +3010,7 @@ function connectPlayers () {
             ctx.shadowOffsetX = 0;
             ctx.shadowOffsetY = 0;
     
-            var connection_message = ["Searching for players.", "Searching for players..", "Searching for players..."]
+            var connection_message = ["Searching for players", "Searching for players.", "Searching for players..", "Searching for players..."]
             ctx.font = "30px Arial";
             ctx.fillStyle = 'rgb(6, 6, 6)';
             ctx.fillText(connection_message[timer % connection_message.length], baseline_x + 46, baseline_y + 33);
