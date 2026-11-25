@@ -208,6 +208,41 @@ a:hover {
     border: 2px solid black;
 }
 
+.play-info {
+    position: fixed;
+    top: 110px;
+    left: 980px;
+    z-index: 1;
+    font-size: 25px;
+    font-weight: bold;
+     /* give it some background so it is easier to click */
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 3px 6px;
+    border-radius: 10px;
+}
+
+.play-info:hover {
+    color: orange;
+    cursor: pointer;
+}
+
+.play-info-display {
+    position: fixed;
+    background-color: #b5b5b5;
+    top: 230px;
+    left: 300px;
+    color:white;
+    z-index: 1;
+    width: 800px;
+    height: 500px;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.play-info-display h1 {
+    text-align: center;
+}
+
 .modes_assets {
     text-decoration: none;
     display: flex;

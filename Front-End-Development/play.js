@@ -2597,6 +2597,22 @@ function hideBuildingFaithInSocietyInformation () {
     document.getElementById('building-faith-text').style.display = "none";
 }
 
+var show_play_info = false;
+const how_it_works_text = document.getElementById('play-info');
+function show_or_hide_play_info () {
+    if (show_play_info == false) {
+        show_play_info = true;
+    } else {
+        show_play_info = false;
+    }
+    
+    if (show_play_info == true) {
+        how_it_works_text.textContent = "Close How it works";
+    } else {
+        how_it_works_text.textContent = "How it works";
+    }
+}
+
 function show_or_hide_html_elements () {
     if (home_page == 1) {
         document.getElementById('big-text').style.display = "block";
