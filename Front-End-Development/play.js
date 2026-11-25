@@ -2398,6 +2398,7 @@ function myScoresDisplay () {
     const server_message_y_pos = 105;
 
     ctx.fillStyle = 'rgb(0, 0, 0)';
+    ctx.fillText("Bible.io Server Status: ", 280, server_message_y_pos);
 
     var bolden_text = 5;
     for (let i = 0; i < bolden_text; i++) {
@@ -2407,12 +2408,12 @@ function myScoresDisplay () {
             var dots_animate = [".", "..", "..."];
             x_shift = -178;
             ctx.fillStyle = 'rgb(174, 4, 4)';
-            ctx.fillText("Checking server connection" + dots_animate[(seconds % dots_animate.length)] + "  validating host session", 290, server_message_y_pos);
+            ctx.fillText("Checking server connection" + dots_animate[(seconds % dots_animate.length)] + "  validating host session", 490, server_message_y_pos);
         } else {
             x_shift = 27;
             // if online is greater than zero that means you are connected to the Bible.io server and are online
             ctx.fillStyle = 'rgb(15, 104, 5)';
-            ctx.fillText("You are online!", 660, server_message_y_pos);
+            ctx.fillText("Online", 490, server_message_y_pos);
         }
     }
 
