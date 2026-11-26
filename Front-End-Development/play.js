@@ -109,6 +109,9 @@ var store_recent_games_won = [0];
 let my_history = {
     games_history: [],
     todays_date: 0,
+    // backups for points and highscores in case the site doesn't support cookies
+    my_points: 0,
+    my_highscores: [0, 0, 0],
 };
 
 /** Home page is important, because it tells us whether, we are in the main page of play, or the searching for opponents
@@ -579,6 +582,14 @@ function update_Data_And_Continue_Game() {
 
     // updates my total points
     my_points += this_game_points;
+    // back up points
+    my_history.my_points += this_game_points;
+    // back up highscores on all levels
+    for (let i = 0; i < my_highscores.length; i++) {
+        if (my_history.my_highscores[i] < my_highscores[i]) {
+            my_history.my_highscores[i] = my_highscores[i];
+        }
+    }
 
     // save all data to local storage
     save_Data_to_Local_or_Session_Storage();
@@ -1251,7 +1262,7 @@ function localStorageAndSessionStorageData () {
         my_history = saved_games_history;
         if (my_history.todays_date != date_num) {
             // reset games history
-            my_history.games_history = [];
+            reset_all_data_in_backup_history();
         } else {
             // do nothing, I don't need to reset my games history
         }
@@ -1259,6 +1270,42 @@ function localStorageAndSessionStorageData () {
         // do nothing, has already been created and set to default
     }
 
+    use_score_backups_from_history_if_needed();
+}
+
+function reset_all_data_in_backup_history() {
+    my_history.games_history = [];
+    my_history.my_points = 0;
+    for (let i = 0; i < my_highscores.length; i++) {
+        my_history.my_highscores[i] = 0;
+    }
+}
+
+function use_score_backups_from_history_if_needed () {
+    /* It is possible that these values might not exist, always check if they exist before
+    setting a different variable to it's value */
+    if (my_points == 0) {
+        /** If my_points equals 0 then we need to use our BACKUPS, remember that this is
+         * the MOST EFFECTIVE WAY to know whether back ups are need, if your points equals 0
+         */
+        // cookies failed because site is blocking cookies, use data from back ups
+        if (my_history.my_points ) {
+            // if it exists
+            my_points = my_history.my_points;
+        } else {
+            // do nothing, has already been created and set to default
+        }
+        if (my_history.my_points) {
+            // if it exists
+            for (let i = 0; i < my_highscores.length; i++) {
+                // my_highscores[i] = my_history.my_highscores[i];
+            }
+        } else {
+            // do nothing, has already been created and set to default
+        }
+    } else {
+        // cookies worked
+    }
 }
 
 figure_out_whether_i_am_a_boy_or_a_girl();
