@@ -495,27 +495,17 @@ function put_game_history_data_into_table (index) {
     const cell1 = tr.insertCell(0);
     const cell2 = tr.insertCell(1);
     const cell3 = tr.insertCell(2);
-
     // 4. Add content to the cells
     cell1.textContent = (index + 1);
     cell2.textContent = games_history[index][0];
     cell3.textContent = games_history[index][1];
-
-
 }
-place_games_history_data_into_table_and_format_properly();
-function place_games_history_data_into_table_and_format_properly() {
-    for (let i = 0; i < games_history.length; i++) {
-        put_game_history_data_into_table(i);
-    }
 
+function format_colors_properly_for_history_game_logs() {
     // format colors properly
     const tableBody = document.querySelectorAll("#table-history-design tbody td")
-
     tableBody.forEach((td, index)=> {
-        
         const regular_color = 'rgb(227, 227, 227)';
-
         if (index % 3 == 0) {
             // num
             td.style.backgroundColor = regular_color;
@@ -536,7 +526,14 @@ function place_games_history_data_into_table_and_format_properly() {
             td.style.backgroundColor = regular_color;
         }
     })
+}
 
+place_games_history_data_into_table_and_format_properly();
+function place_games_history_data_into_table_and_format_properly() {
+    for (let i = 0; i < games_history.length; i++) {
+        put_game_history_data_into_table(i);
+    }
+    format_colors_properly_for_history_game_logs();
 }
 
 function update_Data_And_Continue_Game() {
@@ -589,6 +586,7 @@ function update_Data_And_Continue_Game() {
 
     // update games history log
     put_game_history_data_into_table((games_history.length) - 1);
+    format_colors_properly_for_history_game_logs();
 
 }
 

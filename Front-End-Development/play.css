@@ -283,7 +283,7 @@ a:hover {
 .history-info-display {
     position: fixed;
     /* background-color: #b5b5b5; */
-    background: linear-gradient(180deg, rgb(140, 141, 141), rgb(113, 153, 173));
+    background: linear-gradient(180deg, rgb(165, 165, 165), rgb(112, 112, 112));
     box-shadow: black 0px 0px 20px;
     top: 270px;
     left: 300px;
@@ -310,12 +310,16 @@ a:hover {
     text-shadow: black 0px 0px 2px;
     font-weight: bold;
     color:rgb(255, 255, 255);
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: #00c3ff;
+    box-shadow: black 0px 0px 10px;
 }
 
 /* Scrollable table for the hall of fame */
 .scrollable-table {
-    min-height: 360px;
-    width: 600px;
+    height: 360px;
+    width: 720px;
     /* overflow-y makes only the y coordinates scrollable */
     overflow-y: auto;
     /* background-color: #7f2e2e; */
@@ -329,6 +333,7 @@ a:hover {
     z-index: 1;
     /* border: 3px solid black; */
     box-shadow: black 0px 0px 20px;
+    background-color: rgba(137, 137, 137, 0.9);
 }
 
 /* Scrollable table class takes precedence over table class
