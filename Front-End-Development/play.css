@@ -345,7 +345,7 @@ table takes up the full width of it's parent the scrollable table */
 /*  */
 .table th {
     /* background-color: #6085fffe; */
-    background: linear-gradient(0deg, #03d2fc, #3853ef);
+    background: linear-gradient(0deg, #fc6b03, #d0ef38);
     color: #ffffff;
     text-align: left;
     position: sticky;
@@ -384,12 +384,12 @@ table takes up the full width of it's parent the scrollable table */
 
 /* Background color for every even row (opposite of odd rows), */
 .table tbody tr:nth-of-type(even) {
-    /* THIS IS USELESS BECAUSE IT IS NOW BEING CONTROLLED IN JAVASCRIPT WITH THE FUNCTION: change_top_player_display() */
+    /* THIS IS USELESS BECAUSE IT IS NOW BEING CONTROLLED IN JAVASCRIPT WITH THE FUNCTION: place_games_history_data_into_table_and_format_properly() */
     background-color: #bdbcbc;
 }
 
 .table tbody tr:nth-of-type(odd) {
-    /* THIS IS USELESS BECAUSE IT IS NOW BEING CONTROLLED IN JAVASCRIPT WITH THE FUNCTION: change_top_player_display() */
+    /* THIS IS USELESS BECAUSE IT IS NOW BEING CONTROLLED IN JAVASCRIPT WITH THE FUNCTION: place_games_history_data_into_table_and_format_properly() */
     background-color: #f8faf9;
 }
 

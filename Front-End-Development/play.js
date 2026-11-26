@@ -487,10 +487,10 @@ function store_data_for_games_history () {
     return history_data;
 }
 
-function put_game_history_data_in_table (index) {
+function put_game_history_data_into_table (index) {
     const tableBody = document.querySelector("#table-history-design tbody")
-    // 2. Create and append a new row (-1 adds it to the end)
-    const tr = tableBody.insertRow(-1);
+    // 2. Create and append a new row (-1 adds it to the end, and 0 adds it to the top)
+    const tr = tableBody.insertRow(0);
     // 3. Create and append new cells to that row
     const cell1 = tr.insertCell(0);
     const cell2 = tr.insertCell(1);
@@ -506,14 +506,15 @@ function put_game_history_data_in_table (index) {
 place_games_history_data_into_table_and_format_properly();
 function place_games_history_data_into_table_and_format_properly() {
     for (let i = 0; i < games_history.length; i++) {
-        put_game_history_data_in_table(i);
+        put_game_history_data_into_table(i);
     }
 
+    // format colors properly
     const tableBody = document.querySelectorAll("#table-history-design tbody td")
 
     tableBody.forEach((td, index)=> {
         
-        const regular_color = 'rgb(170, 170, 170)';
+        const regular_color = 'rgb(227, 227, 227)';
 
         if (index % 3 == 0) {
             // num
@@ -523,8 +524,10 @@ function place_games_history_data_into_table_and_format_properly() {
             // result
             td.style.backgroundColor = regular_color;
             if (td.textContent == "Defeat") {
+                // red for defeat
                 td.style.backgroundColor = 'rgb(209, 0, 0)';
             } else {
+                // green for victory
                 td.style.backgroundColor = 'rgb(3, 197, 0)';
             }
         }
@@ -578,14 +581,14 @@ function update_Data_And_Continue_Game() {
     home_page = 1;
 
     // send my data to the hall_of_fame_section of the Bible.io Server
-        
-    
-
     makePost_or_Patch_Request_hall_of_fame();
 
     // free up log memory
     console.clear();
     console.warn("The console was cleared to free up memory space");
+
+    // update games history log
+    put_game_history_data_into_table((games_history.length) - 1);
 
 }
 
