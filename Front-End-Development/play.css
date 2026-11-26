@@ -238,7 +238,7 @@ a:hover {
     box-shadow: black 0px 0px 20px;
     top: 210px;
     left: 300px;
-    z-index: 2;
+    z-index: 3;
     width: 800px;
     height: 520px;
     border-radius: 20px;
@@ -464,7 +464,7 @@ because they are not theh same thing, at least the parameters aren't */
     color:rgb(255, 255, 255);
     padding: 10px 20px;
     border-radius: 20px;
-    background-color: #00c3ff;
+    background-color: #ffb300;
     box-shadow: black 0px 0px 10px;
 }
 
