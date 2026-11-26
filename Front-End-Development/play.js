@@ -2725,7 +2725,7 @@ function show_or_hide_history () {
         history_text.style.backgroundColor = 'rgb(225, 0, 0)'
     } else {
         history_text.textContent = "History";
-        history_text.style.backgroundColor = 'rgb(0, 225, 23)'
+        history_text.style.backgroundColor = 'rgb(140, 140, 140)'
     }
 }
 
