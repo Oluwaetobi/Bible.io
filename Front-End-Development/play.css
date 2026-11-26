@@ -314,8 +314,8 @@ a:hover {
     color:rgb(255, 255, 255);
     padding: 10px 20px;
     border-radius: 20px;
-    background-color: #00c3ff;
-    box-shadow: black 0px 0px 10px;
+    /* background-color: #a5a6a6; */
+    /* box-shadow: black 0px 0px 10px; */
 }
 
 /* Scrollable table for the hall of fame */
@@ -372,10 +372,11 @@ table takes up the full width of it's parent the scrollable table */
     padding: 2px;
     font-weight: normal;
     font-size: 18px;
-    text-align: center;
+    text-align: left;
     color: black;
     font-weight: normal;
     text-shadow: none;
+    padding: 5px 10px;
 }
 
 .table td img {
