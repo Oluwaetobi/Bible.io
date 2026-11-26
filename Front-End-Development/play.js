@@ -3602,6 +3602,17 @@ function start_timer() {
                 makeA_Patch_Request_to_see_waiting_room_data_frequently();
             }
         }
+
+        if (timer % 1 == 0) {
+            if ((time_alloted_for_each_game - timer) > 57) {
+                if (home_page == 3) {
+                    /* Sometimes people join last minute and I don't have enough time to receive their
+                    data such as bibletars, names, and countries, that's why I have to receive their
+                    data again around the very start of the game */
+                    makeA_Patch_Request_to_see_waiting_room_data_frequently();
+                }
+            }
+        }
         
         if ((time_alloted_for_each_game - timer) < -4) {
             if (home_page == 3) {
