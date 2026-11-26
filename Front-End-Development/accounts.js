@@ -497,9 +497,15 @@ function check_if_i_need_back_up_data_from_history () {
     if (my_points == 0) {
         /* checking if my_points equals to 0 is the most effective way to check if 
         I need to use our backup history data */
-        if (my_history !== undefined) {
+        if (my_history.my_points !== undefined) {
             // if it exists
             my_points = my_history.my_points;
+        }
+        if (my_history.my_highscores !== undefined) {
+            // if it exists
+            for (let i = 0; i < my_highscores.length; i++) {
+                my_highscores[i] = my_history.my_highscores[i];
+            }
         }
     }
 }
