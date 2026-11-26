@@ -483,7 +483,7 @@ function store_data_for_games_history () {
         history_parts_names.push(my_game.everyones_names[global_scope_players_places_organized[i]]);
         history_parts_points.push(Math.round(my_game.everyones_points[global_scope_players_places_organized[i]]));
     }
-    history_data = history_parts_names[0] + ": " +  history_parts_points[0] + ", " + history_parts_names[1] + ": " +  history_parts_points[1] + ", " + history_parts_names[2] + ": " +  history_parts_points[2] + ", " + history_parts_names[3] + ": " +  history_parts_points[3];
+    history_data = history_parts_names[0] + ": " +  history_parts_points[0] + ",  " + history_parts_names[1] + ": " +  history_parts_points[1] + ",  " + history_parts_names[2] + ": " +  history_parts_points[2] + ",  " + history_parts_names[3] + ": " +  history_parts_points[3];
     return history_data;
 }
 
