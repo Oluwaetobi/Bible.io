@@ -104,6 +104,8 @@ var recent_games_played = 0;
 var store_recent_games_played = [0];
 var store_recent_games_won = [0];
 
+var games_history = [];
+
 /** Home page is important, because it tells us whether, we are in the main page of play, or the searching for opponents
  * page, or the game page, or the last page for showing correct answers, scores, and etc. And then we go back all the 
  * way to page 1, if they choose to go back, or page 2, if they choose to play again
@@ -473,6 +475,67 @@ function check_if_I_got_first_place () {
     }
 }
 
+function store_data_for_games_history () {
+    var history_data;
+    var history_parts_names = [];
+    var history_parts_points = [];
+    for (let i = 0; i < global_scope_players_places_organized.length; i++) {
+        history_parts_names.push(my_game.everyones_names[global_scope_players_places_organized[i]]);
+        history_parts_points.push(Math.round(my_game.everyones_points[global_scope_players_places_organized[i]]));
+    }
+    history_data = history_parts_names[0] + ": " +  history_parts_points[0] + ", " + history_parts_names[1] + ": " +  history_parts_points[1] + ", " + history_parts_names[2] + ": " +  history_parts_points[2] + ", " + history_parts_names[3] + ": " +  history_parts_points[3];
+    return history_data;
+}
+
+function put_game_history_data_in_table (index) {
+    const tableBody = document.querySelector("#table-history-design tbody")
+    // 2. Create and append a new row (-1 adds it to the end)
+    const tr = tableBody.insertRow(-1);
+    // 3. Create and append new cells to that row
+    const cell1 = tr.insertCell(0);
+    const cell2 = tr.insertCell(1);
+    const cell3 = tr.insertCell(2);
+
+    // 4. Add content to the cells
+    cell1.textContent = (index + 1);
+    cell2.textContent = games_history[index][0];
+    cell3.textContent = games_history[index][1];
+
+
+}
+place_games_history_data_into_table_and_format_properly();
+function place_games_history_data_into_table_and_format_properly() {
+    for (let i = 0; i < games_history.length; i++) {
+        put_game_history_data_in_table(i);
+    }
+
+    const tableBody = document.querySelectorAll("#table-history-design tbody td")
+
+    tableBody.forEach((td, index)=> {
+        
+        const regular_color = 'rgb(170, 170, 170)';
+
+        if (index % 3 == 0) {
+            // num
+            td.style.backgroundColor = regular_color;
+        }
+        if (index % 3 == 1) {
+            // result
+            td.style.backgroundColor = regular_color;
+            if (td.textContent == "Defeat") {
+                td.style.backgroundColor = 'rgb(209, 0, 0)';
+            } else {
+                td.style.backgroundColor = 'rgb(3, 197, 0)';
+            }
+        }
+        if (index % 3 == 2) {
+            // names & scores
+            td.style.backgroundColor = regular_color;
+        }
+    })
+
+}
+
 function update_Data_And_Continue_Game() {
     timer = 1;
     games_played += 1;
@@ -492,10 +555,15 @@ function update_Data_And_Continue_Game() {
         my_cash += 1;
     }
 
+    const games_history_data = store_data_for_games_history();
+
     // if I got first place in the game, I get extra cash
     if (i_got_first_place == true) {
         my_cash += 10;
         bonus_money = 10;
+        games_history.push(["Victory", games_history_data])
+    } else {
+        games_history.push(["Defeat", games_history_data])
     }
 
     // updates my total points
@@ -1040,11 +1108,12 @@ function save_Data_to_Local_or_Session_Storage() {
     // back up cookies as session storage
     sessionStorage.setItem('backup_my_points', JSON.stringify(my_points));
     sessionStorage.setItem('backup_my_highscores', JSON.stringify(my_highscores));
-
+    sessionStorage.setItem('games_history', JSON.stringify(games_history));
+    
     localStorage.setItem('games_played', JSON.stringify(games_played));
     localStorage.setItem('store_recent_games_played', JSON.stringify(store_recent_games_played));
     localStorage.setItem('store_recent_games_won', JSON.stringify(store_recent_games_won));
-
+    
 
     // localStorage.setItem('my_cash', JSON.stringify(my_cash));
 }
@@ -1099,6 +1168,7 @@ function localStorageAndSessionStorageData () {
     const saved_games_played = JSON.parse(localStorage.getItem("games_played"));
     const saved_recent_games_played = JSON.parse(localStorage.getItem('store_recent_games_played'));
     const saved_recent_games_won = JSON.parse(localStorage.getItem('store_recent_games_won'));
+    const saved_games_history = JSON.parse(sessionStorage.getItem('games_history'));
     const developer_tools = JSON.parse(localStorage.getItem('i_am_a_developer'));
 
     if (developer_tools) {
@@ -1158,6 +1228,12 @@ function localStorageAndSessionStorageData () {
 
     if (saved_recent_games_won) {
         store_recent_games_won = saved_recent_games_won;
+    } else {
+        // do nothing, has already been created and set to default
+    }
+
+    if (saved_games_history) {
+        games_history = saved_games_history;
     } else {
         // do nothing, has already been created and set to default
     }
@@ -5852,6 +5928,9 @@ function results_information() {
 var results_shift_x = 0;
 var results_shift_y = 0;
 
+// accessible in global scope
+var global_scope_players_places_organized = [0, 0, 0, 0];
+
 function show_results() {
     /**Shows who won and places, questions I got wrong, as well as gives me the option to play
      * again or go back to the main page in the play section of Bible.io
@@ -5888,7 +5967,14 @@ function show_results() {
                 }
             }
         }
+
+
+        for (let i = 0; i < global_scope_players_places_organized.length; i++) {
+            // accessible globally in our program
+            global_scope_players_places_organized[i] = players_places_organized[i];
+        }
     }
+
 
     order_players_indexes_from_highest_points_to_lowest_points();
 

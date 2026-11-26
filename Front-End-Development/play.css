@@ -297,6 +297,7 @@ a:hover {
     font-size: 25px;
     font-weight: bold;
     overflow-y: auto;
+    place-items: center;
 }
 
 .history-info-display p {
@@ -309,6 +310,99 @@ a:hover {
     text-shadow: black 0px 0px 2px;
     font-weight: bold;
     color:rgb(255, 255, 255);
+}
+
+/* Scrollable table for the hall of fame */
+.scrollable-table {
+    min-height: 360px;
+    width: 600px;
+    /* overflow-y makes only the y coordinates scrollable */
+    overflow-y: auto;
+    /* background-color: #7f2e2e; */
+    scroll-snap-type: y mandatory;
+    position: static;
+    /* left: 450px; */
+    border: 2px solid #000000;
+    /* box-sizing: border-box; */
+    border-radius: 5px 5px;
+
+    z-index: 1;
+    /* border: 3px solid black; */
+    box-shadow: black 0px 0px 20px;
+}
+
+/* Scrollable table class takes precedence over table class
+table takes up the full width of it's parent the scrollable table */
+.scrollable-table > .table {
+    width: 100%
+}
+
+.table {
+    /* border-collapse:collapse; */
+    font-size: 10px;
+    width: 400px;
+}
+/*  */
+.table th {
+    /* background-color: #6085fffe; */
+    background: linear-gradient(0deg, #03d2fc, #3853ef);
+    color: #ffffff;
+    text-align: left;
+    position: sticky;
+    top: 0px;
+    /* justify-content: center;
+    align-items: center; */
+    /* box-sizing: border-box; */
+    border-radius: 2px 2px;
+    font-size: 20px;
+    font-weight: bold;
+    z-index: 3;
+    text-shadow: black 0px 0px 2px;
+    padding: 4px 6px;
+}
+
+.table td {
+    padding: 2px;
+    font-weight: normal;
+    font-size: 18px;
+    text-align: center;
+    color: black;
+    font-weight: normal;
+    text-shadow: none;
+}
+
+.table td img {
+    box-shadow: black 0px 0px 3px;
+    /* border: 1px groove black; */
+    /* border-radius: 1px; */
+}
+
+
+.table tr {
+    scroll-snap-align: start;
+}
+
+/* Background color for every even row (opposite of odd rows), */
+.table tbody tr:nth-of-type(even) {
+    /* THIS IS USELESS BECAUSE IT IS NOW BEING CONTROLLED IN JAVASCRIPT WITH THE FUNCTION: change_top_player_display() */
+    background-color: #bdbcbc;
+}
+
+.table tbody tr:nth-of-type(odd) {
+    /* THIS IS USELESS BECAUSE IT IS NOW BEING CONTROLLED IN JAVASCRIPT WITH THE FUNCTION: change_top_player_display() */
+    background-color: #f8faf9;
+}
+
+/* You would think that I would be able to combine these 2 but I can't
+because they are not theh same thing, at least the parameters aren't */
+.table tr:hover td {
+    /* background-color: #8cdeee; */
+    background-color: rgba(255, 255, 255, 0.2);
+    /* text-decoration: none; */
+    cursor: pointer;
+}
+.table tr:hover {
+    filter: brightness(130%);
 }
 
 .modes_assets {
