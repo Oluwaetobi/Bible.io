@@ -186,6 +186,8 @@ let mouseY = 0;
 
 var my_name = "Unknown Player"
 
+let my_history;
+
 var box_x_pos = 1;
 var gameOn = false;
 /* Being able to copy and paste text by using HTML is super important, especially when the text is super long,
@@ -421,6 +423,7 @@ function localStorageAndSessionStorageData () {
     const saved_games_played = JSON.parse(localStorage.getItem("games_played"));
     const saved_recent_games_played = JSON.parse(localStorage.getItem('store_recent_games_played'));
     const saved_recent_games_won = JSON.parse(localStorage.getItem('store_recent_games_won'));
+    const saved_games_history = JSON.parse(localStorage.getItem('my_history'));
     const developer_tools = JSON.parse(localStorage.getItem('i_am_a_developer'));
     
     if (developer_tools) {
@@ -480,6 +483,24 @@ function localStorageAndSessionStorageData () {
         store_recent_games_won = saved_recent_games_won;
     } else {
         // do nothing, has already been created and set to default
+    }
+
+    if (saved_games_history) {
+        my_history = saved_games_history;
+        check_if_i_need_back_up_data_from_history();
+    } else {
+        // do nothing
+    }
+}
+
+function check_if_i_need_back_up_data_from_history () {
+    if (my_points == 0) {
+        /* checking if my_points equals to 0 is the most effective way to check if 
+        I need to use our backup history data */
+        if (my_history !== undefined) {
+            // if it exists
+            my_points = my_history.my_points;
+        }
     }
 }
 

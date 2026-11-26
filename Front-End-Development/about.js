@@ -206,8 +206,8 @@ function scale_web_size_based_on_users_pc_or_mobile_width () {
                 // console.log(width_of_screen_size);
             }
         }
-        canvas.width = (width_of_screen_size*(1/scale));
-        canvas.height = (canvas.width / convert_height_based_off_width);
+        // canvas.width = (width_of_screen_size*(1/scale));
+        // canvas.height = (canvas.width / convert_height_based_off_width);
         // console.log(scale)
     }
     
