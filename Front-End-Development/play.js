@@ -1310,8 +1310,8 @@ function use_score_backups_from_history_if_needed () {
             the reason why there might be variables missing from the object is because I added new variables that
             I also want to back up and track in my_history, or it could be because the user got hacked or
             someother unpredictable computer issue and etc. */
-            // localStorage.removeItem('my_history');
-            // corrupted_data = true;
+            localStorage.removeItem('my_history');
+            corrupted_data = true;
         }
         if (my_history.my_highscores !== undefined) {
             // if it exists
@@ -1327,8 +1327,8 @@ function use_score_backups_from_history_if_needed () {
             corrupted data has already been loaded into the object and the only way to stop that
             from the start of the program is by refusing to save anything anymore, so the next time the
             program is loaded, no corrupt data is loaded into the object */
-            // localStorage.removeItem('my_history');
-            // corrupted_data = true;
+            localStorage.removeItem('my_history');
+            corrupted_data = true;
         }
     } else {
         // cookies worked
