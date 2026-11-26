@@ -104,7 +104,12 @@ var recent_games_played = 0;
 var store_recent_games_played = [0];
 var store_recent_games_won = [0];
 
-var games_history = [];
+
+// i'm doing let instead of const because I need to be able to reassign this object
+let my_history = {
+    games_history: [],
+    todays_date: 0,
+};
 
 /** Home page is important, because it tells us whether, we are in the main page of play, or the searching for opponents
  * page, or the game page, or the last page for showing correct answers, scores, and etc. And then we go back all the 
@@ -497,8 +502,8 @@ function put_game_history_data_into_table (index) {
     const cell3 = tr.insertCell(2);
     // 4. Add content to the cells
     cell1.textContent = (index + 1);
-    cell2.textContent = games_history[index][0];
-    cell3.textContent = games_history[index][1];
+    cell2.textContent = my_history.games_history[index][0];
+    cell3.textContent = my_history.games_history[index][1];
 }
 
 function format_colors_properly_for_history_game_logs() {
@@ -530,15 +535,21 @@ function format_colors_properly_for_history_game_logs() {
 
 place_games_history_data_into_table_and_format_properly();
 function place_games_history_data_into_table_and_format_properly() {
-    for (let i = 0; i < games_history.length; i++) {
+    for (let i = 0; i < my_history.games_history.length; i++) {
         put_game_history_data_into_table(i);
     }
     format_colors_properly_for_history_game_logs();
 }
 
 function update_Data_And_Continue_Game() {
+    const date = new Date();
+    const date_num = date.getDate();
+
     timer = 1;
     games_played += 1;
+
+    // helps with knowing whether history needs to be reset at the start of the program
+    my_history.todays_date = date_num;
 
     store_most_recent_games_won_and_played_in_array();
 
@@ -561,9 +572,9 @@ function update_Data_And_Continue_Game() {
     if (i_got_first_place == true) {
         my_cash += 10;
         bonus_money = 10;
-        games_history.push(["Victory", games_history_data])
+        my_history.games_history.push(["Victory", games_history_data])
     } else {
-        games_history.push(["Defeat", games_history_data])
+        my_history.games_history.push(["Defeat", games_history_data])
     }
 
     // updates my total points
@@ -585,7 +596,7 @@ function update_Data_And_Continue_Game() {
     console.warn("The console was cleared to free up memory space");
 
     // update games history log
-    put_game_history_data_into_table((games_history.length) - 1);
+    put_game_history_data_into_table((my_history.games_history.length) - 1);
     format_colors_properly_for_history_game_logs();
 
 }
@@ -1109,11 +1120,11 @@ function save_Data_to_Local_or_Session_Storage() {
     // back up cookies as session storage
     sessionStorage.setItem('backup_my_points', JSON.stringify(my_points));
     sessionStorage.setItem('backup_my_highscores', JSON.stringify(my_highscores));
-    sessionStorage.setItem('games_history', JSON.stringify(games_history));
     
     localStorage.setItem('games_played', JSON.stringify(games_played));
     localStorage.setItem('store_recent_games_played', JSON.stringify(store_recent_games_played));
     localStorage.setItem('store_recent_games_won', JSON.stringify(store_recent_games_won));
+    localStorage.setItem('my_history', JSON.stringify(my_history));
     
 
     // localStorage.setItem('my_cash', JSON.stringify(my_cash));
@@ -1169,7 +1180,7 @@ function localStorageAndSessionStorageData () {
     const saved_games_played = JSON.parse(localStorage.getItem("games_played"));
     const saved_recent_games_played = JSON.parse(localStorage.getItem('store_recent_games_played'));
     const saved_recent_games_won = JSON.parse(localStorage.getItem('store_recent_games_won'));
-    const saved_games_history = JSON.parse(sessionStorage.getItem('games_history'));
+    const saved_games_history = JSON.parse(localStorage.getItem('my_history'));
     const developer_tools = JSON.parse(localStorage.getItem('i_am_a_developer'));
 
     if (developer_tools) {
@@ -1233,8 +1244,17 @@ function localStorageAndSessionStorageData () {
         // do nothing, has already been created and set to default
     }
 
+
+    const date = new Date();
+    const date_num = date.getDate();
     if (saved_games_history) {
-        games_history = saved_games_history;
+        my_history = saved_games_history;
+        if (my_history.todays_date != date_num) {
+            // reset games history
+            my_history.games_history = [];
+        } else {
+            // do nothing, I don't need to reset my games history
+        }
     } else {
         // do nothing, has already been created and set to default
     }
@@ -2729,6 +2749,33 @@ function show_or_hide_history () {
     }
 }
 
+// starts as true, because it is once run at the start which sets it too false
+var show_bible_day_contest_info = true;
+const bible_day_text = document.getElementById('bible-day-contest-info');
+// run it once so that color comes into effect
+show_or_hide_worlds_bible_day_contest();
+function show_or_hide_worlds_bible_day_contest () {
+    if (show_bible_day_contest_info == false) {
+        show_bible_day_contest_info = true;
+    } else {
+        show_bible_day_contest_info = false;
+    }
+    
+    if (show_bible_day_contest_info == true) {
+        document.getElementById('bible-day-contest-info-box').style.display = "block";
+    } else {
+        document.getElementById('bible-day-contest-info-box').style.display = "none";
+    }
+
+    if (show_bible_day_contest_info == true) {
+        bible_day_text.textContent = "World's Bible Day Contest";
+        bible_day_text.style.backgroundColor = 'rgb(225, 0, 0)'
+    } else {
+        bible_day_text.textContent = "World's Bible Day Contest";
+        bible_day_text.style.backgroundColor = 'rgb(140, 140, 140)'
+    }
+}
+
 function show_or_hide_html_elements () {
     if (home_page == 1) {
         document.getElementById('big-text').style.display = "block";
@@ -2738,6 +2785,7 @@ function show_or_hide_html_elements () {
         document.getElementById('building-faith').style.display = "block";
         document.getElementById('play-info').style.display = "block";
         document.getElementById('history-info').style.display = "block";
+        document.getElementById('bible-day-contest-info').style.display = "block";
 
         form.style.display = "none";
         question.style.display = "none";
@@ -2758,6 +2806,7 @@ function show_or_hide_html_elements () {
         document.getElementById('building-faith').style.display = "none";
         document.getElementById('play-info').style.display = "none";
         document.getElementById('history-info').style.display = "none";
+        document.getElementById('bible-day-contest-info').style.display = "none";
 
         form.style.display = "none";
         question.style.display = "none";
@@ -2798,6 +2847,7 @@ function show_or_hide_html_elements () {
         document.getElementById('big-text').style.display = "none";
         document.getElementById('play-info').style.display = "none";
         document.getElementById('history-info').style.display = "none";
+        document.getElementById('bible-day-contest-info').style.display = "none";
 
         document.getElementById('questions-i-got-wrong').style.display = "none";
         document.getElementById('continue-button').style.display = "none";
@@ -2808,6 +2858,7 @@ function show_or_hide_html_elements () {
         document.getElementById('big-text').style.display = "none";
         document.getElementById('play-info').style.display = "none";
         document.getElementById('history-info').style.display = "none";
+        document.getElementById('bible-day-contest-info').style.display = "none";
 
         form.style.display = "none";
         question.style.display = "none";
