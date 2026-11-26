@@ -300,6 +300,7 @@ a:hover {
     font-weight: bold;
     overflow-y: auto;
     place-items: center;
+    text-align: center;
 }
 
 .history-info-display p {
