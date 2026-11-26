@@ -2625,6 +2625,33 @@ function show_or_hide_play_info () {
 
 }
 
+// starts as true, because it is once run at the start which sets it too false
+var show_history_info = true;
+const history_text = document.getElementById('history-info');
+// run it once so that color comes into effect
+show_or_hide_history();
+function show_or_hide_history () {
+    if (show_history_info == false) {
+        show_history_info = true;
+    } else {
+        show_history_info = false;
+    }
+    
+    if (show_history_info == true) {
+        document.getElementById('history-info-box').style.display = "block";
+    } else {
+        document.getElementById('history-info-box').style.display = "none";
+    }
+
+    if (show_history_info == true) {
+        history_text.textContent = "History";
+        history_text.style.backgroundColor = 'rgb(225, 0, 0)'
+    } else {
+        history_text.textContent = "History";
+        history_text.style.backgroundColor = 'rgb(0, 225, 23)'
+    }
+}
+
 function show_or_hide_html_elements () {
     if (home_page == 1) {
         document.getElementById('big-text').style.display = "block";
@@ -2633,6 +2660,7 @@ function show_or_hide_html_elements () {
         document.getElementById('choice3').style.display = "flex";
         document.getElementById('building-faith').style.display = "block";
         document.getElementById('play-info').style.display = "block";
+        document.getElementById('history-info').style.display = "block";
 
         form.style.display = "none";
         question.style.display = "none";
@@ -2652,6 +2680,7 @@ function show_or_hide_html_elements () {
         document.getElementById('choice3').style.display = "none";
         document.getElementById('building-faith').style.display = "none";
         document.getElementById('play-info').style.display = "none";
+        document.getElementById('history-info').style.display = "none";
 
         form.style.display = "none";
         question.style.display = "none";
@@ -2691,6 +2720,7 @@ function show_or_hide_html_elements () {
 
         document.getElementById('big-text').style.display = "none";
         document.getElementById('play-info').style.display = "none";
+        document.getElementById('history-info').style.display = "none";
 
         document.getElementById('questions-i-got-wrong').style.display = "none";
         document.getElementById('continue-button').style.display = "none";
@@ -2700,6 +2730,7 @@ function show_or_hide_html_elements () {
     } else if (home_page == 4) {
         document.getElementById('big-text').style.display = "none";
         document.getElementById('play-info').style.display = "none";
+        document.getElementById('history-info').style.display = "none";
 
         form.style.display = "none";
         question.style.display = "none";
