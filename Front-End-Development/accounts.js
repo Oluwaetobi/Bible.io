@@ -1651,10 +1651,10 @@ function display_my_progress_info() {
     
     ctx.font = "25px Arial";
     ctx.fillStyle = 'rgb(253, 253, 253)';
-    ctx.fillText("Races: " + games_played + "  |  Win Rate: " + win_rate + "%", 40, 580);
+    ctx.fillText("Races: " + games_played + "  |  Win Rate: " + win_rate + "%", 30, 580);
     
     ctx.font = "20px Arial";
-    ctx.fillText("My Level: " + players_level_display[my_level - 1], 40, 610);
+    ctx.fillText("My Level: " + players_level_display[my_level - 1], 30, 610);
 
     // black shadow remove
     ctx.shadowColor = "white";
@@ -1731,7 +1731,7 @@ function rotate_box(x, y, width, height, degrees) {
 var degrees_turn = 0;
 function animated_rotation () {
     degrees_turn += 0.8;
-    rotate_box(370, 517, 35, 35, degrees_turn);
+    rotate_box(370, 514, 35, 35, degrees_turn);
 }
 
 function display_update_and_development_info () {
