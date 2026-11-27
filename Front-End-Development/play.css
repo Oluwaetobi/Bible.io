@@ -378,6 +378,7 @@ table takes up the full width of it's parent the scrollable table */
     font-weight: normal;
     text-shadow: none;
     padding: 5px 10px;
+    white-space: pre-wrap;
 }
 
 .table td img {
