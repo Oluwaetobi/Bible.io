@@ -96,7 +96,19 @@ var learn_page = 1;
 var timer = 0;
 var different_second = 0;
 
+/* my_history is NOT set to anything in learn.js or account.js, except for in play.js it has a default,
+and I only do it in play.js to keep my life simple and things organized, that way if I had more
+variables to my_history object I don't have to change the default everywhere else, the only things that
+need to be updated is the reset_all_data_in_backup_history function() and the 
+use_score_backups_from_history_if_needed() function  */
+let my_history;
+
 var my_points = 0;
+/* While it is true that my_highscores is not actually really used in learn.js, I'm just keeping it here
+just in case I accidentally forget to comment out declarations for it, to prevent the entire script
+from crashing, since sometimes I just directly copy and paste code from play.js that is the samething
+here in learn.js and account.js */
+var my_highscores = [0, 0, 0];
 var my_cash = 0;
 var my_bibletar_svg = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
 var my_country = "America";
@@ -272,6 +284,14 @@ function displayMouseX_and_MouseY () {
 }
 
 function save_Data_to_Local_or_Session_Storage() {
+    if (corrupted_data == true) {
+        /* if the data has been corrupted, I can't save it again, or else me deleting the item from local
+        storage becomes futile, the deeper and explained reason why I can't save it again is because
+        I've just loaded the data into the object already meaning that even though I removed the
+        item from local storage I would be resaving the corrupted data in my object back into
+        localstorage again making the intial deletion futile and worthless!! */
+        return;
+    }
     /**IMPORTANT!!!!! Only call this function when there is new data that needs to be saved */
     function setCookieUntilEndOfDay(name, value) {
         const now = new Date();
@@ -296,6 +316,7 @@ function save_Data_to_Local_or_Session_Storage() {
     // back up cookies as session storage
     sessionStorage.setItem('backup_my_points', JSON.stringify(my_points));
     localStorage.setItem('my_cash', JSON.stringify(my_cash));
+    localStorage.setItem('my_history', JSON.stringify(my_history));
 }
 
 localStorageAndSessionStorageData();
@@ -315,6 +336,7 @@ function localStorageAndSessionStorageData () {
     const saved_bibletar_svg = JSON.parse(localStorage.getItem('my_bibletar_svg'));
     const saved_cash = JSON.parse(localStorage.getItem('my_cash'));
     const saved_country = localStorage.getItem('my_country');
+    const saved_games_history = JSON.parse(localStorage.getItem('my_history'));
     const developer_tools = JSON.parse(localStorage.getItem('i_am_a_developer'));
 
     var savedPoints = cookies.my_points;    
@@ -359,6 +381,114 @@ function localStorageAndSessionStorageData () {
     } else {
         // do nothing, has already been created and set to default
     }
+  
+    /* this stuff should happen at the end, nothing should go below this inside this function 
+    WARNING!!!! putting anything under this could reset people's data that they've worked
+    months to get, CAUTION MUST BE EXERCISED, DON'T PUT ANY NEW FUNCTION OR DECLARATIONS BELOW THIS,
+    it is DEPENDENT on other data already being received from localstorageandsessionstoragedata
+    function, RUN LAST!! */
+    if (saved_games_history) {
+        my_history = saved_games_history;
+        if (my_history.todays_date == undefined || my_history.todays_month == undefined || my_history.todays_year == undefined) {
+            // these variables don't exist
+            delete_my_history();
+        }
+        check_if_data_in_backup_history_needs_to_be_reset();
+        use_score_backups_from_history_if_needed();
+    } else {
+        // do nothing, has already been created and set to default
+    }
+}
+
+
+function check_if_data_in_backup_history_needs_to_be_reset() {
+    /* Data gets reset every day */
+    const date = new Date();
+    const date_num = date.getDate();
+    const month_num = date.getMonth();
+    const year_num = date.getFullYear();
+
+// if any of them are different than, it's a different day, and the data needs to be reset
+    if (my_history.todays_date !== date_num || my_history.todays_month !== month_num || my_history.todays_year !== year_num) {
+        // reset games history
+        reset_all_data_in_backup_history();
+    } else {
+        // do nothing, I don't need to reset my games history
+    }
+
+     /* HAPPENS AFTER: checking whether dates needs to be reset, because someone might be
+     playing in the middle of the night, so we always need to check, and after all that
+     we set todays date to the current data in our history */
+    if (my_history.todays_date !== undefined) {
+        my_history.todays_date = date_num;
+    }
+    if (my_history.todays_month !== undefined) {
+        my_history.todays_month = month_num;
+    }
+    if (my_history.todays_year !== undefined) {
+        my_history.todays_year = year_num;
+    }
+}
+function reset_all_data_in_backup_history() {
+    my_history.games_history = [];
+    if (my_history.my_points !== undefined) {
+        my_history.my_points = 0;
+    }
+    if (my_history.my_highscores !== undefined) {
+        for (let i = 0; i < my_highscores.length; i++) {
+            my_history.my_highscores[i] = 0;
+        }
+    }
+}
+
+var corrupted_data = false;
+function delete_my_history() {
+    /* need to delete backup because it has become corrupted there are variables missing from the object,
+    the reason why there might be variables missing from the object is because I added new variables that
+    I also want to back up and track in my_history, or it could be because the user got hacked or
+    someother unpredictable computer issue and etc. I also have to apply this in the function
+    save_Data_to_Local_or_Session_Storage, or else it won't work, because remember, that the 
+    corrupted data has already been loaded into the object and the only way to stop that
+    from the start of the program is by refusing to save anything anymore, so the next time the
+    program is loaded, no corrupt data is loaded into the object */
+    localStorage.removeItem('my_history');
+    corrupted_data = true;
+}
+function use_score_backups_from_history_if_needed () {
+    /* It is possible that these values might not exist, always check if they exist before
+    setting a different variable to it's value */
+    if (my_points == 0) {
+        /** If my_points equals 0 then we need to use our BACKUPS, remember that this is
+         * the MOST EFFECTIVE WAY to know whether back ups are need, if your points equals 0
+         */
+        // cookies failed because site is blocking cookies, use data from back ups
+        if (my_history.my_points !== undefined) {
+            // if it exists
+            my_points = my_history.my_points;
+        } else {
+            delete_my_history();
+        }
+        if (my_history.my_highscores !== undefined) {
+            // if it exists
+            for (let i = 0; i < my_highscores.length; i++) {
+                // highscores doesn't exist in learn.js
+                // my_highscores[i] = my_history.my_highscores[i];
+            }
+        } else {
+            delete_my_history();
+        }
+    } else {
+        // cookies worked
+    }
+
+    /* save data, this happens after all the user's data has been loaded, and since cookies aren't
+     working because they might be blocked by the website I need to save my_points and other 
+     data needed in account after getting it from my backups stored in my_history */
+    save_Data_to_Local_or_Session_Storage();
+
+     /* An important thing I learned is that if I do if (my_history.my_points) does not actually
+     mean the variable does not exist, but if the variable equals 0 it does not run, so the best
+     way to check if the variable does not exist is by doing if (my_history.my_points !== undefined */
 }
 
 figure_out_whether_i_am_a_boy_or_a_girl();

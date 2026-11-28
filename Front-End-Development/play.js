@@ -1268,7 +1268,9 @@ function localStorageAndSessionStorageData () {
 
     /* this stuff should happen at the end, nothing should go below this inside this function 
     WARNING!!!! putting anything under this could reset people's data that they've worked
-    months to get, CAUTION MUST BE EXERCISED, DON'T PUT ANY NEW FUNCTION OR DECLARATIONS BELOW THIS */
+    months to get, CAUTION MUST BE EXERCISED, DON'T PUT ANY NEW FUNCTION OR DECLARATIONS BELOW THIS,
+    it is DEPENDENT on other data already being received from localstorageandsessionstoragedata
+    function, RUN LAST!! */
     if (saved_games_history) {
         my_history = saved_games_history;
         if (my_history.todays_date == undefined || my_history.todays_month == undefined || my_history.todays_year == undefined) {
@@ -1276,10 +1278,10 @@ function localStorageAndSessionStorageData () {
             delete_my_history();
         }
         check_if_data_in_backup_history_needs_to_be_reset();
+        use_score_backups_from_history_if_needed();
     } else {
         // do nothing, has already been created and set to default
     }
-    use_score_backups_from_history_if_needed();
 }
 
 function check_if_data_in_backup_history_needs_to_be_reset() {
