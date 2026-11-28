@@ -198,7 +198,7 @@ let my_history = {
     todays_date: 0,
     todays_month: 0,
     todays_year: 0,
-    // backups for points and highscores in case the site doesn't support cookies
+    // backups for points and highscores in case the site doesn't support cookies or blocks cookies
     my_points: 0,
     my_highscores: [0, 0, 0],
 };
@@ -418,13 +418,6 @@ function localStorageAndSessionStorageData () {
 
     /** I use this function to read out my local and Session Storage Data */
     const savedName = localStorage.getItem('my_name');
-    /**I'm using these backups, because not all sites support cookies, I'm using this at
-     * least this way I have something to fall back on if cookies aren't enabled, are
-     * permitted by the site, due to the fact that it might be running on localhost
-     * or it isn't using the http or https protocols or some other unforeseen event
-     */
-    const backup_savedHighscores = JSON.parse(sessionStorage.getItem('backup_my_highscores'));
-    const backup_savedPoints = JSON.parse(sessionStorage.getItem('backup_my_points'));
     
     /* if the cookies exist, then parse them, if not then don't
     if I parse cookies that don't exist it will crash the program because this is a syntax error 
@@ -435,17 +428,9 @@ function localStorageAndSessionStorageData () {
     var savedPoints = cookies.my_points;
     if (savedHighscores) {
         savedHighscores = JSON.parse(savedHighscores);
-    } else {
-        if (backup_savedHighscores) {
-            savedHighscores = backup_savedHighscores
-        }
     }
     if (savedPoints) {
         savedPoints = JSON.parse(savedPoints);
-    } else {
-        if (backup_savedPoints) {
-            savedPoints = backup_savedPoints;
-        }
     }
     
     const saved_bibletar_svg = JSON.parse(localStorage.getItem('my_bibletar_svg'));

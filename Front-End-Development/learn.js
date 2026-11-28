@@ -108,7 +108,7 @@ let my_history = {
     todays_date: 0,
     todays_month: 0,
     todays_year: 0,
-    // backups for points and highscores in case the site doesn't support cookies
+    // backups for points and highscores in case the site doesn't support cookies or blocks cookies
     my_points: 0,
     my_highscores: [0, 0, 0],
 };
@@ -323,8 +323,6 @@ function save_Data_to_Local_or_Session_Storage() {
     setCookieUntilEndOfDay("my_points", encodeURIComponent(JSON.stringify(my_points)));
 
 
-    // back up cookies as session storage
-    sessionStorage.setItem('backup_my_points', JSON.stringify(my_points));
     localStorage.setItem('my_cash', JSON.stringify(my_cash));
     localStorage.setItem('my_history', JSON.stringify(my_history));
 }
@@ -339,24 +337,25 @@ function localStorageAndSessionStorageData () {
     .map(cookie => cookie.split('='))
     .reduce((accumulator, [key, value]) => ({ ...accumulator, [key.trim()]: decodeURIComponent(value) }), {});
 
+
+    /* if the cookies exist, then parse them, if not then don't
+     if I parse cookies that don't exist it will crash the program because this is a syntax error 
+     
+     note: instead of having constants I have variables, because I need to be able to reassign them in this case since 
+     they are cookies and the need to be parsed that is if they even exist */
+    var savedPoints = cookies.my_points;    
+    if (savedPoints) {
+        savedPoints = JSON.parse(savedPoints);
+    }
+
     /** I use this function to read out my local and Session Storage Data */
     const savedName = localStorage.getItem('my_name');
-    // const savedPoints = JSON.parse(sessionStorage.getItem('my_points'));
-    const backup_savedPoints = JSON.parse(sessionStorage.getItem('backup_my_points'));
     const saved_bibletar_svg = JSON.parse(localStorage.getItem('my_bibletar_svg'));
     const saved_cash = JSON.parse(localStorage.getItem('my_cash'));
     const saved_country = localStorage.getItem('my_country');
     const saved_games_history = JSON.parse(localStorage.getItem('my_history'));
     const developer_tools = JSON.parse(localStorage.getItem('i_am_a_developer'));
 
-    var savedPoints = cookies.my_points;    
-    if (savedPoints) {
-        savedPoints = JSON.parse(savedPoints);
-    } else {
-        if (backup_savedPoints) {
-            savedPoints = backup_savedPoints;
-        }
-    }
 
     if (developer_tools) {
         i_am_a_developer = developer_tools;
