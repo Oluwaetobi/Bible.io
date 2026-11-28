@@ -391,6 +391,7 @@ function save_Data_to_Local_or_Session_Storage () {
         localstorage again making the intial deletion futile and worthless!! */
         return;
     }
+    localStorage.setItem('my_history', JSON.stringify(my_history));
 
 }
 
@@ -605,8 +606,7 @@ function use_score_backups_from_history_if_needed () {
     /* save data, this happens after all the user's data has been loaded, and since cookies aren't
      working because they might be blocked by the website I need to save my_points and other 
      data needed in account after getting it from my backups stored in my_history */
-    // don't need to save data to local or session storage in account.js, only names needs to be saved in account.js
-     // save_Data_to_Local_or_Session_Storage();
+     save_Data_to_Local_or_Session_Storage();
 
      /* An important thing I learned is that if I do if (my_history.my_points) does not actually
      mean the variable does not exist, but if the variable equals 0 it does not run, so the best

@@ -748,6 +748,10 @@ function start_timer() {
             if (learn_page != 1) {
                 // if the player is actually learning something, not just looking at the front page then give them points
                 my_points += 1;
+                // back up points, check if the variable exists first
+                if (my_history.my_points !== undefined) {
+                    my_history.my_points = my_points;
+                }
                 save_Data_to_Local_or_Session_Storage();
             }
         }
