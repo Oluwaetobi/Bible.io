@@ -105,7 +105,13 @@ var store_recent_games_played = [0];
 var store_recent_games_won = [0];
 
 
-// i'm doing let instead of const because I need to be able to reassign this object
+/* I'm doing let instead of const because I need to be able to reassign this object, originally
+made in play.js and now everytime I update it, I must update it in learn.js and account.js, I tried
+to prevent that from happening, but alas, I can't, or else, the program will crash in unexpected
+cases, remember to update reset_all_data_in_backup_history function() and the 
+use_score_backups_from_history_if_needed() function in learn.js and account.js, 
+those are most vital, probably the only function that will need updating when functions
+ related to my_history are updated in play.js */
 let my_history = {
     games_history: [],
     todays_date: 0,
@@ -1285,6 +1291,8 @@ function localStorageAndSessionStorageData () {
 }
 
 function check_if_data_in_backup_history_needs_to_be_reset() {
+    /* Always run this function before saving scores or points, and preferably before updating
+     data in backup history or awarding points or rewards */
     /* Data gets reset every day */
     const date = new Date();
     const date_num = date.getDate();

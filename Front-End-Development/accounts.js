@@ -186,12 +186,22 @@ let mouseY = 0;
 
 var my_name = "Unknown Player"
 
-/* my_history is NOT set to anything in learn.js or account.js, except for in play.js it has a default,
-and I only do it in play.js to keep my life simple and things organized, that way if I had more
-variables to my_history object I don't have to change the default everywhere else, the only things that
-need to be updated is the reset_all_data_in_backup_history function() and the 
-use_score_backups_from_history_if_needed() function  */
-let my_history;
+/* I'm doing let instead of const because I need to be able to reassign this object, originally
+made in play.js and now everytime I update it, I must update it in learn.js and account.js, I tried
+to prevent that from happening, but alas, I can't, or else, the program will crash in unexpected
+cases, remember to update reset_all_data_in_backup_history function() and the 
+use_score_backups_from_history_if_needed() function in learn.js and account.js, 
+those are most vital, probably the only function that will need updating when functions
+ related to my_history are updated in play.js */
+let my_history = {
+    games_history: [],
+    todays_date: 0,
+    todays_month: 0,
+    todays_year: 0,
+    // backups for points and highscores in case the site doesn't support cookies
+    my_points: 0,
+    my_highscores: [0, 0, 0],
+};
 
 var box_x_pos = 1;
 var gameOn = false;
@@ -525,6 +535,8 @@ function localStorageAndSessionStorageData () {
     }
 }
 function check_if_data_in_backup_history_needs_to_be_reset() {
+    /* Always run this function before saving scores or points, and preferably before updating
+     data in backup history or awarding points or rewards */
     /* Data gets reset every day */
     const date = new Date();
     const date_num = date.getDate();
